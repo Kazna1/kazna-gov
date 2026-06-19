@@ -482,1397 +482,281 @@ html body #kghdr4 .kghdr4__phone:visited {
 
 })();
 </script>
+<div class="kzop2">
 
-<meta charset="UTF-8">
-<!-- КАЗНА · Открытие казначейского счёта · v2 · kzop2__ namespace -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- ============================================================
+/* HERO /services/open — v2.6 — 2026-05-16 — kazna-gov.ru */
+   Hero уплотнён под один экран; trust-полоса — премиум-стиль
+   с анимацией счётчиков. Заголовок и подзаголовок переписаны.
+   Срок открытия — «2 рабочих дня» во всех местах.
+   Процесс — 6 шагов (сводный реестр Казначейства).
+   Лид → POST https://api.kazna-gov.ru/api/lead/open (тот же backend).
+============================================================ -->
 <style>
-/* ─── DESIGN TOKENS ─── */
-:root{
-  --bg:#F7F9FE;
-  --bg-w:#FFFFFF;
-  --bg-s:#EEF2FA;
-  --bg-dark:#0C1B33;
-  --bg-dark2:#091526;
-  --bg-risk:#FFF5F5;
+/* Старая кодовая шапка header_v4 («К» с галочкой) скрыта — действует новая .kgh */
+#kghdr4,.kghdr4,.kghdr4-drawer,#kghdr4-drawer{display:none!important}
+.kzop2__hero{padding:44px 0}
+.kzop2__hero-grid{grid-template-columns:minmax(0,1fr) 400px;gap:52px}
 
-  --text:#0D1424;
-  --t2:#374151;
-  --t3:#6B7280;
-  --t-inv:#FFFFFF;
-  --t-inv2:rgba(255,255,255,0.65);
+.kzhero__col{display:flex;flex-direction:column;align-items:flex-start;gap:11px;min-width:0}
+.kzhero__col .kzop2__hero-badge{margin-bottom:0}
 
-  --blue:#1E50D4;
-  --blue-h:#1641BC;
-  --blue-bg:#EAF1FF;
-  --blue-br:#BAD0FF;
+.kzhero__title{
+  font-size:clamp(32px,3.6vw,46px);font-weight:800;color:var(--navy);
+  letter-spacing:-0.03em;line-height:1.07;
+}
+.kzhero__sub{font-size:16px;color:var(--t2);line-height:1.5;max-width:580px}
 
-  --navy:#0C1B33;
-  --navy-l:#162544;
+/* ── Hero · полоса показателей (премиум) ── */
+.kzhero__stats{
+  display:flex;align-items:stretch;gap:0;
+  width:100%;max-width:540px;
+  padding:7px;
+  background:linear-gradient(180deg,#ffffff 0%,#f3f7ff 100%);
+  border:1px solid var(--blue-br);border-radius:16px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.9),
+             0 12px 30px rgba(30,80,212,0.13),
+             0 3px 10px rgba(30,80,212,0.08);
+}
+.kzhero__stats-label{
+  display:flex;align-items:center;justify-content:center;gap:7px;padding:0 16px;
+  background:linear-gradient(135deg,#1E50D4 0%,#3f72e6 100%);
+  border-radius:12px;font-size:12px;font-weight:700;color:#fff;white-space:nowrap;
+  box-shadow:0 5px 14px rgba(30,80,212,0.32);
+}
+.kzhero__stats-label svg{width:17px;height:17px;flex-shrink:0}
+.kzhero__stats-row{display:flex;align-items:stretch;flex:1}
+.kzhero__stat{
+  display:flex;flex:1;flex-direction:column;align-items:center;justify-content:center;gap:1px;
+  padding:5px 16px;position:relative;text-align:center;
+}
+.kzhero__stat + .kzhero__stat::before{
+  content:'';position:absolute;left:0;top:50%;transform:translateY(-50%);
+  width:1px;height:62%;
+  background:linear-gradient(180deg,transparent,var(--blue-br),transparent);
+}
+.kzhero__stat-num{
+  font-size:26px;font-weight:800;letter-spacing:-0.02em;line-height:1.05;
+  background:linear-gradient(135deg,#1E50D4 0%,#5b8aff 100%);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:var(--blue);
+}
+.kzhero__stat-lbl{font-size:12px;font-weight:600;color:var(--t3)}
 
-  --green:#059669;
-  --green-bg:#ECFDF5;
-  --green-br:#A7F3D0;
-
-  --amber:#B45309;
-  --amber-bg:#FFFBEB;
-  --amber-br:#FDE68A;
-
-  --red:#C0392B;
-  --red-bg:#FEF5F5;
-  --red-br:#FECACA;
-
-  --border:#E5E7EB;
-  --border2:#D1D5DB;
-
-  --r-s:8px;
-  --r:14px;
-  --r-l:20px;
-  --r-xl:28px;
-
-  --sh-s:0 1px 3px rgba(0,0,0,0.06),0 1px 2px rgba(0,0,0,0.04);
-  --sh:0 4px 20px rgba(0,0,0,0.06),0 2px 8px rgba(0,0,0,0.04);
-  --sh-l:0 20px 60px rgba(0,0,0,0.08),0 8px 24px rgba(0,0,0,0.05);
-  --sh-blue:0 4px 20px rgba(30,80,212,0.18);
-
-  --tr:0.2s cubic-bezier(0.4,0,0.2,1);
-  --font:'Manrope',-apple-system,sans-serif;
-  --max:1160px;
-  --hdr:68px;
-}
-
-/* ─── BASE ─── */
-.kzop2{font-family:var(--font);color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased;line-height:1.6}
-.kzop2 *,
-.kzop2 *::before,
-.kzop2 *::after{box-sizing:border-box;margin:0;padding:0}
-.kzop2 ::selection{background:var(--blue);color:#fff}
-.kzop2__wrap{max-width:var(--max);margin:0 auto;padding:0 40px}
-.kzop2__eyebrow{
-  font-size:11px;font-weight:600;letter-spacing:0.09em;text-transform:uppercase;
-  color:var(--blue);margin-bottom:16px;display:block;
-}
-.kzop2__h2{
-  font-size:clamp(26px,3vw,36px);font-weight:800;color:var(--navy);
-  letter-spacing:-0.025em;line-height:1.1;margin-bottom:16px;
-}
-.kzop2__h2 span{color:var(--blue)}
-.kzop2__lead{font-size:15.5px;color:var(--t2);line-height:1.6;max-width:600px}
-
-/* ─── BUTTONS ─── */
-.kzop2__btn{
-  display:inline-flex;align-items:center;gap:8px;
-  padding:0 24px;height:50px;border-radius:12px;
-  font-family:var(--font);font-size:15px;font-weight:700;
-  cursor:pointer;text-decoration:none;border:none;
-  transition:background var(--tr),transform var(--tr),box-shadow var(--tr);
-  white-space:nowrap;
-}
-.kzop2__btn--primary{background:var(--blue)!important;color:#fff!important}
-.kzop2__btn--primary:hover{background:var(--blue-h)!important;transform:translateY(-2px);box-shadow:var(--sh-blue)}
-.kzop2__btn--outline{background:transparent;color:var(--navy);border:1.5px solid var(--border2)}
-.kzop2__btn--outline:hover{border-color:var(--navy);background:rgba(12,27,51,0.04);transform:translateY(-1px)}
-.kzop2__btn--white{background:#fff;color:var(--navy)}
-.kzop2__btn--white:hover{background:#F3F1EE;transform:translateY(-2px)}
-.kzop2__btn--ghost{background:rgba(255,255,255,0.12);color:#fff;border:1px solid rgba(255,255,255,0.2)}
-.kzop2__btn--ghost:hover{background:rgba(255,255,255,0.2)}
-.kzop2__btn svg{width:16px;height:16px;flex-shrink:0;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-
-/* ─── SECTION SHARED ─── */
-.kzop2__section{padding:80px 0;min-height:420px;display:flex;flex-direction:column;justify-content:center;background:var(--bg-w)}
-.kzop2__section--gray{background:var(--bg-s)}
-.kzop2__section--dark{background:var(--bg-dark)}
-.kzop2__section--risk{background:var(--bg-risk)}
-.kzop2__section-header{margin-bottom:44px;width:100%}
-@media(max-width:768px){.kzop2__section-header{margin-bottom:28px}}
-
-/* ─── HERO ─── */
-.kzop2__hero{
-  background:
-    radial-gradient(ellipse 900px 700px at 105% -5%, rgba(30,80,212,0.22) 0%, rgba(91,138,255,0.08) 45%, transparent 65%),
-    radial-gradient(ellipse 500px 400px at -6% 110%, rgba(30,80,212,0.13) 0%, transparent 65%),
-    var(--bg-w);
-  padding:calc(var(--hdr) + 16px) 0 64px;
-  min-height:calc(100vh - var(--hdr));
-  display:flex;flex-direction:column;justify-content:center;
-  position:relative;overflow:hidden;
-}
-/* тонкая акцентная линия в самом верху — premium-деталь */
-.kzop2__hero::before{
-  content:'';position:absolute;
-  top:0;left:0;right:0;height:3px;
-  background:linear-gradient(90deg,transparent 0%,var(--blue) 18%,rgba(91,138,255,0.55) 60%,transparent 100%);
-  pointer-events:none;z-index:2;
-}
-/* глубокий синий orb справа-сверху */
-.kzop2__hero::after{
-  content:'';position:absolute;
-  top:-200px;right:-180px;
-  width:900px;height:900px;border-radius:50%;
-  background:radial-gradient(ellipse at 50% 40%, rgba(91,138,255,0.14) 0%, rgba(30,80,212,0.07) 45%, transparent 68%);
-  pointer-events:none;z-index:0;
-}
-.kzop2__hero-grid{
-  max-width:var(--max);margin:0 auto;padding:0 40px;
-  display:grid;
-  grid-template-columns:1fr 400px;
-  gap:64px;align-items:center;
-  position:relative;z-index:1;
-  width:100%;
-}
-.kzop2__hero-badge{
-  display:inline-flex;align-items:center;gap:8px;
-  padding:6px 14px;border-radius:100px;
-  border:1px solid var(--green-br);
-  background:var(--green-bg);
-  font-size:12.5px;font-weight:600;color:#065F46;
-  margin-bottom:28px;
-}
-.kzop2__hero-badge::before{
-  content:'';width:7px;height:7px;border-radius:50%;
-  background:var(--green);flex-shrink:0;
-  animation:kzop2-pulse 2s ease-in-out infinite;
-}
-@keyframes kzop2-pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.6;transform:scale(0.85)}}
-
-.kzop2__hero-title{
-  font-size:clamp(38px,4.8vw,58px);
-  font-weight:800;color:var(--navy);
-  letter-spacing:-0.03em;line-height:1.05;
-  margin-bottom:20px;
-}
-.kzop2__hero-title span{color:var(--blue)}
-.kzop2__hero-sub{
-  font-size:17px;color:var(--t2);line-height:1.65;
-  max-width:540px;margin-bottom:32px;
-}
-.kzop2__hero-stats{
-  display:flex;align-items:center;gap:0;
-  margin-bottom:36px;
-  flex-wrap:wrap;
-}
-.kzop2__hero-stat{
-  display:flex;align-items:center;gap:6px;
-  padding:0 16px;
-  font-size:13px;font-weight:600;color:var(--t2);
-}
-.kzop2__hero-stat:first-child{padding-left:0}
-.kzop2__hero-stat + .kzop2__hero-stat{border-left:1px solid var(--border)}
-.kzop2__hero-stat svg{width:14px;height:14px;color:var(--green);flex-shrink:0;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.kzop2__hero-ctas{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-
-/* Hero card — gradient border + glow */
-.kzop2__hero-card{
-  border-radius:var(--r-xl);
-  padding:32px;
-  position:relative;
-  /* gradient border trick */
-  border:1.5px solid transparent;
-  background-image:
-    linear-gradient(var(--bg-w), var(--bg-w)),
-    linear-gradient(145deg, rgba(30,80,212,0.55) 0%, rgba(91,138,255,0.25) 50%, rgba(30,80,212,0.06) 100%);
-  background-origin:border-box;
-  background-clip:padding-box, border-box;
-  background-color:var(--bg-w);
-  box-shadow:
-    0 0 0 12px rgba(30,80,212,0.05),
-    0 0 0 32px rgba(30,80,212,0.025),
-    0 24px 64px rgba(30,80,212,0.16),
-    0 8px 24px rgba(30,80,212,0.10);
-}
-.kzop2__card-tag{
-  font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;
-  color:var(--t3);margin-bottom:20px;
-}
-.kzop2__card-price-row{
-  display:flex;align-items:baseline;gap:8px;
-  margin-bottom:8px;
-}
-.kzop2__card-price{
-  font-size:42px;font-weight:800;color:var(--navy);
-  letter-spacing:-0.03em;line-height:1;
-}
-.kzop2__card-price-note{font-size:13px;color:var(--t3);font-weight:500}
-.kzop2__card-period{
-  font-size:13px;color:var(--t3);margin-bottom:24px;
-}
-.kzop2__card-divider{height:1px;background:var(--border);margin:24px 0}
-.kzop2__card-includes{
-  list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:24px;
-}
-.kzop2__card-includes li{
-  display:flex;align-items:flex-start;gap:10px;
-  font-size:13.5px;color:var(--t2);line-height:1.45;
-}
-.kzop2__card-includes li::before{
-  content:'';display:block;flex-shrink:0;
-  width:18px;height:18px;border-radius:50%;
-  background:var(--green-bg);border:1px solid var(--green-br);
-  background-image:url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 5l2.5 2.5L8 3' stroke='%23059669' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-  background-repeat:no-repeat;background-position:center;
-  margin-top:1px;
-}
-.kzop2__card-guarantee{
-  display:flex;align-items:flex-start;gap:10px;
-  padding:14px;border-radius:10px;
-  background:var(--blue-bg);border:1px solid var(--blue-br);
-  font-size:12.5px;color:#1e40af;line-height:1.45;
-  margin-top:16px;
-}
-.kzop2__card-guarantee svg{width:16px;height:16px;flex-shrink:0;color:var(--blue);stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;margin-top:1px}
-.kzop2__card-guarantee strong{font-weight:700}
-
-/* ─── FOR WHOM ─── */
-.kzop2__who-grid{
-  display:grid;grid-template-columns:repeat(4,1fr);gap:16px;
-}
-.kzop2__who-card{
-  background:var(--bg-w);border:1px solid var(--border);
-  border-radius:var(--r-l);padding:28px 24px;
-  transition:box-shadow 0.3s cubic-bezier(0.4,0,0.2,1),transform 0.3s cubic-bezier(0.4,0,0.2,1),border-color 0.3s cubic-bezier(0.4,0,0.2,1);
-}
-.kzop2__who-card:hover{
-  border-color:rgba(30,80,212,0.3);
-  box-shadow:0 8px 32px rgba(30,80,212,0.09),0 2px 8px rgba(30,80,212,0.06);
-  transform:translateY(-3px);
-}
-.kzop2__who-icon{
-  width:44px;height:44px;border-radius:12px;
-  background:var(--blue-bg);border:1px solid var(--blue-br);
-  display:flex;align-items:center;justify-content:center;
-  margin-bottom:18px;
-}
-.kzop2__who-icon svg{width:22px;height:22px;stroke:var(--blue);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.kzop2__who-title{font-size:15px;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:8px}
-.kzop2__who-desc{font-size:13.5px;color:var(--t3);line-height:1.55}
-
-/* ─── INCLUDES ─── */
-.kzop2__inc-grid{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:16px;
-}
-.kzop2__inc-card{
-  background:var(--bg-w);border:1px solid var(--border);
-  border-radius:var(--r-l);padding:28px 24px;
-  transition:box-shadow 0.3s cubic-bezier(0.4,0,0.2,1),transform 0.3s cubic-bezier(0.4,0,0.2,1),border-color 0.3s cubic-bezier(0.4,0,0.2,1);
-}
-.kzop2__inc-card:hover{
-  border-color:rgba(30,80,212,0.25);
-  box-shadow:0 8px 28px rgba(30,80,212,0.08),0 2px 8px rgba(30,80,212,0.05);
-  transform:translateY(-2px);
-}
-.kzop2__inc-num{
-  font-size:13px;font-weight:700;color:var(--blue);
-  letter-spacing:0.04em;margin-bottom:14px;display:block;
-}
-.kzop2__inc-title{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;line-height:1.3}
-.kzop2__inc-desc{font-size:13.5px;color:var(--t3);line-height:1.55}
-
-/* ─── PROCESS ─── */
-.kzop2__process-track{
-  display:grid;grid-template-columns:repeat(5,1fr);
-  gap:0;position:relative;
-}
-.kzop2__process-track::before{
-  content:'';position:absolute;
-  top:28px;left:calc(20% / 2);right:calc(20% / 2);
-  height:2px;background:var(--border);z-index:0;
-}
-/* прогресс-линия поверх серой */
-.kzop2__process-track::after{
-  content:'';position:absolute;
-  top:28px;left:calc(20% / 2);right:calc(20% / 2);
-  height:2px;
-  background:linear-gradient(90deg,var(--blue) 0%,rgba(30,80,212,0.4) 100%);
-  z-index:0;
-  transform-origin:left center;
-  transform:scaleX(0);
-  transition:transform 1.1s cubic-bezier(0.16,1,0.3,1) 0.2s;
-}
-[data-section="process"].kzop2-seen .kzop2__process-track::after{
-  transform:scaleX(1);
-}
-.kzop2__step{
-  display:flex;flex-direction:column;align-items:center;
-  text-align:center;padding:0 16px;position:relative;z-index:1;
-}
-.kzop2__step-num{
-  width:56px;height:56px;border-radius:50%;
-  background:var(--navy);color:#fff;
-  font-size:18px;font-weight:800;
-  display:flex;align-items:center;justify-content:center;
-  margin-bottom:20px;flex-shrink:0;
-  box-shadow:0 4px 16px rgba(12,27,51,0.2);
-}
-.kzop2__step:last-child .kzop2__step-num{background:var(--green)}
-.kzop2__step-time{
-  font-size:11px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;
-  color:var(--blue);margin-bottom:6px;
-}
-.kzop2__step-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:6px;line-height:1.3}
-.kzop2__step-desc{font-size:13px;color:var(--t3);line-height:1.55}
-
-/* ─── RISKS ─── */
-.kzop2__risks-grid{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:16px;
-}
-.kzop2__risk-card{
-  background:var(--bg-w);border:1px solid var(--red-br);
-  border-radius:var(--r-l);padding:24px;
-  transition:box-shadow 0.3s cubic-bezier(0.4,0,0.2,1),transform 0.3s cubic-bezier(0.4,0,0.2,1),border-color 0.3s cubic-bezier(0.4,0,0.2,1);
-}
-.kzop2__risk-card:hover{
-  border-color:rgba(220,38,38,0.35);
-  box-shadow:0 8px 28px rgba(220,38,38,0.08),0 2px 8px rgba(220,38,38,0.05);
-  transform:translateY(-2px);
-}
-.kzop2__risk-icon{
-  width:40px;height:40px;border-radius:10px;
-  background:var(--red-bg);
-  display:flex;align-items:center;justify-content:center;
-  margin-bottom:14px;
-}
-.kzop2__risk-icon svg{width:20px;height:20px;stroke:var(--red);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.kzop2__risk-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:6px;line-height:1.3}
-.kzop2__risk-desc{font-size:13px;color:var(--t3);line-height:1.55}
-
-/* ─── MID CTA ─── */
-.kzop2__midcta{
-  background:var(--bg-dark);padding:72px 0;
-  position:relative;overflow:hidden;
-}
-/* dot grid */
-.kzop2__midcta::before{
-  content:'';position:absolute;inset:0;
-  background-image:radial-gradient(circle, rgba(255,255,255,0.065) 1px, transparent 1px);
-  background-size:28px 28px;
-  pointer-events:none;z-index:0;
-}
-/* blue orb */
-.kzop2__midcta::after{
-  content:'';position:absolute;
-  top:-150px;right:-120px;
-  width:640px;height:640px;border-radius:50%;
-  background:radial-gradient(ellipse at center, rgba(30,80,212,0.28) 0%, transparent 65%);
-  pointer-events:none;z-index:0;
-}
-.kzop2__midcta-center{
-  max-width:var(--max);margin:0 auto;padding:0 40px;
-  display:flex;flex-direction:column;align-items:center;text-align:center;
-  position:relative;z-index:1;
-}
-.kzop2__midcta-label{font-size:11px;font-weight:600;letter-spacing:0.09em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:14px}
-.kzop2__midcta-sub{font-size:15px;color:rgba(255,255,255,0.5);margin-top:10px;line-height:1.5}
-.kzop2__midcta-title{font-size:clamp(24px,3vw,38px);font-weight:800;color:#fff;letter-spacing:-0.025em;line-height:1.1}
-.kzop2__midcta-title span{color:#6fa3f7}
-.kzop2__midcta-btns{display:flex;align-items:center;gap:12px;flex-wrap:wrap;flex-shrink:0}
-
-/* ─── TRUST ─── */
-.kzop2__trust-grid{
-  display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
-  background:var(--border);border-radius:var(--r-l);overflow:hidden;
-  border:1px solid var(--border);
-}
-.kzop2__trust-item{
-  background:var(--bg-w);padding:36px 28px;text-align:center;
-}
-.kzop2__trust-num{
-  font-size:clamp(44px,5vw,64px);font-weight:800;color:var(--navy);
-  letter-spacing:-0.04em;line-height:1;margin-bottom:10px;display:block;
-}
-.kzop2__trust-num span{color:var(--blue)}
-.kzop2__trust-label{font-size:13px;color:var(--t3);line-height:1.45;font-weight:500}
-
-/* ─── SERVICES ─── */
-.kzop2__services-grid{
-  display:grid;grid-template-columns:repeat(4,1fr);gap:12px;
-}
-.kzop2__svc-card{
-  background:var(--bg-w);border:1.5px solid var(--border);
-  border-radius:var(--r-l);padding:24px;
-  text-decoration:none;color:inherit;
-  transition:border-color var(--tr),box-shadow var(--tr),transform var(--tr);
-  display:flex;flex-direction:column;
-}
-.kzop2__svc-card:hover{border-color:var(--border2);box-shadow:var(--sh);transform:translateY(-2px)}
-.kzop2__svc-card--active{border-color:var(--blue)!important;background:var(--blue-bg)}
-.kzop2__svc-name{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:6px;line-height:1.3}
-.kzop2__svc-desc{font-size:12px;color:var(--t3);line-height:1.5;flex:1;margin-bottom:16px}
-.kzop2__svc-price{font-size:18px;font-weight:800;color:var(--navy);letter-spacing:-0.02em}
-.kzop2__svc-cta{
-  font-size:12px;font-weight:600;color:var(--blue);
-  display:flex;align-items:center;gap:4px;margin-top:8px;
-}
-.kzop2__svc-card--active .kzop2__svc-cta{color:var(--navy)}
-.kzop2__svc-active-badge{
-  display:inline-block;font-size:10px;font-weight:700;
-  letter-spacing:0.06em;text-transform:uppercase;
-  background:var(--blue);color:#fff;
-  padding:2px 8px;border-radius:100px;margin-bottom:10px;
-}
-
-/* ─── FAQ ─── */
-.kzop2__faq-list{display:flex;flex-direction:column;gap:8px;max-width:800px;margin:0 auto}
-.kzop2__faq-item{
+.kzhero__form-card{
+  width:100%;max-width:540px;background:var(--bg-w);
   border:1px solid var(--border);border-radius:var(--r);
-  overflow:hidden;background:var(--bg-w);
+  box-shadow:var(--sh-l);padding:18px 22px;
+}
+.kzhero__form-title{font-size:17px;font-weight:800;color:var(--navy);letter-spacing:-0.015em;line-height:1.35;margin-bottom:10px}
+.kzhero__title-br{display:none}
+.kzhero__fields{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:start}
+.kzhero__field{display:flex;flex-direction:column;gap:5px;min-width:0}
+.kzhero__label{font-size:12px;font-weight:600;color:var(--t3)}
+.kzhero__input{
+  width:100%;min-width:0;
+  height:44px;padding:0 14px;font-family:var(--font);font-size:15px;color:var(--text);
+  background:var(--bg);border:1px solid var(--border2);border-radius:10px;outline:none;
   transition:border-color var(--tr),box-shadow var(--tr);
 }
-.kzop2__faq-item.open{border-color:var(--blue-br);box-shadow:0 0 0 3px rgba(30,80,212,0.06)}
-.kzop2__faq-q{
-  width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;
-  padding:20px 24px;background:none;border:none;cursor:pointer;
-  text-align:left;font-family:var(--font);
-  font-size:15px;font-weight:700;color:var(--navy);
-  transition:background var(--tr);
-}
-.kzop2__faq-q:hover{background:#FAFAF8}
-.kzop2__faq-icon{
-  width:28px;height:28px;flex-shrink:0;border-radius:50%;
-  background:var(--bg-s);
-  display:flex;align-items:center;justify-content:center;
-  transition:background var(--tr),transform var(--tr);
-}
-.kzop2__faq-item.open .kzop2__faq-icon{background:var(--blue);transform:rotate(45deg)}
-.kzop2__faq-icon svg{width:14px;height:14px;stroke:var(--t2);fill:none;stroke-width:2;stroke-linecap:round}
-.kzop2__faq-item.open .kzop2__faq-icon svg{stroke:#fff}
-.kzop2__faq-a{
-  max-height:0;overflow:hidden;
-  transition:max-height 0.35s cubic-bezier(0.4,0,0.2,1),padding var(--tr);
-}
-.kzop2__faq-item.open .kzop2__faq-a{max-height:600px}
-.kzop2__faq-a-inner{
-  padding:0 24px 20px;
-  font-size:14.5px;color:var(--t2);line-height:1.65;
-}
-.kzop2__faq-a-inner p+p{margin-top:10px}
-.kzop2__faq-a-inner strong{color:var(--navy);font-weight:700}
-@media(max-width:560px){
-  .kzop2__faq-q{padding:16px 16px}
-  .kzop2__faq-a-inner{padding:0 16px 16px}
-}
+.kzhero__input::placeholder{color:#9CA3AF}
+.kzhero__input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(30,80,212,0.12)}
+.kzhero__input.kzhero--invalid{border-color:rgba(192,57,43,0.7)}
 
-/* ─── FINAL FORM ─── */
-.kzop2__final{
-  background:var(--bg-dark);padding:96px 0;
-  position:relative;overflow:hidden;
-}
-/* dot grid */
-.kzop2__final::before{
-  content:'';position:absolute;inset:0;
-  background-image:radial-gradient(circle, rgba(255,255,255,0.055) 1px, transparent 1px);
-  background-size:28px 28px;
-  pointer-events:none;z-index:0;
-}
-/* blue orb bottom-left */
-.kzop2__final::after{
-  content:'';position:absolute;
-  bottom:-180px;left:-120px;
-  width:700px;height:700px;border-radius:50%;
-  background:radial-gradient(ellipse at center, rgba(30,80,212,0.22) 0%, transparent 65%);
-  pointer-events:none;z-index:0;
-}
-.kzop2__final-inner{
-  max-width:var(--max);margin:0 auto;padding:0 40px;
-  display:grid;grid-template-columns:1fr 480px;gap:80px;align-items:start;
-  position:relative;z-index:1;
-}
-.kzop2__final-label{
-  font-size:11px;font-weight:600;letter-spacing:0.09em;text-transform:uppercase;
-  color:rgba(255,255,255,0.45);margin-bottom:16px;display:block;
-}
-.kzop2__final-title{
-  font-size:clamp(28px,4vw,44px);font-weight:800;color:#fff;
-  letter-spacing:-0.025em;line-height:1.1;margin-bottom:16px;
-}
-.kzop2__final-title span{color:#6fa3f7}
-.kzop2__final-sub{font-size:15px;color:rgba(255,255,255,0.6);line-height:1.6;max-width:400px;margin-bottom:36px}
-.kzop2__final-points{list-style:none;display:flex;flex-direction:column;gap:12px}
-.kzop2__final-points li{
-  display:flex;align-items:flex-start;gap:10px;
-  font-size:14px;color:rgba(255,255,255,0.75);line-height:1.5;
-}
-.kzop2__final-points li::before{
-  content:'';display:block;flex-shrink:0;
-  width:18px;height:18px;border-radius:50%;
-  background:rgba(5,150,105,0.2);border:1px solid rgba(167,243,208,0.3);
-  background-image:url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 5l2.5 2.5L8 3' stroke='%234ade80' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-  background-repeat:no-repeat;background-position:center;
-  margin-top:2px;
-}
-.kzop2__form-card{
-  background:rgba(255,255,255,0.06);
-  border:1px solid rgba(255,255,255,0.12);
-  border-radius:var(--r-xl);padding:36px;
-  backdrop-filter:blur(8px);
-}
-.kzop2__form-card-title{font-size:20px;font-weight:800;color:#fff;letter-spacing:-0.02em;margin-bottom:6px}
-.kzop2__form-card-sub{font-size:13px;color:rgba(255,255,255,0.5);margin-bottom:28px}
-.kzop2__form-fields{display:flex;flex-direction:column;gap:12px;margin-bottom:20px}
-.kzop2__field label{
-  display:block;font-size:12px;font-weight:600;
-  color:rgba(255,255,255,0.5);margin-bottom:6px;letter-spacing:0.03em;
-}
-.kzop2__field input{
-  width:100%;height:48px;padding:0 16px;
-  background:rgba(255,255,255,0.08);
-  border:1px solid rgba(255,255,255,0.14);
-  border-radius:10px;
-  font-family:var(--font);font-size:15px;color:#fff;
-  outline:none;transition:border-color var(--tr),background var(--tr);
-}
-.kzop2__field input::placeholder{color:rgba(255,255,255,0.3)}
-.kzop2__field input:focus{border-color:rgba(30,80,212,0.6);background:rgba(255,255,255,0.12)}
-.kzop2__form-submit{
-  width:100%;height:52px;border-radius:12px;
-  background:var(--blue);color:#fff;border:none;
-  font-family:var(--font);font-size:15px;font-weight:700;cursor:pointer;
-  transition:background var(--tr),transform var(--tr);
-}
-.kzop2__form-submit:hover{background:var(--blue-h);transform:translateY(-2px)}
+.kzhero__submit{width:100%;height:46px;margin-top:10px;justify-content:center;font-size:15.5px}
+.kzhero__submit:disabled{background:#9DB4E8!important;cursor:not-allowed;transform:none!important;box-shadow:none!important}
+.kzhero__submit:disabled:hover{transform:none!important}
+.kzhero__btn-mobile{display:none}
 
+.kzhero__microcopy{margin-top:6px;font-size:12.5px;color:var(--t3);line-height:1.4;text-align:center}
+.kzhero__form-card .kzop2__consent{margin-top:10px}
+.kzhero__form-card .kzop2__consent label{font-size:11.5px}
 
-/* ─── RESPONSIVE ─── */
-@media(max-width:1024px){
-  .kzop2__hero-grid{grid-template-columns:1fr 340px;gap:40px}
-  .kzop2__who-grid{grid-template-columns:repeat(2,1fr)}
-  .kzop2__inc-grid{grid-template-columns:repeat(2,1fr)}
-  .kzop2__process-track{grid-template-columns:repeat(2,1fr);gap:32px}
-  .kzop2__process-track::before{display:none}
-  .kzop2__trust-grid{grid-template-columns:repeat(2,1fr)}
-  .kzop2__services-grid{grid-template-columns:repeat(2,1fr)}
-  .kzop2__final-inner{grid-template-columns:1fr;gap:48px}
-  .kzop2__final-inner>div:last-child{order:-1}
-}
-@media(max-width:768px){
-  .kzop2__section{padding:64px 0}
-  .kzop2__hero{padding:48px 0 60px}
-  .kzop2__hero-grid{grid-template-columns:1fr;gap:40px;padding:0 20px}
-  .kzop2__hero-card{position:static;top:auto}
-  .kzop2__hero-title{font-size:clamp(32px,8vw,48px)}
-  .kzop2__wrap{padding:0 20px}
-  .kzop2__midcta-inner{padding:0 20px;flex-direction:column}
-  .kzop2__midcta-title{max-width:100%}
-  .kzop2__risks-grid{grid-template-columns:1fr 1fr}
-  .kzop2__final{padding:64px 0}
-  .kzop2__final-inner{padding:0 20px}
-  .kzop2__midcta{padding:52px 0}
-}
-@media(max-width:560px){
-  .kzop2__section{padding:48px 0}
-  .kzop2__who-grid{grid-template-columns:1fr}
-  .kzop2__inc-grid{grid-template-columns:1fr}
-  .kzop2__process-track{grid-template-columns:1fr}
-  .kzop2__risks-grid{grid-template-columns:1fr}
-  .kzop2__trust-grid{grid-template-columns:repeat(2,1fr)}
-  .kzop2__services-grid{grid-template-columns:1fr}
-  .kzop2__hero-stats{gap:0}
-  .kzop2__hero-stat{font-size:12px;padding:0 10px}
-  .kzop2__hero-stat:first-child{padding-left:0}
-}
+.kzhero__msg{margin-top:12px;padding:11px 13px;font-size:13.5px;line-height:1.45;border-radius:10px}
+.kzhero__msg--ok{color:#065F46;background:var(--green-bg);border:1px solid var(--green-br);font-weight:700}
+.kzhero__msg--err{color:var(--red);background:var(--red-bg);border:1px solid var(--red-br)}
 
-/* ─── STEP ENTRANCE ANIMATION ─── */
-.kzop2__step{
-  opacity:0;
-  transform:translateY(18px);
-  transition:opacity 0.45s cubic-bezier(0.4,0,0.2,1),transform 0.45s cubic-bezier(0.4,0,0.2,1);
-}
-[data-section="process"].kzop2-seen .kzop2__step:nth-child(1){opacity:1;transform:none;transition-delay:0.05s}
-[data-section="process"].kzop2-seen .kzop2__step:nth-child(2){opacity:1;transform:none;transition-delay:0.15s}
-[data-section="process"].kzop2-seen .kzop2__step:nth-child(3){opacity:1;transform:none;transition-delay:0.25s}
-[data-section="process"].kzop2-seen .kzop2__step:nth-child(4){opacity:1;transform:none;transition-delay:0.35s}
-[data-section="process"].kzop2-seen .kzop2__step:nth-child(5){opacity:1;transform:none;transition-delay:0.45s}
+.kzhero__form-card.kzhero--done .kzhero__form-title,
+.kzhero__form-card.kzhero--done .kzhero__fields,
+.kzhero__form-card.kzhero--done .kzhero__submit,
+.kzhero__form-card.kzhero--done .kzhero__microcopy,
+.kzhero__form-card.kzhero--done .kzop2__consent{display:none}
 
-/* ─── MID-CTA FORM ─── */
-.kzop2__midcta-form{max-width:500px;width:100%;margin-top:28px}
-.kzop2__midcta-input-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-.kzop2__midcta-tel{
-  flex:1;min-width:180px;height:50px;padding:0 18px;
-  border-radius:12px;border:1px solid rgba(255,255,255,0.18);
-  background:rgba(255,255,255,0.09);
-  font-family:var(--font);font-size:15px;color:#fff;outline:none;
-  transition:border-color var(--tr),background var(--tr);
-}
-.kzop2__midcta-tel::placeholder{color:rgba(255,255,255,0.35)}
-.kzop2__midcta-tel:focus{border-color:rgba(255,255,255,0.4);background:rgba(255,255,255,0.14)}
+.kzhero__hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none}
 
-/* ─── CONSENT CHECKBOX ─── */
-.kzop2__consent{
-  display:flex;align-items:flex-start;gap:8px;
-  margin-top:12px;
-}
-.kzop2__consent input[type=checkbox]{
-  flex-shrink:0;width:15px;height:15px;
-  margin-top:2px;cursor:pointer;
-  accent-color:var(--blue);
-}
-.kzop2__consent label{
-  font-size:11px;color:var(--t3);line-height:1.5;cursor:pointer;
-}
-.kzop2__consent a{color:inherit;text-decoration:underline;text-underline-offset:2px}
-.kzop2__consent--dark label{color:rgba(255,255,255,0.32)}
-.kzop2__consent--dark a{color:rgba(255,255,255,0.5)}
+.kzhero__phone-cta{font-size:14px;color:var(--t3)}
+.kzhero__phone-cta a{font-weight:800;color:var(--blue);text-decoration:none;white-space:nowrap}
+.kzhero__phone-cta a:hover{text-decoration:underline}
 
-/* ─── TRUST COUNTER ANIMATION ─── */
-.kzop2__trust-num{transition:color 0.3s}
+.kzhero__sticky{display:none}
 
-/* ─── RESPONSIVE MIDCTA ─── */
-@media(max-width:768px){
-  .kzop2__midcta-center{padding:0 20px}
-  .kzop2__midcta-tel{max-width:100%}
-}
-
-/* ─── STICKY MOBILE CTA ─── */
+/* ── Sticky-док (мобильный) — 2026 ── */
 .kzop2__sticky{
-  position:fixed;bottom:0;left:0;right:0;z-index:9000;
-  background:var(--bg-dark);
-  padding:12px 16px 16px;
-  display:flex;align-items:center;gap:10px;
-  box-shadow:0 -4px 24px rgba(0,0,0,0.22);
-  transform:translateY(100%);
-  transition:transform 0.3s cubic-bezier(0.4,0,0.2,1);
+  background:linear-gradient(to top,var(--bg) 42%,rgba(247,249,254,0.82) 72%,rgba(247,249,254,0));
+  -webkit-backdrop-filter:none;backdrop-filter:none;
+  padding:22px 16px calc(16px + env(safe-area-inset-bottom,0px));
+  gap:12px;border-top:none;box-shadow:none;
 }
-.kzop2__sticky.kzop2-show{transform:translateY(0)}
-.kzop2__sticky a{flex:1;justify-content:center;font-size:14px;height:46px;padding:0 16px}
-@media(min-width:769px){.kzop2__sticky{display:none}}
-
-/* ─── AVAILABILITY INDICATOR ─── */
-.kzop2-avail{display:flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600}
-.kzop2-avail__dot{
-  width:7px;height:7px;border-radius:50%;flex-shrink:0;
-  background:var(--green);
-  box-shadow:0 0 0 3px rgba(5,150,105,0.2);
-  animation:kzop2-pulse 2s ease-in-out infinite;
+.kzop2__sticky a{
+  height:56px;font-size:16px;font-weight:700;letter-spacing:-0.01em;
+  transition:transform .16s cubic-bezier(0.16,1,0.3,1),box-shadow .2s ease;
 }
-.kzop2-avail--off .kzop2-avail__dot{background:var(--t3);animation:none;box-shadow:none}
-.kzop2-avail--dark{color:rgba(255,255,255,0.55)}
-.kzop2-avail--light{color:var(--t2)}
-
-/* ─── ЧТО ПОТРЕБУЕТСЯ ─── */
-.kzop2__docs-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.kzop2__doc-card{
-  background:var(--bg-w);border:1px solid var(--border);
-  border-radius:var(--r-l);padding:22px 20px;
-  display:flex;flex-direction:column;gap:10px;
-  transition:box-shadow var(--tr),transform var(--tr);
+.kzop2__sticky a:active{transform:scale(0.95)}
+/* «Позвонить» — круглая иконка-кнопка */
+.kzop2__sticky .kzop2__btn--ghost,
+.kzop2__sticky .kzop2__btn--ghost:hover{
+  flex:0 0 56px;width:56px;padding:0;border-radius:50%;
+  background:#fff;color:#059669;border:1.5px solid #D6EFE3;
+  box-shadow:0 8px 20px rgba(12,27,51,0.14);
 }
-.kzop2__doc-card:hover{box-shadow:var(--sh);transform:translateY(-2px)}
-.kzop2__doc-icon{
-  width:40px;height:40px;border-radius:10px;
-  background:var(--blue-bg);border:1px solid var(--blue-br);
+.kzop2__sticky .kzop2__btn--ghost svg{width:22px;height:22px}
+/* «Открыть счёт» — синяя пилюля-CTA с акцентом */
+.kzop2__sticky .kzop2__btn--primary,
+.kzop2__sticky .kzop2__btn--primary:hover{
+  flex:1;border-radius:999px;gap:10px;
+  background:linear-gradient(135deg,#3B6BEA 0%,#1E50D4 62%,#1A45BE 100%)!important;
+  box-shadow:0 10px 28px rgba(30,80,212,0.42);
+  animation:kzcta-glow 2.8s ease-in-out infinite;
+}
+.kzcta-arrow{
   display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  width:30px;height:30px;border-radius:50%;background:#fff;
 }
-.kzop2__doc-icon svg{width:20px;height:20px;stroke:var(--blue);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.kzop2__doc-title{font-size:14px;font-weight:700;color:var(--navy);line-height:1.3}
-.kzop2__doc-hint{font-size:12px;color:var(--t3);line-height:1.5}
-.kzop2__docs-note{
-  margin-top:20px;padding:14px 18px;
-  border-radius:var(--r);background:var(--green-bg);border:1px solid var(--green-br);
-  font-size:13px;color:#065F46;display:flex;align-items:flex-start;gap:10px;
+.kzcta-arrow svg{width:14px;height:14px;stroke:#1E50D4;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+@keyframes kzcta-glow{
+  0%,100%{box-shadow:0 8px 22px rgba(30,80,212,0.34)}
+  50%{box-shadow:0 14px 36px rgba(30,80,212,0.56)}
 }
-.kzop2__docs-note svg{width:16px;height:16px;flex-shrink:0;stroke:#059669;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;margin-top:1px}
-
-/* ─── СРАВНЕНИЕ ─── */
-.kzop2__cmp-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
-.kzop2__cmp{width:100%;min-width:540px;border-collapse:collapse;border-radius:var(--r-l);overflow:hidden}
-.kzop2__cmp thead tr th{
-  padding:14px 20px;font-size:12px;font-weight:700;
-  letter-spacing:0.05em;text-transform:uppercase;
-}
-.kzop2__cmp th.kzop2-col-param{background:var(--bg-s);color:var(--t3);text-align:left;width:32%}
-.kzop2__cmp th.kzop2-col-self{background:var(--red-bg);color:var(--red);text-align:center;width:34%}
-.kzop2__cmp th.kzop2-col-us{background:var(--blue);color:#fff;text-align:center;width:34%}
-.kzop2__cmp tbody tr:nth-child(even) td{background:rgba(0,0,0,0.015)}
-.kzop2__cmp tbody tr:hover td{background:var(--blue-bg)}
-.kzop2__cmp td{
-  padding:13px 20px;font-size:14px;border-top:1px solid var(--border);
-}
-.kzop2__cmp td:first-child{font-weight:600;color:var(--navy);background:var(--bg-w)}
-.kzop2__cmp td.kzop2-col-self{text-align:center;color:var(--red);background:rgba(254,242,242,0.5)}
-.kzop2__cmp td.kzop2-col-us{text-align:center;color:var(--blue);font-weight:700;background:var(--blue-bg)}
-.kzop2__cmp-badge{
-  display:inline-flex;align-items:center;gap:5px;
-  font-size:12px;font-weight:700;padding:3px 10px;
-  border-radius:100px;
-}
-.kzop2__cmp-badge--good{background:var(--green-bg);color:var(--green)}
-.kzop2__cmp-badge--bad{background:var(--red-bg);color:var(--red)}
-
-/* ─── КЕЙСЫ (iPhone-карусель) ─── */
-.kzop2__cases-carousel{position:relative}
-.kzop2__case-slide{display:none}
-.kzop2__case-slide--active{display:block}
-.kzop2__case-layout{
-  display:grid;grid-template-columns:310px 1fr;gap:48px;align-items:stretch;
-}
-
-/* ── iPhone outer frame ── */
-.kzop2__iphone{
-  width:290px;
-  background:#1C1C1E;
-  border-radius:44px;
-  position:relative;
-  box-shadow:
-    0 0 0 1px #3D3D3F,
-    inset 0 0 0 1px rgba(255,255,255,0.07),
-    0 32px 80px rgba(0,0,0,0.38),
-    0 8px 24px rgba(0,0,0,0.22);
-  padding:10px 10px 14px;
-}
-/* volume buttons (left) */
-.kzop2__iphone::before{
-  content:'';position:absolute;
-  left:-3px;top:88px;
-  width:3px;height:28px;
-  background:#3D3D3F;border-radius:2px 0 0 2px;
-  box-shadow:0 40px 0 #3D3D3F, 0 78px 0 #3D3D3F;
-}
-/* power button (right) */
-.kzop2__iphone::after{
-  content:'';position:absolute;
-  right:-3px;top:126px;
-  width:3px;height:58px;
-  background:#3D3D3F;border-radius:0 2px 2px 0;
-}
-.kzop2__iphone-inner{
-  border-radius:34px;overflow:hidden;
-  background:#000;
-}
-/* Dynamic Island */
-.kzop2__iphone-chrome{
-  background:#000;
-  display:flex;justify-content:center;align-items:flex-end;
-  padding:9px 0 5px;
-}
-.kzop2__iphone-island{
-  width:90px;height:26px;
-  background:#000;border-radius:22px;
-  border:1.5px solid #1a1a1a;
-  box-shadow:inset 0 1px 2px rgba(255,255,255,0.04);
-}
-/* Status bar */
-.kzop2__iphone-status{
-  display:flex;justify-content:space-between;align-items:center;
-  padding:3px 18px 3px 20px;
-  font-size:11.5px;font-weight:700;letter-spacing:-0.01em;
-  color:#fff;font-family:var(--font);
-}
-.kzop2__iphone-status-icons{display:flex;align-items:center;gap:5px}
-.kzop2__iphone-status-icons svg{display:block}
-
-/* Home bar */
-.kzop2__iphone-home{
-  display:flex;justify-content:center;padding:6px 0 8px;
-}
-.kzop2__iphone-home-bar{
-  width:110px;height:4px;border-radius:3px;
-  background:rgba(0,0,0,0.2);
-}
-
-/* ── TG / WA colour variants ── */
-.kzop2__iphone--tg .kzop2__iphone-status{background:linear-gradient(135deg,#2AABEE,#229ED9)}
-.kzop2__iphone--tg .kzop2__iphone-home{background:#EFF3F8}
-.kzop2__iphone--tg .kzop2__iphone-home-bar{background:rgba(0,0,0,0.15)}
-
-.kzop2__iphone--wa .kzop2__iphone-status{background:#075E54}
-.kzop2__iphone--wa .kzop2__iphone-home{background:#ECE5DD}
-.kzop2__iphone--wa .kzop2__iphone-home-bar{background:rgba(0,0,0,0.18)}
-
-/* ── TELEGRAM header ── */
-.kzop2__iphone--tg .kzop2__chat-header{
-  background:linear-gradient(135deg,#2AABEE,#229ED9);
-  padding:9px 14px;display:flex;align-items:center;gap:10px;
-}
-/* ── WHATSAPP header ── */
-.kzop2__iphone--wa .kzop2__chat-header{
-  background:#075E54;
-  padding:9px 14px;display:flex;align-items:center;gap:10px;
-}
-.kzop2__chat-avatar{
-  width:34px;height:34px;border-radius:50%;
-  display:flex;align-items:center;justify-content:center;flex-shrink:0;
-  font-size:12px;font-weight:700;color:#fff;
-}
-.kzop2__iphone--tg .kzop2__chat-avatar{background:rgba(255,255,255,0.22)}
-.kzop2__iphone--wa .kzop2__chat-avatar{background:#128C7E}
-.kzop2__chat-hinfo{flex:1;min-width:0}
-.kzop2__chat-hname{
-  font-size:13px;font-weight:700;color:#fff;line-height:1.2;
-  display:flex;align-items:center;gap:5px;
-}
-.kzop2__chat-hname-blur{
-  display:inline-block;filter:blur(5px);user-select:none;
-  background:rgba(255,255,255,0.15);border-radius:3px;padding:0 3px;
-}
-.kzop2__chat-hstatus{font-size:10.5px;color:rgba(255,255,255,0.7);margin-top:1px}
-
-/* ── Chat body ── */
-.kzop2__iphone--tg .kzop2__chat-body{
-  padding:8px 8px 10px;background:#EFF3F8;
-  display:flex;flex-direction:column;gap:3px;
-  height:450px;overflow-y:scroll;scrollbar-width:none;
-}
-.kzop2__iphone--tg .kzop2__chat-body::-webkit-scrollbar{display:none}
-.kzop2__iphone--wa .kzop2__chat-body{
-  padding:8px 8px 10px;
-  background:#ECE5DD;
-  display:flex;flex-direction:column;gap:3px;
-  height:450px;overflow-y:scroll;scrollbar-width:none;
-}
-.kzop2__iphone--wa .kzop2__chat-body::-webkit-scrollbar{display:none}
-
-.kzop2__chat-date-sep{text-align:center;margin:5px 0}
-.kzop2__chat-date-sep span{
-  background:rgba(255,255,255,0.82);color:#667781;font-size:10.5px;
-  padding:3px 9px;border-radius:7px;font-weight:500;
-  box-shadow:0 1px 2px rgba(0,0,0,0.08);
-}
-.kzop2__iphone--tg .kzop2__chat-msg--in{background:#fff;border-radius:12px 12px 12px 3px;box-shadow:0 1px 2px rgba(0,0,0,0.09)}
-.kzop2__iphone--tg .kzop2__chat-msg--out{background:#EFFDDE;border-radius:12px 12px 3px 12px;box-shadow:0 1px 2px rgba(0,0,0,0.09)}
-.kzop2__iphone--wa .kzop2__chat-msg--in{
-  background:#fff;border-radius:8px 8px 8px 2px;
-  box-shadow:0 1px 2px rgba(0,0,0,0.1);position:relative;
-}
-.kzop2__iphone--wa .kzop2__chat-msg--in::before{
-  content:'';position:absolute;top:0;left:-6px;
-  border:5px solid transparent;
-  border-top-color:#fff;border-right-color:#fff;
-}
-.kzop2__iphone--wa .kzop2__chat-msg--out{
-  background:#DCF8C6;border-radius:8px 8px 2px 8px;
-  box-shadow:0 1px 2px rgba(0,0,0,0.1);position:relative;
-}
-.kzop2__iphone--wa .kzop2__chat-msg--out::after{
-  content:'';position:absolute;top:0;right:-6px;
-  border:5px solid transparent;
-  border-top-color:#DCF8C6;border-left-color:#DCF8C6;
-}
-.kzop2__chat-msg{
-  max-width:80%;padding:6px 10px 18px;
-  font-size:12.5px;line-height:1.45;color:#111;
-  position:relative;word-break:break-word;
-}
-.kzop2__chat-msg--in{align-self:flex-start}
-.kzop2__chat-msg--out{align-self:flex-end}
-.kzop2__chat-time{
-  position:absolute;bottom:4px;right:8px;
-  font-size:9.5px;color:#8696A0;display:flex;align-items:center;gap:2px;
-}
-.kzop2__iphone--tg .kzop2__chat-msg--out .kzop2__chat-time{color:#5BB2F8}
-.kzop2__iphone--wa .kzop2__chat-msg--out .kzop2__chat-time{color:#53BDEB}
-.kzop2__chat-tick{font-size:10px;line-height:1}
-
-/* ── Messenger badge ── */
-.kzop2__chat-badge{
-  display:inline-flex;align-items:center;gap:5px;
-  font-size:10.5px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;
-  padding:3px 9px;border-radius:5px;margin-bottom:10px;
-}
-.kzop2__chat-badge--tg{background:#E3F2FD;color:#0088CC;border:1px solid #BBDEFB}
-.kzop2__chat-badge--wa{background:#E8F5E9;color:#075E54;border:1px solid #C8E6C9}
-.kzop2__chat-badge svg{width:12px;height:12px}
-
-/* ── Case info ── */
-.kzop2__case-info{display:flex;flex-direction:column;padding-top:32px}
-.kzop2__case-ind{
-  display:inline-block;align-self:flex-start;font-size:11px;font-weight:700;letter-spacing:0.07em;
-  text-transform:uppercase;color:var(--blue);background:var(--blue-bg);
-  border:1px solid var(--blue-br);border-radius:6px;padding:4px 10px;margin-bottom:10px;
-}
-.kzop2__case-title{
-  font-size:clamp(18px,1.9vw,22px);font-weight:800;color:var(--navy);
-  line-height:1.2;letter-spacing:-0.025em;margin-bottom:14px;
-}
-.kzop2__case-blocks{display:flex;flex-direction:column;gap:11px;margin-bottom:0}
-.kzop2__case-block{border-radius:12px;padding:13px 16px;border:1px solid transparent;align-self:stretch}
-.kzop2__case-block--prb{background:var(--amber-bg);border-color:var(--amber-br)}
-.kzop2__case-block--did{background:var(--blue-bg);border-color:var(--blue-br)}
-.kzop2__case-block--res{background:var(--green-bg);border-color:var(--green-br)}
-.kzop2__case-block-label{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px}
-.kzop2__case-block--prb .kzop2__case-block-label{color:var(--amber)}
-.kzop2__case-block--did .kzop2__case-block-label{color:var(--blue)}
-.kzop2__case-block--res .kzop2__case-block-label{color:var(--green)}
-.kzop2__case-block-text{font-size:13px;line-height:1.6;color:var(--t2)}
-.kzop2__case-block-text strong{color:var(--navy)}
-
-/* ── Navigation + progress dots ── */
-.kzop2__case-nav{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
-.kzop2__case-nav-btn{
-  display:inline-flex;align-items:center;gap:6px;
-  padding:0 16px;height:40px;border-radius:10px;
-  font-family:var(--font);font-size:13px;font-weight:600;
-  cursor:pointer;border:1px solid var(--border2);background:var(--bg-w);
-  color:var(--t2);transition:all var(--tr);
-}
-.kzop2__case-nav-btn:hover:not(:disabled){border-color:var(--blue);color:var(--blue);background:var(--blue-bg)}
-.kzop2__case-nav-btn:disabled{opacity:0.3;cursor:default}
-.kzop2__case-nav-btn svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-
-.kzop2__case-dots{display:flex;gap:6px;align-items:center}
-.kzop2__case-dot{
-  width:8px;height:8px;border-radius:50%;
-  background:var(--border2);cursor:pointer;
-  border:none;padding:0;position:relative;overflow:hidden;
-  transition:width 0.25s,background 0.25s,border-radius 0.25s;
-}
-.kzop2__case-dot--active{background:var(--blue);width:26px;border-radius:4px}
-.kzop2__case-dot-fill{
-  position:absolute;left:0;top:0;height:100%;width:0%;
-  background:rgba(255,255,255,0.45);border-radius:inherit;
-  pointer-events:none;
-}
-
-@media(max-width:960px){
-  .kzop2__case-layout{grid-template-columns:1fr;gap:24px}
-  .kzop2__iphone{margin:0 auto}
-}
-@media(max-width:600px){
-  .kzop2__iphone{width:100%;max-width:290px}
-  .kzop2__case-nav{gap:8px}
-  .kzop2__case-nav-btn{font-size:12.5px;padding:0 12px}
-}
-
-/* ─── RESPONSIVE НОВЫЕ БЛОКИ ─── */
-@media(max-width:1024px){
-  .kzop2__docs-grid{grid-template-columns:repeat(2,1fr)}
-}
-@media(max-width:560px){
-  .kzop2__docs-grid{grid-template-columns:1fr 1fr}
-}
-
-/* ─── SCROLL REVEAL ─── */
-.kzop2-fade{
-  opacity:0;
-  transform:translateY(22px);
-  transition:opacity 0.65s cubic-bezier(0.16,1,0.3,1),
-             transform 0.65s cubic-bezier(0.16,1,0.3,1);
-  transition-delay:var(--fd,0ms);
-  will-change:opacity,transform;
-}
-.kzop2-fade.in{
-  opacity:1;
-  transform:translateY(0);
-}
-/* не анимировать если prefers-reduced-motion */
 @media(prefers-reduced-motion:reduce){
-  .kzop2-fade{opacity:1;transform:none;transition:none}
+  .kzop2__sticky .kzop2__btn--primary{animation:none}
 }
+/* ── Блок сравнения не ломает ширину страницы ── */
+[data-section="compare"]{overflow-x:clip}
+.kzcmp-short{display:none}
+/* ── Соц-доказательства «открыл счёт» скрыты на мобильном ── */
+@media(max-width:768px){#kzop2-sp{display:none!important}}
 
-/* ─── 1. EYEBROW PILLS ─── */
-.kzop2__eyebrow{
-  background:rgba(30,80,212,0.08);
-  border-radius:100px;
-  padding:5px 14px;
-  display:inline-block;
+/* ── Процесс: 6 шагов (head-CSS рассчитан на 5) ── */
+@media(min-width:1025px){
+  .kzop2__process-track{grid-template-columns:repeat(6,1fr)}
+  .kzop2__process-track::before,
+  .kzop2__process-track::after{left:calc(100% / 12);right:calc(100% / 12)}
 }
-.kzop2__section--risk .kzop2__eyebrow{background:rgba(220,38,38,0.08)!important}
+[data-section="process"].kzop2-seen .kzop2__step:nth-child(6){opacity:1;transform:none;transition-delay:0.55s}
 
-/* ─── 2. COMPARE TABLE: "С нами" — gradient column ─── */
-.kzop2__cmp th.kzop2-col-us{
-  background:linear-gradient(135deg,#1e4fd4 0%,#3B6AE8 100%);
-  position:relative;
-}
-.kzop2__cmp td.kzop2-col-us{
-  background:linear-gradient(180deg,rgba(30,80,212,0.07) 0%,rgba(30,80,212,0.04) 100%);
-  border-left:2px solid rgba(30,80,212,0.18);
-  border-right:2px solid rgba(30,80,212,0.18);
-  font-weight:600;
-}
-.kzop2__cmp tbody tr:last-child td.kzop2-col-us{border-bottom:2px solid rgba(30,80,212,0.18)}
-
-/* ─── 3. INC-NUM: gradient badge вместо просто цифры ─── */
-.kzop2__inc-num{
-  width:44px;height:44px;border-radius:12px;
-  background:linear-gradient(135deg,var(--blue) 0%,#5B8AFF 100%);
-  color:#fff;font-size:13px;font-weight:800;
-  display:flex;align-items:center;justify-content:center;
-  letter-spacing:0.02em;margin-bottom:16px;
-  box-shadow:0 4px 12px rgba(30,80,212,0.22);
-}
-
-/* ─── 4. FORM INPUT FOCUS GLOW ─── */
-.kzop2__field input:focus{
-  border-color:rgba(30,80,212,0.5)!important;
-  background:rgba(255,255,255,0.14)!important;
-  box-shadow:0 0 0 3px rgba(30,80,212,0.18)!important;
-}
-
-/* ─── 5. TRUST SECTION — стили перенесены в .kzop2__section--trust (wow pack) ─── */
-
-/* ─── 6. SCROLL PROGRESS BAR ─── */
-#kzop2-progress{
-  position:fixed;top:0;left:0;right:0;height:3px;
-  background:linear-gradient(90deg,var(--blue) 0%,rgba(91,138,255,0.85) 100%);
-  z-index:10001;transform-origin:left;transform:scaleX(0);
-  transition:transform 0.08s linear;pointer-events:none;
-}
-
-/* ─── 7. GRADIENT TEXT на span в тёмных секциях ─── */
-.kzop2__midcta-title span,
-.kzop2__final-title span{
-  background:linear-gradient(135deg,#7ab3ff 0%,#b8d4ff 100%);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  background-clip:text;color:#7ab3ff;
-}
-
-/* ─── 8. PARALLAX ORB (JS-controlled) ─── */
-.kzop2__hero-orb{
-  position:absolute;top:-200px;right:-180px;
-  width:900px;height:900px;border-radius:50%;
-  background:radial-gradient(ellipse at 50% 40%,rgba(91,138,255,0.15) 0%,rgba(30,80,212,0.07) 45%,transparent 68%);
-  pointer-events:none;z-index:0;will-change:transform;
-}
-
-/* ─── GRADIENT TEXT: span в hero-title ─── */
-.kzop2__hero-title span{
-  background:linear-gradient(135deg,#2356D8 0%,#5B8AFF 100%);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-  background-clip:text;
-  color:var(--blue);
-}
-
-/* ─── 1. CTA SHIMMER ─── */
-.kzop2__btn--primary{position:relative;overflow:hidden}
-.kzop2__btn--primary::after{
-  content:'';position:absolute;
-  top:0;left:-65%;
-  width:45%;height:100%;
-  background:linear-gradient(90deg,transparent 0%,rgba(255,255,255,0.28) 50%,transparent 100%);
-  transform:skewX(-18deg);
-  animation:kzop2-shimmer 3.8s ease-in-out infinite;
-  animation-delay:2.2s;
-  pointer-events:none;
-}
-@keyframes kzop2-shimmer{
-  0%{left:-65%}
-  35%,100%{left:130%}
-}
-@media(prefers-reduced-motion:reduce){.kzop2__btn--primary::after{display:none}}
-
-/* ─── 2. HERO CARD FLOAT ─── */
-@keyframes kzop2-float{
-  0%,100%{transform:translateY(0)}
-  50%{transform:translateY(-7px)}
-}
-.kzop2__hero-card{
-  animation:kzop2-float 4.5s ease-in-out infinite;
-  animation-delay:1.4s; /* ждём пока fade-in завершится */
-}
-@media(prefers-reduced-motion:reduce){.kzop2__hero-card{animation:none}}
-
-/* ─── 3. ANIMATED GRADIENT ORB ─── */
-@keyframes kzop2-orb{
-  0%{transform:translate(0,0) scale(1)}
-  25%{transform:translate(-50px,45px) scale(1.07)}
-  50%{transform:translate(-22px,80px) scale(0.95)}
-  75%{transform:translate(35px,22px) scale(1.04)}
-  100%{transform:translate(0,0) scale(1)}
-}
-/* orb animation moved to JS parallax div .kzop2__hero-orb */
-@media(prefers-reduced-motion:reduce){.kzop2__hero-orb{display:none}}
-
-/* ─── 4. 97% FLOATING BADGE ─── */
-.kzop2__stat-badge{
-  position:absolute;
-  top:-16px;right:24px;
-  display:inline-flex;align-items:center;gap:7px;
-  background:#fff;
-  border:1.5px solid var(--green-br);
-  border-radius:100px;
-  padding:7px 14px 7px 10px;
-  font-size:12.5px;font-weight:700;color:#065F46;
-  box-shadow:0 4px 20px rgba(5,150,105,0.16);
-  white-space:nowrap;z-index:10;
-  animation:kzop2-badge-glow 3s ease-in-out infinite;
-}
-.kzop2__stat-badge::before{
-  content:'';width:7px;height:7px;border-radius:50%;
-  background:var(--green);flex-shrink:0;
-  animation:kzop2-pulse 2s ease-in-out infinite;
-}
-@keyframes kzop2-badge-glow{
-  0%,100%{box-shadow:0 4px 20px rgba(5,150,105,0.16)}
-  50%{box-shadow:0 4px 28px rgba(5,150,105,0.35),0 0 0 5px rgba(5,150,105,0.07)}
-}
-
-/* ─── 5. FLOATING SOCIAL PROOF ─── */
-#kzop2-sp{
-  position:fixed;bottom:28px;left:24px;
-  z-index:9990;
-  background:#fff;
-  border:1px solid var(--border);
-  border-radius:16px;
-  padding:14px 18px;
-  box-shadow:0 8px 36px rgba(0,0,0,0.11),0 2px 8px rgba(0,0,0,0.06);
-  display:flex;align-items:center;gap:12px;
-  max-width:310px;
-  opacity:0;transform:translateY(18px);
-  transition:opacity 0.45s cubic-bezier(0.16,1,0.3,1),transform 0.45s cubic-bezier(0.16,1,0.3,1);
-  pointer-events:none;
-}
-#kzop2-sp.kz-show{opacity:1;transform:translateY(0)}
-.kzop2-sp-av{
-  width:40px;height:40px;border-radius:50%;flex-shrink:0;
-  background:var(--blue-bg);border:1.5px solid var(--blue-br);
-  display:flex;align-items:center;justify-content:center;
-  font-size:15px;font-weight:800;color:var(--blue);
-}
-.kzop2-sp-body{display:flex;flex-direction:column;gap:1px}
-.kzop2-sp-name{font-size:13px;font-weight:700;color:var(--navy);line-height:1.3}
-.kzop2-sp-act{font-size:12px;color:var(--t3);line-height:1.4}
-.kzop2-sp-time{font-size:11px;color:var(--blue);font-weight:600;margin-top:2px}
-
-/* ═══════════════════════════════════════════════════════════
-   WOW PACK v2: noise · spotlight · trust-light · magnetic · typed
-   ═══════════════════════════════════════════════════════════ */
-
-/* ─── NOISE TEXTURE on dark sections ─── */
-.kzop2__section--dark,
-.kzop2__final,
-.kzop2__midcta{
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.72' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.038'/%3E%3C/svg%3E");
-}
-
-/* ─── TRUST SECTION: premium light gradient ─── */
-.kzop2__section--trust{
-  background:linear-gradient(160deg,#EBF2FF 0%,#F7F9FE 40%,#EEF5FF 100%);
-  border-top:1px solid rgba(30,80,212,0.1);
-  border-bottom:1px solid rgba(30,80,212,0.1);
-  padding:64px 0;
-}
-@media(max-width:560px){.kzop2__section--trust{padding:48px 0}}
-.kzop2__section--trust .kzop2__trust-grid{
-  background:rgba(255,255,255,0.7);
-  border:1px solid rgba(30,80,212,0.12);
-  backdrop-filter:blur(8px);
-  box-shadow:0 8px 40px rgba(30,80,212,0.07),0 2px 12px rgba(30,80,212,0.05);
-}
-.kzop2__section--trust .kzop2__trust-item{
-  background:transparent;
-  position:relative;
-}
-.kzop2__section--trust .kzop2__trust-item:not(:last-child)::after{
-  content:'';position:absolute;right:0;top:20%;bottom:20%;
-  width:1px;background:rgba(30,80,212,0.1);
-}
-.kzop2__section--trust .kzop2__trust-num{
-  font-size:clamp(48px,5.5vw,68px);
-  background:linear-gradient(135deg,#0C1B33 0%,#1E50D4 100%);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
-}
-.kzop2__section--trust .kzop2__trust-num span{
-  background:linear-gradient(135deg,#1E50D4 0%,#5B8AFF 100%);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
-}
-.kzop2__section--trust .kzop2__trust-label{
-  color:var(--t2);font-size:13.5px;
-}
-
-/* ─── SPOTLIGHT ON CARDS ─── */
-.kzop2-spotlight{
-  position:relative;overflow:hidden;
-}
-.kzop2-spotlight::before{
-  content:'';
-  position:absolute;inset:0;
-  background:radial-gradient(circle 260px at var(--sx,50%) var(--sy,50%),rgba(30,80,212,0.07) 0%,transparent 68%);
-  opacity:0;transition:opacity 0.35s ease;
-  pointer-events:none;z-index:1;border-radius:inherit;
-}
-.kzop2-spotlight:hover::before{opacity:1}
-
-/* ─── TYPED TEXT ─── */
-#kzop2-typed{
-  display:inline;
-  transition:opacity 0.28s ease,transform 0.28s ease;
-  will-change:opacity,transform;
-}
-#kzop2-typed.kz-out{
-  opacity:0;transform:translateY(-6px);
-  display:inline-block;
-}
-
-/* ─── MAGNETIC BUTTON smooth transition ─── */
-.kzop2__btn--primary{transition:background var(--tr),transform 0.25s cubic-bezier(0.23,1,0.32,1),box-shadow var(--tr)}
-
-/* ─── COSMOS SECTION ─── */
-.kzop2__section--cosmos{background:#060D1A;padding:56px 0 44px}
-@media(max-width:768px){.kzop2__section--cosmos{padding:40px 0 28px}}
-.kzop2__section--cosmos .kzop2__eyebrow{color:rgba(91,138,255,0.75)}
-.kzop2__section--cosmos .kzop2__h2{color:#E8F0FF}
-.kzop2__section--cosmos .kzop2__lead{color:rgba(180,200,240,0.5)}
-/* Hide HTML nodes in canvas 3D mode (desktop); show as pills on mobile */
-.kzop2__clients-web.kz-3d .kzop2__web-node{display:none}
-
-/* ─── CLIENTS WEB — full-viewport breakout ─── */
-.kzop2__clients-web{
-  position:relative;
-  height:460px;
-  margin-top:32px;
-  /* break out of .kzop2__wrap */
-  width:100vw;
-  left:50%;
-  transform:translateX(-50%);
-  overflow:hidden;
+@media(max-width:1024px){
+  .kzop2__hero-grid{grid-template-columns:minmax(0,1fr) 340px;gap:34px}
 }
 @media(max-width:768px){
-  .kzop2__clients-web{
-    width:100%;left:0;transform:none;
-    height:auto;overflow:visible;
-    display:flex;flex-wrap:wrap;align-items:flex-start;
-    gap:8px;padding:16px 20px 24px;
-  }
-}
-#kzop2-web-svg{display:none}
-
-/* ─── NODE BASE — JS sets left/top each frame ─── */
-.kzop2__web-node{
-  position:absolute;
-  left:0;top:0;
-  transform:translate(-50%,-50%);
-  display:inline-flex;align-items:center;gap:7px;
-  background:rgba(6,15,42,0.80);
-  border:1px solid rgba(91,138,255,0.22);
-  border-radius:100px;
-  padding:6px 13px 6px 7px;
-  cursor:default;z-index:2;
-  white-space:nowrap;
-  font-size:12px;font-weight:600;color:rgba(215,230,255,0.9);
-  font-family:var(--font);
-  backdrop-filter:blur(10px);
-  transition:box-shadow 0.35s,border-color 0.35s,background 0.35s,transform 0.35s;
-}
-/* Size variants */
-.kzop2__web-node.kz-sm{font-size:10.5px;padding:4px 10px 4px 5px}
-.kzop2__web-node.kz-sm .kzop2__web-mono-sm{width:16px;height:16px;font-size:6px}
-.kzop2__web-node.kz-lg{font-size:14px;padding:9px 17px 9px 9px}
-.kzop2__web-node.kz-lg .kzop2__web-mono-sm{width:24px;height:24px;font-size:9px}
-/* Hover */
-.kzop2__web-node.kz-hover{
-  background:rgba(8,22,72,0.97)!important;
-  border-color:rgba(91,138,255,0.85)!important;
-  box-shadow:0 0 0 3px rgba(91,138,255,0.12),0 0 24px rgba(91,138,255,0.55),0 0 52px rgba(91,138,255,0.2)!important;
-  transform:translate(-50%,-50%) scale(1.35)!important;
-  z-index:20!important;
-}
-.kzop2__web-node.kz-connected{
-  border-color:rgba(91,138,255,0.42)!important;
-  background:rgba(7,18,58,0.9)!important;
-}
-/* Monogram badge */
-.kzop2__web-mono-sm{
-  width:20px;height:20px;border-radius:5px;
-  display:flex;align-items:center;justify-content:center;
-  font-size:7.5px;font-weight:800;flex-shrink:0;
-}
-.kzop2__client-mono--a{background:rgba(30,80,212,0.42);color:#7ab3ff}
-.kzop2__client-mono--b{background:rgba(100,50,200,0.42);color:#c084fc}
-.kzop2__client-mono--c{background:rgba(5,110,100,0.42);color:#2dd4bf}
-.kzop2__client-mono--d{background:rgba(130,75,5,0.42);color:#fbbf24}
-.kzop2__client-mono--e{background:rgba(40,55,90,0.55);color:#94a3b8}
-@media(max-width:768px){
-  .kzop2__web-node{
-    position:static;transform:none!important;
-    backdrop-filter:none;
-    flex:0 0 auto;
-    display:inline-flex;
-    background:rgba(10,22,55,0.72)!important;
-    border-color:rgba(91,138,255,0.28)!important;
-  }
-}
-
-/* ─── FOOTER — prominent 314+ counter ─── */
-.kzop2__clients-footer{
-  text-align:center;margin-top:28px;
-  font-size:14px;color:rgba(140,165,215,0.5);font-weight:500;letter-spacing:0.01em;
-}
-.kzop2__clients-footer strong{
-  color:#5B8AFF;font-size:24px;font-weight:800;
-  letter-spacing:-0.02em;margin-right:3px;
-  text-shadow:0 0 20px rgba(91,138,255,0.4);
-}
-
-/* ─── TEAM / EXPERTS ─── */
-.kzop2__team-grid{
-  display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:40px;
-}
-@media(max-width:768px){.kzop2__team-grid{margin-top:24px}}
-@media(max-width:640px){.kzop2__team-grid{grid-template-columns:1fr}}
-@media(max-width:560px){.kzop2__expert-card{padding:20px 16px;gap:14px}}
-.kzop2__expert-card{
-  background:var(--bg-w);border:1px solid var(--border);
-  border-radius:var(--r-l);padding:28px 24px;
-  display:flex;align-items:flex-start;gap:20px;
-  box-shadow:var(--sh);
-  transition:border-color var(--tr),box-shadow var(--tr),transform var(--tr);
-}
-.kzop2__expert-card:hover{
-  border-color:var(--blue-br);box-shadow:var(--sh-blue);transform:translateY(-2px);
-}
-.kzop2__expert-avatar{
-  width:72px;height:72px;min-width:72px;border-radius:50%;overflow:hidden;
-  box-shadow:0 0 0 3px var(--blue-bg),0 0 0 5px var(--blue-br);
-}
-.kzop2__expert-avatar svg{width:72px;height:72px;display:block}
-.kzop2__expert-name{font-size:16px;font-weight:800;color:var(--navy);margin-bottom:3px;letter-spacing:-0.01em}
-.kzop2__expert-role{font-size:12px;color:var(--blue);font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:10px}
-.kzop2__expert-bio{font-size:13px;color:var(--t2);line-height:1.6;margin-bottom:14px}
-.kzop2__expert-stats{display:flex;gap:8px;flex-wrap:wrap}
-.kzop2__expert-stat{
-  background:var(--blue-bg);border:1px solid var(--blue-br);border-radius:100px;
-  padding:4px 11px;font-size:11.5px;font-weight:700;color:var(--blue);
+  .kzop2__hero{padding:40px 0}
+  .kzop2__hero-grid{display:flex;flex-direction:column;gap:18px;padding:0 20px}
+  .kzhero__col{display:contents}
+  .kzop2__hero-badge{order:1;text-wrap:balance;line-height:1.4}
+  .kzhero__title{order:2;font-size:clamp(28px,7.4vw,40px)}
+  .kzhero__sub{order:3;font-size:15px;max-width:none}
+  .kzhero__stats{order:4;width:100%;flex-direction:column;gap:8px;padding:8px}
+  .kzhero__stats-label{align-self:center;padding:9px 18px}
+  .kzhero__stats-row{width:100%}
+  .kzhero__stat{flex:1}
+  .kzhero__stat-num{font-size:24px}
+  .kzop2__hero-card{order:5}
+  .kzhero__form-card{order:6;max-width:none}
+  .kzhero__phone-cta{order:7;align-self:center}
+  .kzop2__cmp{min-width:0;table-layout:fixed}
+  .kzop2__cmp th,.kzop2__cmp td{padding:9px 7px;font-size:11.5px}
+  .kzop2__cmp-badge{font-size:10px;padding:3px 6px;white-space:normal;display:inline-block}
+  .kzcmp-full{display:none}
+  .kzcmp-short{display:inline}
+  .kzop2__clients-web .kzop2__web-node:nth-child(n+20){display:none}
+  .kzhero__fields{grid-template-columns:1fr}
+  .kzhero__field--name{display:none}
+  .kzhero__btn-desktop{display:none}
+  .kzhero__btn-mobile{display:inline}
+  .kzhero__title-br{display:inline}
+  .kzhero__form-title{font-size:18px;line-height:1.32}
 }
 </style>
-
-<div class="kzop2">
 
 <!-- TILDA: Zero Block · Название блока: "Герой — Открытие счёта" -->
 <section class="kzop2__hero" data-section="hero">
   <div class="kzop2__hero-grid">
 
     <!-- Left -->
-    <div>
-      <div class="kzop2__hero-badge">
-        Казначейское сопровождение с 2016 года · 400+ клиентов
-      </div>
-      <h1 class="kzop2__hero-title">
-        Казначейский счёт —<br>
-        <span id="kzop2-typed">открыть за 1 день.</span><br>
-        Без возвратов.
+    <div class="kzhero__col">
+      <div class="kzop2__hero-badge">Казначейское сопровождение с 2016 года · 400+ клиентов</div>
+
+      <h1 class="kzhero__title">
+        Открыть казначейский счёт<br>
+        <span style="color:var(--blue)">за&nbsp;2&nbsp;рабочих&nbsp;дня</span>
       </h1>
-      <p class="kzop2__hero-sub">
-        Берём на себя полный пакет документов, взаимодействие с казначейством и контроль статуса. Работаем по всей России.
+
+      <p class="kzhero__sub">
+        Подача документов в УФК, настройка ГИИС «Электронный бюджет» и открытие счёта — под ключ, без вашего участия.
       </p>
-      <div class="kzop2__hero-stats">
-        <div class="kzop2__hero-stat">
-          <svg viewBox="0 0 14 14"><path d="M7 1v6l3.5 2"/><circle cx="7" cy="7" r="6"/></svg>
-          15+ лет опыта
+
+      <div class="kzhero__stats">
+        <div class="kzhero__stats-label">
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <circle cx="10" cy="10" r="10" fill="#34D399"></circle>
+            <path d="M5.6 10.3l2.9 2.9 6-6.5" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <span data-hv="statsMonthLabel">За апрель 2026</span>
         </div>
-        <div class="kzop2__hero-stat">
-          <svg viewBox="0 0 14 14"><path d="M2 5l2.5 2.5L8 3"/><rect x="1" y="1" width="12" height="12" rx="2"/></svg>
-          400+ клиентов
-        </div>
-        <div class="kzop2__hero-stat">
-          <svg viewBox="0 0 14 14"><path d="M2 7l3.5 3.5L12 3"/></svg>
-          97% без возвратов
-        </div>
-        <div class="kzop2__hero-stat">
-          <svg viewBox="0 0 14 14"><path d="M7 1a6 6 0 100 12A6 6 0 007 1z"/><path d="M4 7l2 2 4-4"/></svg>
-          Вся Россия
+        <div class="kzhero__stats-row">
+          <div class="kzhero__stat">
+            <span class="kzhero__stat-num" data-hv="statsAccounts">47</span>
+            <span class="kzhero__stat-lbl">счетов</span>
+          </div>
+          <div class="kzhero__stat">
+            <span class="kzhero__stat-num" data-hv="statsReturns">0</span>
+            <span class="kzhero__stat-lbl">возвратов</span>
+          </div>
+          <div class="kzhero__stat">
+            <span class="kzhero__stat-num" data-hv="statsAvgDays">2</span>
+            <span class="kzhero__stat-lbl">дня</span>
+          </div>
         </div>
       </div>
-      <div class="kzop2__hero-ctas">
-        <a href="#form" class="kzop2__btn kzop2__btn--primary" data-goal="hero_cta_click" data-cta="hero_primary">
-          Открыть счёт за 1 день
-          <svg viewBox="0 0 16 16"><path d="M3 8h10M8 3l5 5-5 5"/></svg>
-        </a>
-        <a href="tel:+74951084232" class="kzop2__btn kzop2__btn--outline" data-goal="hero_cta_click" data-cta="hero_phone">
-          <svg viewBox="0 0 16 16"><path d="M5 2H3a1 1 0 00-1 1v1c0 6.075 4.925 11 11 11h1a1 1 0 001-1v-2l-4-1-1 1.5A9 9 0 014.5 5L6 4 5 2z"/></svg>
-          +7 (495) 108-42-32
-        </a>
+
+      <div class="kzhero__form-card">
+        <form class="kzhero__form" novalidate>
+          <div class="kzhero__form-title">Оставьте заявку —<br class="kzhero__title-br"> откроем счёт за 2 дня</div>
+
+          <div class="kzhero__fields">
+            <div class="kzhero__field kzhero__field--name">
+              <label class="kzhero__label" for="kzhero-name">Имя</label>
+              <input class="kzhero__input" id="kzhero-name" name="name" type="text" autocomplete="given-name" maxlength="60" placeholder="Иван Иванов">
+            </div>
+            <div class="kzhero__field">
+              <label class="kzhero__label" for="kzhero-phone">Телефон</label>
+              <input class="kzhero__input kzhero__phone" id="kzhero-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="18" placeholder="+7 (___) ___-__-__" required>
+            </div>
+          </div>
+
+          <input type="text" class="kzhero__hp" name="company_extra" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <button class="kzop2__btn kzop2__btn--primary kzhero__submit" type="submit" disabled>
+            <span class="kzhero__btn-desktop">Оставить заявку</span>
+            <span class="kzhero__btn-mobile">Оставить заявку</span>
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M8 3l5 5-5 5"/></svg>
+          </button>
+
+          <p class="kzhero__microcopy">Перезвоним за 5 минут. Без спама. Согласие на ОПД.</p>
+
+          <div class="kzop2__consent">
+            <input type="checkbox" id="kzhero-consent" required>
+            <label for="kzhero-consent">
+              Я согласен на обработку персональных данных в соответствии с <a href="https://kazna-gov.ru/personal_data_policy">политикой в отношении обработки персональных данных</a>
+            </label>
+          </div>
+        </form>
+
+        <div class="kzhero__msg" role="status" aria-live="polite" hidden></div>
       </div>
+
+      <p class="kzhero__phone-cta">
+        Или позвоните: <a data-hv-href="phoneLink" href="tel:+74951084232" data-goal="hero_cta_click" data-cta="hero_phone" data-hv="phoneDisplay">+7 (495) 108-42-32</a>
+      </p>
     </div>
 
     <!-- Right card -->
@@ -1892,12 +776,9 @@ html body #kghdr4 .kghdr4__phone:visited {
         <li>Устранение замечаний казначейства — без доплат</li>
         <li>Настройка операций, поддержка до первой выплаты</li>
       </ul>
-      <a href="#form" class="kzop2__btn kzop2__btn--primary" style="width:100%;justify-content:center;display:flex;" data-goal="hero_cta_click" data-cta="card_cta">
-        Получить услугу
-      </a>
       <div class="kzop2__card-guarantee">
         <svg viewBox="0 0 16 16"><path d="M8 1l1.8 3.6L14 5.5l-3 2.9.7 4.1L8 10.5l-3.7 1.9.7-4.1L2 5.5l4.2-0.9L8 1z"/></svg>
-        <div><strong>Гарантия результата:</strong> счёт открыт или возвращаем деньги в полном объёме</div>
+        <div><strong>Гарантия результата:</strong> счёт открыт или возвращаем 100% оплаты</div>
       </div>
     </div>
 
@@ -1918,7 +799,7 @@ html body #kghdr4 .kghdr4__phone:visited {
           <svg viewBox="0 0 22 22"><path d="M11 2l2.4 4.8L19 7.9l-4 3.9.9 5.5L11 15l-4.9 2.3.9-5.5L3 7.9l5.6-1.1L11 2z"/></svg>
         </div>
         <div class="kzop2__who-title">Выиграли контракт — не знаете, что делать дальше</div>
-        <div class="kzop2__who-desc">Госконтракт требует казначейский счёт, а сроки поджимают. Разберёмся и откроем за 1 день.</div>
+        <div class="kzop2__who-desc">Госконтракт требует казначейский счёт, а сроки поджимают. Разберёмся и откроем за 2 дня.</div>
       </div>
       <div class="kzop2__who-card">
         <div class="kzop2__who-icon">
@@ -2033,13 +914,13 @@ html body #kghdr4 .kghdr4__phone:visited {
     </div>
   </div>
 </section>
-<!-- TILDA: Zero Block · Название блока: "Как это работает — 5 шагов" -->
+<!-- TILDA: Zero Block · Название блока: "Как это работает — 6 шагов" -->
 <section class="kzop2__section" data-section="process">
   <div class="kzop2__wrap">
     <div class="kzop2__section-header" style="text-align:center">
       <span class="kzop2__eyebrow">Как это работает</span>
       <h2 class="kzop2__h2" style="max-width:560px;margin-left:auto;margin-right:auto">
-        От заявки до открытого счёта — <span>1 рабочий день</span>
+        От заявки до открытого счёта — <span>2 рабочих дня</span>
       </h2>
     </div>
     <div class="kzop2__process-track">
@@ -2057,19 +938,25 @@ html body #kghdr4 .kghdr4__phone:visited {
       </div>
       <div class="kzop2__step">
         <div class="kzop2__step-num">3</div>
+        <div class="kzop2__step-time">1 рабочий день</div>
+        <div class="kzop2__step-title">Включаем в сводный реестр Казначейства</div>
+        <div class="kzop2__step-desc">Проходим обязательный этап — включение в сводный реестр неучастников бюджетного процесса. Без него счёт открыть нельзя.</div>
+      </div>
+      <div class="kzop2__step">
+        <div class="kzop2__step-num">4</div>
         <div class="kzop2__step-time">1–2 часа</div>
         <div class="kzop2__step-title">Настройка ГИИС Электронный бюджет</div>
         <div class="kzop2__step-desc">Настраиваем роли и параметры в программе для бесперебойного проведения платежей.</div>
       </div>
       <div class="kzop2__step">
-        <div class="kzop2__step-num">4</div>
+        <div class="kzop2__step-num">5</div>
         <div class="kzop2__step-time">2–4 часа</div>
         <div class="kzop2__step-title">Готовим и подаём документы</div>
         <div class="kzop2__step-desc">Полный пакет документов, подача в казначейство, сопровождение до подтверждения.</div>
       </div>
       <div class="kzop2__step">
-        <div class="kzop2__step-num">5</div>
-        <div class="kzop2__step-time">1 рабочий день</div>
+        <div class="kzop2__step-num">6</div>
+        <div class="kzop2__step-time">2 рабочих дня</div>
         <div class="kzop2__step-title">Счёт открыт ✓</div>
         <div class="kzop2__step-desc">Получаете реквизиты, счёт настроен, раздельный учёт включён. Готово к работе.</div>
       </div>
@@ -2125,7 +1012,7 @@ html body #kghdr4 .kghdr4__phone:visited {
 ═══════════════════════════════════════ -->
 
 <!-- TILDA: Zero Block · Название блока: "Сравнение: сами vs с нами" -->
-<section class="kzop2__section" data-section="compare">
+<section class="kzop2__section" id="guarantee" data-section="compare">
   <div class="kzop2__wrap">
     <div class="kzop2__section-header">
       <span class="kzop2__eyebrow">Сравнение</span>
@@ -2137,7 +1024,7 @@ html body #kghdr4 .kghdr4__phone:visited {
         <thead>
           <tr>
             <th class="kzop2-col-param">Параметр</th>
-            <th class="kzop2-col-self">Самостоятельно</th>
+            <th class="kzop2-col-self"><span class="kzcmp-full">Самостоятельно</span><span class="kzcmp-short">Сами</span></th>
             <th class="kzop2-col-us">С нами</th>
           </tr>
         </thead>
@@ -2145,7 +1032,7 @@ html body #kghdr4 .kghdr4__phone:visited {
           <tr>
             <td>Срок открытия</td>
             <td class="kzop2-col-self"><span class="kzop2__cmp-badge kzop2__cmp-badge--bad">2–4 недели</span></td>
-            <td class="kzop2-col-us"><span class="kzop2__cmp-badge kzop2__cmp-badge--good">1 рабочий день</span></td>
+            <td class="kzop2-col-us"><span class="kzop2__cmp-badge kzop2__cmp-badge--good">2 рабочих дня</span></td>
           </tr>
           <tr>
             <td>Риск возврата документов</td>
@@ -2186,7 +1073,7 @@ html body #kghdr4 .kghdr4__phone:visited {
 <section class="kzop2__midcta" data-section="midcta">
   <div class="kzop2__midcta-center">
     <div class="kzop2__midcta-label">Готовы начать?</div>
-    <div class="kzop2__midcta-title">Откроем счёт за <span>1 рабочий день</span></div>
+    <div class="kzop2__midcta-title">Откроем счёт за <span>2 рабочих дня</span></div>
     <div class="kzop2__midcta-sub">Без вашего участия — документы, подача в казначейство, контроль</div>
     <div class="kzop2__midcta-form">
       <div class="kzop2__midcta-input-row">
@@ -2195,6 +1082,7 @@ html body #kghdr4 .kghdr4__phone:visited {
           Перезвоните мне
         </button>
       </div>
+      <input type="text" class="kzop2__hp" name="hp_mid" tabindex="-1" autocomplete="off" aria-hidden="true">
       <div class="kzop2__consent kzop2__consent--dark" style="text-align:left">
         <input type="checkbox" id="kzop2-mid-consent" required>
         <label for="kzop2-mid-consent">
@@ -2222,7 +1110,7 @@ html body #kghdr4 .kghdr4__phone:visited {
         <div class="kzop2__trust-label">Счетов открыто<br>без возвратов с первого раза</div>
       </div>
       <div class="kzop2__trust-item">
-        <span class="kzop2__trust-num"><span>1</span> день</span>
+        <span class="kzop2__trust-num"><span>2</span> дня</span>
         <div class="kzop2__trust-label">Срок открытия счёта.<br>Гарантировано или возврат.</div>
       </div>
     </div>
@@ -2371,10 +1259,10 @@ html body #kghdr4 .kghdr4__phone:visited {
                     <span class="kzop2__chat-time">09:24</span>
                   </div>
                   <div class="kzop2__chat-msg kzop2__chat-msg--out">
-                    Успеем. Документы сегодня — счёт завтра. Гарантия в договоре. Высылаю договор прямо сейчас.
+                    Успеем. Подаём документы и проходим включение в реестр — счёт открыт за 2 рабочих дня. Гарантия в договоре. Высылаю договор прямо сейчас.
                     <span class="kzop2__chat-time">09:25 <span class="kzop2__chat-tick">✓✓</span></span>
                   </div>
-                  <div class="kzop2__chat-date-sep"><span>следующий день</span></div>
+                  <div class="kzop2__chat-date-sep"><span>через 2 дня</span></div>
                   <div class="kzop2__chat-msg kzop2__chat-msg--in">
                     СЧЁТ ОТКРЫТ!! 🎉🎉 Вы просто чудо, спасли нас. Заказчику уже отправили реквизиты!
                     <span class="kzop2__chat-time">11:47</span>
@@ -2402,7 +1290,7 @@ html body #kghdr4 .kghdr4__phone:visited {
               </div>
               <div class="kzop2__case-block kzop2__case-block--did">
                 <div class="kzop2__case-block-label">Что сделали</div>
-                <div class="kzop2__case-block-text">Клиент прислал только СНИЛС директора и устав. <strong>Мы подготовили полный пакет, подали в казначейство на следующее утро, параллельно настроили ГИИС Электронный бюджет.</strong></div>
+                <div class="kzop2__case-block-text">Клиент прислал только СНИЛС директора и устав. <strong>Мы подготовили полный пакет, прошли включение в сводный реестр Казначейства, настроили ГИИС Электронный бюджет.</strong></div>
               </div>
               <div class="kzop2__case-block kzop2__case-block--res">
                 <div class="kzop2__case-block-label">Результат</div>
@@ -2465,7 +1353,7 @@ html body #kghdr4 .kghdr4__phone:visited {
                     <span class="kzop2__chat-time">11:11</span>
                   </div>
                   <div class="kzop2__chat-msg kzop2__chat-msg--out">
-                    Посмотрел. Две ошибки: неверные реквизиты в заявлении и не хватает заверенной карточки с образцами подписей. Берёмся — пересоберём и подадим за 1 день.
+                    Посмотрел. Две ошибки: неверные реквизиты в заявлении и не хватает заверенной карточки с образцами подписей. Берёмся — пересоберём и подадим, счёт открыт за 2 рабочих дня.
                     <span class="kzop2__chat-time">11:39 <span class="kzop2__chat-tick">✓✓</span></span>
                   </div>
                   <div class="kzop2__chat-msg kzop2__chat-msg--in">
@@ -2476,7 +1364,7 @@ html body #kghdr4 .kghdr4__phone:visited {
                     Уверен. 97% наших заявок принимаются с первого раза — проверяем каждый документ перед подачей. Ошибки у вас понятные, они устранимы. Направляю договор.
                     <span class="kzop2__chat-time">11:44 <span class="kzop2__chat-tick">✓✓</span></span>
                   </div>
-                  <div class="kzop2__chat-date-sep"><span>Следующий день</span></div>
+                  <div class="kzop2__chat-date-sep"><span>Через 2 дня</span></div>
                   <div class="kzop2__chat-msg kzop2__chat-msg--in">
                     Счёт открыт!! Слава богу... 3 недели не спали нормально из-за этого 😭🙏 Спасибо огромное
                     <span class="kzop2__chat-time">14:22</span>
@@ -2504,11 +1392,11 @@ html body #kghdr4 .kghdr4__phone:visited {
               </div>
               <div class="kzop2__case-block kzop2__case-block--did">
                 <div class="kzop2__case-block-label">Что сделали</div>
-                <div class="kzop2__case-block-text">Разобрали оба отказа: нашли ошибку в реквизитах и недостающий документ. <strong>Полностью пересобрали пакет, проверили каждую строку, подали на следующий день.</strong></div>
+                <div class="kzop2__case-block-text">Разобрали оба отказа: нашли ошибку в реквизитах и недостающий документ. <strong>Полностью пересобрали пакет, проверили каждую строку, подали заново.</strong></div>
               </div>
               <div class="kzop2__case-block kzop2__case-block--res">
                 <div class="kzop2__case-block-label">Результат</div>
-                <div class="kzop2__case-block-text"><strong>Счёт открыт на следующий рабочий день.</strong> Раздельный учёт настроен сразу. Клиент перешёл на постоянное сопровождение.</div>
+                <div class="kzop2__case-block-text"><strong>Счёт открыт за 2 рабочих дня.</strong> Раздельный учёт настроен сразу. Клиент перешёл на постоянное сопровождение.</div>
               </div>
             </div>
             <div style="flex:0 1 20px;min-height:8px"></div>
@@ -2529,7 +1417,7 @@ html body #kghdr4 .kghdr4__phone:visited {
         </div>
       </div>
 
-      <!-- ══ КЕЙС 3 · Telegram · 3 счёта за 1 день ══ -->
+      <!-- ══ КЕЙС 3 · Telegram · 3 счёта параллельно ══ -->
       <div class="kzop2__case-slide" data-case="2">
         <div class="kzop2__case-layout">
           <div>
@@ -2555,7 +1443,7 @@ html body #kghdr4 .kghdr4__phone:visited {
                 <div class="kzop2__chat-body">
                   <div class="kzop2__chat-date-sep"><span>сегодня</span></div>
                   <div class="kzop2__chat-msg kzop2__chat-msg--in">
-                    Добрый день. Нестандартная ситуация — нужно открыть сразу 3 счёта. Контракты в Москве, Краснодаре и Новосибирске. Всё нужно к завтрашнему утру
+                    Добрый день. Нестандартная ситуация — нужно открыть сразу 3 счёта. Контракты в Москве, Краснодаре и Новосибирске
                     <span class="kzop2__chat-time">08:47</span>
                   </div>
                   <div class="kzop2__chat-msg kzop2__chat-msg--out">
@@ -2567,18 +1455,18 @@ html body #kghdr4 .kghdr4__phone:visited {
                     <span class="kzop2__chat-time">08:55</span>
                   </div>
                   <div class="kzop2__chat-msg kzop2__chat-msg--out">
-                    Хорошо, отказ по Краснодару тоже пришлите — разберём параллельно. Три пакета, три ТОФК, один рабочий день.
+                    Хорошо, отказ по Краснодару тоже пришлите — разберём параллельно. Три пакета, три ТОФК, открытие за 2 рабочих дня.
                     <span class="kzop2__chat-time">08:57 <span class="kzop2__chat-tick">✓✓</span></span>
                   </div>
                   <div class="kzop2__chat-msg kzop2__chat-msg--in">
-                    Это реально — три разных региона за один день?
+                    Это реально — три разных региона за два дня?
                     <span class="kzop2__chat-time">08:59</span>
                   </div>
                   <div class="kzop2__chat-msg kzop2__chat-msg--out">
                     Да. Работаем по всей России, отработанный процесс с каждым ТОФК. Присылайте — начнём сразу.
                     <span class="kzop2__chat-time">09:01 <span class="kzop2__chat-tick">✓✓</span></span>
                   </div>
-                  <div class="kzop2__chat-date-sep"><span>следующий день</span></div>
+                  <div class="kzop2__chat-date-sep"><span>через 2 дня</span></div>
                   <div class="kzop2__chat-msg kzop2__chat-msg--in">
                     ВСЕ ТРИ ОТКРЫТЫ!! 😱🔥 Не верю своим глазам. Даже Краснодар прошёл! Вы волшебники
                     <span class="kzop2__chat-time">16:33</span>
@@ -2598,15 +1486,15 @@ html body #kghdr4 .kghdr4__phone:visited {
             <p class="kzop2__lead" style="margin-bottom:0;font-size:14px;color:var(--t3)">Реальные ситуации — без приукрашивания.</p>
             <div style="height:1px;background:var(--border2);margin:18px 0 16px;opacity:0.6"></div>
             <div class="kzop2__case-ind">Инфраструктура · 3 региона</div>
-            <div class="kzop2__case-title">Три счёта в разных казначействах — за один рабочий день</div>
+            <div class="kzop2__case-title">Три счёта в разных казначействах — параллельно</div>
             <div class="kzop2__case-blocks">
               <div class="kzop2__case-block kzop2__case-block--prb">
                 <div class="kzop2__case-block-label">Проблема</div>
-                <div class="kzop2__case-block-text">Три контракта в разных регионах одновременно: Москва, Краснодар, Новосибирск. Свой ТОФК у каждого. По Краснодару уже был отказ. Все три нужны к следующему утру.</div>
+                <div class="kzop2__case-block-text">Три контракта в разных регионах одновременно: Москва, Краснодар, Новосибирск. Свой ТОФК у каждого. По Краснодару уже был отказ.</div>
               </div>
               <div class="kzop2__case-block kzop2__case-block--did">
                 <div class="kzop2__case-block-label">Что сделали</div>
-                <div class="kzop2__case-block-text">Подготовили три независимых пакета под каждый ТОФК, разобрали отказ по Краснодару. <strong>Подали в три казначейства параллельно в течение одного рабочего дня.</strong></div>
+                <div class="kzop2__case-block-text">Подготовили три независимых пакета под каждый ТОФК, разобрали отказ по Краснодару. <strong>Подали в три казначейства параллельно.</strong></div>
               </div>
               <div class="kzop2__case-block kzop2__case-block--res">
                 <div class="kzop2__case-block-label">Результат</div>
@@ -2634,6 +1522,756 @@ html body #kghdr4 .kghdr4__phone:visited {
     </div><!-- /carousel -->
   </div>
 </section>
+
+<!-- ============================================================
+     HERO /services/open · скрипт формы (v2.5)
+============================================================ -->
+<script>
+(function () {
+  "use strict";
+
+  /* ── TEMPLATE_VARS · ежемесячный апдейт ──────────────────────
+     statsMonthLabel считается сам (всегда прошлый месяц).
+     Вручную раз в месяц меняются только 3 цифры ниже.            */
+  var KZ_HERO = {
+    statsMonthLabel: (function () {
+      var MONTHS = ["январь", "февраль", "март", "апрель", "май", "июнь",
+                    "июль", "август", "сентябрь", "октябрь", "ноябрь", "декабрь"];
+      var d = new Date();
+      var m = d.getMonth() - 1;
+      var y = d.getFullYear();
+      if (m < 0) { m = 11; y -= 1; }
+      return "За " + MONTHS[m] + " " + y;
+    })(),
+
+    /* ↓↓↓ обновляются вручную раз в месяц ↓↓↓ */
+    statsAccounts:   "47",
+    statsReturns:    "0",
+    statsAvgDays:    "2",
+
+    phoneDisplay:    "+7 (495) 108-42-32",
+    phoneLink:       "tel:+74951084232"
+  };
+
+  var YM_ID         = window.KAZNA_METRIKA_ID || 86763493;
+  var LEAD_ENDPOINT = "https://api.kazna-gov.ru/api/lead/open";
+  var PAGE_SLUG     = "open";
+  var PAGE_LABEL    = "Открытие казначейского счёта";
+
+  var hero = document.querySelector(".kzop2__hero");
+  if (!hero) return;
+  var form = hero.querySelector(".kzhero__form");
+  if (!form) return;
+
+  var __openTs = Date.now();
+
+  Object.keys(KZ_HERO).forEach(function (key) {
+    hero.querySelectorAll('[data-hv="' + key + '"]').forEach(function (n) {
+      n.textContent = KZ_HERO[key];
+    });
+  });
+  hero.querySelectorAll('[data-hv-href="phoneLink"]').forEach(function (n) {
+    n.setAttribute("href", KZ_HERO.phoneLink);
+  });
+
+  /* ── Анимация счётчиков trust-полосы ── */
+  (function () {
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var statsBox = hero.querySelector(".kzhero__stats");
+    var nums = hero.querySelectorAll(".kzhero__stat-num[data-hv]");
+    if (!statsBox || !nums.length || reduce) return;
+
+    function runOne(el) {
+      var raw = (el.textContent || "").trim();
+      var target = parseFloat(raw.replace(",", "."));
+      if (isNaN(target)) return;
+      var isFloat = /[.,]/.test(raw);
+      var dur = 1100, t0 = null;
+      function step(ts) {
+        if (!t0) t0 = ts;
+        var p = Math.min((ts - t0) / dur, 1);
+        p = 1 - Math.pow(1 - p, 3);
+        el.textContent = isFloat ? (p * target).toFixed(1) : String(Math.round(p * target));
+        if (p < 1) requestAnimationFrame(step);
+        else el.textContent = raw;
+      }
+      requestAnimationFrame(step);
+    }
+    function runAll() {
+      nums.forEach(function (el) { runOne(el); });
+    }
+
+    if ("IntersectionObserver" in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { runAll(); io.disconnect(); }
+        });
+      }, { threshold: 0.4 });
+      io.observe(statsBox);
+    } else {
+      runAll();
+    }
+  })();
+
+  function ymGoal(goal, params) {
+    try { if (window.ym) window.ym(YM_ID, "reachGoal", goal, params || {}); } catch (e) {}
+  }
+
+  function fmtPhone(raw) {
+    var d = String(raw || "").replace(/\D/g, "");
+    if (d.length > 0 && (d[0] === "7" || d[0] === "8")) d = d.slice(1);
+    d = d.slice(0, 10);
+    var r = "+7";
+    if (d.length > 0) r += " (" + d.slice(0, 3);
+    if (d.length >= 4) r += ") " + d.slice(3, 6);
+    else if (d.length === 3) r += ")";
+    if (d.length >= 7) r += "-" + d.slice(6, 8);
+    if (d.length >= 9) r += "-" + d.slice(8, 10);
+    return r;
+  }
+  function phoneValid(v) {
+    var d = String(v || "").replace(/\D/g, "");
+    return d.length === 11 && d[0] === "7";
+  }
+
+  var nameEl    = form.querySelector('input[name="name"]');
+  var phoneEl   = form.querySelector(".kzhero__phone");
+  var consentEl = form.querySelector("#kzhero-consent");
+  var hpEl      = form.querySelector(".kzhero__hp");
+  var submitEl  = form.querySelector(".kzhero__submit");
+  var msgEl     = hero.querySelector(".kzhero__msg");
+  var formCard  = hero.querySelector(".kzhero__form-card");
+
+  function refreshSubmit() {
+    if (!form.classList.contains("kzhero--loading")) {
+      submitEl.disabled = !phoneValid(phoneEl.value);
+    }
+  }
+
+  phoneEl.addEventListener("focus", function () {
+    if (!this.value) this.value = "+7 ";
+  });
+  phoneEl.addEventListener("input", function () {
+    this.value = fmtPhone(this.value);
+    this.classList.remove("kzhero--invalid");
+    refreshSubmit();
+  });
+  phoneEl.addEventListener("keydown", function (e) {
+    if ((e.key === "Backspace" || e.key === "Delete") && this.value.length <= 3) {
+      e.preventDefault();
+    }
+  });
+  phoneEl.addEventListener("paste", function (e) {
+    e.preventDefault();
+    var t = (e.clipboardData || window.clipboardData).getData("text");
+    this.value = fmtPhone(t);
+    refreshSubmit();
+  });
+  if (nameEl) {
+    nameEl.addEventListener("input", function () {
+      this.classList.remove("kzhero--invalid");
+    });
+  }
+  refreshSubmit();
+
+  function getCookie(name) {
+    var m = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/[-.+*]/g, "\\$&") + "=([^;]*)"));
+    return m ? decodeURIComponent(m[1]) : "";
+  }
+  function readUtm() {
+    if (window._kzUtm) return window._kzUtm;
+    var keys = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "yclid", "gclid"];
+    var qs = new URLSearchParams(location.search);
+    var out = {};
+    keys.forEach(function (k) {
+      var v = qs.get(k);
+      if (v) {
+        out[k] = v;
+        try { sessionStorage.setItem("kz_" + k, v); } catch (e) {}
+      } else {
+        try { var s = sessionStorage.getItem("kz_" + k); if (s) out[k] = s; } catch (e) {}
+      }
+    });
+    return out;
+  }
+  function gaCid() {
+    var ga = getCookie("_ga");
+    if (!ga) return "";
+    var p = ga.split(".");
+    return p.length >= 4 ? p.slice(2).join(".") : "";
+  }
+  function mskTime() {
+    try {
+      return new Date().toLocaleString("ru-RU", {
+        timeZone: "Europe/Moscow",
+        day: "2-digit", month: "2-digit", year: "numeric",
+        hour: "2-digit", minute: "2-digit"
+      }) + " МСК";
+    } catch (e) { return new Date().toISOString(); }
+  }
+  function deviceInfo(ua) {
+    var os = /iPhone|iPad|iPod/.test(ua) ? "iOS" :
+             /Android/.test(ua) ? "Android" :
+             /Mac/.test(ua) ? "Mac" :
+             /Windows/.test(ua) ? "Windows" :
+             /Linux/.test(ua) ? "Linux" : "Unknown";
+    var m = ua.match(/(YaBrowser|Edg|OPR|Chrome|Firefox|Safari)\/(\d+)/);
+    var br = m ? ((({ Edg: "Edge", OPR: "Opera" })[m[1]] || m[1]) + " " + m[2]) : "Browser";
+    return os + " · " + br;
+  }
+  function searchQuery(ref) {
+    if (!ref) return "";
+    try {
+      var u = new URL(ref);
+      return u.searchParams.get("text") || u.searchParams.get("q") || u.searchParams.get("query") || "";
+    } catch (e) { return ""; }
+  }
+  function buildMessage(meta, name, phone) {
+    var u = meta.utm || {};
+    var lines = [
+      "🟢 ЗАЯВКА · " + PAGE_LABEL,
+      "Форма: Hero (hero-form)",
+      "",
+      "— Контакт —",
+      "Имя: " + (name || "не указано"),
+      "Телефон: " + phone,
+      "",
+      "— Реклама / Источник —"
+    ];
+    ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"].forEach(function (k) {
+      lines.push(k + ": " + (u[k] || "—"));
+    });
+    lines.push("yclid: " + (u.yclid || "—"));
+    lines.push("gclid: " + (u.gclid || "—"));
+    if (meta.search_query) lines.push("Поисковый запрос: " + meta.search_query);
+    lines.push("Реферер: " + (meta.referrer || "—"));
+    lines.push("");
+    lines.push("— Контекст —");
+    lines.push("Страница: " + meta.page_url);
+    lines.push("Время МСК: " + meta.ts_msk);
+    lines.push("Устройство: " + meta.device);
+    lines.push("Время до отправки: " + meta.time_on_page_sec + " сек");
+    return lines.join("\n");
+  }
+
+  function setLoading(on) {
+    form.classList.toggle("kzhero--loading", on);
+    submitEl.disabled = on || !phoneValid(phoneEl.value);
+    var d = submitEl.querySelector(".kzhero__btn-desktop");
+    var m = submitEl.querySelector(".kzhero__btn-mobile");
+    if (on) {
+      if (d) d.textContent = "Отправляем…";
+      if (m) m.textContent = "Отправляем…";
+    } else {
+      if (d) d.textContent = "Оставить заявку";
+      if (m) m.textContent = "Оставить заявку";
+    }
+  }
+  function showMsg(kind, text) {
+    msgEl.hidden = false;
+    msgEl.className = "kzhero__msg kzhero__msg--" + kind;
+    msgEl.textContent = text;
+  }
+
+  var pending = false;
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    if (pending) return;
+    msgEl.hidden = true;
+
+    if (hpEl && hpEl.value) return;
+
+    if (!phoneValid(phoneEl.value)) {
+      phoneEl.classList.add("kzhero--invalid");
+      phoneEl.focus();
+      showMsg("err", "Введите телефон в формате +7 (999) 999-99-99.");
+      return;
+    }
+    if (consentEl && !consentEl.checked) {
+      showMsg("err", "Подтвердите согласие на обработку персональных данных.");
+      return;
+    }
+
+    var utm = readUtm();
+    var ref = document.referrer || "";
+    var phoneCanon = "+" + phoneEl.value.replace(/\D/g, "");
+    var nameVal = nameEl ? nameEl.value.trim() : "";
+
+    var meta = {
+      source: "hero-form",
+      page: PAGE_SLUG,
+      page_label: PAGE_LABEL,
+      page_url: location.href,
+      page_title: document.title,
+      utm: utm,
+      yclid: utm.yclid || "",
+      gclid: utm.gclid || "",
+      ym_uid: getCookie("_ym_uid"),
+      ga_cid: gaCid(),
+      referrer: ref,
+      search_query: searchQuery(ref),
+      ts_iso: new Date().toISOString(),
+      ts_msk: mskTime(),
+      tz: (function () { try { return Intl.DateTimeFormat().resolvedOptions().timeZone; } catch (e) { return ""; } })(),
+      lang: navigator.language || "",
+      screen: (screen.width || 0) + "x" + (screen.height || 0),
+      viewport: (window.innerWidth || 0) + "x" + (window.innerHeight || 0),
+      device: deviceInfo(navigator.userAgent || ""),
+      time_on_page_sec: Math.round((Date.now() - __openTs) / 1000)
+    };
+
+    var payload = {
+      name: nameVal || "не указано",
+      contact: phoneCanon,
+      message: buildMessage(meta, nameVal, phoneCanon),
+      hp: "",
+      consent_pd: true,
+      consent_pd_text: "Согласие с политикой обработки ПДн (https://kazna-gov.ru/personal_data_policy) и пользовательским соглашением (https://kazna-gov.ru/agreement)",
+      consent_at: new Date().toISOString(),
+      source: meta.source,
+      page: meta.page,
+      utm: meta.utm,
+      yclid: meta.yclid,
+      gclid: meta.gclid,
+      ym_uid: meta.ym_uid,
+      ga_cid: meta.ga_cid,
+      referrer: meta.referrer,
+      search_query: meta.search_query,
+      page_url: meta.page_url,
+      page_title: meta.page_title,
+      ts_iso: meta.ts_iso,
+      ts_msk: meta.ts_msk,
+      tz: meta.tz,
+      lang: meta.lang,
+      screen: meta.screen,
+      viewport: meta.viewport,
+      device: meta.device,
+      time_on_page_sec: meta.time_on_page_sec
+    };
+
+    pending = true;
+    setLoading(true);
+
+    fetch(LEAD_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    })
+      .then(function (r) {
+        return r.json().catch(function () { return { success: r.ok }; });
+      })
+      .then(function (res) {
+        pending = false;
+        if (res && res.success) {
+          ymGoal("lead_submitted_final", Object.assign({ service: "open", price: 29000 }, utm));
+          ymGoal("hero_form_submit", Object.assign({ service: "open" }, utm));
+          ymGoal("full_form_submit", Object.assign({ service: "open", price: 29000 }, utm));
+          formCard.classList.add("kzhero--done");
+          showMsg("ok", "Заявка получена. Звоним сейчас.");
+        } else {
+          setLoading(false);
+          showMsg("err", "Не удалось отправить. Попробуйте ещё раз или позвоните " + KZ_HERO.phoneDisplay + ".");
+        }
+      })
+      .catch(function () {
+        pending = false;
+        setLoading(false);
+        showMsg("err", "Сеть недоступна. Позвоните " + KZ_HERO.phoneDisplay + " или попробуйте позже.");
+      });
+  });
+
+})();
+</script>
+
+<!-- ============================================================
+     EXIT-INTENT · форма удержания (только десктоп)
+============================================================ -->
+<style>
+.kzexit{
+  position:fixed;inset:0;z-index:10000;
+  display:flex;align-items:center;justify-content:center;padding:24px;
+  font-family:var(--font);
+  opacity:0;visibility:hidden;
+  transition:opacity .28s ease,visibility .28s ease;
+}
+.kzexit.kzexit--open{opacity:1;visibility:visible}
+.kzexit__overlay{
+  position:absolute;inset:0;
+  background:rgba(12,27,51,0.55);
+  -webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);
+}
+.kzexit__card{
+  position:relative;z-index:1;width:100%;max-width:460px;
+  background:linear-gradient(180deg,#ffffff 0%,#f5f8ff 100%);
+  border:1px solid var(--blue-br);border-radius:24px;
+  padding:38px 38px 30px;text-align:center;
+  box-shadow:0 40px 90px rgba(12,27,51,0.4),inset 0 0 0 1px rgba(255,255,255,0.6);
+  transform:translateY(16px) scale(0.97);
+  transition:transform .32s cubic-bezier(0.16,1,0.3,1);
+}
+.kzexit.kzexit--open .kzexit__card{transform:none}
+.kzexit__close{
+  position:absolute;top:14px;right:16px;
+  width:34px;height:34px;border:none;border-radius:50%;
+  background:rgba(12,27,51,0.06);color:var(--t3);
+  font-size:22px;line-height:1;cursor:pointer;transition:background .15s;
+}
+.kzexit__close:hover{background:rgba(12,27,51,0.12)}
+.kzexit__icon{
+  width:56px;height:56px;margin:0 auto 16px;border-radius:16px;
+  background:linear-gradient(135deg,#1E50D4,#3f72e6);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 10px 24px rgba(30,80,212,0.36);
+}
+.kzexit__icon svg{width:28px;height:28px}
+.kzexit__eyebrow{
+  font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;
+  color:var(--blue);margin-bottom:10px;
+}
+.kzexit__title{
+  font-size:24px;font-weight:800;color:var(--navy);
+  line-height:1.2;letter-spacing:-0.02em;margin-bottom:10px;
+}
+.kzexit__text{font-size:14.5px;color:var(--t2);line-height:1.55;margin-bottom:22px}
+.kzexit__form{display:flex;flex-direction:column}
+.kzexit__input{
+  width:100%;height:52px;padding:0 16px;
+  font-family:inherit;font-size:16px;color:var(--text);text-align:center;
+  background:#fff;border:1px solid var(--border2);border-radius:12px;outline:none;
+  transition:border-color .15s,box-shadow .15s;
+}
+.kzexit__input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(30,80,212,0.14)}
+.kzexit__input.kzexit--invalid{border-color:rgba(192,57,43,0.7)}
+.kzexit__hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none}
+.kzexit__submit{
+  margin-top:10px;width:100%;height:54px;
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  font-family:inherit;font-size:16px;font-weight:700;color:#fff;
+  background:linear-gradient(135deg,#2E5FE0 0%,#1E50D4 100%);
+  border:none;border-radius:13px;cursor:pointer;
+  box-shadow:0 10px 24px rgba(30,80,212,0.34);
+  transition:transform .12s,filter .15s;
+}
+.kzexit__submit:hover{filter:brightness(1.05);transform:translateY(-1px)}
+.kzexit__submit:active{transform:translateY(0)}
+.kzexit__submit:disabled{background:#9DB4E8;box-shadow:none;cursor:not-allowed;transform:none;filter:none}
+.kzexit__submit svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.kzexit__consent{
+  display:flex;align-items:flex-start;gap:8px;margin-top:14px;text-align:left;
+  font-size:11.5px;color:var(--t3);line-height:1.5;cursor:pointer;
+}
+.kzexit__consent input{flex-shrink:0;width:16px;height:16px;margin-top:1px;accent-color:var(--blue);cursor:pointer}
+.kzexit__consent a{color:var(--blue);text-decoration:underline}
+.kzexit__msg{margin-top:12px;padding:11px 13px;border-radius:10px;font-size:13px;line-height:1.45}
+.kzexit__msg--ok{color:#065F46;background:var(--green-bg);border:1px solid var(--green-br);font-weight:700}
+.kzexit__msg--err{color:var(--red);background:var(--red-bg);border:1px solid var(--red-br)}
+.kzexit__form.kzexit--done .kzexit__input,
+.kzexit__form.kzexit--done .kzexit__submit,
+.kzexit__form.kzexit--done .kzexit__consent{display:none}
+.kzexit__or{margin-top:18px;font-size:13px;color:var(--t3)}
+.kzexit__or a{font-weight:800;color:var(--blue);text-decoration:none;white-space:nowrap}
+@media(max-width:768px){.kzexit{display:none!important}}
+@media(prefers-reduced-motion:reduce){.kzexit,.kzexit__card{transition:none}}
+</style>
+
+<div class="kzexit" id="kzexit" aria-hidden="true">
+  <div class="kzexit__overlay" data-kzexit-close></div>
+  <div class="kzexit__card" role="dialog" aria-modal="true" aria-labelledby="kzexit-title">
+    <button type="button" class="kzexit__close" aria-label="Закрыть" data-kzexit-close>&times;</button>
+    <div class="kzexit__icon">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="2"></circle>
+        <path d="M12 7.5v5l3.2 2" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </div>
+    <div class="kzexit__eyebrow">Подождите 30 секунд</div>
+    <h3 class="kzexit__title" id="kzexit-title">Заберите бесплатный расчёт по вашему контракту</h3>
+    <p class="kzexit__text">Оставьте телефон — перезвоним за 5 минут, назовём точный срок открытия счёта и что потребуется от вас. Без обязательств.</p>
+
+    <form class="kzexit__form" novalidate>
+      <input class="kzexit__input kzexit__phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="18" placeholder="+7 (___) ___-__-__" required>
+      <input type="text" class="kzexit__hp" name="company_extra" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="kzexit__submit" type="submit" disabled>
+        <span data-kzexit-label>Получить бесплатный расчёт</span>
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M8 3l5 5-5 5"/></svg>
+      </button>
+      <label class="kzexit__consent">
+        <input type="checkbox" id="kzexit-consent" required>
+        <span>Я согласен на обработку персональных данных в соответствии с <a href="https://kazna-gov.ru/personal_data_policy" target="_blank" rel="noopener">политикой в отношении обработки персональных данных</a></span>
+      </label>
+      <div class="kzexit__msg" role="status" aria-live="polite" hidden></div>
+    </form>
+
+    <div class="kzexit__or">Или позвоните <a href="tel:+74951084232">+7 (495) 108-42-32</a></div>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  var modal = document.getElementById("kzexit");
+  if (!modal) return;
+  /* только десктоп с указателем-мышью */
+  if (window.innerWidth <= 768 || !(window.matchMedia && window.matchMedia("(hover:hover)").matches)) return;
+
+  var YM_ID    = window.KAZNA_METRIKA_ID || 86763493;
+  var ENDPOINT = "https://api.kazna-gov.ru/api/lead/open";
+  var SKEY     = "kz_exit_shown";
+  var __ts     = Date.now();
+
+  var form     = modal.querySelector(".kzexit__form");
+  var phoneEl  = modal.querySelector(".kzexit__phone");
+  var consentEl= modal.querySelector("#kzexit-consent");
+  var hpEl     = modal.querySelector(".kzexit__hp");
+  var submitEl = modal.querySelector(".kzexit__submit");
+  var labelEl  = modal.querySelector("[data-kzexit-label]");
+  var msgEl    = modal.querySelector(".kzexit__msg");
+
+  function ymGoal(g, p) { try { if (window.ym) window.ym(YM_ID, "reachGoal", g, p || {}); } catch (e) {} }
+
+  function fmtPhone(raw) {
+    var d = String(raw || "").replace(/\D/g, "");
+    if (d.length > 0 && (d[0] === "7" || d[0] === "8")) d = d.slice(1);
+    d = d.slice(0, 10);
+    var r = "+7";
+    if (d.length > 0) r += " (" + d.slice(0, 3);
+    if (d.length >= 4) r += ") " + d.slice(3, 6);
+    else if (d.length === 3) r += ")";
+    if (d.length >= 7) r += "-" + d.slice(6, 8);
+    if (d.length >= 9) r += "-" + d.slice(8, 10);
+    return r;
+  }
+  function phoneValid(v) { var d = String(v || "").replace(/\D/g, ""); return d.length === 11 && d[0] === "7"; }
+  function refresh() { if (!form.classList.contains("kzexit--loading")) submitEl.disabled = !phoneValid(phoneEl.value); }
+
+  phoneEl.addEventListener("focus", function () { if (!this.value) this.value = "+7 "; });
+  phoneEl.addEventListener("input", function () { this.value = fmtPhone(this.value); this.classList.remove("kzexit--invalid"); refresh(); });
+  phoneEl.addEventListener("keydown", function (e) { if ((e.key === "Backspace" || e.key === "Delete") && this.value.length <= 3) e.preventDefault(); });
+  phoneEl.addEventListener("paste", function (e) { e.preventDefault(); this.value = fmtPhone((e.clipboardData || window.clipboardData).getData("text")); refresh(); });
+  refresh();
+
+  /* ── показ / скрытие ── */
+  var opened = false;
+  function openModal() {
+    if (opened) return;
+    opened = true;
+    try { sessionStorage.setItem(SKEY, "1"); } catch (e) {}
+    modal.classList.add("kzexit--open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+    ymGoal("exit_intent_show");
+    setTimeout(function () { try { phoneEl.focus(); } catch (e) {} }, 360);
+  }
+  function closeModal() {
+    modal.classList.remove("kzexit--open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
+  modal.querySelectorAll("[data-kzexit-close]").forEach(function (el) {
+    el.addEventListener("click", closeModal);
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && modal.classList.contains("kzexit--open")) closeModal();
+  });
+
+  var shown = false;
+  try { shown = sessionStorage.getItem(SKEY) === "1"; } catch (e) {}
+  if (!shown) {
+    var armed = false;
+    setTimeout(function () { armed = true; }, 4000);   /* не срабатывать сразу */
+    document.addEventListener("mouseout", function (e) {
+      if (!armed || opened) return;
+      if (e.relatedTarget || e.toElement) return;       /* ушёл в другой элемент — не выход */
+      if (e.clientY > 6) return;                        /* курсор ушёл вверх — к вкладкам/закрытию */
+      openModal();
+    });
+  }
+
+  /* ── отправка ── */
+  function setLoading(on) {
+    form.classList.toggle("kzexit--loading", on);
+    submitEl.disabled = on || !phoneValid(phoneEl.value);
+    labelEl.textContent = on ? "Отправляем…" : "Получить бесплатный расчёт";
+  }
+  function showMsg(kind, text) {
+    msgEl.hidden = false;
+    msgEl.className = "kzexit__msg kzexit__msg--" + kind;
+    msgEl.textContent = text;
+  }
+  function getCookie(name) {
+    var m = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/[-.+*]/g, "\\$&") + "=([^;]*)"));
+    return m ? decodeURIComponent(m[1]) : "";
+  }
+  function readUtm() {
+    if (window._kzUtm) return window._kzUtm;
+    var keys = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "yclid", "gclid"];
+    var qs = new URLSearchParams(location.search), out = {};
+    keys.forEach(function (k) { var v = qs.get(k); if (v) out[k] = v; });
+    return out;
+  }
+  function gaCid() {
+    var ga = getCookie("_ga");
+    if (!ga) return "";
+    var p = ga.split(".");
+    return p.length >= 4 ? p.slice(2).join(".") : "";
+  }
+  function mskTime() {
+    try {
+      return new Date().toLocaleString("ru-RU", {
+        timeZone: "Europe/Moscow", day: "2-digit", month: "2-digit", year: "numeric",
+        hour: "2-digit", minute: "2-digit"
+      }) + " МСК";
+    } catch (e) { return new Date().toISOString(); }
+  }
+  function deviceInfo(ua) {
+    var os = /iPhone|iPad|iPod/.test(ua) ? "iOS" :
+             /Android/.test(ua) ? "Android" :
+             /Mac/.test(ua) ? "Mac" :
+             /Windows/.test(ua) ? "Windows" :
+             /Linux/.test(ua) ? "Linux" : "Unknown";
+    var m = ua.match(/(YaBrowser|Edg|OPR|Chrome|Firefox|Safari)\/(\d+)/);
+    var br = m ? ((({ Edg: "Edge", OPR: "Opera" })[m[1]] || m[1]) + " " + m[2]) : "Browser";
+    return os + " · " + br;
+  }
+  function searchQuery(ref) {
+    if (!ref) return "";
+    try {
+      var u = new URL(ref);
+      return u.searchParams.get("text") || u.searchParams.get("q") || u.searchParams.get("query") || "";
+    } catch (e) { return ""; }
+  }
+  function buildMessage(meta, phone) {
+    var u = meta.utm || {};
+    var lines = [
+      "🟡 ЗАЯВКА · Открытие казначейского счёта",
+      "Форма: Exit-intent (exit-intent)",
+      "",
+      "— Контакт —",
+      "Имя: не указано",
+      "Телефон: " + phone,
+      "",
+      "— Реклама / Источник —"
+    ];
+    ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"].forEach(function (k) {
+      lines.push(k + ": " + (u[k] || "—"));
+    });
+    lines.push("yclid: " + (u.yclid || "—"));
+    lines.push("gclid: " + (u.gclid || "—"));
+    if (meta.search_query) lines.push("Поисковый запрос: " + meta.search_query);
+    lines.push("Реферер: " + (meta.referrer || "—"));
+    lines.push("");
+    lines.push("— Контекст —");
+    lines.push("Страница: " + meta.page_url);
+    lines.push("Время МСК: " + meta.ts_msk);
+    lines.push("Устройство: " + meta.device);
+    lines.push("Время до отправки: " + meta.time_on_page_sec + " сек");
+    return lines.join("\n");
+  }
+
+  var pending = false;
+  form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    if (pending) return;
+    msgEl.hidden = true;
+    if (hpEl && hpEl.value) return;
+    if (!phoneValid(phoneEl.value)) {
+      phoneEl.classList.add("kzexit--invalid"); phoneEl.focus();
+      showMsg("err", "Введите телефон в формате +7 (999) 999-99-99.");
+      return;
+    }
+    if (consentEl && !consentEl.checked) {
+      showMsg("err", "Подтвердите согласие на обработку персональных данных.");
+      return;
+    }
+    var utm = readUtm();
+    var ref = document.referrer || "";
+    var phoneCanon = "+" + phoneEl.value.replace(/\D/g, "");
+
+    var meta = {
+      source: "exit-intent",
+      page: "open",
+      page_label: "Открытие казначейского счёта",
+      page_url: location.href,
+      page_title: document.title,
+      utm: utm,
+      yclid: utm.yclid || "",
+      gclid: utm.gclid || "",
+      ym_uid: getCookie("_ym_uid"),
+      ga_cid: gaCid(),
+      referrer: ref,
+      search_query: searchQuery(ref),
+      ts_iso: new Date().toISOString(),
+      ts_msk: mskTime(),
+      tz: (function () { try { return Intl.DateTimeFormat().resolvedOptions().timeZone; } catch (e) { return ""; } })(),
+      lang: navigator.language || "",
+      screen: (screen.width || 0) + "x" + (screen.height || 0),
+      viewport: (window.innerWidth || 0) + "x" + (window.innerHeight || 0),
+      device: deviceInfo(navigator.userAgent || ""),
+      time_on_page_sec: Math.round((Date.now() - __ts) / 1000)
+    };
+
+    pending = true;
+    setLoading(true);
+    fetch(ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: "не указано",
+        contact: phoneCanon,
+        message: buildMessage(meta, phoneCanon),
+        hp: "",
+      consent_pd: true,
+      consent_pd_text: "Согласие с политикой обработки ПДн (https://kazna-gov.ru/personal_data_policy) и пользовательским соглашением (https://kazna-gov.ru/agreement)",
+      consent_at: new Date().toISOString(),
+        source: meta.source,
+        page: meta.page,
+        utm: meta.utm,
+        yclid: meta.yclid,
+        gclid: meta.gclid,
+        ym_uid: meta.ym_uid,
+        ga_cid: meta.ga_cid,
+        referrer: meta.referrer,
+        search_query: meta.search_query,
+        page_url: meta.page_url,
+        page_title: meta.page_title,
+        ts_iso: meta.ts_iso,
+        ts_msk: meta.ts_msk,
+        tz: meta.tz,
+        lang: meta.lang,
+        screen: meta.screen,
+        viewport: meta.viewport,
+        device: meta.device,
+        time_on_page_sec: meta.time_on_page_sec
+      })
+    })
+      .then(function (r) { return r.json().catch(function () { return { success: r.ok }; }); })
+      .then(function (res) {
+        pending = false;
+        if (res && res.success) {
+          ymGoal("lead_submitted_final", Object.assign({ service: "open", price: 29000 }, utm));
+          ymGoal("exit_intent_submit", Object.assign({ service: "open" }, utm));
+          ymGoal("full_form_submit", Object.assign({ service: "open", price: 29000 }, utm));
+          form.classList.add("kzexit--done");
+          showMsg("ok", "Заявка получена. Перезвоним в ближайшие 5 минут.");
+          setTimeout(closeModal, 3500);
+        } else {
+          setLoading(false);
+          showMsg("err", "Не удалось отправить. Позвоните +7 (495) 108-42-32.");
+        }
+      })
+      .catch(function () {
+        pending = false;
+        setLoading(false);
+        showMsg("err", "Сеть недоступна. Позвоните +7 (495) 108-42-32.");
+      });
+  });
+})();
+</script>
+
+</div><!-- /.kzop2 -->
+
+<div class="kzop2">
 <!-- TILDA: Zero Block · Название блока: "Все услуги" -->
 <section class="kzop2__section" data-section="services">
   <div class="kzop2__wrap">
@@ -2683,7 +2321,7 @@ html body #kghdr4 .kghdr4__phone:visited {
 </section>
 
 <!-- TILDA: Zero Block · Название блока: "Команда — Эксперты" -->
-<section class="kzop2__section" data-section="team">
+<section class="kzop2__section" id="company" data-section="team">
   <div class="kzop2__wrap">
     <div class="kzop2__section-header">
       <span class="kzop2__eyebrow">Команда</span>
@@ -2769,13 +2407,13 @@ html body #kghdr4 .kghdr4__phone:visited {
 
       <div class="kzop2__faq-item">
         <button class="kzop2__faq-q" data-faq="3">
-          Реально ли открыть счёт за 1 день?
+          Реально ли открыть счёт за 2 дня?
           <span class="kzop2__faq-icon"><svg viewBox="0 0 14 14"><path d="M7 2v10M2 7h10"/></svg></span>
         </button>
         <div class="kzop2__faq-a">
           <div class="kzop2__faq-a-inner">
             <p><strong>Да.</strong> Мы работаем с казначейством на постоянной основе — знаем требования, форматы документов и контактных лиц. Это убирает все задержки связанные с «неправильным» пакетом документов.</p>
-            <p>97% наших клиентов получают открытый счёт в течение 1 рабочего дня с момента передачи нам всех документов.</p>
+            <p>97% наших клиентов получают открытый счёт в течение 2 рабочих дней с момента передачи нам всех документов.</p>
           </div>
         </div>
       </div>
@@ -2818,6 +2456,10 @@ html body #kghdr4 .kghdr4__phone:visited {
         </div>
       </div>
 
+    </div>
+    <div class="kzop2__docs-note">
+      <svg viewBox="0 0 16 16"><path d="M8 1a7 7 0 100 14A7 7 0 008 1zm0 3v4m0 2v1"/></svg>
+      <div>Открытие счёта в УФК обязательно для контрактов с казначейским сопровождением — критерии и пороги (включая лимит 3 млн ₽) описаны в материале «<a href="https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-44-fz-2026-polnyy-gid">когда требуется казначейское сопровождение по 44-ФЗ</a>».</div>
     </div>
   </div>
 </section>
@@ -2863,6 +2505,7 @@ html body #kghdr4 .kghdr4__phone:visited {
           <input type="tel" class="kzop2__input-phone" placeholder="+7 (___) ___-__-__" maxlength="18" autocomplete="tel">
         </div>
       </div>
+      <input type="text" class="kzop2__hp" name="hp_final" tabindex="-1" autocomplete="off" aria-hidden="true">
       <div class="kzop2__consent kzop2__consent--dark" style="margin-bottom:16px">
         <input type="checkbox" id="kzop2-final-consent" required>
         <label for="kzop2-final-consent">
@@ -2879,12 +2522,12 @@ html body #kghdr4 .kghdr4__phone:visited {
 
 <!-- TILDA: Zero Block · Название блока: "Sticky CTA (мобильный)" -->
 <div class="kzop2__sticky" id="kzop2-sticky">
-  <a href="tel:+74951084232" class="kzop2__btn kzop2__btn--ghost" data-goal="sticky_phone_click">
+  <a href="tel:+74951084232" class="kzop2__btn kzop2__btn--ghost" data-goal="sticky_phone_click" aria-label="Позвонить">
     <svg viewBox="0 0 16 16"><path d="M5 2H3a1 1 0 00-1 1v1c0 6.075 4.925 11 11 11h1a1 1 0 001-1v-2l-4-1-1 1.5A9 9 0 014.5 5L6 4 5 2z"/></svg>
-    Позвонить
   </a>
   <a href="#form" class="kzop2__btn kzop2__btn--primary" data-goal="sticky_cta_click">
-    Открыть счёт за 1 день
+    Открыть счёт
+    <span class="kzcta-arrow"><svg viewBox="0 0 16 16"><path d="M3 8h10M8 3l5 5-5 5"/></svg></span>
   </a>
 </div>
 
@@ -2911,10 +2554,10 @@ html body #kghdr4 .kghdr4__phone:visited {
     },
     {
       "@type": "Question",
-      "name": "Реально ли открыть счёт за 1 день?",
+      "name": "Реально ли открыть счёт за 2 дня?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Да. Мы работаем с казначейством на постоянной основе — знаем требования, форматы документов и контактных лиц. 97% наших клиентов получают открытый счёт в течение 1 рабочего дня с момента передачи нам всех документов."
+        "text": "Да. Мы работаем с казначейством на постоянной основе — знаем требования, форматы документов и контактных лиц. 97% наших клиентов получают открытый счёт в течение 2 рабочих дней с момента передачи нам всех документов."
       }
     },
     {
@@ -2965,6 +2608,75 @@ html body #kghdr4 .kghdr4__phone:visited {
     <span class="kzop2-sp-name">Михаил К., Новосибирск</span>
     <span class="kzop2-sp-act">открыл казначейский счёт</span>
     <span class="kzop2-sp-time">сегодня</span>
+  </div>
+</div>
+
+<!-- ============ SUCCESS MODAL (заявка отправлена) ============ -->
+<style>
+.kzop2 .kzop2__hp{position:absolute!important;left:-9999px!important;top:auto!important;width:1px;height:1px;opacity:0;pointer-events:none}
+.kzop2__err-msg{font-size:13px;color:#dc2626;margin-top:10px;line-height:1.45;text-align:center;font-weight:500}
+.kzop2__success{
+  position:fixed;inset:0;z-index:99999;display:none;
+  align-items:center;justify-content:center;
+  background:rgba(12,27,51,0.55);
+  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+  padding:20px;
+  animation:kzop2-mfade .22s ease both;
+}
+.kzop2__success.is-open{display:flex}
+.kzop2__success-card{
+  background:#fff;border-radius:20px;
+  width:100%;max-width:440px;padding:40px 32px 28px;
+  text-align:center;position:relative;
+  box-shadow:0 24px 64px rgba(12,27,51,0.28);
+  font-family:var(--font, -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif);
+  animation:kzop2-mpop .28s cubic-bezier(0.34,1.56,0.64,1) both;
+}
+.kzop2__success-icon{
+  width:64px;height:64px;border-radius:50%;
+  background:var(--green,#059669);
+  margin:0 auto 18px;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 22px rgba(5,150,105,0.32);
+}
+.kzop2__success-icon svg{width:32px;height:32px;color:#fff}
+.kzop2__success-title{
+  font-size:22px;font-weight:800;color:var(--text,#0D1424);
+  letter-spacing:-0.02em;line-height:1.25;margin-bottom:10px;
+}
+.kzop2__success-sub{
+  font-size:15px;color:#5a6480;line-height:1.55;margin-bottom:24px;
+}
+.kzop2__success-close{
+  background:var(--blue,#1E50D4);color:#fff;border:none;cursor:pointer;
+  font-weight:700;font-size:15px;border-radius:12px;
+  padding:14px 28px;min-width:160px;
+  transition:background .2s ease,transform .2s ease,box-shadow .2s ease;
+}
+.kzop2__success-close:hover{background:var(--blue-h,#1641BC);transform:translateY(-1px);box-shadow:0 8px 18px rgba(30,80,212,0.28)}
+.kzop2__success-x{
+  position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:50%;
+  border:none;background:rgba(13,20,36,0.06);color:#5a6480;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;line-height:1;font-weight:400;
+  transition:background .15s ease,color .15s ease;
+}
+.kzop2__success-x:hover{background:rgba(13,20,36,0.12);color:#0D1424}
+@keyframes kzop2-mfade{from{opacity:0}to{opacity:1}}
+@keyframes kzop2-mpop{from{opacity:0;transform:scale(0.92) translateY(8px)}to{opacity:1;transform:scale(1) translateY(0)}}
+@media(prefers-reduced-motion:reduce){
+  .kzop2__success,.kzop2__success-card{animation:none}
+}
+</style>
+<div class="kzop2__success" id="kzop2-success" role="dialog" aria-modal="true" aria-labelledby="kzop2-success-title" aria-hidden="true">
+  <div class="kzop2__success-card" role="document">
+    <button type="button" class="kzop2__success-x" id="kzop2-success-x" aria-label="Закрыть">×</button>
+    <div class="kzop2__success-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+    <div class="kzop2__success-title" id="kzop2-success-title">Заявка отправлена</div>
+    <div class="kzop2__success-sub">Перезвоним за&nbsp;5&nbsp;минут в&nbsp;рабочее время<br>9:00–21:00 МСК</div>
+    <button type="button" class="kzop2__success-close" id="kzop2-success-close">Закрыть</button>
   </div>
 </div>
 </div><!-- .kzop2 -->
@@ -3083,121 +2795,363 @@ html body #kghdr4 .kghdr4__phone:visited {
     document.querySelectorAll('[data-section]').forEach(function(el){io.observe(el)});
   }
 
-  /* ── PHONE MASK ── */
+  /* ──────────────────────────────────────────────────────────────────
+     LEAD SUBMISSION → Cloudflare Worker → Telegram
+     Для других лэндингов меняется только KZ_LEAD_ENDPOINT + KZ_PAGE_*
+     ────────────────────────────────────────────────────────────────── */
+  var KZ_LEAD_ENDPOINT = 'https://api.kazna-gov.ru/api/lead/open';
+  var KZ_PAGE_SLUG = 'open';
+  var KZ_PAGE_LABEL = 'Открытие казначейского счёта';
+  var __kzPageOpenTs = Date.now();
+
+  /* ── PHONE MASK (1-в-1 с блогом: умное удаление через скобки/тире/пробелы, paste-нормализация) ── */
   function applyPhoneMask(inp){
-    function fmt(raw){
-      // оставляем только цифры
-      var d=raw.replace(/\D/g,'');
-      // убираем ведущую 7 или 8 если есть
-      if(d.length>0&&(d[0]==='7'||d[0]==='8'))d=d.slice(1);
-      d=d.slice(0,10);
-      var r='+7';
-      if(d.length>0)r+=' ('+d.slice(0,3);
-      if(d.length>=4)r+=') '+d.slice(3,6);
-      else if(d.length===3)r+=')';
-      if(d.length>=7)r+='-'+d.slice(6,8);
-      else if(d.length>=6)r+='-'+d.slice(6);
-      if(d.length>=9)r+='-'+d.slice(8,10);
-      else if(d.length>=8)r+='-'+d.slice(8);
-      return r;
+    function digitsOnly(s){ return (s || '').replace(/\D+/g, ''); }
+    function normalize(d){
+      if (!d) return '';
+      if (d.charAt(0) === '7') d = d.slice(1);
+      if (d.charAt(0) === '8') d = d.slice(1);
+      d = d.slice(0, 10);
+      return '7' + d;
     }
-    inp.addEventListener('focus',function(){
-      if(!this.value)this.value='+7 ';
-      var l=this.value.length;
-      setTimeout(function(){inp.setSelectionRange(l,l)},0);
+    function format(d){
+      if (!d) return '';
+      var p = '+7';
+      if (d.length > 1) p += ' (' + d.slice(1, 4);
+      if (d.length >= 4) p += ')';
+      if (d.length >= 5) p += ' ' + d.slice(4, 7);
+      if (d.length >= 8) p += '-' + d.slice(7, 9);
+      if (d.length >= 10) p += '-' + d.slice(9, 11);
+      return p;
+    }
+    function apply(){
+      var d = normalize(digitsOnly(inp.value));
+      inp.value = format(d);
+    }
+    inp.addEventListener('focus', function(){
+      if (!inp.value) inp.value = '+7 ';
     });
-    inp.addEventListener('input',function(){
-      var pos=this.selectionStart;
-      var old=this.value;
-      var nv=fmt(this.value);
-      this.value=nv;
-      // восстанавливаем курсор (грубо — в конец если пользователь добавлял)
-      if(pos>=old.length)this.selectionStart=this.selectionEnd=nv.length;
-    });
-    inp.addEventListener('keydown',function(e){
-      // не даём удалять +7
-      if((e.key==='Backspace'||e.key==='Delete')&&this.value.length<=3){
-        e.preventDefault();
+    inp.addEventListener('input', apply);
+    inp.addEventListener('keydown', function(e){
+      if (e.key !== 'Backspace' && e.key !== 'Delete') return;
+      var pos = inp.selectionStart;
+      if (pos !== inp.selectionEnd) return;
+      var val = inp.value;
+      var isBack = e.key === 'Backspace';
+      var i = isBack ? pos - 1 : pos;
+      while (i >= 0 && i < val.length){
+        var c = val.charCodeAt(i);
+        if (c >= 48 && c <= 57) break;
+        i += isBack ? -1 : 1;
       }
-    });
-    inp.addEventListener('paste',function(e){
+      if (i < 0 || i >= val.length) return;
       e.preventDefault();
-      var pasted=(e.clipboardData||window.clipboardData).getData('text');
-      this.value=fmt(pasted);
+      inp.value = val.slice(0, i) + val.slice(i + 1);
+      apply();
+    });
+    inp.addEventListener('blur', function(){
+      var d = digitsOnly(inp.value);
+      if (d.length <= 1) inp.value = '';
+    });
+    inp.addEventListener('paste', function(e){
+      e.preventDefault();
+      var t = (e.clipboardData || window.clipboardData).getData('text');
+      var d = normalize(digitsOnly(t));
+      inp.value = format(d);
     });
   }
   document.querySelectorAll('.kzop2__input-phone').forEach(applyPhoneMask);
 
-  /* ── Bridge to Tilda native form ── */
-  function kzBridgeToTilda(name, phone){
-    var forms = document.querySelectorAll('form[data-tilda-form],form[id^="form"],form.t-form,.js-tilda-rule');
-    if(!forms.length) forms = document.querySelectorAll('form');
-    function setVal(el, val){
-      if(!el) return;
-      el.value = val;
-      el.dispatchEvent(new Event('input',  {bubbles:true}));
-      el.dispatchEvent(new Event('change', {bubbles:true}));
+  /* ── HELPERS: cookie, utm, GA cid, search query, device ── */
+  function kzGetCookie(name){
+    var m = document.cookie.match(new RegExp('(?:^|; )' + name.replace(/[-.+*]/g, '\\$&') + '=([^;]*)'));
+    return m ? decodeURIComponent(m[1]) : '';
+  }
+  function kzReadUtm(){
+    var keys = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','yclid','gclid'];
+    var qs = new URLSearchParams(location.search);
+    var out = {};
+    keys.forEach(function(k){
+      var v = qs.get(k);
+      if (v){
+        out[k] = v;
+        try { sessionStorage.setItem('kz_' + k, v); } catch(e){}
+      } else {
+        try { var s = sessionStorage.getItem('kz_' + k); if (s) out[k] = s; } catch(e){}
+      }
+    });
+    return out;
+  }
+  function kzGaCid(){
+    var ga = kzGetCookie('_ga');
+    if (!ga) return '';
+    var parts = ga.split('.');
+    return parts.length >= 4 ? parts.slice(2).join('.') : '';
+  }
+  function kzSearchQuery(ref){
+    if (!ref) return '';
+    try {
+      var u = new URL(ref);
+      var qs = u.searchParams;
+      return qs.get('text') || qs.get('q') || qs.get('query') || '';
+    } catch(e){ return ''; }
+  }
+  function kzDevice(ua){
+    var os = /iPhone|iPad|iPod/.test(ua) ? 'iOS' :
+             /Android/.test(ua) ? 'Android' :
+             /Mac/.test(ua) ? 'Mac' :
+             /Windows/.test(ua) ? 'Windows' :
+             /Linux/.test(ua) ? 'Linux' : 'Unknown';
+    var m = ua.match(/(YaBrowser|Edg|OPR|Chrome|Firefox|Safari)\/(\d+)/);
+    var br = m ? (({Edg:'Edge', OPR:'Opera'}[m[1]] || m[1]) + ' ' + m[2]) : 'Browser';
+    return os + ' · ' + br;
+  }
+  function kzMskTime(){
+    try {
+      return new Date().toLocaleString('ru-RU', {
+        timeZone: 'Europe/Moscow',
+        day: '2-digit', month: '2-digit', year: 'numeric',
+        hour: '2-digit', minute: '2-digit'
+      }) + ' МСК';
+    } catch(e){ return new Date().toISOString(); }
+  }
+
+  function kzCollectMeta(source){
+    var utm = kzReadUtm();
+    var ref = document.referrer || '';
+    return {
+      source: source,
+      page: KZ_PAGE_SLUG,
+      page_label: KZ_PAGE_LABEL,
+      page_url: location.href,
+      page_title: document.title,
+      utm: utm,
+      yclid: utm.yclid || '',
+      gclid: utm.gclid || '',
+      ym_uid: kzGetCookie('_ym_uid'),
+      ga_cid: kzGaCid(),
+      referrer: ref,
+      search_query: kzSearchQuery(ref),
+      ts_iso: new Date().toISOString(),
+      ts_msk: kzMskTime(),
+      tz: (function(){ try { return Intl.DateTimeFormat().resolvedOptions().timeZone; } catch(e){ return ''; } })(),
+      lang: navigator.language || '',
+      screen: (screen.width || 0) + 'x' + (screen.height || 0),
+      viewport: (window.innerWidth || 0) + 'x' + (window.innerHeight || 0),
+      device: kzDevice(navigator.userAgent || ''),
+      time_on_page_sec: Math.round((Date.now() - __kzPageOpenTs) / 1000)
+    };
+  }
+
+  function kzBuildMessage(meta, name, phone, comment){
+    var lines = [];
+    lines.push('🟢 ЗАЯВКА · ' + meta.page_label);
+    lines.push('Форма: ' + (meta.source === 'final-form' ? 'Финальная форма' : 'CTA-перезвон') + ' (' + meta.source + ')');
+    lines.push('');
+    lines.push('— Контакт —');
+    lines.push('Имя: ' + (name || 'не указано'));
+    lines.push('Телефон: ' + phone);
+    if (comment) lines.push('Комментарий: ' + comment);
+    lines.push('');
+    lines.push('— Реклама / Источник —');
+    var u = meta.utm || {};
+    ['utm_source','utm_medium','utm_campaign','utm_term','utm_content'].forEach(function(k){
+      lines.push(k + ': ' + (u[k] || '—'));
+    });
+    lines.push('yclid: ' + (meta.yclid || '—'));
+    lines.push('gclid: ' + (meta.gclid || '—'));
+    if (meta.search_query) lines.push('Поисковый запрос: ' + meta.search_query);
+    lines.push('Реферер: ' + (meta.referrer || '—'));
+    lines.push('');
+    lines.push('— Контекст —');
+    lines.push('Страница: ' + meta.page_url);
+    lines.push('Заголовок: ' + meta.page_title);
+    lines.push('Время МСК: ' + meta.ts_msk);
+    lines.push('Часовой пояс: ' + (meta.tz || '—'));
+    lines.push('Язык: ' + meta.lang);
+    lines.push('Экран: ' + meta.screen + ' · viewport ' + meta.viewport);
+    lines.push('Устройство: ' + meta.device);
+    if (meta.ym_uid) lines.push('Yandex Metrika uid: ' + meta.ym_uid);
+    if (meta.ga_cid) lines.push('GA client_id: ' + meta.ga_cid);
+    lines.push('Время до отправки: ' + meta.time_on_page_sec + ' сек');
+    return lines.join('\n');
+  }
+
+  /* ── SUCCESS MODAL ── */
+  function kzShowSuccess(){
+    var m = document.getElementById('kzop2-success');
+    if (!m) return;
+    document.body.style.overflow = 'hidden';
+    m.classList.add('is-open');
+  }
+  function kzHideSuccess(){
+    var m = document.getElementById('kzop2-success');
+    if (!m) return;
+    m.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+  (function(){
+    var modal = document.getElementById('kzop2-success');
+    if (!modal) return;
+    var close = function(){ kzHideSuccess(); };
+    var xBtn = document.getElementById('kzop2-success-x');
+    var cBtn = document.getElementById('kzop2-success-close');
+    if (xBtn) xBtn.addEventListener('click', close);
+    if (cBtn) cBtn.addEventListener('click', close);
+    modal.addEventListener('click', function(e){ if (e.target === modal) close(); });
+    document.addEventListener('keydown', function(e){
+      if (e.key === 'Escape' && modal.classList.contains('is-open')) close();
+    });
+  })();
+
+  /* ── INLINE ERROR ── */
+  function kzShowError(btn, originalLabel, msg){
+    if (btn){ btn.disabled = false; btn.textContent = originalLabel; }
+    if (!btn) return;
+    var box = btn.parentNode && btn.parentNode.querySelector('.kzop2__err-msg');
+    if (!box){
+      box = document.createElement('div');
+      box.className = 'kzop2__err-msg';
+      btn.parentNode.insertBefore(box, btn.nextSibling);
     }
-    forms.forEach(function(form){
-      var nameField  = form.querySelector('[name="Name"],[name="name"],[data-inputname="Name"]');
-      var phoneField = form.querySelector('[name="Phone"],[name="phone"],[data-inputname="Phone"],[type="tel"]');
-      setVal(nameField,  name  || 'Не указано');
-      setVal(phoneField, phone || '');
-      var btn = form.querySelector('[type="submit"],.t-submit,button[type="submit"]');
-      if(btn) btn.click();
+    box.textContent = msg;
+  }
+  function kzClearError(btn){
+    if (!btn) return;
+    var box = btn.parentNode && btn.parentNode.querySelector('.kzop2__err-msg');
+    if (box) box.textContent = '';
+  }
+
+  /* ── SEND LEAD ── */
+  function kzSendLead(opts){
+    var btn = opts.btn;
+    var btnOriginal = btn.textContent;
+    var phoneDigits = (opts.phone || '').replace(/\D/g, '');
+    var phoneCanon = '+' + phoneDigits;
+    var meta = kzCollectMeta(opts.source);
+    var message = kzBuildMessage(meta, opts.name, phoneCanon, opts.comment);
+    var payload = {
+      name: opts.name || 'не указано',
+      contact: phoneCanon,
+      message: message,
+      hp: opts.hp || '',
+      consent_pd: true,
+      consent_pd_text: "Согласие с политикой обработки ПДн (https://kazna-gov.ru/personal_data_policy) и пользовательским соглашением (https://kazna-gov.ru/agreement)",
+      consent_at: new Date().toISOString(),
+      source: meta.source,
+      page: meta.page,
+      utm: meta.utm,
+      yclid: meta.yclid,
+      gclid: meta.gclid,
+      ym_uid: meta.ym_uid,
+      ga_cid: meta.ga_cid,
+      referrer: meta.referrer,
+      search_query: meta.search_query,
+      page_url: meta.page_url,
+      page_title: meta.page_title,
+      ts_iso: meta.ts_iso,
+      ts_msk: meta.ts_msk,
+      tz: meta.tz,
+      lang: meta.lang,
+      screen: meta.screen,
+      viewport: meta.viewport,
+      device: meta.device,
+      time_on_page_sec: meta.time_on_page_sec
+    };
+    kzClearError(btn);
+    btn.disabled = true; btn.textContent = 'Отправляем…';
+    fetch(KZ_LEAD_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+    .then(function(r){ return r.json().catch(function(){ return { success: r.ok }; }); })
+    .then(function(res){
+      btn.disabled = false; btn.textContent = btnOriginal;
+      if (res && res.success){
+        kzShowSuccess();
+        try {
+          var goalName = opts.source === 'final-form' ? 'lead_submitted_final' : 'lead_submitted_mid';
+          ymGoal(goalName, Object.assign({ page: meta.page, service: meta.page }, meta.utm || {}));
+        } catch(e){}
+      } else {
+        kzShowError(btn, btnOriginal, 'Не удалось отправить. Попробуйте ещё раз или позвоните +7 (495) 108-42-32');
+      }
+    })
+    .catch(function(){
+      kzShowError(btn, btnOriginal, 'Сеть недоступна. Позвоните +7 (495) 108-42-32 или попробуйте позже.');
     });
   }
 
   /* ── FORM VALIDATION ── */
-  function validatePhone(v){return v.replace(/\D/g,'').length===11;}
-  function validateName(v){return v.trim().length>=2;}
+  function validatePhoneDigits(v){
+    var d = (v || '').replace(/\D/g, '');
+    return d.length === 11 && d[0] === '7';
+  }
+  function validateName(v){ return (v || '').trim().length >= 2; }
 
-  // Финальная форма
-  var finalSubmit=document.getElementById('kzop2-final-submit');
-  if(finalSubmit){
-    finalSubmit.addEventListener('click',function(e){
-      var tel=document.querySelector('.kzop2__form-fields .kzop2__input-phone');
-      var name=document.querySelector('.kzop2__input-name');
-      var consent=document.getElementById('kzop2-final-consent');
-      var ok=true;
-      if(name&&!validateName(name.value)){
-        name.style.borderColor='rgba(220,38,38,0.7)';
-        name.focus();ok=false;
-      }else if(name)name.style.borderColor='';
-      if(tel&&!validatePhone(tel.value)){
-        tel.style.borderColor='rgba(220,38,38,0.7)';
-        if(ok){tel.focus();ok=false;}
-      }else if(tel)tel.style.borderColor='';
-      if(consent&&!consent.checked){
-        consent.style.outline='2px solid rgba(220,38,38,0.7)';
-        ok=false;
-      }else if(consent)consent.style.outline='';
-      if(ok){
-        ymGoal('full_form_submit',Object.assign({service:'open',price:29000},window._kzUtm||{}));
-        kzBridgeToTilda(name?name.value:'', tel?tel.value:'');
-      }
+  // Финальная форма (имя + телефон)
+  var finalSubmit = document.getElementById('kzop2-final-submit');
+  if (finalSubmit){
+    finalSubmit.addEventListener('click', function(e){
+      e.preventDefault();
+      var formCard = finalSubmit.closest('.kzop2__form-card');
+      var nameEl = formCard.querySelector('.kzop2__input-name');
+      var telEl = formCard.querySelector('.kzop2__input-phone');
+      var hpEl = formCard.querySelector('.kzop2__hp');
+      var consent = document.getElementById('kzop2-final-consent');
+      var ok = true;
+      if (nameEl && !validateName(nameEl.value)){
+        nameEl.style.borderColor = 'rgba(220,38,38,0.7)';
+        nameEl.focus(); ok = false;
+      } else if (nameEl) nameEl.style.borderColor = '';
+      if (telEl && !validatePhoneDigits(telEl.value)){
+        telEl.style.borderColor = 'rgba(220,38,38,0.7)';
+        if (ok){ telEl.focus(); ok = false; } else ok = false;
+      } else if (telEl) telEl.style.borderColor = '';
+      if (consent && !consent.checked){
+        consent.style.outline = '2px solid rgba(220,38,38,0.7)';
+        ok = false;
+      } else if (consent) consent.style.outline = '';
+      if (!ok) return;
+      ymGoal('full_form_submit', Object.assign({ service: 'open', price: 29000 }, window._kzUtm || {}));
+      kzSendLead({
+        btn: finalSubmit,
+        source: 'final-form',
+        name: nameEl ? nameEl.value.trim() : '',
+        phone: telEl ? telEl.value : '',
+        hp: hpEl ? hpEl.value : ''
+      });
     });
   }
 
-  // Mid-CTA форма
-  var midSubmit=document.getElementById('kzop2-mid-submit');
-  if(midSubmit){
-    midSubmit.addEventListener('click',function(e){
-      var tel=document.querySelector('.kzop2__midcta-tel');
-      var consent=document.getElementById('kzop2-mid-consent');
-      var ok=true;
-      if(tel&&!validatePhone(tel.value)){
-        tel.style.borderColor='rgba(220,38,38,0.7)';
-        tel.focus();ok=false;
-      }else if(tel)tel.style.borderColor='';
-      if(consent&&!consent.checked){
-        consent.style.outline='2px solid rgba(220,38,38,0.7)';
-        ok=false;
-      }else if(consent)consent.style.outline='';
-      if(ok){
-        ymGoal('midcta_submit',Object.assign({cta:'mid_form'},window._kzUtm||{}));
-        kzBridgeToTilda('Не указано', tel?tel.value:'');
-      }
+  // Mid-CTA форма (только телефон)
+  var midSubmit = document.getElementById('kzop2-mid-submit');
+  if (midSubmit){
+    midSubmit.addEventListener('click', function(e){
+      e.preventDefault();
+      var midForm = midSubmit.closest('.kzop2__midcta-form');
+      var telEl = midForm.querySelector('.kzop2__input-phone');
+      var hpEl = midForm.querySelector('.kzop2__hp');
+      var consent = document.getElementById('kzop2-mid-consent');
+      var ok = true;
+      if (telEl && !validatePhoneDigits(telEl.value)){
+        telEl.style.borderColor = 'rgba(220,38,38,0.7)';
+        telEl.focus(); ok = false;
+      } else if (telEl) telEl.style.borderColor = '';
+      if (consent && !consent.checked){
+        consent.style.outline = '2px solid rgba(220,38,38,0.7)';
+        ok = false;
+      } else if (consent) consent.style.outline = '';
+      if (!ok) return;
+      ymGoal('midcta_submit', Object.assign({ cta: 'mid_form' }, window._kzUtm || {}));
+      kzSendLead({
+        btn: midSubmit,
+        source: 'mid-cta',
+        name: '',
+        phone: telEl ? telEl.value : '',
+        hp: hpEl ? hpEl.value : ''
+      });
     });
   }
 
@@ -3323,7 +3277,7 @@ html body #kghdr4 .kghdr4__phone:visited {
   (function(){
     var el = document.getElementById('kzop2-typed');
     if(!el) return;
-    var words = ['открыть за 1 день.','без ошибок.','с гарантией.','за 2 рабочих дня.'];
+    var words = ['открыть за 2 дня.','без ошибок.','с гарантией.','за 2 рабочих дня.'];
     var idx = 0;
     function cycle(){
       el.classList.add('kz-out');
@@ -3833,11 +3787,16 @@ html body #kghdr4 .kghdr4__phone:visited {
 
   function shouldHide(el){
     if(!el || el.nodeType !== 1) return false;
+    /* Никогда не трогаем наш контент */
     if(el.querySelector && el.querySelector('.kzop2')) return false;
+    /* Никогда не трогаем хедер, навигацию, футер Tilda */
     if(el.querySelector && el.querySelector('.t-menu,.t-footer,nav,.t-slds')) return false;
+    /* Скрываем нативные Tilda-формы по record-type */
     var rt = el.getAttribute && el.getAttribute('data-record-type');
     if(rt && ['105','106','107','608','609'].indexOf(rt) !== -1) return true;
+    /* has intl-tel-input = нативная форма с телефоном */
     if(el.querySelector && el.querySelector('.intl-tel-input,.iti')) return true;
+    /* Пустой или почти пустой блок без медиа */
     var txt = (el.innerText || '').trim();
     if(txt.length < 3 && !el.querySelector('img,canvas,video')) return true;
     return false;
