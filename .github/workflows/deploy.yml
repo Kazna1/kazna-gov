@@ -1,5 +1,6 @@
-# .github/workflows/deploy.yml  — для нового репозитория kazna-gov.ru (статика блога)
-# Аналог схемы kaznaexpert.ru: push в main → GitHub Action заходит по SSH на Fornex → git pull.
+# Авто-деплой блога kazna-gov.ru на Fornex.
+# push в main → GitHub Action заходит по SSH на Fornex → забирает свежий репозиторий
+# и зеркалит его в каталог сайта (rsync). Docroot НЕ git-репозиторий — поэтому clone+rsync.
 name: deploy
 on:
   push:
@@ -10,17 +11,17 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to Fornex via SSH (git pull)
+      - name: Deploy to Fornex via SSH
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: ${{ secrets.FORNEX_HOST }}        # IP сервера Fornex
-          username: ${{ secrets.FORNEX_USER }}    # ssh-пользователь
-          key: ${{ secrets.FORNEX_SSH_KEY }}      # приватный deploy-ключ
-          port: ${{ secrets.FORNEX_PORT }}        # обычно 22
+          host: ${{ secrets.FORNEX_HOST }}
+          username: ${{ secrets.FORNEX_USER }}
+          key: ${{ secrets.FORNEX_SSH_KEY }}
+          port: ${{ secrets.FORNEX_PORT }}
           script: |
             set -e
-            cd ${{ secrets.FORNEX_PATH }}         # напр. /var/www/kazna-blog
-            git fetch --all
-            git reset --hard origin/main
-            # nginx сам отдаёт статику; перезагрузка не нужна
-            echo "deployed: $(git rev-parse --short HEAD)"
+            cd ~
+            rm -rf kazna_src
+            git clone -q https://github.com/Kazna1/kazna-gov.git kazna_src
+            rsync -a --delete --exclude='.git' kazna_src/ ${{ secrets.FORNEX_PATH }}/
+            echo "deployed: $(cd kazna_src && git rev-parse --short HEAD)"
