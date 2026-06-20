@@ -27,6 +27,9 @@ RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
 
 ErrorDocument 404 /404.html
 
+
+# --- RSS блога -> живой фид на api ---
+RewriteRule ^blog/rss/?$ https://api.kazna-gov.ru/feed.xml [R=301,L]
 # --- 301 редиректы (перенос с Tilda) ---
 RewriteRule ^how_to_open/?$ /blog/how_to_open [R=301,L]
 RewriteRule ^tofk/?$ /blog/tofk [R=301,L]
