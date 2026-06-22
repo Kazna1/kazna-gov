@@ -8448,23 +8448,22 @@ window.kgRequestPush = function(){
 })();
 </script>
 
-<style id="kg-mobilefix-v1">
-/* kg-mobilefix-v1 — мобильные таблицы (скролл без обрезки) + тап-зум схем */
+<style id="kg-mobilefix-v2">
+/* kg-mobilefix-v2 — мобильные таблицы влезают по ширине + тап-зум схем */
 @media (max-width:600px){
-  .kg-content table, .kg-article table, .t-rec table, table.kg-table{
-    display:block !important; width:100% !important; max-width:100% !important;
-    overflow-x:auto !important; -webkit-overflow-scrolling:touch !important;
-    font-size:13px !important;
+  .kg-content table.kg-table,.kg-article table.kg-table,table.kg-table{
+    table-layout:fixed !important; width:100% !important; font-size:12.5px !important;
   }
-  .kg-content table th,.kg-content table td,.kg-article table th,.kg-article table td{
-    white-space:normal !important; word-break:break-word;
+  .kg-table th,.kg-table td{
+    white-space:normal !important; word-break:break-word; overflow-wrap:anywhere;
+    padding:8px 8px !important; vertical-align:top;
   }
-  .kg-table-wrap{ position:relative; }
+  /* не-kg таблицы (главная/services) и совсем широкие — горизонтальный скролл как фолбэк */
+  .kg-content table:not(.kg-table),.t-rec table:not(.kg-table){
+    display:block; max-width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; font-size:12.5px;
+  }
   .kg-figure__img,.kg-figure img{ cursor:zoom-in; }
-  .kg-figure::after{
-    content:"Нажмите, чтобы рассмотреть"; display:block;
-    font:600 12px/1.3 inherit; color:#7a7c7a; text-align:center; margin-top:6px;
-  }
+  .kg-figure::after{content:"Нажмите, чтобы рассмотреть";display:block;font:600 12px/1.3 inherit;color:#7a7c7a;text-align:center;margin-top:6px;}
 }
 .kg-zoom-overlay{position:fixed;inset:0;background:rgba(12,16,22,.93);z-index:2147483600;
   display:none;align-items:flex-start;justify-content:flex-start;overflow:auto;padding:16px;}
@@ -8475,11 +8474,11 @@ window.kgRequestPush = function(){
 .kg-zoom-hint{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);color:#fff;
   font:600 13px/1.2 -apple-system,sans-serif;background:rgba(0,0,0,.55);padding:9px 16px;border-radius:22px;z-index:2147483601;}
 </style>
-<script id="kg-mobilefix-v1-js">
+<script id="kg-mobilefix-v2-js">
 (function(){
  if(window.__kgZoom)return; window.__kgZoom=1;
  var ov=document.createElement('div');ov.className='kg-zoom-overlay';
- ov.innerHTML='<button class="kg-zoom-close" type="button" aria-label="Закрыть">\u00d7</button><img alt=""><div class="kg-zoom-hint">Листайте, чтобы рассмотреть \u00b7 нажмите \u00d7</div>';
+ ov.innerHTML='<button class="kg-zoom-close" type="button" aria-label="\u0417\u0430\u043a\u0440\u044b\u0442\u044c">\u00d7</button><img alt=""><div class="kg-zoom-hint">\u041b\u0438\u0441\u0442\u0430\u0439\u0442\u0435, \u0447\u0442\u043e\u0431\u044b \u0440\u0430\u0441\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u00b7 \u043d\u0430\u0436\u043c\u0438\u0442\u0435 \u00d7</div>';
  function mount(){if(!ov.parentNode)document.body.appendChild(ov);}
  if(document.body)mount();else document.addEventListener('DOMContentLoaded',mount);
  var img=ov.querySelector('img'),btn=ov.querySelector('.kg-zoom-close');
