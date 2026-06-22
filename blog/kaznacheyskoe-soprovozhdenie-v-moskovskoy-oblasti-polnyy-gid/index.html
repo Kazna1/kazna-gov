@@ -8485,11 +8485,11 @@ window.kgRequestPush = function(){
 })();
 </script>
 
-<style id="kg-mobilefix-v2">
+<style id="kg-mobilefix-v3">
 /* kg-mobilefix-v2 — мобильные таблицы влезают по ширине + тап-зум схем */
 @media (max-width:600px){
   .kg-content table.kg-table,.kg-article table.kg-table,table.kg-table{
-    table-layout:fixed !important; width:100% !important; font-size:12.5px !important;
+    table-layout:fixed !important; width:100% !important; min-width:0 !important; font-size:12.5px !important;
   }
   .kg-table th,.kg-table td{
     white-space:normal !important; word-break:break-word; overflow-wrap:anywhere;
@@ -8511,7 +8511,7 @@ window.kgRequestPush = function(){
 .kg-zoom-hint{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);color:#fff;
   font:600 13px/1.2 -apple-system,sans-serif;background:rgba(0,0,0,.55);padding:9px 16px;border-radius:22px;z-index:2147483601;}
 </style>
-<script id="kg-mobilefix-v2-js">
+<script id="kg-mobilefix-v3-js">
 (function(){
  if(window.__kgZoom)return; window.__kgZoom=1;
  var ov=document.createElement('div');ov.className='kg-zoom-overlay';

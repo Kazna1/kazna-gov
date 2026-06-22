@@ -4746,11 +4746,11 @@ fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Ty
 </script> <!-- nominify end --> </div> </div> </div> </div> </div> <!--/allrecords--> <!-- Stat --> <!-- Yandex.Metrika counter 86763493 --> <!-- Метрика: дубль-init счётчика удалён (счётчик инициализируется в <head>) --> <noscript><div><img src="https://mc.yandex.ru/watch/86763493" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter --> <script type="text/javascript">if(!window.mainTracker) {window.mainTracker='tilda';}
 setTimeout(function(){(function(d,w,k,o,g) {var n=d.getElementsByTagName(o)[0],s=d.createElement(o),f=function(){n.parentNode.insertBefore(s,n);};s.type="text/javascript";s.async=true;s.key=k;s.id="tildastatscript";s.src=g;if(w.opera=="[object Opera]") {d.addEventListener("DOMContentLoaded",f,false);} else {f();}})(document,window,'812f72a0c7f8e0f36f6f87d2fe7bbe24','script','https://static.tildacdn.com/js/tilda-stat-1.0.min.js');},3000);</script> <!-- Rating Mail.ru counter --> <script type="text/javascript" data-tilda-cookie-type="analytics">setTimeout(function(){var _tmr=window._tmr||(window._tmr=[]);_tmr.push({id:"3423058",type:"pageView",start:(new Date()).getTime()});window.mainMailruId='3423058';(function(d,w,id) {if(d.getElementById(id)) {return;}
 var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=id;ts.src="https://top-fwz1.mail.ru/js/code.js";var f=function() {var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(ts,s);};if(w.opera=="[object Opera]") {d.addEventListener("DOMContentLoaded",f,false);} else {f();}})(document,window,"topmailru-code");},3000);</script> <noscript><img src="https://top-fwz1.mail.ru/counter?id=3423058;js=na" style="border:0;position:absolute;left:-9999px;width:1px;height:1px" alt="Top.Mail.Ru" /></noscript> <!-- //Rating Mail.ru counter --> <!-- VK Pixel code (noscript) --> <noscript><img src="https://vk.com/rtrg?p=VK-RTRG-1160203-5M8LR" style="position:fixed; left:-999px;" alt=""/></noscript> <!-- End VK Pixel code (noscript) --> 
-<style id="kg-mobilefix-v2">
+<style id="kg-mobilefix-v3">
 /* kg-mobilefix-v2 — мобильные таблицы влезают по ширине + тап-зум схем */
 @media (max-width:600px){
   .kg-content table.kg-table,.kg-article table.kg-table,table.kg-table{
-    table-layout:fixed !important; width:100% !important; font-size:12.5px !important;
+    table-layout:fixed !important; width:100% !important; min-width:0 !important; font-size:12.5px !important;
   }
   .kg-table th,.kg-table td{
     white-space:normal !important; word-break:break-word; overflow-wrap:anywhere;
@@ -4772,7 +4772,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 .kg-zoom-hint{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);color:#fff;
   font:600 13px/1.2 -apple-system,sans-serif;background:rgba(0,0,0,.55);padding:9px 16px;border-radius:22px;z-index:2147483601;}
 </style>
-<script id="kg-mobilefix-v2-js">
+<script id="kg-mobilefix-v3-js">
 (function(){
  if(window.__kgZoom)return; window.__kgZoom=1;
  var ov=document.createElement('div');ov.className='kg-zoom-overlay';
