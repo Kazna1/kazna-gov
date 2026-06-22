@@ -47,9 +47,9 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   } catch (e) {}
 })();
 </script> <!-- 7. УНИВЕРСАЛЬНАЯ МОДАЛКА — fallback для страниц без своего баннера --> <style>
-.kgcb-mask{position:fixed;inset:0;background:rgba(14,15,16,.55);z-index:10000;display:none;align-items:center;justify-content:center;padding:24px;-webkit-backdrop-filter:blur(8px) saturate(140%);backdrop-filter:blur(8px) saturate(140%);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;}
+.kgcb-mask{position:fixed;left:0;right:0;bottom:0;top:auto;background:none;z-index:10000;display:none;align-items:flex-end;justify-content:center;padding:0 16px 16px;pointer-events:none;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;}
 .kgcb-mask.is-open{display:flex;animation:kgcbFadeIn .25s ease;}
-.kgcb-card{background:#fff;color:#0E0F0E;max-width:480px;width:100%;border-radius:16px;padding:28px 26px 24px;box-shadow:0 24px 64px -16px rgba(0,0,0,.45),0 2px 6px rgba(0,0,0,.18);font-size:14.5px;line-height:1.55;animation:kgcbPop .25s cubic-bezier(.2,.8,.3,1.1);}
+.kgcb-card{pointer-events:auto;background:#fff;color:#0E0F0E;max-width:680px;width:100%;border-radius:14px;padding:18px 20px;box-shadow:0 12px 40px -10px rgba(0,0,0,.35),0 1px 4px rgba(0,0,0,.15);font-size:14px;line-height:1.5;animation:kgcbPop .25s cubic-bezier(.2,.8,.3,1.1);}
 .kgcb-card h3{font-family:'Lora',Georgia,serif;font-weight:700;font-size:21px;letter-spacing:-.012em;line-height:1.25;margin:0 0 8px;}
 .kgcb-card p{margin:0 0 18px;color:#3F4347;}
 .kgcb-card a{color:#15846B;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px;}
