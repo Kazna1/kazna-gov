@@ -94,7 +94,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
     if(document.getElementById('kgcbMask'))return;
     var m=document.createElement('div');
     m.id='kgcbMask';m.className='kgcb-mask';
-    m.innerHTML='<div class="kgcb-card" role="dialog" aria-modal="true" aria-labelledby="kgcbTitle"><h3 id="kgcbTitle">Используем cookies для&nbsp;аналитики</h3><p>Помогает понять, как читают материалы и&nbsp;улучшать сервис. Подробнее в&nbsp;<a href="/personal_data_policy" target="_blank" rel="noopener">политике обработки персональных данных</a>.</p><div class="kgcb-actions"><button type="button" class="kgcb-btn kgcb-btn--secondary" data-act="decline">Только необходимые</button><button type="button" class="kgcb-btn kgcb-btn--primary" data-act="accept">Принять</button></div></div>';
+    m.innerHTML='<div class="kgcb-card" role="dialog" aria-modal="true" aria-labelledby="kgcbTitle"><h3 id="kgcbTitle">Используем cookies для&nbsp;аналитики</h3><p>Помогает понять, как читают материалы и&nbsp;улучшать сервис. Подробнее в&nbsp;<a href="/personal_data_policy" target="_blank" rel="noopener">политике обработки персональных данных</a>.</p><div class="kgcb-actions"><button type="button" class="kgcb-btn kgcb-btn--secondary" data-act="decline" style="display:none">Только необходимые</button><button type="button" class="kgcb-btn kgcb-btn--primary" data-act="accept">Хорошо</button></div></div>';
     function attach(){
       document.body.appendChild(m);
       requestAnimationFrame(function(){m.classList.add('is-open');});
