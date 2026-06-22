@@ -74,7 +74,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   function read(){try{return localStorage.getItem(KEY)}catch(_){return null}}
   function write(v){try{localStorage.setItem(KEY,v)}catch(_){}}
   function publish(v){window.kgConsent=v;document.documentElement.setAttribute('data-cookie-consent',v);}
-  function disableAnalytics(){
+  function disableAnalytics(){return;/* informational mode: Метрика не отключается, баннер только уведомляет */
     try{
       var h=location.hostname,roots=['','.'+h],p=h.split('.');
       if(p.length>2)roots.push('.'+p.slice(-2).join('.'));

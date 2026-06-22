@@ -8675,7 +8675,7 @@ window.kgRequestPush = function(){
     bar.classList.remove('is-visible');
     setTimeout(function(){bar.hidden=true;},450);
   }
-  function disableAnalytics(){
+  function disableAnalytics(){return;/* informational mode: Метрика не отключается, баннер только уведомляет */
     try{
       var host=location.hostname,roots=['','.'+host],parts=host.split('.');
       if(parts.length>2)roots.push('.'+parts.slice(-2).join('.'));
