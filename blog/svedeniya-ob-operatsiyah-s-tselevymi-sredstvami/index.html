@@ -53,7 +53,7 @@
       "description": "Пошаговое заполнение сведений об операциях с целевыми средствами (ССУ) при КС в ГИИС «Электронный бюджет»: обязательные поля, согласование с УФК, статус ЦС.",
       "image": "https://api.kazna-gov.ru/og/svedeniya-tselevymi.jpg",
       "datePublished": "2026-05-29T09:00:00+03:00",
-      "dateModified": "2026-06-19T10:00:00+03:00",
+      "dateModified": "2026-06-23T11:30:00+03:00",
       "author": {
         "@id": "https://kazna-gov.ru/expert/stella#person"
       },
@@ -5445,7 +5445,7 @@ body .kg-content{
       <div class="kg-hero__label">
         <span>Инструкция</span>
         <span class="kg-hero__label-line"></span>
-        <span>обновлено 19.06.2026</span>
+        <span>обновлено 23.06.2026</span>
       </div>
 
       <div class="kg-hero__meta">
@@ -5500,9 +5500,13 @@ body .kg-content{
           <summary class="kg-changelog__summary">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
             История обновлений
-            <em>обновлено 19.06.2026</em>
+            <em>обновлено 23.06.2026</em>
           </summary>
           <ul class="kg-changelog__list">
+            <li class="kg-changelog__item">
+              <span class="kg-changelog__date">23.06.2026</span>
+              <span class="kg-changelog__what"><b>Добавлен чек-лист</b>5 проверок перед отправкой ССУ, чтобы не получить возврат от УФК.</span>
+            </li>
             <li class="kg-changelog__item">
               <span class="kg-changelog__date">29.05.2026</span>
               <span class="kg-changelog__what"><b>Переработка статьи</b>Материал перенесён на обновлённый шаблон со схемой flow согласования ССУ, таблицей обязательных полей и пошаговым алгоритмом заполнения. Актуализировано на 2026 год.</span>
@@ -5683,6 +5687,21 @@ body .kg-content{
             </table>
           </div>
           <p class="kg-reveal">В типовом случае от подачи до получения статуса «согласовано» — 1–3 рабочих дня. При возврате каждый круг доработки удлиняет срок на те же 1–3 рабочих дня. Сроки УФК по остальным процедурам собраны в <a href="/blog/sroki-rassmotreniya-dokumentov-v-ufk-tablitsa">полной таблице сроков рассмотрения документов в УФК</a>.</p>
+
+          <aside class="kg-callout kg-callout--insight kg-reveal">
+            <div class="kg-callout__label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+              Чек-лист: 5 проверок перед отправкой ССУ (чтобы не вернули)
+            </div>
+            <ol style="margin:8px 0 0;padding-left:20px;line-height:1.6;">
+              <li><b>ИГК совпадает везде</b> — в ССУ, в контракте и в будущих распоряжениях идентификатор должен быть одинаков до знака.</li>
+              <li><b>Суммы по направлениям</b> не превышают цену контракта, а источники поступлений соответствуют условиям контракта или соглашения.</li>
+              <li><b>Коды направления расходования</b> подобраны под характер будущих платежей (аванс, оплата работ, зарплата, налоги).</li>
+              <li><b>Документ-основание приложен</b> — контракт или соглашение в читаемом PDF, реквизиты совпадают.</li>
+              <li><b>Период и реквизиты</b> — заполнен текущий год и плановый период, данные организации совпадают с ЕГРЮЛ.</li>
+            </ol>
+            <p style="margin:10px 0 0;">Если все пять пунктов сходятся, ССУ обычно проходит согласование с первого раза. Расхождение ИГК или сумм — причина №1 возврата.</p>
+          </aside>
         </section>
 
         <!-- INLINE CTA -->
