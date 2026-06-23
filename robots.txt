@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /api/
 Sitemap: https://kazna-gov.ru/sitemap.xml
 
 # AI-поисковики / LLM-краулеры — явно разрешены (AI-выдача, цитируемость)
