@@ -7054,7 +7054,7 @@ window.kgRequestPush = function(){
   else{publishConsent('pending');setTimeout(show,800);}
 })();
 </script> <!-- nominify end --> </div> </div> </div> </div> </div> <!-- KG lead magnet: бесплатный аудит контракта -->
-<section class="kglm" id="audit" aria-label="Бесплатный аудит контракта">
+<section class="kglm" id="audit" aria-label="Экспресс-аудит контракта">
 <style>
 .kglm{max-width:1100px;margin:48px auto;padding:32px 28px;border-radius:22px;background:linear-gradient(135deg,#0f241c,#15846b);color:#fff;font-family:Inter,-apple-system,Segoe UI,Roboto,sans-serif;display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
 @media(max-width:820px){.kglm{grid-template-columns:1fr;padding:24px 18px}}
@@ -7078,23 +7078,24 @@ window.kgRequestPush = function(){
 .kglm__card.sent .kglm__form{display:none}.kglm__card.sent .kglm__ok{display:block}
 </style>
 <div class="kglm__copy">
-<span class="kglm__tag">Бесплатно · за 24 часа</span>
-<h2 class="kglm__h">Бесплатный аудит вашего госконтракта</h2>
+<span class="kglm__tag">9 900 ₽ · зачтём в стоимость сопровождения</span>
+<h2 class="kglm__h">Экспресс-аудит вашего госконтракта</h2>
 <ul class="kglm__list">
 <li>Проверим, попадает ли контракт под казначейское сопровождение и по какому закону</li>
 <li>Найдём риски возвратов и замечаний УФК <b>до</b> первого платежа</li>
 <li>Скажем точные сроки и фиксированную стоимость сопровождения «под ключ»</li>
+<li><b>Письменное заключение за 1 рабочий день.</b> Стоимость 9 900 ₽ зачитывается в цену сопровождения при заключении договора</li>
 <li>15+ лет практики · 800+ открытых счетов · 0% возвратов в 2025</li>
 </ul>
 </div>
 <div class="kglm__card">
 <form class="kglm__form" id="kglmForm" novalidate>
-<h3>Получить аудит контракта</h3>
-<p>Перезвоним в течение часа в рабочее время.</p>
+<h3>Экспресс-аудит контракта · 9 900 ₽</h3>
+<p>Платный экспресс-аудит — заключение за 1 рабочий день. Сумма зачтётся в стоимость сопровождения. Перезвоним в течение часа.</p>
 <input class="kglm__in" name="name" placeholder="Имя" required minlength="2" maxlength="80" autocomplete="name">
 <input class="kglm__in" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required autocomplete="tel" inputmode="tel">
 <input type="text" name="hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
-<button class="kglm__btn" type="submit">Запросить бесплатный аудит →</button>
+<button class="kglm__btn" type="submit">Заказать аудит — 9 900 ₽ →</button>
 <label class="kglm__pol"><input type="checkbox" name="consent" required style="margin-top:2px;accent-color:#15846b"><span>Согласен с <a href="/personal_data_policy" target="_blank" rel="noopener">политикой обработки персональных данных</a></span></label>
 <div class="kglm__msg" id="kglmMsg"></div>
 </form>
@@ -7107,7 +7108,7 @@ function fmt(d){if(!d)return'';var s='+7';if(d.length>1)s+=' ('+d.slice(1,4);if(
 p.addEventListener('focus',function(){if(!p.value)p.value='+7 '});p.addEventListener('input',function(){p.value=fmt(nm(dg(p.value)))});
 function sh(t){msg.style.display='block';msg.style.background='#fdecec';msg.style.color='#c0392b';msg.textContent=t}
 f.addEventListener('submit',function(e){e.preventDefault();if(!f.consent.checked)return sh('Подтвердите согласие с политикой');var d=dg(p.value);if(f.name.value.trim().length<2)return sh('Введите имя');if(d.length!==11)return sh('Введите полный номер телефона');var b=f.querySelector('button');b.disabled=true;b.textContent='Отправляем…';
-fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:f.name.value.trim(),contact:'+'+d,message:'Источник: лид-магнит «бесплатный аудит контракта»',consent_pd:true,consent_at:new Date().toISOString(),hp:f.hp.value})}).then(function(r){return r.json()}).then(function(res){b.disabled=false;b.textContent='Запросить бесплатный аудит →';if(res.success){card.classList.add('sent');if(window.kgTrack)kgTrack('lead_submitted',{source:'lead-magnet-audit'})}else sh('Ошибка: '+(res.error||'не удалось'))}).catch(function(){b.disabled=false;b.textContent='Запросить бесплатный аудит →';sh('Сеть недоступна. Позвоните +7 (495) 108-42-32.')})});})();
+fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:f.name.value.trim(),contact:'+'+d,message:'Источник: экспресс-аудит контракта (9 900 ₽)',consent_pd:true,consent_at:new Date().toISOString(),hp:f.hp.value})}).then(function(r){return r.json()}).then(function(res){b.disabled=false;b.textContent='Заказать аудит — 9 900 ₽ →';if(res.success){card.classList.add('sent');if(window.kgTrack)kgTrack('lead_submitted',{source:'lead-magnet-audit'})}else sh('Ошибка: '+(res.error||'не удалось'))}).catch(function(){b.disabled=false;b.textContent='Заказать аудит — 9 900 ₽ →';sh('Сеть недоступна. Позвоните +7 (495) 108-42-32.')})});})();
 </script>
 </section><!--/allrecords--> <!-- Stat --> <!-- Yandex.Metrika counter 86763493 --> <!-- Метрика: дубль-init счётчика удалён (счётчик инициализируется в <head>) --> <noscript><div><img src="https://mc.yandex.ru/watch/86763493" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter --> <script type="text/javascript">if(!window.mainTracker) {window.mainTracker='tilda';}
 setTimeout(function(){(function(d,w,k,o,g) {var n=d.getElementsByTagName(o)[0],s=d.createElement(o),f=function(){n.parentNode.insertBefore(s,n);};s.type="text/javascript";s.async=true;s.key=k;s.id="tildastatscript";s.src=g;if(w.opera=="[object Opera]") {d.addEventListener("DOMContentLoaded",f,false);} else {f();}})(document,window,'812f72a0c7f8e0f36f6f87d2fe7bbe24','script','/assets/tilda/static/js/tilda-stat-1.0.min.js');},3000);</script> <!-- Rating Mail.ru counter --> <script type="text/javascript" data-tilda-cookie-type="analytics">setTimeout(function(){var _tmr=window._tmr||(window._tmr=[]);_tmr.push({id:"3423058",type:"pageView",start:(new Date()).getTime()});window.mainMailruId='3423058';(function(d,w,id) {if(d.getElementById(id)) {return;}
