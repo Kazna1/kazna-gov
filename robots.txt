@@ -3,6 +3,12 @@ Allow: /
 Disallow: /api/
 Sitemap: https://kazna-gov.ru/sitemap.xml
 
+# Яндекс: поиск + Нейро/Алиса (AI-ответы) формируются из основного индекса YandexBot.
+# Отдельного робота «Алисы/Нейро» нет — достаточно открыть Яндексу весь сайт.
+User-agent: Yandex
+Allow: /
+Disallow: /api/
+
 # AI-поисковики / LLM-краулеры — явно разрешены (AI-выдача, цитируемость)
 User-agent: GPTBot
 Allow: /
@@ -17,6 +23,4 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 User-agent: Google-Extended
-Allow: /
-User-agent: YandexAdditional
 Allow: /
