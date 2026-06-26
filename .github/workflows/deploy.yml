@@ -25,3 +25,15 @@ jobs:
             git clone -q https://github.com/Kazna1/kazna-gov.git kazna_src
             rsync -a --delete --exclude='.git' kazna_src/ ${{ secrets.FORNEX_PATH }}/
             echo "deployed: $(cd kazna_src && git rev-parse --short HEAD)"
+
+  # После успешного деплоя — мгновенно уведомить Bing + Yandex об изменённых страницах (IndexNow).
+  indexnow:
+    needs: deploy
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Ping IndexNow with changed URLs
+        run: python3 scripts/indexnow-ping.py "${{ github.event.before }}" "${{ github.sha }}"
