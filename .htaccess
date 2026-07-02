@@ -3,6 +3,9 @@ Options -Indexes
 DirectoryIndex index.html
 DirectorySlash Off
 
+# --- кодировка UTF-8 (charset в Content-Type для всех text/*) ---
+AddDefaultCharset utf-8
+
 # --- gzip-сжатие ---
 <IfModule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/xml application/javascript application/json image/svg+xml
