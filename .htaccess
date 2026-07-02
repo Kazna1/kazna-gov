@@ -132,6 +132,7 @@ RewriteRule ^page3/?$ / [R=301,L]
 RewriteRule ^test2/?$ / [R=301,L]
 RewriteRule ^https/kazna-govru/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-2026/?$ /blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid [R=301,L]
 RewriteRule ^blog/kaznacheyskoe-soprovozhdenie-departament-finansov-moskvy/?$ /blog/kaznacheyskoe-soprovozhdenie-v-moskve-polnyy-gid [R=301,L]
+RewriteRule ^blog/oshibki-pri-kaznachejskom-soprovozhdenii/?$ /blog/podvodnye-kamni-kaznacheyskogo-soprovozhdeniya [R=301,L]
 
 # --- URL без слеша -> его index.html без редиректа (no-slash = 200, совпадает с canonical) ---
 RewriteCond %{REQUEST_FILENAME} -d
