@@ -179,6 +179,536 @@ _tmr.push({id: "3423058", type: "pageView", start: (new Date()).getTime()});
 }
 </script>
 
+<style>
+/* === RESET внутри шапки (scoped to #kgHeader) === */
+#kgHeader, #kgHeader *, #kgHeader *::before, #kgHeader *::after,
+#kgSkipLink {
+  box-sizing: border-box; margin: 0; padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+
+/* === ТОКЕНЫ (light по умолчанию, dark — через [data-theme="dark"]) === */
+#kgHeader{
+  --kgh-bg:        #FAF6EC;
+  --kgh-bg-blur:   rgba(250, 246, 236, 0.88);
+  --kgh-surface:   #FDFAF1;
+  --kgh-line:      rgba(15, 24, 21, 0.08);
+  --kgh-ink:       #161718;
+  --kgh-ink-2:     #2E2F31;
+  --kgh-ink-3:     #6B6C6D;
+  --kgh-ink-4:     #989897;
+  --kgh-mint:      #15846B;
+  --kgh-mint-2:    #1FA887;
+  --kgh-mint-soft: #E0F2EC;
+  --kgh-tg:        #229ED9;
+  --kgh-max:       #E94B3C;
+}
+html[data-theme="dark"] #kgHeader,
+#kgHeader[data-theme="dark"]{
+  --kgh-bg:        #0E0F0E;
+  --kgh-bg-blur:   rgba(14, 15, 14, 0.86);
+  --kgh-surface:   #14161A;
+  --kgh-line:      rgba(245, 241, 229, 0.10);
+  --kgh-ink:       #F5F1E5;
+  --kgh-ink-2:     #E2DDC9;
+  --kgh-ink-3:     #ABA89A;
+  --kgh-ink-4:     #74716A;
+}
+
+/* === FIXED-контейнер ===
+   В Tilda T123 каждый блок обёрнут в свой .t-rec — поэтому sticky работает
+   только в пределах своего блока (≈68px) и тут же пропадает. Используем
+   fixed: шапка прибита к viewport независимо от Tilda-обёрток. Высота шапки
+   компенсируется padding-top на body/#allrecords (см. JS внизу файла). */
+#kgHeader{
+  position: fixed; top: 0; left: 0; right: 0; z-index: 9999;
+  width: 100%;
+  background: var(--kgh-bg-blur);
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-bottom: 1px solid var(--kgh-line);
+  font-size: 14px; line-height: 1.4; color: var(--kgh-ink);
+  transition: background .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+#kgHeader.is-stuck{ box-shadow: 0 4px 24px -12px rgba(15,24,21,.18); }
+
+/* === NUCLEAR ANTI-TILDA — гасим рыжий #ff8a65 наглухо ===
+   html body #kgHeader = специфичность [0,1,3] + !important — бьёт всё, что
+   Tilda кладёт через .t-rec a, body a, html body a. */
+html body #kgHeader a,
+html body #kgHeader a:link,
+html body #kgHeader a:visited,
+html body #kgHeader a:hover,
+html body #kgHeader a:active{
+  color: var(--kgh-ink) !important;
+  text-decoration: none !important;
+  border-bottom: 0 !important;
+}
+html body #kgHeader button{
+  color: var(--kgh-ink) !important;
+  text-decoration: none !important;
+}
+html body #kgHeader .kg-h__link:hover,
+html body #kgHeader .kg-h__phone:hover,
+html body #kgHeader .kg-h__brand:hover{
+  color: var(--kgh-mint) !important;
+}
+html body #kgHeader .kg-h__cta,
+html body #kgHeader .kg-h__cta:link,
+html body #kgHeader .kg-h__cta:visited,
+html body #kgHeader .kg-h__cta:hover{
+  color: #FAF6EC !important;
+  background: var(--kgh-mint) !important;
+  border: 0 !important;
+}
+html body #kgHeader .kg-h__cta:hover{ background: var(--kgh-mint-2) !important; }
+html body #kgHeader .kg-h__soc,
+html body #kgHeader .kg-h__soc:link,
+html body #kgHeader .kg-h__soc:visited{
+  color: var(--kgh-ink-3) !important;
+}
+html body #kgHeader .kg-h__soc--tg:hover{ color: var(--kgh-tg) !important; }
+html body #kgHeader .kg-h__soc--max:hover{ color: var(--kgh-max) !important; }
+html body #kgSkipLink{ color: #FAF6EC !important; }
+
+#kgHeader .kg-h__inner{
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 24px; max-width: 1320px; margin: 0 auto;
+  padding: 14px 32px;
+}
+
+/* === BRAND === */
+#kgHeader .kg-h__brand{
+  display: inline-flex; align-items: center; gap: 14px;
+  text-decoration: none !important; color: var(--kgh-ink) !important;
+  flex-shrink: 0;
+}
+#kgHeader .kg-h__logo{
+  display: inline-flex; flex-direction: column; gap: 2px;
+}
+#kgHeader .kg-h__logo-name{
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700; font-size: 26px; line-height: 1; letter-spacing: -0.02em;
+  color: var(--kgh-ink) !important;
+  position: relative;
+}
+#kgHeader .kg-h__logo-name::after{
+  content: ''; position: absolute;
+  left: 0; right: -8px; bottom: -3px; height: 1px;
+  background: var(--kgh-mint);
+}
+#kgHeader .kg-h__logo-tag{
+  font-family: 'Inter', sans-serif;
+  font-size: 10px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--kgh-ink-3) !important;
+}
+#kgHeader .kg-h__live{
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 5px 11px; border-radius: 999px;
+  background: var(--kgh-mint-soft); color: var(--kgh-mint) !important;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.02em;
+  flex-shrink: 0;
+}
+html[data-theme="dark"] #kgHeader .kg-h__live{ background: rgba(31,168,135,0.12); }
+#kgHeader .kg-h__live-dot{
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--kgh-mint);
+  box-shadow: 0 0 0 3px rgba(31,168,135,0.22);
+  animation: kg-live-pulse 2.4s ease-in-out infinite;
+}
+@keyframes kg-live-pulse{
+  0%,100% { box-shadow: 0 0 0 3px rgba(31,168,135,0.22); }
+  50%     { box-shadow: 0 0 0 7px rgba(31,168,135,0.04); }
+}
+
+/* === NAV === */
+#kgHeader .kg-h__nav{
+  display: flex; align-items: center; gap: 2px; flex: 1;
+  justify-content: center;
+}
+#kgHeader .kg-h__link{
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 8px 14px; border-radius: 10px;
+  font-size: 14px; font-weight: 500; color: var(--kgh-ink) !important;
+  text-decoration: none !important; border: 0; background: transparent;
+  cursor: pointer; font-family: inherit;
+  transition: background .15s ease, color .15s ease;
+  white-space: nowrap;
+}
+#kgHeader .kg-h__link:hover{
+  background: var(--kgh-mint-soft); color: var(--kgh-mint) !important;
+}
+html[data-theme="dark"] #kgHeader .kg-h__link:hover{ background: rgba(31,168,135,0.10); }
+
+/* === SUBMENU «Услуги» === */
+#kgHeader .kg-h__menu{ position: relative; display: inline-flex; }
+#kgHeader .kg-h__chev{ transition: transform .2s ease; }
+#kgHeader .kg-h__link--has-sub[aria-expanded="true"] .kg-h__chev{ transform: rotate(180deg); }
+#kgHeader .kg-h__sub{
+  position: absolute; top: calc(100% + 10px); left: 50%;
+  transform: translateX(-50%) translateY(-6px);
+  min-width: 380px; padding: 8px;
+  background: var(--kgh-surface); border: 1px solid var(--kgh-line);
+  border-radius: 16px; box-shadow: 0 24px 48px rgba(15,24,21,.12);
+  display: grid; grid-template-columns: 1fr; gap: 2px;
+  opacity: 0; pointer-events: none; visibility: hidden;
+  transition: opacity .18s ease, transform .18s ease, visibility 0s .18s;
+  z-index: 1100;
+}
+/* hover-bridge: убирает разрыв между «Услуги» и подменю (десктоп) */
+@media (min-width: 981px){
+  #kgHeader .kg-h__menu:hover::after,
+  #kgHeader .kg-h__menu.is-open::after{
+    content: ""; position: absolute; left: -150px; right: -150px; top: 100%; height: 14px; background: transparent;
+  }
+}
+
+#kgHeader .kg-h__menu:hover .kg-h__sub,
+#kgHeader .kg-h__menu.is-open .kg-h__sub{
+  opacity: 1; pointer-events: auto; visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  transition: opacity .18s ease, transform .18s ease;
+}
+#kgHeader .kg-h__sub-link{
+  display: grid; grid-template-columns: 1fr auto; align-items: center;
+  gap: 4px 12px; padding: 12px 14px;
+  border-radius: 10px; text-decoration: none !important; color: var(--kgh-ink) !important;
+  transition: background .12s ease;
+}
+#kgHeader .kg-h__sub-link:hover{ background: var(--kgh-mint-soft); }
+html[data-theme="dark"] #kgHeader .kg-h__sub-link:hover{ background: rgba(31,168,135,0.10); }
+#kgHeader .kg-h__sub-title{
+  font-weight: 600; font-size: 14px; line-height: 1.3;
+  display: inline-flex; align-items: center; gap: 8px; color: var(--kgh-ink) !important;
+}
+#kgHeader .kg-h__sub-tag{
+  font-size: 10px; font-weight: 700; letter-spacing: 0.04em;
+  padding: 2px 6px; border-radius: 6px;
+  background: var(--kgh-mint); color: #FAF6EC !important;
+}
+#kgHeader .kg-h__sub-desc{
+  font-size: 12px; color: var(--kgh-ink-3) !important; line-height: 1.4;
+  grid-column: 1 / -1;
+}
+#kgHeader .kg-h__sub-price{
+  font-size: 12px; font-weight: 700; color: var(--kgh-ink-3) !important;
+  white-space: nowrap;
+}
+
+/* === TOOLS (правая часть) === */
+#kgHeader .kg-h__tools{
+  display: flex; align-items: center; gap: 8px; flex-shrink: 0;
+}
+
+/* Phone block — стек с подзаголовком 9:00–21:00 МСК */
+#kgHeader .kg-h__phone{
+  display: inline-flex; flex-direction: column; align-items: flex-end; gap: 1px;
+  padding: 6px 12px; border-radius: 10px;
+  text-decoration: none !important; color: var(--kgh-ink) !important;
+  transition: background .15s ease;
+  line-height: 1.2;
+}
+#kgHeader .kg-h__phone:hover{ background: var(--kgh-mint-soft); }
+html[data-theme="dark"] #kgHeader .kg-h__phone:hover{ background: rgba(31,168,135,0.10); }
+#kgHeader .kg-h__phone-num{
+  font-size: 14px; font-weight: 700; color: var(--kgh-ink) !important;
+  letter-spacing: -0.01em; font-variant-numeric: tabular-nums;
+}
+#kgHeader .kg-h__phone-hours{
+  font-size: 10px; font-weight: 500; letter-spacing: 0.04em;
+  color: var(--kgh-ink-3) !important; text-transform: uppercase;
+}
+
+/* Социалки — круглые мини-кнопки */
+#kgHeader .kg-h__socials{
+  display: inline-flex; align-items: center; gap: 4px;
+  padding-left: 4px; border-left: 1px solid var(--kgh-line);
+  margin-left: 4px;
+}
+#kgHeader .kg-h__soc{
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; border-radius: 999px;
+  background: transparent; color: var(--kgh-ink-3) !important;
+  border: 1px solid var(--kgh-line);
+  text-decoration: none !important; cursor: pointer;
+  transition: background .15s ease, color .15s ease, border-color .15s ease, transform .15s ease;
+}
+#kgHeader .kg-h__soc:hover{ transform: translateY(-1px); }
+#kgHeader .kg-h__soc svg{ width: 16px; height: 16px; display: block; fill: currentColor; }
+#kgHeader .kg-h__soc--tg:hover{
+  background: rgba(34,158,217,0.10); color: var(--kgh-tg) !important; border-color: var(--kgh-tg);
+}
+#kgHeader .kg-h__soc--max:hover{
+  background: rgba(233,75,60,0.10); color: var(--kgh-max) !important; border-color: var(--kgh-max);
+}
+#kgHeader .kg-h__soc--max .kg-h__max-text{
+  font-family: 'Inter', sans-serif;
+  font-size: 11px; font-weight: 800; letter-spacing: 0.02em;
+}
+
+/* Theme toggle */
+#kgHeader .kg-h__theme{
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; border-radius: 999px;
+  border: 1px solid var(--kgh-line); background: transparent;
+  cursor: pointer; color: var(--kgh-ink-2);
+  transition: background .15s ease, color .15s ease;
+}
+#kgHeader .kg-h__theme:hover{ background: var(--kgh-mint-soft); color: var(--kgh-mint); }
+html[data-theme="dark"] #kgHeader .kg-h__theme:hover{ background: rgba(31,168,135,0.10); }
+#kgHeader .kg-h__theme svg{ width: 16px; height: 16px; }
+#kgHeader .kg-h__sun{ display: none; }
+html[data-theme="dark"] #kgHeader .kg-h__moon{ display: none; }
+html[data-theme="dark"] #kgHeader .kg-h__sun{ display: block; }
+
+/* CTA — mint pill «Консультация →» */
+#kgHeader .kg-h__cta{
+  display: inline-flex; align-items: center; gap: 8px;
+  height: 40px; padding: 0 20px; border-radius: 999px;
+  background: var(--kgh-mint) !important; color: #FAF6EC !important;
+  font-size: 14px; font-weight: 600; letter-spacing: -0.01em;
+  text-decoration: none !important; border: 0; cursor: pointer;
+  transition: background .15s ease, transform .15s ease, box-shadow .15s ease;
+  white-space: nowrap;
+  box-shadow: 0 1px 2px rgba(15,132,107,.20);
+}
+#kgHeader .kg-h__cta:hover{
+  background: var(--kgh-mint-2) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(31,168,135,.32);
+}
+#kgHeader .kg-h__cta svg{ width: 14px; height: 14px; transition: transform .2s ease; }
+#kgHeader .kg-h__cta:hover svg{ transform: translateX(2px); }
+
+/* Burger (mobile) */
+#kgHeader .kg-h__burger{
+  display: none;
+  width: 40px; height: 40px; border-radius: 10px;
+  border: 1px solid var(--kgh-line); background: transparent;
+  cursor: pointer; color: var(--kgh-ink);
+  align-items: center; justify-content: center;
+}
+#kgHeader .kg-h__burger:hover{ background: var(--kgh-mint-soft); }
+#kgHeader .kg-h__burger svg{ width: 18px; height: 18px; }
+
+/* === RESPONSIVE === */
+@media (max-width: 1180px){
+  #kgHeader .kg-h__phone-hours{ display: none; }
+  #kgHeader .kg-h__phone-num{ font-size: 13px; }
+}
+@media (max-width: 1060px){
+  #kgHeader .kg-h__theme{ display: none; }
+}
+@media (max-width: 980px){
+  #kgHeader .kg-h__inner{ padding: 12px 20px; gap: 12px; }
+  #kgHeader .kg-h__nav{
+    position: absolute; top: 100%; left: 0; right: 0;
+    flex-direction: column; align-items: stretch;
+    background: var(--kgh-surface); border-bottom: 1px solid var(--kgh-line);
+    padding: 12px 18px; gap: 4px;
+    display: none;
+    box-shadow: 0 12px 24px rgba(15,24,21,0.10);
+  }
+  #kgHeader .kg-h__nav.is-open{ display: flex; }
+  #kgHeader .kg-h__menu{ display: block; width: 100%; }
+  #kgHeader .kg-h__link--has-sub{ width: 100%; justify-content: space-between; }
+  #kgHeader .kg-h__sub{
+    position: static; transform: none !important;
+    opacity: 1; visibility: visible; pointer-events: auto;
+    box-shadow: none; border: 0; padding: 4px 0 8px 12px;
+    min-width: 0; background: transparent; display: none;
+  }
+  #kgHeader .kg-h__menu.is-open .kg-h__sub{ display: grid; }
+  #kgHeader .kg-h__phone, #kgHeader .kg-h__socials{ display: none; }
+  #kgHeader .kg-h__burger{ display: inline-flex; }
+}
+@media (max-width: 560px){
+  #kgHeader .kg-h__inner{ padding: 10px 14px; }
+  #kgHeader .kg-h__logo-tag{ display: none; }
+  #kgHeader .kg-h__cta{ padding: 0 14px; height: 36px; font-size: 13px; }
+}
+
+/* === SKIP LINK (a11y) === */
+#kgSkipLink{
+  position: absolute; left: -9999px; top: 8px;
+  padding: 10px 16px; background: #0E0F0E; color: #FAF6EC;
+  text-decoration: none; border-radius: 10px; z-index: 9999;
+  font-size: 14px; font-weight: 600;
+}
+#kgSkipLink:focus{ left: 8px; outline: 2px solid var(--kgh-mint-2); outline-offset: 2px; }
+</style>
+<style id="cipher-logo-css">
+
+/* ====== CIPHER LOGO (как в hero «без возвратов») ====== */
+.kgh__logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none !important;
+  color: var(--hd-ink) !important;
+  flex-shrink: 0;
+  cursor: pointer;
+  padding: 6px 14px 6px 6px;
+  border-radius: 10px;
+  transition: background .25s;
+  isolation: isolate;
+}
+
+.kgh__logo:hover { background: rgba(10, 22, 18, 0.04); }
+
+
+/* Сканнер */
+.kgh__logo::before {
+  content: '';
+  position: absolute;
+  left: 6px; right: 6px;
+  top: 8px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(43, 200, 154, 0.55) 50%, transparent 100%);
+  mix-blend-mode: multiply;
+  animation: kgh-scan 4.6s linear infinite;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.kgh__logo:hover .kgh__mark { transform: rotate(-7deg) scale(1.1); box-shadow: 0 10px 32px -10px rgba(43, 200, 154, 0.55); }
+
+.kgh__logo:hover .kgh__mark::before { opacity: 1; }
+
+.kgh__logo:hover .kgh__mark svg { transform: rotate(7deg) scale(1.05); }
+
+
+/* CIPHER WORDMARK */
+.kgh__word-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  line-height: 1;
+}
+
+.kgh__word {
+  position: relative;
+  font-family: 'Inter Tight', system-ui, sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 0.9;
+  white-space: nowrap;
+  color: var(--hd-ink) !important;
+  transition: font-size .35s;
+}
+
+.kgh.is-scrolled .kgh__word { font-size: 25px; }
+
+
+.kgh__word .b { position: relative; z-index: 1; display: block; color: var(--hd-ink) !important; }
+
+.kgh__word .l, .kgh__word .r {
+  position: absolute; inset: 0;
+  pointer-events: none;
+  font: inherit; letter-spacing: inherit; line-height: inherit;
+  display: block;
+  mix-blend-mode: multiply;
+}
+
+.kgh__word .l { color: var(--hd-mint) !important; animation: kgh-cipher-l 3.4s steps(1) infinite; }
+
+.kgh__word .r { color: var(--hd-warm) !important; opacity: 0.7; animation: kgh-cipher-r 3.4s steps(1) infinite; }
+
+
+/* На hover — постоянный glitch */
+.kgh__logo:hover .kgh__word .l { animation: kgh-cipher-l-fast 0.6s steps(1) infinite; }
+
+.kgh__logo:hover .kgh__word .r { animation: kgh-cipher-r-fast 0.6s steps(1) infinite; }
+
+
+.kgh__sub {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  color: var(--hd-ink-2);
+  text-transform: uppercase;
+}
+
+.kgh__dot {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--hd-mint);
+  box-shadow: 0 0 0 0 rgba(43, 200, 154, 0.5);
+  animation: kgh-pulse 2.2s ease-out infinite;
+}
+
+  .kgh__sub { display: none; }
+
+
+  /* Лого крупное, мощное */
+  .kgh__word { font-size: 28px !important; letter-spacing: -0.045em !important; font-weight: 800 !important; }
+
+  .kgh.is-scrolled .kgh__word { font-size: 24px !important; }
+
+  .kgh__sub { display: none !important; }
+
+  .kgh__word { font-size: 26px !important; }
+
+  .kgh.is-scrolled .kgh__word { font-size: 22px !important; }
+
+  .kgh__logo::before,
+  .kgh__word .l, .kgh__word .r,
+  .kgh__dot, .kgh__phone-meta::before { animation: none !important; }
+@keyframes kgh-scan {
+  0% { top: -1px; opacity: 0; }
+  10%, 90% { opacity: 1; }
+  100% { top: calc(100% + 1px); opacity: 0; }
+}
+@keyframes kgh-cipher-l {
+  0%, 88%, 100% { transform: translate(0, 0); }
+  90% { transform: translate(-3px, 1px); }
+  93% { transform: translate(2px, -1px); }
+  96% { transform: translate(-2px, 0); }
+}
+@keyframes kgh-cipher-r {
+  0%, 88%, 100% { transform: translate(0, 0); }
+  90% { transform: translate(3px, -1px); }
+  93% { transform: translate(-2px, 1px); }
+  96% { transform: translate(2px, 0); }
+}
+@keyframes kgh-cipher-l-fast {
+  0%, 100% { transform: translate(0, 0); }
+  20% { transform: translate(-2.5px, 1px); }
+  60% { transform: translate(1.5px, -0.5px); }
+  80% { transform: translate(-1px, 0); }
+}
+@keyframes kgh-cipher-r-fast {
+  0%, 100% { transform: translate(0, 0); }
+  20% { transform: translate(2.5px, -1px); }
+  60% { transform: translate(-1.5px, 0.5px); }
+  80% { transform: translate(1px, 0); }
+}
+@keyframes kgh-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(43, 200, 154, 0.6), 0 0 6px var(--hd-mint); transform: scale(1); }
+  70% { box-shadow: 0 0 0 8px rgba(43, 200, 154, 0), 0 0 6px var(--hd-mint); transform: scale(1); }
+  100% { box-shadow: 0 0 0 0 rgba(43, 200, 154, 0), 0 0 6px var(--hd-mint); transform: scale(1); }
+}</style>
+<style id="kgh-unify-theme">
+.kg-h{ --hd-ink:#0a1612; --hd-ink-2:rgba(10,22,18,0.62); --hd-mint:#2bc89a; --hd-warm:#ff5a5a; }
+.kg-h .kgh__word-wrap{ display:flex; flex-direction:column; gap:3px; }
+.kg-h .kgh__word{ position:relative; font-family:'Inter',-apple-system,sans-serif; font-weight:800; font-size:24px; letter-spacing:-.02em; line-height:1; color:var(--hd-ink); }
+.kg-h .kgh__sub{ display:flex !important; align-items:center; gap:6px; font-family:'JetBrains Mono',ui-monospace,monospace; font-size:9.5px; font-weight:500; letter-spacing:.12em; color:var(--hd-ink-2); text-transform:uppercase; }
+.kg-h .kgh__dot{ width:5px; height:5px; border-radius:50%; background:var(--hd-mint); animation:kgh-pulse 2.2s ease-out infinite !important; }
+.kg-h .kgh__word .l{ animation:kgh-cipher-l 3.4s steps(1) infinite !important; }
+.kg-h .kgh__word .r{ animation:kgh-cipher-r 3.4s steps(1) infinite !important; }
+body{ padding-top:84px; }
+.kg-h .kg-h__theme{ display:none !important; }
+</style>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&subset=latin,cyrillic&display=swap" rel="stylesheet">
+<style id="kghdr4-hide">.kghdr4,.kghdr4-drawer{display:none!important}</style>
 </head><body>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -544,17 +1074,24 @@ html body #kghdr4 .kghdr4__phone:visited {
   }
 }
 </style>
-<header class="kghdr4" id="kghdr4"> <div class="kghdr4__inner"> <!-- LOGO --> <a href="/" class="kghdr4__logo" data-goal="header_logo_click"> <svg class="kghdr4__logo-mark" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"> <rect width="38" height="38" rx="11" fill="#0C1B33"/> <path d="M12 9.5L12 28.5" stroke="white" stroke-width="3" stroke-linecap="round"/> <path d="M12 19L25.5 10.5" stroke="white" stroke-width="3" stroke-linecap="round"/> <path d="M12 19L25.5 27.5" stroke="white" stroke-width="3" stroke-linecap="round"/> <circle cx="28.5" cy="28.5" r="5.5" fill="#1A4FD6"/> <path d="M26.2 28.5L27.9 30.2L30.8 27.1" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/> </svg> <div class="kghdr4__logo-text"> <span class="kghdr4__logo-name">Казна</span> <span class="kghdr4__logo-tag">Казначейское сопровождение</span> </div> </a> <!-- DESKTOP NAV --> <ul class="kghdr4__nav"> <!-- Услуги --> <li class="kghdr4__nav-item"> <button class="kghdr4__nav-link" type="button" aria-haspopup="true" aria-expanded="false">
+<header id="kgHeader" class="kg-h" role="banner"> <div class="kg-h__inner"> <!-- BRAND --> <a href="/" class="kg-h__brand" aria-label="Казна — главная"> <span class="kg-h__logo"><span class="kgh__word-wrap"> <span class="kgh__word"> <span class="b">Казна</span> <span class="l" aria-hidden="true">Казна</span> <span class="r" aria-hidden="true">Казна</span> </span> <span class="kgh__sub"> <span class="kgh__dot" aria-hidden="true"></span>
+        Казначейское сопровождение
+      </span> </span> </span> <span class="kg-h__live" aria-label="онлайн"> <span class="kg-h__live-dot" aria-hidden="true"></span>
+        онлайн
+      </span> </a> <!-- NAV --> <nav class="kg-h__nav" id="kgHeaderNav" aria-label="Главная навигация"> <div class="kg-h__menu" id="kgHeaderMenu"> <button class="kg-h__link kg-h__link--has-sub" id="kgHeaderMenuBtn"
+                type="button" aria-haspopup="true" aria-expanded="false">
           Услуги
-          <svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4"/></svg> </button> <div class="kghdr4__dropdown" role="menu"> <a href="/services/open" class="kghdr4__dd-row" data-goal="nav_click" data-service="open" role="menuitem"> <div class="kghdr4__dd-icon" style="background:rgba(26,79,214,0.08);color:#1A4FD6"> <svg viewBox="0 0 20 20"><rect x="3" y="5" width="14" height="11" rx="2.5"/><path d="M7 5V4a3 3 0 016 0v1"/><circle cx="10" cy="10.5" r="1.5" fill="currentColor" stroke="none"/></svg> </div> <div class="kghdr4__dd-body"> <span class="kghdr4__dd-name">Открытие счёта</span> <span class="kghdr4__dd-desc">Под ключ за 1 рабочий день</span> </div> <span class="kghdr4__dd-price">29 000 ₽</span> </a> <a href="/services/conduct" class="kghdr4__dd-row" data-goal="nav_click" data-service="conduct" role="menuitem"> <div class="kghdr4__dd-icon" style="background:rgba(5,150,106,0.08);color:#05966A"> <svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"/><path d="M7 10l2 2 4-4"/></svg> </div> <div class="kghdr4__dd-body"> <span class="kghdr4__dd-name">Казначейское сопровождение</span> <span class="kghdr4__dd-desc">Ведение счёта, платежи, контроль</span> </div> <span class="kghdr4__dd-price">69 000 ₽/мес</span> </a> <div class="kghdr4__dd-divider"></div> <a href="/services/reserve" class="kghdr4__dd-row" data-goal="nav_click" data-service="reserve" role="menuitem"> <div class="kghdr4__dd-icon" style="background:rgba(180,83,9,0.08);color:#B45309"> <svg viewBox="0 0 20 20"><rect x="4" y="8" width="12" height="9" rx="2.5"/><path d="M7 8V6a3 3 0 016 0v2"/></svg> </div> <div class="kghdr4__dd-body"> <span class="kghdr4__dd-name">Резервный счёт</span> <span class="kghdr4__dd-desc">Резервирование под госконтракт</span> </div> <span class="kghdr4__dd-price">от 15 000 ₽</span> </a> <a href="/services/postpayment" class="kghdr4__dd-row" data-goal="nav_click" data-service="postpayment" role="menuitem"> <div class="kghdr4__dd-icon" style="background:rgba(109,40,217,0.08);color:#7C3AED"> <svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"/><path d="M10 6v4l2.5 2.5"/></svg> </div> <div class="kghdr4__dd-body"> <span class="kghdr4__dd-name">Постоплата по контракту</span> <span class="kghdr4__dd-desc">Платите после получения результата</span> </div> <span class="kghdr4__dd-price">49 000 ₽</span> </a> </div> </li> <li><a href="/#about"     class="kghdr4__nav-link" data-goal="nav_click" data-nav="about">О компании</a></li> <li><a href="/#guarantee" class="kghdr4__nav-link" data-goal="nav_click" data-nav="guarantee">Гарантия</a></li> <li><a href="/blog"       class="kghdr4__nav-link" data-goal="nav_click" data-nav="blog">Блог</a></li> <li><a href="/instrumenty/" class="kghdr4__nav-link" data-goal="nav_click" data-nav="instrumenty">Инструменты</a></li> <li><a href="/obraztsy/" class="kghdr4__nav-link" data-goal="nav_click" data-nav="obraztsy">Образцы</a></li> <li><a href="/#contacts"  class="kghdr4__nav-link" data-goal="nav_click" data-nav="contacts">Контакты</a></li> </ul> <!-- RIGHT --> <div class="kghdr4__right"> <a href="https://t.me/kaznagovru" class="kghdr4__social kghdr4__social--tg"
-         target="_blank" rel="noopener" aria-label="Telegram" data-goal="social_click" data-social="telegram"> <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-2.018 9.505c-.148.658-.537.818-1.088.508l-3-2.21-1.447 1.393c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.16 14.608l-2.948-.92c-.64-.203-.654-.64.136-.948l11.498-4.43c.535-.194 1.003.13.716.938z"/></svg> </a> <a href="https://max.ru/u/f9LHodD0cOK_dA0cxMm6m3-UJ1xRsy79eO5fE11eYanlBeYUtgEpWuyk5m8"
-         class="kghdr4__social kghdr4__social--max"
-         target="_blank" rel="noopener" aria-label="MAX" data-goal="social_click" data-social="max"> <svg viewBox="0 0 24 24"> <rect width="24" height="24" rx="6" fill="currentColor" opacity="0.1"/> <text x="12" y="16.5" font-family="'Manrope',Arial,sans-serif" font-size="9.5" font-weight="800"
-                fill="currentColor" text-anchor="middle" letter-spacing="0.8">MAX</text> </svg> </a> <div class="kghdr4__sep"></div> <a href="tel:+74951084232" class="kghdr4__phone" data-goal="phone_click"> <span class="kghdr4__phone-dot"></span>
-        +7 (495) 108-42-32
-      </a> <a href="/#form" class="kghdr4__cta" data-goal="header_cta_click">
+          <svg class="kg-h__chev" viewBox="0 0 24 24" width="12" height="12" fill="none"
+               stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <polyline points="6 9 12 15 18 9"/> </svg> </button> <div class="kg-h__sub" role="menu" aria-labelledby="kgHeaderMenuBtn"> <a class="kg-h__sub-link" href="/services/reserve" role="menuitem"> <span class="kg-h__sub-title">Резерв счёта на тендер</span> <span class="kg-h__sub-price">19 000 ₽</span> <span class="kg-h__sub-desc">2 дня · реквизит для подачи · возврат при проигрыше</span> </a> <a class="kg-h__sub-link" href="/services/open" role="menuitem"> <span class="kg-h__sub-title">Открытие счёта в УФК</span> <span class="kg-h__sub-price">29 000 ₽</span> <span class="kg-h__sub-desc">2 рабочих дня под ключ · ЭЦП + ГИИС «Электронный бюджет»</span> </a> <a class="kg-h__sub-link" href="/services/postpayment" role="menuitem"> <span class="kg-h__sub-title">Контракт с постоплатой</span> <span class="kg-h__sub-price">49 000 ₽</span> <span class="kg-h__sub-desc">Счёт + сведения + платежи по УПД</span> </a> <a class="kg-h__sub-link" href="/services/conduct" role="menuitem"> <span class="kg-h__sub-title">Контракт с авансом <span class="kg-h__sub-tag">★ ГОЗ</span></span> <span class="kg-h__sub-price">69 000 ₽/мес</span> <span class="kg-h__sub-desc">17 операций · 275-ФЗ + 44-ФЗ · аванс без лимитов</span> </a> </div> </div> <a class="kg-h__link" href="/blog">Блог</a> <a class="kg-h__link" href="#kgFaq">FAQ</a> <a class="kg-h__link" href="/#about">О нас</a> </nav> <!-- TOOLS --> <div class="kg-h__tools"> <a href="tel:+74951084232" class="kg-h__phone" aria-label="Позвонить +7 495 108 42 32"> <span class="kg-h__phone-num">+7 (495) 108-42-32</span> <span class="kg-h__phone-hours">9:00–21:00 МСК</span> </a> <div class="kg-h__socials" aria-label="Связаться"> <a href="https://t.me/kaznagovru" class="kg-h__soc kg-h__soc--tg"
+           target="_blank" rel="noopener" aria-label="Telegram"> <svg viewBox="0 0 24 24" aria-hidden="true"> <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-2.018 9.505c-.148.658-.537.818-1.088.508l-3-2.21-1.447 1.393c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.16 14.608l-2.948-.92c-.64-.203-.654-.64.136-.948l11.498-4.43c.535-.194 1.003.13.716.938z"/> </svg> </a> <a href="https://max.ru/u/f9LHodD0cOK_dA0cxMm6m3-UJ1xRsy79eO5fE11eYanlBeYUtgEpWuyk5m8"
+           class="kg-h__soc kg-h__soc--max"
+           target="_blank" rel="noopener" aria-label="MAX"> <span class="kg-h__max-text">M</span> </a> </div> <button class="kg-h__theme" id="kgThemeBtn" aria-label="Сменить тему" type="button"> <svg class="kg-h__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/> </svg> <svg class="kg-h__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <circle cx="12" cy="12" r="4"/> <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/> </svg> </button> <a href="/#form" class="kg-h__cta">
         Консультация
-        <svg viewBox="0 0 14 14"><path d="M2 7h10M7 2l5 5-5 5"/></svg> </a> </div> <!-- BURGER --> <button class="kghdr4__burger" id="kghdr4-burger" aria-label="Меню" aria-expanded="false"> <span class="kghdr4__burger-line"></span> <span class="kghdr4__burger-line"></span> <span class="kghdr4__burger-line"></span> </button> </div> </header>
+        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.2"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <path d="M2 7h10M7 2l5 5-5 5"/> </svg> </a> <button class="kg-h__burger" id="kgBurger" aria-label="Меню" aria-expanded="false" type="button"> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" aria-hidden="true"> <line x1="4" y1="7"  x2="20" y2="7"/> <line x1="4" y1="12" x2="20" y2="12"/> <line x1="4" y1="17" x2="20" y2="17"/> </svg> </button> </div> </div> </header>
 <script>
 (function(){
   var YM = window.KAZNA_METRIKA_ID || 86763493;
@@ -790,4 +1327,16 @@ details{background:#14201a;border:1px solid #1f3329;border-radius:12px;padding:0
 <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center"><a class="btn" href="/#contacts">Получить консультацию →</a><a class="btn sec" href="/uslugi">Услуги и цены</a></div></div>
 </div>
 <footer><div class="wrap">© Казна · казначейское сопровождение госконтрактов под ключ. <a href="/personal_data_policy">Политика обработки персональных данных</a> · обновлено 2026-06-18</div></footer>
+<script id="kgh-unify-js">
+(function(){
+  var hdr=document.getElementById('kgHeader'); if(!hdr) return;
+  function pad(){ document.body.style.paddingTop=(hdr.offsetHeight||72)+'px'; }
+  pad(); addEventListener('resize',pad); addEventListener('orientationchange',pad);
+  var t=false; addEventListener('scroll',function(){ if(!t){requestAnimationFrame(function(){ hdr.classList.toggle('is-scrolled',scrollY>8); t=false; }); t=true;} },{passive:true});
+  var b=document.getElementById('kgBurger');
+  if(b) b.addEventListener('click',function(){ var o=hdr.classList.toggle('is-menu-open'); b.setAttribute('aria-expanded',o); document.body.style.overflow=o?'hidden':''; });
+  var mb=document.getElementById('kgHeaderMenuBtn');
+  if(mb) mb.addEventListener('click',function(e){ if(matchMedia('(hover:none),(pointer:coarse)').matches){ e.preventDefault(); var m=document.getElementById('kgHeaderMenu'); if(m){ var ex=mb.getAttribute('aria-expanded')==='true'; mb.setAttribute('aria-expanded',!ex); m.classList.toggle('is-sub-open',!ex);} } });
+})();
+</script>
 </body></html>

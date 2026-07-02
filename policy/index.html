@@ -164,7 +164,537 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',inject);}else{inject();}
 })();
 </script><!-- nominify end --><script type="text/javascript">window.dataLayer=window.dataLayer||[];</script> <!-- VK Pixel Code --> <script type="text/javascript" data-tilda-cookie-type="advertising">setTimeout(function(){!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?161",t.onload=function(){VK.Retargeting.Init("VK-RTRG-1160203-5M8LR"),VK.Retargeting.Hit()},document.head.appendChild(t)}();},3000);</script> <!-- End VK Pixel Code --> <script type="text/javascript">(function() {var ttt='cebo';var tt='oog';var re=new RegExp("bot|g" + tt + "le|yandex|baidu|bing|msn|duckduckbot|teoma|slurp|crawler|spider|robot|crawling|fa" + ttt + "ok","i");if((re.test(navigator.userAgent))===false&&typeof(sessionStorage)!='undefined'&&sessionStorage.getItem('visited')!=='y'&&document.visibilityState){var style=document.createElement('style');style.type='text/css';style.innerHTML='@media screen and (min-width: 980px) {.t-records {opacity: 0;}.t-records_animated {-webkit-transition: opacity ease-in-out .2s;-moz-transition: opacity ease-in-out .2s;-o-transition: opacity ease-in-out .2s;transition: opacity ease-in-out .2s;}.t-records.t-records_visible {opacity: 1;}}';document.getElementsByTagName('head')[0].appendChild(style);function t_setvisRecs(){var alr=document.querySelectorAll('.t-records');Array.prototype.forEach.call(alr,function(el) {el.classList.add("t-records_animated");});setTimeout(function() {Array.prototype.forEach.call(alr,function(el) {el.classList.add("t-records_visible");});sessionStorage.setItem("visited","y");},400);}
-document.addEventListener('DOMContentLoaded',t_setvisRecs);}})();</script></head> <body class="t-body" style="margin:0;"> <!--allrecords--> <div id="allrecords" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="4805637" data-tilda-page-id="112172166" data-tilda-page-alias="personal_data_policy" data-tilda-formskey="bba320494dc421e1e1df657d46dec368" data-tilda-lazy="yes" data-tilda-project-lang="RU" data-tilda-root-zone="com" data-tilda-project-headcode="yes" data-tilda-project-country="RU"> <!--header--> <header id="t-header" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="4805637" data-tilda-page-id="41853736" data-tilda-page-alias="head" data-tilda-formskey="bba320494dc421e1e1df657d46dec368" data-tilda-lazy="yes" data-tilda-project-lang="RU" data-tilda-root-zone="com" data-tilda-project-headcode="yes" data-tilda-project-country="RU"> <div id="rec2202951941" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <meta charset="UTF-8"> <!-- КАЗНА · Header v4 · Full redesign 2026 · kghdr4__ namespace --> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"> <style>
+document.addEventListener('DOMContentLoaded',t_setvisRecs);}})();</script><style>
+/* === RESET внутри шапки (scoped to #kgHeader) === */
+#kgHeader, #kgHeader *, #kgHeader *::before, #kgHeader *::after,
+#kgSkipLink {
+  box-sizing: border-box; margin: 0; padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+
+/* === ТОКЕНЫ (light по умолчанию, dark — через [data-theme="dark"]) === */
+#kgHeader{
+  --kgh-bg:        #FAF6EC;
+  --kgh-bg-blur:   rgba(250, 246, 236, 0.88);
+  --kgh-surface:   #FDFAF1;
+  --kgh-line:      rgba(15, 24, 21, 0.08);
+  --kgh-ink:       #161718;
+  --kgh-ink-2:     #2E2F31;
+  --kgh-ink-3:     #6B6C6D;
+  --kgh-ink-4:     #989897;
+  --kgh-mint:      #15846B;
+  --kgh-mint-2:    #1FA887;
+  --kgh-mint-soft: #E0F2EC;
+  --kgh-tg:        #229ED9;
+  --kgh-max:       #E94B3C;
+}
+html[data-theme="dark"] #kgHeader,
+#kgHeader[data-theme="dark"]{
+  --kgh-bg:        #0E0F0E;
+  --kgh-bg-blur:   rgba(14, 15, 14, 0.86);
+  --kgh-surface:   #14161A;
+  --kgh-line:      rgba(245, 241, 229, 0.10);
+  --kgh-ink:       #F5F1E5;
+  --kgh-ink-2:     #E2DDC9;
+  --kgh-ink-3:     #ABA89A;
+  --kgh-ink-4:     #74716A;
+}
+
+/* === FIXED-контейнер ===
+   В Tilda T123 каждый блок обёрнут в свой .t-rec — поэтому sticky работает
+   только в пределах своего блока (≈68px) и тут же пропадает. Используем
+   fixed: шапка прибита к viewport независимо от Tilda-обёрток. Высота шапки
+   компенсируется padding-top на body/#allrecords (см. JS внизу файла). */
+#kgHeader{
+  position: fixed; top: 0; left: 0; right: 0; z-index: 9999;
+  width: 100%;
+  background: var(--kgh-bg-blur);
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-bottom: 1px solid var(--kgh-line);
+  font-size: 14px; line-height: 1.4; color: var(--kgh-ink);
+  transition: background .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+#kgHeader.is-stuck{ box-shadow: 0 4px 24px -12px rgba(15,24,21,.18); }
+
+/* === NUCLEAR ANTI-TILDA — гасим рыжий #ff8a65 наглухо ===
+   html body #kgHeader = специфичность [0,1,3] + !important — бьёт всё, что
+   Tilda кладёт через .t-rec a, body a, html body a. */
+html body #kgHeader a,
+html body #kgHeader a:link,
+html body #kgHeader a:visited,
+html body #kgHeader a:hover,
+html body #kgHeader a:active{
+  color: var(--kgh-ink) !important;
+  text-decoration: none !important;
+  border-bottom: 0 !important;
+}
+html body #kgHeader button{
+  color: var(--kgh-ink) !important;
+  text-decoration: none !important;
+}
+html body #kgHeader .kg-h__link:hover,
+html body #kgHeader .kg-h__phone:hover,
+html body #kgHeader .kg-h__brand:hover{
+  color: var(--kgh-mint) !important;
+}
+html body #kgHeader .kg-h__cta,
+html body #kgHeader .kg-h__cta:link,
+html body #kgHeader .kg-h__cta:visited,
+html body #kgHeader .kg-h__cta:hover{
+  color: #FAF6EC !important;
+  background: var(--kgh-mint) !important;
+  border: 0 !important;
+}
+html body #kgHeader .kg-h__cta:hover{ background: var(--kgh-mint-2) !important; }
+html body #kgHeader .kg-h__soc,
+html body #kgHeader .kg-h__soc:link,
+html body #kgHeader .kg-h__soc:visited{
+  color: var(--kgh-ink-3) !important;
+}
+html body #kgHeader .kg-h__soc--tg:hover{ color: var(--kgh-tg) !important; }
+html body #kgHeader .kg-h__soc--max:hover{ color: var(--kgh-max) !important; }
+html body #kgSkipLink{ color: #FAF6EC !important; }
+
+#kgHeader .kg-h__inner{
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 24px; max-width: 1320px; margin: 0 auto;
+  padding: 14px 32px;
+}
+
+/* === BRAND === */
+#kgHeader .kg-h__brand{
+  display: inline-flex; align-items: center; gap: 14px;
+  text-decoration: none !important; color: var(--kgh-ink) !important;
+  flex-shrink: 0;
+}
+#kgHeader .kg-h__logo{
+  display: inline-flex; flex-direction: column; gap: 2px;
+}
+#kgHeader .kg-h__logo-name{
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700; font-size: 26px; line-height: 1; letter-spacing: -0.02em;
+  color: var(--kgh-ink) !important;
+  position: relative;
+}
+#kgHeader .kg-h__logo-name::after{
+  content: ''; position: absolute;
+  left: 0; right: -8px; bottom: -3px; height: 1px;
+  background: var(--kgh-mint);
+}
+#kgHeader .kg-h__logo-tag{
+  font-family: 'Inter', sans-serif;
+  font-size: 10px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--kgh-ink-3) !important;
+}
+#kgHeader .kg-h__live{
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 5px 11px; border-radius: 999px;
+  background: var(--kgh-mint-soft); color: var(--kgh-mint) !important;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.02em;
+  flex-shrink: 0;
+}
+html[data-theme="dark"] #kgHeader .kg-h__live{ background: rgba(31,168,135,0.12); }
+#kgHeader .kg-h__live-dot{
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--kgh-mint);
+  box-shadow: 0 0 0 3px rgba(31,168,135,0.22);
+  animation: kg-live-pulse 2.4s ease-in-out infinite;
+}
+@keyframes kg-live-pulse{
+  0%,100% { box-shadow: 0 0 0 3px rgba(31,168,135,0.22); }
+  50%     { box-shadow: 0 0 0 7px rgba(31,168,135,0.04); }
+}
+
+/* === NAV === */
+#kgHeader .kg-h__nav{
+  display: flex; align-items: center; gap: 2px; flex: 1;
+  justify-content: center;
+}
+#kgHeader .kg-h__link{
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 8px 14px; border-radius: 10px;
+  font-size: 14px; font-weight: 500; color: var(--kgh-ink) !important;
+  text-decoration: none !important; border: 0; background: transparent;
+  cursor: pointer; font-family: inherit;
+  transition: background .15s ease, color .15s ease;
+  white-space: nowrap;
+}
+#kgHeader .kg-h__link:hover{
+  background: var(--kgh-mint-soft); color: var(--kgh-mint) !important;
+}
+html[data-theme="dark"] #kgHeader .kg-h__link:hover{ background: rgba(31,168,135,0.10); }
+
+/* === SUBMENU «Услуги» === */
+#kgHeader .kg-h__menu{ position: relative; display: inline-flex; }
+#kgHeader .kg-h__chev{ transition: transform .2s ease; }
+#kgHeader .kg-h__link--has-sub[aria-expanded="true"] .kg-h__chev{ transform: rotate(180deg); }
+#kgHeader .kg-h__sub{
+  position: absolute; top: calc(100% + 10px); left: 50%;
+  transform: translateX(-50%) translateY(-6px);
+  min-width: 380px; padding: 8px;
+  background: var(--kgh-surface); border: 1px solid var(--kgh-line);
+  border-radius: 16px; box-shadow: 0 24px 48px rgba(15,24,21,.12);
+  display: grid; grid-template-columns: 1fr; gap: 2px;
+  opacity: 0; pointer-events: none; visibility: hidden;
+  transition: opacity .18s ease, transform .18s ease, visibility 0s .18s;
+  z-index: 1100;
+}
+/* hover-bridge: убирает разрыв между «Услуги» и подменю (десктоп) */
+@media (min-width: 981px){
+  #kgHeader .kg-h__menu:hover::after,
+  #kgHeader .kg-h__menu.is-open::after{
+    content: ""; position: absolute; left: -150px; right: -150px; top: 100%; height: 14px; background: transparent;
+  }
+}
+
+#kgHeader .kg-h__menu:hover .kg-h__sub,
+#kgHeader .kg-h__menu.is-open .kg-h__sub{
+  opacity: 1; pointer-events: auto; visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  transition: opacity .18s ease, transform .18s ease;
+}
+#kgHeader .kg-h__sub-link{
+  display: grid; grid-template-columns: 1fr auto; align-items: center;
+  gap: 4px 12px; padding: 12px 14px;
+  border-radius: 10px; text-decoration: none !important; color: var(--kgh-ink) !important;
+  transition: background .12s ease;
+}
+#kgHeader .kg-h__sub-link:hover{ background: var(--kgh-mint-soft); }
+html[data-theme="dark"] #kgHeader .kg-h__sub-link:hover{ background: rgba(31,168,135,0.10); }
+#kgHeader .kg-h__sub-title{
+  font-weight: 600; font-size: 14px; line-height: 1.3;
+  display: inline-flex; align-items: center; gap: 8px; color: var(--kgh-ink) !important;
+}
+#kgHeader .kg-h__sub-tag{
+  font-size: 10px; font-weight: 700; letter-spacing: 0.04em;
+  padding: 2px 6px; border-radius: 6px;
+  background: var(--kgh-mint); color: #FAF6EC !important;
+}
+#kgHeader .kg-h__sub-desc{
+  font-size: 12px; color: var(--kgh-ink-3) !important; line-height: 1.4;
+  grid-column: 1 / -1;
+}
+#kgHeader .kg-h__sub-price{
+  font-size: 12px; font-weight: 700; color: var(--kgh-ink-3) !important;
+  white-space: nowrap;
+}
+
+/* === TOOLS (правая часть) === */
+#kgHeader .kg-h__tools{
+  display: flex; align-items: center; gap: 8px; flex-shrink: 0;
+}
+
+/* Phone block — стек с подзаголовком 9:00–21:00 МСК */
+#kgHeader .kg-h__phone{
+  display: inline-flex; flex-direction: column; align-items: flex-end; gap: 1px;
+  padding: 6px 12px; border-radius: 10px;
+  text-decoration: none !important; color: var(--kgh-ink) !important;
+  transition: background .15s ease;
+  line-height: 1.2;
+}
+#kgHeader .kg-h__phone:hover{ background: var(--kgh-mint-soft); }
+html[data-theme="dark"] #kgHeader .kg-h__phone:hover{ background: rgba(31,168,135,0.10); }
+#kgHeader .kg-h__phone-num{
+  font-size: 14px; font-weight: 700; color: var(--kgh-ink) !important;
+  letter-spacing: -0.01em; font-variant-numeric: tabular-nums;
+}
+#kgHeader .kg-h__phone-hours{
+  font-size: 10px; font-weight: 500; letter-spacing: 0.04em;
+  color: var(--kgh-ink-3) !important; text-transform: uppercase;
+}
+
+/* Социалки — круглые мини-кнопки */
+#kgHeader .kg-h__socials{
+  display: inline-flex; align-items: center; gap: 4px;
+  padding-left: 4px; border-left: 1px solid var(--kgh-line);
+  margin-left: 4px;
+}
+#kgHeader .kg-h__soc{
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; border-radius: 999px;
+  background: transparent; color: var(--kgh-ink-3) !important;
+  border: 1px solid var(--kgh-line);
+  text-decoration: none !important; cursor: pointer;
+  transition: background .15s ease, color .15s ease, border-color .15s ease, transform .15s ease;
+}
+#kgHeader .kg-h__soc:hover{ transform: translateY(-1px); }
+#kgHeader .kg-h__soc svg{ width: 16px; height: 16px; display: block; fill: currentColor; }
+#kgHeader .kg-h__soc--tg:hover{
+  background: rgba(34,158,217,0.10); color: var(--kgh-tg) !important; border-color: var(--kgh-tg);
+}
+#kgHeader .kg-h__soc--max:hover{
+  background: rgba(233,75,60,0.10); color: var(--kgh-max) !important; border-color: var(--kgh-max);
+}
+#kgHeader .kg-h__soc--max .kg-h__max-text{
+  font-family: 'Inter', sans-serif;
+  font-size: 11px; font-weight: 800; letter-spacing: 0.02em;
+}
+
+/* Theme toggle */
+#kgHeader .kg-h__theme{
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; border-radius: 999px;
+  border: 1px solid var(--kgh-line); background: transparent;
+  cursor: pointer; color: var(--kgh-ink-2);
+  transition: background .15s ease, color .15s ease;
+}
+#kgHeader .kg-h__theme:hover{ background: var(--kgh-mint-soft); color: var(--kgh-mint); }
+html[data-theme="dark"] #kgHeader .kg-h__theme:hover{ background: rgba(31,168,135,0.10); }
+#kgHeader .kg-h__theme svg{ width: 16px; height: 16px; }
+#kgHeader .kg-h__sun{ display: none; }
+html[data-theme="dark"] #kgHeader .kg-h__moon{ display: none; }
+html[data-theme="dark"] #kgHeader .kg-h__sun{ display: block; }
+
+/* CTA — mint pill «Консультация →» */
+#kgHeader .kg-h__cta{
+  display: inline-flex; align-items: center; gap: 8px;
+  height: 40px; padding: 0 20px; border-radius: 999px;
+  background: var(--kgh-mint) !important; color: #FAF6EC !important;
+  font-size: 14px; font-weight: 600; letter-spacing: -0.01em;
+  text-decoration: none !important; border: 0; cursor: pointer;
+  transition: background .15s ease, transform .15s ease, box-shadow .15s ease;
+  white-space: nowrap;
+  box-shadow: 0 1px 2px rgba(15,132,107,.20);
+}
+#kgHeader .kg-h__cta:hover{
+  background: var(--kgh-mint-2) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(31,168,135,.32);
+}
+#kgHeader .kg-h__cta svg{ width: 14px; height: 14px; transition: transform .2s ease; }
+#kgHeader .kg-h__cta:hover svg{ transform: translateX(2px); }
+
+/* Burger (mobile) */
+#kgHeader .kg-h__burger{
+  display: none;
+  width: 40px; height: 40px; border-radius: 10px;
+  border: 1px solid var(--kgh-line); background: transparent;
+  cursor: pointer; color: var(--kgh-ink);
+  align-items: center; justify-content: center;
+}
+#kgHeader .kg-h__burger:hover{ background: var(--kgh-mint-soft); }
+#kgHeader .kg-h__burger svg{ width: 18px; height: 18px; }
+
+/* === RESPONSIVE === */
+@media (max-width: 1180px){
+  #kgHeader .kg-h__phone-hours{ display: none; }
+  #kgHeader .kg-h__phone-num{ font-size: 13px; }
+}
+@media (max-width: 1060px){
+  #kgHeader .kg-h__theme{ display: none; }
+}
+@media (max-width: 980px){
+  #kgHeader .kg-h__inner{ padding: 12px 20px; gap: 12px; }
+  #kgHeader .kg-h__nav{
+    position: absolute; top: 100%; left: 0; right: 0;
+    flex-direction: column; align-items: stretch;
+    background: var(--kgh-surface); border-bottom: 1px solid var(--kgh-line);
+    padding: 12px 18px; gap: 4px;
+    display: none;
+    box-shadow: 0 12px 24px rgba(15,24,21,0.10);
+  }
+  #kgHeader .kg-h__nav.is-open{ display: flex; }
+  #kgHeader .kg-h__menu{ display: block; width: 100%; }
+  #kgHeader .kg-h__link--has-sub{ width: 100%; justify-content: space-between; }
+  #kgHeader .kg-h__sub{
+    position: static; transform: none !important;
+    opacity: 1; visibility: visible; pointer-events: auto;
+    box-shadow: none; border: 0; padding: 4px 0 8px 12px;
+    min-width: 0; background: transparent; display: none;
+  }
+  #kgHeader .kg-h__menu.is-open .kg-h__sub{ display: grid; }
+  #kgHeader .kg-h__phone, #kgHeader .kg-h__socials{ display: none; }
+  #kgHeader .kg-h__burger{ display: inline-flex; }
+}
+@media (max-width: 560px){
+  #kgHeader .kg-h__inner{ padding: 10px 14px; }
+  #kgHeader .kg-h__logo-tag{ display: none; }
+  #kgHeader .kg-h__cta{ padding: 0 14px; height: 36px; font-size: 13px; }
+}
+
+/* === SKIP LINK (a11y) === */
+#kgSkipLink{
+  position: absolute; left: -9999px; top: 8px;
+  padding: 10px 16px; background: #0E0F0E; color: #FAF6EC;
+  text-decoration: none; border-radius: 10px; z-index: 9999;
+  font-size: 14px; font-weight: 600;
+}
+#kgSkipLink:focus{ left: 8px; outline: 2px solid var(--kgh-mint-2); outline-offset: 2px; }
+</style>
+<style id="cipher-logo-css">
+
+/* ====== CIPHER LOGO (как в hero «без возвратов») ====== */
+.kgh__logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none !important;
+  color: var(--hd-ink) !important;
+  flex-shrink: 0;
+  cursor: pointer;
+  padding: 6px 14px 6px 6px;
+  border-radius: 10px;
+  transition: background .25s;
+  isolation: isolate;
+}
+
+.kgh__logo:hover { background: rgba(10, 22, 18, 0.04); }
+
+
+/* Сканнер */
+.kgh__logo::before {
+  content: '';
+  position: absolute;
+  left: 6px; right: 6px;
+  top: 8px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(43, 200, 154, 0.55) 50%, transparent 100%);
+  mix-blend-mode: multiply;
+  animation: kgh-scan 4.6s linear infinite;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.kgh__logo:hover .kgh__mark { transform: rotate(-7deg) scale(1.1); box-shadow: 0 10px 32px -10px rgba(43, 200, 154, 0.55); }
+
+.kgh__logo:hover .kgh__mark::before { opacity: 1; }
+
+.kgh__logo:hover .kgh__mark svg { transform: rotate(7deg) scale(1.05); }
+
+
+/* CIPHER WORDMARK */
+.kgh__word-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  line-height: 1;
+}
+
+.kgh__word {
+  position: relative;
+  font-family: 'Inter Tight', system-ui, sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 0.9;
+  white-space: nowrap;
+  color: var(--hd-ink) !important;
+  transition: font-size .35s;
+}
+
+.kgh.is-scrolled .kgh__word { font-size: 25px; }
+
+
+.kgh__word .b { position: relative; z-index: 1; display: block; color: var(--hd-ink) !important; }
+
+.kgh__word .l, .kgh__word .r {
+  position: absolute; inset: 0;
+  pointer-events: none;
+  font: inherit; letter-spacing: inherit; line-height: inherit;
+  display: block;
+  mix-blend-mode: multiply;
+}
+
+.kgh__word .l { color: var(--hd-mint) !important; animation: kgh-cipher-l 3.4s steps(1) infinite; }
+
+.kgh__word .r { color: var(--hd-warm) !important; opacity: 0.7; animation: kgh-cipher-r 3.4s steps(1) infinite; }
+
+
+/* На hover — постоянный glitch */
+.kgh__logo:hover .kgh__word .l { animation: kgh-cipher-l-fast 0.6s steps(1) infinite; }
+
+.kgh__logo:hover .kgh__word .r { animation: kgh-cipher-r-fast 0.6s steps(1) infinite; }
+
+
+.kgh__sub {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  color: var(--hd-ink-2);
+  text-transform: uppercase;
+}
+
+.kgh__dot {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--hd-mint);
+  box-shadow: 0 0 0 0 rgba(43, 200, 154, 0.5);
+  animation: kgh-pulse 2.2s ease-out infinite;
+}
+
+  .kgh__sub { display: none; }
+
+
+  /* Лого крупное, мощное */
+  .kgh__word { font-size: 28px !important; letter-spacing: -0.045em !important; font-weight: 800 !important; }
+
+  .kgh.is-scrolled .kgh__word { font-size: 24px !important; }
+
+  .kgh__sub { display: none !important; }
+
+  .kgh__word { font-size: 26px !important; }
+
+  .kgh.is-scrolled .kgh__word { font-size: 22px !important; }
+
+  .kgh__logo::before,
+  .kgh__word .l, .kgh__word .r,
+  .kgh__dot, .kgh__phone-meta::before { animation: none !important; }
+@keyframes kgh-scan {
+  0% { top: -1px; opacity: 0; }
+  10%, 90% { opacity: 1; }
+  100% { top: calc(100% + 1px); opacity: 0; }
+}
+@keyframes kgh-cipher-l {
+  0%, 88%, 100% { transform: translate(0, 0); }
+  90% { transform: translate(-3px, 1px); }
+  93% { transform: translate(2px, -1px); }
+  96% { transform: translate(-2px, 0); }
+}
+@keyframes kgh-cipher-r {
+  0%, 88%, 100% { transform: translate(0, 0); }
+  90% { transform: translate(3px, -1px); }
+  93% { transform: translate(-2px, 1px); }
+  96% { transform: translate(2px, 0); }
+}
+@keyframes kgh-cipher-l-fast {
+  0%, 100% { transform: translate(0, 0); }
+  20% { transform: translate(-2.5px, 1px); }
+  60% { transform: translate(1.5px, -0.5px); }
+  80% { transform: translate(-1px, 0); }
+}
+@keyframes kgh-cipher-r-fast {
+  0%, 100% { transform: translate(0, 0); }
+  20% { transform: translate(2.5px, -1px); }
+  60% { transform: translate(-1.5px, 0.5px); }
+  80% { transform: translate(1px, 0); }
+}
+@keyframes kgh-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(43, 200, 154, 0.6), 0 0 6px var(--hd-mint); transform: scale(1); }
+  70% { box-shadow: 0 0 0 8px rgba(43, 200, 154, 0), 0 0 6px var(--hd-mint); transform: scale(1); }
+  100% { box-shadow: 0 0 0 0 rgba(43, 200, 154, 0), 0 0 6px var(--hd-mint); transform: scale(1); }
+}</style>
+<style id="kgh-unify-theme">
+.kg-h{ --hd-ink:#0a1612; --hd-ink-2:rgba(10,22,18,0.62); --hd-mint:#2bc89a; --hd-warm:#ff5a5a; }
+.kg-h .kgh__word-wrap{ display:flex; flex-direction:column; gap:3px; }
+.kg-h .kgh__word{ position:relative; font-family:'Inter',-apple-system,sans-serif; font-weight:800; font-size:24px; letter-spacing:-.02em; line-height:1; color:var(--hd-ink); }
+.kg-h .kgh__sub{ display:flex !important; align-items:center; gap:6px; font-family:'JetBrains Mono',ui-monospace,monospace; font-size:9.5px; font-weight:500; letter-spacing:.12em; color:var(--hd-ink-2); text-transform:uppercase; }
+.kg-h .kgh__dot{ width:5px; height:5px; border-radius:50%; background:var(--hd-mint); animation:kgh-pulse 2.2s ease-out infinite !important; }
+.kg-h .kgh__word .l{ animation:kgh-cipher-l 3.4s steps(1) infinite !important; }
+.kg-h .kgh__word .r{ animation:kgh-cipher-r 3.4s steps(1) infinite !important; }
+body{ padding-top:84px; }
+.kg-h .kg-h__theme{ display:none !important; }
+</style>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&subset=latin,cyrillic&display=swap" rel="stylesheet">
+<style id="kghdr4-hide">.kghdr4,.kghdr4-drawer{display:none!important}</style>
+</head> <body class="t-body" style="margin:0;"> <!--allrecords--> <div id="allrecords" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="4805637" data-tilda-page-id="112172166" data-tilda-page-alias="personal_data_policy" data-tilda-formskey="bba320494dc421e1e1df657d46dec368" data-tilda-lazy="yes" data-tilda-project-lang="RU" data-tilda-root-zone="com" data-tilda-project-headcode="yes" data-tilda-project-country="RU"> <!--header--> <header id="t-header" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="4805637" data-tilda-page-id="41853736" data-tilda-page-alias="head" data-tilda-formskey="bba320494dc421e1e1df657d46dec368" data-tilda-lazy="yes" data-tilda-project-lang="RU" data-tilda-root-zone="com" data-tilda-project-headcode="yes" data-tilda-project-country="RU"> <div id="rec2202951941" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <meta charset="UTF-8"> <!-- КАЗНА · Header v4 · Full redesign 2026 · kghdr4__ namespace --> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"> <style>
 /* ── RESET ── */
 .kghdr4,.kghdr4 *,.kghdr4 *::before,.kghdr4 *::after,
 .kghdr4-drawer,.kghdr4-drawer *{box-sizing:border-box;margin:0;padding:0}
@@ -526,32 +1056,24 @@ html body #kghdr4 .kghdr4__phone:visited {
     box-shadow:0 1px 0 rgba(0,0,0,0.05),0 8px 24px rgba(0,0,0,0.07);
   }
 }
-</style> <!-- nominify end --> </div> </div> </div> </div> <div id="rec2078098901" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <!-- ════════════════════════════════════════ --> <!--  HEADER v4                              --> <!-- ════════════════════════════════════════ --> <header class="kghdr4" id="kghdr4"> <div class="kghdr4__inner"> <!-- LOGO --> <a href="/" class="kghdr4__logo" data-goal="header_logo_click"> <svg class="kghdr4__logo-mark" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"> <rect width="38" height="38" rx="11" fill="#0C1B33"/> <path d="M12 9.5L12 28.5" stroke="white" stroke-width="3" stroke-linecap="round"/> <path d="M12 19L25.5 10.5" stroke="white" stroke-width="3" stroke-linecap="round"/> <path d="M12 19L25.5 27.5" stroke="white" stroke-width="3" stroke-linecap="round"/> <circle cx="28.5" cy="28.5" r="5.5" fill="#1A4FD6"/> <path d="M26.2 28.5L27.9 30.2L30.8 27.1" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/> </svg> <div class="kghdr4__logo-text"> <span class="kghdr4__logo-name">Казна</span> <span class="kghdr4__logo-tag">Казначейское сопровождение</span> </div> </a> <!-- DESKTOP NAV --> <ul class="kghdr4__nav"> <!-- Услуги --> <li class="kghdr4__nav-item"> <button class="kghdr4__nav-link" type="button" aria-haspopup="true" aria-expanded="false">
+</style> <!-- nominify end --> </div> </div> </div> </div> <div id="rec2078098901" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <!-- ════════════════════════════════════════ --> <!--  HEADER v4                              --> <!-- ════════════════════════════════════════ --> <header id="kgHeader" class="kg-h" role="banner"> <div class="kg-h__inner"> <!-- BRAND --> <a href="/" class="kg-h__brand" aria-label="Казна — главная"> <span class="kg-h__logo"><span class="kgh__word-wrap"> <span class="kgh__word"> <span class="b">Казна</span> <span class="l" aria-hidden="true">Казна</span> <span class="r" aria-hidden="true">Казна</span> </span> <span class="kgh__sub"> <span class="kgh__dot" aria-hidden="true"></span>
+        Казначейское сопровождение
+      </span> </span> </span> <span class="kg-h__live" aria-label="онлайн"> <span class="kg-h__live-dot" aria-hidden="true"></span>
+        онлайн
+      </span> </a> <!-- NAV --> <nav class="kg-h__nav" id="kgHeaderNav" aria-label="Главная навигация"> <div class="kg-h__menu" id="kgHeaderMenu"> <button class="kg-h__link kg-h__link--has-sub" id="kgHeaderMenuBtn"
+                type="button" aria-haspopup="true" aria-expanded="false">
           Услуги
-          <svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4"/></svg> </button> <div class="kghdr4__dropdown" role="menu"> <a href="/services/open" class="kghdr4__dd-row" data-goal="nav_click" data-service="open" role="menuitem"> <div class="kghdr4__dd-icon" style="background:rgba(26,79,214,0.08);color:#1A4FD6"> <svg viewBox="0 0 20 20"><rect x="3" y="5" width="14" height="11" rx="2.5"/><path d="M7 5V4a3 3 0 016 0v1"/><circle cx="10" cy="10.5" r="1.5" fill="currentColor" stroke="none"/></svg> </div> <div class="kghdr4__dd-body"> <span class="kghdr4__dd-name">Открытие счёта</span> <span class="kghdr4__dd-desc">Под ключ за 2 рабочих дня</span> </div> <span class="kghdr4__dd-price">29 000 ₽</span> </a> <a href="/services/conduct" class="kghdr4__dd-row" data-goal="nav_click" data-service="conduct" role="menuitem"> <div class="kghdr4__dd-icon" style="background:rgba(5,150,106,0.08);color:#05966A"> <svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"/><path d="M7 10l2 2 4-4"/></svg> </div> <div class="kghdr4__dd-body"> <span class="kghdr4__dd-name">Казначейское сопровождение</span> <span class="kghdr4__dd-desc">Ведение счёта, платежи, контроль</span> </div> <span class="kghdr4__dd-price">69 000 ₽/мес</span> </a> <div class="kghdr4__dd-divider"></div> <a href="/services/reserve" class="kghdr4__dd-row" data-goal="nav_click" data-service="reserve" role="menuitem"> <div class="kghdr4__dd-icon" style="background:rgba(180,83,9,0.08);color:#B45309"> <svg viewBox="0 0 20 20"><rect x="4" y="8" width="12" height="9" rx="2.5"/><path d="M7 8V6a3 3 0 016 0v2"/></svg> </div> <div class="kghdr4__dd-body"> <span class="kghdr4__dd-name">Резервный счёт</span> <span class="kghdr4__dd-desc">Резервирование под госконтракт</span> </div> <span class="kghdr4__dd-price">19 000 ₽</span> </a> <a href="/services/postpayment" class="kghdr4__dd-row" data-goal="nav_click" data-service="postpayment" role="menuitem"> <div class="kghdr4__dd-icon" style="background:rgba(109,40,217,0.08);color:#7C3AED"> <svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"/><path d="M10 6v4l2.5 2.5"/></svg> </div> <div class="kghdr4__dd-body"> <span class="kghdr4__dd-name">Постоплата по контракту</span> <span class="kghdr4__dd-desc">Платите после получения результата</span> </div> <span class="kghdr4__dd-price">49 000 ₽</span> </a> </div> </li> <li><a href="/#about"     class="kghdr4__nav-link" data-goal="nav_click" data-nav="about">О компании</a></li> <li><a href="/#guarantee" class="kghdr4__nav-link" data-goal="nav_click" data-nav="guarantee">Гарантия</a></li> <li><a href="/blog"       class="kghdr4__nav-link" data-goal="nav_click" data-nav="blog">Блог</a></li> <li><a href="/instrumenty/" class="kghdr4__nav-link" data-goal="nav_click" data-nav="instrumenty">Инструменты</a></li> <li><a href="/obraztsy/" class="kghdr4__nav-link" data-goal="nav_click" data-nav="obraztsy">Образцы</a></li> <li><a href="/#contacts"  class="kghdr4__nav-link" data-goal="nav_click" data-nav="contacts">Контакты</a></li> </ul> <!-- RIGHT --> <div class="kghdr4__right"> <a href="https://t.me/kaznagovru" class="kghdr4__social kghdr4__social--tg"
-         target="_blank" rel="noopener" aria-label="Telegram" data-goal="social_click" data-social="telegram"> <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-2.018 9.505c-.148.658-.537.818-1.088.508l-3-2.21-1.447 1.393c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.16 14.608l-2.948-.92c-.64-.203-.654-.64.136-.948l11.498-4.43c.535-.194 1.003.13.716.938z"/></svg> </a> <a href="https://max.ru/u/f9LHodD0cOK_dA0cxMm6m3-UJ1xRsy79eO5fE11eYanlBeYUtgEpWuyk5m8"
-         class="kghdr4__social kghdr4__social--max"
-         target="_blank" rel="noopener" aria-label="MAX" data-goal="social_click" data-social="max"> <svg viewBox="0 0 24 24"> <rect width="24" height="24" rx="6" fill="currentColor" opacity="0.1"/> <text x="12" y="16.5" font-family="'Manrope',Arial,sans-serif" font-size="9.5" font-weight="800"
-                fill="currentColor" text-anchor="middle" letter-spacing="0.8">MAX</text> </svg> </a> <div class="kghdr4__sep"></div> <a href="tel:+74951084232" class="kghdr4__phone" data-goal="phone_click"> <span class="kghdr4__phone-dot"></span>
-        +7 (495) 108-42-32
-      </a> <a href="/#form" class="kghdr4__cta" data-goal="header_cta_click">
+          <svg class="kg-h__chev" viewBox="0 0 24 24" width="12" height="12" fill="none"
+               stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <polyline points="6 9 12 15 18 9"/> </svg> </button> <div class="kg-h__sub" role="menu" aria-labelledby="kgHeaderMenuBtn"> <a class="kg-h__sub-link" href="/services/reserve" role="menuitem"> <span class="kg-h__sub-title">Резерв счёта на тендер</span> <span class="kg-h__sub-price">19 000 ₽</span> <span class="kg-h__sub-desc">2 дня · реквизит для подачи · возврат при проигрыше</span> </a> <a class="kg-h__sub-link" href="/services/open" role="menuitem"> <span class="kg-h__sub-title">Открытие счёта в УФК</span> <span class="kg-h__sub-price">29 000 ₽</span> <span class="kg-h__sub-desc">2 рабочих дня под ключ · ЭЦП + ГИИС «Электронный бюджет»</span> </a> <a class="kg-h__sub-link" href="/services/postpayment" role="menuitem"> <span class="kg-h__sub-title">Контракт с постоплатой</span> <span class="kg-h__sub-price">49 000 ₽</span> <span class="kg-h__sub-desc">Счёт + сведения + платежи по УПД</span> </a> <a class="kg-h__sub-link" href="/services/conduct" role="menuitem"> <span class="kg-h__sub-title">Контракт с авансом <span class="kg-h__sub-tag">★ ГОЗ</span></span> <span class="kg-h__sub-price">69 000 ₽/мес</span> <span class="kg-h__sub-desc">17 операций · 275-ФЗ + 44-ФЗ · аванс без лимитов</span> </a> </div> </div> <a class="kg-h__link" href="/blog">Блог</a> <a class="kg-h__link" href="#kgFaq">FAQ</a> <a class="kg-h__link" href="/#about">О нас</a> </nav> <!-- TOOLS --> <div class="kg-h__tools"> <a href="tel:+74951084232" class="kg-h__phone" aria-label="Позвонить +7 495 108 42 32"> <span class="kg-h__phone-num">+7 (495) 108-42-32</span> <span class="kg-h__phone-hours">9:00–21:00 МСК</span> </a> <div class="kg-h__socials" aria-label="Связаться"> <a href="https://t.me/kaznagovru" class="kg-h__soc kg-h__soc--tg"
+           target="_blank" rel="noopener" aria-label="Telegram"> <svg viewBox="0 0 24 24" aria-hidden="true"> <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-2.018 9.505c-.148.658-.537.818-1.088.508l-3-2.21-1.447 1.393c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.16 14.608l-2.948-.92c-.64-.203-.654-.64.136-.948l11.498-4.43c.535-.194 1.003.13.716.938z"/> </svg> </a> <a href="https://max.ru/u/f9LHodD0cOK_dA0cxMm6m3-UJ1xRsy79eO5fE11eYanlBeYUtgEpWuyk5m8"
+           class="kg-h__soc kg-h__soc--max"
+           target="_blank" rel="noopener" aria-label="MAX"> <span class="kg-h__max-text">M</span> </a> </div> <button class="kg-h__theme" id="kgThemeBtn" aria-label="Сменить тему" type="button"> <svg class="kg-h__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/> </svg> <svg class="kg-h__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <circle cx="12" cy="12" r="4"/> <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/> </svg> </button> <a href="/#form" class="kg-h__cta">
         Консультация
-        <svg viewBox="0 0 14 14"><path d="M2 7h10M7 2l5 5-5 5"/></svg> </a> </div> <!-- BURGER --> <button class="kghdr4__burger" id="kghdr4-burger" aria-label="Меню" aria-expanded="false"> <span class="kghdr4__burger-line"></span> <span class="kghdr4__burger-line"></span> <span class="kghdr4__burger-line"></span> </button> </div> </header> <!-- ════════ MOBILE DRAWER ════════ --> <nav class="kghdr4-drawer" id="kghdr4-drawer" aria-label="Меню"> <div class="kghdr4-drawer__section"> <div class="kghdr4-drawer__section-label">Услуги</div> </div> <a href="/services/open" class="kghdr4-drawer__link" data-goal="nav_mobile_click" data-service="open">
-    Открытие казначейского счёта
-    <div class="kghdr4-drawer__meta"> <span class="kghdr4-drawer__price">29 000 ₽</span> <span class="kghdr4-drawer__desc">за 2 дня</span> </div> </a> <a href="/services/conduct" class="kghdr4-drawer__link" data-goal="nav_mobile_click" data-service="conduct">
-    Казначейское сопровождение
-    <div class="kghdr4-drawer__meta"> <span class="kghdr4-drawer__price">69 000 ₽/мес</span> </div> </a> <a href="/services/reserve" class="kghdr4-drawer__link" data-goal="nav_mobile_click" data-service="reserve">
-    Резервный счёт
-    <div class="kghdr4-drawer__meta"> <span class="kghdr4-drawer__price">19 000 ₽</span> </div> </a> <a href="/services/postpayment" class="kghdr4-drawer__link" data-goal="nav_mobile_click" data-service="postpayment">
-    Постоплата по контракту
-    <div class="kghdr4-drawer__meta"> <span class="kghdr4-drawer__price">49 000 ₽</span> </div> </a> <div class="kghdr4-drawer__divider"></div> <div class="kghdr4-drawer__section"> <div class="kghdr4-drawer__section-label">Навигация</div> </div> <a href="/#about"     class="kghdr4-drawer__link" data-goal="nav_mobile_click" data-nav="about">О компании</a> <a href="/#guarantee" class="kghdr4-drawer__link" data-goal="nav_mobile_click" data-nav="guarantee">Гарантия</a> <a href="/blog"       class="kghdr4-drawer__link" data-goal="nav_mobile_click" data-nav="blog">Блог</a> <a href="/instrumenty/" class="kghdr4-drawer__link" data-goal="nav_mobile_click" data-nav="instrumenty">Инструменты и калькуляторы</a> <a href="/voprosy/" class="kghdr4-drawer__link" data-goal="nav_mobile_click" data-nav="voprosy">Вопросы и ответы</a> <a href="/obraztsy/" class="kghdr4-drawer__link" data-goal="nav_mobile_click" data-nav="obraztsy">Образцы документов</a> <a href="/keysy/" class="kghdr4-drawer__link" data-goal="nav_mobile_click" data-nav="keysy">Кейсы</a> <a href="/otzyvy/" class="kghdr4-drawer__link" data-goal="nav_mobile_click" data-nav="otzyvy">Отзывы</a> <a href="/about/" class="kghdr4-drawer__link" data-goal="nav_mobile_click" data-nav="about">О компании</a> <a href="/#contacts"  class="kghdr4-drawer__link" data-goal="nav_mobile_click" data-nav="contacts">Контакты</a> <div class="kghdr4-drawer__divider"></div> <div class="kghdr4-drawer__section"> <div class="kghdr4-drawer__section-label">Мы в соцсетях</div> </div> <div class="kghdr4-drawer__social-row"> <a href="https://t.me/kaznagovru" target="_blank" rel="noopener"
-       class="kghdr4--tg" data-goal="social_click" data-social="telegram"> <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-2.018 9.505c-.148.658-.537.818-1.088.508l-3-2.21-1.447 1.393c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.16 14.608l-2.948-.92c-.64-.203-.654-.64.136-.948l11.498-4.43c.535-.194 1.003.13.716.938z"/></svg>
-      Telegram
-    </a> <a href="https://max.ru/u/f9LHodD0cOK_dA0cxMm6m3-UJ1xRsy79eO5fE11eYanlBeYUtgEpWuyk5m8"
-       target="_blank" rel="noopener"
-       class="kghdr4--max" data-goal="social_click" data-social="max"> <svg viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="currentColor" opacity="0.12"/><text x="12" y="16.5" font-family="Arial,sans-serif" font-size="9.5" font-weight="800" fill="currentColor" text-anchor="middle" letter-spacing="0.8">MAX</text></svg>
-      MAX
-    </a> </div> <div class="kghdr4-drawer__actions"> <a href="/#form" data-goal="mobile_cta_click">Получить консультацию</a> <a href="tel:+74951084232" data-goal="mobile_phone_click">+7 (495) 108-42-32</a> </div> </nav> <!-- ════════ SCRIPT ════════ --> <script>
+        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.2"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <path d="M2 7h10M7 2l5 5-5 5"/> </svg> </a> <button class="kg-h__burger" id="kgBurger" aria-label="Меню" aria-expanded="false" type="button"> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" aria-hidden="true"> <line x1="4" y1="7"  x2="20" y2="7"/> <line x1="4" y1="12" x2="20" y2="12"/> <line x1="4" y1="17" x2="20" y2="17"/> </svg> </button> </div> </div> </header> <!-- ════════ MOBILE DRAWER ════════ -->  <!-- ════════ SCRIPT ════════ --> <script>
 (function(){
   var YM = window.KAZNA_METRIKA_ID || 86763493;
   function goal(g,p){try{if(window.ym)ym(YM,'reachGoal',g,p||{})}catch(e){}}
@@ -776,4 +1298,16 @@ html body #kghdr4 .kghdr4__phone:visited {
 </style> <section class="kgp"> <h1>Политика в отношении обработки персональных данных</h1> <div class="kgp__meta">Редакция от 31 мая 2026 года · действует с момента публикации</div> <hr class="kgp__rule"> <h2>1. Общие положения</h2> <p>1.1. Настоящая Политика разработана в соответствии с требованиями Федерального закона от 27 июля 2006 года № 152-ФЗ «О персональных данных» (далее — Закон) и определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных у Оператора.</p> <p>1.2. <strong>Оператор:</strong> Индивидуальный предприниматель Михайлов Ярослав Алексеевич.</p> <ul> <li>ИНН 781428314589, ОГРНИП 321784700367672.</li> <li>E-mail для обращений по обработке персональных данных: <a href="mailto:lead@kazna-gov.ru">lead@kazna-gov.ru</a>.</li> <li>Сайт: <a href="https://kazna-gov.ru" target="_blank" rel="noopener">https://kazna-gov.ru</a>.</li> </ul> <p>Сведения об адресе Оператора содержатся в Реестре операторов, осуществляющих обработку персональных данных (<a href="https://pd.rkn.gov.ru/operators-registry/operators-list/" target="_blank" rel="noopener">https://pd.rkn.gov.ru/operators-registry/operators-list/</a>), и предоставляются Оператором по письменному запросу субъекта персональных данных.</p> <p>1.3. <strong>Лицо, ответственное за организацию обработки персональных данных:</strong> ИП Михайлов Я.А. (лично). Контакт: <a href="mailto:lead@kazna-gov.ru">lead@kazna-gov.ru</a>.</p> <p>1.4. Настоящая Политика применяется ко всей информации, которую Оператор получает о Пользователях через сайт <a href="https://kazna-gov.ru" target="_blank" rel="noopener">https://kazna-gov.ru</a>, формы обратной связи, электронную почту и иные каналы взаимодействия.</p> <p>1.5. Действующая редакция Политики постоянно размещена по адресу <a href="https://kazna-gov.ru/personal_data_policy" target="_blank" rel="noopener">https://kazna-gov.ru/personal_data_policy</a>.</p> <h2>2. Основные понятия</h2> <p>В Политике используются понятия в значениях, определённых статьёй 3 Закона: «персональные данные», «обработка персональных данных», «оператор», «субъект персональных данных», «согласие», «трансграничная передача», «обезличивание» и иные.</p> <h2>3. Правовые основания обработки</h2> <p>3.1. Оператор обрабатывает персональные данные на следующих основаниях:</p> <ul> <li>согласие субъекта на обработку персональных данных (ч.1 ст.6 Закона);</li> <li>необходимость исполнения договора, стороной которого либо выгодоприобретателем по которому является субъект, либо для заключения договора по инициативе субъекта (п.5 ч.1 ст.6 Закона);</li> <li>необходимость осуществления прав и законных интересов Оператора (п.7 ч.1 ст.6 Закона) — в части ведения учёта обращений, направления ответов, обеспечения безопасности;</li> <li>исполнение обязательных требований законодательства РФ (п.2 ч.1 ст.6 Закона) — в части бухгалтерского, налогового и иного учёта.</li> </ul> <h2>4. Категории субъектов и состав обрабатываемых данных</h2> <p>4.1. <strong>Категории субъектов:</strong> физические лица (включая представителей юридических лиц), направившие обращение через формы сайта, по электронной почте, телефону или мессенджеру, а также подписчики рассылки.</p> <p>4.2. <strong>Состав персональных данных, обрабатываемых Оператором:</strong></p> <div class="kgp__table"> <table> <thead> <tr><th>Группа</th><th>Данные</th></tr> </thead> <tbody> <tr><td>Контактные</td><td>имя, фамилия, отчество (если указаны), телефон, e-mail, никнейм в мессенджере</td></tr> <tr><td>Содержательные</td><td>текст обращения, описание задачи или ситуации по контракту, комментарии на сайте</td></tr> <tr><td>Реквизиты юр. лица (опционально)</td><td>название организации, ИНН, ОГРН — при необходимости заключения договора</td></tr> <tr><td>Технические</td><td>IP-адрес, User-Agent браузера, тип устройства, разрешение экрана, временная зона, язык</td></tr> <tr><td>Поведенческие</td><td>записи действий Пользователя на страницах сайта — движения курсора, клики, скролл, ввод в формы (за исключением полей с паролями и платёжными данными) — с использованием сервиса «Вебвизор» Яндекс Метрики</td></tr> <tr><td>Идентификаторы аналитики</td><td>client ID Яндекс Метрики (<code>ym_uid</code>), идентификаторы Top.Mail.Ru и VK, метки рекламных кампаний (UTM, <code>yclid</code>)</td></tr> <tr><td>Cookies</td><td>служебные и аналитические — см. раздел 11</td></tr> </tbody> </table> </div> <p>4.3. <strong>Специальные категории персональных данных</strong> (раса, политические взгляды, состояние здоровья, биометрия и т.п.) Оператором <strong>не обрабатываются</strong>.</p> <h2>5. Цели обработки</h2> <p>5.1. Цели обработки персональных данных:</p> <ul> <li>информирование Пользователя о услугах Оператора в ответ на его обращение;</li> <li>заключение, исполнение и прекращение гражданско-правовых договоров на оказание услуг казначейского сопровождения;</li> <li>направление рассылки информационных и рекламных материалов — только при отдельном согласии Пользователя;</li> <li>ведение учёта обращений и заявок, аналитика эффективности маркетинговых каналов;</li> <li>обеспечение безопасности сайта и защиты от автоматических атак;</li> <li>исполнение требований налогового, бухгалтерского и иного законодательства РФ.</li> </ul> <p>5.2. Обработка персональных данных в иных целях, не указанных в настоящей Политике, не допускается.</p> <h2>6. Перечень действий с персональными данными</h2> <p>6.1. Оператор осуществляет: сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных.</p> <p>6.2. Обработка осуществляется <strong>смешанным способом</strong> — как с использованием средств автоматизации, так и без них (только в части необходимой для составления бумажных договоров).</p> <h2>7. Места и условия хранения</h2> <p>7.1. <strong>Первичная запись, накопление, хранение, уточнение, извлечение и изменение</strong> персональных данных Пользователей — граждан Российской Федерации осуществляются с использованием баз данных, расположенных на территории Российской Федерации, в соответствии с ч.5 ст.18 Закона.</p> <p>7.2. Конкретные места хранения:</p> <div class="kgp__table"> <table> <thead> <tr><th>Назначение</th><th>Сервис</th><th>Юрисдикция</th></tr> </thead> <tbody> <tr><td>Сайт (hosting)</td><td>Tilda Publishing</td><td>РФ</td></tr> <tr><td>Сервер приёма заявок и хранение JSON-записей лидов</td><td>Yandex Cloud, ЦОД в Москве</td><td>РФ</td></tr> <tr><td>Корпоративная почта <code>lead@kazna-gov.ru</code></td><td>Яндекс 360</td><td>РФ</td></tr> <tr><td>Веб-аналитика «Яндекс Метрика» (счётчик 86763493), включая сервис «Вебвизор» — запись и воспроизведение пользовательских сессий</td><td>Яндекс</td><td>РФ</td></tr> <tr><td>Веб-аналитика Top.Mail.Ru (счётчик 3423058)</td><td>VK</td><td>РФ</td></tr> <tr><td>Маркетинговый пиксель VK Реклама</td><td>VK</td><td>РФ</td></tr> </tbody> </table> </div> <p>7.3. <strong>Сроки хранения</strong> персональных данных:</p> <div class="kgp__table"> <table> <thead> <tr><th>Категория</th><th>Срок</th></tr> </thead> <tbody> <tr><td>Заявки и обращения (лиды)</td><td>3 года с момента последнего взаимодействия — для обеспечения исполнения договорных обязательств и общего срока исковой давности (ст.196 ГК РФ)</td></tr> <tr><td>Подписка на рассылку</td><td>до отзыва согласия Пользователем</td></tr> <tr><td>Комментарии на сайте</td><td>до момента удаления автором или модератором</td></tr> <tr><td>Бухгалтерские данные клиентов по заключённым договорам</td><td>5 лет с даты окончания года, в котором составлен документ (ст.29 ФЗ «О бухгалтерском учёте»)</td></tr> <tr><td>Идентификаторы аналитики, cookies</td><td>24 месяца (срок жизни cookies)</td></tr> </tbody> </table> </div> <p>7.4. По истечении срока хранения персональные данные подлежат уничтожению, если иное не предусмотрено законодательством РФ.</p> <h2>8. Передача персональных данных третьим лицам</h2> <p>8.1. Оператор передаёт персональные данные третьим лицам только в следующих случаях:</p> <ul> <li>передача сервисам, обеспечивающим работу сайта и аналитику (см. п.7.2), на основании отдельных соглашений с такими сервисами;</li> <li>предоставление по требованию уполномоченных государственных органов в случаях, предусмотренных законодательством РФ.</li> </ul> <p>8.2. Оператор <strong>не продаёт</strong> персональные данные третьим лицам и <strong>не использует</strong> их для целей, не указанных в настоящей Политике.</p> <h2>9. Трансграничная передача персональных данных</h2> <p>9.1. Оператор <strong>не осуществляет</strong> трансграничную передачу персональных данных. Все сервисы, используемые для обработки персональных данных (хостинг, корпоративная почта, веб-аналитика, маркетинговый пиксель), расположены на территории Российской Федерации (см. п.7.2).</p> <p>9.2. Оператор использует инструменты управления индексацией сайта в поисковых системах — Яндекс Вебмастер и Google Search Console. Указанные инструменты предназначены исключительно для подтверждения владения сайтом и просмотра агрегированной статистики индексации; <strong>они не получают и не передают персональных данных Пользователей</strong> и не размещают трекеры на сайте Оператора.</p> <p>9.3. В случае подключения иных сервисов, расположенных за пределами Российской Федерации и работающих с персональными данными Пользователей, Оператор предварительно направит в Роскомнадзор уведомление в порядке ст.12 Закона и обновит настоящую Политику.</p> <h2>10. Меры обеспечения безопасности</h2> <p>10.1. Оператор принимает следующие организационные и технические меры защиты персональных данных:</p> <ul> <li>хранение баз данных в зашифрованном канале связи (HTTPS / TLS);</li> <li>ограничение доступа к серверу: доступ имеет только Оператор по ключу SSH;</li> <li>двойная аутентификация на административной панели сайта (Basic Auth + персональный токен);</li> <li>регулярное резервное копирование данных;</li> <li>регулярное обновление программного обеспечения и операционной системы сервера;</li> <li>использование защищённых протоколов (HTTPS, SMTPS) при передаче данных между компонентами системы;</li> <li>обучение и инструктаж лиц, имеющих доступ к персональным данным.</li> </ul> <p>10.2. Оператор информирует Роскомнадзор о фактах несанкционированного доступа к персональным данным в сроки и порядке, установленные законодательством.</p> <h2>11. Cookies и аналогичные технологии</h2> <p>11.1. Сайт использует следующие категории cookies:</p> <div class="kgp__table"> <table> <thead> <tr><th>Категория</th><th>Назначение</th><th>Согласие</th></tr> </thead> <tbody> <tr><td>Необходимые</td><td>техническое функционирование сайта, авторизация, безопасность</td><td>устанавливаются без согласия</td></tr> <tr><td>Аналитические</td><td>измерение посещаемости и поведения Пользователей, запись пользовательских сессий через сервис «Вебвизор» (Яндекс Метрика, Top.Mail.Ru)</td><td>устанавливаются после согласия в cookie-баннере</td></tr> <tr><td>Маркетинговые</td><td>таргетирование рекламы (VK Реклама, Яндекс Директ)</td><td>устанавливаются после согласия в cookie-баннере</td></tr> </tbody> </table> </div> <p>11.2. Согласие на установку аналитических и маркетинговых cookies оформляется через cookie-баннер, отображаемый при первом посещении сайта. Пользователь может в любой момент изменить выбор через ссылку «Настройки cookies» в подвале сайта.</p> <p>11.3. При отказе от аналитических и маркетинговых cookies Оператор не сохраняет идентификаторы Пользователя в системах аналитики и не использует их для рекламного таргетирования.</p> <h2>12. Права субъектов персональных данных и порядок их реализации</h2> <p>12.1. Субъект персональных данных имеет право:</p> <ul> <li>получать информацию об обработке своих персональных данных Оператором;</li> <li>требовать уточнения, блокирования или уничтожения персональных данных, если они являются неполными, устаревшими, неточными или неправомерно полученными;</li> <li>отзывать ранее данное согласие на обработку персональных данных;</li> <li>обжаловать действия или бездействие Оператора в Роскомнадзоре или в суде.</li> </ul> <p>12.2. <strong>Порядок реализации прав.</strong> Запрос направляется на адрес <a href="mailto:lead@kazna-gov.ru">lead@kazna-gov.ru</a> или по почтовому адресу Оператора (см. п.1.2). Запрос должен содержать:</p> <ul> <li>ФИО заявителя;</li> <li>сведения, позволяющие идентифицировать обращение (e-mail или телефон, указанный при отправке формы);</li> <li>описание требования (получить информацию, удалить, прекратить обработку);</li> <li>подпись или иное подтверждение волеизъявления.</li> </ul> <p>12.3. <strong>Срок ответа</strong> — не более <strong>10 рабочих дней</strong> с момента получения запроса (ст.20 Закона). При необходимости срок может быть продлён, но не более чем на 5 рабочих дней, с уведомлением заявителя.</p> <p>12.4. Отзыв согласия на обработку персональных данных не освобождает Оператора от обработки тех данных, обработка которых необходима в силу прямого требования закона.</p> <h2>13. Согласие на отправку рекламных и информационных рассылок</h2> <p>13.1. Согласие на получение рассылки оформляется отдельным чек-боксом при подписке. Оно может быть отозвано в любой момент путём перехода по ссылке «Отписаться» в любом письме либо письмом на <a href="mailto:lead@kazna-gov.ru">lead@kazna-gov.ru</a>.</p> <p>13.2. Отзыв согласия на рассылку не влечёт прекращения обработки персональных данных в иных целях, указанных в п.5.1.</p> <h2>14. Уведомление в Роскомнадзор</h2> <p>14.1. Сведения об Операторе размещаются в Реестре операторов, осуществляющих обработку персональных данных, по адресу <a href="https://pd.rkn.gov.ru/operators-registry/operators-list/" target="_blank" rel="noopener">https://pd.rkn.gov.ru/operators-registry/operators-list/</a>.</p> <p>14.2. По вопросам, связанным с обработкой персональных данных Оператором, субъект также вправе обращаться в уполномоченный орган по защите прав субъектов персональных данных — Роскомнадзор (<a href="https://rkn.gov.ru/" target="_blank" rel="noopener">https://rkn.gov.ru/</a>).</p> <h2>15. Заключительные положения</h2> <p>15.1. Изменения в настоящую Политику размещаются по адресу <a href="https://kazna-gov.ru/personal_data_policy" target="_blank" rel="noopener">https://kazna-gov.ru/personal_data_policy</a>. Дата актуальной редакции указана в начале документа.</p> <p>15.2. По всем вопросам, связанным с обработкой персональных данных, обращаться по адресу <a href="mailto:lead@kazna-gov.ru">lead@kazna-gov.ru</a> или по почтовому адресу Оператора.</p> </section> <!-- nominify end --> </div> </div> </div> </div> </div> <!--/allrecords--> <!-- Stat --> <!-- Yandex.Metrika counter 86763493 --> <!-- Метрика: дубль-init счётчика удалён (счётчик инициализируется в <head>) --> <noscript><div><img src="https://mc.yandex.ru/watch/86763493" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter --> <script type="text/javascript">if(!window.mainTracker) {window.mainTracker='tilda';}
 setTimeout(function(){(function(d,w,k,o,g) {var n=d.getElementsByTagName(o)[0],s=d.createElement(o),f=function(){n.parentNode.insertBefore(s,n);};s.type="text/javascript";s.async=true;s.key=k;s.id="tildastatscript";s.src=g;if(w.opera=="[object Opera]") {d.addEventListener("DOMContentLoaded",f,false);} else {f();}})(document,window,'812f72a0c7f8e0f36f6f87d2fe7bbe24','script','/assets/tilda/static/js/tilda-stat-1.0.min.js');},3000);</script> <!-- Rating Mail.ru counter --> <script type="text/javascript" data-tilda-cookie-type="analytics">setTimeout(function(){var _tmr=window._tmr||(window._tmr=[]);_tmr.push({id:"3423058",type:"pageView",start:(new Date()).getTime()});window.mainMailruId='3423058';(function(d,w,id) {if(d.getElementById(id)) {return;}
 var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=id;ts.src="https://top-fwz1.mail.ru/js/code.js";var f=function() {var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(ts,s);};if(w.opera=="[object Opera]") {d.addEventListener("DOMContentLoaded",f,false);} else {f();}})(document,window,"topmailru-code");},3000);</script> <noscript><img src="https://top-fwz1.mail.ru/counter?id=3423058;js=na" style="border:0;position:absolute;left:-9999px;width:1px;height:1px" alt="Top.Mail.Ru" /></noscript> <!-- //Rating Mail.ru counter --> <!-- VK Pixel code (noscript) --> <noscript><img src="https://vk.com/rtrg?p=VK-RTRG-1160203-5M8LR" style="position:fixed; left:-999px;" alt=""/></noscript> <!-- End VK Pixel code (noscript) --> <footer style="background:#102434;color:#cfd8e0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Arial,sans-serif;padding:40px 20px 26px;margin-top:48px"><div style="max-width:1060px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:26px"><div><div style="font-weight:800;font-size:18px;color:#fff;margin-bottom:8px">Казна<span style="color:#1FA887">.</span></div><div style="font-size:13px;line-height:1.6;color:#9fb0bd">Казначейское сопровождение госконтрактов под ключ по 44-ФЗ и 275-ФЗ (ГОЗ). 15+ лет практики, 0% возвратов.</div></div><div><div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#7f93a3;margin-bottom:8px">Услуги</div><a href="/uslugi" style="display:block;color:#cfd8e0;text-decoration:none;font-size:13.5px;line-height:2.05">Услуги и цены</a><a href="/services/open" style="display:block;color:#cfd8e0;text-decoration:none;font-size:13.5px;line-height:2.05">Открытие счёта</a><a href="/services/conduct" style="display:block;color:#cfd8e0;text-decoration:none;font-size:13.5px;line-height:2.05">Сопровождение</a><a href="/stoimost" style="display:block;color:#cfd8e0;text-decoration:none;font-size:13.5px;line-height:2.05">Стоимость</a></div><div><div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#7f93a3;margin-bottom:8px">Полезное</div><a href="/instrumenty/" style="display:block;color:#cfd8e0;text-decoration:none;font-size:13.5px;line-height:2.05">Инструменты и калькуляторы</a><a href="/voprosy/" style="display:block;color:#cfd8e0;text-decoration:none;font-size:13.5px;line-height:2.05">Вопросы и ответы</a><a href="/obraztsy/" style="display:block;color:#cfd8e0;text-decoration:none;font-size:13.5px;line-height:2.05">Образцы документов</a><a href="/keysy/" style="display:block;color:#cfd8e0;text-decoration:none;font-size:13.5px;line-height:2.05">Кейсы</a></div><div><div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#7f93a3;margin-bottom:8px">Компания</div><a href="/about/" style="display:block;color:#cfd8e0;text-decoration:none;font-size:13.5px;line-height:2.05">О компании</a><a href="/otzyvy/" style="display:block;color:#cfd8e0;text-decoration:none;font-size:13.5px;line-height:2.05">Отзывы</a><a href="/novosti/" style="display:block;color:#cfd8e0;text-decoration:none;font-size:13.5px;line-height:2.05">Новости</a><a href="/blog" style="display:block;color:#cfd8e0;text-decoration:none;font-size:13.5px;line-height:2.05">Блог</a><a href="tel:+74951084232" style="display:block;color:#cfd8e0;text-decoration:none;font-size:13.5px;line-height:2.05">+7 (495) 108-42-32</a></div></div><div style="max-width:1060px;margin:20px auto 0;padding-top:16px;border-top:1px solid #24384a;font-size:12.5px;color:#7f93a3">© 2026 ИП Михайлов Я.А. · ИНН 781428314589 · казначейское сопровождение под ключ · kazna-gov.ru</div></footer>
+<script id="kgh-unify-js">
+(function(){
+  var hdr=document.getElementById('kgHeader'); if(!hdr) return;
+  function pad(){ document.body.style.paddingTop=(hdr.offsetHeight||72)+'px'; }
+  pad(); addEventListener('resize',pad); addEventListener('orientationchange',pad);
+  var t=false; addEventListener('scroll',function(){ if(!t){requestAnimationFrame(function(){ hdr.classList.toggle('is-scrolled',scrollY>8); t=false; }); t=true;} },{passive:true});
+  var b=document.getElementById('kgBurger');
+  if(b) b.addEventListener('click',function(){ var o=hdr.classList.toggle('is-menu-open'); b.setAttribute('aria-expanded',o); document.body.style.overflow=o?'hidden':''; });
+  var mb=document.getElementById('kgHeaderMenuBtn');
+  if(mb) mb.addEventListener('click',function(e){ if(matchMedia('(hover:none),(pointer:coarse)').matches){ e.preventDefault(); var m=document.getElementById('kgHeaderMenu'); if(m){ var ex=mb.getAttribute('aria-expanded')==='true'; mb.setAttribute('aria-expanded',!ex); m.classList.toggle('is-sub-open',!ex);} } });
+})();
+</script>
 </body> </html>
