@@ -292,16 +292,16 @@ mark{background:#fde7b8;color:inherit;border-radius:3px;padding:0 2px}
   var ccType=document.getElementById('cc-type'),ccSum=document.getElementById('cc-sum'),
       ccVal=document.getElementById('cc-val'),ccNote=document.getElementById('cc-note');
   moneyMask(ccSum);
-  var COST={open:{base:39000,unit:' разово',note:'Подготовка пакета, подача в ТОФК, доведение до открытия и первый платёж.'},
-            reserve:{base:25000,unit:' разово',note:'Резервирование счёта под участие в тендере.'},
-            postpay:{base:69000,unit:' / мес',note:'Ежемесячное сопровождение: ведение счёта, платежи, отчётность.'},
-            avans:{base:89000,unit:' / мес',note:'Сопровождение контракта с авансом и согласованием калькуляции.'}};
+  var COST={open:{base:29000,unit:' разово',note:'Подготовка пакета, подача в ТОФК, доведение до открытия и первый платёж.'},
+            reserve:{base:19000,unit:' разово',note:'Резервирование счёта под участие в тендере.'},
+            postpay:{base:49000,unit:' разово',note:'Полный цикл до закрытия контракта: счёт, сведения, платежи по актам и УПД.'},
+            avans:{base:69000,unit:' / мес',note:'Сопровождение контракта с авансом и согласованием калькуляции.'}};
   function calcCost(){
     var t=COST[ccType.value],sum=+digits(ccSum.value);
     var base=t.base;
     // лёгкая надбавка для крупных контрактов на ежемесячных тарифах
-    if((ccType.value==='postpay'||ccType.value==='avans')&&sum>=50000000) base=Math.round(t.base*1.3/1000)*1000;
-    else if((ccType.value==='postpay'||ccType.value==='avans')&&sum>=20000000) base=Math.round(t.base*1.15/1000)*1000;
+    if((ccType.value==='avans')&&sum>=50000000) base=Math.round(t.base*1.3/1000)*1000;
+    else if((ccType.value==='avans')&&sum>=20000000) base=Math.round(t.base*1.15/1000)*1000;
     ccVal.textContent='от '+fmt(base)+' ₽'+t.unit;
     ccNote.textContent=t.note;
   }
