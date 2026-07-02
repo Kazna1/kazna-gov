@@ -307,6 +307,175 @@ _tmr.push({id: "3423058", type: "pageView", start: (new Date()).getTime()});
 </script>
 <noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3423058;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript>
 <!-- /Top.Mail.Ru counter -->
+<style id="kgh-cipher-kf">
+
+/* ====== CIPHER LOGO (как в hero «без возвратов») ====== */
+.kgh__logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none !important;
+  color: var(--hd-ink) !important;
+  flex-shrink: 0;
+  cursor: pointer;
+  padding: 6px 14px 6px 6px;
+  border-radius: 10px;
+  transition: background .25s;
+  isolation: isolate;
+}
+
+.kgh__logo:hover { background: rgba(10, 22, 18, 0.04); }
+
+
+/* Сканнер */
+.kgh__logo::before {
+  content: '';
+  position: absolute;
+  left: 6px; right: 6px;
+  top: 8px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(43, 200, 154, 0.55) 50%, transparent 100%);
+  mix-blend-mode: multiply;
+  animation: kgh-scan 4.6s linear infinite;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.kgh__logo:hover .kgh__mark { transform: rotate(-7deg) scale(1.1); box-shadow: 0 10px 32px -10px rgba(43, 200, 154, 0.55); }
+
+.kgh__logo:hover .kgh__mark::before { opacity: 1; }
+
+.kgh__logo:hover .kgh__mark svg { transform: rotate(7deg) scale(1.05); }
+
+
+/* CIPHER WORDMARK */
+.kgh__word-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  line-height: 1;
+}
+
+.kgh__word {
+  position: relative;
+  font-family: 'Inter Tight', system-ui, sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 0.9;
+  white-space: nowrap;
+  color: var(--hd-ink) !important;
+  transition: font-size .35s;
+}
+
+.kgh.is-scrolled .kgh__word { font-size: 25px; }
+
+
+.kgh__word .b { position: relative; z-index: 1; display: block; color: var(--hd-ink) !important; }
+
+.kgh__word .l, .kgh__word .r {
+  position: absolute; inset: 0;
+  pointer-events: none;
+  font: inherit; letter-spacing: inherit; line-height: inherit;
+  display: block;
+  mix-blend-mode: multiply;
+}
+
+.kgh__word .l { color: var(--hd-mint) !important; animation: kgh-cipher-l 3.4s steps(1) infinite; }
+
+.kgh__word .r { color: var(--hd-warm) !important; opacity: 0.7; animation: kgh-cipher-r 3.4s steps(1) infinite; }
+
+
+/* На hover — постоянный glitch */
+.kgh__logo:hover .kgh__word .l { animation: kgh-cipher-l-fast 0.6s steps(1) infinite; }
+
+.kgh__logo:hover .kgh__word .r { animation: kgh-cipher-r-fast 0.6s steps(1) infinite; }
+
+
+.kgh__sub {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  color: var(--hd-ink-2);
+  text-transform: uppercase;
+}
+
+.kgh__dot {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--hd-mint);
+  box-shadow: 0 0 0 0 rgba(43, 200, 154, 0.5);
+  animation: kgh-pulse 2.2s ease-out infinite;
+}
+
+  .kgh__sub { display: none; }
+
+
+  /* Лого крупное, мощное */
+  .kgh__word { font-size: 28px !important; letter-spacing: -0.045em !important; font-weight: 800 !important; }
+
+  .kgh.is-scrolled .kgh__word { font-size: 24px !important; }
+
+  .kgh__sub { display: none !important; }
+
+  .kgh__word { font-size: 26px !important; }
+
+  .kgh.is-scrolled .kgh__word { font-size: 22px !important; }
+
+  .kgh__logo::before,
+  .kgh__word .l, .kgh__word .r,
+  .kgh__dot, .kgh__phone-meta::before { animation: none !important; }
+@keyframes kgh-scan {
+  0% { top: -1px; opacity: 0; }
+  10%, 90% { opacity: 1; }
+  100% { top: calc(100% + 1px); opacity: 0; }
+}
+@keyframes kgh-cipher-l {
+  0%, 88%, 100% { transform: translate(0, 0); }
+  90% { transform: translate(-3px, 1px); }
+  93% { transform: translate(2px, -1px); }
+  96% { transform: translate(-2px, 0); }
+}
+@keyframes kgh-cipher-r {
+  0%, 88%, 100% { transform: translate(0, 0); }
+  90% { transform: translate(3px, -1px); }
+  93% { transform: translate(-2px, 1px); }
+  96% { transform: translate(2px, 0); }
+}
+@keyframes kgh-cipher-l-fast {
+  0%, 100% { transform: translate(0, 0); }
+  20% { transform: translate(-2.5px, 1px); }
+  60% { transform: translate(1.5px, -0.5px); }
+  80% { transform: translate(-1px, 0); }
+}
+@keyframes kgh-cipher-r-fast {
+  0%, 100% { transform: translate(0, 0); }
+  20% { transform: translate(2.5px, -1px); }
+  60% { transform: translate(-1.5px, 0.5px); }
+  80% { transform: translate(1px, 0); }
+}
+@keyframes kgh-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(43, 200, 154, 0.6), 0 0 6px var(--hd-mint); transform: scale(1); }
+  70% { box-shadow: 0 0 0 8px rgba(43, 200, 154, 0), 0 0 6px var(--hd-mint); transform: scale(1); }
+  100% { box-shadow: 0 0 0 0 rgba(43, 200, 154, 0), 0 0 6px var(--hd-mint); transform: scale(1); }
+}</style>
+<style id="kgh-cipher-logo">
+.kg-h{ --hd-ink:#0a1612; --hd-ink-2:rgba(10,22,18,0.62); --hd-mint:#2bc89a; --hd-warm:#ff5a5a; }
+[data-theme="dark"] .kg-h, .kg-h[data-theme="dark"]{ --hd-ink:#e8f0ec; --hd-ink-2:rgba(232,240,236,0.60); --hd-mint:#5af0c0; --hd-warm:#ff7a7a; }
+.kg-h .kgh__word-wrap{ display:flex; flex-direction:column; gap:3px; }
+.kg-h .kgh__word{ position:relative; font-family:'Inter',-apple-system,sans-serif; font-weight:800; font-size:24px; letter-spacing:-.02em; line-height:1; color:var(--hd-ink); }
+.kg-h .kgh__word .b{ position:relative; z-index:1; }
+.kg-h .kgh__word .l{ position:absolute; inset:0; color:var(--hd-mint); animation:kgh-cipher-l 3.4s steps(1) infinite !important; pointer-events:none; }
+.kg-h .kgh__word .r{ position:absolute; inset:0; color:var(--hd-warm); opacity:.7; animation:kgh-cipher-r 3.4s steps(1) infinite !important; pointer-events:none; }
+.kg-h .kgh__sub{ display:flex !important; align-items:center; gap:6px; font-family:'JetBrains Mono',ui-monospace,monospace; font-size:9.5px; font-weight:500; letter-spacing:.12em; color:var(--hd-ink-2); text-transform:uppercase; }
+.kg-h .kgh__dot{ width:5px; height:5px; border-radius:50%; background:var(--hd-mint); animation:kgh-pulse 2.2s ease-out infinite !important; }
+</style>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&subset=latin,cyrillic&display=swap" rel="stylesheet">
 </head>
 <body>
 <style>
@@ -1165,8 +1334,9 @@ html[data-theme="dark"] #kgHeader .kg-h__sun{ display: block; }
     <!-- BRAND -->
     <a href="/" class="kg-h__brand" aria-label="Казна — главная">
       <span class="kg-h__logo">
-        <span class="kg-h__logo-name">Казна</span>
-        <span class="kg-h__logo-tag">Казначейское сопровождение</span>
+        <span class="kgh__word-wrap"> <span class="kgh__word"> <span class="b">Казна</span> <span class="l" aria-hidden="true">Казна</span> <span class="r" aria-hidden="true">Казна</span> </span> <span class="kgh__sub"> <span class="kgh__dot" aria-hidden="true"></span>
+        Казначейское сопровождение
+      </span> </span> 
       </span>
       <span class="kg-h__live" aria-label="онлайн">
         <span class="kg-h__live-dot" aria-hidden="true"></span>
