@@ -62,8 +62,7 @@ _tmr.push({id: "3423058", type: "pageView", start: (new Date()).getTime()});
 <!-- /Top.Mail.Ru counter -->
 
 <!-- Schema.org -->
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -73,7 +72,7 @@ _tmr.push({id: "3423058", type: "pageView", start: (new Date()).getTime()});
       "description": "Как войти в «Электронный бюджет» по сертификату: пошаговый порядок, настройка Континент TLS и прокси, и что делать, если система не пускает или не видит сертификат.",
       "image": "https://api.kazna-gov.ru/og/vhod-v-elektronnyy-byudzhet-po-sertifikatu.jpg",
       "datePublished": "2026-06-24T13:00:00+03:00",
-      "dateModified": "2026-06-24T13:00:00+03:00",
+      "dateModified": "2026-07-01T10:00:00+03:00",
       "author": {
         "@id": "https://kazna-gov.ru/expert/stella#person"
       },
@@ -221,6 +220,14 @@ _tmr.push({id: "3423058", type: "pageView", start: (new Date()).getTime()});
             "@type": "Answer",
             "text": "Проверьте пять точек по порядку: срок сертификата и видимость носителя в КриптоПро, установку корневых сертификатов, запуск и настройку Континент TLS, прокси 127.0.0.1:8080 в браузере, активность регистрации и назначенные роли. Если всё в порядке, причина может быть на стороне системы (плановые работы) или в статусе организации в Сводном реестре — тогда обращайтесь в техподдержку «Электронного бюджета» или в свой территориальный орган казначейства."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Что значит вход в «Электронный бюджет» по личному сертификату?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Это обычный вход по сертификату: на странице входа выбирается личный (персональный) сертификат квалифицированной электронной подписи сотрудника, установленный на его рабочем месте. Отдельного «личного входа» нет — так называют выбор своего сертификата из списка. Нужны действующий сертификат КЭП, настроенный КриптоПро CSP с плагином и полномочия в системе."
+          }
         }
       ]
     },
@@ -298,8 +305,7 @@ _tmr.push({id: "3423058", type: "pageView", start: (new Date()).getTime()});
       ]
     }
   ]
-}
-</script>
+}</script>
 </head>
 <body>
 <style>
@@ -5465,7 +5471,7 @@ body .kg-content{
       <div class="kg-hero__label">
         <span>Выпуск 066</span>
         <span class="kg-hero__label-line"></span>
-        <span>обновлено 24.06.2026</span>
+        <span>обновлено 01.07.2026</span>
       </div>
 
       <div class="kg-hero__meta">
@@ -5520,7 +5526,7 @@ body .kg-content{
           <summary class="kg-changelog__summary">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
             История обновлений
-            <em>обновлено 24.06.2026</em>
+            <em>обновлено 01.07.2026</em>
           </summary>
           <ul class="kg-changelog__list">
             <li class="kg-changelog__item">
@@ -5840,6 +5846,16 @@ body .kg-content{
     <section class="kg-faq" id="kgFaq" aria-labelledby="kgFaqTitle">
       <h2 class="kg-faq__title kg-reveal" id="kgFaqTitle">Частые вопросы</h2>
       <div class="kg-faq__list">
+        <details class="kg-faq__item kg-reveal" id="faq-ws0626-1">
+          <summary class="kg-faq__q">
+            Что значит вход в «Электронный бюджет» по личному сертификату?
+            <span class="kg-faq__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="kg-faq__a">
+            <p>Это обычный вход по сертификату: на странице входа выбирается личный (персональный) сертификат квалифицированной электронной подписи сотрудника, установленный на его рабочем месте. Отдельного «личного входа» нет — так называют выбор своего сертификата из списка. Нужны действующий сертификат КЭП, настроенный КриптоПро CSP с плагином и полномочия в системе.</p>
+          </div>
+        </details>
+
         <details class="kg-faq__item kg-reveal" id="faq-1">
           <summary class="kg-faq__q">Как войти в «Электронный бюджет» по сертификату?<span class="kg-faq__icon" aria-hidden="true"></span></summary>
           <div class="kg-faq__a"><p>Вставьте носитель с сертификатом, запустите Континент TLS-клиент, откройте браузер с поддержкой ГОСТ и перейдите на lk.budget.gov.ru (для сертификатов ГОСТ-2012 — на lk2012.budget.gov.ru/udu-webcenter). Выберите хранилище и нужный сертификат, введите пароль закрытой части ключа — после этого откроется личный кабинет. Логина и пароля в системе нет: авторизация идёт только по сертификату.</p></div>
