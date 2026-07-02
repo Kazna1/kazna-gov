@@ -645,11 +645,15 @@ html[data-theme="dark"] #kgHeader .kg-h__sun{ display: block; }
 }</style>
 <style id="kgh-unify-theme">
 .kg-h{ --hd-ink:#0a1612; --hd-ink-2:rgba(10,22,18,0.62); --hd-mint:#2bc89a; --hd-warm:#ff5a5a; }
-.kg-h .kgh__word{ font-family:'Inter',-apple-system,sans-serif; font-weight:800; font-size:26px; letter-spacing:-.02em; line-height:1; }
-.kg-h .kgh__word-wrap{ display:flex; flex-direction:column; gap:2px; }
+.kg-h .kgh__word-wrap{ display:flex; flex-direction:column; gap:3px; }
+.kg-h .kgh__word{ position:relative; font-family:'Inter',-apple-system,sans-serif; font-weight:800; font-size:24px; letter-spacing:-.02em; line-height:1; color:var(--hd-ink); }
+.kg-h .kgh__sub{ display:flex !important; align-items:center; gap:6px; font-family:'JetBrains Mono',ui-monospace,monospace; font-size:9.5px; font-weight:500; letter-spacing:.12em; color:var(--hd-ink-2); text-transform:uppercase; }
+.kg-h .kgh__dot{ width:5px; height:5px; border-radius:50%; background:var(--hd-mint); animation:kgh-pulse 2.2s ease-out infinite !important; }
+.kg-h .kgh__word .l{ animation:kgh-cipher-l 3.4s steps(1) infinite !important; }
+.kg-h .kgh__word .r{ animation:kgh-cipher-r 3.4s steps(1) infinite !important; }
 body{ padding-top:84px; }
 </style>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&subset=latin,cyrillic&display=swap" rel="stylesheet"></head>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&subset=latin,cyrillic&display=swap" rel="stylesheet"></head>
 <body>
 <header id="kgHeader" class="kg-h" role="banner"> <div class="kg-h__inner"> <!-- BRAND --> <a href="/" class="kg-h__brand" aria-label="Казна — главная"> <span class="kg-h__logo"><span class="kgh__word-wrap"> <span class="kgh__word"> <span class="b">Казна</span> <span class="l" aria-hidden="true">Казна</span> <span class="r" aria-hidden="true">Казна</span> </span> <span class="kgh__sub"> <span class="kgh__dot" aria-hidden="true"></span>
         Казначейское сопровождение
