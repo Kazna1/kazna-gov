@@ -684,6 +684,7 @@ body{ padding-top:84px; }
   <div class="chips">
     <a class="chip" href="#calc-cost">Калькулятор стоимости</a>
     <a class="chip" href="#calc-avans">Калькулятор аванса</a>
+      <a class="chip" href="#calc-goz">Попадает ли под КС</a>
     <a class="chip" href="#calc-sroki">Сроки в УФК</a>
     <a class="chip" href="#lookup">Справочник кодов</a>
   </div>
@@ -750,7 +751,53 @@ body{ padding-top:84px; }
     </div>
   </section>
 
-  <!-- 3. Сроки УФК -->
+  <!-- 2b. Попадает ли под КС -->
+      <section class="tool" id="calc-goz">
+        <span class="tool__tag">Калькулятор</span>
+        <h2>Попадает ли контракт под казначейское сопровождение</h2>
+        <p class="tool__sub">Проверьте режим по контракту 2026: применяется ли казначейское сопровождение, какой аванс допустим и нужно ли обеспечение.</p>
+        <div class="grid2">
+          <div class="field">
+            <label for="gz-sum">Сумма контракта, ₽</label>
+            <input id="gz-sum" type="text" inputmode="numeric" placeholder="например, 10 000 000">
+          </div>
+          <div class="field">
+            <label for="gz-src">Источник / закон</label>
+            <select id="gz-src">
+              <option value="44">44-ФЗ — госзакупка</option>
+              <option value="275">275-ФЗ — гособоронзаказ (ГОЗ)</option>
+              <option value="sub">Бюджетная субсидия / инвестиции</option>
+              <option value="np">Национальный проект</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="gz-av">Планируемый аванс, %</label>
+          <input id="gz-av" type="number" min="0" max="100" placeholder="например, 50">
+        </div>
+        <style id="gzc-style">
+          #calc-goz .gzc-res{margin-top:14px;border:1px solid #e6ecf0;border-radius:12px;padding:14px 16px;background:#f8fafb}
+          #calc-goz .gzc-row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:7px 0;border-bottom:1px solid #eef2f4}
+          #calc-goz .gzc-row:last-of-type{border-bottom:0}
+          #calc-goz .gzc-l{color:#5b6b78;font-size:14px;flex:0 0 auto}
+          #calc-goz .gzc-v{font-weight:700;text-align:right}
+          #calc-goz .gzc-reason{font-size:13px;line-height:1.45;color:#5b6b78;margin:2px 0 8px}
+          #calc-goz .gzc-yes{color:#0f8a5f}
+          #calc-goz .gzc-no{color:#c0392b}
+          #calc-goz .gzc-note{font-size:12.5px;line-height:1.45;color:#7f93a3;margin-top:10px}
+          @media(max-width:560px){#calc-goz .gzc-row{flex-direction:column;gap:2px}#calc-goz .gzc-v{text-align:left}}
+        </style>
+        <div class="gzc-res">
+          <div class="gzc-row"><span class="gzc-l">Казначейское сопровождение</span><span class="gzc-v" id="gz-ks">—</span></div>
+          <p class="gzc-reason" id="gz-reason">Введите сумму контракта.</p>
+          <div class="gzc-row"><span class="gzc-l">Допустимый аванс (ориентир)</span><span class="gzc-v" id="gz-max">—</span></div>
+          <div class="gzc-row"><span class="gzc-l">Сумма аванса</span><span class="gzc-v" id="gz-sum-out">—</span></div>
+          <div class="gzc-row"><span class="gzc-l">Обеспечение</span><span class="gzc-v" id="gz-sec">—</span></div>
+          <div class="gzc-note" id="gz-note">Пороги 2026 ориентировочные: формулировка контракта первична, конкретные значения ежегодно уточняются законом о федеральном бюджете и постановлениями Правительства. Расчёт справочный и не заменяет анализ условий контракта.</div>
+        </div>
+      </section>
+
+      <!-- 3. Сроки УФК -->
   <section class="tool" id="calc-sroki">
     <span class="tool__tag">Калькулятор</span>
     <h2>Сроки рассмотрения документов в УФК</h2>
@@ -860,7 +907,44 @@ body{ padding-top:84px; }
   [avSum,avPct,avCustom].forEach(function(e){e.addEventListener('input',calcAvans);e.addEventListener('change',calcAvans);});
   calcAvans();
 
-  // ---- 3. Сроки УФК ----
+  // ---- 2b. Попадание под КС ----
+      var gzSum=document.getElementById('gz-sum'),gzSrc=document.getElementById('gz-src'),
+          gzAv=document.getElementById('gz-av'),gzKs=document.getElementById('gz-ks'),
+          gzReason=document.getElementById('gz-reason'),gzMax=document.getElementById('gz-max'),
+          gzSumOut=document.getElementById('gz-sum-out'),gzSec=document.getElementById('gz-sec');
+      if(gzSum){
+        moneyMask(gzSum);
+        function calcGoz(){
+          var sum=+digits(gzSum.value), src=gzSrc.value, av=Math.min(100,Math.max(0,+gzAv.value||0));
+          var ks=false, reason='';
+          if(src==='sub'){ks=true;reason='Источник — бюджетная субсидия или инвестиции: казначейское сопровождение применяется при любой сумме.';}
+          else if(src==='np'){ks=true;reason='Средства национального проекта: казначейское сопровождение применяется при любой сумме.';}
+          else if(src==='275'){ks=true;reason='Гособоронзаказ по 275-ФЗ: применяется казначейское (или банковское) сопровождение по особому порядку — независимо от суммы.';}
+          else {
+            if(sum>=100000000){ks=true;reason='Контракт от 100 млн ₽ по 44-ФЗ — казначейское сопровождение независимо от размера аванса.';}
+            else if(sum>=3000000 && av>50){ks=true;reason='Контракт от 3 млн ₽ с авансом свыше 50% по 44-ФЗ — попадает под казначейское сопровождение.';}
+            else if(sum>0){ks=false;reason='Пороги 44-ФЗ не достигнуты (нужно от 3 млн ₽ и аванс свыше 50%, либо контракт от 100 млн ₽). Прямая отсылка к КС в контракте первична.';}
+          }
+          if(!sum){gzKs.textContent='—';gzKs.className='gzc-v';gzReason.textContent='Введите сумму контракта.';gzMax.textContent='—';gzSumOut.textContent='—';gzSec.textContent='—';return;}
+          gzKs.textContent=ks?'Да, применяется':'Нет, не применяется';
+          gzKs.className='gzc-v '+(ks?'gzc-yes':'gzc-no');
+          gzReason.textContent=reason;
+          var maxTxt;
+          if(src==='275') maxTxt='до 80% (ГОЗ; для части продукции — до 100% по перечню)';
+          else if(src==='sub') maxTxt='по условиям соглашения (для капвложений — высокая доля)';
+          else maxTxt='до 30% стандарт; до 50% (в 2026 и без КС); 80–100% для отдельных категорий по перечню';
+          gzMax.textContent=maxTxt;
+          gzSumOut.textContent=(sum&&av)?fmt(sum*av/100)+' ₽ ('+av+'%)':'—';
+          var sec;
+          if(ks) sec='Обеспечение аванса не требуется (деньги на лицевом счёте казначейства); обеспечение исполнения — до 10% цены.';
+          else if(av>30) sec='Обеспечение исполнения ≥ суммы аванса (аванс свыше 30% без КС).';
+          else sec='По общему правилу не требуется (аванс до 30%).';
+          gzSec.textContent=sec;
+        }
+        [gzSum,gzSrc,gzAv].forEach(function(e){e.addEventListener('input',calcGoz);e.addEventListener('change',calcGoz);});
+        calcGoz();
+      }
+      // ---- 3. Сроки УФК ----
   var srDoc=document.getElementById('sr-doc'),srDays=document.getElementById('sr-days'),srDate=document.getElementById('sr-date');
   var SR={'5':{d:10,t:'до 10 рабочих дней'},'1':{d:5,t:'1–5 рабочих дней'},'1b':{d:1,t:'около 1 рабочего дня'},'3':{d:5,t:'до 5 рабочих дней'}};
   function addBusiness(days){var dt=new Date();var added=0;while(added<days){dt.setDate(dt.getDate()+1);var w=dt.getDay();if(w!==0&&w!==6)added++;}return dt;}
