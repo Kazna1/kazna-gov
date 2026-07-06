@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://kazna-gov.ru/novosti/promezhutochnaya-otchetnost-goz-s-01-07-2026/</loc>
+    <news:news>
+      <news:publication><news:name>Казна</news:name><news:language>ru</news:language></news:publication>
+      <news:publication_date>2026-07-06</news:publication_date>
+      <news:title>Исполнители гособоронзаказа сдают промежуточную бухотчётность: первый срок — 30 июля 2026</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://kazna-gov.ru/novosti/malye-zakupki-reestr-kontraktov-s-01-07-2026/</loc>
+    <news:news>
+      <news:publication><news:name>Казна</news:name><news:language>ru</news:language></news:publication>
+      <news:publication_date>2026-07-06</news:publication_date>
+      <news:title>С 1 июля 2026 малые закупки попадают в реестр контрактов, а контракты с едпоставщиком стали цифровыми</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://kazna-gov.ru/novosti/novye-shtrafy-kaznacheyskoe-soprovozhdenie-15-49-15-37-1/</loc>
+    <news:news>
+      <news:publication><news:name>Казна</news:name><news:language>ru</news:language></news:publication>
+      <news:publication_date>2026-07-03</news:publication_date>
+      <news:title>Новые штрафы за нарушения казначейского сопровождения: статьи 15.49 и 15.37.1 КоАП</news:title>
+    </news:news>
+  </url>
+</urlset>

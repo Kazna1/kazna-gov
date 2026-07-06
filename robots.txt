@@ -2,6 +2,7 @@ User-agent: *
 Allow: /
 Disallow: /api/
 Sitemap: https://kazna-gov.ru/sitemap.xml
+Sitemap: https://kazna-gov.ru/news-sitemap.xml
 
 # Яндекс: основной индексирующий робот (поиск). Нейро/Алиса берёт уже проиндексированные страницы.
 User-agent: Yandex
