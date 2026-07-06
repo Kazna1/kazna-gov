@@ -19,6 +19,9 @@ Header always set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>
 RewriteEngine On
 
+# --- /expert/stella удалён → 301 на блог ---
+RewriteRule ^expert/stella/?$ /blog [R=301,L]
+
 # --- Force HTTPS (кроме ACME-challenge LetsEncrypt) ---
 RewriteCond %{HTTPS} off
 RewriteCond %{REQUEST_URI} !^/\.well-known/
