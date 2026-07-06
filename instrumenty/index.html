@@ -720,6 +720,29 @@ body{ padding-top:84px; }
     </div>
   </section>
 
+  <!-- 1b. Порог КС -->
+  <section class="tool" id="calc-porog">
+    <span class="tool__tag">Калькулятор</span>
+    <h2>Нужно ли вам казначейское сопровождение</h2>
+    <p class="tool__sub">Ответьте на три вопроса — покажем, обязательно ли КС для вашего контракта и на каком основании.</p>
+    <div style="display:grid;gap:14px;max-width:560px">
+      <label style="display:grid;gap:6px;font-size:15px">Закон или тип средств
+        <select id="kgpLaw" style="padding:11px 12px;border:1px solid #c5d8d1;border-radius:9px;font-size:16px;background:#fff">
+          <option value="44">44-ФЗ (госзакупки)</option><option value="275">275-ФЗ (ГОЗ)</option><option value="223">223-ФЗ</option><option value="sub">Субсидия / грант / целевые средства</option>
+        </select></label>
+      <label id="kgpSumWrap" style="display:grid;gap:6px;font-size:15px">Сумма контракта, ₽
+        <input id="kgpSum" type="number" min="0" inputmode="numeric" placeholder="например, 5000000" style="padding:11px 12px;border:1px solid #c5d8d1;border-radius:9px;font-size:16px"></label>
+      <label id="kgpAvWrap" style="display:grid;gap:6px;font-size:15px">Размер аванса, %
+        <input id="kgpAv" type="number" min="0" max="100" inputmode="numeric" placeholder="например, 60" style="padding:11px 12px;border:1px solid #c5d8d1;border-radius:9px;font-size:16px"></label>
+      <button id="kgpBtn" type="button" style="padding:13px 18px;border:0;border-radius:9px;background:#15846B;color:#fff;font-size:16px;font-weight:600;cursor:pointer">Проверить</button>
+    </div>
+    <div id="kgpOut" role="status" aria-live="polite"></div>
+    <p class="tool__sub" style="margin-top:12px">Оценка ориентировочная. Не уверены — <a href="https://kazna-gov.ru/uslugi">пришлите контракт на разбор</a>.</p>
+    <script>
+    (function(){var law=document.getElementById('kgpLaw'),sum=document.getElementById('kgpSum'),av=document.getElementById('kgpAv'),out=document.getElementById('kgpOut'),btn=document.getElementById('kgpBtn'),avW=document.getElementById('kgpAvWrap'),sumW=document.getElementById('kgpSumWrap');if(!law||!btn)return;function toggle(){var l=law.value;avW.style.display=(l==='44')?'':'none';sumW.style.display=(l==='44'||l==='223')?'':'none';}law.addEventListener('change',function(){toggle();out.innerHTML='';});toggle();function calc(){var l=law.value,s=parseFloat(sum.value)||0,a=parseFloat(av.value)||0,r;if(l==='275')r={ob:1,t:'Казначейское сопровождение обязательно. Контракты по 275-ФЗ (ГОЗ) подпадают под КС по перечню.'};else if(l==='sub')r={ob:1,t:'Казначейское сопровождение обязательно. Целевые субсидии, гранты и взносы в УК проходят через казначейский счёт.'};else if(l==='223')r={ob:2,t:'По 223-ФЗ КС применяется по отдельным основаниям — универсального порога нет. Проверьте положение о закупке и условие контракта.'};else{if(s>=100000000)r={ob:1,t:'Обязательно: контракт от 100 млн ₽ — независимо от аванса (ст. 5 44-ФЗ, закон о бюджете на 2026).'};else if(s>=3000000&&a>50)r={ob:1,t:'Обязательно: контракт от 3 млн ₽ с авансом более 50%.'};else if(s>0)r={ob:0,t:'По общему правилу может не требоваться: не выполнено условие «от 3 млн ₽ при авансе >50%» и сумма меньше 100 млн ₽. Проверьте условие о КС в контракте и основания 426-ФЗ.'};else r={ob:2,t:'Укажите сумму и аванс для проверки по 44-ФЗ.'};}var c=r.ob===1?'#15846B':(r.ob===0?'#b26a00':'#555'),b=r.ob===1?'✓ Обязательно':(r.ob===0?'Скорее всего не требуется':'Зависит от условий');out.innerHTML='<div style="margin-top:16px;padding:14px 16px;border-radius:10px;background:#fff;border-left:4px solid '+c+'"><b style="color:'+c+';font-size:16px">'+b+'</b><p style="margin:6px 0 0;font-size:15px;line-height:1.5">'+r.t+'</p></div>';}btn.addEventListener('click',calc);})();
+    </script>
+  </section>
+
   <!-- 2. Аванс -->
   <section class="tool" id="calc-avans">
     <span class="tool__tag">Калькулятор</span>
