@@ -25,3 +25,7 @@
 .dd-v { font-style: normal; font-size: 11px; font-weight: 600; color: #6b7178; }
 .dd-formats { font-size: 12px; color: #15846B; font-weight: 600; }
 .dd-after { font-size: 14px; color: #3a4046; }
+
+.dd-official { margin: 14px 0; padding: 14px 16px; background: #FBEFEA; border-left: 4px solid #D9603A; border-radius: 10px; }
+.dd-official__t { margin: 0 0 6px; font-weight: 800; color: #A8462B; }
+.dd-official p { margin: 0; font-size: 14.5px; }
