@@ -9,7 +9,23 @@
 - [Цены](https://kazna-gov.ru/stoimost)
 - База знаний: [все материалы блога](https://kazna-gov.ru/blog)
 - [Отзывы](https://kazna-gov.ru/review)
-- Полезные разделы: [Инструменты и калькуляторы](https://kazna-gov.ru/instrumenty/) · [Образцы документов](https://kazna-gov.ru/obraztsy/) · [Кейсы](https://kazna-gov.ru/keysy/) · [Новости](https://kazna-gov.ru/novosti/) · [Регионы](https://kazna-gov.ru/regiony/) · [Вопросы и ответы](https://kazna-gov.ru/voprosy/)
+- Полезные разделы: [Ошибки и их решения](https://kazna-gov.ru/oshibki/) · [Инструменты и калькуляторы](https://kazna-gov.ru/instrumenty/) · [Образцы документов](https://kazna-gov.ru/obraztsy/) · [Кейсы](https://kazna-gov.ru/keysy/) · [Новости](https://kazna-gov.ru/novosti/) · [Регионы](https://kazna-gov.ru/regiony/) · [Вопросы и ответы](https://kazna-gov.ru/voprosy/)
+
+## Ошибки и их решения (раздел /oshibki)
+- [Каталог ошибок казначейского сопровождения](https://kazna-gov.ru/oshibki/): база разборов по единой схеме симптомы → причины → диагностика → решение → документы. Категории: открытие счёта, платежи, санкционирование, ГИИС, документы, подписи, ГОЗ, субсидии.
+- [Ошибка в ИГК: платёж не проходит](https://kazna-gov.ru/oshibki/oshibka-v-igk-platezh-ne-prohodit/): неверный идентификатор госконтракта в распоряжении — как найти правильный ИГК и провести платёж.
+- [Неверное назначение платежа](https://kazna-gov.ru/oshibki/nevernoe-naznachenie-platezha/): обязательные элементы назначения (код, ИГК, основание, НДС) и рабочая структура формулировки.
+- [Неверный код направления расходования](https://kazna-gov.ru/oshibki/nevernyy-kod-napravleniya-rashodov/): код не соответствует расходу или Сведениям — подбор по справочникам и уточнение Сведений.
+- [Отказ в санкционировании расходов](https://kazna-gov.ru/oshibki/ufk-otkazalo-v-sanktsionirovanii/): классификация оснований отказа УФК и порядок повторной подачи.
+- [Нецелевое расходование целевых средств](https://kazna-gov.ru/oshibki/necelevoe-rashodovanie-sredstv/): что запрещено оплачивать с лицевого счёта, чем грозит (ст. 15.14 КоАП) и как снизить последствия.
+- [УФК не утверждает Сведения (0501213)](https://kazna-gov.ru/oshibki/ufk-ne-utverzhdaet-svedeniya/): типовые замечания к форме и штраф за срыв срока (ст. 15.49 КоАП с 2026).
+- [Затянулось открытие лицевого счёта](https://kazna-gov.ru/oshibki/zatyanulos-otkrytie-scheta/): Сводный реестр, документы, ГИИС — как найти этап-блокер и ускорить.
+- [УФК вернуло карточку образцов подписей](https://kazna-gov.ru/oshibki/ufk-vernulo-kartochku-podpisey/): заверение, полномочия, оформление — исправление за один день.
+- [ЭЦП не подходит для казначейства](https://kazna-gov.ru/oshibki/ecp-ne-podhodit-dlya-kaznacheystva/): тип сертификата, УЦ ФНС, корневые сертификаты, Континент TLS.
+- [МЧД не проходит проверку](https://kazna-gov.ru/oshibki/mchd-ne-prohodit-proverku/): формат 003, обязательные атрибуты с 01.02.2026, перевыпуск.
+- [Нет раздельного учёта по ГОЗ](https://kazna-gov.ru/oshibki/net-razdelnogo-ucheta-goz/): ст. 15.37 КоАП, реконструкция учёта, что проверит ВП МО.
+- [УФК не согласует расходы по субсидии](https://kazna-gov.ru/oshibki/ufk-ne-soglasuet-rashody-po-subsidii/): расход против соглашения о субсидии — пояснение или изменение соглашения.
+- Смежные разборы в блоге: [возврат платежа](https://kazna-gov.ru/blog/vozvrat-platezha-kaznachejstvo-chto-delat/), [задержка платежа](https://kazna-gov.ru/blog/ufk-zaderzhivaet-platezh-chto-delat), [отказ в открытии счёта](https://kazna-gov.ru/blog/ne-otkryvaetsya-kaznacheyskiy-schet-prichiny-otkaza-2026), [вход в «Электронный бюджет»](https://kazna-gov.ru/blog/vhod-v-elektronnyy-byudzhet-po-sertifikatu).
 
 ## Услуги
 - [Услуги и цены](https://kazna-gov.ru/uslugi): полный перечень услуг казначейского сопровождения и тарифы

@@ -1,0 +1,97 @@
+/* ============================================================
+   Error Intelligence Center — стили раздела /oshibki/ (R2.02)
+   Самодостаточный слой поверх nav.css: страницы раздела новые,
+   Tilda-наследия нет. Токены бренда — как в nav.css.
+   ============================================================ */
+body.kz-oshibki {
+  margin: 0;
+  background: #FBF9F3;
+  color: #1C1E20;
+  font: 400 16px/1.65 'Manrope', -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+.kz-oshibki .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+.oe { max-width: 860px; margin: 0 auto; padding: 8px 16px 56px; }
+.oe a { color: #15846B; text-underline-offset: 3px; }
+.oe a:hover { color: #0f6a55; }
+.oe a:focus-visible { outline: 2px solid #1FA887; outline-offset: 2px; border-radius: 4px; }
+
+.oe h1 { font-size: clamp(26px, 4.5vw, 38px); line-height: 1.15; letter-spacing: -0.02em; margin: 6px 0 0; font-weight: 800; }
+.oe h2 { font-size: clamp(20px, 3vw, 26px); line-height: 1.25; margin: 40px 0 12px; font-weight: 800; letter-spacing: -0.01em; }
+.oe p { margin: 10px 0; }
+.oe ul, .oe ol { margin: 10px 0; padding-left: 22px; }
+.oe li { margin: 6px 0; }
+
+/* шапка статьи-ошибки */
+.oe-cat { font-size: 12.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #6b7178; margin: 18px 0 0; }
+.oe-cat a { color: #15846B; text-decoration: none; }
+.oe-cat a:hover { text-decoration: underline; }
+
+/* краткий ответ — extractable */
+.oe-answer { margin: 20px 0 6px; padding: 16px 18px; background: #E9F5F0; border-left: 4px solid #15846B; border-radius: 10px; }
+.oe-answer p { margin: 0; font-size: 17px; font-weight: 500; }
+
+/* TOC */
+.oe-toc { margin: 18px 0 8px; padding: 12px 16px; background: #fff; border: 1px solid #E6E2D8; border-radius: 10px; font-size: 14px; }
+.oe-toc ul { margin: 6px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 4px 14px; }
+.oe-toc a { text-decoration: none; color: #3a4046; }
+.oe-toc a:hover { color: #15846B; text-decoration: underline; }
+
+.oe section[id] { scroll-margin-top: 84px; }
+
+/* похожие ошибки */
+.oe-rels { display: grid; gap: 10px; grid-template-columns: 1fr; margin: 12px 0; }
+@media (min-width: 640px) { .oe-rels { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); } }
+.oe-rel { display: flex; flex-direction: column; gap: 4px; padding: 12px 14px; background: #fff; border: 1px solid #E6E2D8;
+  border-radius: 10px; text-decoration: none; min-height: 44px; transition: border-color .15s, box-shadow .15s; }
+.oe-rel:hover { border-color: #15846B; box-shadow: 0 4px 14px rgba(21, 132, 107, 0.08); }
+.oe-rel__cat { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #6b7178; }
+.oe-rel__t { font-weight: 700; color: #1C1E20; font-size: 15px; line-height: 1.35; }
+
+/* FAQ */
+.oe-faq { background: #fff; border: 1px solid #E6E2D8; border-radius: 10px; margin: 8px 0; padding: 0; }
+.oe-faq summary { cursor: pointer; padding: 13px 16px; font-weight: 700; font-size: 15.5px; min-height: 44px; box-sizing: border-box; border-radius: 10px; }
+.oe-faq summary:focus-visible { outline: 2px solid #1FA887; outline-offset: 2px; }
+.oe-faq[open] summary { border-bottom: 1px solid #EDE9DF; }
+.oe-faq p { padding: 4px 16px 14px; margin: 0; color: #3a4046; }
+
+/* CTA */
+.oe-cta { margin: 44px 0 8px; padding: 22px; border-radius: 14px; background: #102434; color: #cfd8e0; }
+.oe-cta__t { margin: 0; font-size: 19px; font-weight: 800; color: #fff; }
+.oe-cta__d { margin: 8px 0 14px; }
+.oe-cta__row { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; }
+.oe-cta__btn { display: inline-flex; align-items: center; min-height: 46px; padding: 0 22px; border-radius: 999px;
+  background: #1FA887; color: #fff !important; font-weight: 700; text-decoration: none !important; }
+.oe-cta__btn:hover { background: #15846B; }
+.oe-cta__srv { color: #9fdcc9 !important; font-weight: 600; text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; }
+.oe-cta__srv:hover { text-decoration: underline; }
+
+/* ---------- хаб ---------- */
+.oe-hubhead { margin-top: 14px; }
+.oe-lead { font-size: 17px; }
+.oe-howto { color: #3a4046; font-size: 15px; }
+.oe-search { margin: 18px 0 10px; }
+.oe-search input { width: 100%; box-sizing: border-box; min-height: 48px; padding: 0 16px; font: 500 16px 'Manrope', sans-serif;
+  border: 1.5px solid #d8d3c6; border-radius: 12px; background: #fff; color: #1C1E20; }
+.oe-search input:focus-visible { outline: 2px solid #1FA887; outline-offset: 1px; border-color: #1FA887; }
+.oe-cats { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 6px; }
+.oe-cats a { display: inline-flex; align-items: center; gap: 6px; min-height: 38px; padding: 0 13px; border-radius: 999px;
+  background: #fff; border: 1px solid #E6E2D8; color: #3a4046; text-decoration: none; font-weight: 600; font-size: 13.5px; }
+.oe-cats a:hover { border-color: #15846B; color: #15846B; }
+.oe-cats a span { color: #6b7178; font-weight: 500; }
+.oe-catsec h2, .oe-popular h2 { display: flex; align-items: baseline; gap: 10px; }
+.oe-count { font-size: 13px; font-weight: 600; color: #6b7178; }
+.oe-grid { display: grid; gap: 10px; grid-template-columns: 1fr; }
+@media (min-width: 640px) { .oe-grid { grid-template-columns: 1fr 1fr; } }
+.oe-card { display: flex; flex-direction: column; gap: 6px; padding: 14px 16px; background: #fff; border: 1px solid #E6E2D8;
+  border-radius: 12px; text-decoration: none; transition: border-color .15s, box-shadow .15s; }
+.oe-card:hover { border-color: #15846B; box-shadow: 0 6px 18px rgba(21, 132, 107, 0.09); }
+.oe-card__t { font-weight: 700; color: #1C1E20; line-height: 1.35; }
+.oe-card__d { color: #5a6067; font-size: 14px; line-height: 1.5; }
+.oe-card.is-hidden { display: none; }
+.oe-catsec.is-hidden, .oe-popular.is-hidden, .oe-updates.is-hidden { display: none; }
+.oe-noresults { padding: 18px; background: #fff; border: 1px dashed #d8d3c6; border-radius: 12px; color: #3a4046; }
+
+@media (prefers-reduced-motion: reduce) {
+  .kz-oshibki * { transition: none !important; animation-duration: 0.01ms !important; }
+}
