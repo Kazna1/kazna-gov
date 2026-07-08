@@ -61,7 +61,8 @@ _tmr.push({id: "3423058", type: "pageView", start: (new Date()).getTime()});
 <link rel="alternate" hreflang="x-default" href="https://kazna-gov.ru/blog/ne-otkryvaetsya-kaznacheyskiy-schet-prichiny-otkaza-2026">
 
 <!-- Schema.org -->
-<script type="application/ld+json">{
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -71,7 +72,7 @@ _tmr.push({id: "3423058", type: "pageView", start: (new Date()).getTime()});
       "description": "Почему УФК возвращает документы на открытие казначейского счёта: 8 типовых причин отказа в 2026, как исправить и как открыть счёт за 2 дня вместо 2 недель.",
       "image": "https://api.kazna-gov.ru/og/ne-otkryvaetsya-ks-schet.jpg",
       "datePublished": "2026-06-10T10:00:00+03:00",
-      "dateModified": "2026-07-02T10:00:00+03:00",
+      "dateModified": "2026-06-19T10:00:00+03:00",
       "author": {
         "@id": "https://kazna-gov.ru/expert/stella#person"
       },
@@ -247,18 +248,7 @@ _tmr.push({id: "3423058", type: "pageView", start: (new Date()).getTime()});
         {
           "@type": "Question",
           "name": "Может ли казначейство отказать из-за аффилированности или статуса организации?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Да. Помимо ошибок в документах, основанием для отказа в открытии лицевого счёта может быть аффилированность с лицами под особыми критериями (организации из государств, не выполняющих рекомендации ФАТФ, из офшорных зон, головной исполнитель по ГОЗ), а также статус организации — сведения о ликвидации, реорганизации, исключении из ЕГРЮЛ или банкротстве, и несоответствие данных в документах сведениям ЕГРЮЛ/ЕГРИП."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Как пройти проверку казначейства при платеже?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Казначейство санкционирует платёж, если: назначение платежа соответствует контракту; указаны верный код направления расходования и ИГК; сумма в пределах доступного лимита; приложены подтверждающие документы. Расхождение по любому пункту — отказ. Сверяйте реквизиты и документы до подачи распоряжения."
-          }
+          "acceptedAnswer": { "@type": "Answer", "text": "Да. Помимо ошибок в документах, основанием для отказа в открытии лицевого счёта может быть аффилированность с лицами под особыми критериями (организации из государств, не выполняющих рекомендации ФАТФ, из офшорных зон, головной исполнитель по ГОЗ), а также статус организации — сведения о ликвидации, реорганизации, исключении из ЕГРЮЛ или банкротстве, и несоответствие данных в документах сведениям ЕГРЮЛ/ЕГРИП." }
         }
       ]
     },
@@ -348,178 +338,11 @@ _tmr.push({id: "3423058", type: "pageView", start: (new Date()).getTime()});
       ]
     }
   ]
-}</script>
-<style id="kgh-cipher-kf">
-
-/* ====== CIPHER LOGO (как в hero «без возвратов») ====== */
-.kgh__logo {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  text-decoration: none !important;
-  color: var(--hd-ink) !important;
-  flex-shrink: 0;
-  cursor: pointer;
-  padding: 6px 14px 6px 6px;
-  border-radius: 10px;
-  transition: background .25s;
-  isolation: isolate;
 }
-
-.kgh__logo:hover { background: rgba(10, 22, 18, 0.04); }
-
-
-/* Сканнер */
-.kgh__logo::before {
-  content: '';
-  position: absolute;
-  left: 6px; right: 6px;
-  top: 8px;
-  height: 1px;
-  background: linear-gradient(90deg, transparent 0%, rgba(43, 200, 154, 0.55) 50%, transparent 100%);
-  mix-blend-mode: multiply;
-  animation: kgh-scan 4.6s linear infinite;
-  pointer-events: none;
-  z-index: 3;
-}
-
-.kgh__logo:hover .kgh__mark { transform: rotate(-7deg) scale(1.1); box-shadow: 0 10px 32px -10px rgba(43, 200, 154, 0.55); }
-
-.kgh__logo:hover .kgh__mark::before { opacity: 1; }
-
-.kgh__logo:hover .kgh__mark svg { transform: rotate(7deg) scale(1.05); }
-
-
-/* CIPHER WORDMARK */
-.kgh__word-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  line-height: 1;
-}
-
-.kgh__word {
-  position: relative;
-  font-family: 'Inter Tight', system-ui, sans-serif;
-  font-size: 30px;
-  font-weight: 800;
-  letter-spacing: -0.045em;
-  line-height: 0.9;
-  white-space: nowrap;
-  color: var(--hd-ink) !important;
-  transition: font-size .35s;
-}
-
-.kgh.is-scrolled .kgh__word { font-size: 25px; }
-
-
-.kgh__word .b { position: relative; z-index: 1; display: block; color: var(--hd-ink) !important; }
-
-.kgh__word .l, .kgh__word .r {
-  position: absolute; inset: 0;
-  pointer-events: none;
-  font: inherit; letter-spacing: inherit; line-height: inherit;
-  display: block;
-  mix-blend-mode: multiply;
-}
-
-.kgh__word .l { color: var(--hd-mint) !important; animation: kgh-cipher-l 3.4s steps(1) infinite; }
-
-.kgh__word .r { color: var(--hd-warm) !important; opacity: 0.7; animation: kgh-cipher-r 3.4s steps(1) infinite; }
-
-
-/* На hover — постоянный glitch */
-.kgh__logo:hover .kgh__word .l { animation: kgh-cipher-l-fast 0.6s steps(1) infinite; }
-
-.kgh__logo:hover .kgh__word .r { animation: kgh-cipher-r-fast 0.6s steps(1) infinite; }
-
-
-.kgh__sub {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
-  font-size: 9.5px;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  color: var(--hd-ink-2);
-  text-transform: uppercase;
-}
-
-.kgh__dot {
-  width: 5px; height: 5px;
-  border-radius: 50%;
-  background: var(--hd-mint);
-  box-shadow: 0 0 0 0 rgba(43, 200, 154, 0.5);
-  animation: kgh-pulse 2.2s ease-out infinite;
-}
-
-  .kgh__sub { display: none; }
-
-
-  /* Лого крупное, мощное */
-  .kgh__word { font-size: 28px !important; letter-spacing: -0.045em !important; font-weight: 800 !important; }
-
-  .kgh.is-scrolled .kgh__word { font-size: 24px !important; }
-
-  .kgh__sub { display: none !important; }
-
-  .kgh__word { font-size: 26px !important; }
-
-  .kgh.is-scrolled .kgh__word { font-size: 22px !important; }
-
-  .kgh__logo::before,
-  .kgh__word .l, .kgh__word .r,
-  .kgh__dot, .kgh__phone-meta::before { animation: none !important; }
-@keyframes kgh-scan {
-  0% { top: -1px; opacity: 0; }
-  10%, 90% { opacity: 1; }
-  100% { top: calc(100% + 1px); opacity: 0; }
-}
-@keyframes kgh-cipher-l {
-  0%, 88%, 100% { transform: translate(0, 0); }
-  90% { transform: translate(-3px, 1px); }
-  93% { transform: translate(2px, -1px); }
-  96% { transform: translate(-2px, 0); }
-}
-@keyframes kgh-cipher-r {
-  0%, 88%, 100% { transform: translate(0, 0); }
-  90% { transform: translate(3px, -1px); }
-  93% { transform: translate(-2px, 1px); }
-  96% { transform: translate(2px, 0); }
-}
-@keyframes kgh-cipher-l-fast {
-  0%, 100% { transform: translate(0, 0); }
-  20% { transform: translate(-2.5px, 1px); }
-  60% { transform: translate(1.5px, -0.5px); }
-  80% { transform: translate(-1px, 0); }
-}
-@keyframes kgh-cipher-r-fast {
-  0%, 100% { transform: translate(0, 0); }
-  20% { transform: translate(2.5px, -1px); }
-  60% { transform: translate(-1.5px, 0.5px); }
-  80% { transform: translate(1px, 0); }
-}
-@keyframes kgh-pulse {
-  0% { box-shadow: 0 0 0 0 rgba(43, 200, 154, 0.6), 0 0 6px var(--hd-mint); transform: scale(1); }
-  70% { box-shadow: 0 0 0 8px rgba(43, 200, 154, 0), 0 0 6px var(--hd-mint); transform: scale(1); }
-  100% { box-shadow: 0 0 0 0 rgba(43, 200, 154, 0), 0 0 6px var(--hd-mint); transform: scale(1); }
-}</style>
-<style id="kgh-cipher-logo">
-.kg-h{ --hd-ink:#0a1612; --hd-ink-2:rgba(10,22,18,0.62); --hd-mint:#2bc89a; --hd-warm:#ff5a5a; }
-[data-theme="dark"] .kg-h, .kg-h[data-theme="dark"]{ --hd-ink:#e8f0ec; --hd-ink-2:rgba(232,240,236,0.60); --hd-mint:#5af0c0; --hd-warm:#ff7a7a; }
-.kg-h .kgh__word-wrap{ display:flex; flex-direction:column; gap:3px; }
-.kg-h .kgh__word{ position:relative; font-family:'Inter',-apple-system,sans-serif; font-weight:800; font-size:24px; letter-spacing:-.02em; line-height:1; color:var(--hd-ink); }
-.kg-h .kgh__word .b{ position:relative; z-index:1; }
-.kg-h .kgh__word .l{ position:absolute; inset:0; color:var(--hd-mint); animation:kgh-cipher-l 3.4s steps(1) infinite !important; pointer-events:none; }
-.kg-h .kgh__word .r{ position:absolute; inset:0; color:var(--hd-warm); opacity:.7; animation:kgh-cipher-r 3.4s steps(1) infinite !important; pointer-events:none; }
-.kg-h .kgh__sub{ display:flex !important; align-items:center; gap:6px; font-family:'JetBrains Mono',ui-monospace,monospace; font-size:9.5px; font-weight:500; letter-spacing:.12em; color:var(--hd-ink-2); text-transform:uppercase; }
-.kg-h .kgh__dot{ width:5px; height:5px; border-radius:50%; background:var(--hd-mint); animation:kgh-pulse 2.2s ease-out infinite !important; }
-</style>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&subset=latin,cyrillic&display=swap" rel="stylesheet">
+</script>
 </head>
 <body>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 /* ── RESET ── */
 .kghdr4,.kghdr4 *,.kghdr4 *::before,.kghdr4 *::after,
@@ -1376,9 +1199,8 @@ html[data-theme="dark"] #kgHeader .kg-h__sun{ display: block; }
     <!-- BRAND -->
     <a href="/" class="kg-h__brand" aria-label="Казна — главная">
       <span class="kg-h__logo">
-        <span class="kgh__word-wrap"> <span class="kgh__word"> <span class="b">Казна</span> <span class="l" aria-hidden="true">Казна</span> <span class="r" aria-hidden="true">Казна</span> </span> <span class="kgh__sub"> <span class="kgh__dot" aria-hidden="true"></span>
-        Казначейское сопровождение
-      </span> </span> 
+        <span class="kg-h__logo-name">Казна</span>
+        <span class="kg-h__logo-tag">Казначейское сопровождение</span>
       </span>
       <span class="kg-h__live" aria-label="онлайн">
         <span class="kg-h__live-dot" aria-hidden="true"></span>
@@ -5380,7 +5202,7 @@ body .t-rec .kg-article{ width: 100%; max-width: 100%; }
 
 /* 26.1 — Tablet portrait: статья → 1 колонка + горизонт. отступы */
 @media (max-width: 768px){
-  html, body, body .t-rec{ overflow-x: hidden; max-width: 100%; }
+  body, body .t-rec{ overflow-x: hidden; }
   body .kg-content{ padding-left: 16px !important; padding-right: 16px !important; }
   body .kg-hero, body .kg-final, body .kg-faq,
   body .kg-discuss, body .kg-related{
@@ -5668,7 +5490,7 @@ body .kg-content{
       <div class="kg-hero__label">
         <span>Выпуск 040</span>
         <span class="kg-hero__label-line"></span>
-        <span>обновлено 02.07.2026</span>
+        <span>обновлено 19.06.2026</span>
       </div>
 
       <div class="kg-hero__meta">
@@ -5723,7 +5545,7 @@ body .kg-content{
           <summary class="kg-changelog__summary">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
             История обновлений
-            <em>обновлено 02.07.2026</em>
+            <em>обновлено 19.06.2026</em>
           </summary>
           <ul class="kg-changelog__list">
             <li class="kg-changelog__item">
@@ -5842,7 +5664,7 @@ body .kg-content{
 
           <p class="kg-reveal"><b>Как проявляется.</b> УФК не принимает карточку: образцы подписей не заверены, использована произвольная форма из интернета, не совпадают наименование или реквизиты, отсутствует оттиск печати.</p>
 
-          <p class="kg-reveal"><b>Почему случается.</b> Подрядчик берёт «какую-нибудь» карточку из сети вместо утверждённой формы 0531753 (Приказ Казначейства № 21н) или заверяет её в банке, тогда как для УФК нужно нотариальное заверение либо заверение у работника казначейства. Подпись в карточке расходится с фактической.</p>
+          <p class="kg-reveal"><b>Почему случается.</b> Подрядчик берёт «какую-нибудь» карточку из сети вместо утверждённой формы 0531753 (Приказ Казначейства № 44н) или заверяет её в банке, тогда как для УФК нужно нотариальное заверение либо заверение у работника казначейства. Подпись в карточке расходится с фактической.</p>
 
           <p class="kg-reveal"><b>Как исправить.</b> Переоформить карточку по форме 0531753, заверить нотариально или в УФК, проследить, чтобы подписи совпадали с реальными. Разбор корректного формата — в материале про <a href="/blog/kartochka-obraztsov-podpisey-ufk">карточку образцов подписей — корректный формат</a>.</p>
 
@@ -6120,16 +5942,6 @@ body .kg-content{
     <section class="kg-faq" id="kgFaq" aria-labelledby="kgFaqTitle">
       <h2 class="kg-faq__title kg-reveal" id="kgFaqTitle">Частые вопросы</h2>
       <div class="kg-faq__list">
-        <details class="kg-faq__item kg-reveal" id="faq-neuro-1">
-          <summary class="kg-faq__q">
-            Как пройти проверку казначейства при платеже?
-            <span class="kg-faq__icon" aria-hidden="true"></span>
-          </summary>
-          <div class="kg-faq__a">
-            <p>Казначейство санкционирует платёж, если: назначение платежа соответствует контракту; указаны верный код направления расходования и ИГК; сумма в пределах доступного лимита; приложены подтверждающие документы. Расхождение по любому пункту — отказ. Сверяйте реквизиты и документы до подачи распоряжения.</p>
-          </div>
-        </details>
-
 
         <details class="kg-faq__item kg-reveal" id="faq-affil-status">
           <summary class="kg-faq__q">
@@ -6364,7 +6176,7 @@ body .kg-content{
     </section>
 
     <!-- ============== RELATED ARTICLES (6 карточек) ============== -->
-    <aside style="max-width:720px;margin:32px auto;padding:18px 22px;border:1px solid #e2b04a;border-left:4px solid #d98a00;border-radius:12px;background:#fff8ec;font-size:16px;line-height:1.55;color:#0E0F0E"><b>Предыдущий подрядчик подвёл?</b> Если из-за ошибок копятся возвраты, зависшие платежи и незакрытая отчётность — <a href="https://kazna-gov.ru/services/vosstanovlenie">восстановим казначейское сопровождение</a>: аудит ошибок, разблокировка платежей, снятие претензий УФК. Тариф 99&nbsp;000&nbsp;₽/мес, после выхода в штатный режим — 69&nbsp;000&nbsp;₽/мес.</aside> <aside style="max-width:760px;margin:28px auto;padding:18px 22px;border:1px solid #d8e6e0;border-left:4px solid #15846B;border-radius:12px;background:#f7fbf9;font-size:16px;line-height:1.55;color:#0E0F0E"><b>Заметка практика.</b> Самая частая причина отказа — несовпадение данных в заявлении с ЕГРЮЛ и Сводным реестром (адрес, наименование, ОКТМО): УФК сверяет автоматически. Перед подачей сверьте выписку ЕГРЮЛ с реквизитами в заявлении до символа — это снимает большинство возвратов. <span style="display:block;margin-top:8px;color:#4a5a55;font-size:14px">— Стелла Иванова, практика казначейского сопровождения, 15+ лет</span></aside> <section class="kg-related" aria-labelledby="kgRelatedTitle">
+    <section class="kg-related" aria-labelledby="kgRelatedTitle">
       <div class="kg-related__head">
         <h2 class="kg-related__title kg-reveal" id="kgRelatedTitle">Что почитать ещё</h2>
         <a href="/blog" class="kg-related__more">Весь блог →</a>
@@ -6941,7 +6753,7 @@ body .kg-content{
   </main>
 
   <!-- footer виден только при печати -->
-  <div class="kg-print-footer" aria-hidden="true" data-nosnippet>
+  <div class="kg-print-footer" aria-hidden="true">
     Источник: kazna-gov.ru/blog/ne-otkryvaetsya-kaznacheyskiy-schet-prichiny-otkaza-2026 · © Казна 2026 · Распечатано для рабочего использования
   </div>
 
@@ -6998,7 +6810,7 @@ body .kg-content{
   </div>
 
   <!-- ============== STICKY MOBILE CTA BAR ============== -->
-  <div class="kg-mobile-cta" id="kgMobileCta" aria-hidden="true" data-nosnippet>
+  <div class="kg-mobile-cta" id="kgMobileCta" aria-hidden="true">
     <div class="kg-mobile-cta__text">
       <b>УФК вернул документы?</b>
       <span>Откроем КС-счёт за 2–5 дней под ключ</span>
@@ -8936,6 +8748,5 @@ window.kgRequestPush = function(){
   else{publishConsent('pending');setTimeout(show,800);}
 })();
 </script>
-<style id="kg-dock-guard">@media (max-width:880px){.kg-dock{max-width:calc(100vw - 16px);box-sizing:border-box;flex-wrap:wrap;justify-content:center;}}</style>
 </body>
 </html>
