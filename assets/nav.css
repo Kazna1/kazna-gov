@@ -340,3 +340,47 @@
   max-width: 72vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: inline-block; }
 #kzCrumbs a:focus-visible { outline: 2px solid #1FA887; outline-offset: 2px; border-radius: 4px; }
 /* тёмные страницы: крошки наследуют читаемость через отдельный модификатор при необходимости (Phase 2) */
+
+/* ============================================================
+   Анимированный логотип «Казна» (cipher-словомарк с главной, R1.07)
+   Глитч-слои .l/.r, сканер-линия, пульсирующая точка.
+   prefers-reduced-motion отключает всё глобальным правилом выше.
+   ============================================================ */
+.kzlogo { position: relative; isolation: isolate; padding: 4px 12px 4px 8px; border-radius: 10px;
+  transition: background .25s; }
+.kzlogo:hover { background: rgba(10, 22, 18, 0.04); }
+.kzlogo::before { content: ''; position: absolute; left: 6px; right: 6px; top: 8px; height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(43, 200, 154, 0.55) 50%, transparent 100%);
+  mix-blend-mode: multiply; animation: kz-scan 4.6s linear infinite; pointer-events: none; z-index: 3; }
+@keyframes kz-scan { 0% { top: -1px; opacity: 0; } 10%, 90% { opacity: 1; } 100% { top: calc(100% + 1px); opacity: 0; } }
+.kzlogo__word-wrap { display: flex; flex-direction: column; gap: 3px; line-height: 1; }
+.kzlogo__word { position: relative; font-family: var(--kz-font); font-size: 24px; font-weight: 800;
+  letter-spacing: -0.045em; line-height: 0.9; white-space: nowrap; color: var(--kz-ink); }
+@media (min-width: 1024px) { .kzlogo__word { font-size: 27px; } }
+.kzlogo__word .b { position: relative; z-index: 1; display: block; color: var(--kz-ink); }
+.kzlogo__word .l, .kzlogo__word .r { position: absolute; inset: 0; pointer-events: none;
+  font: inherit; letter-spacing: inherit; line-height: inherit; display: block; mix-blend-mode: multiply; }
+.kzlogo__word .l { color: #2bc89a; animation: kz-cipher-l 3.4s steps(1) infinite; }
+.kzlogo__word .r { color: #ff5a5a; opacity: 0.7; animation: kz-cipher-r 3.4s steps(1) infinite; }
+.kzlogo:hover .kzlogo__word .l { animation: kz-cipher-l-fast 0.6s steps(1) infinite; }
+.kzlogo:hover .kzlogo__word .r { animation: kz-cipher-r-fast 0.6s steps(1) infinite; }
+@keyframes kz-cipher-l { 0%, 88%, 100% { transform: translate(0, 0); } 90% { transform: translate(-3px, 1px); }
+  93% { transform: translate(2px, -1px); } 96% { transform: translate(-2px, 0); } }
+@keyframes kz-cipher-r { 0%, 88%, 100% { transform: translate(0, 0); } 90% { transform: translate(3px, -1px); }
+  93% { transform: translate(-2px, 1px); } 96% { transform: translate(2px, 0); } }
+@keyframes kz-cipher-l-fast { 0%, 100% { transform: translate(0, 0); } 20% { transform: translate(-2.5px, 1px); }
+  60% { transform: translate(1.5px, -0.5px); } 80% { transform: translate(-1px, 0); } }
+@keyframes kz-cipher-r-fast { 0%, 100% { transform: translate(0, 0); } 20% { transform: translate(2.5px, -1px); }
+  60% { transform: translate(-1.5px, 0.5px); } 80% { transform: translate(1px, 0); } }
+.kzlogo__sub { display: flex; align-items: center; gap: 6px; font-family: ui-monospace, 'JetBrains Mono', SFMono-Regular, Menlo, monospace;
+  font-size: 9px; font-weight: 500; letter-spacing: 0.12em; color: var(--kz-ink-3); text-transform: uppercase; }
+.kzlogo__dot { width: 5px; height: 5px; border-radius: 50%; background: #2bc89a;
+  box-shadow: 0 0 0 0 rgba(43, 200, 154, 0.5); animation: kz-pulse 2.2s ease-out infinite; flex-shrink: 0; }
+@keyframes kz-pulse { 0% { box-shadow: 0 0 0 0 rgba(43, 200, 154, 0.6), 0 0 6px #2bc89a; }
+  70% { box-shadow: 0 0 0 8px rgba(43, 200, 154, 0), 0 0 6px #2bc89a; }
+  100% { box-shadow: 0 0 0 0 rgba(43, 200, 154, 0), 0 0 6px #2bc89a; } }
+/* защита от глобальных стилей страниц */
+#kzHeader .kzlogo__word, #kzHeader .kzlogo__word .b { color: var(--kz-ink); font-weight: 800; }
+#kzHeader .kzlogo__word .l { color: #2bc89a; }
+#kzHeader .kzlogo__word .r { color: #ff5a5a; }
+#kzHeader .kzlogo__sub { color: var(--kz-ink-3); font-size: 9px; }
