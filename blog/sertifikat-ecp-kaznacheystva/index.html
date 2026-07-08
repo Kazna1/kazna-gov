@@ -26,7 +26,7 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Сертификат ЭЦП казначейства для Электронного бюджета 2026 — Казна">
 <meta property="article:published_time" content="2026-06-24T11:00:00+03:00">
-<meta property="article:modified_time" content="2026-06-24T11:00:00+03:00">
+<meta property="article:modified_time" content="2026-07-08T11:00:00+03:00">
 <meta property="article:author" content="https://kazna-gov.ru/expert/stella">
 <meta property="article:section" content="ГИИС «Электронный бюджет»">
 <meta property="article:tag" content="сертификат казначейства">
@@ -73,7 +73,7 @@ _tmr.push({id: "3423058", type: "pageView", start: (new Date()).getTime()});
       "description": "Какой сертификат нужен для входа в «Электронный бюджет», где получить участнику казначейского сопровождения и как установить корневые сертификаты казначейства.",
       "image": "https://api.kazna-gov.ru/og/sertifikat-ecp-kaznacheystva.jpg",
       "datePublished": "2026-06-24T11:00:00+03:00",
-      "dateModified": "2026-06-24T11:00:00+03:00",
+      "dateModified": "2026-07-08T11:00:00+03:00",
       "author": {
         "@id": "https://kazna-gov.ru/expert/stella#person"
       },
@@ -166,6 +166,14 @@ _tmr.push({id: "3423058", type: "pageView", start: (new Date()).getTime()});
     {
       "@type": "FAQPage",
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Что такое сертификат ЭЦП казначейства?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сертификат ЭЦП казначейства — это квалифицированный сертификат электронной подписи, которым участник казначейского сопровождения входит в ГИИС «Электронный бюджет» и подписывает Сведения об операциях и платежи. Отдельного «казначейского» сертификата нет: коммерческая организация получает квалифицированную подпись руководителя бесплатно в удостоверяющем центре ФНС, участники бюджетного процесса — в удостоверяющем центре Федерального казначейства. Срок действия — около года."
+          }
+        },
         {
           "@type": "Question",
           "name": "Какой сертификат нужен для входа в «Электронный бюджет»?",
@@ -311,177 +319,9 @@ _tmr.push({id: "3423058", type: "pageView", start: (new Date()).getTime()});
   ]
 }
 </script>
-<style id="kgh-cipher-kf">
-
-/* ====== CIPHER LOGO (как в hero «без возвратов») ====== */
-.kgh__logo {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  text-decoration: none !important;
-  color: var(--hd-ink) !important;
-  flex-shrink: 0;
-  cursor: pointer;
-  padding: 6px 14px 6px 6px;
-  border-radius: 10px;
-  transition: background .25s;
-  isolation: isolate;
-}
-
-.kgh__logo:hover { background: rgba(10, 22, 18, 0.04); }
-
-
-/* Сканнер */
-.kgh__logo::before {
-  content: '';
-  position: absolute;
-  left: 6px; right: 6px;
-  top: 8px;
-  height: 1px;
-  background: linear-gradient(90deg, transparent 0%, rgba(43, 200, 154, 0.55) 50%, transparent 100%);
-  mix-blend-mode: multiply;
-  animation: kgh-scan 4.6s linear infinite;
-  pointer-events: none;
-  z-index: 3;
-}
-
-.kgh__logo:hover .kgh__mark { transform: rotate(-7deg) scale(1.1); box-shadow: 0 10px 32px -10px rgba(43, 200, 154, 0.55); }
-
-.kgh__logo:hover .kgh__mark::before { opacity: 1; }
-
-.kgh__logo:hover .kgh__mark svg { transform: rotate(7deg) scale(1.05); }
-
-
-/* CIPHER WORDMARK */
-.kgh__word-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  line-height: 1;
-}
-
-.kgh__word {
-  position: relative;
-  font-family: 'Inter Tight', system-ui, sans-serif;
-  font-size: 30px;
-  font-weight: 800;
-  letter-spacing: -0.045em;
-  line-height: 0.9;
-  white-space: nowrap;
-  color: var(--hd-ink) !important;
-  transition: font-size .35s;
-}
-
-.kgh.is-scrolled .kgh__word { font-size: 25px; }
-
-
-.kgh__word .b { position: relative; z-index: 1; display: block; color: var(--hd-ink) !important; }
-
-.kgh__word .l, .kgh__word .r {
-  position: absolute; inset: 0;
-  pointer-events: none;
-  font: inherit; letter-spacing: inherit; line-height: inherit;
-  display: block;
-  mix-blend-mode: multiply;
-}
-
-.kgh__word .l { color: var(--hd-mint) !important; animation: kgh-cipher-l 3.4s steps(1) infinite; }
-
-.kgh__word .r { color: var(--hd-warm) !important; opacity: 0.7; animation: kgh-cipher-r 3.4s steps(1) infinite; }
-
-
-/* На hover — постоянный glitch */
-.kgh__logo:hover .kgh__word .l { animation: kgh-cipher-l-fast 0.6s steps(1) infinite; }
-
-.kgh__logo:hover .kgh__word .r { animation: kgh-cipher-r-fast 0.6s steps(1) infinite; }
-
-
-.kgh__sub {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
-  font-size: 9.5px;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  color: var(--hd-ink-2);
-  text-transform: uppercase;
-}
-
-.kgh__dot {
-  width: 5px; height: 5px;
-  border-radius: 50%;
-  background: var(--hd-mint);
-  box-shadow: 0 0 0 0 rgba(43, 200, 154, 0.5);
-  animation: kgh-pulse 2.2s ease-out infinite;
-}
-
-  .kgh__sub { display: none; }
-
-
-  /* Лого крупное, мощное */
-  .kgh__word { font-size: 28px !important; letter-spacing: -0.045em !important; font-weight: 800 !important; }
-
-  .kgh.is-scrolled .kgh__word { font-size: 24px !important; }
-
-  .kgh__sub { display: none !important; }
-
-  .kgh__word { font-size: 26px !important; }
-
-  .kgh.is-scrolled .kgh__word { font-size: 22px !important; }
-
-  .kgh__logo::before,
-  .kgh__word .l, .kgh__word .r,
-  .kgh__dot, .kgh__phone-meta::before { animation: none !important; }
-@keyframes kgh-scan {
-  0% { top: -1px; opacity: 0; }
-  10%, 90% { opacity: 1; }
-  100% { top: calc(100% + 1px); opacity: 0; }
-}
-@keyframes kgh-cipher-l {
-  0%, 88%, 100% { transform: translate(0, 0); }
-  90% { transform: translate(-3px, 1px); }
-  93% { transform: translate(2px, -1px); }
-  96% { transform: translate(-2px, 0); }
-}
-@keyframes kgh-cipher-r {
-  0%, 88%, 100% { transform: translate(0, 0); }
-  90% { transform: translate(3px, -1px); }
-  93% { transform: translate(-2px, 1px); }
-  96% { transform: translate(2px, 0); }
-}
-@keyframes kgh-cipher-l-fast {
-  0%, 100% { transform: translate(0, 0); }
-  20% { transform: translate(-2.5px, 1px); }
-  60% { transform: translate(1.5px, -0.5px); }
-  80% { transform: translate(-1px, 0); }
-}
-@keyframes kgh-cipher-r-fast {
-  0%, 100% { transform: translate(0, 0); }
-  20% { transform: translate(2.5px, -1px); }
-  60% { transform: translate(-1.5px, 0.5px); }
-  80% { transform: translate(1px, 0); }
-}
-@keyframes kgh-pulse {
-  0% { box-shadow: 0 0 0 0 rgba(43, 200, 154, 0.6), 0 0 6px var(--hd-mint); transform: scale(1); }
-  70% { box-shadow: 0 0 0 8px rgba(43, 200, 154, 0), 0 0 6px var(--hd-mint); transform: scale(1); }
-  100% { box-shadow: 0 0 0 0 rgba(43, 200, 154, 0), 0 0 6px var(--hd-mint); transform: scale(1); }
-}</style>
-<style id="kgh-cipher-logo">
-.kg-h{ --hd-ink:#0a1612; --hd-ink-2:rgba(10,22,18,0.62); --hd-mint:#2bc89a; --hd-warm:#ff5a5a; }
-[data-theme="dark"] .kg-h, .kg-h[data-theme="dark"]{ --hd-ink:#e8f0ec; --hd-ink-2:rgba(232,240,236,0.60); --hd-mint:#5af0c0; --hd-warm:#ff7a7a; }
-.kg-h .kgh__word-wrap{ display:flex; flex-direction:column; gap:3px; }
-.kg-h .kgh__word{ position:relative; font-family:'Inter',-apple-system,sans-serif; font-weight:800; font-size:24px; letter-spacing:-.02em; line-height:1; color:var(--hd-ink); }
-.kg-h .kgh__word .b{ position:relative; z-index:1; }
-.kg-h .kgh__word .l{ position:absolute; inset:0; color:var(--hd-mint); animation:kgh-cipher-l 3.4s steps(1) infinite !important; pointer-events:none; }
-.kg-h .kgh__word .r{ position:absolute; inset:0; color:var(--hd-warm); opacity:.7; animation:kgh-cipher-r 3.4s steps(1) infinite !important; pointer-events:none; }
-.kg-h .kgh__sub{ display:flex !important; align-items:center; gap:6px; font-family:'JetBrains Mono',ui-monospace,monospace; font-size:9.5px; font-weight:500; letter-spacing:.12em; color:var(--hd-ink-2); text-transform:uppercase; }
-.kg-h .kgh__dot{ width:5px; height:5px; border-radius:50%; background:var(--hd-mint); animation:kgh-pulse 2.2s ease-out infinite !important; }
-</style>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&subset=latin,cyrillic&display=swap" rel="stylesheet">
 </head>
 <body>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 /* ── RESET ── */
 .kghdr4,.kghdr4 *,.kghdr4 *::before,.kghdr4 *::after,
@@ -847,7 +687,7 @@ html body #kghdr4 .kghdr4__phone:visited {
 </style>
 <header class="kghdr4" id="kghdr4"> <div class="kghdr4__inner"> <!-- LOGO --> <a href="/" class="kghdr4__logo" data-goal="header_logo_click"> <svg class="kghdr4__logo-mark" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"> <rect width="38" height="38" rx="11" fill="#0C1B33"/> <path d="M12 9.5L12 28.5" stroke="white" stroke-width="3" stroke-linecap="round"/> <path d="M12 19L25.5 10.5" stroke="white" stroke-width="3" stroke-linecap="round"/> <path d="M12 19L25.5 27.5" stroke="white" stroke-width="3" stroke-linecap="round"/> <circle cx="28.5" cy="28.5" r="5.5" fill="#1A4FD6"/> <path d="M26.2 28.5L27.9 30.2L30.8 27.1" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/> </svg> <div class="kghdr4__logo-text"> <span class="kghdr4__logo-name">Казна</span> <span class="kghdr4__logo-tag">Казначейское сопровождение</span> </div> </a> <!-- DESKTOP NAV --> <ul class="kghdr4__nav"> <!-- Услуги --> <li class="kghdr4__nav-item"> <button class="kghdr4__nav-link" type="button" aria-haspopup="true" aria-expanded="false">
           Услуги
-          <svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4"/></svg> </button> <div class="kghdr4__dropdown" role="menu"> <a href="/services/open" class="kghdr4__dd-row" data-goal="nav_click" data-service="open" role="menuitem"> <div class="kghdr4__dd-icon" style="background:rgba(26,79,214,0.08);color:#1A4FD6"> <svg viewBox="0 0 20 20"><rect x="3" y="5" width="14" height="11" rx="2.5"/><path d="M7 5V4a3 3 0 016 0v1"/><circle cx="10" cy="10.5" r="1.5" fill="currentColor" stroke="none"/></svg> </div> <div class="kghdr4__dd-body"> <span class="kghdr4__dd-name">Открытие счёта</span> <span class="kghdr4__dd-desc">Под ключ за 1 рабочий день</span> </div> <span class="kghdr4__dd-price">29 000 ₽</span> </a> <a href="/services/conduct" class="kghdr4__dd-row" data-goal="nav_click" data-service="conduct" role="menuitem"> <div class="kghdr4__dd-icon" style="background:rgba(5,150,106,0.08);color:#05966A"> <svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"/><path d="M7 10l2 2 4-4"/></svg> </div> <div class="kghdr4__dd-body"> <span class="kghdr4__dd-name">Казначейское сопровождение</span> <span class="kghdr4__dd-desc">Ведение счёта, платежи, контроль</span> </div> <span class="kghdr4__dd-price">69 000 ₽/мес</span> </a> <div class="kghdr4__dd-divider"></div> <a href="/services/reserve" class="kghdr4__dd-row" data-goal="nav_click" data-service="reserve" role="menuitem"> <div class="kghdr4__dd-icon" style="background:rgba(180,83,9,0.08);color:#B45309"> <svg viewBox="0 0 20 20"><rect x="4" y="8" width="12" height="9" rx="2.5"/><path d="M7 8V6a3 3 0 016 0v2"/></svg> </div> <div class="kghdr4__dd-body"> <span class="kghdr4__dd-name">Резервный счёт</span> <span class="kghdr4__dd-desc">Резервирование под госконтракт</span> </div> <span class="kghdr4__dd-price">от 19 000 ₽</span> </a> <a href="/services/postpayment" class="kghdr4__dd-row" data-goal="nav_click" data-service="postpayment" role="menuitem"> <div class="kghdr4__dd-icon" style="background:rgba(109,40,217,0.08);color:#7C3AED"> <svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"/><path d="M10 6v4l2.5 2.5"/></svg> </div> <div class="kghdr4__dd-body"> <span class="kghdr4__dd-name">Постоплата по контракту</span> <span class="kghdr4__dd-desc">Платите после получения результата</span> </div> <span class="kghdr4__dd-price">49 000 ₽</span> </a> </div> </li> <li><a href="/#about"     class="kghdr4__nav-link" data-goal="nav_click" data-nav="about">О компании</a></li> <li><a href="/#guarantee" class="kghdr4__nav-link" data-goal="nav_click" data-nav="guarantee">Гарантия</a></li> <li><a href="/blog"       class="kghdr4__nav-link" data-goal="nav_click" data-nav="blog">Блог</a></li> <li><a href="/instrumenty/" class="kghdr4__nav-link" data-goal="nav_click" data-nav="instrumenty">Инструменты</a></li> <li><a href="/obraztsy/" class="kghdr4__nav-link" data-goal="nav_click" data-nav="obraztsy">Образцы</a></li> <li><a href="/#contacts"  class="kghdr4__nav-link" data-goal="nav_click" data-nav="contacts">Контакты</a></li> </ul> <!-- RIGHT --> <div class="kghdr4__right"> <a href="https://t.me/kaznagovru" class="kghdr4__social kghdr4__social--tg"
+          <svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4"/></svg> </button> <div class="kghdr4__dropdown" role="menu"> <a href="/services/open" class="kghdr4__dd-row" data-goal="nav_click" data-service="open" role="menuitem"> <div class="kghdr4__dd-icon" style="background:rgba(26,79,214,0.08);color:#1A4FD6"> <svg viewBox="0 0 20 20"><rect x="3" y="5" width="14" height="11" rx="2.5"/><path d="M7 5V4a3 3 0 016 0v1"/><circle cx="10" cy="10.5" r="1.5" fill="currentColor" stroke="none"/></svg> </div> <div class="kghdr4__dd-body"> <span class="kghdr4__dd-name">Открытие счёта</span> <span class="kghdr4__dd-desc">Под ключ за 1 рабочий день</span> </div> <span class="kghdr4__dd-price">29 000 ₽</span> </a> <a href="/services/conduct" class="kghdr4__dd-row" data-goal="nav_click" data-service="conduct" role="menuitem"> <div class="kghdr4__dd-icon" style="background:rgba(5,150,106,0.08);color:#05966A"> <svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"/><path d="M7 10l2 2 4-4"/></svg> </div> <div class="kghdr4__dd-body"> <span class="kghdr4__dd-name">Казначейское сопровождение</span> <span class="kghdr4__dd-desc">Ведение счёта, платежи, контроль</span> </div> <span class="kghdr4__dd-price">69 000 ₽/мес</span> </a> <div class="kghdr4__dd-divider"></div> <a href="/services/reserve" class="kghdr4__dd-row" data-goal="nav_click" data-service="reserve" role="menuitem"> <div class="kghdr4__dd-icon" style="background:rgba(180,83,9,0.08);color:#B45309"> <svg viewBox="0 0 20 20"><rect x="4" y="8" width="12" height="9" rx="2.5"/><path d="M7 8V6a3 3 0 016 0v2"/></svg> </div> <div class="kghdr4__dd-body"> <span class="kghdr4__dd-name">Резервный счёт</span> <span class="kghdr4__dd-desc">Резервирование под госконтракт</span> </div> <span class="kghdr4__dd-price">от 15 000 ₽</span> </a> <a href="/services/postpayment" class="kghdr4__dd-row" data-goal="nav_click" data-service="postpayment" role="menuitem"> <div class="kghdr4__dd-icon" style="background:rgba(109,40,217,0.08);color:#7C3AED"> <svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"/><path d="M10 6v4l2.5 2.5"/></svg> </div> <div class="kghdr4__dd-body"> <span class="kghdr4__dd-name">Постоплата по контракту</span> <span class="kghdr4__dd-desc">Платите после получения результата</span> </div> <span class="kghdr4__dd-price">49 000 ₽</span> </a> </div> </li> <li><a href="/#about"     class="kghdr4__nav-link" data-goal="nav_click" data-nav="about">О компании</a></li> <li><a href="/#guarantee" class="kghdr4__nav-link" data-goal="nav_click" data-nav="guarantee">Гарантия</a></li> <li><a href="/blog"       class="kghdr4__nav-link" data-goal="nav_click" data-nav="blog">Блог</a></li> <li><a href="/#contacts"  class="kghdr4__nav-link" data-goal="nav_click" data-nav="contacts">Контакты</a></li> </ul> <!-- RIGHT --> <div class="kghdr4__right"> <a href="https://t.me/kaznagovru" class="kghdr4__social kghdr4__social--tg"
          target="_blank" rel="noopener" aria-label="Telegram" data-goal="social_click" data-social="telegram"> <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-2.018 9.505c-.148.658-.537.818-1.088.508l-3-2.21-1.447 1.393c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.16 14.608l-2.948-.92c-.64-.203-.654-.64.136-.948l11.498-4.43c.535-.194 1.003.13.716.938z"/></svg> </a> <a href="https://max.ru/u/f9LHodD0cOK_dA0cxMm6m3-UJ1xRsy79eO5fE11eYanlBeYUtgEpWuyk5m8"
          class="kghdr4__social kghdr4__social--max"
          target="_blank" rel="noopener" aria-label="MAX" data-goal="social_click" data-social="max"> <svg viewBox="0 0 24 24"> <rect width="24" height="24" rx="6" fill="currentColor" opacity="0.1"/> <text x="12" y="16.5" font-family="'Manrope',Arial,sans-serif" font-size="9.5" font-weight="800"
@@ -1338,9 +1178,8 @@ html[data-theme="dark"] #kgHeader .kg-h__sun{ display: block; }
     <!-- BRAND -->
     <a href="/" class="kg-h__brand" aria-label="Казна — главная">
       <span class="kg-h__logo">
-        <span class="kgh__word-wrap"> <span class="kgh__word"> <span class="b">Казна</span> <span class="l" aria-hidden="true">Казна</span> <span class="r" aria-hidden="true">Казна</span> </span> <span class="kgh__sub"> <span class="kgh__dot" aria-hidden="true"></span>
-        Казначейское сопровождение
-      </span> </span> 
+        <span class="kg-h__logo-name">Казна</span>
+        <span class="kg-h__logo-tag">Казначейское сопровождение</span>
       </span>
       <span class="kg-h__live" aria-label="онлайн">
         <span class="kg-h__live-dot" aria-hidden="true"></span>
@@ -1362,7 +1201,7 @@ html[data-theme="dark"] #kgHeader .kg-h__sun{ display: block; }
         <div class="kg-h__sub" role="menu" aria-labelledby="kgHeaderMenuBtn">
           <a class="kg-h__sub-link" href="/services/reserve" role="menuitem">
             <span class="kg-h__sub-title">Резерв счёта на тендер</span>
-            <span class="kg-h__sub-price">от 19 000 ₽</span>
+            <span class="kg-h__sub-price">от 15 000 ₽</span>
             <span class="kg-h__sub-desc">1–2 дня · реквизит для подачи · возврат при проигрыше</span>
           </a>
           <a class="kg-h__sub-link" href="/services/open" role="menuitem">
@@ -5342,7 +5181,7 @@ body .t-rec .kg-article{ width: 100%; max-width: 100%; }
 
 /* 26.1 — Tablet portrait: статья → 1 колонка + горизонт. отступы */
 @media (max-width: 768px){
-  html, body, body .t-rec{ overflow-x: hidden; max-width: 100%; }
+  body, body .t-rec{ overflow-x: hidden; }
   body .kg-content{ padding-left: 16px !important; padding-right: 16px !important; }
   body .kg-hero, body .kg-final, body .kg-faq,
   body .kg-discuss, body .kg-related{
@@ -5646,7 +5485,7 @@ body .kg-content{
       <div class="kg-hero__label">
         <span>Выпуск 065</span>
         <span class="kg-hero__label-line"></span>
-        <span>обновлено 24.06.2026</span>
+        <span>обновлено 08.07.2026</span>
       </div>
 
       <div class="kg-hero__meta">
@@ -5701,7 +5540,7 @@ body .kg-content{
           <summary class="kg-changelog__summary">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
             История обновлений
-            <em>обновлено 24.06.2026</em>
+            <em>обновлено 08.07.2026</em>
           </summary>
           <ul class="kg-changelog__list">
             <li class="kg-changelog__item">
@@ -5779,8 +5618,9 @@ body .kg-content{
 
         <!-- ====== SECTION 1 ====== -->
         <section class="kg-section" id="section-1">
-          <h2>Какой сертификат нужен для входа в «Электронный бюджет»</h2>
-          <p class="kg-lead kg-reveal">Для работы в ГИИС «Электронный бюджет» (budget.gov.ru) подходит только усиленная квалифицированная электронная подпись (КЭП) — та же, что используется для сдачи отчётности и работы на электронных площадках.</p>
+          <h2>Что такое сертификат ЭЦП казначейства и какой нужен для входа в «Электронный бюджет»</h2>
+          <p class="kg-lead kg-reveal">Сертификат ЭЦП казначейства — это квалифицированный сертификат электронной подписи, которым участник казначейского сопровождения входит в ГИИС «Электронный бюджет» и подписывает документы. Коммерческая организация получает его бесплатно в удостоверяющем центре ФНС, участники бюджетного процесса — в удостоверяющем центре Федерального казначейства; срок действия — около года.</p>
+          <p class="kg-reveal">Для работы в ГИИС «Электронный бюджет» (budget.gov.ru) подходит только усиленная квалифицированная электронная подпись (КЭП) — та же, что используется для сдачи отчётности и работы на электронных площадках.</p>
           <p class="kg-reveal kg-dropcap">Простая и неквалифицированная подписи не годятся: система проверяет, что сертификат выдан аккредитованным удостоверяющим центром и привязан к закрытому ключу на защищённом носителе. При этом «сертификат казначейства» — это не отдельный вид подписи, а рабочая связка, которая нужна для входа на портал.</p>
           <p class="kg-reveal">В связку входят:</p>
           <ul class="kg-reveal">
@@ -5792,10 +5632,10 @@ body .kg-content{
           </ul>
 
           <div class="kg-stats kg-reveal" data-stats>
-            <div class="kg-stat"><div class="kg-stat__num"><span data-count="5" data-suffix=" элементов">5</span></div><div class="kg-stat__bar"></div><div class="kg-stat__label">в связке для входа</div></div>
+            <div class="kg-stat"><div class="kg-stat__num"><span data-count="5" data-suffix=" элементов">0</span></div><div class="kg-stat__bar"></div><div class="kg-stat__label">в связке для входа</div></div>
             <div class="kg-stat"><div class="kg-stat__num"><span data-count="0" data-suffix=" ₽">0</span></div><div class="kg-stat__bar"></div><div class="kg-stat__label">КЭП руководителя в УЦ ФНС</div></div>
-            <div class="kg-stat"><div class="kg-stat__num"><span data-count="1" data-suffix=" год">1</span></div><div class="kg-stat__bar"></div><div class="kg-stat__label">срок действия сертификата</div></div>
-            <div class="kg-stat"><div class="kg-stat__num"><span data-count="2" data-suffix=" УЦ">2</span></div><div class="kg-stat__bar"></div><div class="kg-stat__label">где получают сертификат</div></div>
+            <div class="kg-stat"><div class="kg-stat__num"><span data-count="1" data-suffix=" год">0</span></div><div class="kg-stat__bar"></div><div class="kg-stat__label">срок действия сертификата</div></div>
+            <div class="kg-stat"><div class="kg-stat__num"><span data-count="2" data-suffix=" УЦ">0</span></div><div class="kg-stat__bar"></div><div class="kg-stat__label">где получают сертификат</div></div>
           </div>
 
           <p class="kg-reveal">Уберите любой из этих элементов — и при входе вы либо не увидите свой сертификат в списке, либо получите ошибку защищённого соединения. Если вы только готовитесь подключаться, параллельно изучите полную <a href="/blog/giis-elektronnyy-byudzhet-2026-polnaya-instruktsiya">настройку ГИИС «Электронный бюджет»</a> — там описано рабочее место целиком, а здесь мы фокусируемся на сертификате.</p>
@@ -5803,7 +5643,7 @@ body .kg-content{
 
         <!-- ====== SECTION 2 ====== -->
         <section class="kg-section" id="section-2">
-          <h2 class="kg-reveal">Где получить сертификат: УЦ ФНС или УЦ Федерального казначейства</h2>
+          <h2 class="kg-reveal">Как получить сертификат казначейства для «Электронного бюджета»: УЦ ФНС или УЦ Федерального казначейства</h2>
           <p class="kg-reveal">Где получать КЭП — зависит от того, кто вы в системе казначейского сопровождения. Это ключевая развилка, на которой теряют время: коммерческие подрядчики иногда едут в казначейство за сертификатом, хотя должны идти в налоговую, и наоборот.</p>
 
           <div class="kg-table-wrap kg-reveal">
@@ -6024,7 +5864,7 @@ body .kg-content{
         <div class="kg-bio__cap">Об авторе</div>
         <h3 class="kg-bio__name">Стелла Иванова</h3>
         <div class="kg-bio__role">Партнёр практики казначейского сопровождения · 15+ лет в ГОЗ и 44-ФЗ</div>
-        <p class="kg-bio__text">Сопровождала контракты на сумму более 40 млрд руб. Эксперт по 44-ФЗ, 223-ФЗ и 275-ФЗ. Преподаватель программы повышения квалификации для казначеев.</p>
+        <p class="kg-bio__text">Сопровождала контракты на сумму более 14 млрд руб. Эксперт по 44-ФЗ, 223-ФЗ и 275-ФЗ. Преподаватель программы повышения квалификации для казначеев.</p>
         <div class="kg-bio__links">
           <a href="/expert/stella" class="kg-bio__link">Все статьи автора</a>
           <a href="https://t.me/kaznagovru" class="kg-bio__link" target="_blank" rel="noopener">Telegram</a>
@@ -6044,6 +5884,16 @@ body .kg-content{
     <section class="kg-faq" id="kgFaq" aria-labelledby="kgFaqTitle">
       <h2 class="kg-faq__title kg-reveal" id="kgFaqTitle">Частые вопросы</h2>
       <div class="kg-faq__list">
+        <details class="kg-faq__item kg-reveal" id="faq-0">
+          <summary class="kg-faq__q">
+            Что такое сертификат ЭЦП казначейства?
+            <span class="kg-faq__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="kg-faq__a">
+            <p>Сертификат ЭЦП казначейства — это квалифицированный сертификат электронной подписи, которым участник казначейского сопровождения входит в ГИИС «Электронный бюджет» и подписывает Сведения об операциях и платежи. Отдельного «казначейского» сертификата нет: коммерческая организация получает квалифицированную подпись руководителя бесплатно в удостоверяющем центре ФНС, участники бюджетного процесса — в удостоверяющем центре Федерального казначейства. Срок действия — около года.</p>
+          </div>
+        </details>
+
         <details class="kg-faq__item kg-reveal" id="faq-1">
           <summary class="kg-faq__q">
             Какой сертификат нужен для входа в «Электронный бюджет»?
@@ -6238,7 +6088,7 @@ body .kg-content{
     </section>
 
     <!-- ============== RELATED ARTICLES ============== -->
-    <aside style="max-width:760px;margin:28px auto;padding:18px 22px;border:1px solid #d8e6e0;border-left:4px solid #15846B;border-radius:12px;background:#f7fbf9;font-size:16px;line-height:1.55;color:#0E0F0E"><b>Заметка практика.</b> Для входа в «Электронный бюджет» нужен именно квалифицированный сертификат с полномочиями для ГИИС, а не любая ЭЦП для торгов. Сертификат с ЕИС/госзакупок часто не подходит — заказывайте отдельный на ответственное лицо и сразу ставьте корневые сертификаты Казначейства. <span style="display:block;margin-top:8px;color:#4a5a55;font-size:14px">— Стелла Иванова, практика казначейского сопровождения, 15+ лет</span></aside> <section class="kg-related" aria-labelledby="kgRelatedTitle">
+    <section class="kg-related" aria-labelledby="kgRelatedTitle">
       <div class="kg-related__head">
         <h2 class="kg-related__title kg-reveal" id="kgRelatedTitle">Что почитать ещё</h2>
         <a href="/blog" class="kg-related__more">Весь блог →</a>
@@ -6572,13 +6422,13 @@ body .kg-content{
             <p class="kg-final__text">Получим и установим сертификат, настроим КриптоПро, Континент TLS и корневые сертификаты, пройдём регистрацию в «Электронном бюджете». Выйдете на работу с казначейским счётом без простоев.</p>
 
             <div class="kg-final__row">
-              <a href="tel:+74951084232" class="kg-btn kg-btn--ghost">+7 (495) 108-42-32</a>
+              <a href="tel:+79818331010" class="kg-btn kg-btn--ghost">+7 (981) 833-10-10</a>
               <a href="https://t.me/kaznagovru" target="_blank" rel="noopener" class="kg-btn kg-btn--ghost">Написать в Telegram</a>
             </div>
 
             <div class="kg-final__trust">
               <span class="kg-final__trust-item"><span class="kg-final__trust-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="12" height="12"><polyline points="20 6 9 17 4 12"/></svg></span><b>15+ лет</b> практики КС</span>
-              <span class="kg-final__trust-item"><span class="kg-final__trust-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="12" height="12"><polyline points="20 6 9 17 4 12"/></svg></span><b>40+ млрд ₽</b> сопровождено</span>
+              <span class="kg-final__trust-item"><span class="kg-final__trust-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="12" height="12"><polyline points="20 6 9 17 4 12"/></svg></span><b>14 млрд ₽</b> сопровождено</span>
               <span class="kg-final__trust-item"><span class="kg-final__trust-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="12" height="12"><polyline points="20 6 9 17 4 12"/></svg></span><b>0%</b> возвратов в 2025</span>
               <span class="kg-final__trust-item"><span class="kg-final__trust-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="12" height="12"><polyline points="20 6 9 17 4 12"/></svg></span>Ответ за <b>1 час</b></span>
             </div>
@@ -6625,12 +6475,12 @@ body .kg-content{
                   </svg>
                   Написать в Telegram
                 </a>
-                <a href="tel:+74951084232" class="kg-final__success-contact" data-goal="success_phone">
+                <a href="tel:+79818331010" class="kg-final__success-contact" data-goal="success_phone">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/>
                   </svg>
-                  +7 (495) 108-42-32
+                  +7 (981) 833-10-10
                 </a>
               </div>
               <button type="button" class="kg-final__success-again" id="kgFinalSuccessAgain">
@@ -6774,7 +6624,7 @@ body .kg-content{
           })
           .catch(function(){
             btn.disabled = false; btn.textContent = 'Перезвоните мне →';
-            show('Сеть недоступна. Позвоните +7 (495) 108-42-32 или напишите в Telegram.', false);
+            show('Сеть недоступна. Позвоните +7 (981) 833-10-10 или напишите в Telegram.', false);
           });
         });
       })();
@@ -6784,7 +6634,7 @@ body .kg-content{
   </main>
 
   <!-- footer виден только при печати -->
-  <div class="kg-print-footer" aria-hidden="true" data-nosnippet>
+  <div class="kg-print-footer" aria-hidden="true">
     Источник: kazna-gov.ru/blog/sertifikat-ecp-kaznacheystva · © Казна 2026 · Распечатано для рабочего использования
   </div>
 
@@ -6841,7 +6691,7 @@ body .kg-content{
   </div>
 
   <!-- ============== STICKY MOBILE CTA BAR ============== -->
-  <div class="kg-mobile-cta" id="kgMobileCta" aria-hidden="true" data-nosnippet>
+  <div class="kg-mobile-cta" id="kgMobileCta" aria-hidden="true">
     <div class="kg-mobile-cta__text">
       <b>Не входит в «Электронный бюджет»?</b>
       <span>Настроим доступ и сертификат · ответ за час</span>
@@ -8825,7 +8675,5 @@ window.kgRequestPush = function(){
  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
 })();
 </script>
-<footer style="background:#102434;color:#cfd8e0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Arial,sans-serif;padding:40px 20px 26px;margin-top:48px"><div style="max-width:1060px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:26px"><div><div style="font-weight:800;font-size:18px;color:#fff;margin-bottom:8px">Казна<span style="color:#1FA887">.</span></div><div style="font-size:13px;line-height:1.6;color:#9fb0bd">Казначейское сопровождение госконтрактов под ключ по 44-ФЗ и 275-ФЗ (ГОЗ). 15+ лет практики, 0% возвратов.</div></div><div><div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#7f93a3;margin-bottom:8px">Услуги</div><a href="/uslugi" style="display:block;color:#cfd8e0;text-decoration:none;font-size:13.5px;line-height:2.05">Услуги и цены</a><a href="/services/open" style="display:block;color:#cfd8e0;text-decoration:none;font-size:13.5px;line-height:2.05">Открытие счёта</a><a href="/services/conduct" style="display:block;color:#cfd8e0;text-decoration:none;font-size:13.5px;line-height:2.05">Сопровождение</a><a href="/stoimost" style="display:block;color:#cfd8e0;text-decoration:none;font-size:13.5px;line-height:2.05">Стоимость</a></div><div><div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#7f93a3;margin-bottom:8px">Полезное</div><a href="/instrumenty/" style="display:block;color:#cfd8e0;text-decoration:none;font-size:13.5px;line-height:2.05">Инструменты и калькуляторы</a><a href="/voprosy/" style="display:block;color:#cfd8e0;text-decoration:none;font-size:13.5px;line-height:2.05">Вопросы и ответы</a><a href="/obraztsy/" style="display:block;color:#cfd8e0;text-decoration:none;font-size:13.5px;line-height:2.05">Образцы документов</a><a href="/keysy/" style="display:block;color:#cfd8e0;text-decoration:none;font-size:13.5px;line-height:2.05">Кейсы</a></div><div><div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#7f93a3;margin-bottom:8px">Компания</div><a href="/about/" style="display:block;color:#cfd8e0;text-decoration:none;font-size:13.5px;line-height:2.05">О компании</a><a href="/otzyvy/" style="display:block;color:#cfd8e0;text-decoration:none;font-size:13.5px;line-height:2.05">Отзывы</a><a href="/novosti/" style="display:block;color:#cfd8e0;text-decoration:none;font-size:13.5px;line-height:2.05">Новости</a><a href="/blog" style="display:block;color:#cfd8e0;text-decoration:none;font-size:13.5px;line-height:2.05">Блог</a><a href="tel:+74951084232" style="display:block;color:#cfd8e0;text-decoration:none;font-size:13.5px;line-height:2.05">+7 (495) 108-42-32</a></div></div><div style="max-width:1060px;margin:20px auto 0;padding-top:16px;border-top:1px solid #24384a;font-size:12.5px;color:#7f93a3">© 2026 ИП Михайлов Я.А. · ИНН 781428314589 · казначейское сопровождение под ключ · kazna-gov.ru</div></footer>
-<style id="kg-dock-guard">@media (max-width:880px){.kg-dock{max-width:calc(100vw - 16px);box-sizing:border-box;flex-wrap:wrap;justify-content:center;}}</style>
 </body>
 </html>
