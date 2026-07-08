@@ -384,3 +384,11 @@
 #kzHeader .kzlogo__word .l { color: #2bc89a; }
 #kzHeader .kzlogo__word .r { color: #ff5a5a; }
 #kzHeader .kzlogo__sub { color: var(--kz-ink-3); font-size: 9px; }
+
+/* R2.03.1: 7 пунктов меню — плотнее на средних десктопах */
+@media (min-width: 1024px) and (max-width: 1360px) {
+  .kznav__link { padding: 0 9px; font-size: 13.5px; }
+  .kznav__inner { gap: 8px; }
+  .kznav__cta { padding: 0 14px; font-size: 13px; }
+}
+.kznav__link { white-space: nowrap; }

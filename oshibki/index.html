@@ -23,7 +23,7 @@
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/x-icon" sizes="32x32" href="/favicon.ico">
 <link rel="apple-touch-icon" type="image/png" href="/img/t/tild3236-3965-4939-a136-303435336461.png">
-<link rel="stylesheet" href="/assets/nav.css?v=ff3638f0">
+<link rel="stylesheet" href="/assets/nav.css?v=533b79c8">
 <script defer src="/assets/nav.js?v=9ddcd50f"></script>
 <!-- kz:head:end --><!-- kz:scripts:start -->
 <!-- scripts-common · R1.05: единые счётчики аналитики для всех страниц (кроме /404.html).
@@ -98,6 +98,13 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
         </li>
         <li class="kznav__item">
           <a class="kznav__link" href="/stoimost" data-nav-click data-nav-location="header" data-nav-label="Цены" data-nav-intent="pricing">Цены</a>
+        </li>
+        <!-- R2.03.1: промоушен разделов Knowledge Platform (критерии R1.02 выполнены) -->
+        <li class="kznav__item">
+          <a class="kznav__link" href="/oshibki/" data-nav-click data-nav-location="header" data-nav-label="Ошибки" data-nav-intent="errors">Ошибки</a>
+        </li>
+        <li class="kznav__item">
+          <a class="kznav__link" href="/obraztsy/" data-nav-click data-nav-location="header" data-nav-label="Документы" data-nav-intent="docs">Документы</a>
         </li>
         <li class="kznav__item kznav__item--sub">
           <button class="kznav__link" type="button" aria-expanded="false" aria-controls="kzPanelKb"
@@ -180,6 +187,12 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
         <a class="kzdrawer__link" href="/stoimost" data-nav-click data-nav-location="drawer" data-nav-label="Цены" data-nav-intent="pricing">Цены</a>
       </div>
       <div class="kzdrawer__group">
+        <a class="kzdrawer__link" href="/oshibki/" data-nav-click data-nav-location="drawer" data-nav-label="Ошибки" data-nav-intent="errors">Ошибки: разборы и решения</a>
+      </div>
+      <div class="kzdrawer__group">
+        <a class="kzdrawer__link" href="/obraztsy/" data-nav-click data-nav-location="drawer" data-nav-label="Документы" data-nav-intent="docs">Документы и образцы</a>
+      </div>
+      <div class="kzdrawer__group">
         <button class="kzdrawer__acc" type="button" aria-expanded="false" aria-controls="kzDrawerKb">
           База знаний
           <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
@@ -227,7 +240,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
       <input id="oeSearch" type="search" placeholder="Опишите симптом: например, «вернули платёж» или «МЧД»" autocomplete="off">
     </div>
     <nav class="oe-cats" aria-label="Категории ошибок">
-      <a href="#otkrytie-scheta" data-nav-click data-nav-location="error_category" data-nav-label="Открытие лицевого счёта">Открытие лицевого счёта <span>3</span></a>
+      <a href="#otkrytie-scheta" data-nav-click data-nav-location="error_category" data-nav-label="Открытие лицевого счёта">Открытие лицевого счёта <span>4</span></a>
       <a href="#platezhi" data-nav-click data-nav-location="error_category" data-nav-label="Платежи">Платежи <span>4</span></a>
       <a href="#sanktsionirovanie" data-nav-click data-nav-location="error_category" data-nav-label="Санкционирование">Санкционирование <span>3</span></a>
       <a href="#giis" data-nav-click data-nav-location="error_category" data-nav-label="ГИИС «Электронный бюджет»">ГИИС «Электронный бюджет» <span>1</span></a>
@@ -249,11 +262,12 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
   </section>
 
   <section class="oe-catsec" id="otkrytie-scheta">
-    <h2>Открытие лицевого счёта<span class="oe-count">3</span></h2>
+    <h2>Открытие лицевого счёта<span class="oe-count">4</span></h2>
     <div class="oe-grid">
       <a class="oe-card" href="/blog/ne-otkryvaetsya-kaznacheyskiy-schet-prichiny-otkaza-2026" data-nav-click data-nav-location="error_hub" data-nav-label="Не открывается казначейский счёт: 8 причин отказа"><span class="oe-card__t">Не открывается казначейский счёт: 8 причин отказа</span><span class="oe-card__d">Почему УФК возвращает документы на открытие и как исправить.</span></a>
       <a class="oe-card" href="/oshibki/zatyanulos-otkrytie-scheta/" data-kw="затянулось открытие лицевого счёта: сроки вышли, счёта нет заявление подано, но статус в гиис «электронный бюджет» не движется уфк запросило уточнения, и после ответа тишина заказчик требует реквизиты счёта для перечисления аванса, а счёта всё нет" data-nav-click data-nav-location="error_hub" data-nav-label="Затянулось открытие счёта"><span class="oe-card__t">Затянулось открытие счёта</span><span class="oe-card__d">Штатно лицевой счёт участника казначейского сопровождения открывается за несколько рабочих дней после подачи корректного комплекта.</span></a>
       <a class="oe-card" href="/oshibki/ufk-vernulo-kartochku-podpisey/" data-kw="уфк вернуло карточку образцов подписей комплект на открытие возвращён с замечанием к карточке уфк не принимает документы за подписью лица, которого нет в карточке после смены директора платежи остановились: карточка неактуальна" data-nav-click data-nav-location="error_hub" data-nav-label="Вернули карточку подписей"><span class="oe-card__t">Вернули карточку подписей</span><span class="oe-card__d">Карточку образцов подписей УФК возвращает из-за неполного заверения, расхождения подписантов с документами о полномочиях или ошибок оформления (сокращения, несовпадение наименования, пустые поля).</span></a>
+      <a class="oe-card" href="/oshibki/net-v-svodnom-reestre/" data-kw="организации нет в сводном реестре: счёт не открывают заявление на открытие возвращается с основанием об отсутствии организации в сводном реестре в гиис «электронный бюджет» организация не находится/не выбирается при оформлении документов реквизиты организации в реестре не совпадают с егрюл (старое наименование, кпп)" data-nav-click data-nav-location="error_hub" data-nav-label="Нет в Сводном реестре"><span class="oe-card__t">Нет в Сводном реестре</span><span class="oe-card__d">Лицевой счёт участника казначейского сопровождения открывается только организации, включённой в Сводный реестр (реестр участников и неучастников бюджетного процесса).</span></a>
     </div>
   </section>
 

@@ -7,6 +7,8 @@
 ## Навигация сайта (единое меню)
 - Услуги: [Открытие лицевого счёта](https://kazna-gov.ru/services/open) · [Казначейское сопровождение](https://kazna-gov.ru/services/conduct) · [Резерв счёта на тендер](https://kazna-gov.ru/services/reserve) · [Контракт с постоплатой](https://kazna-gov.ru/services/postpayment) · [Все услуги](https://kazna-gov.ru/uslugi)
 - [Цены](https://kazna-gov.ru/stoimost)
+- [Ошибки: разборы и решения](https://kazna-gov.ru/oshibki/)
+- [Документы и образцы](https://kazna-gov.ru/obraztsy/)
 - База знаний: [все материалы блога](https://kazna-gov.ru/blog)
 - [Отзывы](https://kazna-gov.ru/review)
 - Полезные разделы: [Ошибки и их решения](https://kazna-gov.ru/oshibki/) · [Инструменты и калькуляторы](https://kazna-gov.ru/instrumenty/) · [Образцы документов](https://kazna-gov.ru/obraztsy/) · [Кейсы](https://kazna-gov.ru/keysy/) · [Новости](https://kazna-gov.ru/novosti/) · [Регионы](https://kazna-gov.ru/regiony/) · [Вопросы и ответы](https://kazna-gov.ru/voprosy/)
@@ -23,6 +25,7 @@
 - [Отказ в санкционировании расходов](https://kazna-gov.ru/oshibki/ufk-otkazalo-v-sanktsionirovanii/): классификация оснований отказа УФК и порядок повторной подачи.
 - [Нецелевое расходование целевых средств](https://kazna-gov.ru/oshibki/necelevoe-rashodovanie-sredstv/): что запрещено оплачивать с лицевого счёта, чем грозит (ст. 15.14 КоАП) и как снизить последствия.
 - [УФК не утверждает Сведения (0501213)](https://kazna-gov.ru/oshibki/ufk-ne-utverzhdaet-svedeniya/): типовые замечания к форме и штраф за срыв срока (ст. 15.49 КоАП с 2026).
+- [Организации нет в Сводном реестре](https://kazna-gov.ru/oshibki/net-v-svodnom-reestre/): кто включает в Сводный реестр, как инициировать через заказчика и не сорвать открытие счёта.
 - [Затянулось открытие лицевого счёта](https://kazna-gov.ru/oshibki/zatyanulos-otkrytie-scheta/): Сводный реестр, документы, ГИИС — как найти этап-блокер и ускорить.
 - [УФК вернуло карточку образцов подписей](https://kazna-gov.ru/oshibki/ufk-vernulo-kartochku-podpisey/): заверение, полномочия, оформление — исправление за один день.
 - [ЭЦП не подходит для казначейства](https://kazna-gov.ru/oshibki/ecp-ne-podhodit-dlya-kaznacheystva/): тип сертификата, УЦ ФНС, корневые сертификаты, Континент TLS.
