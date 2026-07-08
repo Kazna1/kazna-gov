@@ -2,7 +2,7 @@
 
 > Экспертный ресурс по казначейскому сопровождению государственных контрактов (44-ФЗ, 223-ФЗ, 275-ФЗ/ГОЗ) в России: открытие казначейского счёта в УФК, ведение операций, раздельный учёт, отчётность. Услуги «под ключ» для подрядчиков и субподрядчиков. Автор материалов — Стелла Иванова, партнёр практики, 15+ лет в ГОЗ и 44-ФЗ.
 
-Обновлено: 2026-07-08
+Обновлено: 2026-07-09
 
 ## Навигация сайта (единое меню)
 - Услуги: [Открытие лицевого счёта](https://kazna-gov.ru/services/open) · [Казначейское сопровождение](https://kazna-gov.ru/services/conduct) · [Резерв счёта на тендер](https://kazna-gov.ru/services/reserve) · [Контракт с постоплатой](https://kazna-gov.ru/services/postpayment) · [Все услуги](https://kazna-gov.ru/uslugi)
@@ -10,6 +10,10 @@
 - База знаний: [все материалы блога](https://kazna-gov.ru/blog)
 - [Отзывы](https://kazna-gov.ru/review)
 - Полезные разделы: [Ошибки и их решения](https://kazna-gov.ru/oshibki/) · [Инструменты и калькуляторы](https://kazna-gov.ru/instrumenty/) · [Образцы документов](https://kazna-gov.ru/obraztsy/) · [Кейсы](https://kazna-gov.ru/keysy/) · [Новости](https://kazna-gov.ru/novosti/) · [Регионы](https://kazna-gov.ru/regiony/) · [Вопросы и ответы](https://kazna-gov.ru/voprosy/)
+
+## Образцы документов (раздел /obraztsy)
+- [База шаблонов документов КС](https://kazna-gov.ru/obraztsy/): 20 документов, каждый — страница-инструкция + DOCX + PDF с версией. Категории: заявления, карточки, Сведения, пояснения, доверенности и МЧД, чек-листы, комплекты (открытие/ГОЗ/субсидии), письма, формулировки.
+- Ключевые: [заявление на открытие лицевого счёта](https://kazna-gov.ru/obraztsy/zayavlenie-na-otkrytie-litsevogo-scheta/) · [карточка образцов подписей](https://kazna-gov.ru/obraztsy/kartochka-obraztsov-podpisey/) · [Сведения 0501213](https://kazna-gov.ru/obraztsy/svedeniya-ob-operatsiyah-0501213/) · [пояснение в УФК](https://kazna-gov.ru/obraztsy/poyasnenie-v-ufk/) · [пояснение при возврате платежа](https://kazna-gov.ru/obraztsy/poyasnenie-pri-vozvrate-platezha/) · [МЧД для казначейства](https://kazna-gov.ru/obraztsy/mchd-dlya-kaznacheystva/) · [чек-лист открытия счёта](https://kazna-gov.ru/obraztsy/chek-list-otkrytiya-scheta/) · [приказ о раздельном учёте ГОЗ](https://kazna-gov.ru/obraztsy/prikaz-o-razdelnom-uchete-goz/) · [формулировка КС в договор](https://kazna-gov.ru/obraztsy/formulirovka-ks-v-dogovor/) · [отзыв распоряжения](https://kazna-gov.ru/obraztsy/shablon-otzyva-rasporyazheniya/)
 
 ## Ошибки и их решения (раздел /oshibki)
 - [Каталог ошибок казначейского сопровождения](https://kazna-gov.ru/oshibki/): база разборов по единой схеме симптомы → причины → диагностика → решение → документы. Категории: открытие счёта, платежи, санкционирование, ГИИС, документы, подписи, ГОЗ, субсидии.
