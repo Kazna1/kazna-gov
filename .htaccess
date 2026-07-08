@@ -22,6 +22,9 @@ RewriteEngine On
 # --- /expert/stella удалён → 301 на блог ---
 RewriteRule ^expert/stella/?$ /blog [R=301,L]
 
+# --- /policy — дубль политики ПДн → 301 на канонический URL (R1.05) ---
+RewriteRule ^policy/?$ /personal_data_policy [R=301,L]
+
 # --- Force HTTPS (кроме ACME-challenge LetsEncrypt) ---
 RewriteCond %{HTTPS} off
 RewriteCond %{REQUEST_URI} !^/\.well-known/

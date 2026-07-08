@@ -1,0 +1,342 @@
+/* ============================================================
+   kazna-gov.ru — единый слой навигации (header + footer)
+   R1.04 · Источник правды: site/static/assets/nav.css
+   Не редактировать в docroot/репо сайта — файл перезаписывается сборкой.
+   Настоящий sticky в потоке документа: без JS-компенсации, без CLS.
+   ============================================================ */
+
+.kznav, .kznav *, .kznav *::before, .kznav *::after,
+.kzdrawer, .kzdrawer *, .kzfoot, .kzfoot *, .kzfoot *::before {
+  box-sizing: border-box; margin: 0; padding: 0;
+}
+
+.kznav, .kzdrawer, .kzfoot {
+  --kz-bg: #FAF6EC;
+  --kz-bg-blur: rgba(250, 246, 236, 0.92);
+  --kz-line: rgba(15, 24, 21, 0.08);
+  --kz-ink: #161718;
+  --kz-ink-2: #3a4046;
+  --kz-ink-3: #6b7178;
+  --kz-mint: #15846B;
+  --kz-mint-2: #1FA887;
+  --kz-mint-soft: #E0F2EC;
+  --kz-navy: #0C1B33;
+  --kz-navy-2: #102434;
+  --kz-h: 64px;
+  --kz-r: 12px;
+  --kz-font: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-family: var(--kz-font);
+}
+
+/* ---------- skip-link ---------- */
+.kz-skip {
+  position: absolute; left: 12px; top: -48px; z-index: 10001;
+  background: var(--kz-navy); color: #fff; font: 600 14px/1 var(--kz-font);
+  padding: 12px 18px; border-radius: 0 0 10px 10px; text-decoration: none;
+  transition: top .15s ease;
+}
+.kz-skip:focus-visible { top: 0; }
+
+/* ---------- header ---------- */
+.kznav {
+  position: sticky; top: 0; z-index: 9999;
+  background: var(--kz-bg-blur);
+  -webkit-backdrop-filter: saturate(160%) blur(12px);
+  backdrop-filter: saturate(160%) blur(12px);
+  border-bottom: 1px solid var(--kz-line);
+  font-size: 14px; line-height: 1.4; color: var(--kz-ink);
+}
+.kznav.is-scrolled { box-shadow: 0 2px 14px rgba(12, 27, 51, 0.07); }
+
+.kznav__inner {
+  max-width: 1220px; margin: 0 auto; height: var(--kz-h);
+  display: flex; align-items: center; gap: 12px; padding: 0 16px;
+}
+
+/* logo */
+.kznav__logo {
+  display: flex; align-items: center; gap: 10px; text-decoration: none;
+  color: var(--kz-ink); min-height: 44px; flex-shrink: 0;
+}
+.kznav__logo-mark { width: 34px; height: 34px; display: block; }
+.kznav__logo-name { font-weight: 800; font-size: 17px; letter-spacing: -0.01em; display: block; }
+.kznav__logo-tag  { font-weight: 500; font-size: 10.5px; color: var(--kz-ink-3); display: block; margin-top: 1px; }
+
+/* desktop nav */
+.kznav__nav { display: none; }
+.kznav__tools { display: flex; align-items: center; gap: 10px; margin-left: auto; }
+
+/* phone */
+.kznav__phone { display: none; text-decoration: none; text-align: right; min-height: 44px; padding: 4px 2px; }
+.kznav__phone-num { display: block; font-weight: 700; font-size: 14.5px; color: var(--kz-ink); white-space: nowrap; }
+.kznav__phone-hours { display: block; font-size: 11px; color: var(--kz-ink-3); }
+.kznav__phone:hover .kznav__phone-num { color: var(--kz-mint); }
+
+/* telegram */
+.kznav__tg { display: none; width: 40px; height: 40px; border-radius: 50%;
+  align-items: center; justify-content: center; color: #229ED9;
+  background: rgba(34, 158, 217, 0.1); }
+.kznav__tg svg { width: 20px; height: 20px; fill: currentColor; }
+.kznav__tg:hover { background: rgba(34, 158, 217, 0.18); }
+
+/* CTA */
+.kznav__cta {
+  display: none; align-items: center; gap: 7px; white-space: nowrap;
+  background: var(--kz-navy); color: #fff; text-decoration: none;
+  font: 700 13.5px/1 var(--kz-font); padding: 0 18px; height: 44px;
+  border-radius: 999px; transition: background .18s ease, transform .18s ease;
+}
+.kznav__cta svg { width: 13px; height: 13px; stroke: currentColor; }
+.kznav__cta:hover { background: var(--kz-mint); transform: translateY(-1px); }
+
+/* burger */
+.kznav__burger {
+  display: flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px; border: 0; border-radius: 10px;
+  background: transparent; color: var(--kz-ink); cursor: pointer;
+}
+.kznav__burger svg { width: 22px; height: 22px; stroke: currentColor; }
+.kznav__burger:hover { background: var(--kz-mint-soft); }
+
+/* ---------- desktop breakpoints ---------- */
+@media (min-width: 560px) { .kznav__cta { display: inline-flex; } }
+
+@media (min-width: 1024px) {
+  .kznav { --kz-h: 72px; }
+  .kznav__burger { display: none; }
+  .kznav__nav { display: flex; align-items: center; gap: 2px; list-style: none; }
+  .kznav__item { position: relative; }
+  .kznav__link {
+    display: flex; align-items: center; gap: 5px; min-height: 44px;
+    padding: 0 13px; color: var(--kz-ink-2); text-decoration: none;
+    font-weight: 600; font-size: 14px; border-radius: 9px;
+    background: transparent; border: 0; cursor: pointer; font-family: var(--kz-font);
+    transition: color .15s ease, background .15s ease;
+  }
+  .kznav__link:hover { color: var(--kz-ink); background: var(--kz-mint-soft); }
+  .kznav__link[aria-current="page"] { color: var(--kz-mint); }
+  .kznav__chev { width: 11px; height: 11px; stroke: currentColor; transition: transform .18s ease; }
+  .kznav__item.is-open .kznav__chev { transform: rotate(180deg); }
+
+  /* dropdown panel: всегда в DOM, скрыт визуально */
+  .kznav__panel {
+    position: absolute; top: calc(100% + 8px); left: 0; min-width: 340px;
+    background: #fff; border: 1px solid var(--kz-line); border-radius: 14px;
+    box-shadow: 0 18px 48px rgba(12, 27, 51, 0.14);
+    padding: 8px; opacity: 0; visibility: hidden; transform: translateY(6px);
+    transition: opacity .16s ease, transform .16s ease, visibility .16s;
+  }
+  .kznav__item.is-open .kznav__panel { opacity: 1; visibility: visible; transform: translateY(0); }
+  .kznav__panel-link {
+    display: flex; align-items: baseline; justify-content: space-between; gap: 14px;
+    padding: 11px 12px; min-height: 44px; border-radius: 9px; text-decoration: none;
+  }
+  .kznav__panel-link:hover { background: var(--kz-mint-soft); }
+  .kznav__panel-name { font-weight: 600; font-size: 14px; color: var(--kz-ink); display: block; }
+  .kznav__panel-desc { font-weight: 500; font-size: 12px; color: var(--kz-ink-3); display: block; margin-top: 2px; }
+  .kznav__panel-price { font-weight: 700; font-size: 13px; color: var(--kz-mint); white-space: nowrap; }
+  .kznav__panel-all {
+    display: flex; align-items: center; min-height: 44px; padding: 9px 12px; margin-top: 4px;
+    border-top: 1px solid var(--kz-line); font-weight: 700; font-size: 13.5px;
+    color: var(--kz-mint); text-decoration: none; border-radius: 0 0 9px 9px;
+  }
+  .kznav__panel-all:hover { background: var(--kz-mint-soft); }
+}
+@media (min-width: 1180px) { .kznav__phone { display: block; } .kznav__tg { display: inline-flex; } }
+
+/* ---------- mobile drawer ---------- */
+.kzdrawer {
+  position: fixed; inset: 0; z-index: 10000; visibility: hidden;
+}
+.kzdrawer.is-open { visibility: visible; }
+.kzdrawer__overlay {
+  position: absolute; inset: 0; background: rgba(12, 27, 51, 0.45);
+  opacity: 0; transition: opacity .2s ease; border: 0; cursor: default; width: 100%;
+}
+.kzdrawer.is-open .kzdrawer__overlay { opacity: 1; }
+.kzdrawer__panel {
+  position: absolute; top: 0; right: 0; bottom: 0; width: min(360px, 92vw);
+  background: var(--kz-bg); display: flex; flex-direction: column;
+  transform: translateX(100%); transition: transform .22s ease;
+  box-shadow: -12px 0 40px rgba(12, 27, 51, 0.18); overflow-y: auto;
+}
+.kzdrawer.is-open .kzdrawer__panel { transform: translateX(0); }
+.kzdrawer__head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 10px 10px 18px; border-bottom: 1px solid var(--kz-line);
+}
+.kzdrawer__title { font: 800 15px/1 var(--kz-font); color: var(--kz-ink); }
+.kzdrawer__close {
+  width: 44px; height: 44px; border: 0; border-radius: 10px; background: transparent;
+  color: var(--kz-ink); cursor: pointer; display: flex; align-items: center; justify-content: center;
+}
+.kzdrawer__close svg { width: 20px; height: 20px; stroke: currentColor; }
+.kzdrawer__nav { padding: 8px 10px; flex: 1; }
+.kzdrawer__group { border-bottom: 1px solid var(--kz-line); }
+.kzdrawer__group:last-child { border-bottom: 0; }
+.kzdrawer__link, .kzdrawer__acc {
+  display: flex; align-items: center; justify-content: space-between; width: 100%;
+  min-height: 48px; padding: 12px 10px; color: var(--kz-ink); text-decoration: none;
+  font: 700 15px/1.3 var(--kz-font); background: transparent; border: 0;
+  cursor: pointer; text-align: left; border-radius: 10px;
+}
+.kzdrawer__link:hover, .kzdrawer__acc:hover { background: var(--kz-mint-soft); }
+.kzdrawer__acc svg { width: 14px; height: 14px; stroke: currentColor; transition: transform .18s ease; flex-shrink: 0; }
+.kzdrawer__acc[aria-expanded="true"] svg { transform: rotate(180deg); }
+.kzdrawer__sub { display: none; padding: 0 0 8px; list-style: none; }
+.kzdrawer__acc[aria-expanded="true"] + .kzdrawer__sub { display: block; }
+.kzdrawer__sub-link {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 10px;
+  min-height: 44px; padding: 10px 10px 10px 22px; text-decoration: none; border-radius: 10px;
+}
+.kzdrawer__sub-link:hover { background: var(--kz-mint-soft); }
+.kzdrawer__sub-name { font: 600 14px/1.35 var(--kz-font); color: var(--kz-ink-2); }
+.kzdrawer__sub-price { font: 700 13px/1 var(--kz-font); color: var(--kz-mint); white-space: nowrap; }
+.kzdrawer__contacts {
+  padding: 14px 18px 18px; border-top: 1px solid var(--kz-line);
+  display: flex; flex-direction: column; gap: 10px;
+}
+.kzdrawer__phone { text-decoration: none; }
+.kzdrawer__phone-num { display: block; font: 800 18px/1.2 var(--kz-font); color: var(--kz-ink); }
+.kzdrawer__phone-hours { display: block; font: 500 12px/1.4 var(--kz-font); color: var(--kz-ink-3); }
+.kzdrawer__cta {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 50px; background: var(--kz-navy); color: #fff; text-decoration: none;
+  font: 700 15px/1 var(--kz-font); border-radius: 999px;
+}
+.kzdrawer__cta:hover { background: var(--kz-mint); }
+.kzdrawer__tg-line { display: flex; align-items: center; gap: 8px; color: #229ED9;
+  text-decoration: none; font: 600 14px/1 var(--kz-font); min-height: 44px; }
+.kzdrawer__tg-line svg { width: 18px; height: 18px; fill: currentColor; }
+
+/* блокировка скролла под drawer */
+.kz-scroll-lock { overflow: hidden !important; }
+
+/* ---------- footer ---------- */
+.kzfoot { background: var(--kz-navy-2); color: #cfd8e0; font-size: 14px; line-height: 1.55; margin-top: 48px; }
+.kzfoot a { color: #cfd8e0; text-decoration: none; }
+.kzfoot a:hover { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+.kzfoot__cta {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+}
+.kzfoot__cta-in {
+  max-width: 1220px; margin: 0 auto; padding: 26px 16px;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; justify-content: space-between;
+}
+.kzfoot__cta-text { font: 700 17px/1.35 var(--kz-font); color: #fff; max-width: 520px; }
+.kzfoot__cta-text small { display: block; font: 500 13px/1.4 var(--kz-font); color: #9fb0bf; margin-top: 4px; }
+.kzfoot__cta-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 18px; }
+.kzfoot__cta-btn {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 22px;
+  background: var(--kz-mint-2); color: #fff !important; border-radius: 999px;
+  font: 700 14.5px/1 var(--kz-font); text-decoration: none !important;
+}
+.kzfoot__cta-btn:hover { background: var(--kz-mint); }
+.kzfoot__cta-phone { font: 700 16px/1 var(--kz-font); color: #fff !important; white-space: nowrap; min-height: 44px; display: inline-flex; align-items: center; }
+.kzfoot__grid {
+  max-width: 1220px; margin: 0 auto; padding: 34px 16px 10px;
+  display: grid; gap: 26px; grid-template-columns: 1fr;
+}
+@media (min-width: 640px)  { .kzfoot__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .kzfoot__grid { grid-template-columns: repeat(4, 1fr); } }
+.kzfoot__h { font: 800 13px/1 var(--kz-font); color: #fff; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 13px; }
+.kzfoot__col ul { list-style: none; }
+.kzfoot__col li { margin: 0; }
+.kzfoot__col a { display: inline-flex; align-items: center; min-height: 34px; font-weight: 500; }
+.kzfoot__legal {
+  max-width: 1220px; margin: 0 auto; padding: 18px 16px 26px;
+  border-top: 1px solid rgba(255, 255, 255, 0.09); margin-top: 22px;
+  display: flex; flex-wrap: wrap; gap: 8px 22px; align-items: center;
+  font-size: 12.5px; color: #9fb0bf;
+}
+.kzfoot__legal a { color: #9fb0bf; }
+
+/* ---------- a11y: focus / reduced motion ---------- */
+.kznav a:focus-visible, .kznav button:focus-visible,
+.kzdrawer a:focus-visible, .kzdrawer button:focus-visible,
+.kzfoot a:focus-visible, .kz-skip:focus-visible {
+  outline: 2px solid var(--kz-mint-2); outline-offset: 2px; border-radius: 6px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .kznav, .kznav *, .kzdrawer, .kzdrawer *, .kzfoot, .kzfoot *, .kz-skip {
+    transition: none !important; animation: none !important;
+  }
+}
+
+
+/* ============================================================
+   Защита от глобальных стилей страниц (специфичность через ID).
+   Страницы двух поколений задают свои a{color}, ul{list-style}, h2{…} —
+   навигация обязана выглядеть одинаково на всех 30 страницах.
+   ============================================================ */
+#kzHeader a, #kzHeader button { text-decoration: none; }
+#kzHeader .kznav__link { color: var(--kz-ink-2); }
+#kzHeader .kznav__link:hover { color: var(--kz-ink); }
+#kzHeader .kznav__logo, #kzHeader .kznav__logo-name { color: var(--kz-ink); }
+#kzHeader .kznav__logo-tag { color: var(--kz-ink-3); }
+#kzHeader .kznav__phone-num { color: var(--kz-ink); }
+#kzHeader .kznav__phone-hours { color: var(--kz-ink-3); }
+#kzHeader .kznav__cta { color: #fff; background: var(--kz-navy); }
+#kzHeader .kznav__cta:hover { background: var(--kz-mint); }
+#kzHeader .kznav__panel-name { color: var(--kz-ink); }
+#kzHeader .kznav__panel-desc { color: var(--kz-ink-3); }
+#kzHeader .kznav__panel-price, #kzHeader .kznav__panel-all { color: var(--kz-mint); }
+#kzHeader ul.kznav__nav { list-style: none; margin: 0; padding: 0; }
+#kzDrawer a { text-decoration: none; }
+#kzDrawer .kzdrawer__link, #kzDrawer .kzdrawer__acc, #kzDrawer .kzdrawer__phone-num { color: var(--kz-ink); }
+#kzDrawer .kzdrawer__sub-name { color: var(--kz-ink-2); }
+#kzDrawer .kzdrawer__sub-price { color: var(--kz-mint); }
+#kzDrawer .kzdrawer__cta { color: #fff; background: var(--kz-navy); }
+#kzDrawer ul { list-style: none; margin: 0; padding: 0; }
+#kzFooter a { color: #cfd8e0; text-decoration: none; }
+#kzFooter a:hover { color: #fff; text-decoration: underline; }
+#kzFooter .kzfoot__cta-btn { color: #fff; background: var(--kz-mint-2); }
+#kzFooter .kzfoot__cta-btn:hover { background: var(--kz-mint); }
+#kzFooter .kzfoot__cta-phone, #kzFooter .kzfoot__cta-text { color: #fff; }
+#kzFooter .kzfoot__h { color: #fff; }
+#kzFooter .kzfoot__legal, #kzFooter .kzfoot__legal a { color: #9fb0bf; }
+#kzFooter ul { list-style: none; margin: 0; padding: 0; }
+#kzFooter h2.kzfoot__h { font-size: 13px; margin: 0 0 13px; border: 0; }
+
+/* Волна 2: типографика против ID-правил Tilda-страниц (#allrecords a { … }) */
+#kzHeader, #kzHeader *, #kzDrawer, #kzDrawer *, #kzFooter, #kzFooter * { font-family: var(--kz-font); }
+#kzHeader .kznav__link { font-weight: 600; font-size: 14px; line-height: 1.3; min-height: 44px; }
+#kzHeader .kznav__logo-name { font-weight: 800; font-size: 17px; }
+#kzHeader .kznav__logo-tag { font-weight: 500; font-size: 10.5px; }
+#kzHeader .kznav__phone-num { font-weight: 700; font-size: 14.5px; }
+#kzHeader .kznav__phone-hours { font-size: 11px; }
+#kzHeader .kznav__cta { font-weight: 700; font-size: 13.5px; min-height: 44px; }
+#kzHeader .kznav__panel-name { font-weight: 600; font-size: 14px; }
+#kzHeader .kznav__panel-desc { font-weight: 500; font-size: 12px; }
+#kzHeader .kznav__panel-price { font-weight: 700; font-size: 13px; }
+#kzHeader .kznav__panel-all { font-weight: 700; font-size: 13.5px; min-height: 44px; }
+#kzHeader .kznav__panel-link { min-height: 44px; }
+#kzDrawer .kzdrawer__link, #kzDrawer .kzdrawer__acc { font-weight: 700; font-size: 15px; min-height: 48px; }
+#kzDrawer .kzdrawer__sub-link { min-height: 44px; }
+#kzDrawer .kzdrawer__sub-name { font-weight: 600; font-size: 14px; }
+#kzDrawer .kzdrawer__sub-price { font-weight: 700; font-size: 13px; }
+#kzDrawer .kzdrawer__phone-num { font-weight: 800; font-size: 18px; }
+#kzDrawer .kzdrawer__cta { font-weight: 700; font-size: 15px; min-height: 50px; }
+#kzFooter { font-size: 14px; line-height: 1.55; }
+#kzFooter .kzfoot__cta-text { font-weight: 700; font-size: 17px; }
+#kzFooter .kzfoot__cta-text small { font-weight: 500; font-size: 13px; }
+#kzFooter .kzfoot__cta-btn { font-weight: 700; font-size: 14.5px; min-height: 48px; }
+#kzFooter .kzfoot__col a { font-weight: 500; min-height: 34px; }
+#kzFooter .kzfoot__legal { font-size: 12.5px; }
+#kzDrawer .kzdrawer__tg-line, #kzHeader .kznav__tg { color: #229ED9; }
+
+
+/* ---------- breadcrumbs (R1.05) ---------- */
+#kzCrumbs { font-family: var(--kz-font, 'Manrope', -apple-system, sans-serif);
+  background: #FAF6EC; border-bottom: 1px solid rgba(15, 24, 21, 0.06); }
+#kzCrumbs .kzcrumbs__in { max-width: 1220px; margin: 0 auto; padding: 8px 16px; }
+#kzCrumbs ol { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 2px 0; }
+#kzCrumbs li { display: flex; align-items: center; min-height: 28px; font-size: 12.5px; font-weight: 500;
+  color: #6b7178; margin: 0; padding: 0; }
+#kzCrumbs li + li::before { content: "›"; margin: 0 7px; color: #b3b8bd; }
+#kzCrumbs a { color: #6b7178; text-decoration: none; font-weight: 500; }
+#kzCrumbs a:hover { color: #15846B; text-decoration: underline; text-underline-offset: 3px; }
+#kzCrumbs [aria-current="page"] { color: #3a4046; font-weight: 600;
+  max-width: 72vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: inline-block; }
+#kzCrumbs a:focus-visible { outline: 2px solid #1FA887; outline-offset: 2px; border-radius: 4px; }
+/* тёмные страницы: крошки наследуют читаемость через отдельный модификатор при необходимости (Phase 2) */
