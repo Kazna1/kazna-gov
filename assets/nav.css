@@ -67,9 +67,9 @@
 .kznav__tools { display: flex; align-items: center; gap: 10px; margin-left: auto; }
 
 /* phone */
-.kznav__phone { display: none; text-decoration: none; text-align: right; min-height: 44px; padding: 4px 2px; }
-.kznav__phone-num { display: block; font-weight: 700; font-size: 14.5px; color: var(--kz-ink); white-space: nowrap; }
-.kznav__phone-hours { display: block; font-size: 11px; color: var(--kz-ink-3); }
+.kznav__phone { display: none; text-decoration: none; text-align: right; min-height: 44px; padding: 4px 2px; align-items: center; }
+.kznav__phone-num { display: block; font-weight: 600; font-size: 14px; color: var(--kz-ink-2, #3a4046); white-space: nowrap; }
+.kznav__phone-hours { display: none; } /* часы времени работы — в drawer и футере; в десктоп-шапке телефон живёт в логике пунктов меню */
 .kznav__phone:hover .kznav__phone-num { color: var(--kz-mint); }
 
 /* telegram */
@@ -142,7 +142,7 @@
   }
   .kznav__panel-all:hover { background: var(--kz-mint-soft); }
 }
-@media (min-width: 1180px) { .kznav__phone { display: block; } .kznav__tg { display: inline-flex; } }
+@media (min-width: 1180px) { .kznav__phone { display: flex; } .kznav__tg { display: inline-flex; } }
 
 /* ---------- mobile drawer ---------- */
 .kzdrawer {
@@ -274,7 +274,7 @@
 #kzHeader .kznav__link:hover { color: var(--kz-ink); }
 #kzHeader .kznav__logo, #kzHeader .kznav__logo-name { color: var(--kz-ink); }
 #kzHeader .kznav__logo-tag { color: var(--kz-ink-3); }
-#kzHeader .kznav__phone-num { color: var(--kz-ink); }
+#kzHeader .kznav__phone-num { color: var(--kz-ink-2, #3a4046); }
 #kzHeader .kznav__phone-hours { color: var(--kz-ink-3); }
 #kzHeader .kznav__cta { color: #fff; background: var(--kz-navy); }
 #kzHeader .kznav__cta:hover { background: var(--kz-mint); }
@@ -303,7 +303,7 @@
 #kzHeader .kznav__link { font-weight: 600; font-size: 14px; line-height: 1.3; min-height: 44px; }
 #kzHeader .kznav__logo-name { font-weight: 800; font-size: 17px; }
 #kzHeader .kznav__logo-tag { font-weight: 500; font-size: 10.5px; }
-#kzHeader .kznav__phone-num { font-weight: 700; font-size: 14.5px; }
+#kzHeader .kznav__phone-num { font-weight: 600; font-size: 14px; }
 #kzHeader .kznav__phone-hours { font-size: 11px; }
 #kzHeader .kznav__cta { font-weight: 700; font-size: 13.5px; min-height: 44px; }
 #kzHeader .kznav__panel-name { font-weight: 600; font-size: 14px; }
@@ -336,8 +336,8 @@
 #kzCrumbs li + li::before { content: "›"; margin: 0 7px; color: #b3b8bd; }
 #kzCrumbs a { color: #6b7178; text-decoration: none; font-weight: 500; }
 #kzCrumbs a:hover { color: #15846B; text-decoration: underline; text-underline-offset: 3px; }
-#kzCrumbs [aria-current="page"] { color: #3a4046; font-weight: 600;
-  max-width: 72vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: inline-block; }
+#kzCrumbs [aria-current="page"] { color: #8a9097; font-weight: 500;
+  max-width: min(46ch, 52vw); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: inline-block; }
 #kzCrumbs a:focus-visible { outline: 2px solid #1FA887; outline-offset: 2px; border-radius: 4px; }
 /* тёмные страницы: крошки наследуют читаемость через отдельный модификатор при необходимости (Phase 2) */
 
@@ -391,7 +391,6 @@
   .kznav__link { padding: 0 8px; font-size: 13.5px; }
   .kznav__inner { gap: 8px; }
   .kznav__cta { padding: 0 14px; font-size: 13.5px; }
-  .kznav__phone-hours { display: none; }
   .kznav__tg { display: none; }
 }
 @media (min-width: 1024px) and (max-width: 1280px) {
