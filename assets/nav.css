@@ -368,7 +368,7 @@
 #kzCrumbs li + li::before { content: "›"; margin: 0 7px; color: #b3b8bd; }
 #kzCrumbs a { color: #6b7178; text-decoration: none; font-weight: 500; }
 #kzCrumbs a:hover { color: #15846B; text-decoration: underline; text-underline-offset: 3px; }
-#kzCrumbs [aria-current="page"] { color: #6b7178; font-weight: 500;
+#kzCrumbs [aria-current="page"] { color: #6b7178; font-weight: 500; line-height: 28px;
   max-width: min(46ch, 52vw); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: inline-block; }
 #kzCrumbs a:focus-visible { outline: 2px solid #1FA887; outline-offset: 2px; border-radius: 4px; }
 /* тёмные страницы: крошки наследуют читаемость через отдельный модификатор при необходимости (Phase 2) */
@@ -452,3 +452,11 @@
 #kzHeader .kznav__cta { box-shadow: 0 1px 2px rgba(8, 20, 16, .18); transition: box-shadow .25s, transform .2s, background .25s; }
 #kzHeader .kznav__cta:hover { box-shadow: 0 4px 18px rgba(31, 168, 135, .35), 0 1px 2px rgba(8, 20, 16, .2); transform: translateY(-1px); }
 #kzHeader .kznav__cta:active { transform: translateY(0); }
+
+/* ── Мобильный низ экрана: без хаоса кнопок ──
+   Стики-бар услуг уже содержит телефон и CTA — плавающий Telegram дублирует его.
+   Чип «Настройки cookies» на мобиле уходит: та же функция доступна из футера. */
+@media (max-width: 768px) {
+  body:has(.kzop2__sticky) .kg-tg-fab { display: none !important; }
+  .kg-cookie-reset { display: none !important; }
+}
