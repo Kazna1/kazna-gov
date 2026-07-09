@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://kazna-gov.ru/</loc><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://kazna-gov.ru/</loc><lastmod>2026-06-19</lastmod><priority>1.0</priority></url>
+  <url><loc>https://kazna-gov.ru/about/</loc><lastmod>2026-06-24</lastmod><priority>0.8</priority></url>
   <url><loc>https://kazna-gov.ru/agreement</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/api/</loc><lastmod>2026-07-09</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog</loc><lastmod>2026-06-19</lastmod></url>
@@ -20,15 +21,18 @@
   <url><loc>https://kazna-gov.ru/blog/igk-v-platezhah-kaznacheystva/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/income_codes/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/izmeneniya-platezhek-kaznachejstvo-2026/</loc><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://kazna-gov.ru/blog/kak-otkryt-licevoy-schet-71/</loc><lastmod>2026-07-08</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kak-rasschitat-summu-avansa-po-goskontraktu/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kakie-kontrakty-popadayut-pod-kaznachejskoe-soprovozhdenie/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kalendar-otchetnosti-podryadchika-ks-2026/</loc><lastmod>2026-07-06</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kartochka-obraztsov-podpisey-ufk/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kaznacheyskiy-schet-2026-riski-biznesa/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kaznacheyskiy-schet-i-raschetnyy-raznitsa/</loc><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-obespechenie-obyazatelstv/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-2026-opredeleniya/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-223-fz/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid/</loc><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-44-fz-2026-polnyy-gid</loc><lastmod>2026-06-20</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-dlya-ip/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-it-goskontraktov/</loc><lastmod>2026-06-19</lastmod></url>
@@ -43,45 +47,240 @@
   <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-v-dogovore/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-v-ekaterinburge-polnyy-gid/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-v-kazani-polnyy-gid/</loc><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-v-krasnodare-polnyy-gid/</loc><lastmod>2026-06-20</lastmod></url>
+  <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-v-krasnoyarske-polnyy-gid/</loc><lastmod>2026-06-20</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-v-moskovskoy-oblasti-polnyy-gid/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-v-moskve-polnyy-gid/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-v-nizhnem-novgorode-polnyy-gid/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-v-novosibirske-polnyy-gid/</loc><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-v-omske-polnyy-gid/</loc><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-v-penze-polnyy-gid/</loc><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-v-permi-polnyy-gid/</loc><lastmod>2026-06-22</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-v-rostove-na-donu-polnyy-gid/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-v-samare-polnyy-gid/</loc><lastmod>2026-06-19</lastmod></url>
-<url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-v-voronezhe-polnyy-gid/</loc><lastmod>2026-06-19</lastmod></url>
-<url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-v-omske-polnyy-gid/</loc><lastmod>2026-06-19</lastmod></url>
-<url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-v-penze-polnyy-gid/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-v-sankt-peterburge-polnyy-gid/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-v-ufe-polnyy-gid/</loc><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-v-voronezhe-polnyy-gid/</loc><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-vs-bankovskoe-soprovozhdenie-otlichiya/</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/keys-ks-restavratsiya-moskva/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kody-kaznacheyskogo-soprovozhdeniya/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kody-vozmeshcheniya-rashodov/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/ks_2025/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/limit-na-ks-schete-formirovanie-i-kontrol/</loc><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://kazna-gov.ru/blog/litsevoy-schet-71/</loc><lastmod>2026-06-25</lastmod></url>
+  <url><loc>https://kazna-gov.ru/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta/</loc><lastmod>2026-06-22</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/naznachenie-platezha-kaznachejstvo/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/ne-otkryvaetsya-kaznacheyskiy-schet-prichiny-otkaza-2026/</loc><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://kazna-gov.ru/blog/novyy-poryadok-kaznacheyskogo-soprovozhdeniya-s-1-sentyabrya-2026/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/podvodnye-kamni-kaznacheyskogo-soprovozhdeniya/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/razdelnyj-uchet-goz-polnyy-guide-2026/</loc><lastmod>2026-07-06</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/razdelnyy-uchet-po-44-fz-vs-275-fz-otlichiya/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/registratsiya-v-giis-elektronnyy-byudzhet-podryadchika/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/rekvizity-kaznacheyskogo-scheta/</loc><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://kazna-gov.ru/blog/sanktsionirovanie-operatsiy-kaznacheystvom/</loc><lastmod>2026-06-22</lastmod></url>
+  <url><loc>https://kazna-gov.ru/blog/sertifikat-ecp-kaznacheystva/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/smena-rukovoditelya-pri-deystvuyushchem-ks-schete/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/soprovozhdenie-goskontraktov-pod-kluch/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/sroki-rassmotreniya-dokumentov-v-ufk-tablitsa/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/svedeniya-ob-operatsiyah-s-tselevymi-sredstvami/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/tofk/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/tseny-na-kaznacheyskoe-soprovozhdenie-2026/</loc><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://kazna-gov.ru/blog/tsepochka-kaznacheyskogo-soprovozhdeniya/</loc><lastmod>2026-06-22</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/ufk-zaderzhivaet-platezh-chto-delat/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/upolnomochennye-litsa-po-ks-schetu-kto-i-otvetstvennost/</loc><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://kazna-gov.ru/blog/vhod-v-elektronnyy-byudzhet-po-sertifikatu/</loc><lastmod>2026-06-24</lastmod></url>
+  <url><loc>https://kazna-gov.ru/blog/vidy-cen-goz/</loc><lastmod>2026-06-20</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/vozvrat-avansa-po-goskontraktu-kaznacheystvo/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/vozvrat-platezha-kaznachejstvo-chto-delat/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/zakrytie-kaznacheyskogo-scheta-posle-kontrakta/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/zayavlenie-na-otkrytie-kaznacheyskogo-scheta/</loc><lastmod>2026-06-19</lastmod></url>
-  <url><loc>https://kazna-gov.ru/expert/stella/</loc><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://kazna-gov.ru/giis/</loc><lastmod>2026-07-09</lastmod><priority>0.8</priority></url>
+  <url><loc>https://kazna-gov.ru/glossary/</loc><lastmod>2026-07-09</lastmod><priority>0.8</priority></url>
+  <url><loc>https://kazna-gov.ru/glossary/223-fz/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/275-fz/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/44-fz/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/63-fz/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/akt-sdachi-priyomki/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/ast-goz/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/avans/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/bankovskoe-soprovozhdenie/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/bk-rf-242/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/dokumenty-osnovaniya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/doverennost-dlya-ufk/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/edinstvennyy-postavshchik/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/eis/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/eks/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/elektronnaya-podpis/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/ens/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/epbs/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/etap-kontrakta/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/federalnoe-kaznacheystvo/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/finansovyy-organ/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/fns-uc/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/giis-elektronnyy-byudzhet/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/girbo/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/glava-po-bk/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/golovnoy-ispolnitel/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/goskontrakt/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/goz/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/grant/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/grbs/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/identifikator-soglasheniya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/igk/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/ip-pri-ks/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/ispolnitel-po-kontraktu/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/kartochka-obraztsov-podpisey-termin/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/kaznacheyskiy-monitoring/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/kaznacheyskiy-platezh/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/kaznacheyskoe-obespechenie-obyazatelstv/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/kaznacheyskoe-soprovozhdenie/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/kbk/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/kod-71/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/kod-tselevykh-sredstv/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/kody-9xxx/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/kody-napravleniy-rashodovaniya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/kody-postupleniy/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/kofk/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/kontinent-tls/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/kosgu/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/kriptopro-csp/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/ks-2-ks-3/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/ks-schet/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/kvr/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/limit-na-ks-schete/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/mchd/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/minfin/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/munitsipalnyy-kontrakt/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/naznachenie-platezha/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/nds-pri-ks/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/neispolzovannyy-ostatok/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/netselevoe-raskhodovanie/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/norma-pribyli-goz/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/nubp/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/okpo/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/oktmo/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/opis-dokumentov/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/opk/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/opornyy-bank/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/otchet-ob-ispolzovanii-subsidii/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/otdelnyy-schet-goz/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/otkaz-v-sanktsionirovanii/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/otzyv-rasporyazheniya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/perechislenie-pribyli/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/pereoformlenie-scheta/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/platezhnoe-poruchenie/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/poluchatel-subsidii/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/porog-kaznacheyskogo-soprovozhdeniya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/pp-1465/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/pp-2053/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/prikaz-214n/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/prikaz-21n/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/prikaz-44n/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/prim-1/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/priostanovlenie-operatsiy/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/promezhutochnaya-otchetnost-goz/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/pryamoy-platezh/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/psb/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/raschetnyy-schet/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/raskhodnaya-deklaratsiya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/rasporyazhenie-o-platezhe/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/rasshirennoe-kaznacheyskoe-soprovozhdenie/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/razdelnyy-uchet/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/reestr-kontraktov/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/registratsiya-v-eb/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/rekvizity-ks-scheta/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/rezervirovanie-scheta/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/sanktsionirovanie/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/schet-faktura-upd/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/shtrafy-koap/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/soglashenie-o-subsidii/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/sroki-rassmotreniya-ufk/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/subpodryadchik/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/subsidiya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/sufd/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/svedeniya-0501213/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/svodnyy-reestr/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/tofk/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/tselevye-sredstva/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/tsepochka-kooperatsii/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/tsifrovoy-kontrakt/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/ufk/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/upolnomochennoe-litso/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/vidy-tsen-goz/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/voennoe-predstavitelstvo/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/vozmeshchenie-rashodov/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/vozvrat-avansa/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/vozvrat-platezha/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/vypiska-iz-litsevogo-scheta/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/zakazchik/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/zakon-o-federalnom-byudzhete/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/zakrytie-scheta/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/glossary/zayavlenie-na-otkrytie-ls/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/goz/</loc><lastmod>2026-07-09</lastmod><priority>0.8</priority></url>
+  <url><loc>https://kazna-gov.ru/instrumenty/</loc><lastmod>2026-06-24</lastmod><priority>0.8</priority></url>
+  <url><loc>https://kazna-gov.ru/instrumenty/diagnostika-kontrakta/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/instrumenty/diagnostika-platezha/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/instrumenty/generator-chek-lista/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/instrumenty/marshrutizator-platezha/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/instrumenty/podbor-litsevogo-scheta/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/instrumenty/proverka-goz/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/instrumenty/proverka-komplekta-dokumentov/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/instrumenty/proverka-neobhodimosti-ks/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/instrumenty/proverka-sanktsionirovaniya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/instrumenty/proverka-subsidii/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/kaznacheyskoe-soprovozhdenie/</loc><lastmod>2026-07-09</lastmod><priority>0.8</priority></url>
+  <url><loc>https://kazna-gov.ru/keysy/</loc><lastmod>2026-06-24</lastmod><priority>0.7</priority></url>
+  <url><loc>https://kazna-gov.ru/novosti/</loc><lastmod>2026-07-06</lastmod></url>
+  <url><loc>https://kazna-gov.ru/novosti/malye-zakupki-reestr-kontraktov-s-01-07-2026/</loc><lastmod>2026-07-06</lastmod></url>
+  <url><loc>https://kazna-gov.ru/novosti/mchd-novye-trebovaniya-2026/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/novosti/novye-shtrafy-kaznacheyskoe-soprovozhdenie-15-49-15-37-1/</loc><lastmod>2026-06-29</lastmod></url><url><loc>https://kazna-gov.ru/novosti/mchd-novye-trebovaniya-2026/</loc><lastmod>2026-06-24</lastmod></url>
+  <url><loc>https://kazna-gov.ru/novosti/novyy-poryadok-sanktsionirovaniya-s-01-09-2026/</loc><lastmod>2026-06-24</lastmod></url>
+  <url><loc>https://kazna-gov.ru/novosti/pp-2053-perechislenie-sredstv-ks-2026/</loc><lastmod>2026-06-24</lastmod></url>
+  <url><loc>https://kazna-gov.ru/novosti/promezhutochnaya-otchetnost-goz-s-01-07-2026/</loc><lastmod>2026-07-06</lastmod></url>
+  <url><loc>https://kazna-gov.ru/obraztsy/</loc><lastmod>2026-06-24</lastmod><priority>0.8</priority></url>
+  <url><loc>https://kazna-gov.ru/obraztsy/chek-list-otkrytiya-scheta/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/obraztsy/chek-list-proverki-dokumentov/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/obraztsy/doverennost-v-ufk/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/obraztsy/formulirovka-ks-v-dogovor/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/obraztsy/kartochka-obraztsov-podpisey/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/obraztsy/komplekt-dokumentov-goz/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/obraztsy/komplekt-dokumentov-otkrytie/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/obraztsy/komplekt-dokumentov-subsidii/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/obraztsy/mchd-dlya-kaznacheystva/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/obraztsy/pismo-zapros-v-ufk/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/obraztsy/platezhnoe-poruchenie-obrazec/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/obraztsy/poyasnenie-pri-vozvrate-platezha/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/obraztsy/poyasnenie-v-ufk/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/obraztsy/prikaz-o-razdelnom-uchete-goz/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/obraztsy/reestr-dokumentov-po-kontraktu/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/obraztsy/shablon-otzyva-rasporyazheniya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/obraztsy/soprovoditelnoe-pismo-v-ufk/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/obraztsy/svedeniya-ob-operatsiyah-0501213/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/obraztsy/zayavlenie-na-otkrytie-litsevogo-scheta/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/obraztsy/zayavlenie-na-zakrytie-litsevogo-scheta/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/oshibki/</loc><lastmod>2026-07-08</lastmod></url>
+  <url><loc>https://kazna-gov.ru/oshibki/ecp-ne-podhodit-dlya-kaznacheystva/</loc><lastmod>2026-07-08</lastmod></url>
+  <url><loc>https://kazna-gov.ru/oshibki/mchd-ne-prohodit-proverku/</loc><lastmod>2026-07-08</lastmod></url>
+  <url><loc>https://kazna-gov.ru/oshibki/necelevoe-rashodovanie-sredstv/</loc><lastmod>2026-07-08</lastmod></url>
+  <url><loc>https://kazna-gov.ru/oshibki/net-razdelnogo-ucheta-goz/</loc><lastmod>2026-07-08</lastmod></url>
+  <url><loc>https://kazna-gov.ru/oshibki/net-v-svodnom-reestre/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/oshibki/nevernoe-naznachenie-platezha/</loc><lastmod>2026-07-08</lastmod></url>
+  <url><loc>https://kazna-gov.ru/oshibki/nevernyy-kod-napravleniya-rashodov/</loc><lastmod>2026-07-08</lastmod></url>
+  <url><loc>https://kazna-gov.ru/oshibki/oshibka-v-igk-platezh-ne-prohodit/</loc><lastmod>2026-07-08</lastmod></url>
+  <url><loc>https://kazna-gov.ru/oshibki/ufk-ne-soglasuet-rashody-po-subsidii/</loc><lastmod>2026-07-08</lastmod></url>
+  <url><loc>https://kazna-gov.ru/oshibki/ufk-ne-utverzhdaet-svedeniya/</loc><lastmod>2026-07-08</lastmod></url>
+  <url><loc>https://kazna-gov.ru/oshibki/ufk-otkazalo-v-sanktsionirovanii/</loc><lastmod>2026-07-08</lastmod></url>
+  <url><loc>https://kazna-gov.ru/oshibki/ufk-vernulo-kartochku-podpisey/</loc><lastmod>2026-07-08</lastmod></url>
+  <url><loc>https://kazna-gov.ru/oshibki/zatyanulos-otkrytie-scheta/</loc><lastmod>2026-07-08</lastmod></url>
+  <url><loc>https://kazna-gov.ru/otchetnost/</loc><lastmod>2026-07-09</lastmod><priority>0.8</priority></url>
+  <url><loc>https://kazna-gov.ru/otzyvy/</loc><lastmod>2026-06-24</lastmod><priority>0.7</priority></url>
   <url><loc>https://kazna-gov.ru/personal_data_policy</loc><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://kazna-gov.ru/platezhi/</loc><lastmod>2026-07-09</lastmod><priority>0.8</priority></url>
+  <url><loc>https://kazna-gov.ru/razdelnyj-uchet/</loc><lastmod>2026-07-09</lastmod><priority>0.8</priority></url>
   <url><loc>https://kazna-gov.ru/regiony/</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/review</loc><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://kazna-gov.ru/sanktsionirovanie/</loc><lastmod>2026-07-09</lastmod><priority>0.8</priority></url>
+  <url><loc>https://kazna-gov.ru/scheta/</loc><lastmod>2026-07-09</lastmod><priority>0.8</priority></url>
   <url><loc>https://kazna-gov.ru/services/conduct</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/services/open</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/services/postpayment</loc><lastmod>2026-06-19</lastmod></url>
@@ -90,507 +289,308 @@
   <url><loc>https://kazna-gov.ru/services/vosstanovlenie</loc><lastmod>2026-07-03</lastmod></url>
   <url><loc>https://kazna-gov.ru/stoimost</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/stuff</loc><lastmod>2026-06-19</lastmod></url>
-  <url><loc>https://kazna-gov.ru/uslugi</loc><lastmod>2026-06-19</lastmod></url>
-  <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-44-fz-2026-polnyy-gid</loc><lastmod>2026-06-20</lastmod></url>
-<url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-v-krasnodare-polnyy-gid/</loc><lastmod>2026-06-20</lastmod></url>
-<url><loc>https://kazna-gov.ru/blog/vidy-cen-goz/</loc><lastmod>2026-06-20</lastmod></url>
-<url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-v-krasnoyarske-polnyy-gid/</loc><lastmod>2026-06-20</lastmod></url>
-<url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-v-permi-polnyy-gid/</loc><lastmod>2026-06-22</lastmod></url>
-<url><loc>https://kazna-gov.ru/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta/</loc><lastmod>2026-06-22</lastmod></url>
-<url><loc>https://kazna-gov.ru/blog/tsepochka-kaznacheyskogo-soprovozhdeniya/</loc><lastmod>2026-06-22</lastmod></url>
-<url><loc>https://kazna-gov.ru/blog/sanktsionirovanie-operatsiy-kaznacheystvom/</loc><lastmod>2026-06-22</lastmod></url>
-<url><loc>https://kazna-gov.ru/blog/sertifikat-ecp-kaznacheystva/</loc><lastmod>2026-06-24</lastmod></url>
-<url><loc>https://kazna-gov.ru/blog/vhod-v-elektronnyy-byudzhet-po-sertifikatu/</loc><lastmod>2026-06-24</lastmod></url>
-<url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-obespechenie-obyazatelstv/</loc><lastmod>2026-06-24</lastmod></url>
-<url><loc>https://kazna-gov.ru/blog/litsevoy-schet-71/</loc><lastmod>2026-06-25</lastmod></url>
-<url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-vs-bankovskoe-soprovozhdenie-otlichiya/</loc><lastmod>2026-06-25</lastmod></url>
-<url><loc>https://kazna-gov.ru/blog/novyy-poryadok-kaznacheyskogo-soprovozhdeniya-s-1-sentyabrya-2026/</loc><lastmod>2026-06-24</lastmod></url>
-  <url><loc>https://kazna-gov.ru/kaznacheyskoe-soprovozhdenie/</loc><lastmod>2026-07-09</lastmod><priority>0.8</priority></url>
-  <url><loc>https://kazna-gov.ru/scheta/</loc><lastmod>2026-07-09</lastmod><priority>0.8</priority></url>
-  <url><loc>https://kazna-gov.ru/platezhi/</loc><lastmod>2026-07-09</lastmod><priority>0.8</priority></url>
-  <url><loc>https://kazna-gov.ru/sanktsionirovanie/</loc><lastmod>2026-07-09</lastmod><priority>0.8</priority></url>
-  <url><loc>https://kazna-gov.ru/goz/</loc><lastmod>2026-07-09</lastmod><priority>0.8</priority></url>
-  <url><loc>https://kazna-gov.ru/razdelnyj-uchet/</loc><lastmod>2026-07-09</lastmod><priority>0.8</priority></url>
   <url><loc>https://kazna-gov.ru/subsidii/</loc><lastmod>2026-07-09</lastmod><priority>0.8</priority></url>
-  <url><loc>https://kazna-gov.ru/giis/</loc><lastmod>2026-07-09</lastmod><priority>0.8</priority></url>
-  <url><loc>https://kazna-gov.ru/zakonodatelstvo/</loc><lastmod>2026-07-09</lastmod><priority>0.8</priority></url>
-  <url><loc>https://kazna-gov.ru/otchetnost/</loc><lastmod>2026-07-09</lastmod><priority>0.8</priority></url>
-  <url><loc>https://kazna-gov.ru/glossary/</loc><lastmod>2026-07-09</lastmod><priority>0.8</priority></url>
-  <url><loc>https://kazna-gov.ru/glossary/federalnoe-kaznacheystvo/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/ufk/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/tofk/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/minfin/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/fns-uc/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/voennoe-predstavitelstvo/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/psb/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/zakazchik/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/grbs/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/finansovyy-organ/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/giis-elektronnyy-byudzhet/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/eis/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/ast-goz/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/girbo/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/kontinent-tls/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/sufd/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/epbs/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/kaznacheyskoe-soprovozhdenie/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/kaznacheyskiy-monitoring/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/rasshirennoe-kaznacheyskoe-soprovozhdenie/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/bankovskoe-soprovozhdenie/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/kaznacheyskoe-obespechenie-obyazatelstv/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/porog-kaznacheyskogo-soprovozhdeniya/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/ks-schet/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/eks/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/ens/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/raschetnyy-schet/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/otdelnyy-schet-goz/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/tselevye-sredstva/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/limit-na-ks-schete/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/kod-71/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/rezervirovanie-scheta/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/pereoformlenie-scheta/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/zakrytie-scheta/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/neispolzovannyy-ostatok/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/rekvizity-ks-scheta/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/goskontrakt/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/igk/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/munitsipalnyy-kontrakt/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/tsepochka-kooperatsii/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/golovnoy-ispolnitel/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/subpodryadchik/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/etap-kontrakta/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/reestr-kontraktov/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/tsifrovoy-kontrakt/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/edinstvennyy-postavshchik/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/goz/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/razdelnyy-uchet/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/prim-1/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/opk/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/vidy-tsen-goz/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/norma-pribyli-goz/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/opornyy-bank/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/subsidiya/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/grant/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/soglashenie-o-subsidii/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/identifikator-soglasheniya/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/poluchatel-subsidii/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/nubp/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/kaznacheyskiy-platezh/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/rasporyazhenie-o-platezhe/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/naznachenie-platezha/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/avans/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/vozmeshchenie-rashodov/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/pryamoy-platezh/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/vozvrat-avansa/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/vozvrat-platezha/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/platezhnoe-poruchenie/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/otzyv-rasporyazheniya/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/nds-pri-ks/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/perechislenie-pribyli/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/priostanovlenie-operatsiy/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/sanktsionirovanie/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/dokumenty-osnovaniya/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/sroki-rassmotreniya-ufk/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/otkaz-v-sanktsionirovanii/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/netselevoe-raskhodovanie/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/zayavlenie-na-otkrytie-ls/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/kartochka-obraztsov-podpisey-termin/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/svedeniya-0501213/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/mchd/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/doverennost-dlya-ufk/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/akt-sdachi-priyomki/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/schet-faktura-upd/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/ks-2-ks-3/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/opis-dokumentov/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/vypiska-iz-litsevogo-scheta/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/elektronnaya-podpis/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/kriptopro-csp/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/registratsiya-v-eb/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/upolnomochennoe-litso/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/kody-napravleniy-rashodovaniya/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/kody-9xxx/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/kody-postupleniy/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/kod-tselevykh-sredstv/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/kvr/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/kosgu/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/kbk/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/oktmo/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/okpo/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/kofk/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/svodnyy-reestr/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/glava-po-bk/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/44-fz/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/223-fz/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/275-fz/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/63-fz/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/bk-rf-242/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/zakon-o-federalnom-byudzhete/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/prikaz-214n/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/prikaz-44n/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/prikaz-21n/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/pp-1465/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/pp-2053/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/shtrafy-koap/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/raskhodnaya-deklaratsiya/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/promezhutochnaya-otchetnost-goz/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/otchet-ob-ispolzovanii-subsidii/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/ip-pri-ks/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/glossary/ispolnitel-po-kontraktu/</loc><lastmod>2026-07-09</lastmod></url>
-<url><loc>https://kazna-gov.ru/instrumenty/</loc><lastmod>2026-06-24</lastmod><priority>0.8</priority></url>
-  <url><loc>https://kazna-gov.ru/instrumenty/diagnostika-kontrakta/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/instrumenty/proverka-neobhodimosti-ks/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/instrumenty/podbor-litsevogo-scheta/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/instrumenty/proverka-komplekta-dokumentov/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/instrumenty/diagnostika-platezha/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/instrumenty/proverka-goz/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/instrumenty/proverka-subsidii/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/instrumenty/marshrutizator-platezha/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/instrumenty/proverka-sanktsionirovaniya/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/instrumenty/generator-chek-lista/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/uslugi</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/voprosy/</loc><lastmod>2026-07-09</lastmod><priority>0.8</priority></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-otkryt-kaznacheyskiy-schet/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kto-otkryvaet-litsevoy-schet/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/skolko-otkryvaetsya-schet/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kakie-dokumenty-dlya-otkrytiya/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/gde-otkryvaetsya-ks-schet/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/mozhno-li-otkryt-bez-kontrakta/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/nuzhen-li-schet-na-kazhdyy-kontrakt/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/skolko-stoit-otkrytie-scheta/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/otkryt-schet-cherez-giis/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/otkryt-schet-na-bumage/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-rezervirovanie-scheta/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-zarezervirovat-schet-dlya-tendera/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/zachem-rezervirovat-schet/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/rezervnyy-schet-deystvuet-skolko/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-uznat-svoyo-ufk/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/v-kakoe-ufk-podavat-zayavlenie/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/otkrytie-scheta-dlya-ip/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/otkrytie-scheta-subpodryadchiku/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-svodnyy-reestr-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-vklyuchitsya-v-svodnyy-reestr/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/pochemu-dolgo-ne-otkryvayut-schet/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/otkazali-v-otkrytii-chto-delat/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/mozhno-li-uskorit-otkrytie/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/schet-otkryt-chto-dalshe/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-poluchit-rekvizity-scheta/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-zakryt-kaznacheyskiy-schet/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/nuzhno-li-zakryvat-schet/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-delat-s-ostatkom-na-schete/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-pereoformit-schet/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/smena-direktora-chto-menyat/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-uznat-ostatok-na-schete/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-poluchit-vypisku/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-limit-na-schete/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/pochemu-deneg-net-na-schete/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chem-otlichaetsya-ot-raschetnogo/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kakie-kody-nuzhny-dlya-platezha/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-kod-napravleniya/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/gde-vzyat-kody-rashodovaniya/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kakoy-kod-dlya-zarplaty/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kakoy-kod-dlya-nalogov/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kakoy-kod-dlya-materialov/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-kody-9xxx-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kod-dlya-vyvoda-pribyli/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/nepravilnyy-kod-chto-budet/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-kod-tselevykh-sredstv-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chem-kod-otlichaetsya-ot-kbk/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-kofk-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kakoy-oktmo-ukazyvat/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-kod-71-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kod-postupleniy-v-vypiske/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-provesti-platezh/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-rkp-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-sozdat-platezhku-v-eb/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/skolko-idet-platezh/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kakie-dokumenty-prikladat-k-platezhu/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-zapolnit-naznachenie-platezha/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/nuzhen-li-igk-v-kazhdom-platezhe/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-ukazat-nds-v-platezhke/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/mozhno-li-platit-bez-dogovora/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-oplatit-postavshchiku/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/mozhno-li-platit-fizlitsu/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-platit-zarplatu-s-ks/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-platit-nalogi-s-ks/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/mozhno-li-snyat-nalichnye/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/mozhno-li-oplatit-arendu/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/na-chto-nelzya-tratit/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-otozvat-platezh/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/platezh-visit-chto-delat/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-uznat-status-platezha/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/platezh-mezhdu-svoimi-schetami/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/oplata-po-schetu-bez-akta/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/predoplata-postavshchiku/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-oplatit-subpodryadchiku/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/platezhi-v-vykhodnye/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/skolko-platezhey-v-den/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-vyvesti-dengi-na-raschetnyy/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kogda-mozhno-zabrat-pribyl/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-vyvesti-pribyl/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/skolko-pribyli-mozhno-vyvesti/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-vozmeshchenie-rashodov-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-vozmestit-rashody/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kakie-dokumenty-dlya-vozmeshcheniya/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/mozhno-li-vozmestit-zadnim-chislom/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/vozmeshchenie-zarplaty/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/otkazali-v-vozmeshchenii/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-avans-pri-ks/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kakoy-razmer-avansa/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-poluchit-avans/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/na-chto-mozhno-tratit-avans/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-zakryvaetsya-avans/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/nuzhno-li-vozvrashchat-avans/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-vernut-avans/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/avans-bez-kaznacheyskogo-scheta/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-koo-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/uproshchennoe-perechislenie/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/mozhno-li-vyvesti-vsyu-summu/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/pochemu-ne-puskayut-pribyl/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/nakladnye-raskhody-kak-vyvesti/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kompensatsiya-do-otkrytiya-scheta/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/vyvod-ekonomii-po-kontraktu/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-sanktsionirovanie-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/skolko-dney-proveryaet-ufk/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-proveryaet-kaznacheystvo/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-dokumenty-osnovaniya-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kakie-osnovaniya-dlya-oplaty-uslug/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-svedeniya-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/zachem-nuzhny-svedeniya/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-zapolnit-svedeniya/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kto-utverzhdaet-svedeniya/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-izmenit-svedeniya/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/zakazchik-ne-utverzhdaet-svedeniya-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/platezh-ne-sootvetstvuet-svedeniyam/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-kaznacheyskiy-monitoring-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/pochemu-zaprosili-poyasneniya/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-otvetit-na-zapros-ufk/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/mogut-li-zablokirovat-schet/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/za-chto-priostanavlivayut-operatsii/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-snyat-blokirovku/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-rasshirennoe-ks-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-raskhodnaya-deklaratsiya-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/proverka-tselevogo-ispolzovaniya/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chem-grozit-netselevoe/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/novyy-poryadok-sanktsionirovaniya/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/srochnyy-platezh-kak-uskorit/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kto-neset-otvetstvennost-za-oshibki/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/pochemu-ufk-vernulo-platezh/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-delat-pri-vozvrate-platezha/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-uznat-prichinu-vozvrata/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/oshibka-v-igk-kak-ispravit/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/nevernoe-naznachenie-kak-ispravit/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/vernuli-iz-za-koda/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/vozvrat-povtoryaetsya/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/skolko-vremeni-teryaetsya-pri-vozvrate/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/otkaz-v-sanktsionirovanii-chto-delat/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/ufk-trebuet-dokumenty-kotorykh-net/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-osporit-otkaz-ufk/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/ufk-zaderzhivaet-platezh-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/vernuli-kartochku-podpisey-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/vernuli-zayavlenie-na-schet/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/ne-prinimayut-svedeniya/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/mchd-ne-prokhodit-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/ecp-ne-podkhodit-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/ne-mogu-voyti-v-eb/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/zablokirovali-schet-chto-delat/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/dengi-zavisli-na-nevyyasnennykh/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/zakazchik-ne-platit-na-ks/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/sorvali-srok-iz-za-kaznacheystva/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/shtraf-za-narushenie-ks/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kuda-zhalovatsya-na-ufk/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/komu-poruchit-reshenie-problem/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kakie-dokumenty-nuzhny-dlya-ks/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/gde-skachat-formy-dokumentov/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-zapolnit-zayavlenie-0531368/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kto-podpisyvaet-zayavlenie/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-kartochka-podpisey-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-zapolnit-kartochku-0531753/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-zaverit-kartochku/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kartochka-bez-glavbukha/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kogda-menyat-kartochku/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-mchd-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-vypustit-mchd/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kakoy-format-mchd-nuzhen/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/nuzhna-li-bumazhnaya-doverennost/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-oformit-doverennost-v-ufk/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kakie-akty-nuzhny-dlya-oplaty/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chem-upd-otlichaetsya-ot-akta/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/nuzhny-li-ks2-ks3/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/oshibka-v-akte-chto-delat/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-napisat-poyasnenie-v-ufk/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-napisat-zapros-v-ufk/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/nuzhno-li-soprovoditelnoe-pismo/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-opis-dokumentov-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/skolko-khranit-dokumenty/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/elektronnye-ili-bumazhnye/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/proverka-dokumentov-pered-podachey/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-giis-eb-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-zaregistrirovatsya-v-eb/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/skolko-zanimaet-registratsiya-v-eb/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-voyti-v-lichnyy-kabinet-eb/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kakaya-ecp-nuzhna-dlya-eb/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/gde-poluchit-ecp-rukovoditelyu/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/ecp-sotrudnika-kak-rabotaet/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-nuzhno-dlya-rabochego-mesta/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-kontinent-tls-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/nuzhen-li-kriptopro/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/brauzer-dlya-eb/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/eb-ne-vidit-sertifikat/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/oshibka-pri-vkhode-v-eb/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/istek-sertifikat-chto-delat/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-dobavit-sotrudnika-v-eb/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-nastroit-polnomochiya/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-otozvat-dostup-sotrudnika/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/mozhno-li-rabotat-bez-mchd/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/skolko-deystvuet-mchd/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/podpisanie-dokumentov-v-eb/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/gde-smotret-uvedomleniya-ufk/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-sufd-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/eb-ne-rabotaet-segodnya/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/smena-rukovoditelya-dostup-eb/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/autsorsing-raboty-v-eb/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-goz-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chem-ks-goz-otlichaetsya/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kazna-ili-bank-po-goz/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-otdelnyy-schet-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kakoy-bank-dlya-goz/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/igk-po-goz-otlichiya/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/obyazannosti-ispolnitelya-goz/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/subpodryad-v-goz/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-zapreshcheno-po-otdelnomu-schetu/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-razdelnyy-uchet-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kto-obyazan-vesti-razdelnyy-uchet/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-postavit-razdelnyy-uchet/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/shtraf-za-otsutstvie-ru/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/nuzhen-li-ru-po-44fz/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-raspredelyat-nakladnye/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-prim-1-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kakie-tseny-v-goz/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-pravilo-20-1/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-obosnovat-tsenu-goz/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-perevesti-tsenu-v-fiksirovannuyu/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-proveryaet-voenpred/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/skolko-pribyli-v-goz/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/otchetnost-goz-v-girbo/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-vyvesti-pribyl-goz/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/soprovozhdenie-goz-pod-klyuch/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kogda-subsidiya-pod-ks/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chem-ks-subsidiy-otlichaetsya/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-otkryt-schet-dlya-subsidii/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-soglashenie-o-subsidii-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-identifikator-soglasheniya-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/na-chto-mozhno-tratit-subsidiyu/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/soglasovanie-raskhodov-po-subsidii/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/mozhno-li-zarplata-iz-subsidii/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/mozhno-li-oborudovanie-iz-subsidii/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/sobstvennye-sredstva-i-subsidiya/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/svedeniya-po-subsidii/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/otchet-po-subsidii-kak-sdat/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/ne-dostigli-pokazateley/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/vozvrat-subsidii-kogda/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/ostatok-subsidii-chto-delat/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/grant-pod-ks/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/subsidiya-regionalnaya-pravila/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/prodlenie-sroka-subsidii/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/neskolko-subsidiy-odin-schet/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/pomoshch-s-subsidiey/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kakaya-otchetnost-pri-ks/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-uchityvat-operatsii-po-ls/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kalendar-otchetnosti-ks/</loc><lastmod>2026-07-09</lastmod></url>
   <url><loc>https://kazna-gov.ru/voprosy/audit-pered-proverkoy/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/dokumenty-dlya-buhgaltera/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kakie-kontrakty-pod-ks-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/s-kakoy-summy-ks/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kto-ustanavlivaet-sluchai-ks/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/ks-menyaetsya-kazhdyy-god/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-ponyat-est-li-ks-v-kontrakte/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/mozhno-li-izbezhat-ks/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/ks-po-223-fz-kogda/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/ks-dlya-municipalnykh/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/ks-bez-avansa/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/edinstvennyy-postavshchik-ks/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kakoy-zakon-reguliruet-ks/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/autsorsing-ks-vygodno-li/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/autsorsing-raboty-v-eb/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/avans-bez-kaznacheyskogo-scheta/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/berete-li-srochnye-slucai/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/besplatnaya-konsultatsiya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/brauzer-dlya-eb/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chek-list-pered-kontraktom/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chem-grozit-netselevoe/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chem-kod-otlichaetsya-ot-kbk/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chem-ks-goz-otlichaetsya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chem-ks-subsidiy-otlichaetsya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chem-otlichaetsya-ot-raschetnogo/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chem-upd-otlichaetsya-ot-akta/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-budet-za-narushenie-ks/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-delat-pri-vozvrate-platezha/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-delat-s-ostatkom-na-schete/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-menyaetsya-s-sentyabrya-2026/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-nuzhno-dlya-rabochego-mesta/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-ostaetsya-na-nashey-storone/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-proveryaet-kaznacheystvo/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-proveryaet-voenpred/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-avans-pri-ks/</loc><lastmod>2026-07-09</lastmod></url>
   <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-bk-242/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-dokumenty-osnovaniya-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-giis-eb-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-goz-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-identifikator-soglasheniya-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-kartochka-podpisey-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-kaznacheyskiy-monitoring-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-kod-71-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-kod-napravleniya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-kod-tselevykh-sredstv-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-kody-9xxx-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-kofk-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-kontinent-tls-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-koo-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-limit-na-schete/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-mchd-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-opis-dokumentov-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-otdelnyy-schet-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-pravilo-20-1/</loc><lastmod>2026-07-09</lastmod></url>
   <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-prikaz-214n-vopros/</loc><lastmod>2026-07-09</lastmod></url>
   <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-prikaz-44n-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-menyaetsya-s-sentyabrya-2026/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/gde-sledit-za-izmeneniyami/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/ks-i-bankovskoe-raznitsa-vopros/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-budet-za-narushenie-ks/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/ugolovnaya-otvetstvennost-ks/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/otvetstvennost-direktora-ks/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/proverki-fas-po-goz/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/srok-davnosti-narusheniy/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/ks-eto-nadolgo/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/zachem-gosudarstvu-ks/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/plyusy-ks-dlya-podryadchika/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/skolko-stoit-soprovozhdenie/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-prim-1-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-raskhodnaya-deklaratsiya-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-rasshirennoe-ks-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-razdelnyy-uchet-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-rezervirovanie-scheta/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-rkp-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-sanktsionirovanie-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-soglashenie-o-subsidii-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-sufd-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-svedeniya-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-svodnyy-reestr-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-takoe-vozmeshchenie-rashodov-vopros/</loc><lastmod>2026-07-09</lastmod></url>
   <url><loc>https://kazna-gov.ru/voprosy/chto-vhodit-v-soprovozhdenie/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/skolko-stoit-otkrytie-pod-klyuch/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/ot-chego-zavisit-tsena-uslug/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-zakazat-soprovozhdenie/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kak-bystro-podklyuchaetes/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/rabotaete-li-po-vsey-rossii/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/nuzhna-li-doverennost-dlya-vas/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/berete-li-srochnye-slucai/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/chto-zapreshcheno-po-otdelnomu-schetu/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/dengi-zavisli-na-nevyyasnennykh/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/dokumenty-dlya-buhgaltera/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/eb-ne-rabotaet-segodnya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/eb-ne-vidit-sertifikat/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/ecp-ne-podkhodit-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/ecp-sotrudnika-kak-rabotaet/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/edinstvennyy-postavshchik-ks/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/elektronnye-ili-bumazhnye/</loc><lastmod>2026-07-09</lastmod></url>
   <url><loc>https://kazna-gov.ru/voprosy/garantii-rezultata/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/autsorsing-ks-vygodno-li/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/svoy-bukhgalter-ili-autsorsing/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chto-ostaetsya-na-nashey-storone/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/konfidentsialnost-dannykh/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/opyt-v-kakikh-otraslyakh/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/skolko-kontraktov-vedete/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/besplatnaya-konsultatsiya/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/kalkulyator-stoimosti-ks/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/pomozhete-li-tolko-s-otkrytiem/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/rabota-s-ip-i-malym-biznesom/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/ks-prostymi-slovami/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/s-chego-nachat-novichku/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/skolko-vremeni-zanimaet-ks/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/voprosy/chek-list-pered-kontraktom/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/gde-otkryvaetsya-ks-schet/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/gde-poluchit-ecp-rukovoditelyu/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/gde-skachat-formy-dokumentov/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/gde-sledit-za-izmeneniyami/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/gde-smotret-uvedomleniya-ufk/</loc><lastmod>2026-07-09</lastmod></url>
   <url><loc>https://kazna-gov.ru/voprosy/gde-uchitsya-rabote-s-ks/</loc><lastmod>2026-07-09</lastmod></url>
-<url><loc>https://kazna-gov.ru/keysy/</loc><lastmod>2026-06-24</lastmod><priority>0.7</priority></url>
-<url><loc>https://kazna-gov.ru/otzyvy/</loc><lastmod>2026-06-24</lastmod><priority>0.7</priority></url>
-<url><loc>https://kazna-gov.ru/about/</loc><lastmod>2026-06-24</lastmod><priority>0.8</priority></url>
-<url><loc>https://kazna-gov.ru/obraztsy/</loc><lastmod>2026-06-24</lastmod><priority>0.8</priority></url>
-<url><loc>https://kazna-gov.ru/novosti/</loc><lastmod>2026-07-06</lastmod></url>
-<url><loc>https://kazna-gov.ru/novosti/novye-shtrafy-kaznacheyskoe-soprovozhdenie-15-49-15-37-1/</loc><lastmod>2026-06-29</lastmod></url><url><loc>https://kazna-gov.ru/novosti/mchd-novye-trebovaniya-2026/</loc><lastmod>2026-06-24</lastmod></url>
-<url><loc>https://kazna-gov.ru/novosti/pp-2053-perechislenie-sredstv-ks-2026/</loc><lastmod>2026-06-24</lastmod></url>
-<url><loc>https://kazna-gov.ru/novosti/novyy-poryadok-sanktsionirovaniya-s-01-09-2026/</loc><lastmod>2026-06-24</lastmod></url>
-<url><loc>https://kazna-gov.ru/novosti/promezhutochnaya-otchetnost-goz-s-01-07-2026/</loc><lastmod>2026-07-06</lastmod></url>
-<url><loc>https://kazna-gov.ru/novosti/malye-zakupki-reestr-kontraktov-s-01-07-2026/</loc><lastmod>2026-07-06</lastmod></url>
-<url><loc>https://kazna-gov.ru/blog/kak-otkryt-licevoy-schet-71/</loc><lastmod>2026-07-08</lastmod></url>
-<url><loc>https://kazna-gov.ru/oshibki/</loc><lastmod>2026-07-08</lastmod></url>
-<url><loc>https://kazna-gov.ru/oshibki/ecp-ne-podhodit-dlya-kaznacheystva/</loc><lastmod>2026-07-08</lastmod></url>
-<url><loc>https://kazna-gov.ru/oshibki/mchd-ne-prohodit-proverku/</loc><lastmod>2026-07-08</lastmod></url>
-<url><loc>https://kazna-gov.ru/oshibki/necelevoe-rashodovanie-sredstv/</loc><lastmod>2026-07-08</lastmod></url>
-<url><loc>https://kazna-gov.ru/oshibki/net-razdelnogo-ucheta-goz/</loc><lastmod>2026-07-08</lastmod></url>
-<url><loc>https://kazna-gov.ru/oshibki/nevernoe-naznachenie-platezha/</loc><lastmod>2026-07-08</lastmod></url>
-<url><loc>https://kazna-gov.ru/oshibki/nevernyy-kod-napravleniya-rashodov/</loc><lastmod>2026-07-08</lastmod></url>
-<url><loc>https://kazna-gov.ru/oshibki/oshibka-v-igk-platezh-ne-prohodit/</loc><lastmod>2026-07-08</lastmod></url>
-<url><loc>https://kazna-gov.ru/oshibki/ufk-ne-soglasuet-rashody-po-subsidii/</loc><lastmod>2026-07-08</lastmod></url>
-<url><loc>https://kazna-gov.ru/oshibki/ufk-ne-utverzhdaet-svedeniya/</loc><lastmod>2026-07-08</lastmod></url>
-<url><loc>https://kazna-gov.ru/oshibki/ufk-otkazalo-v-sanktsionirovanii/</loc><lastmod>2026-07-08</lastmod></url>
-<url><loc>https://kazna-gov.ru/oshibki/ufk-vernulo-kartochku-podpisey/</loc><lastmod>2026-07-08</lastmod></url>
-<url><loc>https://kazna-gov.ru/oshibki/zatyanulos-otkrytie-scheta/</loc><lastmod>2026-07-08</lastmod></url>
-<url><loc>https://kazna-gov.ru/obraztsy/chek-list-otkrytiya-scheta/</loc><lastmod>2026-07-09</lastmod></url>
-<url><loc>https://kazna-gov.ru/obraztsy/chek-list-proverki-dokumentov/</loc><lastmod>2026-07-09</lastmod></url>
-<url><loc>https://kazna-gov.ru/obraztsy/doverennost-v-ufk/</loc><lastmod>2026-07-09</lastmod></url>
-<url><loc>https://kazna-gov.ru/obraztsy/formulirovka-ks-v-dogovor/</loc><lastmod>2026-07-09</lastmod></url>
-<url><loc>https://kazna-gov.ru/obraztsy/kartochka-obraztsov-podpisey/</loc><lastmod>2026-07-09</lastmod></url>
-<url><loc>https://kazna-gov.ru/obraztsy/komplekt-dokumentov-goz/</loc><lastmod>2026-07-09</lastmod></url>
-<url><loc>https://kazna-gov.ru/obraztsy/komplekt-dokumentov-otkrytie/</loc><lastmod>2026-07-09</lastmod></url>
-<url><loc>https://kazna-gov.ru/obraztsy/komplekt-dokumentov-subsidii/</loc><lastmod>2026-07-09</lastmod></url>
-<url><loc>https://kazna-gov.ru/obraztsy/mchd-dlya-kaznacheystva/</loc><lastmod>2026-07-09</lastmod></url>
-<url><loc>https://kazna-gov.ru/obraztsy/pismo-zapros-v-ufk/</loc><lastmod>2026-07-09</lastmod></url>
-<url><loc>https://kazna-gov.ru/obraztsy/platezhnoe-poruchenie-obrazec/</loc><lastmod>2026-07-09</lastmod></url>
-<url><loc>https://kazna-gov.ru/obraztsy/poyasnenie-pri-vozvrate-platezha/</loc><lastmod>2026-07-09</lastmod></url>
-<url><loc>https://kazna-gov.ru/obraztsy/poyasnenie-v-ufk/</loc><lastmod>2026-07-09</lastmod></url>
-<url><loc>https://kazna-gov.ru/obraztsy/prikaz-o-razdelnom-uchete-goz/</loc><lastmod>2026-07-09</lastmod></url>
-<url><loc>https://kazna-gov.ru/obraztsy/reestr-dokumentov-po-kontraktu/</loc><lastmod>2026-07-09</lastmod></url>
-<url><loc>https://kazna-gov.ru/obraztsy/shablon-otzyva-rasporyazheniya/</loc><lastmod>2026-07-09</lastmod></url>
-<url><loc>https://kazna-gov.ru/obraztsy/soprovoditelnoe-pismo-v-ufk/</loc><lastmod>2026-07-09</lastmod></url>
-<url><loc>https://kazna-gov.ru/obraztsy/svedeniya-ob-operatsiyah-0501213/</loc><lastmod>2026-07-09</lastmod></url>
-<url><loc>https://kazna-gov.ru/obraztsy/zayavlenie-na-otkrytie-litsevogo-scheta/</loc><lastmod>2026-07-09</lastmod></url>
-<url><loc>https://kazna-gov.ru/obraztsy/zayavlenie-na-zakrytie-litsevogo-scheta/</loc><lastmod>2026-07-09</lastmod></url>
-<url><loc>https://kazna-gov.ru/oshibki/net-v-svodnom-reestre/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/gde-vzyat-kody-rashodovaniya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/grant-pod-ks/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/igk-po-goz-otlichiya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/istek-sertifikat-chto-delat/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-bystro-podklyuchaetes/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-dobavit-sotrudnika-v-eb/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-izmenit-svedeniya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-napisat-poyasnenie-v-ufk/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-napisat-zapros-v-ufk/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-nastroit-polnomochiya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-obosnovat-tsenu-goz/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-oformit-doverennost-v-ufk/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-oplatit-postavshchiku/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-oplatit-subpodryadchiku/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-osporit-otkaz-ufk/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-otkryt-kaznacheyskiy-schet/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-otkryt-schet-dlya-subsidii/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-otozvat-dostup-sotrudnika/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-otozvat-platezh/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-otvetit-na-zapros-ufk/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-pereoformit-schet/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-perevesti-tsenu-v-fiksirovannuyu/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-platit-nalogi-s-ks/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-platit-zarplatu-s-ks/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-poluchit-avans/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-poluchit-rekvizity-scheta/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-poluchit-vypisku/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-ponyat-est-li-ks-v-kontrakte/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-postavit-razdelnyy-uchet/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-provesti-platezh/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-raspredelyat-nakladnye/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-snyat-blokirovku/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-sozdat-platezhku-v-eb/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-uchityvat-operatsii-po-ls/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-ukazat-nds-v-platezhke/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-uznat-ostatok-na-schete/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-uznat-prichinu-vozvrata/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-uznat-status-platezha/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-uznat-svoyo-ufk/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-vernut-avans/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-vklyuchitsya-v-svodnyy-reestr/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-voyti-v-lichnyy-kabinet-eb/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-vozmestit-rashody/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-vypustit-mchd/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-vyvesti-dengi-na-raschetnyy/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-vyvesti-pribyl/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-vyvesti-pribyl-goz/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-zakazat-soprovozhdenie/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-zakryt-kaznacheyskiy-schet/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-zakryvaetsya-avans/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-zapolnit-kartochku-0531753/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-zapolnit-naznachenie-platezha/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-zapolnit-svedeniya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-zapolnit-zayavlenie-0531368/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-zaregistrirovatsya-v-eb/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-zarezervirovat-schet-dlya-tendera/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kak-zaverit-kartochku/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kakaya-ecp-nuzhna-dlya-eb/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kakaya-otchetnost-pri-ks/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kakie-akty-nuzhny-dlya-oplaty/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kakie-dokumenty-dlya-otkrytiya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kakie-dokumenty-dlya-vozmeshcheniya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kakie-dokumenty-nuzhny-dlya-ks/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kakie-dokumenty-prikladat-k-platezhu/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kakie-kody-nuzhny-dlya-platezha/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kakie-kontrakty-pod-ks-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kakie-osnovaniya-dlya-oplaty-uslug/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kakie-tseny-v-goz/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kakoy-bank-dlya-goz/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kakoy-format-mchd-nuzhen/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kakoy-kod-dlya-materialov/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kakoy-kod-dlya-nalogov/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kakoy-kod-dlya-zarplaty/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kakoy-oktmo-ukazyvat/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kakoy-razmer-avansa/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kakoy-zakon-reguliruet-ks/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kalendar-otchetnosti-ks/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kalkulyator-stoimosti-ks/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kartochka-bez-glavbukha/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kazna-ili-bank-po-goz/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kod-dlya-vyvoda-pribyli/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kod-postupleniy-v-vypiske/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kogda-menyat-kartochku/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kogda-mozhno-zabrat-pribyl/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kogda-subsidiya-pod-ks/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kompensatsiya-do-otkrytiya-scheta/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/komu-poruchit-reshenie-problem/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/konfidentsialnost-dannykh/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/ks-bez-avansa/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/ks-dlya-municipalnykh/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/ks-eto-nadolgo/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/ks-i-bankovskoe-raznitsa-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/ks-menyaetsya-kazhdyy-god/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/ks-po-223-fz-kogda/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/ks-prostymi-slovami/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kto-neset-otvetstvennost-za-oshibki/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kto-obyazan-vesti-razdelnyy-uchet/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kto-otkryvaet-litsevoy-schet/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kto-podpisyvaet-zayavlenie/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kto-ustanavlivaet-sluchai-ks/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kto-utverzhdaet-svedeniya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/kuda-zhalovatsya-na-ufk/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/mchd-ne-prokhodit-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/mogut-li-zablokirovat-schet/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/mozhno-li-izbezhat-ks/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/mozhno-li-oborudovanie-iz-subsidii/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/mozhno-li-oplatit-arendu/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/mozhno-li-otkryt-bez-kontrakta/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/mozhno-li-platit-bez-dogovora/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/mozhno-li-platit-fizlitsu/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/mozhno-li-rabotat-bez-mchd/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/mozhno-li-snyat-nalichnye/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/mozhno-li-uskorit-otkrytie/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/mozhno-li-vozmestit-zadnim-chislom/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/mozhno-li-vyvesti-vsyu-summu/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/mozhno-li-zarplata-iz-subsidii/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/na-chto-mozhno-tratit-avans/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/na-chto-mozhno-tratit-subsidiyu/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/na-chto-nelzya-tratit/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/nakladnye-raskhody-kak-vyvesti/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/ne-dostigli-pokazateley/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/ne-mogu-voyti-v-eb/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/ne-prinimayut-svedeniya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/nepravilnyy-kod-chto-budet/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/neskolko-subsidiy-odin-schet/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/nevernoe-naznachenie-kak-ispravit/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/novyy-poryadok-sanktsionirovaniya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/nuzhen-li-igk-v-kazhdom-platezhe/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/nuzhen-li-kriptopro/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/nuzhen-li-ru-po-44fz/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/nuzhen-li-schet-na-kazhdyy-kontrakt/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/nuzhna-li-bumazhnaya-doverennost/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/nuzhna-li-doverennost-dlya-vas/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/nuzhno-li-soprovoditelnoe-pismo/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/nuzhno-li-vozvrashchat-avans/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/nuzhno-li-zakryvat-schet/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/nuzhny-li-ks2-ks3/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/obyazannosti-ispolnitelya-goz/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/oplata-po-schetu-bez-akta/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/opyt-v-kakikh-otraslyakh/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/oshibka-pri-vkhode-v-eb/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/oshibka-v-akte-chto-delat/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/oshibka-v-igk-kak-ispravit/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/ostatok-subsidii-chto-delat/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/ot-chego-zavisit-tsena-uslug/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/otchet-po-subsidii-kak-sdat/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/otchetnost-goz-v-girbo/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/otkaz-v-sanktsionirovanii-chto-delat/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/otkazali-v-otkrytii-chto-delat/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/otkazali-v-vozmeshchenii/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/otkryt-schet-cherez-giis/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/otkryt-schet-na-bumage/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/otkrytie-scheta-dlya-ip/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/otkrytie-scheta-subpodryadchiku/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/otvetstvennost-direktora-ks/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/platezh-mezhdu-svoimi-schetami/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/platezh-ne-sootvetstvuet-svedeniyam/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/platezh-visit-chto-delat/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/platezhi-v-vykhodnye/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/plyusy-ks-dlya-podryadchika/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/pochemu-deneg-net-na-schete/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/pochemu-dolgo-ne-otkryvayut-schet/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/pochemu-ne-puskayut-pribyl/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/pochemu-ufk-vernulo-platezh/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/pochemu-zaprosili-poyasneniya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/podpisanie-dokumentov-v-eb/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/pomoshch-s-subsidiey/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/pomozhete-li-tolko-s-otkrytiem/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/predoplata-postavshchiku/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/prodlenie-sroka-subsidii/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/proverka-dokumentov-pered-podachey/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/proverka-tselevogo-ispolzovaniya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/proverki-fas-po-goz/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/rabota-s-ip-i-malym-biznesom/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/rabotaete-li-po-vsey-rossii/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/rezervnyy-schet-deystvuet-skolko/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/s-chego-nachat-novichku/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/s-kakoy-summy-ks/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/schet-otkryt-chto-dalshe/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/shtraf-za-narushenie-ks/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/shtraf-za-otsutstvie-ru/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/skolko-deystvuet-mchd/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/skolko-dney-proveryaet-ufk/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/skolko-idet-platezh/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/skolko-khranit-dokumenty/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/skolko-kontraktov-vedete/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/skolko-otkryvaetsya-schet/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/skolko-platezhey-v-den/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/skolko-pribyli-mozhno-vyvesti/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/skolko-pribyli-v-goz/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/skolko-stoit-otkrytie-pod-klyuch/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/skolko-stoit-otkrytie-scheta/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/skolko-stoit-soprovozhdenie/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/skolko-vremeni-teryaetsya-pri-vozvrate/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/skolko-vremeni-zanimaet-ks/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/skolko-zanimaet-registratsiya-v-eb/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/smena-direktora-chto-menyat/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/smena-rukovoditelya-dostup-eb/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/sobstvennye-sredstva-i-subsidiya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/soglasovanie-raskhodov-po-subsidii/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/soprovozhdenie-goz-pod-klyuch/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/sorvali-srok-iz-za-kaznacheystva/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/srochnyy-platezh-kak-uskorit/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/srok-davnosti-narusheniy/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/subpodryad-v-goz/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/subsidiya-regionalnaya-pravila/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/svedeniya-po-subsidii/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/svoy-bukhgalter-ili-autsorsing/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/ufk-trebuet-dokumenty-kotorykh-net/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/ufk-zaderzhivaet-platezh-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/ugolovnaya-otvetstvennost-ks/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/uproshchennoe-perechislenie/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/v-kakoe-ufk-podavat-zayavlenie/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/vernuli-iz-za-koda/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/vernuli-kartochku-podpisey-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/vernuli-zayavlenie-na-schet/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/vozmeshchenie-zarplaty/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/vozvrat-povtoryaetsya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/vozvrat-subsidii-kogda/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/vyvod-ekonomii-po-kontraktu/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/za-chto-priostanavlivayut-operatsii/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/zablokirovali-schet-chto-delat/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/zachem-gosudarstvu-ks/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/zachem-nuzhny-svedeniya/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/zachem-rezervirovat-schet/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/zakazchik-ne-platit-na-ks/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/voprosy/zakazchik-ne-utverzhdaet-svedeniya-vopros/</loc><lastmod>2026-07-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/zakonodatelstvo/</loc><lastmod>2026-07-09</lastmod><priority>0.8</priority></url>
 </urlset>

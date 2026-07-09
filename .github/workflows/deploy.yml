@@ -26,6 +26,23 @@ jobs:
             rsync -a --delete --exclude='.git' kazna_src/ ${{ secrets.FORNEX_PATH }}/
             echo "deployed: $(cd kazna_src && git rev-parse --short HEAD)"
 
+
+  # R2.10: пост-деплой smoke — критические поверхности платформы. Ошибка = красный ран (сигнал отката).
+  smoke:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Smoke critical surfaces
+        run: |
+          set -e
+          for u in / /uslugi /obraztsy/ /oshibki/ /glossary/ /voprosy/ /instrumenty/ /api/ /scheta/ /services/open; do
+            code=$(curl -s -o /dev/null -w '%{http_code}' "https://kazna-gov.ru$u")
+            echo "$u -> $code"; [ "$code" = "200" ] || exit 1
+          done
+          curl -s https://kazna-gov.ru/api/graph-statistics.json | python3 -c "import json,sys; d=json.load(sys.stdin); assert d['nodes']>400, d; print('graph nodes:', d['nodes'])"
+          curl -s https://kazna-gov.ru/sitemap.xml | grep -c "<url>" >/dev/null
+          echo "smoke OK"
+
   # После успешного деплоя — мгновенно уведомить Bing + Yandex об изменённых страницах (IndexNow).
   indexnow:
     needs: deploy

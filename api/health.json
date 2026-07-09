@@ -1,0 +1,34 @@
+{
+ "generated": "2026-07-09T15:41:38.239Z",
+ "nodes": 485,
+ "edges": 4025,
+ "byType": {
+  "term": 120,
+  "faq": 300,
+  "document": 19,
+  "error": 13,
+  "tool": 10,
+  "hub": 10,
+  "service": 6,
+  "law": 16
+ },
+ "scores": {
+  "coverage": 85,
+  "authority": 8,
+  "connectivity": 44,
+  "citationDensity": 26,
+  "graphDensity": 8.3,
+  "machineReadability": 100,
+  "aiReadiness": 73,
+  "registryCompleteness": 100,
+  "linkQuality": 100,
+  "moneyQuality": 100,
+  "toolCoverage": 3,
+  "documentCoverage": 67,
+  "errorCoverage": 62,
+  "glossaryCoverage": 96,
+  "faqCoverage": 67,
+  "hubQuality": 41,
+  "knowledgeScore": 62
+ }
+}
