@@ -167,3 +167,19 @@
     }
   }, { passive: true });
 })();
+
+/* R3: интерактивная сетка футера — свечение за курсором (канон главной) */
+(function () {
+  var f = document.getElementById('kzFooter');
+  if (!f || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var raf = null;
+  f.addEventListener('mousemove', function (e) {
+    if (raf) return;
+    raf = requestAnimationFrame(function () {
+      var r = f.getBoundingClientRect();
+      f.style.setProperty('--fx', (e.clientX - r.left) + 'px');
+      f.style.setProperty('--fy', (e.clientY - r.top) + 'px');
+      raf = null;
+    });
+  }, { passive: true });
+})();
