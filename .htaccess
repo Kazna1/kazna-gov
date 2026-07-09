@@ -102,7 +102,7 @@ RewriteRule ^blog/vedenie-kaznacheyskogo-soprovozhdeniya-2026/?$ /blog/soprovozh
 RewriteRule ^blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-2026/?$ /blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid [R=301,L]
 RewriteRule ^platezhka-v-kaznachejstvo-2026//?$ /blog/naznachenie-platezha-kaznachejstvo/ [R=301,L]
 RewriteRule ^kaznacheyskoe-soprovozhdenie-pod-kluch-cena-sroki-chto-vhodit/?$ /uslugi [R=301,L]
-RewriteRule ^kaznacheyskoe-soprovozhdenie/?$ /blog/ks_2025 [R=301,L]
+# R2.06: /kaznacheyskoe-soprovozhdenie/ — тематический центр (редирект на ks_2025 снят)
 RewriteRule ^kaznacheiskiy_schet/?$ /blog/how_to_open [R=301,L]
 RewriteRule ^kaznacheyskoe-soprovozhdenie-44-fz-2026/?$ /blog/kaznacheyskoe-soprovozhdenie-44-fz-2026-polnyy-gid [R=301,L]
 RewriteRule ^kaznacheiskoe-soprovozhdenie-s-kakoi-summy-2026/?$ /blog/kaznacheyskoe-soprovozhdenie-2026-opredeleniya [R=301,L]
