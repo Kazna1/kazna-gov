@@ -119,28 +119,37 @@
   .kznav__item.is-open .kznav__chev { transform: rotate(180deg); }
 
   /* dropdown panel: всегда в DOM, скрыт визуально */
+  /* Субменю 2026: тёмно-зелёное стекло (канон главной/футера) */
   .kznav__panel {
-    position: absolute; top: calc(100% + 8px); left: 0; min-width: 340px;
-    background: #fff; border: 1px solid var(--kz-line); border-radius: 14px;
-    box-shadow: 0 18px 48px rgba(12, 27, 51, 0.14);
-    padding: 8px; opacity: 0; visibility: hidden; transform: translateY(6px);
-    transition: opacity .16s ease, transform .16s ease, visibility .16s;
+    position: absolute; top: calc(100% + 10px); left: 0; min-width: 372px;
+    background: linear-gradient(180deg, rgba(16, 34, 28, 0.97), rgba(10, 22, 18, 0.97));
+    -webkit-backdrop-filter: blur(24px) saturate(1.2); backdrop-filter: blur(24px) saturate(1.2);
+    border: 1px solid rgba(90, 240, 192, 0.16); border-radius: 16px;
+    box-shadow: 0 24px 64px rgba(4, 12, 9, 0.45), 0 2px 8px rgba(4, 12, 9, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    padding: 8px; opacity: 0; visibility: hidden; transform: translateY(10px) scale(0.985); transform-origin: top left;
+    transition: opacity .22s cubic-bezier(.22,1,.36,1), transform .22s cubic-bezier(.22,1,.36,1), visibility .22s;
   }
-  .kznav__item.is-open .kznav__panel { opacity: 1; visibility: visible; transform: translateY(0); }
+  .kznav__panel::before { content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+    background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 44px 44px; opacity: .6;
+    -webkit-mask-image: radial-gradient(220px circle at 20% 0%, black, transparent 75%); mask-image: radial-gradient(220px circle at 20% 0%, black, transparent 75%); }
+  .kznav__item.is-open .kznav__panel { opacity: 1; visibility: visible; transform: translateY(0) scale(1); }
   .kznav__panel-link {
-    display: flex; align-items: baseline; justify-content: space-between; gap: 14px;
-    padding: 11px 12px; min-height: 44px; border-radius: 9px; text-decoration: none;
-  }
-  .kznav__panel-link:hover { background: var(--kz-mint-soft); }
-  .kznav__panel-name { font-weight: 600; font-size: 14px; color: var(--kz-ink); display: block; }
-  .kznav__panel-desc { font-weight: 500; font-size: 12px; color: var(--kz-ink-3); display: block; margin-top: 2px; }
-  .kznav__panel-price { font-weight: 700; font-size: 13px; color: var(--kz-mint); white-space: nowrap; }
+    position: relative; display: flex; align-items: center; justify-content: space-between; gap: 14px;
+    padding: 12px 14px; min-height: 52px; border-radius: 11px; text-decoration: none;
+    transition: background .18s; }
+  .kznav__panel-link:hover { background: rgba(90, 240, 192, 0.08); }
+  .kznav__panel-link:hover .kznav__panel-name { color: #5af0c0; }
+  .kznav__panel-name { font-weight: 650; font-size: 14px; color: #e8efea; display: block; transition: color .18s; }
+  .kznav__panel-desc { font-weight: 450; font-size: 12px; color: rgba(232, 240, 236, 0.55); display: block; margin-top: 3px; }
+  .kznav__panel-price { font-weight: 700; font-size: 12.5px; color: #5af0c0; white-space: nowrap;
+    padding: 4px 10px; border: 1px solid rgba(90, 240, 192, 0.28); border-radius: 999px; background: rgba(90, 240, 192, 0.07); }
+  .kznav__panel-foot { display: flex; gap: 4px; margin-top: 6px; border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 6px; }
   .kznav__panel-all {
-    display: flex; align-items: center; min-height: 44px; padding: 9px 12px; margin-top: 4px;
-    border-top: 1px solid var(--kz-line); font-weight: 700; font-size: 13.5px;
-    color: var(--kz-mint); text-decoration: none; border-radius: 0 0 9px 9px;
-  }
-  .kznav__panel-all:hover { background: var(--kz-mint-soft); }
+    display: flex; align-items: center; min-height: 44px; padding: 9px 14px; flex: 1;
+    font-weight: 700; font-size: 13.5px; color: #5af0c0; text-decoration: none; border-radius: 10px; transition: background .18s; }
+  .kznav__panel-all--sec { color: rgba(232, 240, 236, 0.75); justify-content: flex-end; font-weight: 600; }
+  .kznav__panel-all:hover { background: rgba(90, 240, 192, 0.08); }
 }
 @media (min-width: 1180px) { .kznav__phone { display: flex; } .kznav__tg { display: inline-flex; } }
 
@@ -296,9 +305,11 @@
 #kzHeader .kznav__phone-hours { color: var(--kz-ink-3); }
 #kzHeader .kznav__cta { color: #fff; background: var(--kz-navy); }
 #kzHeader .kznav__cta:hover { background: var(--kz-mint); }
-#kzHeader .kznav__panel-name { color: var(--kz-ink); }
-#kzHeader .kznav__panel-desc { color: var(--kz-ink-3); }
-#kzHeader .kznav__panel-price, #kzHeader .kznav__panel-all { color: var(--kz-mint); }
+#kzHeader .kznav__panel-name { color: #e8efea; }
+#kzHeader .kznav__panel-link:hover .kznav__panel-name { color: #5af0c0; }
+#kzHeader .kznav__panel-desc { color: rgba(232, 240, 236, 0.55); }
+#kzHeader .kznav__panel-price, #kzHeader .kznav__panel-all { color: #5af0c0; }
+#kzHeader .kznav__panel-all--sec { color: rgba(232, 240, 236, 0.75); }
 #kzHeader ul.kznav__nav { list-style: none; margin: 0; padding: 0; }
 #kzDrawer a { text-decoration: none; }
 #kzDrawer .kzdrawer__link, #kzDrawer .kzdrawer__acc, #kzDrawer .kzdrawer__phone-num { color: var(--kz-ink); }
@@ -324,10 +335,11 @@
 #kzHeader .kznav__phone-num { font-weight: 600; font-size: 14px; }
 #kzHeader .kznav__phone-hours { font-size: 11px; }
 #kzHeader .kznav__cta { font-weight: 700; font-size: 13.5px; min-height: 44px; }
-#kzHeader .kznav__panel-name { font-weight: 600; font-size: 14px; }
-#kzHeader .kznav__panel-desc { font-weight: 500; font-size: 12px; }
-#kzHeader .kznav__panel-price { font-weight: 700; font-size: 13px; }
+#kzHeader .kznav__panel-name { font-weight: 650; font-size: 14px; }
+#kzHeader .kznav__panel-desc { font-weight: 450; font-size: 12px; }
+#kzHeader .kznav__panel-price { font-weight: 700; font-size: 12.5px; }
 #kzHeader .kznav__panel-all { font-weight: 700; font-size: 13.5px; min-height: 44px; }
+#kzHeader .kznav__panel-all--sec { font-weight: 600; }
 #kzHeader .kznav__panel-link { min-height: 44px; }
 #kzDrawer .kzdrawer__link, #kzDrawer .kzdrawer__acc { font-weight: 700; font-size: 15px; min-height: 48px; }
 #kzDrawer .kzdrawer__sub-link { min-height: 44px; }
@@ -390,7 +402,8 @@
   60% { transform: translate(1.5px, -0.5px); } 80% { transform: translate(-1px, 0); } }
 @keyframes kz-cipher-r-fast { 0%, 100% { transform: translate(0, 0); } 20% { transform: translate(2.5px, -1px); }
   60% { transform: translate(-1.5px, 0.5px); } 80% { transform: translate(1px, 0); } }
-.kzlogo__sub { display: flex; align-items: center; gap: 7px; font-family: ui-monospace, 'JetBrains Mono', SFMono-Regular, Menlo, monospace;
+.kzlogo__word-row { display: flex; align-items: center; gap: 7px; }
+.kzlogo__sub { display: flex; align-items: center; font-family: ui-monospace, 'JetBrains Mono', SFMono-Regular, Menlo, monospace;
   font-size: 8.5px; font-weight: 500; letter-spacing: 0.14em; color: var(--kz-ink-3); text-transform: uppercase; }
 .kzlogo__sub-lines { display: flex; flex-direction: column; gap: 2px; line-height: 1.1; }
 .kzlogo__dot { width: 6px; height: 6px; border-radius: 50%; background: #2bc89a;

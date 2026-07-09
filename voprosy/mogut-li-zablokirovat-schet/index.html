@@ -26,7 +26,7 @@
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/x-icon" sizes="32x32" href="/favicon.ico">
 <link rel="apple-touch-icon" type="image/png" href="/img/t/tild3236-3965-4939-a136-303435336461.png">
-<link rel="stylesheet" href="/assets/nav.css?v=741022e9">
+<link rel="stylesheet" href="/assets/nav.css?v=e8a51b06">
 <script defer src="/assets/nav.js?v=4a53b9ab"></script>
 <!-- kz:head:end --><!-- kz:scripts:start -->
 <!-- scripts-common · R1.05: единые счётчики аналитики для всех страниц (кроме /404.html).
@@ -62,8 +62,8 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
     <!-- Анимированный cipher-логотип (канон с главной, см. nav.css → .kzlogo) -->
     <a href="/" class="kznav__logo kzlogo" aria-label="Казна — на главную" data-nav-click data-nav-location="header" data-nav-label="logo">
       <span class="kzlogo__word-wrap">
-        <span class="kzlogo__word"><span class="b">Казна</span><span class="l" aria-hidden="true">Казна</span><span class="r" aria-hidden="true">Казна</span></span>
-        <span class="kzlogo__sub"><span class="kzlogo__dot" aria-hidden="true"></span><span class="kzlogo__sub-lines"><span>Казначейское</span><span>сопровождение</span></span></span>
+        <span class="kzlogo__word-row"><span class="kzlogo__dot" aria-hidden="true"></span><span class="kzlogo__word"><span class="b">Казна</span><span class="l" aria-hidden="true">Казна</span><span class="r" aria-hidden="true">Казна</span></span></span>
+        <span class="kzlogo__sub"><span class="kzlogo__sub-lines"><span>Казначейское</span><span>сопровождение</span></span></span>
       </span>
     </a>
 
@@ -96,11 +96,11 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
               <span class="kznav__panel-desc">Счёт + сведения + платежи по УПД</span></span>
               <span class="kznav__panel-price">49 000 ₽</span>
             </a>
-            <a class="kznav__panel-all" href="/uslugi" data-nav-click data-nav-location="header_panel" data-nav-label="Все услуги" data-nav-intent="services_all">Все услуги →</a>
+            <div class="kznav__panel-foot">
+              <a class="kznav__panel-all" href="/uslugi" data-nav-click data-nav-location="header_panel" data-nav-label="Все услуги" data-nav-intent="services_all">Все услуги →</a>
+              <a class="kznav__panel-all kznav__panel-all--sec" href="/stoimost" data-nav-click data-nav-location="header_panel" data-nav-label="Цены" data-nav-intent="pricing">Цены и тарифы</a>
+            </div>
           </div>
-        </li>
-        <li class="kznav__item">
-          <a class="kznav__link" href="/stoimost" data-nav-click data-nav-location="header" data-nav-label="Цены" data-nav-intent="pricing">Цены</a>
         </li>
         <!-- R2.03.1: промоушен разделов Knowledge Platform (критерии R1.02 выполнены) -->
         <li class="kznav__item">
@@ -189,11 +189,9 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
           <li><a class="kzdrawer__sub-link" href="/services/conduct" data-nav-click data-nav-location="drawer" data-nav-label="Казначейское сопровождение" data-nav-intent="conduct"><span class="kzdrawer__sub-name">Казначейское сопровождение</span><span class="kzdrawer__sub-price">69 000 ₽/мес</span></a></li>
           <li><a class="kzdrawer__sub-link" href="/services/reserve" data-nav-click data-nav-location="drawer" data-nav-label="Резерв счёта на тендер" data-nav-intent="reserve"><span class="kzdrawer__sub-name">Резерв счёта на тендер</span><span class="kzdrawer__sub-price">19 000 ₽</span></a></li>
           <li><a class="kzdrawer__sub-link" href="/services/postpayment" data-nav-click data-nav-location="drawer" data-nav-label="Контракт с постоплатой" data-nav-intent="postpayment"><span class="kzdrawer__sub-name">Контракт с постоплатой</span><span class="kzdrawer__sub-price">49 000 ₽</span></a></li>
+          <li><a class="kzdrawer__sub-link" href="/stoimost" data-nav-click data-nav-location="drawer" data-nav-label="Цены" data-nav-intent="pricing"><span class="kzdrawer__sub-name">Цены и тарифы</span></a></li>
           <li><a class="kzdrawer__sub-link" href="/uslugi" data-nav-click data-nav-location="drawer" data-nav-label="Все услуги" data-nav-intent="services_all"><span class="kzdrawer__sub-name">Все услуги →</span></a></li>
         </ul>
-      </div>
-      <div class="kzdrawer__group">
-        <a class="kzdrawer__link" href="/stoimost" data-nav-click data-nav-location="drawer" data-nav-label="Цены" data-nav-intent="pricing">Цены</a>
       </div>
       <div class="kzdrawer__group">
         <a class="kzdrawer__link" href="/oshibki/" data-nav-click data-nav-location="drawer" data-nav-label="Ошибки" data-nav-intent="errors">Ошибки: разборы и решения</a>
