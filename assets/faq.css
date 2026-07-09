@@ -1,0 +1,9 @@
+/* FAQ Intelligence Center — доп. слой поверх oshibki.css (R2.05) */
+.fq-more { display: none; }
+.oe-catsec.is-expanded .fq-more { display: flex; }
+.oe-catsec.is-searching .fq-more { display: flex; }
+.fq-expand { margin: 12px 0 0; padding: 10px 18px; border: 1.5px solid #d8d3c6; border-radius: 10px;
+  background: #fff; font-size: 14px; font-weight: 700; color: #15846B; cursor: pointer; }
+.fq-expand:hover { border-color: #15846B; }
+.fq-expand:focus-visible { outline: 2px solid #15846B; outline-offset: 2px; }
+.oe-catsec.is-expanded .fq-expand, .oe-catsec.is-searching .fq-expand { display: none; }
