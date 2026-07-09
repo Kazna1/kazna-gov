@@ -1,0 +1,5 @@
+/* Тематические экспертные центры — доп. слой (R2.06); базовые стили: oshibki/glossary/faq.css */
+.hb-filter { min-width: auto; padding: 0 14px; }
+[data-hub-page] .oe-hubhead .oe-answer { margin-top: 10px; }
+[data-hub-page] .oe-catsec ul { padding-left: 20px; }
+[data-hub-page] .oe-catsec ul li { margin: 6px 0; }

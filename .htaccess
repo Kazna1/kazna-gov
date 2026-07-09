@@ -157,3 +157,6 @@ ExpiresByType image/png "access plus 30 days"
 ExpiresByType image/jpeg "access plus 30 days"
 ExpiresByType image/svg+xml "access plus 30 days"
 </IfModule>
+Redirect 301 /uslugi/rezerv-kaznacheyskogo-scheta /services/reserve
+Redirect 301 /uslugi/otkrytie-kaznacheyskogo-scheta /services/open
+Redirect 301 /uslugi/soprovozhdenie-postoplata /services/postpayment
