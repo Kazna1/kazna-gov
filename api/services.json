@@ -1,0 +1,395 @@
+{
+ "project": "kazna-gov.ru Knowledge Graph",
+ "version": "2026-07-09",
+ "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
+ "docs": "https://kazna-gov.ru/api/",
+ "count": 6,
+ "entities": [
+  {
+   "id": "service-conduct",
+   "type": [
+    "service"
+   ],
+   "name": "Сопровождение платежей и ведение КС",
+   "aliases": [],
+   "summary": "Ведём казначейское сопровождение контракта под ключ: платежи и распоряжения в ГИИС, Сведения и их изменения, документы-основания, раздельный учёт, переписка с УФК. Безлимит операций, гарантия прохождения платежей, 69 000 ₽/мес за контракт (портфельный тариф — по договорённости). Дистанционно по всей России.",
+   "citation": "Самостоятельно: бухгалтер учится на возвратах. С нами: платежи проходят с первого раза, штат не отвлекается.",
+   "pages": [
+    {
+     "layer": "service",
+     "url": "/services/conduct",
+     "title": "Сопровождение платежей и ведение КС"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "sanktsionirovanie",
+     "rkp",
+     "svedeniya-ssu",
+     "vozmeshchenie"
+    ],
+    "SERVICE_REQUIRES": [
+     "rkp",
+     "svedeniya-ssu",
+     "chek-list-dokumenty",
+     "poyasnenie-ufk"
+    ],
+    "SERVICE_SOLVES": [
+     "err-naznachenie",
+     "err-kod-napravleniya",
+     "err-otkaz-sanktsionirovaniya",
+     "err-svedeniya-otkaz"
+    ],
+    "SEE_FAQ": [
+     "faq-sostav-uslugi-soprovozhdeniya",
+     "faq-stoimost-soprovozhdeniya",
+     "faq-vygoda-autsorsinga",
+     "faq-bukhgalter-vs-autsorsing"
+    ],
+    "PART_OF_TOPIC": [
+     "hub-platezhi"
+    ],
+    "REGULATED_BY": [
+     "law-приказ-минфина-214н",
+     "law-бк-рф-ст-2422224226"
+    ],
+    "DIAGNOSED_BY": [
+     "tool-diagnostika-platezha",
+     "tool-marshrutizator",
+     "tool-proverka-sankts"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-platezhey",
+     "/blog/autsorsing-kaznacheyskogo-soprovozhdeniya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-service-conduct",
+   "scores": {
+    "authority": 100,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "service-open",
+   "type": [
+    "service"
+   ],
+   "name": "Открытие казначейского счёта под ключ",
+   "aliases": [],
+   "summary": "Открываем лицевой счёт участника казначейского сопровождения за 1–2 рабочих дня под ключ: Сводный реестр, заявление 0531368, карточка подписей 0531753, доступ к ГИИС «Электронный бюджет» и передача реквизитов заказчику. Фиксированная цена 29 000 ₽, оплата по договору, работаем дистанционно по всей России.",
+   "citation": "Самостоятельно: 5–10 дней с риском возвратов. С нами: 1–2 дня, без возвратов, фикс-цена.",
+   "pages": [
+    {
+     "layer": "service",
+     "url": "/services/open",
+     "title": "Открытие казначейского счёта под ключ"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "ls-71",
+     "svodnyy-reestr",
+     "zayavlenie-ls",
+     "giis-eb"
+    ],
+    "SERVICE_REQUIRES": [
+     "zayavlenie-ls",
+     "kartochka-podpisey",
+     "chek-list-otkrytie",
+     "komplekt-otkrytie"
+    ],
+    "SERVICE_SOLVES": [
+     "err-zatyanulos-otkrytie",
+     "err-svodnyy-reestr",
+     "err-kartochka"
+    ],
+    "SEE_FAQ": [
+     "faq-kak-otkryt-schet",
+     "faq-srok-otkrytiya-scheta",
+     "faq-stoimost-otkrytiya-scheta",
+     "faq-dokumenty-dlya-otkrytiya"
+    ],
+    "PART_OF_TOPIC": [
+     "hub-scheta"
+    ],
+    "REGULATED_BY": [
+     "law-приказ-фк-44н",
+     "law-приказ-фк-21н"
+    ],
+    "DIAGNOSED_BY": [
+     "tool-proverka-komplekta",
+     "tool-podbor-scheta"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/how_to_open/",
+     "/blog/zayavlenie-na-otkrytie-kaznacheyskogo-scheta"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-service-open",
+   "scores": {
+    "authority": 100,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "service-vosstanovlenie",
+   "type": [
+    "service"
+   ],
+   "name": "Восстановление КС (антикризис)",
+   "aliases": [],
+   "summary": "Антикризисное восстановление казначейского сопровождения: разблокируем зависшие платежи, снимаем приостановления, разбираем завалы возвратов и запросов УФК, восстанавливаем Сведения и учёт. Антикризисный тариф 99 000 ₽ — берём контракт в любом состоянии; после стабилизации — 69 000 ₽/мес обычного ведения.",
+   "citation": "Платежи стоят, сроки горят: стабилизируем контракт за 1–2 недели и ведём дальше.",
+   "pages": [
+    {
+     "layer": "service",
+     "url": "/services/vosstanovlenie",
+     "title": "Восстановление КС (антикризис)"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "priostanovlenie",
+     "kazn-monitoring",
+     "err-otkaz-sanktsionirovaniya"
+    ],
+    "SERVICE_REQUIRES": [
+     "poyasnenie-ufk",
+     "poyasnenie-vozvrat",
+     "pismo-zapros"
+    ],
+    "SERVICE_SOLVES": [
+     "err-otkaz-sanktsionirovaniya",
+     "err-necelevoe",
+     "err-svedeniya-otkaz",
+     "err-mchd"
+    ],
+    "SEE_FAQ": [
+     "faq-srochnye-sluchai",
+     "faq-blokirovka-scheta",
+     "faq-komu-poruchit"
+    ],
+    "PART_OF_TOPIC": [
+     "hub-sankts"
+    ],
+    "REGULATED_BY": [
+     "law-бк-рф-ст-2422224226",
+     "law-приказ-минфина-214н"
+    ],
+    "DIAGNOSED_BY": [
+     "tool-diagnostika-platezha",
+     "tool-proverka-sankts"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/vozvrat-platezha-kaznachejstvo-chto-delat/",
+     "/blog/ufk-zaderzhivaet-platezh-chto-delat"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-service-vosstanovlenie",
+   "scores": {
+    "authority": 52,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "service-start",
+   "type": [
+    "service"
+   ],
+   "name": "Сопровождение с первого дня",
+   "aliases": [],
+   "summary": "Полный запуск казначейского сопровождения под ключ от 59 000 ₽: открываем счёт, настраиваем ГИИС и Сведения, ставим раздельный учёт, готовим шаблоны платёжных документов и обучаем вашу команду — либо продолжаем вести контракт сами. Для тех, кто выиграл первый контракт с КС и не хочет учиться на возвратах.",
+   "citation": "Первый контракт с КС: настроим весь контур за неделю и передадим команде — или останемся вести.",
+   "pages": [
+    {
+     "layer": "service",
+     "url": "/services/start",
+     "title": "Сопровождение с первого дня"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "ks",
+     "ls-71",
+     "razdelnyy-uchet",
+     "svedeniya-ssu"
+    ],
+    "SERVICE_REQUIRES": [
+     "chek-list-otkrytie",
+     "komplekt-otkrytie",
+     "prikaz-razdelnyy-uchet"
+    ],
+    "SERVICE_SOLVES": [
+     "err-zatyanulos-otkrytie",
+     "err-naznachenie",
+     "err-razdelnyy-uchet"
+    ],
+    "SEE_FAQ": [
+     "faq-start-novichka",
+     "faq-srok-podklyucheniya",
+     "faq-zona-klienta-pri-autsorsinge"
+    ],
+    "PART_OF_TOPIC": [
+     "hub-ks"
+    ],
+    "REGULATED_BY": [
+     "law-бк-рф-ст-2422224226",
+     "law-приказ-фк-44н"
+    ],
+    "DIAGNOSED_BY": [
+     "tool-generator-chek-lista",
+     "tool-diagnostika-kontrakta"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
+     "/blog/soprovozhdenie-goskontraktov-pod-kluch"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-service-start",
+   "scores": {
+    "authority": 44,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "service-reserve",
+   "type": [
+    "service"
+   ],
+   "name": "Резервирование счёта для тендера",
+   "aliases": [],
+   "summary": "Резервируем номер лицевого счёта до заключения контракта: подаём заявление 0531368 с отметкой «резервирование», получаем реквизиты для заявки или проекта контракта за 1–2 дня. Цена 19 000 ₽ без скрытых доплат; после победы завершаем открытие. Дистанционно по всей России.",
+   "citation": "Нужны реквизиты счёта до подписания? Резервирование даёт номер за 1–2 дня.",
+   "pages": [
+    {
+     "layer": "service",
+     "url": "/services/reserve",
+     "title": "Резервирование счёта для тендера"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "rezervirovanie-ls",
+     "ls-71",
+     "svodnyy-reestr"
+    ],
+    "SERVICE_REQUIRES": [
+     "zayavlenie-ls",
+     "chek-list-otkrytie"
+    ],
+    "SERVICE_SOLVES": [
+     "err-svodnyy-reestr",
+     "err-zatyanulos-otkrytie"
+    ],
+    "SEE_FAQ": [
+     "faq-kak-zarezervirovat-schet",
+     "faq-chto-takoe-rezervirovanie",
+     "faq-srok-rezerva-scheta"
+    ],
+    "PART_OF_TOPIC": [
+     "hub-scheta"
+    ],
+    "REGULATED_BY": [
+     "law-приказ-фк-44н"
+    ],
+    "DIAGNOSED_BY": [
+     "tool-podbor-scheta"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/how_to_open/"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-service-reserve",
+   "scores": {
+    "authority": 9,
+    "coverage": 100,
+    "connectivity": 73,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "service-postpayment",
+   "type": [
+    "service"
+   ],
+   "name": "КС при постоплате",
+   "aliases": [],
+   "summary": "Разовый пакет для контрактов с постоплатой: открываем счёт, готовим Сведения и проводим финальные расчёты — приёмку, оплату, возмещение ваших затрат и вывод средств на расчётный счёт. 49 000 ₽ разово вместо месячной подписки: для контрактов, где движение денег происходит один раз в конце.",
+   "citation": "Контракт без аванса: платить за месяцы сопровождения незачем — берите разовый пакет финального расчёта.",
+   "pages": [
+    {
+     "layer": "service",
+     "url": "/services/postpayment",
+     "title": "КС при постоплате"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "vozmeshchenie",
+     "pribyl-ks",
+     "ls-71"
+    ],
+    "SERVICE_REQUIRES": [
+     "zayavlenie-ls",
+     "svedeniya-ssu",
+     "chek-list-dokumenty"
+    ],
+    "SERVICE_SOLVES": [
+     "err-zatyanulos-otkrytie",
+     "err-kod-napravleniya"
+    ],
+    "SEE_FAQ": [
+     "faq-ks-bez-avansa",
+     "faq-kak-vozmestit-rashody",
+     "faq-vyvod-na-raschetnyy"
+    ],
+    "PART_OF_TOPIC": [
+     "hub-platezhi"
+    ],
+    "REGULATED_BY": [
+     "law-приказ-минфина-214н"
+    ],
+    "DIAGNOSED_BY": [
+     "tool-marshrutizator",
+     "tool-diagnostika-kontrakta"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/avans-vs-vozmeshchenie-vs-pryamoy-platezh-tri-tipa-operatsiy-ks"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-service-postpayment",
+   "scores": {
+    "authority": 4,
+    "coverage": 100,
+    "connectivity": 67,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  }
+ ]
+}

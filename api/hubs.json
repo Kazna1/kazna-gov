@@ -1,0 +1,529 @@
+{
+ "project": "kazna-gov.ru Knowledge Graph",
+ "version": "2026-07-09",
+ "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
+ "docs": "https://kazna-gov.ru/api/",
+ "count": 10,
+ "entities": [
+  {
+   "id": "hub-scheta",
+   "type": [
+    "hub"
+   ],
+   "name": "Лицевые счета",
+   "aliases": [],
+   "summary": "Лицевой счёт участника КС (тип 71) — счёт в УФК, на котором живут целевые средства контракта. Центр собирает всё о счетах: открытие за 1–2 дня, резервирование для тендера, реквизиты, лимиты и выписки, переоформление и закрытие, разборы отказов, официальные формы заявлений и карточки подписей.",
+   "citation": "Полный жизненный цикл КС-счёта: от заявления 0531368 и карточки подписей 0531753 до закрытия с возвратом остатка. Термины и вопросы-ответы по счетам, ошибки открытия (включая Сводный реестр), официальные бланки для скачивания и услуга открытия под ключ.",
+   "pages": [
+    {
+     "layer": "hub",
+     "url": "/scheta/",
+     "title": "Лицевые счета"
+    }
+   ],
+   "relations": {
+    "REGULATED_BY": [
+     "law-приказ-фк-44н",
+     "law-приказ-фк-21н"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "DIAGNOSED_BY": [
+     "tool-podbor-scheta",
+     "tool-proverka-komplekta"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/how_to_open/",
+     "/blog/litsevoy-schet-71",
+     "/blog/kak-otkryt-licevoy-schet-71",
+     "/blog/rekvizity-kaznacheyskogo-scheta",
+     "/blog/edinyy-kaznacheyskiy-schet-vs-ks-schet-otlichiya",
+     "/blog/kaznacheyskiy-schet-i-raschetnyy-raznitsa",
+     "/blog/limit-na-ks-schete-formirovanie-i-kontrol",
+     "/blog/zakrytie-kaznacheyskogo-scheta-posle-kontrakta",
+     "/blog/smena-rukovoditelya-pri-deystvuyushchem-ks-schete"
+    ],
+    "RELATED_HUB": [
+     "hub-ks",
+     "hub-platezhi",
+     "hub-giis"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-hub-scheta",
+   "scores": {
+    "authority": 11,
+    "coverage": 83,
+    "connectivity": 60,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "hub-platezhi",
+   "type": [
+    "hub"
+   ],
+   "name": "Платежи и вывод средств",
+   "aliases": [],
+   "summary": "Каждое списание с лицевого счёта — распоряжение с документами-основаниями, ИГК и кодом направления, которое проверяет УФК. Центр собирает всё о платежах: как платить поставщикам, зарплату и налоги, как выводить возмещение и прибыль на расчётный счёт, коды направлений и 9XXX, разборы возвратов и услугу сопровождения платежей.",
+   "citation": "Операционное ядро КС: прямые платежи, аванс и его зачёт, возмещение расходов, перечисление прибыли, отзыв распоряжений, НДС в назначениях, полный справочник кодов. Ошибки платежей с решениями и образцы платёжных документов.",
+   "pages": [
+    {
+     "layer": "hub",
+     "url": "/platezhi/",
+     "title": "Платежи и вывод средств"
+    }
+   ],
+   "relations": {
+    "REGULATED_BY": [
+     "law-приказ-минфина-214н",
+     "law-пп-2053"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "DIAGNOSED_BY": [
+     "tool-diagnostika-platezha",
+     "tool-marshrutizator"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-platezhey",
+     "/blog/naznachenie-platezha-kaznachejstvo/",
+     "/blog/igk-v-platezhah-kaznacheystva",
+     "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta",
+     "/blog/avans-vs-vozmeshchenie-vs-pryamoy-platezh-tri-tipa-operatsiy-ks",
+     "/blog/kak-rasschitat-summu-avansa-po-goskontraktu",
+     "/blog/vozvrat-avansa-po-goskontraktu-kaznacheystvo",
+     "/blog/codes",
+     "/blog/kody-vozmeshcheniya-rashodov",
+     "/blog/income_codes",
+     "/blog/izmeneniya-platezhek-kaznachejstvo-2026"
+    ],
+    "RELATED_HUB": [
+     "hub-sankts",
+     "hub-scheta"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-hub-platezhi",
+   "scores": {
+    "authority": 11,
+    "coverage": 83,
+    "connectivity": 57,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "hub-sankts",
+   "type": [
+    "hub"
+   ],
+   "name": "Санкционирование и контроль",
+   "aliases": [],
+   "summary": "Санкционирование — проверка казначейством каждого расхода с лицевого счёта: соответствие Сведениям, документам-основаниям, кодам и целевому режиму. Центр собирает всё о контроле: правила и сроки проверки, Сведения 0501213 с официальным бланком, казначейский мониторинг, приостановление операций, отказы и как на них отвечать.",
+   "citation": "Как УФК проверяет платежи и что подготовить, чтобы проходить проверку с первого раза: Сведения и их утверждение, документы-основания по типам операций, регламентные сроки, мониторинг и расширенное сопровождение, ответственность за нецелевое.",
+   "pages": [
+    {
+     "layer": "hub",
+     "url": "/sanktsionirovanie/",
+     "title": "Санкционирование и контроль"
+    }
+   ],
+   "relations": {
+    "REGULATED_BY": [
+     "law-приказ-минфина-214н",
+     "law-бк-рф-ст-2422224226",
+     "law-коап-рф-ст-1514"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "DIAGNOSED_BY": [
+     "tool-proverka-sankts"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/sanktsionirovanie-operatsiy-kaznacheystvom",
+     "/blog/svedeniya-ob-operatsiyah-s-tselevymi-sredstvami",
+     "/blog/sroki-rassmotreniya-dokumentov-v-ufk-tablitsa",
+     "/blog/novyy-poryadok-kaznacheyskogo-soprovozhdeniya-s-1-sentyabrya-2026",
+     "/blog/podvodnye-kamni-kaznacheyskogo-soprovozhdeniya"
+    ],
+    "RELATED_HUB": [
+     "hub-platezhi",
+     "hub-otchetnost"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-hub-sankts",
+   "scores": {
+    "authority": 9,
+    "coverage": 83,
+    "connectivity": 50,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "hub-ks",
+   "type": [
+    "hub"
+   ],
+   "name": "Казначейское сопровождение",
+   "aliases": [],
+   "summary": "Казначейское сопровождение — режим контроля целевых средств госконтрактов и субсидий: деньги живут на лицевом счёте в УФК, каждый платёж проходит санкционирование. Этот центр собирает всю базу платформы по теме: с чего начать, как устроен процесс, роли участников, термины, вопросы-ответы, чек-листы и услуги сопровождения под ключ.",
+   "citation": "Корневой раздел платформы: базовые понятия и процессы КС, участники и их роли, пороги применения, типы контрактов, чек-листы старта и коммерческие вопросы о работе с нами. Отсюда — переходы во все тематические центры: счета, платежи, санкционирование, ГОЗ, субсидии, документы.",
+   "pages": [
+    {
+     "layer": "hub",
+     "url": "/kaznacheyskoe-soprovozhdenie/",
+     "title": "Казначейское сопровождение"
+    }
+   ],
+   "relations": {
+    "REGULATED_BY": [
+     "law-бк-рф-ст-2422224226",
+     "law-ежегодный-закон-о-федеральном-бюджете",
+     "law-44-фз"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "DIAGNOSED_BY": [
+     "tool-diagnostika-kontrakta",
+     "tool-generator-chek-lista"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/ks_2025/",
+     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
+     "/blog/kaznacheyskoe-soprovozhdenie-44-fz-2026-polnyy-gid",
+     "/blog/kakie-kontrakty-popadayut-pod-kaznachejskoe-soprovozhdenie/",
+     "/blog/kaznacheyskoe-vs-bankovskoe-soprovozhdenie-otlichiya",
+     "/blog/tsepochka-kaznacheyskogo-soprovozhdeniya",
+     "/blog/podvodnye-kamni-kaznacheyskogo-soprovozhdeniya",
+     "/blog/kaznacheyskoe-soprovozhdenie-dlya-ip"
+    ],
+    "RELATED_HUB": [
+     "hub-scheta",
+     "hub-platezhi",
+     "hub-sankts",
+     "hub-zakony"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-hub-ks",
+   "scores": {
+    "authority": 8,
+    "coverage": 83,
+    "connectivity": 57,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "hub-goz",
+   "type": [
+    "hub"
+   ],
+   "name": "ГОЗ",
+   "aliases": [],
+   "summary": "Гособоронзаказ — самый жёсткий режим контроля контрактных денег: ИГК по всей кооперации, казначейское или банковское сопровождение, обязательный раздельный учёт, регулируемые цены по ПП № 1465 и контроль военных представительств. Центр собирает всё для исполнителей ГОЗ любого уровня кооперации: правила, цены, учёт, отчётность и услуги.",
+   "citation": "Режим 275-ФЗ целиком: отдельные и лицевые счета, обязанности головного исполнителя и кооперации, виды цен и правило «20+1», раздельный учёт и форма «Прим-1», отчётность в ГИРБО, штрафы и практика военпредов.",
+   "pages": [
+    {
+     "layer": "hub",
+     "url": "/goz/",
+     "title": "ГОЗ"
+    }
+   ],
+   "relations": {
+    "REGULATED_BY": [
+     "law-275-фз",
+     "law-пп-1465",
+     "law-коап-рф-ст-1537"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "DIAGNOSED_BY": [
+     "tool-proverka-goz"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid",
+     "/blog/razdelnyj-uchet-goz-polnyy-guide-2026",
+     "/blog/vidy-cen-goz",
+     "/blog/ast-goz-elektronnaya-torgovaya-ploshadka",
+     "/blog/kaznacheyskoe-soprovozhdenie-predpriyatiy-opk",
+     "/blog/razdelnyy-uchet-po-44-fz-vs-275-fz-otlichiya"
+    ],
+    "RELATED_HUB": [
+     "hub-ru",
+     "hub-ks",
+     "hub-otchetnost"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-hub-goz",
+   "scores": {
+    "authority": 4,
+    "coverage": 83,
+    "connectivity": 40,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 80
+   }
+  },
+  {
+   "id": "hub-otchetnost",
+   "type": [
+    "hub"
+   ],
+   "name": "Отчётность и учёт",
+   "aliases": [],
+   "summary": "Казначейское сопровождение добавляет подрядчику собственный контур отчётности: Сведения и их актуализация, отчёты по субсидиям о расходах и результатах, промежуточная отчётность ГОЗ в ГИРБО, расходные декларации при расширенном сопровождении. Центр собирает календарь обязанностей, правила учёта операций по лицевому счёту и подготовку к проверкам.",
+   "citation": "Что, куда и когда сдаёт участник КС: карта отчётных обязанностей по типам средств, бухгалтерский учёт операций лицевого счёта, взаимодействие бухгалтерии с казначейским контуром, подготовка к проверкам.",
+   "pages": [
+    {
+     "layer": "hub",
+     "url": "/otchetnost/",
+     "title": "Отчётность и учёт"
+    }
+   ],
+   "relations": {
+    "REGULATED_BY": [
+     "law-приказ-минфина-214н",
+     "law-275-фз"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kalendar-otchetnosti-podryadchika-ks-2026",
+     "/blog/svedeniya-ob-operatsiyah-s-tselevymi-sredstvami",
+     "/blog/akt-schet-upd-pri-kaznachejskom-soprovozhdenii/"
+    ],
+    "RELATED_HUB": [
+     "hub-sankts",
+     "hub-subsidii",
+     "hub-goz"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-hub-otchetnost",
+   "scores": {
+    "authority": 4,
+    "coverage": 67,
+    "connectivity": 33,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 67
+   }
+  },
+  {
+   "id": "hub-subsidii",
+   "type": [
+    "hub"
+   ],
+   "name": "Субсидии и гранты",
+   "aliases": [],
+   "summary": "Субсидии и гранты юридическим лицам — один из основных случаев казначейского сопровождения: средства зачисляются на лицевой счёт, расходуются по Сведениям под санкционирование, а получатель отчитывается о расходах и результатах. Центр собирает правила расходования, соглашения и идентификаторы, отчётность, разборы отказов и услугу сопровождения субсидий.",
+   "citation": "Жизненный цикл субсидии: соглашение и идентификатор, счёт и Сведения, допустимые расходы, разделение с собственными средствами, отчёт о результатах, возврат остатков и риски возврата всей субсидии.",
+   "pages": [
+    {
+     "layer": "hub",
+     "url": "/subsidii/",
+     "title": "Субсидии и гранты"
+    }
+   ],
+   "relations": {
+    "REGULATED_BY": [
+     "law-бк-рф-ст-2422224226",
+     "law-ежегодный-закон-о-федеральном-бюджете"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "DIAGNOSED_BY": [
+     "tool-proverka-subsidii"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026",
+     "/blog/svedeniya-ob-operatsiyah-s-tselevymi-sredstvami",
+     "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta"
+    ],
+    "RELATED_HUB": [
+     "hub-sankts",
+     "hub-otchetnost",
+     "hub-scheta"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-hub-subsidii",
+   "scores": {
+    "authority": 3,
+    "coverage": 83,
+    "connectivity": 33,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 67
+   }
+  },
+  {
+   "id": "hub-zakony",
+   "type": [
+    "hub"
+   ],
+   "name": "Законодательство",
+   "aliases": [],
+   "summary": "Правила казначейского сопровождения задаются связкой актов: статьи 242.22–242.26 БК РФ (фундамент), ежегодный закон о федеральном бюджете (случаи и пороги на год), порядки Минфина и Казначейства (операционка), отраслевые законы 44-ФЗ, 223-ФЗ и 275-ФЗ. Центр собирает нормативную базу с разборами простым языком и отслеживанием изменений.",
+   "citation": "Навигатор по нормативке: какой акт за что отвечает, пороги и случаи КС текущего года, изменения порядка санкционирования с 01.09.2026, ответственность (КоАП, вплоть до уголовной), ответы на вопросы «попадаю ли я под КС».",
+   "pages": [
+    {
+     "layer": "hub",
+     "url": "/zakonodatelstvo/",
+     "title": "Законодательство"
+    }
+   ],
+   "relations": {
+    "REGULATED_BY": [
+     "law-бк-рф-ст-2422224226",
+     "law-ежегодный-закон-о-федеральном-бюджете",
+     "law-44-фз",
+     "law-275-фз",
+     "law-223-фз"
+    ],
+    "DIAGNOSED_BY": [
+     "tool-proverka-ks"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-2026-opredeleniya",
+     "/blog/kakie-kontrakty-popadayut-pod-kaznachejskoe-soprovozhdenie/",
+     "/blog/novyy-poryadok-kaznacheyskogo-soprovozhdeniya-s-1-sentyabrya-2026",
+     "/blog/kaznacheyskoe-soprovozhdenie-223-fz",
+     "/blog/kaznacheyskoe-soprovozhdenie-munitsipalnyh-kontraktov",
+     "/blog/fines/",
+     "/novosti/"
+    ],
+    "RELATED_HUB": [
+     "hub-ks",
+     "hub-goz",
+     "hub-subsidii"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-hub-zakony",
+   "scores": {
+    "authority": 2,
+    "coverage": 67,
+    "connectivity": 37,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 73
+   }
+  },
+  {
+   "id": "hub-ru",
+   "type": [
+    "hub"
+   ],
+   "name": "Раздельный учёт",
+   "aliases": [],
+   "summary": "Раздельный учёт — обязанность вести затраты отдельно по каждому контракту ГОЗ и сопровождаемому контракту: операции привязываются к ИГК, ресурсы распределяются по контрактам, результат считается поконтрактно. За отсутствие учёта по ГОЗ — штраф по КоАП 15.37. Центр собирает методику постановки, формы, вопросы и услугу постановки учёта.",
+   "citation": "Постановка раздельного учёта с нуля: приказ и методика, базы распределения накладных, привязка первички к ИГК, форма «Прим-1», отличия требований 44-ФЗ и 275-ФЗ, проверки военпреда и ФАС.",
+   "pages": [
+    {
+     "layer": "hub",
+     "url": "/razdelnyj-uchet/",
+     "title": "Раздельный учёт"
+    }
+   ],
+   "relations": {
+    "REGULATED_BY": [
+     "law-275-фз",
+     "law-коап-рф-ст-1537"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "DIAGNOSED_BY": [
+     "tool-proverka-goz"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/razdelnyj-uchet-goz-polnyy-guide-2026",
+     "/blog/razdelnyy-uchet-po-44-fz-vs-275-fz-otlichiya",
+     "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid",
+     "/blog/fines/"
+    ],
+    "RELATED_HUB": [
+     "hub-goz",
+     "hub-otchetnost",
+     "hub-sankts"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-hub-ru",
+   "scores": {
+    "authority": 1,
+    "coverage": 83,
+    "connectivity": 27,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 53
+   }
+  },
+  {
+   "id": "hub-giis",
+   "type": [
+    "hub"
+   ],
+   "name": "ГИИС ЭБ и доступ",
+   "aliases": [],
+   "summary": "ГИИС «Электронный бюджет» — рабочая система участника КС: здесь подаются заявления, Сведения и распоряжения о платежах. Вход требует настроенного рабочего места: квалифицированная подпись, КриптоПро CSP, Континент TLS, МЧД для сотрудников. Центр собирает настройку доступа, решение ошибок входа, полномочия и услугу подключения под ключ.",
+   "citation": "Всё про цифровой контур КС: регистрация организации и сотрудников, сертификаты и их перевыпуск, машиночитаемые доверенности формата 003, настройка рабочего места, типовые ошибки доступа и их решения.",
+   "pages": [
+    {
+     "layer": "hub",
+     "url": "/giis/",
+     "title": "ГИИС ЭБ и доступ"
+    }
+   ],
+   "relations": {
+    "REGULATED_BY": [
+     "law-63-фз",
+     "law-приказ-минцифры-1001"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/giis-elektronnyy-byudzhet-2026-polnaya-instruktsiya",
+     "/blog/registratsiya-v-giis-elektronnyy-byudzhet-podryadchika",
+     "/blog/vhod-v-elektronnyy-byudzhet-po-sertifikatu",
+     "/blog/sertifikat-ecp-kaznacheystva",
+     "/blog/doverennost-dlya-ufk",
+     "/blog/dokumenty-dlya-kaznacheyskogo-soprovozhdeniya"
+    ],
+    "RELATED_HUB": [
+     "hub-scheta",
+     "hub-platezhi"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-hub-giis",
+   "scores": {
+    "authority": 1,
+    "coverage": 67,
+    "connectivity": 20,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 40
+   }
+  }
+ ]
+}

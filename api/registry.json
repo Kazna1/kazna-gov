@@ -1,0 +1,20 @@
+{
+ "project": "kazna-gov.ru Knowledge Graph",
+ "version": "2026-07-09",
+ "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
+ "docs": "https://kazna-gov.ru/api/",
+ "registries": {
+  "master": "/api/entities.json",
+  "errors": "/api/errors.json",
+  "documents": "/api/documents.json",
+  "glossary": "/api/glossary.json",
+  "faq": "/api/faq.json",
+  "hubs": "/api/hubs.json",
+  "tools": "/api/tools.json",
+  "services": "/api/services.json",
+  "graph": "/api/knowledge-graph.json",
+  "relations": "/api/relations.json",
+  "index": "/api/entity-index.json",
+  "statistics": "/api/graph-statistics.json"
+ }
+}

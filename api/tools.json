@@ -1,0 +1,814 @@
+{
+ "project": "kazna-gov.ru Knowledge Graph",
+ "version": "2026-07-09",
+ "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
+ "docs": "https://kazna-gov.ru/api/",
+ "count": 10,
+ "entities": [
+  {
+   "id": "tool-diagnostika-kontrakta",
+   "type": [
+    "tool"
+   ],
+   "name": "Диагностика контракта",
+   "aliases": [],
+   "summary": "Мастер за 4 вопроса определяет режим вашего контракта: попадает ли он под казначейское сопровождение, банковское сопровождение ГОЗ или исполняется свободно. На выходе — диагноз с уровнем риска, список обязанностей, необходимые документы, типичные ошибки старта и чек-лист первых шагов, собранные из базы знаний платформы.",
+   "citation": "Вход: источник средств, тип контракта, аванс. Выход: режим исполнения (КС / банковское / свободный) + план подготовки.",
+   "pages": [
+    {
+     "layer": "tool",
+     "url": "/instrumenty/diagnostika-kontrakta/",
+     "title": "Диагностика контракта"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "ks",
+     "porog-ks",
+     "ls-71",
+     "kontrakt-44",
+     "svodnyy-reestr",
+     "sanktsionirovanie",
+     "subsidiya",
+     "soglashenie-subsidii",
+     "id-soglasheniya",
+     "tsepochka-ks",
+     "subpodryadchik",
+     "igk",
+     "obs",
+     "bank-soprovozhdenie",
+     "psb",
+     "zakon-budget",
+     "raschetnyy-schet"
+    ],
+    "SEE_FAQ": [
+     "faq-kakie-kontrakty-pod-ks",
+     "faq-s-kakoy-summy-ks",
+     "faq-kak-ponyat-est-li-ks",
+     "faq-kak-otkryt-schet",
+     "faq-start-novichka",
+     "faq-subsidiya-pod-ks",
+     "faq-raskhody-subsidii",
+     "faq-schet-subpodryadchiku",
+     "faq-subpodryad-v-goz",
+     "faq-kazna-ili-bank-goz",
+     "faq-zaprety-otdelnyy-schet",
+     "faq-kto-ustanavlivaet-sluchai-ks",
+     "faq-ks-bez-avansa",
+     "faq-mozhno-li-izbezhat-ks"
+    ],
+    "PART_OF_TOPIC": [
+     "hub-ks"
+    ],
+    "REGULATED_BY": [
+     "law-ежегодный-закон-о-федеральном-бюджете",
+     "law-бк-рф-ст-2422224226",
+     "law-приказ-фк-44н",
+     "law-275-фз"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kakie-kontrakty-popadayut-pod-kaznachejskoe-soprovozhdenie/",
+     "/blog/kaznacheyskoe-soprovozhdenie-2026-opredeleniya"
+    ],
+    "REQUIRES_DOC": [
+     "zayavlenie-ls",
+     "kartochka-podpisey",
+     "chek-list-otkrytie",
+     "komplekt-subsidii",
+     "svedeniya-ssu",
+     "formulirovka-ks",
+     "komplekt-goz",
+     "prikaz-razdelnyy-uchet"
+    ],
+    "PREVENTS": [
+     "err-zatyanulos-otkrytie",
+     "err-svodnyy-reestr",
+     "err-subsidiya-rashody",
+     "err-igk",
+     "err-razdelnyy-uchet"
+    ],
+    "RESOLVES_TO": [
+     "service-open",
+     "service-conduct"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-tool-diagnostika-kontrakta",
+   "scores": {
+    "authority": 3,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "tool-podbor-scheta",
+   "type": [
+    "tool"
+   ],
+   "name": "Подбор счёта",
+   "aliases": [],
+   "summary": "Мастер подбирает правильный тип счёта под ваш контракт: лицевой счёт участника КС в УФК (тип 71), отдельный банковский счёт по 275-ФЗ или обычный расчётный. Ошибка в типе счёта — потерянные недели: заявление уйдёт не туда или заказчик не сможет заплатить. Результат — тип счёта, куда подавать, формы и чек-лист открытия.",
+   "citation": "Вход: тип контракта и режим сопровождения. Выход: тип счёта + где открывать + формы.",
+   "pages": [
+    {
+     "layer": "tool",
+     "url": "/instrumenty/podbor-litsevogo-scheta/",
+     "title": "Подбор счёта"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "ls-71",
+     "obs",
+     "raschetnyy-schet",
+     "kod-71",
+     "svodnyy-reestr",
+     "kofk",
+     "rezervirovanie-ls",
+     "psb",
+     "igk"
+    ],
+    "SEE_FAQ": [
+     "faq-gde-otkryvaetsya-schet",
+     "faq-schet-na-kazhdyy-kontrakt",
+     "faq-chto-takoe-otdelnyy-schet",
+     "faq-kak-otkryt-schet",
+     "faq-srok-otkrytiya-scheta",
+     "faq-kak-zarezervirovat-schet",
+     "faq-srok-rezerva-scheta",
+     "faq-bank-dlya-goz",
+     "faq-zaprety-otdelnyy-schet",
+     "faq-otlichie-ot-raschetnogo"
+    ],
+    "PART_OF_TOPIC": [
+     "hub-scheta"
+    ],
+    "REGULATED_BY": [
+     "law-приказ-фк-44н",
+     "law-275-фз",
+     "law-бк-рф-ст-2422224226"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/how_to_open/",
+     "/blog/kaznacheyskiy-schet-i-raschetnyy-raznitsa"
+    ],
+    "REQUIRES_DOC": [
+     "zayavlenie-ls",
+     "kartochka-podpisey",
+     "komplekt-otkrytie",
+     "komplekt-goz",
+     "chek-list-otkrytie"
+    ],
+    "PREVENTS": [
+     "err-zatyanulos-otkrytie",
+     "err-kartochka",
+     "err-svodnyy-reestr",
+     "err-razdelnyy-uchet"
+    ],
+    "RESOLVES_TO": [
+     "service-open",
+     "service-reserve",
+     "service-conduct"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-tool-podbor-scheta",
+   "scores": {
+    "authority": 3,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "tool-diagnostika-platezha",
+   "type": [
+    "tool"
+   ],
+   "name": "Диагностика платежа",
+   "aliases": [],
+   "summary": "Мастер диагностирует, почему казначейство не пропустило ваш платёж: по симптому (возврат, отказ, «висит», деньги не дошли) и формулировке УФК определяет причину — ИГК, назначение, код, Сведения или документы-основания — и выдаёт план исправления с нужными шаблонами, разборами и сроками повторной подачи.",
+   "citation": "Вход: симптом и формулировка УФК. Выход: причина + пошаговое исправление.",
+   "pages": [
+    {
+     "layer": "tool",
+     "url": "/instrumenty/diagnostika-platezha/",
+     "title": "Диагностика платежа"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "err-vozvrat-platezha",
+     "sanktsionirovanie",
+     "rkp",
+     "igk",
+     "reestr-kontraktov",
+     "naznachenie",
+     "nds-ks",
+     "kody-napravleniy",
+     "svedeniya-ssu",
+     "dokumenty-osnovaniya",
+     "upd",
+     "sroki-ufk",
+     "kazn-monitoring",
+     "rekvizity-ks",
+     "platezhnoe-poruchenie"
+    ],
+    "SEE_FAQ": [
+     "faq-pochemu-vernuli-platezh",
+     "faq-deystviya-pri-vozvrate",
+     "faq-platezh-visit",
+     "faq-ispravit-igk",
+     "faq-igk-v-platezhe",
+     "faq-naznachenie-platezha",
+     "faq-ispravit-naznachenie",
+     "faq-vozvrat-iz-za-koda",
+     "faq-platezh-ne-sootvetstvuet-svedeniyam",
+     "faq-dokumenty-k-platezhu",
+     "faq-chto-takoe-dokumenty-osnovaniya",
+     "faq-zaderzhka-platezha",
+     "faq-status-platezha",
+     "faq-nevyyasnennye",
+     "faq-deneg-net-na-schete"
+    ],
+    "PART_OF_TOPIC": [
+     "hub-platezhi"
+    ],
+    "REGULATED_BY": [
+     "law-приказ-минфина-214н"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/vozvrat-platezha-kaznachejstvo-chto-delat/",
+     "/blog/kaznacheyskoe-soprovozhdenie-platezhey"
+    ],
+    "REQUIRES_DOC": [
+     "rkp",
+     "poyasnenie-vozvrat",
+     "svedeniya-ssu",
+     "chek-list-dokumenty",
+     "reestr-dokumentov",
+     "pismo-zapros",
+     "poyasnenie-ufk"
+    ],
+    "PREVENTS": [
+     "err-igk",
+     "err-naznachenie",
+     "err-kod-napravleniya",
+     "err-svedeniya-otkaz",
+     "err-otkaz-sanktsionirovaniya"
+    ],
+    "RESOLVES_TO": [
+     "service-conduct",
+     "service-vosstanovlenie"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-tool-diagnostika-platezha",
+   "scores": {
+    "authority": 3,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "tool-marshrutizator",
+   "type": [
+    "tool"
+   ],
+   "name": "Маршрутизатор платежа",
+   "aliases": [],
+   "summary": "Мастер определяет правильный маршрут вашего платежа с лицевого счёта: прямой платёж контрагенту, возмещение собственных расходов или перечисление прибыли на расчётный счёт. Для каждого маршрута мастер выдаёт свой код направления расходования, обязательный комплект документов-оснований и шаблон назначения платежа: перепутанный маршрут почти всегда означает возврат распоряжения казначейством.",
+   "citation": "Вход: кому и за что платите. Выход: тип операции + код + документы + шаблон назначения.",
+   "pages": [
+    {
+     "layer": "tool",
+     "url": "/instrumenty/marshrutizator-platezha/",
+     "title": "Маршрутизатор платежа"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "platezh",
+     "kody-napravleniy",
+     "vozmeshchenie",
+     "pryamoy-platezh",
+     "dokumenty-osnovaniya",
+     "naznachenie",
+     "kody-9xxx",
+     "pribyl-ks",
+     "etap-kontrakta",
+     "upd-akt"
+    ],
+    "SEE_FAQ": [
+     "faq-provesti-platezh",
+     "faq-kody-dlya-platezha",
+     "faq-oplata-postavshchiku",
+     "faq-dokumenty-k-platezhu",
+     "faq-kak-vozmestit-rashody",
+     "faq-dokumenty-vozmeshcheniya",
+     "faq-kogda-zabrat-pribyl",
+     "faq-skolko-pribyli",
+     "faq-zarplata-s-ks",
+     "faq-kod-dlya-zarplaty"
+    ],
+    "PART_OF_TOPIC": [
+     "hub-platezhi"
+    ],
+    "REGULATED_BY": [
+     "law-приказ-минфина-214н",
+     "law-пп-2053"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/avans-vs-vozmeshchenie-vs-pryamoy-platezh-tri-tipa-operatsiy-ks",
+     "/blog/codes"
+    ],
+    "REQUIRES_DOC": [
+     "rkp",
+     "chek-list-dokumenty"
+    ],
+    "PREVENTS": [
+     "err-kod-napravleniya",
+     "err-naznachenie",
+     "err-otkaz-sanktsionirovaniya"
+    ],
+    "RESOLVES_TO": [
+     "service-conduct"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-tool-marshrutizator",
+   "scores": {
+    "authority": 3,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "tool-proverka-sankts",
+   "type": [
+    "tool"
+   ],
+   "name": "Проверка готовности к санкционированию",
+   "aliases": [],
+   "summary": "Мастер прогоняет ваш платёж по контрольным точкам санкционирования до подачи в УФК: соответствие утверждённым Сведениям, полнота документов-оснований, назначение с ИГК и выделенным НДС, код направления расходования и остаток лимита на счёте. Каждая непройденная проверка — это возврат и несколько потерянных дней; исправление до подачи занимает минуты.",
+   "citation": "Вход: состояние платежа по 4 контрольным точкам. Выход: готов / что чинить до подачи.",
+   "pages": [
+    {
+     "layer": "tool",
+     "url": "/instrumenty/proverka-sanktsionirovaniya/",
+     "title": "Проверка готовности к санкционированию"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "sanktsionirovanie",
+     "svedeniya-ssu",
+     "dokumenty-osnovaniya",
+     "sroki-ufk",
+     "vypiska-ls",
+     "zakazchik",
+     "naznachenie",
+     "nds-ks"
+    ],
+    "SEE_FAQ": [
+     "faq-chto-proveryaet-kaznacheystvo",
+     "faq-skolko-dney-proveryaet-ufk",
+     "faq-srok-platezha",
+     "faq-status-platezha",
+     "faq-kak-izmenit-svedeniya",
+     "faq-platezh-ne-sootvetstvuet-svedeniyam",
+     "faq-naznachenie-platezha",
+     "faq-dokumenty-k-platezhu"
+    ],
+    "PART_OF_TOPIC": [
+     "hub-sankts"
+    ],
+    "REGULATED_BY": [
+     "law-приказ-минфина-214н"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/sanktsionirovanie-operatsiy-kaznacheystvom",
+     "/blog/sroki-rassmotreniya-dokumentov-v-ufk-tablitsa"
+    ],
+    "REQUIRES_DOC": [
+     "chek-list-dokumenty",
+     "rkp",
+     "svedeniya-ssu"
+    ],
+    "PREVENTS": [
+     "err-otkaz-sanktsionirovaniya",
+     "err-svedeniya-otkaz",
+     "err-naznachenie"
+    ],
+    "RESOLVES_TO": [
+     "service-conduct"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-tool-proverka-sankts",
+   "scores": {
+    "authority": 3,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "tool-proverka-komplekta",
+   "type": [
+    "tool"
+   ],
+   "name": "Проверка комплекта документов",
+   "aliases": [],
+   "summary": "Мастер проверяет готовность вашего пакета к открытию лицевого счёта: Сводный реестр, заявление 0531368, карточка подписей 0531753, полномочия и доступ к ГИИС. Каждый пропущенный пункт — это возврат и минус несколько дней. Результат — вердикт о готовности с перечнем дыр, официальными бланками и типовыми причинами возвратов.",
+   "citation": "Вход: что уже готово. Выход: готов пакет / есть дыры (какие именно закрыть).",
+   "pages": [
+    {
+     "layer": "tool",
+     "url": "/instrumenty/proverka-komplekta-dokumentov/",
+     "title": "Проверка комплекта документов"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "zayavlenie-ls",
+     "kartochka-podpisey",
+     "svodnyy-reestr",
+     "igk",
+     "kofk",
+     "nubp",
+     "giis-eb",
+     "ecp",
+     "doverennost-mchd"
+    ],
+    "SEE_FAQ": [
+     "faq-dokumenty-dlya-otkrytiya",
+     "faq-proverka-pered-podachey",
+     "faq-srok-otkrytiya-scheta",
+     "faq-schet-otkryt-chto-dalshe",
+     "faq-vklyuchenie-v-svodnyy-reestr",
+     "faq-chto-takoe-svodnyy-reestr",
+     "faq-zayavlenie-0531368",
+     "faq-kartochka-0531753-zapolnenie",
+     "faq-registratsiya-v-eb",
+     "faq-rabochee-mesto-eb"
+    ],
+    "PART_OF_TOPIC": [
+     "hub-scheta"
+    ],
+    "REGULATED_BY": [
+     "law-приказ-фк-44н",
+     "law-приказ-фк-21н",
+     "law-63-фз"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/zayavlenie-na-otkrytie-kaznacheyskogo-scheta",
+     "/blog/kartochka-obraztsov-podpisey-ufk"
+    ],
+    "REQUIRES_DOC": [
+     "chek-list-otkrytie",
+     "zayavlenie-ls",
+     "kartochka-podpisey",
+     "doverennost-mchd"
+    ],
+    "PREVENTS": [
+     "err-zatyanulos-otkrytie",
+     "err-svodnyy-reestr",
+     "err-kartochka",
+     "err-ecp",
+     "err-mchd"
+    ],
+    "RESOLVES_TO": [
+     "service-open"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-tool-proverka-komplekta",
+   "scores": {
+    "authority": 2,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "tool-proverka-goz",
+   "type": [
+    "tool"
+   ],
+   "name": "Проверка обязанностей по ГОЗ",
+   "aliases": [],
+   "summary": "Мастер определяет ваш набор обязанностей по гособоронзаказу: раздельный учёт, режим счёта (казначейский или банковский), ИГК в договорах, ценовые правила и отчётность в ГИРБО. Обязанности 275-ФЗ действуют на любом уровне кооперации независимо от того, знаете вы о них или нет, — а штрафы за раздельный учёт ощутимы.",
+   "citation": "Вход: роль в кооперации и состояние учёта. Выход: карта обязанностей + приоритетные дыры.",
+   "pages": [
+    {
+     "layer": "tool",
+     "url": "/instrumenty/proverka-goz/",
+     "title": "Проверка обязанностей по ГОЗ"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "goz",
+     "razdelnyy-uchet",
+     "golovnoy-ispolnitel",
+     "igk",
+     "prim-1",
+     "prom-otchetnost-goz",
+     "vp-mo",
+     "koap-15-49",
+     "tsepochka-ks"
+    ],
+    "SEE_FAQ": [
+     "faq-obyazannosti-ispolnitelya-goz",
+     "faq-kto-vedet-razdelnyy-uchet",
+     "faq-shtraf-net-razdelnogo-ucheta",
+     "faq-otchetnost-goz-girbo",
+     "faq-chto-proveryaet-voenpred",
+     "faq-postanovka-razdelnogo-ucheta",
+     "faq-igk-goz-vs-44fz",
+     "faq-subpodryad-v-goz"
+    ],
+    "PART_OF_TOPIC": [
+     "hub-goz"
+    ],
+    "REGULATED_BY": [
+     "law-275-фз",
+     "law-коап-рф-ст-1537"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid",
+     "/blog/razdelnyj-uchet-goz-polnyy-guide-2026"
+    ],
+    "REQUIRES_DOC": [
+     "komplekt-goz",
+     "prikaz-razdelnyy-uchet",
+     "formulirovka-ks"
+    ],
+    "PREVENTS": [
+     "err-razdelnyy-uchet",
+     "err-igk"
+    ],
+    "RESOLVES_TO": [
+     "service-conduct"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-tool-proverka-goz",
+   "scores": {
+    "authority": 2,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "tool-generator-chek-lista",
+   "type": [
+    "tool"
+   ],
+   "name": "Генератор чек-листа",
+   "aliases": [],
+   "summary": "Мастер собирает персональный чек-лист старта казначейского сопровождения под ваш случай: тип контракта или субсидии, наличие опыта работы с казначейством и текущая стадия подготовки. На выходе — последовательный план запуска с официальными формами, регламентными сроками, типичными ошибками каждого шага и точками, где разумно подключить специалиста.",
+   "citation": "Вход: тип средств и стадия. Выход: пошаговый чек-лист старта с формами и сроками.",
+   "pages": [
+    {
+     "layer": "tool",
+     "url": "/instrumenty/generator-chek-lista/",
+     "title": "Генератор чек-листа"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "ks",
+     "ls-71",
+     "registratsiya-eb",
+     "svodnyy-reestr",
+     "giis-eb",
+     "svedeniya-ssu",
+     "goz",
+     "razdelnyy-uchet",
+     "obs",
+     "subsidiya",
+     "id-soglasheniya",
+     "otchet-subsidii"
+    ],
+    "SEE_FAQ": [
+     "faq-start-novichka",
+     "faq-proverka-do-podpisaniya",
+     "faq-kak-otkryt-schet",
+     "faq-dokumenty-dlya-otkrytiya",
+     "faq-obyazannosti-ispolnitelya-goz",
+     "faq-postanovka-razdelnogo-ucheta",
+     "faq-otkrytie-scheta-subsidiya",
+     "faq-otchet-po-subsidii"
+    ],
+    "PART_OF_TOPIC": [
+     "hub-ks"
+    ],
+    "REGULATED_BY": [
+     "law-приказ-фк-44н",
+     "law-бк-рф-ст-2422224226",
+     "law-275-фз",
+     "law-коап-рф-ст-1537"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
+     "/blog/how_to_open/"
+    ],
+    "REQUIRES_DOC": [
+     "chek-list-otkrytie",
+     "zayavlenie-ls",
+     "kartochka-podpisey",
+     "komplekt-goz",
+     "prikaz-razdelnyy-uchet",
+     "komplekt-subsidii",
+     "svedeniya-ssu"
+    ],
+    "PREVENTS": [
+     "err-zatyanulos-otkrytie",
+     "err-svodnyy-reestr",
+     "err-razdelnyy-uchet",
+     "err-subsidiya-rashody"
+    ],
+    "RESOLVES_TO": [
+     "service-start",
+     "service-conduct"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-tool-generator-chek-lista",
+   "scores": {
+    "authority": 2,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "tool-proverka-ks",
+   "type": [
+    "tool"
+   ],
+   "name": "Проверка необходимости КС",
+   "aliases": [],
+   "summary": "Мастер проверяет ваш случай против критериев казначейского сопровождения из ежегодного закона о бюджете: тип получаемых средств, наличие аванса, участие в ГОЗ или кооперации. Результат — однозначный вердикт с обоснованием, нормативной базой, списком обязанностей и чек-листом подготовки либо подтверждение, что КС вам не грозит.",
+   "citation": "Вход: кто вы и какие средства получаете. Выход: нужно КС / не нужно / зависит от условий года.",
+   "pages": [
+    {
+     "layer": "tool",
+     "url": "/instrumenty/proverka-neobhodimosti-ks/",
+     "title": "Проверка необходимости КС"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "porog-ks",
+     "zakon-budget",
+     "ks",
+     "ls-71",
+     "sanktsionirovanie",
+     "raschetnyy-schet"
+    ],
+    "SEE_FAQ": [
+     "faq-s-kakoy-summy-ks",
+     "faq-mozhno-li-izbezhat-ks",
+     "faq-ks-po-223-fz",
+     "faq-kak-otkryt-schet",
+     "faq-sostav-uslugi-soprovozhdeniya",
+     "faq-kto-ustanavlivaet-sluchai-ks",
+     "faq-ks-menyaetsya-kazhdyy-god",
+     "faq-kakie-kontrakty-pod-ks"
+    ],
+    "PART_OF_TOPIC": [
+     "hub-zakony"
+    ],
+    "REGULATED_BY": [
+     "law-ежегодный-закон-о-федеральном-бюджете",
+     "law-бк-рф-ст-2422224226"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-2026-opredeleniya",
+     "/blog/kakie-kontrakty-popadayut-pod-kaznachejskoe-soprovozhdenie/"
+    ],
+    "REQUIRES_DOC": [
+     "zayavlenie-ls",
+     "chek-list-otkrytie",
+     "pismo-zapros",
+     "formulirovka-ks"
+    ],
+    "PREVENTS": [
+     "err-zatyanulos-otkrytie"
+    ],
+    "RESOLVES_TO": [
+     "service-start"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-tool-proverka-ks",
+   "scores": {
+    "authority": 1,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "tool-proverka-subsidii",
+   "type": [
+    "tool"
+   ],
+   "name": "Проверка субсидии",
+   "aliases": [],
+   "summary": "Мастер определяет режим вашей субсидии или гранта: нужен ли лицевой счёт и Сведения, кто утверждает расходы, какая отчётность и когда возникает риск возврата. Субсидии контролируются строже контрактов: нарушение целей или отчётности ведёт к возврату всей суммы с неустойкой.",
+   "citation": "Вход: стадия и тип субсидии. Выход: карта обязанностей получателя + риски.",
+   "pages": [
+    {
+     "layer": "tool",
+     "url": "/instrumenty/proverka-subsidii/",
+     "title": "Проверка субсидии"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "subsidiya",
+     "soglashenie-subsidii",
+     "poluchatel-subsidii",
+     "id-soglasheniya",
+     "svedeniya-ssu",
+     "tselevye-sredstva",
+     "err-necelevoe",
+     "otchet-subsidii",
+     "neisp-ostatok"
+    ],
+    "SEE_FAQ": [
+     "faq-subsidiya-pod-ks",
+     "faq-vozvrat-subsidii",
+     "faq-otchet-po-subsidii",
+     "faq-raskhody-subsidii",
+     "faq-svedeniya-po-subsidii",
+     "faq-ufk-ne-soglasuet-subsidiyu",
+     "faq-razdelenie-subsidii-i-svoih",
+     "faq-nedostizhenie-pokazateley",
+     "faq-ostatok-subsidii"
+    ],
+    "PART_OF_TOPIC": [
+     "hub-subsidii"
+    ],
+    "REGULATED_BY": [
+     "law-бк-рф-ст-2422224226",
+     "law-ежегодный-закон-о-федеральном-бюджете",
+     "law-коап-рф-ст-1514"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
+    ],
+    "REQUIRES_DOC": [
+     "komplekt-subsidii",
+     "svedeniya-ssu",
+     "poyasnenie-ufk",
+     "zayavlenie-zakrytie"
+    ],
+    "PREVENTS": [
+     "err-subsidiya-rashody",
+     "err-necelevoe"
+    ],
+    "RESOLVES_TO": [
+     "service-conduct",
+     "service-vosstanovlenie"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-tool-proverka-subsidii",
+   "scores": {
+    "authority": 1,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  }
+ ]
+}

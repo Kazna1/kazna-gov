@@ -1,0 +1,5860 @@
+{
+ "project": "kazna-gov.ru Knowledge Graph",
+ "version": "2026-07-09",
+ "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
+ "docs": "https://kazna-gov.ru/api/",
+ "count": 120,
+ "entities": [
+  {
+   "id": "err-otkaz-sanktsionirovaniya",
+   "type": [
+    "error",
+    "term"
+   ],
+   "name": "Отказ в санкционировании",
+   "aliases": [
+    "уфк отказало в платеже",
+    "отказ уфк"
+   ],
+   "summary": "Отказ в санкционировании — решение УФК не исполнять расход: платёж не соответствует Сведениям, основаниям, кодам или режиму целевых средств. Формально фиксируется протоколом с причиной. Лечится по алгоритму: понять причину → устранить (документ, Сведения, код) → подать заново; при спорной причине — пояснение или официальный запрос.",
+   "citation": "Отказ в санкционировании — это результат непрохождения контроля УФК: расход не соответствует Сведениям, документам-основаниям или правилам заполнения распоряжения. Основание отказа всегда указывается. Алгоритм: прочитать основание в ГИИС «Электронный бюджет», устранить конкретную причину (Сведения, код, ИГК, документы) и подать новое распоряжение — средства остаются на лицевом счёте.",
+   "pages": [
+    {
+     "layer": "error",
+     "url": "/oshibki/ufk-otkazalo-v-sanktsionirovanii/",
+     "title": "Отказ в санкционировании"
+    },
+    {
+     "layer": "term",
+     "url": "/glossary/otkaz-v-sanktsionirovanii/",
+     "title": "Отказ в санкционировании"
+    }
+   ],
+   "relations": {
+    "SEE_ERROR": [
+     "err-igk",
+     "err-kod-napravleniya",
+     "err-necelevoe",
+     "err-svedeniya-otkaz"
+    ],
+    "MONETIZED_BY": [
+     "service-vosstanovlenie"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/sanktsionirovanie-operatsiy-kaznacheystvom",
+     "/blog/ufk-zaderzhivaet-platezh-chto-delat",
+     "/blog/sroki-rassmotreniya-dokumentov-v-ufk-tablitsa",
+     "/oshibki/ufk-otkazalo-v-sanktsionirovanii/"
+    ],
+    "RELATED_TERM": [
+     "sanktsionirovanie",
+     "err-vozvrat-platezha",
+     "svedeniya-ssu"
+    ],
+    "REQUIRES_DOC": [
+     "poyasnenie-ufk",
+     "pismo-zapros"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-err-otkaz-sanktsionirovaniya",
+   "scores": {
+    "authority": 100,
+    "coverage": 83,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "svedeniya-ssu",
+   "type": [
+    "document",
+    "term"
+   ],
+   "name": "Сведения 0501213",
+   "aliases": [
+    "ссу",
+    "сведения",
+    "сведения 0501213",
+    "сведения об операциях с целевыми средствами",
+    "Форма по ОКУД 0501213"
+   ],
+   "summary": "Сведения об операциях с целевыми средствами (форма по ОКУД 0501213) — плановый документ, в пределах которого УФК санкционирует каждый платёж по контракту. Подаются и утверждаются в ГИИС «Электронный бюджет»; структура расходов задаётся укрупнёнными кодами направлений, итог равен сумме контракта. С 2026 года срыв срока утверждения — штраф по ст. 15.49 КоАП.",
+   "citation": "Рабочая заготовка для подготовки Сведений до внесения в ГИИС: структура расходов по кодам, суммы, контрольные равенства — чтобы форма прошла утверждение с первого раза.",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/svedeniya-ob-operatsiyah-0501213/",
+     "title": "Сведения 0501213"
+    },
+    {
+     "layer": "term",
+     "url": "/glossary/svedeniya-0501213/",
+     "title": "Сведения об операциях (ССУ)"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "komplekt-otkrytie",
+     "poyasnenie-ufk",
+     "doverennost-mchd"
+    ],
+    "SEE_ERROR": [
+     "err-svedeniya-otkaz",
+     "err-kod-napravleniya",
+     "err-otkaz-sanktsionirovaniya"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/svedeniya-ob-operatsiyah-s-tselevymi-sredstvami",
+     "/blog/codes",
+     "/blog/kalendar-otchetnosti-podryadchika-ks-2026"
+    ],
+    "RELATED_TERM": [
+     "sanktsionirovanie",
+     "kod-tselevyh",
+     "zakazchik",
+     "tselevye-sredstva"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-svedeniya-ssu",
+   "scores": {
+    "authority": 100,
+    "coverage": 83,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "doverennost-mchd",
+   "type": [
+    "document",
+    "term"
+   ],
+   "name": "Доверенность в УФК",
+   "aliases": [
+    "машиночитаемая доверенность",
+    "мчд 003",
+    "формат 003",
+    "электронная доверенность",
+    "Машиночитаемая доверенность"
+   ],
+   "summary": "Бумажная доверенность нужна для очных действий представителя в УФК: подача/получение документов, представление интересов. Для электронного подписания в ГИИС «Электронный бюджет» бумажная доверенность не работает — там требуется машиночитаемая доверенность (МЧД) формата 003. В доверенности указываются точные полномочия, срок и данные представителя.",
+   "citation": "Легитимизирует представителя для бумажного/очного контура взаимодействия с казначейством.",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/doverennost-v-ufk/",
+     "title": "Доверенность в УФК"
+    },
+    {
+     "layer": "document",
+     "url": "/obraztsy/mchd-dlya-kaznacheystva/",
+     "title": "МЧД для казначейства"
+    },
+    {
+     "layer": "term",
+     "url": "/glossary/mchd/",
+     "title": "МЧД"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "kartochka-podpisey",
+     "soprovoditelnoe-pismo"
+    ],
+    "SEE_ERROR": [
+     "err-mchd",
+     "err-zatyanulos-otkrytie",
+     "err-ecp",
+     "err-svedeniya-otkaz"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/doverennost-dlya-ufk",
+     "/blog/upolnomochennye-litsa-po-ks-schetu-kto-i-otvetstvennost",
+     "/novosti/mchd-novye-trebovaniya-2026/",
+     "/blog/sertifikat-ecp-kaznacheystva"
+    ],
+    "RELATED_TERM": [
+     "ecp",
+     "upolnomochennye",
+     "giis-eb"
+    ],
+    "REGULATED_BY": [
+     "law-приказ-минцифры-1001"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-doverennost-mchd",
+   "scores": {
+    "authority": 95,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "sanktsionirovanie",
+   "type": [
+    "term"
+   ],
+   "name": "Санкционирование операций",
+   "aliases": [
+    "санкционирование",
+    "санкционирование расходов",
+    "проверка платежей уфк"
+   ],
+   "summary": "Санкционирование — процедура проверки казначейством каждого расхода с лицевого счёта до его исполнения: соответствие Сведениям, наличие и корректность документов-оснований, ИГК, коды, назначение, остаток. Правила устанавливает порядок Минфина (приказ № 214н, с 01.09.2026 — новый порядок). Итог — исполнение либо возврат с причиной.",
+   "citation": "Предварительный контроль списаний при КС: платёж исполняется только после подтверждения его целевого характера и документальной чистоты.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/sanktsionirovanie/",
+     "title": "Санкционирование операций"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "svedeniya-ssu",
+     "dokumenty-osnovaniya",
+     "sroki-ufk",
+     "err-otkaz-sanktsionirovaniya"
+    ],
+    "REQUIRES_DOC": [
+     "chek-list-dokumenty",
+     "svedeniya-ssu"
+    ],
+    "SEE_ERROR": [
+     "err-otkaz-sanktsionirovaniya"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/novyy-poryadok-kaznacheyskogo-soprovozhdeniya-s-1-sentyabrya-2026",
+     "/blog/sanktsionirovanie-operatsiy-kaznacheystvom"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-sanktsionirovanie",
+   "scores": {
+    "authority": 87,
+    "coverage": 83,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "ls-71",
+   "type": [
+    "term"
+   ],
+   "name": "КС-счёт (лицевой счёт 71)",
+   "aliases": [
+    "кс счет",
+    "лицевой счет 71",
+    "лс-71",
+    "счет в казначействе",
+    "казначейский счет",
+    "Лицевой счёт участника казначейского сопровождения"
+   ],
+   "summary": "КС-счёт (лицевой счёт с кодом 71) — счёт участника казначейского сопровождения, который УФК открывает исполнителю под конкретный контракт. На него зачисляются целевые средства, и каждое списание проходит санкционирование. Это не банковский счёт: он живёт на едином казначейском счёте, открывается по заявлению (ф. 0531368) через ГИИС «Электронный бюджет».",
+   "citation": "Лицевой счёт исполнителя в казначействе (код типа 71) для целевых средств одного контракта: деньги видны, но тратятся только на цели контракта после проверки УФК.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/ks-schet/",
+     "title": "КС-счёт (лицевой счёт 71)"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "kod-71",
+     "eks",
+     "raschetnyy-schet",
+     "tselevye-sredstva"
+    ],
+    "REQUIRES_DOC": [
+     "zayavlenie-ls",
+     "kartochka-podpisey"
+    ],
+    "SEE_ERROR": [
+     "err-zatyanulos-otkrytie",
+     "err-svodnyy-reestr"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/litsevoy-schet-71",
+     "/blog/how_to_open/"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-ls-71",
+   "scores": {
+    "authority": 80,
+    "coverage": 83,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "zayavlenie-ls",
+   "type": [
+    "document",
+    "term"
+   ],
+   "name": "Заявление на открытие ЛС",
+   "aliases": [
+    "заявление 0531368",
+    "заявление на открытие счета",
+    "Форма по КФД 0531368"
+   ],
+   "summary": "Заявление на открытие лицевого счёта подаёт исполнитель госконтракта в свой территориальный орган Федерального казначейства (ТОФК) — как правило, через ГИИС «Электронный бюджет». В заявлении указываются реквизиты организации, контракта (включая ИГК) и тип счёта (71 — участника казначейского сопровождения). При корректном комплекте счёт открывается за несколько рабочих дней.",
+   "citation": "Основной документ, инициирующий открытие лицевого счёта участника казначейского сопровождения в УФК. Без него невозможно получить аванс и вести расчёты по контракту с КС.",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/zayavlenie-na-otkrytie-litsevogo-scheta/",
+     "title": "Заявление на открытие ЛС"
+    },
+    {
+     "layer": "term",
+     "url": "/glossary/zayavlenie-na-otkrytie-ls/",
+     "title": "Заявление на открытие лицевого счёта"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "kartochka-podpisey",
+     "komplekt-otkrytie",
+     "soprovoditelnoe-pismo",
+     "doverennost-mchd"
+    ],
+    "SEE_ERROR": [
+     "err-zatyanulos-otkrytie",
+     "err-kartochka",
+     "err-svodnyy-reestr"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/zayavlenie-na-otkrytie-kaznacheyskogo-scheta",
+     "/blog/how_to_open/",
+     "/blog/kak-otkryt-licevoy-schet-71"
+    ],
+    "RELATED_TERM": [
+     "ls-71",
+     "svodnyy-reestr",
+     "kartochka-podpisey",
+     "igk"
+    ],
+    "REQUIRES_DOC": [
+     "chek-list-otkrytie"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-zayavlenie-ls",
+   "scores": {
+    "authority": 75,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "kartochka-podpisey",
+   "type": [
+    "document",
+    "term"
+   ],
+   "name": "Карточка образцов подписей",
+   "aliases": [
+    "карточка подписей",
+    "карточка 0531753",
+    "Форма по КФД 0531753"
+   ],
+   "summary": "Карточка образцов подписей (форма по КФД 0531753, приложение № 2 к приказу ФК № 21н) фиксирует, кто вправе подписывать распоряжения о совершении казначейских платежей по лицевому счёту: лица с правом первой подписи (руководитель и уполномоченные) и второй подписи (главный бухгалтер и уполномоченные). Если бухгалтера нет, в карточке указывается «Бухгалтерский работник в штате не предусмотрен». Полномочия и подлинность подписей удостоверяются на оборотной стороне; карточка должна точно совпадать с ЕГРЮЛ, при смене подписантов переоформляется незамедлительно.",
+   "citation": "Легитимизирует подписантов по лицевому счёту: без актуальной карточки УФК не принимает документы.",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/kartochka-obraztsov-podpisey/",
+     "title": "Карточка образцов подписей"
+    },
+    {
+     "layer": "term",
+     "url": "/glossary/kartochka-obraztsov-podpisey-termin/",
+     "title": "Карточка образцов подписей"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "zayavlenie-ls",
+     "doverennost-mchd",
+     "komplekt-otkrytie"
+    ],
+    "SEE_ERROR": [
+     "err-kartochka",
+     "err-zatyanulos-otkrytie"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kartochka-obraztsov-podpisey-ufk",
+     "/blog/upolnomochennye-litsa-po-ks-schetu-kto-i-otvetstvennost",
+     "/blog/smena-rukovoditelya-pri-deystvuyushchem-ks-schete"
+    ],
+    "RELATED_TERM": [
+     "upolnomochennye",
+     "zayavlenie-ls",
+     "prikaz-21n"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-kartochka-podpisey",
+   "scores": {
+    "authority": 69,
+    "coverage": 83,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "rkp",
+   "type": [
+    "document",
+    "term"
+   ],
+   "name": "Платёжка при КС (образец)",
+   "aliases": [
+    "ркп",
+    "распоряжение о платеже",
+    "заявка на кассовый расход",
+    "РКП"
+   ],
+   "summary": "Платёж при казначейском сопровождении оформляется распоряжением в ГИИС «Электронный бюджет» c обязательными элементами: лицевой счёт 71 плательщика, ИГК, код направления расходования и структурированное назначение (код; ИГК; предмет и документ-основание; НДС). Образец показывает корректное заполнение ключевых полей и три готовые формулировки назначения.",
+   "citation": "Эталон заполнения платёжных реквизитов и назначения — против самых частых причин возвратов.",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/platezhnoe-poruchenie-obrazec/",
+     "title": "Платёжка при КС (образец)"
+    },
+    {
+     "layer": "term",
+     "url": "/glossary/rasporyazhenie-o-platezhe/",
+     "title": "Распоряжение о совершении казначейского платежа"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "svedeniya-ssu",
+     "otzyv-rasporyazheniya",
+     "chek-list-dokumenty"
+    ],
+    "SEE_ERROR": [
+     "err-naznachenie",
+     "err-kod-napravleniya",
+     "err-igk"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/naznachenie-platezha-kaznachejstvo/",
+     "/blog/izmeneniya-platezhek-kaznachejstvo-2026/",
+     "/blog/codes",
+     "/blog/izmeneniya-platezhek-kaznachejstvo-2026"
+    ],
+    "RELATED_TERM": [
+     "platezh",
+     "naznachenie",
+     "otzyv-rasporyazheniya",
+     "giis-eb"
+    ],
+    "REQUIRES_DOC": [
+     "otzyv-rasporyazheniya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-rkp",
+   "scores": {
+    "authority": 67,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "err-necelevoe",
+   "type": [
+    "error",
+    "term"
+   ],
+   "name": "Нецелевое расходование",
+   "aliases": [
+    "нецелевка",
+    "нецелевое использование средств"
+   ],
+   "summary": "Нецелевое расходование — трата целевых средств на цели, не предусмотренные контрактом, соглашением или структурой цены. Последствия: возврат средств, штрафы (для бюджетных средств — вплоть до ст. 15.14 КоАП и уголовной ответственности при крупных суммах), расторжение и репутационные потери. Санкционирование фильтрует большинство попыток, но ответственность лежит на получателе.",
+   "citation": "Нецелевое расходование — оплата с лицевого счёта расходов, не связанных с исполнением контракта или не предусмотренных Сведениями: погашение старых долгов, депозиты, займы, расходы по другим контрактам. Последствия — от отказов в санкционировании до административной ответственности и претензий заказчика. Профилактика: каждый платёж сверять с условиями контракта и Сведениями до подачи.",
+   "pages": [
+    {
+     "layer": "error",
+     "url": "/oshibki/necelevoe-rashodovanie-sredstv/",
+     "title": "Нецелевое расходование"
+    },
+    {
+     "layer": "term",
+     "url": "/glossary/netselevoe-raskhodovanie/",
+     "title": "Нецелевое расходование"
+    }
+   ],
+   "relations": {
+    "SEE_ERROR": [
+     "err-otkaz-sanktsionirovaniya",
+     "err-kod-napravleniya",
+     "err-razdelnyy-uchet"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta",
+     "/blog/podvodnye-kamni-kaznacheyskogo-soprovozhdeniya",
+     "/blog/fines/",
+     "/oshibki/necelevoe-rashodovanie-sredstv/"
+    ],
+    "RELATED_TERM": [
+     "tselevye-sredstva",
+     "koap-15-49",
+     "kazn-monitoring"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-err-necelevoe",
+   "scores": {
+    "authority": 62,
+    "coverage": 67,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "giis-eb",
+   "type": [
+    "term"
+   ],
+   "name": "ГИИС «Электронный бюджет»",
+   "aliases": [
+    "гиис эб",
+    "электронный бюджет",
+    "эб",
+    "ссылка budget.gov.ru",
+    "Государственная интегрированная информационная система управления общественными финансами"
+   ],
+   "summary": "ГИИС «Электронный бюджет» — государственная информационная система Минфина, через которую идёт весь электронный документооборот казначейского сопровождения: подача заявления на счёт, Сведения об операциях, распоряжения о платежах, переписка с УФК. Вход — по квалифицированной ЭЦП через защищённое соединение (Континент TLS); полномочия сотрудников подтверждаются МЧД.",
+   "citation": "Основной онлайн-канал работы подрядчика с казначейством: личный кабинет, где формируются и подписываются все документы КС.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/giis-elektronnyy-byudzhet/",
+     "title": "ГИИС «Электронный бюджет»"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ecp",
+     "doverennost-mchd",
+     "kontinent-tls",
+     "registratsiya-eb",
+     "epbs"
+    ],
+    "REQUIRES_DOC": [
+     "doverennost-mchd",
+     "svedeniya-ssu"
+    ],
+    "SEE_ERROR": [
+     "err-ecp",
+     "err-mchd"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/vhod-v-elektronnyy-byudzhet-po-sertifikatu",
+     "/blog/giis-elektronnyy-byudzhet-2026-polnaya-instruktsiya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-giis-eb",
+   "scores": {
+    "authority": 60,
+    "coverage": 83,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "ks",
+   "type": [
+    "term"
+   ],
+   "name": "Казначейское сопровождение",
+   "aliases": [
+    "кс",
+    "казначейское сопровождение контракта",
+    "сопровождение казначейством",
+    "КС"
+   ],
+   "summary": "Казначейское сопровождение (КС) — режим контроля целевых средств госконтракта или субсидии: деньги зачисляются не на расчётный счёт исполнителя, а на лицевой счёт в УФК, и каждое списание проходит проверку казначейством (санкционирование). Случаи применения КС ежегодно задаёт закон о федеральном бюджете; правовая база — ст. 242.23–242.26 БК РФ.",
+   "citation": "Механизм контроля бюджетных денег: средства контракта лежат на лицевом счёте в казначействе, тратятся только на цели контракта и только после проверки документов-оснований УФК.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/kaznacheyskoe-soprovozhdenie/",
+     "title": "Казначейское сопровождение"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ls-71",
+     "sanktsionirovanie",
+     "tselevye-sredstva",
+     "zakon-budget"
+    ],
+    "REQUIRES_DOC": [
+     "chek-list-otkrytie",
+     "formulirovka-ks"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
+     "/blog/ks_2025/"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-ks",
+   "scores": {
+    "authority": 56,
+    "coverage": 50,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "dokumenty-osnovaniya",
+   "type": [
+    "term"
+   ],
+   "name": "Документы-основания",
+   "aliases": [
+    "основания платежа",
+    "подтверждающие документы"
+   ],
+   "summary": "Документы-основания — комплект, которым подтверждается каждый казначейский платёж: контракт/договор с поставщиком, счёт, накладная или акт (УПД), а для отдельных операций — расчёты и ведомости. Прикладываются к распоряжению в ГИИС; УФК сверяет с ними сумму, НДС, получателя и целевой характер расхода.",
+   "citation": "Доказательная база платежа при КС: без корректных оснований распоряжение не санкционируется, с дефектными — возвращается.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/dokumenty-osnovaniya/",
+     "title": "Документы-основания"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "sanktsionirovanie",
+     "upd",
+     "upd-akt",
+     "naznachenie"
+    ],
+    "REQUIRES_DOC": [
+     "chek-list-dokumenty",
+     "reestr-dokumentov"
+    ],
+    "SEE_ERROR": [
+     "err-otkaz-sanktsionirovaniya"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/akt-schet-upd-pri-kaznachejskom-soprovozhdenii/"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-dokumenty-osnovaniya",
+   "scores": {
+    "authority": 54,
+    "coverage": 83,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "igk",
+   "type": [
+    "term"
+   ],
+   "name": "ИГК",
+   "aliases": [
+    "идентификатор госконтракта",
+    "идентификатор контракта",
+    "Идентификатор государственного контракта"
+   ],
+   "summary": "ИГК — идентификатор государственного контракта: уникальный код (для 44-ФЗ — 25 знаков), который присваивается контракту и сопровождает все связанные с ним операции. ИГК обязателен в назначении каждого казначейского платежа, в счетах и актах, в документах кооперации ГОЗ. Ошибка в одном символе ИГК — возврат платежа УФК.",
+   "citation": "Уникальный код контракта, связывающий контракт, лицевой счёт, платежи и документы в одну цепочку контроля. Формируется при включении контракта в реестр (для ГОЗ — по правилам 275-ФЗ).",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/igk/",
+     "title": "ИГК"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "kontrakt-44",
+     "naznachenie",
+     "eis",
+     "tsepochka-ks"
+    ],
+    "REQUIRES_DOC": [
+     "rkp"
+    ],
+    "SEE_ERROR": [
+     "err-igk"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/igk-v-platezhah-kaznacheystva"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-igk",
+   "scores": {
+    "authority": 51,
+    "coverage": 83,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "razdelnyy-uchet",
+   "type": [
+    "term"
+   ],
+   "name": "Раздельный учёт",
+   "aliases": [
+    "раздельный учет затрат",
+    "ру",
+    "раздельный учет гоз",
+    "Раздельный учёт результатов ФХД"
+   ],
+   "summary": "Раздельный учёт — обязанность вести учёт затрат отдельно по каждому контракту ГОЗ (и по контрактам/субсидиям с казначейским сопровождением): каждая операция привязывается к ИГК, ресурсы распределяются по контрактам, финансовый результат считается поконтрактно. За отсутствие раздельного учёта по ГОЗ — штраф по КоАП (ст. 15.37).",
+   "citation": "Поконтрактный учёт ресурсов, затрат и результатов: не отдельная бухгалтерия, а аналитика, позволяющая доказать себестоимость каждого контракта.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/razdelnyy-uchet/",
+     "title": "Раздельный учёт"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "goz",
+     "prim-1",
+     "igk",
+     "koap-15-49"
+    ],
+    "REQUIRES_DOC": [
+     "prikaz-razdelnyy-uchet"
+    ],
+    "SEE_ERROR": [
+     "err-razdelnyy-uchet"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/razdelnyy-uchet-po-44-fz-vs-275-fz-otlichiya",
+     "/blog/razdelnyj-uchet-goz-polnyy-guide-2026"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-razdelnyy-uchet",
+   "scores": {
+    "authority": 47,
+    "coverage": 83,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "reestr-dokumentov",
+   "type": [
+    "document",
+    "term"
+   ],
+   "name": "Реестр документов",
+   "aliases": [
+    "опись документов",
+    "реестр документов по контракту",
+    "досье контракта"
+   ],
+   "summary": "Реестр документов по контракту — сводная таблица всего документооборота с УФК: распоряжения, Сведения, пояснения, письма — с датами подачи, статусами и сроками ответа. Ведение реестра делает управляемым главный риск КС — потерю контроля над циклами «подача-возврат-повтор» при нескольких параллельных операциях.",
+   "citation": "Операционный контроль документооборота: ничего не «висит» незамеченным, каждый возврат имеет владельца и срок.",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/reestr-dokumentov-po-kontraktu/",
+     "title": "Реестр документов"
+    },
+    {
+     "layer": "term",
+     "url": "/glossary/opis-dokumentov/",
+     "title": "Опись (реестр) документов"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "chek-list-dokumenty",
+     "komplekt-goz",
+     "komplekt-subsidii"
+    ],
+    "SEE_ERROR": [
+     "err-zatyanulos-otkrytie",
+     "err-otkaz-sanktsionirovaniya"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/sroki-rassmotreniya-dokumentov-v-ufk-tablitsa",
+     "/blog/kalendar-otchetnosti-podryadchika-ks-2026",
+     "/blog/dokumenty-dlya-kaznacheyskogo-soprovozhdeniya"
+    ],
+    "RELATED_TERM": [
+     "dokumenty-osnovaniya",
+     "kontrakt-44"
+    ],
+    "REQUIRES_DOC": [
+     "chek-list-dokumenty"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-reestr-dokumentov",
+   "scores": {
+    "authority": 46,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "tselevye-sredstva",
+   "type": [
+    "term"
+   ],
+   "name": "Целевые средства",
+   "aliases": [
+    "целевые деньги",
+    "средства контракта"
+   ],
+   "summary": "Целевые средства — деньги, предоставленные из бюджета на конкретную цель: исполнение госконтракта, соглашения о субсидии, контракта кооперации. При казначейском сопровождении они зачисляются на лицевой счёт и могут расходоваться только на цели, ради которых выданы, — направление каждого списания подтверждается документами и кодом.",
+   "citation": "Бюджетные деньги с целевым назначением на лицевом счёте участника КС. Их трата на не предусмотренные контрактом цели — нецелевое расходование с ответственностью.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/tselevye-sredstva/",
+     "title": "Целевые средства"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ls-71",
+     "err-necelevoe",
+     "kod-tselevyh",
+     "svedeniya-ssu"
+    ],
+    "REQUIRES_DOC": [
+     "svedeniya-ssu"
+    ],
+    "SEE_ERROR": [
+     "err-necelevoe"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-tselevye-sredstva",
+   "scores": {
+    "authority": 45,
+    "coverage": 83,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "ecp",
+   "type": [
+    "term"
+   ],
+   "name": "ЭЦП (УКЭП)",
+   "aliases": [
+    "эцп",
+    "укэп",
+    "кэп",
+    "электронная подпись",
+    "квалифицированная подпись",
+    "Усиленная квалифицированная электронная подпись"
+   ],
+   "summary": "ЭЦП (корректно — УКЭП, усиленная квалифицированная электронная подпись) — цифровой аналог собственноручной подписи по 63-ФЗ. Для казначейского сопровождения обязательна: вход в ГИИС «Электронный бюджет», подписание заявлений, Сведений и распоряжений. Руководителям выпускает УЦ ФНС, сотрудникам — коммерческие УЦ (работают в паре с МЧД).",
+   "citation": "Квалифицированная подпись с сертификатом аккредитованного УЦ — юридический ключ ко всем электронным процедурам КС.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/elektronnaya-podpis/",
+     "title": "ЭЦП (УКЭП)"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "fns",
+     "doverennost-mchd",
+     "kriptopro",
+     "63-fz"
+    ],
+    "REQUIRES_DOC": [
+     "doverennost-mchd"
+    ],
+    "SEE_ERROR": [
+     "err-ecp"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/sertifikat-ecp-kaznacheystva"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-ecp",
+   "scores": {
+    "authority": 44,
+    "coverage": 83,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "ufk",
+   "type": [
+    "term"
+   ],
+   "name": "УФК",
+   "aliases": [
+    "управление федерального казначейства",
+    "уфк по региону",
+    "Управление Федерального казначейства по субъекту РФ"
+   ],
+   "summary": "УФК — управление Федерального казначейства по субъекту РФ. Именно УФК открывает подрядчику лицевой счёт участника казначейского сопровождения, проверяет и санкционирует каждый платёж с этого счёта, принимает карточку подписей и Сведения. Все документы по КС подаются в своё УФК — по месту, определённому порядком казначейства.",
+   "citation": "Территориальное управление казначейства в регионе: открывает лицевые счета, санкционирует расходы, возвращает документы с замечаниями. Для подрядчика — главный контрагент по всем операциям КС.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/ufk/",
+     "title": "УФК"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "tofk",
+     "fk",
+     "sanktsionirovanie",
+     "kofk"
+    ],
+    "REQUIRES_DOC": [
+     "zayavlenie-ls",
+     "pismo-zapros"
+    ],
+    "SEE_ERROR": [
+     "err-zatyanulos-otkrytie",
+     "err-otkaz-sanktsionirovaniya"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/regiony/",
+     "/blog/tofk"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-ufk",
+   "scores": {
+    "authority": 36,
+    "coverage": 83,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "kontrakt-44",
+   "type": [
+    "term"
+   ],
+   "name": "Госконтракт",
+   "aliases": [
+    "государственный контракт",
+    "контракт по 44-фз",
+    "Государственный (муниципальный) контракт"
+   ],
+   "summary": "Госконтракт — договор поставки, работ или услуг для государственных (муниципальных) нужд, заключаемый по 44-ФЗ. Контракт попадает под казначейское сопровождение, если соответствует критериям ежегодного закона о бюджете (авансирование, сумма, источник средств). Сведения о контракте включаются в реестр контрактов ЕИС, где ему присваивается ИГК.",
+   "citation": "Договор с госзаказчиком по 44-ФЗ. Для КС важны его атрибуты: источник средств, аванс, сумма, ИГК и условие о сопровождении.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/goskontrakt/",
+     "title": "Госконтракт"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "igk",
+     "ks",
+     "eis",
+     "ed-postavshchik"
+    ],
+    "REQUIRES_DOC": [
+     "formulirovka-ks",
+     "reestr-dokumentov"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kakie-kontrakty-popadayut-pod-kaznachejskoe-soprovozhdenie/",
+     "/blog/kaznacheyskoe-soprovozhdenie-44-fz-2026-polnyy-gid"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-kontrakt-44",
+   "scores": {
+    "authority": 35,
+    "coverage": 67,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "goz",
+   "type": [
+    "term"
+   ],
+   "name": "ГОЗ",
+   "aliases": [
+    "гособоронзаказ",
+    "оборонный заказ",
+    "Государственный оборонный заказ"
+   ],
+   "summary": "ГОЗ — государственный оборонный заказ: контракты на поставки для обороны и безопасности по 275-ФЗ. Режим ГОЗ — самый жёсткий контур контроля денег: обязательный ИГК по всей кооперации, казначейское или банковское сопровождение, раздельный учёт затрат, регулируемые цены (ПП № 1465) и контроль военных представительств.",
+   "citation": "Заказы по 275-ФЗ с особым режимом исполнения: сопровождение расчётов, раздельный учёт, ценовое регулирование и многоуровневый контроль.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/goz/",
+     "title": "ГОЗ"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "razdelnyy-uchet",
+     "igk",
+     "obs",
+     "275-fz",
+     "ast-goz"
+    ],
+    "REQUIRES_DOC": [
+     "komplekt-goz",
+     "prikaz-razdelnyy-uchet"
+    ],
+    "SEE_ERROR": [
+     "err-razdelnyy-uchet"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/razdelnyj-uchet-goz-polnyy-guide-2026",
+     "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-goz",
+   "scores": {
+    "authority": 34,
+    "coverage": 83,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "kody-napravleniy",
+   "type": [
+    "term"
+   ],
+   "name": "Коды направлений расходования",
+   "aliases": [
+    "коды направлений",
+    "код направления расходования целевых средств"
+   ],
+   "summary": "Коды направлений расходования — справочник укрупнённых кодов, которыми классифицируется каждое списание целевых средств: оплата труда, материалы, аренда, налоги, возмещение, прибыль и т.д. Код указывается в распоряжении и должен соответствовать и сути платежа, и позициям Сведений — несоответствие любой из двух сторон даёт возврат.",
+   "citation": "Классификатор расходов при КС: каждый платёж «подписывается» кодом, по которому казначейство сверяет операцию с планом Сведений.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/kody-napravleniy-rashodovaniya/",
+     "title": "Коды направлений расходования"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "kody-9xxx",
+     "kody-71xx",
+     "svedeniya-ssu",
+     "rkp"
+    ],
+    "REQUIRES_DOC": [
+     "rkp"
+    ],
+    "SEE_ERROR": [
+     "err-kod-napravleniya"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/codes"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-kody-napravleniy",
+   "scores": {
+    "authority": 34,
+    "coverage": 67,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "vozmeshchenie",
+   "type": [
+    "term"
+   ],
+   "name": "Возмещение расходов",
+   "aliases": [
+    "возмещение произведенных расходов",
+    "компенсация расходов"
+   ],
+   "summary": "Возмещение расходов — перевод средств с лицевого счёта на собственный расчётный счёт исполнителя в компенсацию затрат, которые он уже оплатил из своих денег на цели контракта. Ключевой инструмент вывода средств при КС: оформляется отдельными кодами направления (9XXX) и подтверждается документами о фактической оплате.",
+   "citation": "Санкционируемая операция «лицевой → расчётный счёт» в счёт уже понесённых собственных затрат на контракт: требует доказательств оплаты и целевого характера.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/vozmeshchenie-rashodov/",
+     "title": "Возмещение расходов"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "kody-9xxx",
+     "raschetnyy-schet",
+     "pryamoy-platezh",
+     "pribyl-ks"
+    ],
+    "REQUIRES_DOC": [
+     "chek-list-dokumenty"
+    ],
+    "SEE_ERROR": [
+     "err-kod-napravleniya"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/avans-vs-vozmeshchenie-vs-pryamoy-platezh-tri-tipa-operatsiy-ks",
+     "/blog/kody-vozmeshcheniya-rashodov"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-vozmeshchenie",
+   "scores": {
+    "authority": 31,
+    "coverage": 83,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "tsepochka-ks",
+   "type": [
+    "term"
+   ],
+   "name": "Цепочка кооперации",
+   "aliases": [
+    "кооперация",
+    "соисполнители",
+    "цепочка соисполнителей"
+   ],
+   "summary": "Цепочка кооперации — все участники исполнения контракта: головной исполнитель, его субподрядчики и поставщики, привлечённые на целевые средства. При казначейском сопровождении контроль распространяется на цепочку: расчёты между её звеньями идут через лицевые (или отдельные — при ГОЗ) счета с тем же ИГК, и каждый платёж санкционируется.",
+   "citation": "Сеть договоров от госконтракта вниз до поставщиков, объединённая одним ИГК и целевыми средствами. Участники цепочки тоже попадают под казначейский контроль.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/tsepochka-kooperatsii/",
+     "title": "Цепочка кооперации"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "golovnoy-ispolnitel",
+     "subpodryadchik",
+     "igk",
+     "kazn-monitoring"
+    ],
+    "REQUIRES_DOC": [
+     "formulirovka-ks"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/tsepochka-kaznacheyskogo-soprovozhdeniya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-tsepochka-ks",
+   "scores": {
+    "authority": 30,
+    "coverage": 67,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "upolnomochennye",
+   "type": [
+    "term"
+   ],
+   "name": "Уполномоченное лицо",
+   "aliases": [
+    "уполномоченные лица",
+    "уполномоченные лица по счету",
+    "ответственный по кс"
+   ],
+   "summary": "Уполномоченное лицо — сотрудник, которому организация официально передала полномочия по операциям КС: подписывать документы (карточка подписей, МЧД), подавать распоряжения, работать в ГИИС. Полномочия существуют только документально: подпись без карточки или действия без МЧД для казначейства ничтожны.",
+   "citation": "Человек с оформленным правом действовать по счёту/в системах от имени организации. Оформление: карточка подписей (бумажный контур) + МЧД и роли (электронный).",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/upolnomochennoe-litso/",
+     "title": "Уполномоченное лицо"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "kartochka-podpisey",
+     "doverennost-mchd",
+     "ecp"
+    ],
+    "REQUIRES_DOC": [
+     "kartochka-podpisey",
+     "doverennost-mchd"
+    ],
+    "SEE_ERROR": [
+     "err-kartochka",
+     "err-mchd"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/upolnomochennye-litsa-po-ks-schetu-kto-i-otvetstvennost"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-upolnomochennye",
+   "scores": {
+    "authority": 30,
+    "coverage": 83,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "tofk",
+   "type": [
+    "term"
+   ],
+   "name": "ТОФК",
+   "aliases": [
+    "территориальный орган казначейства",
+    "Территориальный орган Федерального казначейства"
+   ],
+   "summary": "ТОФК — территориальный орган Федерального казначейства: обобщающее название УФК по субъектам РФ и их отделов. В документах КС «ТОФК» встречается как реквизит: каждый орган имеет код (КОФК), который указывается в заявлениях, карточке подписей и платёжных документах. Свой ТОФК определяется правилами порядка лицевых счетов.",
+   "citation": "Общее название территориальных органов казначейства (УФК и их отделения). В формах КС фигурирует как «орган Федерального казначейства» со своим кодом КОФК.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/tofk/",
+     "title": "ТОФК"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ufk",
+     "kofk",
+     "fk"
+    ],
+    "REQUIRES_DOC": [
+     "zayavlenie-ls",
+     "kartochka-podpisey"
+    ],
+    "SEE_ERROR": [
+     "err-zatyanulos-otkrytie"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/tofk"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-tofk",
+   "scores": {
+    "authority": 27,
+    "coverage": 83,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "avans",
+   "type": [
+    "term"
+   ],
+   "name": "Аванс по госконтракту",
+   "aliases": [
+    "авансирование",
+    "аванс по контракту"
+   ],
+   "summary": "Аванс — предоплата по госконтракту, зачисляемая при казначейском сопровождении на лицевой счёт исполнителя. Размер задаётся контрактом в рамках лимитов НПА (при ГОЗ и отдельных программах — до 80% и выше при КС). Авансом можно платить только на цели контракта; зачёт аванса идёт по мере приёмки этапов.",
+   "citation": "Целевая предоплата на лицевом счёте: оборотные средства исполнителя, потратить которые можно только на исполнение контракта под санкционированием.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/avans/",
+     "title": "Аванс по госконтракту"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ls-71",
+     "vozvrat-avansa",
+     "etap-kontrakta",
+     "koo-obs"
+    ],
+    "SEE_ERROR": [
+     "err-necelevoe"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/avans-vs-vozmeshchenie-vs-pryamoy-platezh-tri-tipa-operatsiy-ks",
+     "/blog/kak-rasschitat-summu-avansa-po-goskontraktu"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-avans",
+   "scores": {
+    "authority": 26,
+    "coverage": 50,
+    "connectivity": 97,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "svodnyy-reestr",
+   "type": [
+    "term"
+   ],
+   "name": "Сводный реестр",
+   "aliases": [
+    "код по сводному реестру",
+    "включение в сводный реестр",
+    "реестровый код",
+    "Реестр участников и неучастников бюджетного процесса"
+   ],
+   "summary": "Сводный реестр — реестр участников и неучастников бюджетного процесса, который ведёт казначейство. Организация-подрядчик включается в него перед открытием лицевого счёта и получает код по Сводному реестру — обязательный реквизит заявлений, карточки и Сведений. Нет включения в реестр — УФК не откроет счёт: это частая скрытая причина «зависшего» старта.",
+   "citation": "Единая регистрация организаций в системе казначейства: код реестровой записи идентифицирует участника КС во всех документах и системах.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/svodnyy-reestr/",
+     "title": "Сводный реестр"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "zayavlenie-ls",
+     "nubp",
+     "ls-71",
+     "okpo"
+    ],
+    "REQUIRES_DOC": [
+     "zayavlenie-ls",
+     "chek-list-otkrytie"
+    ],
+    "SEE_ERROR": [
+     "err-svodnyy-reestr"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/oshibki/net-v-svodnom-reestre/"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-svodnyy-reestr",
+   "scores": {
+    "authority": 25,
+    "coverage": 83,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "pribyl-ks",
+   "type": [
+    "term"
+   ],
+   "name": "Перечисление прибыли",
+   "aliases": [
+    "вывод прибыли",
+    "прибыль с лицевого счета",
+    "перевод прибыли на расчетный счет",
+    "Вывод прибыли с КС-счёта"
+   ],
+   "summary": "Перечисление прибыли — перевод заработанного с лицевого счёта на расчётный счёт исполнителя. Возможен, когда прибыль подтверждена: этап принят, цена и её структура позволяют выделить прибыль, документы собраны. Оформляется отдельным кодом направления; при ГОЗ прибыль ограничена согласованной ценой (правило 20+1).",
+   "citation": "Санкционируемая операция вывода финансового результата исполнителя на его свободный счёт — финальная точка экономики контракта при КС.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/perechislenie-pribyli/",
+     "title": "Перечисление прибыли"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "raschetnyy-schet",
+     "etap-kontrakta",
+     "pp-2053",
+     "kody-napravleniy"
+    ],
+    "SEE_ERROR": [
+     "err-otkaz-sanktsionirovaniya"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-pribyl-ks",
+   "scores": {
+    "authority": 24,
+    "coverage": 67,
+    "connectivity": 93,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "sroki-ufk",
+   "type": [
+    "term"
+   ],
+   "name": "Сроки рассмотрения УФК",
+   "aliases": [
+    "сроки уфк",
+    "регламентные сроки",
+    "сколько уфк проверяет платеж",
+    "сроки санкционирования"
+   ],
+   "summary": "Сроки рассмотрения УФК — регламентные периоды операций казначейства: открытие лицевого счёта, проверка Сведений, санкционирование распоряжений — как правило, единицы рабочих дней на каждый шаг (точные значения задаёт порядок). Срок отсчитывается от подачи корректного документа: каждый возврат перезапускает часы.",
+   "citation": "Нормативные SLA казначейства по операциям КС. База планирования: любой процесс = сумма регламентных сроков + запас на возможные возвраты.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/sroki-rassmotreniya-ufk/",
+     "title": "Сроки рассмотрения УФК"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "sanktsionirovanie",
+     "err-vozvrat-platezha",
+     "ls-71"
+    ],
+    "SEE_ERROR": [
+     "err-zatyanulos-otkrytie"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/sroki-rassmotreniya-dokumentov-v-ufk-tablitsa"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-sroki-ufk",
+   "scores": {
+    "authority": 24,
+    "coverage": 50,
+    "connectivity": 87,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "subsidiya",
+   "type": [
+    "term"
+   ],
+   "name": "Субсидия",
+   "aliases": [
+    "субсидия юрлицу",
+    "целевая субсидия"
+   ],
+   "summary": "Субсидия — целевые бюджетные средства, предоставляемые организации на определённые цели по соглашению (гранты, поддержка производств, НИОКР, инвестпроекты). Субсидии юридическим лицам — один из основных случаев казначейского сопровождения: средства зачисляются на лицевой счёт, расходуются по Сведениям и под санкционирование УФК.",
+   "citation": "Безвозмездные целевые средства бюджета по соглашению. При КС управляются как средства контракта: лицевой счёт, Сведения, санкционирование, отчёт о использовании.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/subsidiya/",
+     "title": "Субсидия"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "soglashenie-subsidii",
+     "id-soglasheniya",
+     "grant",
+     "poluchatel-subsidii"
+    ],
+    "REQUIRES_DOC": [
+     "komplekt-subsidii"
+    ],
+    "SEE_ERROR": [
+     "err-subsidiya-rashody"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-subsidiya",
+   "scores": {
+    "authority": 23,
+    "coverage": 83,
+    "connectivity": 93,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "naznachenie",
+   "type": [
+    "term"
+   ],
+   "name": "Назначение платежа",
+   "aliases": [
+    "назначение платежа при кс",
+    "текст платежки"
+   ],
+   "summary": "Назначение платежа при казначейском сопровождении — структурированный текст, по которому УФК понимает, за что и на каком основании платёж: ИГК, предмет оплаты, реквизиты документов-оснований (договор, счёт, акт), выделенный НДС. Свободного стиля нет: несоответствие требованиям порядка и практике УФК — возврат.",
+   "citation": "Обязательное текстовое поле платежа со строгой структурой: идентификаторы (ИГК), основание, суть операции, НДС. Главная зона формальных ошибок при КС.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/naznachenie-platezha/",
+     "title": "Назначение платежа"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "igk",
+     "nds-ks",
+     "rkp",
+     "dokumenty-osnovaniya"
+    ],
+    "REQUIRES_DOC": [
+     "rkp"
+    ],
+    "SEE_ERROR": [
+     "err-naznachenie"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/naznachenie-platezha-kaznachejstvo/"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-naznachenie",
+   "scores": {
+    "authority": 23,
+    "coverage": 83,
+    "connectivity": 93,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "soglashenie-subsidii",
+   "type": [
+    "term"
+   ],
+   "name": "Соглашение о предоставлении субсидии",
+   "aliases": [
+    "соглашение о субсидии",
+    "договор субсидии"
+   ],
+   "summary": "Соглашение о предоставлении субсидии — договор между распорядителем бюджетных средств и получателем: цели, условия, план расходов, показатели результата, порядок отчётности и возврата. Аналог госконтракта для субсидий: именно из соглашения берутся идентификатор, коды целевых средств и правила, по которым УФК будет санкционировать расходы.",
+   "citation": "Правоустанавливающий документ субсидии. Для КС — источник целей, структуры расходов и идентификатора соглашения, с которыми сверяется каждый платёж.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/soglashenie-o-subsidii/",
+     "title": "Соглашение о предоставлении субсидии"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "subsidiya",
+     "id-soglasheniya",
+     "svedeniya-ssu"
+    ],
+    "REQUIRES_DOC": [
+     "komplekt-subsidii",
+     "svedeniya-ssu"
+    ],
+    "SEE_ERROR": [
+     "err-subsidiya-rashody"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-soglashenie-subsidii",
+   "scores": {
+    "authority": 22,
+    "coverage": 83,
+    "connectivity": 90,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "kazn-monitoring",
+   "type": [
+    "term"
+   ],
+   "name": "Казначейский мониторинг",
+   "aliases": [
+    "мониторинг казначейства"
+   ],
+   "summary": "Казначейский мониторинг — постоянное наблюдение казначейства за участниками сопровождения: проверка сведений об организации, её операциях и цепочке кооперации на признаки рисков. По результатам мониторинга УФК может запрашивать пояснения и приостанавливать операции. Работает автоматически, поверх санкционирования каждого платежа.",
+   "citation": "Риск-ориентированный контроль казначейства над участниками КС: анализ данных и операций, а не только разовых платёжных документов.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/kaznacheyskiy-monitoring/",
+     "title": "Казначейский мониторинг"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "sanktsionirovanie",
+     "priostanovlenie",
+     "tsepochka-ks"
+    ],
+    "REQUIRES_DOC": [
+     "poyasnenie-ufk"
+    ],
+    "SEE_ERROR": [
+     "err-otkaz-sanktsionirovaniya"
+    ],
+    "MONETIZED_BY": [
+     "service-vosstanovlenie"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/podvodnye-kamni-kaznacheyskogo-soprovozhdeniya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-kazn-monitoring",
+   "scores": {
+    "authority": 21,
+    "coverage": 83,
+    "connectivity": 83,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "obs",
+   "type": [
+    "term"
+   ],
+   "name": "Отдельный счёт (ГОЗ)",
+   "aliases": [
+    "отдельный банковский счет",
+    "обс",
+    "спецсчет гоз",
+    "Отдельный банковский счёт по 275-ФЗ"
+   ],
+   "summary": "Отдельный счёт — специальный банковский счёт исполнителя гособоронзаказа в уполномоченном банке (ПСБ и другие), открываемый под конкретный контракт с ИГК при банковском сопровождении по 275-ФЗ. Режим счёта жёстко ограничен: разрешённые и запрещённые операции перечислены в законе, банк контролирует каждое списание.",
+   "citation": "Спецсчёт ГОЗ в уполномоченном банке с законодательно закреплённым режимом операций — банковский аналог лицевого счёта КС.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/otdelnyy-schet-goz/",
+     "title": "Отдельный счёт (ГОЗ)"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "bank-soprovozhdenie",
+     "psb",
+     "goz",
+     "igk"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-obs",
+   "scores": {
+    "authority": 21,
+    "coverage": 50,
+    "connectivity": 80,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "kody-9xxx",
+   "type": [
+    "term"
+   ],
+   "name": "Коды 9XXX (возмещение)",
+   "aliases": [
+    "коды возмещения",
+    "код 9100",
+    "коды 9ххх",
+    "Коды направлений возмещения расходов"
+   ],
+   "summary": "Коды 9XXX — группа кодов направлений расходования для операций возмещения: перевод средств с лицевого счёта на собственный расчётный счёт в компенсацию уже оплаченных затрат (9100 и далее — по типам расходов) и перечисления прибыли. Самая «денежная» группа кодов для исполнителя: через неё выводятся собственные средства.",
+   "citation": "Спец-серия кодов для операций «лицевой → расчётный счёт»: возмещение затрат и вывод прибыли, каждая с собственным кодом по типу.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/kody-9xxx/",
+     "title": "Коды 9XXX (возмещение)"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "vozmeshchenie",
+     "pribyl-ks",
+     "kody-napravleniy"
+    ],
+    "SEE_ERROR": [
+     "err-kod-napravleniya"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kody-vozmeshcheniya-rashodov"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-kody-9xxx",
+   "scores": {
+    "authority": 21,
+    "coverage": 67,
+    "connectivity": 80,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "upd-akt",
+   "type": [
+    "term"
+   ],
+   "name": "Акт сдачи-приёмки",
+   "aliases": [
+    "акт выполненных работ",
+    "акт приемки"
+   ],
+   "summary": "Акт сдачи-приёмки — документ, фиксирующий выполнение работ/услуг и их приёмку заказчиком. При казначейском сопровождении акт — ключевой документ-основание: по нему заказчик оплачивает этап на лицевой счёт, а исполнитель обосновывает платежи кооперации, зачёт аванса и вывод прибыли.",
+   "citation": "Закрывающий документ этапа/контракта. Для КС — юридический факт «работа принята», открывающий движение денег.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/akt-sdachi-priyomki/",
+     "title": "Акт сдачи-приёмки"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "etap-kontrakta",
+     "dokumenty-osnovaniya",
+     "upd",
+     "ks2-ks3"
+    ],
+    "REQUIRES_DOC": [
+     "reestr-dokumentov"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/akt-schet-upd-pri-kaznachejskom-soprovozhdenii/"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-upd-akt",
+   "scores": {
+    "authority": 20,
+    "coverage": 67,
+    "connectivity": 80,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "porog-ks",
+   "type": [
+    "term"
+   ],
+   "name": "Порог казначейского сопровождения",
+   "aliases": [
+    "порог кс",
+    "критерии кс",
+    "3 млн",
+    "какие контракты под кс"
+   ],
+   "summary": "Порог казначейского сопровождения — стоимостные и типовые критерии, при которых контракт или субсидия попадает под КС. Их ежегодно устанавливает закон о федеральном бюджете: базовый ориентир последних лет — авансируемые госконтракты от 3 млн рублей, субсидии юрлицам, ГОЗ и расчёты по кооперации. Точные условия проверяются на текущий год.",
+   "citation": "Набор условий из ежегодного закона о бюджете (сумма, аванс, тип средств), определяющий, будет ли у контракта казначейское сопровождение.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/porog-kaznacheyskogo-soprovozhdeniya/",
+     "title": "Порог казначейского сопровождения"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "zakon-budget",
+     "ks",
+     "avans",
+     "223-fz"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-2026-opredeleniya",
+     "/blog/kakie-kontrakty-popadayut-pod-kaznachejskoe-soprovozhdenie/"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-porog-ks",
+   "scores": {
+    "authority": 19,
+    "coverage": 33,
+    "connectivity": 70,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "zakon-budget",
+   "type": [
+    "term"
+   ],
+   "name": "Закон о федеральном бюджете",
+   "aliases": [
+    "закон о бюджете",
+    "бюджет на год",
+    "условия кс на год"
+   ],
+   "summary": "Ежегодный закон о федеральном бюджете — документ, который наряду с цифрами бюджета устанавливает случаи казначейского сопровождения на год: какие контракты, субсидии и авансы попадают под КС, какие пороги действуют. Именно поэтому условия КС «плавают» от года к году, и проверять их надо по закону года заключения контракта.",
+   "citation": "Годовой источник правил «кто под КС»: статья об особенностях казначейского сопровождения средств — первое, что смотрят при оценке контракта.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/zakon-o-federalnom-byudzhete/",
+     "title": "Закон о федеральном бюджете"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "porog-ks",
+     "ks",
+     "avans"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/novosti/",
+     "/blog/kaznacheyskoe-soprovozhdenie-2026-opredeleniya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-zakon-budget",
+   "scores": {
+    "authority": 19,
+    "coverage": 33,
+    "connectivity": 67,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "raschetnyy-schet",
+   "type": [
+    "term"
+   ],
+   "name": "Расчётный счёт",
+   "aliases": [
+    "банковский счет",
+    "рс"
+   ],
+   "summary": "Расчётный счёт — обычный банковский счёт организации, которым она распоряжается свободно. При казначейском сопровождении он не исчезает: на него уходят прибыль и возмещение собственных расходов с лицевого счёта, с него платятся расходы вне контракта. Целевые же средства контракта живут отдельно — на лицевом счёте в УФК.",
+   "citation": "Свободный банковский счёт компании — противоположность лицевому счёту КС: без санкционирования, но и без целевых средств контракта.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/raschetnyy-schet/",
+     "title": "Расчётный счёт"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ls-71",
+     "pribyl-ks",
+     "vozmeshchenie"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskiy-schet-i-raschetnyy-raznitsa"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-raschetnyy-schet",
+   "scores": {
+    "authority": 16,
+    "coverage": 50,
+    "connectivity": 63,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "err-vozvrat-platezha",
+   "type": [
+    "term"
+   ],
+   "name": "Возврат платежа УФК",
+   "aliases": [
+    "уфк вернуло платеж",
+    "платеж не прошел",
+    "отклонение платежа"
+   ],
+   "summary": "Возврат платежа — отказ УФК исполнить распоряжение: документ возвращается с указанием причины (ошибка в ИГК или назначении, неверный код, нет оснований, несоответствие Сведениям). Деньги остаются на счёте; платёж нужно исправить и подать заново — потеряв дни из графика. Возврат ≠ запрет: чаще всего это формальный дефект документа.",
+   "citation": "Неисполнение РКП с протоколом причин. Штатная (и массовая) ситуация КС: лечится исправлением документа, предотвращается шаблонами и чек-листами.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/vozvrat-platezha/",
+     "title": "Возврат платежа УФК"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "platezh",
+     "naznachenie",
+     "otzyv-rasporyazheniya",
+     "sanktsionirovanie"
+    ],
+    "REQUIRES_DOC": [
+     "poyasnenie-vozvrat"
+    ],
+    "SEE_ERROR": [
+     "err-naznachenie",
+     "err-igk"
+    ],
+    "MONETIZED_BY": [
+     "service-vosstanovlenie"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/vozvrat-platezha-kaznachejstvo-chto-delat/"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-err-vozvrat-platezha",
+   "scores": {
+    "authority": 15,
+    "coverage": 83,
+    "connectivity": 73,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "vypiska-ls",
+   "type": [
+    "term"
+   ],
+   "name": "Выписка из лицевого счёта",
+   "aliases": [
+    "выписка лс",
+    "выписка казначейство"
+   ],
+   "summary": "Выписка из лицевого счёта — отчёт казначейства об операциях и остатке на счёте участника КС: зачисления, списания, доступный остаток на дату. Формируется в ГИИС «Электронный бюджет». Выписка — первичный источник для сверки с заказчиком, контроля лимита и бухгалтерского учёта операций по счёту.",
+   "citation": "Казначейский аналог банковской выписки: официальное состояние лицевого счёта и движение средств за период.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/vypiska-iz-litsevogo-scheta/",
+     "title": "Выписка из лицевого счёта"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "limit-ks",
+     "ls-71",
+     "zakrytie-ls"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/limit-na-ks-schete-formirovanie-i-kontrol"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-vypiska-ls",
+   "scores": {
+    "authority": 15,
+    "coverage": 50,
+    "connectivity": 60,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "registratsiya-eb",
+   "type": [
+    "term"
+   ],
+   "name": "Регистрация в «Электронном бюджете»",
+   "aliases": [
+    "регистрация в гиис",
+    "подключение к электронному бюджету"
+   ],
+   "summary": "Регистрация в «Электронном бюджете» — процедура подключения организации и её сотрудников к ГИИС ЭБ: заявка, регистрация уполномоченных лиц с сертификатами, назначение полномочий (ролей) в подсистемах. Обязательный шаг до открытия лицевого счёта и подачи любых документов КС; занимает от нескольких дней.",
+   "citation": "Вход организации в экосистему казначейского документооборота: учётные записи + сертификаты + роли = право подавать документы.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/registratsiya-v-eb/",
+     "title": "Регистрация в «Электронном бюджете»"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "giis-eb",
+     "ecp",
+     "doverennost-mchd",
+     "upolnomochennye"
+    ],
+    "REQUIRES_DOC": [
+     "chek-list-otkrytie"
+    ],
+    "SEE_ERROR": [
+     "err-zatyanulos-otkrytie"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/registratsiya-v-giis-elektronnyy-byudzhet-podryadchika"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-registratsiya-eb",
+   "scores": {
+    "authority": 14,
+    "coverage": 83,
+    "connectivity": 67,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "otzyv-rasporyazheniya",
+   "type": [
+    "document",
+    "term"
+   ],
+   "name": "Отзыв распоряжения",
+   "aliases": [
+    "отозвать платежку",
+    "аннулирование распоряжения",
+    "запрос на аннулирование",
+    "Аннулирование РКП"
+   ],
+   "summary": "Ошибочное распоряжение о казначейском платеже можно отозвать, пока оно не исполнено (не санкционировано и не проведено): в ГИИС «Электронный бюджет» — штатной операцией отзыва, при недоступности — письменным обращением в ТОФК с реквизитами распоряжения и причиной отзыва. После исполнения платежа отзыв невозможен — только возврат средств от получателя.",
+   "citation": "Останавливает ошибочный платёж до исполнения — дешевле и быстрее, чем возврат средств от контрагента.",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/shablon-otzyva-rasporyazheniya/",
+     "title": "Отзыв распоряжения"
+    },
+    {
+     "layer": "term",
+     "url": "/glossary/otzyv-rasporyazheniya/",
+     "title": "Отзыв распоряжения"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "poyasnenie-vozvrat",
+     "pismo-zapros"
+    ],
+    "SEE_ERROR": [
+     "err-naznachenie",
+     "err-igk",
+     "err-kod-napravleniya"
+    ],
+    "MONETIZED_BY": [
+     "service-vosstanovlenie",
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/izmeneniya-platezhek-kaznachejstvo-2026/",
+     "/blog/vozvrat-platezha-kaznachejstvo-chto-delat/",
+     "/blog/kaznacheyskoe-soprovozhdenie-platezhey"
+    ],
+    "RELATED_TERM": [
+     "rkp",
+     "err-vozvrat-platezha"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-otzyv-rasporyazheniya",
+   "scores": {
+    "authority": 13,
+    "coverage": 83,
+    "connectivity": 73,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 73
+   }
+  },
+  {
+   "id": "kontinent-tls",
+   "type": [
+    "term"
+   ],
+   "name": "Континент TLS",
+   "aliases": [
+    "continent tls",
+    "континент клиент",
+    "Континент TLS VPN Клиент"
+   ],
+   "summary": "Континент TLS — средство криптографической защиты канала, через которое устанавливается защищённое соединение с ГИИС «Электронный бюджет». Без установленного и настроенного Континент TLS личный кабинет ЭБ просто не открывается — это обязательный компонент рабочего места наряду с КриптоПро CSP и сертификатом ЭЦП.",
+   "citation": "VPN/TLS-клиент для защищённого доступа к ГИИС ЭБ — обязательная часть рабочего места участника КС.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/kontinent-tls/",
+     "title": "Континент TLS"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "giis-eb",
+     "kriptopro",
+     "ecp"
+    ],
+    "SEE_ERROR": [
+     "err-ecp"
+    ],
+    "MONETIZED_BY": [
+     "service-vosstanovlenie"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/vhod-v-elektronnyy-byudzhet-po-sertifikatu"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-kontinent-tls",
+   "scores": {
+    "authority": 13,
+    "coverage": 67,
+    "connectivity": 57,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "rekvizity-ks",
+   "type": [
+    "term"
+   ],
+   "name": "Реквизиты КС-счёта",
+   "aliases": [
+    "реквизиты лицевого счета",
+    "реквизиты казначейского счета"
+   ],
+   "summary": "Реквизиты КС-счёта — набор данных для зачисления денег на лицевой счёт участника КС. Отличаются от банковских: получатель — УФК (с указанием исполнителя), банк — Банк России/казначейство, плюс номер казначейского счёта и отдельным полем — номер лицевого счёта 71. Ошибка в любом элементе — деньги не дойдут или зависнут на невыясненных.",
+   "citation": "Платёжные данные лицевого счёта: УФК-получатель, счёт в системе казначейских платежей и номер ЛС-71 исполнителя. Не совпадают по структуре с реквизитами обычного банковского счёта.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/rekvizity-ks-scheta/",
+     "title": "Реквизиты КС-счёта"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ls-71",
+     "kod-71",
+     "eks"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/rekvizity-kaznacheyskogo-scheta"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-rekvizity-ks",
+   "scores": {
+    "authority": 13,
+    "coverage": 50,
+    "connectivity": 53,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "vidy-tsen-goz",
+   "type": [
+    "term"
+   ],
+   "name": "Виды цен ГОЗ",
+   "aliases": [
+    "ориентировочная цена",
+    "фиксированная цена",
+    "цена возмещающая издержки",
+    "Ориентировочная, фиксированная, возмещающая издержки"
+   ],
+   "summary": "Виды цен ГОЗ — три модели цены контракта по ПП № 1465: ориентировочная (уточняется по факту), фиксированная (не меняется) и возмещающая издержки (затраты + прибыль). Вид цены определяет глубину раскрытия себестоимости, порядок перевода цены в фиксированную и правила расчёта прибыли исполнителя.",
+   "citation": "Классификация цен контрактов ГОЗ по степени определённости: от ориентировочной через перевод в фиксированную до модели «издержки плюс».",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/vidy-tsen-goz/",
+     "title": "Виды цен ГОЗ"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "norma-pribyli",
+     "goz",
+     "razdelnyy-uchet",
+     "pp-1465"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/vidy-cen-goz"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-vidy-tsen-goz",
+   "scores": {
+    "authority": 13,
+    "coverage": 50,
+    "connectivity": 57,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "kriptopro",
+   "type": [
+    "term"
+   ],
+   "name": "КриптоПро CSP",
+   "aliases": [
+    "криптопро",
+    "csp",
+    "криптопровайдер"
+   ],
+   "summary": "КриптоПро CSP — криптопровайдер, обеспечивающий работу электронной подписи на компьютере: с его помощью браузер и системы видят сертификат и подписывают документы. Стандарт де-факто для госсистем, включая ГИИС «Электронный бюджет». Вместе с Континент TLS и сертификатом составляет минимальный набор рабочего места участника КС.",
+   "citation": "Программа-посредник между сертификатом УКЭП и приложениями: без установленного и лицензированного криптопровайдера подпись «не работает».",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/kriptopro-csp/",
+     "title": "КриптоПро CSP"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ecp",
+     "kontinent-tls",
+     "giis-eb"
+    ],
+    "SEE_ERROR": [
+     "err-ecp"
+    ],
+    "MONETIZED_BY": [
+     "service-vosstanovlenie"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/vhod-v-elektronnyy-byudzhet-po-sertifikatu"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-kriptopro",
+   "scores": {
+    "authority": 13,
+    "coverage": 67,
+    "connectivity": 57,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "rezervirovanie-ls",
+   "type": [
+    "term"
+   ],
+   "name": "Резервирование лицевого счёта",
+   "aliases": [
+    "зарезервировать счет",
+    "резерв счета для тендера"
+   ],
+   "summary": "Резервирование лицевого счёта — получение номера счёта участника КС до заключения контракта: заявление той же формы 0531368 подаётся с отметкой «резервирование», УФК присваивает номер, который можно указать в заявке или проекте контракта. После подписания контракта зарезервированный счёт «активируется» открытием.",
+   "citation": "Предварительное присвоение номера лицевого счёта до контракта — чтобы реквизиты счёта были готовы к моменту подписания.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/rezervirovanie-scheta/",
+     "title": "Резервирование лицевого счёта"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ls-71",
+     "zakrytie-ls"
+    ],
+    "REQUIRES_DOC": [
+     "zayavlenie-ls"
+    ],
+    "SEE_ERROR": [
+     "err-zatyanulos-otkrytie"
+    ],
+    "MONETIZED_BY": [
+     "service-reserve"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/how_to_open/"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-rezervirovanie-ls",
+   "scores": {
+    "authority": 12,
+    "coverage": 83,
+    "connectivity": 53,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "zakrytie-ls",
+   "type": [
+    "term"
+   ],
+   "name": "Закрытие лицевого счёта",
+   "aliases": [
+    "закрыть кс счет",
+    "закрытие счета после контракта"
+   ],
+   "summary": "Закрытие лицевого счёта — финальная процедура КС после исполнения контракта: неиспользованные целевые средства возвращаются в бюджет или заказчику, остаток обнуляется, и по заявлению (та же форма 0531368 с отметкой «закрытие») УФК закрывает счёт. Держать пустой счёт открытым можно, но каждый активный счёт — это обязанности и внимание контролёров.",
+   "citation": "Прекращение лицевого счёта участника КС после завершения расчётов: нулевой остаток + заявление по форме 0531368.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/zakrytie-scheta/",
+     "title": "Закрытие лицевого счёта"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ls-71",
+     "neisp-ostatok",
+     "rezervirovanie-ls"
+    ],
+    "REQUIRES_DOC": [
+     "zayavlenie-zakrytie"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/zakrytie-kaznacheyskogo-scheta-posle-kontrakta"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-zakrytie-ls",
+   "scores": {
+    "authority": 12,
+    "coverage": 67,
+    "connectivity": 53,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "neisp-ostatok",
+   "type": [
+    "term"
+   ],
+   "name": "Неиспользованный остаток",
+   "aliases": [
+    "остаток целевых средств",
+    "возврат остатка",
+    "Остаток целевых средств"
+   ],
+   "summary": "Неиспользованный остаток — целевые средства, оставшиеся на лицевом счёте после исполнения обязательств: экономия, неосвоенный аванс, «хвосты» после расчётов с кооперацией. Судьба остатка определяется контрактом и бюджетными правилами: как правило, он возвращается заказчику или в бюджет, а не остаётся исполнителю автоматически.",
+   "citation": "Не израсходованные на цели контракта средства на лицевом счёте, подлежащие возврату или иному урегулированию до закрытия счёта.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/neispolzovannyy-ostatok/",
+     "title": "Неиспользованный остаток"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "zakrytie-ls",
+     "vozvrat-avansa",
+     "tselevye-sredstva"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/vozvrat-avansa-po-goskontraktu-kaznacheystvo"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-neisp-ostatok",
+   "scores": {
+    "authority": 12,
+    "coverage": 50,
+    "connectivity": 50,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "norma-pribyli",
+   "type": [
+    "term"
+   ],
+   "name": "Норма прибыли ГОЗ (20+1)",
+   "aliases": [
+    "20+1",
+    "рентабельность гоз",
+    "прибыль гоз",
+    "Правило рентабельности по ПП № 1465"
+   ],
+   "summary": "Норма прибыли ГОЗ — правило рентабельности из ПП № 1465, известное как «20+1»: плановая прибыль ограничивается долей до 20% от собственных затрат исполнителя и до 1% от привнесённых (покупных) затрат. Правило стимулирует собственное производство: чем больше перепродажи, тем ниже допустимая маржа.",
+   "citation": "Формула предельной плановой рентабельности контрактов ГОЗ: до 20% на собственные затраты + до 1% на привнесённые.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/norma-pribyli-goz/",
+     "title": "Норма прибыли ГОЗ (20+1)"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "vidy-tsen-goz",
+     "razdelnyy-uchet",
+     "goz",
+     "pp-1465"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/vidy-cen-goz"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-norma-pribyli",
+   "scores": {
+    "authority": 12,
+    "coverage": 50,
+    "connectivity": 53,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "platezh",
+   "type": [
+    "term"
+   ],
+   "name": "Казначейский платёж",
+   "aliases": [
+    "платеж с лицевого счета",
+    "платеж при кс"
+   ],
+   "summary": "Казначейский платёж — списание целевых средств с лицевого счёта участника КС. От банковского платежа отличается принципиально: инициируется распоряжением в ГИИС «Электронный бюджет», требует документов-оснований (контракт, счёт, акт), содержит ИГК и код направления расходования и исполняется только после санкционирования УФК.",
+   "citation": "Платёж с лицевого счёта, проходящий проверку казначейства: распоряжение + документы-основания + верные коды = списание; любой дефект = возврат без исполнения.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/kaznacheyskiy-platezh/",
+     "title": "Казначейский платёж"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "rkp",
+     "naznachenie",
+     "sanktsionirovanie",
+     "kody-napravleniy"
+    ],
+    "REQUIRES_DOC": [
+     "rkp",
+     "chek-list-dokumenty"
+    ],
+    "SEE_ERROR": [
+     "err-otkaz-sanktsionirovaniya",
+     "err-naznachenie"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-platezhey"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-platezh",
+   "scores": {
+    "authority": 12,
+    "coverage": 83,
+    "connectivity": 67,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "fk",
+   "type": [
+    "term"
+   ],
+   "name": "Федеральное казначейство",
+   "aliases": [
+    "казначейство россии",
+    "фк",
+    "roskazna",
+    "Казначейство России"
+   ],
+   "summary": "Федеральное казначейство — федеральная служба в ведении Минфина России, которая ведёт лицевые счета участников казначейского сопровождения, санкционирует расходы по госконтрактам и субсидиям и управляет единым казначейским счётом. Для подрядчика это «банк» по целевым средствам: деньги контракта проходят только через его территориальные органы — УФК.",
+   "citation": "Федеральный орган (служба при Минфине), который исполняет бюджет, ведёт лицевые счета и контролирует движение целевых средств. Именно казначейство, а не банк, проводит и проверяет платежи при казначейском сопровождении.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/federalnoe-kaznacheystvo/",
+     "title": "Федеральное казначейство"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ufk",
+     "tofk",
+     "eks",
+     "giis-eb"
+    ],
+    "REQUIRES_DOC": [
+     "zayavlenie-ls"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/ks_2025/"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-fk",
+   "scores": {
+    "authority": 11,
+    "coverage": 67,
+    "connectivity": 53,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "zakazchik",
+   "type": [
+    "term"
+   ],
+   "name": "Госзаказчик",
+   "aliases": [
+    "заказчик",
+    "государственный заказчик",
+    "Государственный (муниципальный) заказчик"
+   ],
+   "summary": "Госзаказчик — орган или учреждение, которое заключает контракт и распоряжается бюджетными деньгами. В казначейском сопровождении заказчик не просто платит: он определяет условие о КС в контракте, выдаёт сведения для открытия счёта, утверждает Сведения об операциях с целевыми средствами и подтверждает исполнение этапов.",
+   "citation": "Сторона контракта, действующая от имени публично-правового образования. При КС — источник условий сопровождения и утверждающая инстанция для ряда документов исполнителя.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/zakazchik/",
+     "title": "Госзаказчик"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "kontrakt-44",
+     "svedeniya-ssu",
+     "igk"
+    ],
+    "REQUIRES_DOC": [
+     "svedeniya-ssu",
+     "formulirovka-ks"
+    ],
+    "SEE_ERROR": [
+     "err-svedeniya-otkaz"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-44-fz-2026-polnyy-gid"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-zakazchik",
+   "scores": {
+    "authority": 11,
+    "coverage": 83,
+    "connectivity": 57,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "golovnoy-ispolnitel",
+   "type": [
+    "term"
+   ],
+   "name": "Головной исполнитель",
+   "aliases": [
+    "головник",
+    "головной исполнитель гоз"
+   ],
+   "summary": "Головной исполнитель — организация, заключившая контракт непосредственно с госзаказчиком (термин прежде всего из 275-ФЗ). Головной исполнитель формирует кооперацию, передаёт вниз ИГК и режим сопровождения, отвечает перед заказчиком за всю цепочку — включая раздельный учёт и отчётность по гособоронзаказу.",
+   "citation": "Первое звено цепочки: сторона госконтракта, организующая исполнение силами кооперации и несущая ответственность за неё.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/golovnoy-ispolnitel/",
+     "title": "Головной исполнитель"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "tsepochka-ks",
+     "subpodryadchik",
+     "goz"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-golovnoy-ispolnitel",
+   "scores": {
+    "authority": 11,
+    "coverage": 50,
+    "connectivity": 47,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 93
+   }
+  },
+  {
+   "id": "prim-1",
+   "type": [
+    "term"
+   ],
+   "name": "Форма «Прим-1»",
+   "aliases": [
+    "прим-1",
+    "прим 1",
+    "расшифровка затрат гоз",
+    "отчет прим-1",
+    "Расшифровка затрат по контракту ГОЗ"
+   ],
+   "summary": "«Прим-1» — форма расшифровки структуры затрат по контракту гособоронзаказа: материалы, оплата труда, накладные расходы, прибыль и другие статьи заполняются по данным раздельного учёта. Расшифровку запрашивают заказчик, военное представительство и контролёры как доказательство фактической себестоимости и обоснованности цены контракта — честно собрать её без работающего раздельного учёта невозможно.",
+   "citation": "Отчёт-расшифровка фактических затрат по ИГК на базе раздельного учёта — стандартный артефакт ценового контроля ГОЗ.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/prim-1/",
+     "title": "Форма «Прим-1»"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "razdelnyy-uchet",
+     "goz",
+     "vp-mo",
+     "vidy-tsen-goz"
+    ],
+    "REQUIRES_DOC": [
+     "prikaz-razdelnyy-uchet"
+    ],
+    "SEE_ERROR": [
+     "err-razdelnyy-uchet"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/razdelnyj-uchet-goz-polnyy-guide-2026"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-prim-1",
+   "scores": {
+    "authority": 11,
+    "coverage": 83,
+    "connectivity": 57,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "id-soglasheniya",
+   "type": [
+    "term"
+   ],
+   "name": "Идентификатор соглашения",
+   "aliases": [
+    "идентификатор субсидии",
+    "аналог игк для субсидий",
+    "Идентификатор соглашения о субсидии"
+   ],
+   "summary": "Идентификатор соглашения — уникальный код соглашения о субсидии, выполняющий ту же роль, что ИГК у контрактов: связывает лицевой счёт, платежи и отчётность с конкретной субсидией. Указывается в назначениях платежей и документах по субсидии; ошибки в нём приводят к тем же возвратам, что и ошибки в ИГК.",
+   "citation": "«ИГК для субсидий»: код соглашения, по которому казначейство привязывает операции к целевым средствам конкретной субсидии.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/identifikator-soglasheniya/",
+     "title": "Идентификатор соглашения"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "soglashenie-subsidii",
+     "igk",
+     "naznachenie"
+    ],
+    "SEE_ERROR": [
+     "err-subsidiya-rashody"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-id-soglasheniya",
+   "scores": {
+    "authority": 11,
+    "coverage": 67,
+    "connectivity": 50,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "poluchatel-subsidii",
+   "type": [
+    "term"
+   ],
+   "name": "Получатель субсидии",
+   "aliases": [
+    "получатель гранта",
+    "получатель целевых средств"
+   ],
+   "summary": "Получатель субсидии — организация или ИП, заключившие соглашение о предоставлении субсидии. При казначейском сопровождении получатель несёт полный набор обязанностей участника КС: лицевой счёт, Сведения, санкционируемые платежи, отчёт о достижении результатов — плюс риск возврата субсидии при нарушениях.",
+   "citation": "Сторона соглашения о субсидии, распоряжающаяся целевыми средствами под контролем казначейства и распорядителя.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/poluchatel-subsidii/",
+     "title": "Получатель субсидии"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "subsidiya",
+     "soglashenie-subsidii",
+     "nubp"
+    ],
+    "REQUIRES_DOC": [
+     "komplekt-subsidii"
+    ],
+    "SEE_ERROR": [
+     "err-subsidiya-rashody"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-poluchatel-subsidii",
+   "scores": {
+    "authority": 11,
+    "coverage": 83,
+    "connectivity": 53,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "upd",
+   "type": [
+    "term"
+   ],
+   "name": "УПД и счёт-фактура",
+   "aliases": [
+    "упд",
+    "счет-фактура",
+    "универсальный передаточный документ",
+    "Универсальный передаточный документ"
+   ],
+   "summary": "УПД — универсальный передаточный документ, объединяющий счёт-фактуру и накладную/акт. При казначейском сопровождении УПД и счета-фактуры входят в документы-основания платежей: УФК сверяет с ними суммы и НДС в назначении. Корректный УПД от поставщика — условие санкционирования оплаты в его адрес.",
+   "citation": "Первичный документ + счёт-фактура «в одном»: подтверждает передачу и даёт НДС-реквизиты, которые казначейство сверяет с платёжкой.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/schet-faktura-upd/",
+     "title": "УПД и счёт-фактура"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "dokumenty-osnovaniya",
+     "nds-ks",
+     "upd-akt"
+    ],
+    "REQUIRES_DOC": [
+     "chek-list-dokumenty"
+    ],
+    "SEE_ERROR": [
+     "err-naznachenie"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/akt-schet-upd-pri-kaznachejskom-soprovozhdenii/"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-upd",
+   "scores": {
+    "authority": 11,
+    "coverage": 83,
+    "connectivity": 53,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "subpodryadchik",
+   "type": [
+    "term"
+   ],
+   "name": "Субподрядчик (соисполнитель)",
+   "aliases": [
+    "соисполнитель",
+    "субчик",
+    "поставщик кооперации"
+   ],
+   "summary": "Субподрядчик (в терминах ГОЗ — исполнитель) — участник кооперации, работающий по договору с головным исполнителем или другим звеном цепочки. Если расчёт идёт целевыми средствами, субподрядчик тоже открывает лицевой счёт в УФК (или отдельный счёт в банке при ГОЗ) и проходит санкционирование своих платежей.",
+   "citation": "Нижестоящее звено кооперации, на которое распространяется режим сопровождения: свой счёт, тот же ИГК, свои Сведения и санкционирование.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/subpodryadchik/",
+     "title": "Субподрядчик (соисполнитель)"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "tsepochka-ks",
+     "golovnoy-ispolnitel",
+     "ls-71"
+    ],
+    "REQUIRES_DOC": [
+     "chek-list-otkrytie"
+    ],
+    "SEE_ERROR": [
+     "err-zatyanulos-otkrytie"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/tsepochka-kaznacheyskogo-soprovozhdeniya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-subpodryadchik",
+   "scores": {
+    "authority": 10,
+    "coverage": 83,
+    "connectivity": 50,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "etap-kontrakta",
+   "type": [
+    "term"
+   ],
+   "name": "Этап контракта",
+   "aliases": [
+    "этап исполнения",
+    "этапность"
+   ],
+   "summary": "Этап контракта — выделенная часть исполнения с собственными сроком, результатом и оплатой. При казначейском сопровождении этапность управляет деньгами: аванс и оплата привязываются к этапам, закрывающие документы (акты, КС-2/КС-3, УПД) оформляются поэтапно, а зачёт аванса и вывод прибыли часто возможны только по закрытии этапа.",
+   "citation": "Единица исполнения и оплаты контракта. Для КС — «квант» движения денег: зачисления и право на возмещение/прибыль следуют за закрытыми этапами.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/etap-kontrakta/",
+     "title": "Этап контракта"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "avans",
+     "upd-akt",
+     "pribyl-ks"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-platezhey"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-etap-kontrakta",
+   "scores": {
+    "authority": 10,
+    "coverage": 50,
+    "connectivity": 43,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 87
+   }
+  },
+  {
+   "id": "nds-ks",
+   "type": [
+    "term"
+   ],
+   "name": "НДС в казначейских платежах",
+   "aliases": [
+    "ндс в назначении платежа",
+    "выделение ндс"
+   ],
+   "summary": "НДС в казначейских платежах — обязательный элемент назначения платежа: сумма налога выделяется отдельной фразой («в т.ч. НДС 20% — …») либо указывается «НДС не облагается» с основанием. УФК сверяет НДС назначения с документами-оснований (счёт, счёт-фактура); расхождение — возврат распоряжения.",
+   "citation": "Правило оформления налога в платёжных документах КС: явное выделение суммы НДС или отметка о необложении — в точном соответствии с основанием.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/nds-pri-ks/",
+     "title": "НДС в казначейских платежах"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "naznachenie",
+     "dokumenty-osnovaniya",
+     "upd"
+    ],
+    "REQUIRES_DOC": [
+     "rkp"
+    ],
+    "SEE_ERROR": [
+     "err-naznachenie"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/naznachenie-platezha-kaznachejstvo/"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-nds-ks",
+   "scores": {
+    "authority": 10,
+    "coverage": 83,
+    "connectivity": 50,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "koap-15-49",
+   "type": [
+    "term"
+   ],
+   "name": "Штрафы КоАП при КС",
+   "aliases": [
+    "штрафы казначейское сопровождение",
+    "коап 15.37",
+    "ответственность при кс",
+    "Административная ответственность участника КС"
+   ],
+   "summary": "Штрафы КоАП при КС — административная ответственность участников сопровождения: за нарушение раздельного учёта по ГОЗ (ст. 15.37), нецелевое использование бюджетных средств (ст. 15.14), непредставление или просрочку обязательных документов и сведений. Штрафуют и организацию, и должностных лиц; систематические нарушения дополняются контрактными последствиями.",
+   "citation": "Карательный контур КС: конкретные составы КоАП за нарушения учёта, целевого режима и документальной дисциплины.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/shtrafy-koap/",
+     "title": "Штрафы КоАП при КС"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "razdelnyy-uchet",
+     "err-necelevoe",
+     "svedeniya-ssu"
+    ],
+    "REQUIRES_DOC": [
+     "prikaz-razdelnyy-uchet"
+    ],
+    "SEE_ERROR": [
+     "err-razdelnyy-uchet",
+     "err-necelevoe"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/fines/"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-koap-15-49",
+   "scores": {
+    "authority": 10,
+    "coverage": 83,
+    "connectivity": 53,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "fns",
+   "type": [
+    "term"
+   ],
+   "name": "УЦ ФНС",
+   "aliases": [
+    "удостоверяющий центр фнс",
+    "фнс",
+    "Удостоверяющий центр ФНС России"
+   ],
+   "summary": "УЦ ФНС — удостоверяющий центр налоговой службы, который бесплатно выпускает квалифицированные сертификаты электронной подписи руководителям организаций и ИП. Подпись от УЦ ФНС — базовая для входа в ГИИС «Электронный бюджет» и подписания документов казначейского сопровождения. Сертификаты сотрудникам выпускают коммерческие УЦ, полномочия подтверждаются МЧД.",
+   "citation": "Государственный удостоверяющий центр, выпускающий УКЭП руководителей юрлиц и ИП — ключевой источник подписи для работы с казначейством.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/fns-uc/",
+     "title": "УЦ ФНС"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ecp",
+     "doverennost-mchd",
+     "registratsiya-eb"
+    ],
+    "REQUIRES_DOC": [
+     "doverennost-mchd"
+    ],
+    "SEE_ERROR": [
+     "err-ecp"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/sertifikat-ecp-kaznacheystva"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-fns",
+   "scores": {
+    "authority": 9,
+    "coverage": 83,
+    "connectivity": 47,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 93
+   }
+  },
+  {
+   "id": "psb",
+   "type": [
+    "term"
+   ],
+   "name": "ПСБ",
+   "aliases": [
+    "промсвязьбанк",
+    "опорный банк",
+    "Промсвязьбанк — опорный банк ОПК"
+   ],
+   "summary": "ПСБ (Промсвязьбанк) — опорный банк оборонно-промышленного комплекса. Ведёт отдельные счета исполнителей гособоронзаказа при банковском сопровождении по 275-ФЗ — альтернативном казначейскому режиме контроля. Если контракт ГОЗ идёт через банковское сопровождение, деньги двигаются через отдельный счёт в уполномоченном банке, а не через лицевой счёт в УФК.",
+   "citation": "Уполномоченный (опорный) банк ГОЗ: открывает и контролирует отдельные счета по контрактам с банковским сопровождением — параллельный казначейскому контур контроля.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/psb/",
+     "title": "ПСБ"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "bank-soprovozhdenie",
+     "obs",
+     "goz"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-predpriyatiy-opk",
+     "/blog/kaznacheyskoe-vs-bankovskoe-soprovozhdenie-otlichiya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-psb",
+   "scores": {
+    "authority": 9,
+    "coverage": 50,
+    "connectivity": 40,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 80
+   }
+  },
+  {
+   "id": "kod-71",
+   "type": [
+    "term"
+   ],
+   "name": "Код 71 (тип лицевого счёта)",
+   "aliases": [
+    "счет 71",
+    "код типа счета",
+    "лс 71"
+   ],
+   "summary": "Код 71 — код типа лицевого счёта «счёт участника казначейского сопровождения» в системе кодов казначейства. Первые два разряда номера лицевого счёта обозначают его тип: увидев номер, начинающийся на 71, вы понимаете, что перед вами счёт целевых средств коммерческого участника КС, а не бюджетного учреждения.",
+   "citation": "Двузначный код типа в номере лицевого счёта: 71 = участник казначейского сопровождения. По коду читается назначение любого лицевого счёта.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/kod-71/",
+     "title": "Код 71 (тип лицевого счёта)"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ls-71",
+     "rekvizity-ks"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/litsevoy-schet-71",
+     "/blog/kody-kaznacheyskogo-soprovozhdeniya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-kod-71",
+   "scores": {
+    "authority": 9,
+    "coverage": 50,
+    "connectivity": 37,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 73
+   }
+  },
+  {
+   "id": "priostanovlenie",
+   "type": [
+    "term"
+   ],
+   "name": "Приостановление операций",
+   "aliases": [
+    "блокировка лицевого счета",
+    "приостановка операций по счету"
+   ],
+   "summary": "Приостановление операций — временная блокировка расходов по лицевому счёту решением казначейства: при выявлении рисков мониторингом, нарушениях, по требованию уполномоченных органов. Отличается от возврата платежа масштабом: стоят все операции счёта до устранения причины и снятия приостановления.",
+   "citation": "Административная «пауза» по счёту участника КС: списания не санкционируются, пока не закрыта причина (пояснения, документы, устранение нарушения).",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/priostanovlenie-operatsiy/",
+     "title": "Приостановление операций"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "kazn-monitoring",
+     "sanktsionirovanie",
+     "err-necelevoe"
+    ],
+    "REQUIRES_DOC": [
+     "poyasnenie-ufk"
+    ],
+    "SEE_ERROR": [
+     "err-otkaz-sanktsionirovaniya"
+    ],
+    "MONETIZED_BY": [
+     "service-vosstanovlenie"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/podvodnye-kamni-kaznacheyskogo-soprovozhdeniya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-priostanovlenie",
+   "scores": {
+    "authority": 9,
+    "coverage": 83,
+    "connectivity": 47,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 93
+   }
+  },
+  {
+   "id": "vp-mo",
+   "type": [
+    "term"
+   ],
+   "name": "Военное представительство",
+   "aliases": [
+    "вп мо",
+    "военпред",
+    "Военное представительство Минобороны (ВП МО)"
+   ],
+   "summary": "Военное представительство Минобороны (военпред) — орган контроля качества и цен по гособоронзаказу. ВП контролирует исполнение контракта ГОЗ на предприятии: согласует цены (по правилам ПП № 1465), проверяет раздельный учёт затрат и приёмку продукции. Для исполнителя ГОЗ военпред — второй контролёр наряду с казначейством.",
+   "citation": "Представительство заказчика ГОЗ на предприятии: контролирует качество, цены и затраты по 275-ФЗ. Работает параллельно с казначейским контролем движения денег.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/voennoe-predstavitelstvo/",
+     "title": "Военное представительство"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "goz",
+     "razdelnyy-uchet",
+     "vidy-tsen-goz",
+     "prim-1"
+    ],
+    "REQUIRES_DOC": [
+     "prikaz-razdelnyy-uchet"
+    ],
+    "SEE_ERROR": [
+     "err-razdelnyy-uchet"
+    ],
+    "REGULATED_BY": [
+     "law-пп-1465"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/vidy-cen-goz",
+     "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-vp-mo",
+   "scores": {
+    "authority": 8,
+    "coverage": 100,
+    "connectivity": 50,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "eks",
+   "type": [
+    "term"
+   ],
+   "name": "ЕКС",
+   "aliases": [
+    "единый казначейский счет",
+    "Единый казначейский счёт"
+   ],
+   "summary": "ЕКС — единый казначейский счёт: банковский счёт Федерального казначейства в Банке России, на котором физически лежат все средства бюджетной системы. Лицевые счета участников КС — учётные записи «внутри» ЕКС: у подрядчика нет отдельного банковского счёта, его деньги — запись в учёте казначейства на ЕКС.",
+   "citation": "Счёт казначейства в ЦБ, объединяющий средства бюджетов. Лицевые счета (включая КС-счета) — аналитические счета на ЕКС, а не самостоятельные банковские счета.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/eks/",
+     "title": "ЕКС"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ls-71",
+     "ens",
+     "fk"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/edinyy-kaznacheyskiy-schet-vs-ks-schet-otlichiya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-eks",
+   "scores": {
+    "authority": 8,
+    "coverage": 50,
+    "connectivity": 37,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 73
+   }
+  },
+  {
+   "id": "nubp",
+   "type": [
+    "term"
+   ],
+   "name": "НУБП",
+   "aliases": [
+    "неучастник бюджетного процесса",
+    "нубп это",
+    "Неучастник бюджетного процесса"
+   ],
+   "summary": "НУБП — неучастник бюджетного процесса: организация, не входящая в бюджетную систему (коммерческая компания, НКО), но получающая бюджетные средства — по контракту, субсидии или в кооперации. Именно для НУБП придумано казначейское сопровождение: их лицевые счета (тип 71) — способ контролировать бюджетные деньги вне бюджетной системы.",
+   "citation": "Юрлицо/ИП вне бюджетной системы, работающие с целевыми бюджетными средствами. Все коммерческие участники КС — НУБП.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/nubp/",
+     "title": "НУБП"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ls-71",
+     "ks",
+     "poluchatel-subsidii"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/glossariy-terminov-kaznacheyskogo-soprovozhdeniya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-nubp",
+   "scores": {
+    "authority": 8,
+    "coverage": 50,
+    "connectivity": 37,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 73
+   }
+  },
+  {
+   "id": "kofk",
+   "type": [
+    "term"
+   ],
+   "name": "Код по КОФК",
+   "aliases": [
+    "кофк",
+    "код уфк",
+    "код тофк",
+    "Код территориального органа Федерального казначейства"
+   ],
+   "summary": "Код по КОФК — четырёхзначный код территориального органа казначейства в ведомственном классификаторе. Обязательный реквизит форм КС: в заявлении 0531368 и карточке 0531753 указывается код именно вашего ТОФК. Найти код можно в справочнике ТОФК или уточнить в своём управлении.",
+   "citation": "Идентификатор конкретного УФК/отдела в системе казначейства — «индекс» органа, куда адресованы ваши документы.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/kofk/",
+     "title": "Код по КОФК"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "tofk",
+     "ufk",
+     "zayavlenie-ls"
+    ],
+    "REQUIRES_DOC": [
+     "zayavlenie-ls",
+     "kartochka-podpisey"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/tofk"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-kofk",
+   "scores": {
+    "authority": 8,
+    "coverage": 67,
+    "connectivity": 43,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 87
+   }
+  },
+  {
+   "id": "eis",
+   "type": [
+    "term"
+   ],
+   "name": "ЕИС",
+   "aliases": [
+    "единая информационная система",
+    "zakupki.gov.ru",
+    "еис закупки",
+    "Единая информационная система в сфере закупок (zakupki.gov.ru)"
+   ],
+   "summary": "ЕИС — единая информационная система закупок (zakupki.gov.ru), где публикуются извещения, контракты и реестр контрактов. Для казначейского сопровождения ЕИС — источник истины по ИГК: идентификатор контракта формируется при включении контракта в реестр, и все платёжные документы сверяются именно с данными ЕИС.",
+   "citation": "Госсистема закупок по 44-ФЗ/223-ФЗ. При КС важна как первоисточник реквизитов контракта и ИГК, с которым УФК сверяет каждый платёж.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/eis/",
+     "title": "ЕИС"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "igk",
+     "reestr-kontraktov",
+     "kontrakt-44",
+     "tsifrovoy-kontrakt"
+    ],
+    "SEE_ERROR": [
+     "err-igk"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/igk-v-platezhah-kaznacheystva"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-eis",
+   "scores": {
+    "authority": 7,
+    "coverage": 67,
+    "connectivity": 40,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 80
+   }
+  },
+  {
+   "id": "rasshirennoe-ks",
+   "type": [
+    "term"
+   ],
+   "name": "Расширенное казначейское сопровождение",
+   "aliases": [
+    "ркс",
+    "расширенное кс",
+    "РКС"
+   ],
+   "summary": "Расширенное казначейское сопровождение — усиленный режим КС для отдельных контрактов (прежде всего крупной стройки и случаев повышенного риска): помимо санкционирования платежей казначейство проверяет фактическое исполнение — вплоть до фотофиксации, выездных осмотров и подтверждения объёмов, а расходы детализируются расходной декларацией.",
+   "citation": "Режим КС с дополнительным контролем фактов исполнения (не только документов): проверка объёмов работ, себестоимости через расходную декларацию, осмотры.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/rasshirennoe-kaznacheyskoe-soprovozhdenie/",
+     "title": "Расширенное казначейское сопровождение"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "raskhodnaya-deklaratsiya",
+     "ks",
+     "sanktsionirovanie"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-stroitelstvo"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-rasshirennoe-ks",
+   "scores": {
+    "authority": 7,
+    "coverage": 50,
+    "connectivity": 33,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 67
+   }
+  },
+  {
+   "id": "bank-soprovozhdenie",
+   "type": [
+    "term"
+   ],
+   "name": "Банковское сопровождение",
+   "aliases": [
+    "банковское сопровождение контракта",
+    "бс"
+   ],
+   "summary": "Банковское сопровождение — альтернативный казначейскому режим контроля средств контракта: деньги идут через отдельный счёт в уполномоченном банке (для ГОЗ — прежде всего ПСБ), и банк контролирует целевое расходование по правилам 275-ФЗ или 44-ФЗ. Какой режим применяется — казначейский или банковский — определяет госзаказчик в контракте.",
+   "citation": "Контроль целевых средств силами уполномоченного банка через отдельный счёт — параллельный казначейскому механизм с собственными правилами списаний.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/bankovskoe-soprovozhdenie/",
+     "title": "Банковское сопровождение"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "psb",
+     "obs",
+     "ks"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-vs-bankovskoe-soprovozhdenie-otlichiya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-bank-soprovozhdenie",
+   "scores": {
+    "authority": 7,
+    "coverage": 50,
+    "connectivity": 33,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 67
+   }
+  },
+  {
+   "id": "limit-ks",
+   "type": [
+    "term"
+   ],
+   "name": "Лимит на КС-счёте",
+   "aliases": [
+    "лимит лицевого счета",
+    "доступный остаток"
+   ],
+   "summary": "Лимит на КС-счёте — доступная к расходованию сумма целевых средств на лицевом счёте участника КС. Формируется зачислениями (аванс, оплата этапов) и уменьшается санкционированными списаниями. Платёж сверх доступного остатка невозможен: УФК отклонит распоряжение, даже если по контракту деньги «должны быть».",
+   "citation": "Фактический доступный остаток целевых средств на лицевом счёте, в пределах которого казначейство санкционирует платежи.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/limit-na-ks-schete/",
+     "title": "Лимит на КС-счёте"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ls-71",
+     "vypiska-ls",
+     "avans"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/limit-na-ks-schete-formirovanie-i-kontrol"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-limit-ks",
+   "scores": {
+    "authority": 7,
+    "coverage": 50,
+    "connectivity": 33,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 67
+   }
+  },
+  {
+   "id": "reestr-kontraktov",
+   "type": [
+    "term"
+   ],
+   "name": "Реестр контрактов",
+   "aliases": [
+    "реестр контрактов еис",
+    "реестровая запись",
+    "Реестр контрактов ЕИС"
+   ],
+   "summary": "Реестр контрактов — раздел ЕИС, куда заказчики включают сведения о заключённых контрактах, изменениях и исполнении. Для казначейского сопровождения реестр — первоисточник: ИГК, реквизиты и суммы для заявлений и платежей сверяются с реестровой записью, а её отсутствие или отставание блокирует операции.",
+   "citation": "Официальная база контрактов в ЕИС. УФК и участники КС ориентируются на её данные, а не на бумажные копии контрактов.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/reestr-kontraktov/",
+     "title": "Реестр контрактов"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "eis",
+     "igk",
+     "kontrakt-44",
+     "tsifrovoy-kontrakt"
+    ],
+    "SEE_ERROR": [
+     "err-igk"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/igk-v-platezhah-kaznacheystva"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-reestr-kontraktov",
+   "scores": {
+    "authority": 7,
+    "coverage": 67,
+    "connectivity": 40,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 80
+   }
+  },
+  {
+   "id": "vozvrat-avansa",
+   "type": [
+    "term"
+   ],
+   "name": "Возврат аванса",
+   "aliases": [
+    "вернуть аванс",
+    "возврат неотработанного аванса"
+   ],
+   "summary": "Возврат аванса — перечисление неотработанной части аванса обратно заказчику/в бюджет: при расторжении контракта, уменьшении объёмов или по итогам исполнения. При КС возврат идёт с лицевого счёта отдельной санкционируемой операцией; уклонение от возврата ведёт к взысканию с неустойкой.",
+   "citation": "Обратное движение неосвоенного аванса. Оформляется как казначейский платёж в адрес заказчика с основанием (соглашение о расторжении, акт сверки, требование).",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/vozvrat-avansa/",
+     "title": "Возврат аванса"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "avans",
+     "neisp-ostatok",
+     "zakrytie-ls"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/vozvrat-avansa-po-goskontraktu-kaznacheystvo"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-vozvrat-avansa",
+   "scores": {
+    "authority": 7,
+    "coverage": 50,
+    "connectivity": 33,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 67
+   }
+  },
+  {
+   "id": "doverennost-ufk",
+   "type": [
+    "term"
+   ],
+   "name": "Доверенность для УФК",
+   "aliases": [
+    "бумажная доверенность казначейство",
+    "доверенность на подачу документов"
+   ],
+   "summary": "Доверенность для УФК — документ, которым организация уполномочивает сотрудника на действия в казначействе: подать или получить документы, представлять интересы. Для бумажных и очных процедур действует классическая доверенность; для действий в ГИИС «Электронный бюджет» — её электронный аналог МЧД.",
+   "citation": "Бумажное полномочие для взаимодействия с УФК вне электронных систем: курьерские подачи, получение документов, очные вопросы.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/doverennost-dlya-ufk/",
+     "title": "Доверенность для УФК"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "doverennost-mchd",
+     "upolnomochennye",
+     "ufk"
+    ],
+    "REQUIRES_DOC": [
+     "doverennost-mchd"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/doverennost-dlya-ufk"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-doverennost-ufk",
+   "scores": {
+    "authority": 7,
+    "coverage": 67,
+    "connectivity": 37,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 73
+   }
+  },
+  {
+   "id": "kod-tselevyh",
+   "type": [
+    "term"
+   ],
+   "name": "Код целевых средств",
+   "aliases": [
+    "кцс",
+    "код цс"
+   ],
+   "summary": "Код целевых средств — идентификатор вида целевых средств на лицевом счёте: показывает, из какой программы/типа источника деньги (контракт, субсидия конкретного вида, ГОЗ). Присваивается при открытии/зачислении и участвует в контроле: расходы возможны только в рамках соответствующего кода, смешение средств разных кодов не допускается.",
+   "citation": "Маркер происхождения денег на счёте: аналитический код, разделяющий целевые средства разных источников в учёте казначейства.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/kod-tselevykh-sredstv/",
+     "title": "Код целевых средств"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "tselevye-sredstva",
+     "svedeniya-ssu",
+     "kody-napravleniy"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kody-kaznacheyskogo-soprovozhdeniya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-kod-tselevyh",
+   "scores": {
+    "authority": 7,
+    "coverage": 50,
+    "connectivity": 33,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 67
+   }
+  },
+  {
+   "id": "prikaz-214n",
+   "type": [
+    "term"
+   ],
+   "name": "Приказ Минфина № 214н",
+   "aliases": [
+    "214н",
+    "порядок санкционирования",
+    "Порядок санкционирования при казначейском сопровождении"
+   ],
+   "summary": "Приказ Минфина № 214н — порядок санкционирования операций при казначейском сопровождении: перечни документов-оснований, требования к Сведениям и назначениям платежей, основания отказов. Действующие правила меняются: с 01.09.2026 вступает новый порядок — требования к документам обновляются, следите за редакцией.",
+   "citation": "Главный «операционный регламент» КС: как именно УФК проверяет и пропускает (или возвращает) каждый расход.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/prikaz-214n/",
+     "title": "Приказ Минфина № 214н"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "sanktsionirovanie",
+     "svedeniya-ssu",
+     "dokumenty-osnovaniya",
+     "minfin"
+    ],
+    "REQUIRES_DOC": [
+     "svedeniya-ssu"
+    ],
+    "SEE_ERROR": [
+     "err-otkaz-sanktsionirovaniya"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/sanktsionirovanie-operatsiy-kaznacheystvom",
+     "/blog/novyy-poryadok-kaznacheyskogo-soprovozhdeniya-s-1-sentyabrya-2026"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-prikaz-214n",
+   "scores": {
+    "authority": 5,
+    "coverage": 83,
+    "connectivity": 40,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 80
+   }
+  },
+  {
+   "id": "raskhodnaya-deklaratsiya",
+   "type": [
+    "term"
+   ],
+   "name": "Расходная декларация",
+   "aliases": [
+    "расходная декларация кс",
+    "декларация о структуре расходов"
+   ],
+   "summary": "Расходная декларация — документ расширенного казначейского сопровождения: детализированная структура затрат по контракту (материалы, оплата труда, накладные расходы, прибыль), которую исполнитель представляет казначейству для контроля себестоимости. УФК сверяет каждый платёж с заявленной структурой — расход «мимо декларации» не санкционируется, а изменения затрат требуют её актуализации до платежа.",
+   "citation": "Раскрытие плановой/фактической себестоимости контракта для казначейства при расширенном КС: аналог сметной дисциплины для денег.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/raskhodnaya-deklaratsiya/",
+     "title": "Расходная декларация"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "rasshirennoe-ks",
+     "razdelnyy-uchet",
+     "sanktsionirovanie"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-stroitelstvo"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-raskhodnaya-deklaratsiya",
+   "scores": {
+    "authority": 5,
+    "coverage": 50,
+    "connectivity": 30,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 60
+   }
+  },
+  {
+   "id": "otchet-subsidii",
+   "type": [
+    "term"
+   ],
+   "name": "Отчёт об использовании субсидии",
+   "aliases": [
+    "отчет по субсидии",
+    "отчет о достижении результатов"
+   ],
+   "summary": "Отчёт об использовании субсидии — периодическая отчётность получателя перед распорядителем: о расходах (использовании средств) и о достижении результатов (показателей) по соглашению. Формы и сроки задаёт соглашение; подача обычно через ГИИС «Электронный бюджет». Нарушение отчётности — основание требовать возврат субсидии.",
+   "citation": "Двухслойная отчётность по субсидии: деньги (куда потрачены) + результат (что достигнуто). Ключевой инструмент контроля соглашения.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/otchet-ob-ispolzovanii-subsidii/",
+     "title": "Отчёт об использовании субсидии"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "subsidiya",
+     "soglashenie-subsidii",
+     "svedeniya-ssu"
+    ],
+    "REQUIRES_DOC": [
+     "komplekt-subsidii"
+    ],
+    "SEE_ERROR": [
+     "err-subsidiya-rashody"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-otchet-subsidii",
+   "scores": {
+    "authority": 5,
+    "coverage": 83,
+    "connectivity": 37,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 73
+   }
+  },
+  {
+   "id": "minfin",
+   "type": [
+    "term"
+   ],
+   "name": "Минфин России",
+   "aliases": [
+    "министерство финансов",
+    "Министерство финансов Российской Федерации"
+   ],
+   "summary": "Минфин России — министерство, которое задаёт правила игры для казначейского сопровождения: издаёт порядки санкционирования (приказ № 214н и сменяющий его порядок с 01.09.2026), утверждает формы документов и выступает оператором ГИИС «Электронный бюджет». Казначейство — служба в его ведении, исполняющая эти правила.",
+   "citation": "Федеральное министерство — нормативный центр КС: его приказы определяют, как УФК санкционирует расходы и какие документы для этого нужны.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/minfin/",
+     "title": "Минфин России"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "prikaz-214n",
+     "giis-eb",
+     "fk"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/novyy-poryadok-kaznacheyskogo-soprovozhdeniya-s-1-sentyabrya-2026"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-minfin",
+   "scores": {
+    "authority": 4,
+    "coverage": 50,
+    "connectivity": 27,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 53
+   }
+  },
+  {
+   "id": "finorgan",
+   "type": [
+    "term"
+   ],
+   "name": "Финансовый орган",
+   "aliases": [
+    "финорган",
+    "минфин региона",
+    "департамент финансов"
+   ],
+   "summary": "Финансовый орган — региональное министерство финансов или муниципальный департамент финансов, организующий исполнение своего бюджета. При казначейском сопровождении средств регионального или местного бюджета правила могут задаваться финорганом, а само сопровождение — вестись УФК по переданным полномочиям либо самим финорганом.",
+   "citation": "Орган, исполняющий бюджет субъекта РФ или муниципалитета. Определяет правила КС для «своих» средств — по аналогии с федеральными.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/finansovyy-organ/",
+     "title": "Финансовый орган"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "municipalnyy",
+     "subsidiya",
+     "zakon-budget"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-munitsipalnyh-kontraktov"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-finorgan",
+   "scores": {
+    "authority": 4,
+    "coverage": 50,
+    "connectivity": 27,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 53
+   }
+  },
+  {
+   "id": "sufd",
+   "type": [
+    "term"
+   ],
+   "name": "СУФД",
+   "aliases": [
+    "суфд-портал",
+    "суфд онлайн",
+    "Система удалённого финансового документооборота"
+   ],
+   "summary": "СУФД — система удалённого финансового документооборота Федерального казначейства. Исторически основной канал обмена платёжными документами с УФК для участников бюджетного процесса. Коммерческие участники казначейского сопровождения работают в ГИИС «Электронный бюджет», но термин СУФД регулярно встречается в инструкциях и у бюджетных заказчиков.",
+   "citation": "Портал документооборота казначейства для участников бюджетного процесса. Для коммерческих участников КС основной канал — ГИИС ЭБ, а СУФД — смежная система заказчиков.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/sufd/",
+     "title": "СУФД"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "giis-eb",
+     "ufk",
+     "registratsiya-eb",
+     "epbs"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/giis-elektronnyy-byudzhet-2026-polnaya-instruktsiya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-sufd",
+   "scores": {
+    "authority": 4,
+    "coverage": 50,
+    "connectivity": 30,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 60
+   }
+  },
+  {
+   "id": "opk",
+   "type": [
+    "term"
+   ],
+   "name": "ОПК",
+   "aliases": [
+    "оборонно-промышленный комплекс",
+    "оборонка",
+    "Оборонно-промышленный комплекс"
+   ],
+   "summary": "ОПК — оборонно-промышленный комплекс: совокупность предприятий, выполняющих гособоронзаказ. Для предприятий ОПК характерен постоянный режим 275-ФЗ: множество ИГК одновременно, смешанные режимы счетов (казначейские и отдельные банковские), сплошной раздельный учёт и промежуточная отчётность в ГИРБО по 471-ФЗ.",
+   "citation": "Отрасль исполнителей ГОЗ. В контексте КС — сегмент с наиболее развитыми (и жёсткими) практиками контроля денег и учёта.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/opk/",
+     "title": "ОПК"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "goz",
+     "girbo",
+     "razdelnyy-uchet",
+     "psb",
+     "ast-goz"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-predpriyatiy-opk"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-opk",
+   "scores": {
+    "authority": 4,
+    "coverage": 50,
+    "connectivity": 33,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 67
+   }
+  },
+  {
+   "id": "opornyy-bank",
+   "type": [
+    "term"
+   ],
+   "name": "Опорный банк",
+   "aliases": [
+    "уполномоченный банк",
+    "банк гоз",
+    "Уполномоченный банк ГОЗ"
+   ],
+   "summary": "Опорный (уполномоченный) банк — банk, наделённый правом вести отдельные счета гособоронзаказа и контролировать расчёты по 275-ФЗ. Ключевой уполномоченный банк ОПК — ПСБ. Банковское сопровождение через уполномоченный банк — альтернатива казначейскому: контролёр другой, логика целевого контроля та же.",
+   "citation": "Банк из перечня уполномоченных по ГОЗ: открывает отдельные счета, проверяет назначение платежей, блокирует запрещённые операции.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/opornyy-bank/",
+     "title": "Опорный банк"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "psb",
+     "obs",
+     "bank-soprovozhdenie"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-vs-bankovskoe-soprovozhdenie-otlichiya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-opornyy-bank",
+   "scores": {
+    "authority": 4,
+    "coverage": 50,
+    "connectivity": 27,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 53
+   }
+  },
+  {
+   "id": "pryamoy-platezh",
+   "type": [
+    "term"
+   ],
+   "name": "Прямой платёж",
+   "aliases": [
+    "прямая оплата поставщику",
+    "платеж поставщику с лс"
+   ],
+   "summary": "Прямой платёж — оплата поставщику или подрядчику непосредственно с лицевого счёта участника КС: целевые средства уходят контрагенту, минуя расчётный счёт исполнителя. Базовая операция расходования при сопровождении — в отличие от возмещения (компенсация уже оплаченного) и перечисления прибыли (вывод результата).",
+   "citation": "Списание целевых средств с ЛС напрямую третьему лицу за товары/работы/услуги контракта — с документами-основаниями и санкционированием.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/pryamoy-platezh/",
+     "title": "Прямой платёж"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "platezh",
+     "vozmeshchenie",
+     "kody-napravleniy"
+    ],
+    "REQUIRES_DOC": [
+     "rkp"
+    ],
+    "SEE_ERROR": [
+     "err-otkaz-sanktsionirovaniya"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/avans-vs-vozmeshchenie-vs-pryamoy-platezh-tri-tipa-operatsiy-ks"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-pryamoy-platezh",
+   "scores": {
+    "authority": 4,
+    "coverage": 83,
+    "connectivity": 33,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 67
+   }
+  },
+  {
+   "id": "bk-rf",
+   "type": [
+    "term"
+   ],
+   "name": "БК РФ, ст. 242.23–242.26",
+   "aliases": [
+    "бюджетный кодекс кс",
+    "статья 242.23",
+    "бк рф казначейское сопровождение",
+    "Статьи Бюджетного кодекса о казначейском сопровождении"
+   ],
+   "summary": "Статьи 242.23–242.26 БК РФ — правовой фундамент казначейского сопровождения: понятие КС, режимы лицевых счетов участников, права казначейства при санкционировании и мониторинге, расширенное сопровождение. Рядом — ст. 242.22 о казначейском обеспечении обязательств. Все порядки ФК и Минфина изданы во исполнение этих норм.",
+   "citation": "Базовые нормы БК о КС: что это, на кого распространяется, что вправе казначейство. «Конституция» казначейского сопровождения.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/bk-rf-242/",
+     "title": "БК РФ, ст. 242.23–242.26"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ks",
+     "koo-obs",
+     "rasshirennoe-ks"
+    ],
+    "REQUIRES_DOC": [
+     "pismo-zapros"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/ks_2025/"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-bk-rf",
+   "scores": {
+    "authority": 4,
+    "coverage": 67,
+    "connectivity": 30,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 60
+   }
+  },
+  {
+   "id": "prom-otchetnost-goz",
+   "type": [
+    "term"
+   ],
+   "name": "Промежуточная отчётность ГОЗ",
+   "aliases": [
+    "промежуточная бухотчетность гоз",
+    "отчетность 471-фз"
+   ],
+   "summary": "Промежуточная отчётность ГОЗ — внутригодовая бухгалтерская отчётность, которую исполнители гособоронзаказа сдают в ГИРБО по требованиям поправок 471-ФЗ к 275-ФЗ. Государство видит финансовое состояние оборонных исполнителей чаще годового цикла; непредставление — нарушение с последствиями для допуска к ГОЗ.",
+   "citation": "Квартальная/промежуточная бухотчётность исполнителей ГОЗ в государственный ресурс — надстройка над обычным годовым циклом.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/promezhutochnaya-otchetnost-goz/",
+     "title": "Промежуточная отчётность ГОЗ"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "girbo",
+     "goz",
+     "opk"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kalendar-otchetnosti-podryadchika-ks-2026"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-prom-otchetnost-goz",
+   "scores": {
+    "authority": 4,
+    "coverage": 50,
+    "connectivity": 27,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 53
+   }
+  },
+  {
+   "id": "girbo",
+   "type": [
+    "term"
+   ],
+   "name": "ГИРБО",
+   "aliases": [
+    "гир бо",
+    "ресурс бухотчетности",
+    "Государственный информационный ресурс бухгалтерской отчётности"
+   ],
+   "summary": "ГИРБО — государственный информационный ресурс бухгалтерской отчётности, который ведёт ФНС. Для исполнителей гособоронзаказа ГИРБО получил новое значение: по поправкам 471-ФЗ через него сдаётся промежуточная (внутригодовая) отчётность организаций ОПК — контролёры видят финансовое состояние исполнителей ГОЗ чаще, чем раз в год.",
+   "citation": "Реестр бухотчётности при ФНС. В контуре ГОЗ — канал сдачи промежуточной отчётности исполнителей по требованиям 471-ФЗ.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/girbo/",
+     "title": "ГИРБО"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "prom-otchetnost-goz",
+     "goz",
+     "opk"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-girbo",
+   "scores": {
+    "authority": 3,
+    "coverage": 50,
+    "connectivity": 23,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 47
+   }
+  },
+  {
+   "id": "koo-obs",
+   "type": [
+    "term"
+   ],
+   "name": "КОО",
+   "aliases": [
+    "казначейское обеспечение обязательств",
+    "казначейский аккредитив",
+    "Казначейское обеспечение обязательств"
+   ],
+   "summary": "КОО (казначейское обеспечение обязательств) — «казначейский аккредитив»: вместо перечисления аванса деньгами заказчик выдаёт исполнителю казначейский документ, гарантирующий оплату. Исполнитель расплачивается им с поставщиками по цепочке, а живые деньги списываются с бюджета только при подтверждении обязательств. Регулируется ст. 242.22 БК РФ.",
+   "citation": "Безденежная форма авансирования при КС: обязательства подтверждаются казначейским документом, перевод в деньги происходит при исполнении. Альтернатива классическому авансу.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/kaznacheyskoe-obespechenie-obyazatelstv/",
+     "title": "КОО"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "avans",
+     "ks",
+     "tsepochka-ks"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-obespechenie-obyazatelstv"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-koo-obs",
+   "scores": {
+    "authority": 3,
+    "coverage": 50,
+    "connectivity": 23,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 47
+   }
+  },
+  {
+   "id": "ens",
+   "type": [
+    "term"
+   ],
+   "name": "ЕНС",
+   "aliases": [
+    "единый налоговый счет",
+    "Единый налоговый счёт"
+   ],
+   "summary": "ЕНС — единый налоговый счёт налогоплательщика в ФНС, через который платятся налоги единым платежом. К казначейскому сопровождению отношения не имеет, но его постоянно путают с ЕКС — единым казначейским счётом. Запомнить просто: ЕНС — про налоги и ФНС, ЕКС — про бюджетные деньги и казначейство.",
+   "citation": "Счёт для уплаты налогов единым платежом (ФНС). В глоссарии КС — «ложный друг»: созвучен ЕКС, но относится к другой системе.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/ens/",
+     "title": "ЕНС"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "eks",
+     "ls-71"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/edinyy-kaznacheyskiy-schet-vs-ks-schet-otlichiya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-ens",
+   "scores": {
+    "authority": 3,
+    "coverage": 50,
+    "connectivity": 20,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 40
+   }
+  },
+  {
+   "id": "pereoformlenie-ls",
+   "type": [
+    "term"
+   ],
+   "name": "Переоформление лицевого счёта",
+   "aliases": [
+    "переоформить счет",
+    "изменение реквизитов счета"
+   ],
+   "summary": "Переоформление лицевого счёта — обновление данных счёта в УФК при изменении реквизитов организации: наименования, организационно-правовой формы и других сведений. Подаётся заявление на переоформление; параллельно обычно обновляется карточка образцов подписей. Пока счёт не переоформлен, документы со старыми данными вызывают возвраты.",
+   "citation": "Процедура приведения лицевого счёта в соответствие с изменившимися данными организации — обязательная при смене наименования и реквизитов.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/pereoformlenie-scheta/",
+     "title": "Переоформление лицевого счёта"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ls-71",
+     "kartochka-podpisey",
+     "zakrytie-ls"
+    ],
+    "REQUIRES_DOC": [
+     "zayavlenie-ls",
+     "kartochka-podpisey"
+    ],
+    "SEE_ERROR": [
+     "err-kartochka"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/smena-rukovoditelya-pri-deystvuyushchem-ks-schete"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-pereoformlenie-ls",
+   "scores": {
+    "authority": 3,
+    "coverage": 83,
+    "connectivity": 33,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 67
+   }
+  },
+  {
+   "id": "platezhnoe-poruchenie",
+   "type": [
+    "term"
+   ],
+   "name": "Платёжное поручение при КС",
+   "aliases": [
+    "платежка",
+    "поля платежного поручения",
+    "поле 15",
+    "поле 17"
+   ],
+   "summary": "Платёжное поручение при КС — банковский документ, которым заказчик или контрагент перечисляет деньги НА лицевой счёт участника сопровождения. Специфика — в реквизитах: получатель — УФК (с указанием владельца ЛС), счёт получателя (поле 17) — казначейский счёт, а номер лицевого счёта 71 указывается дополнительно, обычно в поле 15 или назначении.",
+   "citation": "Классическая платёжка, адресованная в казначейскую систему: правильная раскладка реквизитов ЛС по полям — условие зачисления без «невыясненных».",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/platezhnoe-poruchenie/",
+     "title": "Платёжное поручение при КС"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "rekvizity-ks",
+     "rkp",
+     "eks"
+    ],
+    "REQUIRES_DOC": [
+     "rkp"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/izmeneniya-platezhek-kaznachejstvo-2026"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-platezhnoe-poruchenie",
+   "scores": {
+    "authority": 3,
+    "coverage": 67,
+    "connectivity": 27,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 53
+   }
+  },
+  {
+   "id": "ks2-ks3",
+   "type": [
+    "term"
+   ],
+   "name": "КС-2 и КС-3",
+   "aliases": [
+    "кс2",
+    "кс3",
+    "кс-2",
+    "кс-3",
+    "формы кс",
+    "Акт о приёмке работ и справка о стоимости (строительство)"
+   ],
+   "summary": "КС-2 (акт о приёмке выполненных работ) и КС-3 (справка о стоимости работ и затрат) — строительные формы Госкомстата, которыми закрываются этапы подрядных работ. При казначейском сопровождении стройки пара КС-2+КС-3 — стандартное основание оплаты: УФК сверяет с ними суммы платежей генподрядчику и субподрядчикам.",
+   "citation": "Классические закрывающие документы стройки: КС-2 фиксирует объёмы и работы, КС-3 — их стоимость к оплате. Не путать с «КС» (казначейским сопровождением).",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/ks-2-ks-3/",
+     "title": "КС-2 и КС-3"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "upd-akt",
+     "dokumenty-osnovaniya",
+     "etap-kontrakta"
+    ],
+    "REQUIRES_DOC": [
+     "reestr-dokumentov"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-stroitelstvo"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-ks2-ks3",
+   "scores": {
+    "authority": 3,
+    "coverage": 67,
+    "connectivity": 27,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 53
+   }
+  },
+  {
+   "id": "kody-71xx",
+   "type": [
+    "term"
+   ],
+   "name": "Коды источников поступлений",
+   "aliases": [
+    "коды поступлений",
+    "коды 71хх",
+    "код источника поступления",
+    "Коды 71XX"
+   ],
+   "summary": "Коды источников поступлений (серия 71XX и далее) — классификатор зачислений на лицевой счёт участника КС: аванс по контракту, оплата этапов, возвраты от поставщиков и другие источники. По коду поступления казначейство и сам участник видят природу каждого зачисления — это зеркальная сторона кодов расходования.",
+   "citation": "Классификатор «входящих» операций лицевого счёта: каждый приход целевых средств помечается кодом источника.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/kody-postupleniy/",
+     "title": "Коды источников поступлений"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "kody-napravleniy",
+     "vypiska-ls",
+     "ls-71"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/income_codes"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-kody-71xx",
+   "scores": {
+    "authority": 3,
+    "coverage": 50,
+    "connectivity": 23,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 47
+   }
+  },
+  {
+   "id": "kbk",
+   "type": [
+    "term"
+   ],
+   "name": "КБК",
+   "aliases": [
+    "код бюджетной классификации",
+    "Код бюджетной классификации"
+   ],
+   "summary": "КБК — код бюджетной классификации: двадцатизначный идентификатор доходов, расходов и источников бюджета. Участник КС сталкивается с КБК в двух местах: при уплате налогов/платежей в бюджет (КБК в платёжке обязателен) и при возврате целевых остатков в бюджет — реквизиты возврата включают КБК получателя-администратора.",
+   "citation": "Универсальный «адрес» строки бюджета. В операциях участника КС появляется в бюджетных платежах: налоги, возвраты остатков, штрафы.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/kbk/",
+     "title": "КБК"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "vozvrat-avansa",
+     "neisp-ostatok",
+     "glava-bk",
+     "oktmo"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/glossariy-terminov-kaznacheyskogo-soprovozhdeniya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-kbk",
+   "scores": {
+    "authority": 3,
+    "coverage": 50,
+    "connectivity": 27,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 53
+   }
+  },
+  {
+   "id": "ip",
+   "type": [
+    "term"
+   ],
+   "name": "ИП при казначейском сопровождении",
+   "aliases": [
+    "ип и казначейство",
+    "индивидуальный предприниматель кс"
+   ],
+   "summary": "ИП при казначейском сопровождении — полноправный участник: индивидуальные предприниматели открывают лицевые счета, подают Сведения и проходят санкционирование наравне с юрлицами. Особенности — в деталях: подписант один (сам ИП), карточка подписей без главбуха («бухгалтерский работник не предусмотрен»), а личные деньги и целевые средства разделяются особенно строго.",
+   "citation": "Режим КС в применении к ИП: те же процедуры, что у организаций, с поправкой на единоличную подпись и статус физлица-предпринимателя.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/ip-pri-ks/",
+     "title": "ИП при казначейском сопровождении"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ls-71",
+     "kartochka-podpisey",
+     "ecp"
+    ],
+    "REQUIRES_DOC": [
+     "kartochka-podpisey",
+     "chek-list-otkrytie"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-dlya-ip"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-ip",
+   "scores": {
+    "authority": 3,
+    "coverage": 67,
+    "connectivity": 30,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 60
+   }
+  },
+  {
+   "id": "ispolnitel",
+   "type": [
+    "term"
+   ],
+   "name": "Исполнитель по контракту",
+   "aliases": [
+    "поставщик",
+    "подрядчик",
+    "исполнитель госконтракта",
+    "Поставщик (подрядчик, исполнитель)"
+   ],
+   "summary": "Исполнитель (поставщик, подрядчик) — сторона госконтракта, выполняющая поставку, работы или услуги. При казначейском сопровождении на исполнителя ложится весь операционный контур КС: лицевой счёт, доступ к ГИИС, Сведения, санкционируемые платежи, раздельный учёт и документальное досье — параллельно основной работе по контракту.",
+   "citation": "Главная рабочая роль платформы КС: бизнес, который исполняет контракт и одновременно администрирует казначейские процедуры.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/ispolnitel-po-kontraktu/",
+     "title": "Исполнитель по контракту"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ls-71",
+     "golovnoy-ispolnitel",
+     "subpodryadchik",
+     "zakazchik"
+    ],
+    "REQUIRES_DOC": [
+     "chek-list-otkrytie",
+     "reestr-dokumentov"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-ispolnitel",
+   "scores": {
+    "authority": 3,
+    "coverage": 67,
+    "connectivity": 33,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 67
+   }
+  },
+  {
+   "id": "grbs",
+   "type": [
+    "term"
+   ],
+   "name": "ГРБС",
+   "aliases": [
+    "главный распорядитель бюджетных средств",
+    "распорядитель",
+    "Главный распорядитель бюджетных средств"
+   ],
+   "summary": "ГРБС — главный распорядитель бюджетных средств: орган, который распределяет бюджетные ассигнования подведомственным получателям (министерство → учреждения). В формах казначейства ГРБС встречается как реквизит с кодом «глава по БК». Коммерческий подрядчик эти поля обычно не заполняет — они для участников бюджетного процесса.",
+   "citation": "Верхнее звено бюджетной цепочки, распределяющее средства бюджета. Для подрядчика при КС — справочный реквизит форм, а не контрагент.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/grbs/",
+     "title": "ГРБС"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "glava-bk",
+     "zakazchik",
+     "nubp"
+    ],
+    "REQUIRES_DOC": [
+     "kartochka-podpisey"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/glossariy-terminov-kaznacheyskogo-soprovozhdeniya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-grbs",
+   "scores": {
+    "authority": 2,
+    "coverage": 67,
+    "connectivity": 23,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 47
+   }
+  },
+  {
+   "id": "ast-goz",
+   "type": [
+    "term"
+   ],
+   "name": "АСТ ГОЗ",
+   "aliases": [
+    "аст гоз площадка",
+    "торги гоз",
+    "Автоматизированная система торгов гособоронзаказа"
+   ],
+   "summary": "АСТ ГОЗ — специализированная закрытая электронная торговая площадка для закупок по гособоронзаказу и иным закрытым процедурам. Работа на ней требует отдельной аккредитации и защищённого рабочего места. Победа в торгах на АСТ ГОЗ обычно означает контракт с казначейским или банковским сопровождением и ИГК.",
+   "citation": "Закрытая ЭТП для торгов по ГОЗ: аккредитация, защищённый доступ, закрытые процедуры. Входная точка многих контрактов, попадающих под КС.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/ast-goz/",
+     "title": "АСТ ГОЗ"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "goz",
+     "igk",
+     "obs"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/ast-goz-elektronnaya-torgovaya-ploshadka"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-ast-goz",
+   "scores": {
+    "authority": 2,
+    "coverage": 50,
+    "connectivity": 20,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 40
+   }
+  },
+  {
+   "id": "epbs",
+   "type": [
+    "term"
+   ],
+   "name": "ЕПБС",
+   "aliases": [
+    "единый портал бюджетной системы",
+    "budget.gov.ru",
+    "Единый портал бюджетной системы (budget.gov.ru)"
+   ],
+   "summary": "ЕПБС — единый портал бюджетной системы (budget.gov.ru): открытая витрина данных о бюджете и одновременно вход в личный кабинет ГИИС «Электронный бюджет». Подрядчику портал полезен как справочник (реестры участников, соглашений, справочная информация) и как точка входа в рабочие подсистемы КС.",
+   "citation": "Публичный портал бюджетной системы РФ; техническая «обёртка», через которую открывается личный кабинет ГИИС ЭБ.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/epbs/",
+     "title": "ЕПБС"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "giis-eb",
+     "kontinent-tls"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/vhod-v-elektronnyy-byudzhet-po-sertifikatu"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-epbs",
+   "scores": {
+    "authority": 2,
+    "coverage": 50,
+    "connectivity": 17,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 33
+   }
+  },
+  {
+   "id": "municipalnyy",
+   "type": [
+    "term"
+   ],
+   "name": "Муниципальный контракт",
+   "aliases": [
+    "контракт с муниципалитетом",
+    "мк"
+   ],
+   "summary": "Муниципальный контракт — контракт для нужд муниципалитета по 44-ФЗ. Казначейское сопровождение к нему применяется, когда это предусмотрено решением муниципалитета/региона или условиями межбюджетных трансфертов: если деньги пришли из федерального бюджета с условием КС, оно «спускается» и на муниципальный уровень.",
+   "citation": "Контракт с муниципальным заказчиком. Режим КС определяется источником средств и местными решениями, а не только федеральными порогами.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/munitsipalnyy-kontrakt/",
+     "title": "Муниципальный контракт"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "kontrakt-44",
+     "finorgan",
+     "porog-ks"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-munitsipalnyh-kontraktov"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-municipalnyy",
+   "scores": {
+    "authority": 2,
+    "coverage": 50,
+    "connectivity": 20,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 40
+   }
+  },
+  {
+   "id": "tsifrovoy-kontrakt",
+   "type": [
+    "term"
+   ],
+   "name": "Цифровой контракт",
+   "aliases": [
+    "электронный контракт",
+    "структурированный контракт",
+    "Структурированный контракт в ЕИС"
+   ],
+   "summary": "Цифровой (структурированный) контракт — контракт, который формируется и подписывается прямо в ЕИС в машиночитаемом виде: условия существуют как данные, а не как скан. Для казначейского сопровождения это снижает расхождения: реквизиты, суммы и этапы систему в систему передаются без ручного перенабора.",
+   "citation": "Контракт-данные в ЕИС вместо контракта-файла: обязательные условия структурированы, подписание электронное, сведения синхронизируются с реестром автоматически.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/tsifrovoy-kontrakt/",
+     "title": "Цифровой контракт"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "eis",
+     "reestr-kontraktov",
+     "kontrakt-44"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-44-fz-2026-polnyy-gid"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-tsifrovoy-kontrakt",
+   "scores": {
+    "authority": 2,
+    "coverage": 50,
+    "connectivity": 20,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 40
+   }
+  },
+  {
+   "id": "ed-postavshchik",
+   "type": [
+    "term"
+   ],
+   "name": "Единственный поставщик",
+   "aliases": [
+    "контракт с единственным поставщиком",
+    "ст. 93 44-фз",
+    "Закупка у единственного поставщика"
+   ],
+   "summary": "Единственный поставщик — способ закупки без конкурентной процедуры (ст. 93 44-ФЗ), включая контракты по отдельным решениям Правительства. Такие контракты часто попадают под казначейское сопровождение прямо по условиям ежегодного закона о бюджете — сопровождение выступает компенсатором отсутствия конкуренции.",
+   "citation": "Неконкурентная закупка по установленным законом основаниям. Для КС значима как самостоятельный критерий: ряд контрактов с едпоставщиком сопровождается независимо от суммы аванса.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/edinstvennyy-postavshchik/",
+     "title": "Единственный поставщик"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "kontrakt-44",
+     "porog-ks",
+     "zakon-budget"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kakie-kontrakty-popadayut-pod-kaznachejskoe-soprovozhdenie/"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-ed-postavshchik",
+   "scores": {
+    "authority": 2,
+    "coverage": 33,
+    "connectivity": 17,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 33
+   }
+  },
+  {
+   "id": "grant",
+   "type": [
+    "term"
+   ],
+   "name": "Грант",
+   "aliases": [
+    "грант из бюджета",
+    "грантовая поддержка"
+   ],
+   "summary": "Грант — разновидность субсидии, предоставляемая по результатам отбора на конкретный проект: НИОКР, инновации, социальные инициативы. Бюджетные гранты юрлицам могут попадать под казначейское сопровождение на тех же основаниях, что и субсидии: лицевой счёт, целевое расходование по плану, отчётность перед грантодателем.",
+   "citation": "Целевые средства на проект, выданные по конкурсу. С точки зрения КС управляются как субсидия: счёт, Сведения, санкционирование, отчёт.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/grant/",
+     "title": "Грант"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "subsidiya",
+     "soglashenie-subsidii",
+     "poluchatel-subsidii"
+    ],
+    "REQUIRES_DOC": [
+     "komplekt-subsidii"
+    ],
+    "SEE_ERROR": [
+     "err-subsidiya-rashody"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-grant",
+   "scores": {
+    "authority": 2,
+    "coverage": 83,
+    "connectivity": 27,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 53
+   }
+  },
+  {
+   "id": "kvr",
+   "type": [
+    "term"
+   ],
+   "name": "КВР",
+   "aliases": [
+    "код вида расходов",
+    "квр 244",
+    "Код вида расходов"
+   ],
+   "summary": "КВР — код вида расходов бюджетной классификации: им заказчики классифицируют свои расходы (например, 244 — прочая закупка товаров, работ, услуг). Подрядчик КВР не применяет в своих платёжках, но встречает его в контрактах и разговорах с заказчиком; путать КВР с кодами направлений расходования при КС — типовая ошибка новичков.",
+   "citation": "Элемент бюджетной классификации на стороне заказчика. Для участника КС — справочный контекст, а не рабочий реквизит его распоряжений.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/kvr/",
+     "title": "КВР"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "kosgu",
+     "kbk",
+     "kody-napravleniy"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/glossariy-terminov-kaznacheyskogo-soprovozhdeniya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-kvr",
+   "scores": {
+    "authority": 2,
+    "coverage": 50,
+    "connectivity": 20,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 40
+   }
+  },
+  {
+   "id": "kosgu",
+   "type": [
+    "term"
+   ],
+   "name": "КОСГУ",
+   "aliases": [
+    "косгу 226",
+    "классификация косгу",
+    "Классификация операций сектора государственного управления"
+   ],
+   "summary": "КОСГУ — классификация операций сектора госуправления: коды, которыми бюджетный учёт детализирует операции по экономическому содержанию (211 — зарплата, 226 — прочие услуги и т.д.). Как и КВР, это язык заказчика-бюджетника: участник КС с КОСГУ напрямую не работает, но встречает его в документах и требованиях.",
+   "citation": "Экономическая классификация бюджетных операций на стороне госсектора. Для подрядчика — фоновая справочная система, не его платёжный реквизит.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/kosgu/",
+     "title": "КОСГУ"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "kvr",
+     "kbk",
+     "kody-napravleniy"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/glossariy-terminov-kaznacheyskogo-soprovozhdeniya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-kosgu",
+   "scores": {
+    "authority": 2,
+    "coverage": 50,
+    "connectivity": 20,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 40
+   }
+  },
+  {
+   "id": "oktmo",
+   "type": [
+    "term"
+   ],
+   "name": "ОКТМО",
+   "aliases": [
+    "код октмо",
+    "октмо бюджета",
+    "Общероссийский классификатор территорий муниципальных образований"
+   ],
+   "summary": "ОКТМО — код территории муниципального образования. В казначейском сопровождении встречается как реквизит форм: например, в заявлении на открытие лицевого счёта (0531368) указываются наименование бюджета и его код по ОКТМО. Код берётся по бюджету контракта — уточняется у заказчика, а не «свой» по месту регистрации подрядчика.",
+   "citation": "Территориальный код классификатора. В формах КС обозначает бюджет, из которого финансируется контракт, — частая точка ошибок заполнения.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/oktmo/",
+     "title": "ОКТМО"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "zayavlenie-ls",
+     "kofk",
+     "okpo"
+    ],
+    "REQUIRES_DOC": [
+     "zayavlenie-ls"
+    ],
+    "SEE_ERROR": [
+     "err-zatyanulos-otkrytie"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/zayavlenie-na-otkrytie-kaznacheyskogo-scheta"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-oktmo",
+   "scores": {
+    "authority": 2,
+    "coverage": 83,
+    "connectivity": 27,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 53
+   }
+  },
+  {
+   "id": "okpo",
+   "type": [
+    "term"
+   ],
+   "name": "ОКПО",
+   "aliases": [
+    "код окпо",
+    "Общероссийский классификатор предприятий и организаций"
+   ],
+   "summary": "ОКПО — код организации в классификаторе предприятий (присваивается Росстатом). В казначейских формах — стандартный реквизит шапки «Коды»: заявление 0531368, карточка подписей 0531753 и другие содержат поле «по ОКПО». Ошибок обычно немного, но пустое или неверное поле — формальный повод возврата.",
+   "citation": "Статистический код организации — обязательный реквизит идентификационного блока казначейских форм.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/okpo/",
+     "title": "ОКПО"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "zayavlenie-ls",
+     "kartochka-podpisey",
+     "svodnyy-reestr"
+    ],
+    "REQUIRES_DOC": [
+     "kartochka-podpisey"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kartochka-obraztsov-podpisey-ufk"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-okpo",
+   "scores": {
+    "authority": 2,
+    "coverage": 67,
+    "connectivity": 23,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 47
+   }
+  },
+  {
+   "id": "glava-bk",
+   "type": [
+    "term"
+   ],
+   "name": "Глава по БК",
+   "aliases": [
+    "код главы",
+    "глава по бюджетной классификации",
+    "Код главы по бюджетной классификации"
+   ],
+   "summary": "Глава по БК — трёхзначный код главного распорядителя бюджетных средств в бюджетной классификации (например, у каждого министерства свой код главы). В казначейских формах поле «Глава по БК» заполняют участники бюджетного процесса; коммерческий подрядчик при КС обычно оставляет его пустым — это реквизит «бюджетной» стороны.",
+   "citation": "Код ГРБС в классификации бюджета. Для участника КС — справочное поле форм, заполняемое только бюджетными организациями.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/glava-po-bk/",
+     "title": "Глава по БК"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "grbs",
+     "kartochka-podpisey",
+     "kvr"
+    ],
+    "REQUIRES_DOC": [
+     "kartochka-podpisey"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kartochka-obraztsov-podpisey-ufk"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-glava-bk",
+   "scores": {
+    "authority": 2,
+    "coverage": 67,
+    "connectivity": 23,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 47
+   }
+  },
+  {
+   "id": "44-fz",
+   "type": [
+    "term"
+   ],
+   "name": "44-ФЗ",
+   "aliases": [
+    "закон 44-фз",
+    "фз-44",
+    "контрактная система",
+    "Закон о контрактной системе"
+   ],
+   "summary": "44-ФЗ — федеральный закон о контрактной системе: правила закупок для государственных и муниципальных нужд, от планирования до исполнения контрактов. Для казначейского сопровождения 44-ФЗ задаёт «носитель» (госконтракт, реестр контрактов, ИГК), а сами случаи КС определяются бюджетным законодательством — прежде всего ежегодным законом о бюджете.",
+   "citation": "Правовой каркас госзакупок. КС-контракты по 44-ФЗ живут на пересечении двух систем правил: закупочной (44-ФЗ) и бюджетной (БК + закон о бюджете).",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/44-fz/",
+     "title": "44-ФЗ"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "kontrakt-44",
+     "zakon-budget",
+     "eis",
+     "igk"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-44-fz-2026-polnyy-gid"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-44-fz",
+   "scores": {
+    "authority": 2,
+    "coverage": 50,
+    "connectivity": 23,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 47
+   }
+  },
+  {
+   "id": "223-fz",
+   "type": [
+    "term"
+   ],
+   "name": "223-ФЗ",
+   "aliases": [
+    "закон 223-фз",
+    "фз-223",
+    "Закон о закупках отдельных видов юридических лиц"
+   ],
+   "summary": "223-ФЗ — закон о закупках госкомпаний, госкорпораций и субъектов естественных монополий. Казначейское сопровождение договоров по 223-ФЗ встречается реже, чем по 44-ФЗ, и возникает точечно: когда договор финансируется целевыми бюджетными средствами (субсидии, взносы) и попадает под условия закона о бюджете.",
+   "citation": "Рамочный закон закупок компаний с госучастием. КС применимо к его договорам не автоматически, а при целевом бюджетном источнике средств.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/223-fz/",
+     "title": "223-ФЗ"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "kontrakt-44",
+     "porog-ks",
+     "subsidiya"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-223-fz"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-223-fz",
+   "scores": {
+    "authority": 2,
+    "coverage": 50,
+    "connectivity": 20,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 40
+   }
+  },
+  {
+   "id": "275-fz",
+   "type": [
+    "term"
+   ],
+   "name": "275-ФЗ",
+   "aliases": [
+    "закон 275-фз",
+    "фз-275",
+    "закон о гоз",
+    "Закон о государственном оборонном заказе"
+   ],
+   "summary": "275-ФЗ — закон о государственном оборонном заказе: особый режим контрактов ГОЗ, обязанности головного исполнителя и исполнителей, ИГК по всей кооперации, раздельный учёт, банковское и казначейское сопровождение расчётов, контроль ФАС и военных представительств. Самый жёсткий из «контрактных» законов по финансовой дисциплине.",
+   "citation": "Правовой режим ГОЗ: кто и как исполняет оборонные контракты и под каким контролем движутся деньги кооперации.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/275-fz/",
+     "title": "275-ФЗ"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "goz",
+     "razdelnyy-uchet",
+     "golovnoy-ispolnitel",
+     "obs"
+    ],
+    "REQUIRES_DOC": [
+     "komplekt-goz"
+    ],
+    "SEE_ERROR": [
+     "err-razdelnyy-uchet"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-275-fz",
+   "scores": {
+    "authority": 2,
+    "coverage": 83,
+    "connectivity": 30,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 60
+   }
+  },
+  {
+   "id": "63-fz",
+   "type": [
+    "term"
+   ],
+   "name": "63-ФЗ",
+   "aliases": [
+    "закон об электронной подписи",
+    "фз-63",
+    "Закон об электронной подписи"
+   ],
+   "summary": "63-ФЗ — закон об электронной подписи: виды подписей (простая, неквалифицированная, квалифицированная), правила их применения и признания. Вся электронная сторона КС держится на его нормах: УКЭП руководителя, подписи сотрудников с МЧД, доверие к подписанным в ГИИС документам.",
+   "citation": "Правовая база электронной подписи в РФ. Определяет, чья подпись и при каких условиях делает электронный документ юридически значимым.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/63-fz/",
+     "title": "63-ФЗ"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ecp",
+     "doverennost-mchd",
+     "fns"
+    ],
+    "REQUIRES_DOC": [
+     "doverennost-mchd"
+    ],
+    "SEE_ERROR": [
+     "err-ecp"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/sertifikat-ecp-kaznacheystva"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-63-fz",
+   "scores": {
+    "authority": 2,
+    "coverage": 83,
+    "connectivity": 27,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 53
+   }
+  },
+  {
+   "id": "prikaz-44n",
+   "type": [
+    "term"
+   ],
+   "name": "Приказ ФК № 44н",
+   "aliases": [
+    "44н приказ казначейства",
+    "порядок лицевых счетов кс",
+    "Порядок лицевых счетов при казначейском сопровождении"
+   ],
+   "summary": "Приказ Федерального казначейства № 44н — порядок открытия и ведения лицевых счетов при казначейском сопровождении: процедуры открытия/переоформления/закрытия счетов участников КС, формы документов (включая заявление 0531368), сроки и основания возвратов. Настольный документ на этапе старта работы со счётом.",
+   "citation": "Регламент жизненного цикла КС-счёта: от заявления до закрытия — процедуры, формы, сроки, причины отказов.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/prikaz-44n/",
+     "title": "Приказ ФК № 44н"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "zayavlenie-ls",
+     "ls-71",
+     "prikaz-21n"
+    ],
+    "REQUIRES_DOC": [
+     "zayavlenie-ls"
+    ],
+    "SEE_ERROR": [
+     "err-zatyanulos-otkrytie"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/how_to_open/"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-prikaz-44n",
+   "scores": {
+    "authority": 2,
+    "coverage": 83,
+    "connectivity": 27,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 53
+   }
+  },
+  {
+   "id": "prikaz-21n",
+   "type": [
+    "term"
+   ],
+   "name": "Приказ ФК № 21н",
+   "aliases": [
+    "21н приказ казначейства",
+    "порядок лицевых счетов 21н",
+    "Порядок открытия и ведения лицевых счетов ТОФК"
+   ],
+   "summary": "Приказ Федерального казначейства № 21н (от 17.10.2016, в ред. 36н и 16н) — базовый порядок открытия и ведения лицевых счетов территориальными органами ФК. Источник форм общего контура лицевых счетов — в том числе карточки образцов подписей (форма 0531753, приложение № 2). Работает в связке со специальными порядками для участников КС.",
+   "citation": "Общий регламент лицевых счетов ТОФК: типы счетов, процедуры, формы (включая карточку подписей). Основа, на которую опираются специальные порядки КС.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/prikaz-21n/",
+     "title": "Приказ ФК № 21н"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "kartochka-podpisey",
+     "kod-71",
+     "prikaz-44n"
+    ],
+    "REQUIRES_DOC": [
+     "kartochka-podpisey"
+    ],
+    "SEE_ERROR": [
+     "err-kartochka"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kartochka-obraztsov-podpisey-ufk"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-prikaz-21n",
+   "scores": {
+    "authority": 2,
+    "coverage": 83,
+    "connectivity": 27,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 53
+   }
+  },
+  {
+   "id": "pp-1465",
+   "type": [
+    "term"
+   ],
+   "name": "ПП № 1465",
+   "aliases": [
+    "постановление 1465",
+    "ценообразование гоз",
+    "Постановление о ценообразовании ГОЗ"
+   ],
+   "summary": "Постановление Правительства № 1465 — правила государственного регулирования цен на продукцию гособоронзаказа: виды цен (ориентировочная, фиксированная, возмещающая издержки), порядок их определения и перевода, правило рентабельности «20+1», требования к раскрытию затрат. Определяет экономику каждого контракта ГОЗ.",
+   "citation": "Ценовой кодекс ГОЗ: как формируется, обосновывается и ограничивается цена оборонного контракта и прибыль исполнителя.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/pp-1465/",
+     "title": "ПП № 1465"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "vidy-tsen-goz",
+     "norma-pribyli",
+     "goz",
+     "vp-mo"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/vidy-cen-goz"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-pp-1465",
+   "scores": {
+    "authority": 2,
+    "coverage": 50,
+    "connectivity": 23,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 47
+   }
+  },
+  {
+   "id": "pp-2053",
+   "type": [
+    "term"
+   ],
+   "name": "ПП № 2053",
+   "aliases": [
+    "постановление 2053",
+    "упрощенное перечисление",
+    "Постановление об упрощённом перечислении средств"
+   ],
+   "summary": "Постановление Правительства № 2053 — механизм упрощённого перечисления средств при казначейском сопровождении: для установленных случаев позволяет переводить с лицевого счёта на расчётный часть средств (например, оплату труда, накладные по нормативу) без полного пакета подтверждающих документов по каждой операции.",
+   "citation": "Разрешённые «упрощёнки» при КС: перечень случаев, когда деньги двигаются на расчётный счёт по нормативам, а не по попозиционным доказательствам.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/pp-2053/",
+     "title": "ПП № 2053"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "pribyl-ks",
+     "vozmeshchenie",
+     "platezh"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/novosti/",
+     "/blog/kaznacheyskoe-soprovozhdenie-platezhey"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-pp-2053",
+   "scores": {
+    "authority": 2,
+    "coverage": 50,
+    "connectivity": 20,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 40
+   }
+  }
+ ]
+}

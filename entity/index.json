@@ -1,0 +1,4383 @@
+{
+ "project": "kazna-gov.ru Knowledge Graph",
+ "version": "2026-07-09",
+ "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
+ "docs": "https://kazna-gov.ru/api/",
+ "count": 485,
+ "entities": [
+  {
+   "id": "service-conduct",
+   "name": "Сопровождение платежей и ведение КС",
+   "type": [
+    "service"
+   ],
+   "api": "/entity/service-conduct.json",
+   "url": "/services/conduct"
+  },
+  {
+   "id": "err-otkaz-sanktsionirovaniya",
+   "name": "Отказ в санкционировании",
+   "type": [
+    "error",
+    "term"
+   ],
+   "api": "/entity/err-otkaz-sanktsionirovaniya.json",
+   "url": "/oshibki/ufk-otkazalo-v-sanktsionirovanii/"
+  },
+  {
+   "id": "svedeniya-ssu",
+   "name": "Сведения 0501213",
+   "type": [
+    "document",
+    "term"
+   ],
+   "api": "/entity/svedeniya-ssu.json",
+   "url": "/obraztsy/svedeniya-ob-operatsiyah-0501213/"
+  },
+  {
+   "id": "service-open",
+   "name": "Открытие казначейского счёта под ключ",
+   "type": [
+    "service"
+   ],
+   "api": "/entity/service-open.json",
+   "url": "/services/open"
+  },
+  {
+   "id": "doverennost-mchd",
+   "name": "Доверенность в УФК",
+   "type": [
+    "document",
+    "term"
+   ],
+   "api": "/entity/doverennost-mchd.json",
+   "url": "/obraztsy/doverennost-v-ufk/"
+  },
+  {
+   "id": "sanktsionirovanie",
+   "name": "Санкционирование операций",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/sanktsionirovanie.json",
+   "url": "/glossary/sanktsionirovanie/"
+  },
+  {
+   "id": "law-приказ-минфина-214н",
+   "name": "Приказ Минфина № 214н",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-приказ-минфина-214н.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
+   "id": "law-бк-рф-ст-2422224226",
+   "name": "БК РФ, ст. 242.22–242.26",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-бк-рф-ст-2422224226.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
+   "id": "ls-71",
+   "name": "КС-счёт (лицевой счёт 71)",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/ls-71.json",
+   "url": "/glossary/ks-schet/"
+  },
+  {
+   "id": "zayavlenie-ls",
+   "name": "Заявление на открытие ЛС",
+   "type": [
+    "document",
+    "term"
+   ],
+   "api": "/entity/zayavlenie-ls.json",
+   "url": "/obraztsy/zayavlenie-na-otkrytie-litsevogo-scheta/"
+  },
+  {
+   "id": "kartochka-podpisey",
+   "name": "Карточка образцов подписей",
+   "type": [
+    "document",
+    "term"
+   ],
+   "api": "/entity/kartochka-podpisey.json",
+   "url": "/obraztsy/kartochka-obraztsov-podpisey/"
+  },
+  {
+   "id": "rkp",
+   "name": "Платёжка при КС (образец)",
+   "type": [
+    "document",
+    "term"
+   ],
+   "api": "/entity/rkp.json",
+   "url": "/obraztsy/platezhnoe-poruchenie-obrazec/"
+  },
+  {
+   "id": "err-necelevoe",
+   "name": "Нецелевое расходование",
+   "type": [
+    "error",
+    "term"
+   ],
+   "api": "/entity/err-necelevoe.json",
+   "url": "/oshibki/necelevoe-rashodovanie-sredstv/"
+  },
+  {
+   "id": "err-zatyanulos-otkrytie",
+   "name": "Затянулось открытие счёта",
+   "type": [
+    "error"
+   ],
+   "api": "/entity/err-zatyanulos-otkrytie.json",
+   "url": "/oshibki/zatyanulos-otkrytie-scheta/"
+  },
+  {
+   "id": "giis-eb",
+   "name": "ГИИС «Электронный бюджет»",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/giis-eb.json",
+   "url": "/glossary/giis-elektronnyy-byudzhet/"
+  },
+  {
+   "id": "ks",
+   "name": "Казначейское сопровождение",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/ks.json",
+   "url": "/glossary/kaznacheyskoe-soprovozhdenie/"
+  },
+  {
+   "id": "law-275-фз",
+   "name": "275-ФЗ",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-275-фз.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
+   "id": "dokumenty-osnovaniya",
+   "name": "Документы-основания",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/dokumenty-osnovaniya.json",
+   "url": "/glossary/dokumenty-osnovaniya/"
+  },
+  {
+   "id": "service-vosstanovlenie",
+   "name": "Восстановление КС (антикризис)",
+   "type": [
+    "service"
+   ],
+   "api": "/entity/service-vosstanovlenie.json",
+   "url": "/services/vosstanovlenie"
+  },
+  {
+   "id": "igk",
+   "name": "ИГК",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/igk.json",
+   "url": "/glossary/igk/"
+  },
+  {
+   "id": "razdelnyy-uchet",
+   "name": "Раздельный учёт",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/razdelnyy-uchet.json",
+   "url": "/glossary/razdelnyy-uchet/"
+  },
+  {
+   "id": "reestr-dokumentov",
+   "name": "Реестр документов",
+   "type": [
+    "document",
+    "term"
+   ],
+   "api": "/entity/reestr-dokumentov.json",
+   "url": "/obraztsy/reestr-dokumentov-po-kontraktu/"
+  },
+  {
+   "id": "tselevye-sredstva",
+   "name": "Целевые средства",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/tselevye-sredstva.json",
+   "url": "/glossary/tselevye-sredstva/"
+  },
+  {
+   "id": "law-приказ-фк-44н",
+   "name": "Приказ ФК № 44н",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-приказ-фк-44н.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
+   "id": "err-kod-napravleniya",
+   "name": "Неверный код направления",
+   "type": [
+    "error"
+   ],
+   "api": "/entity/err-kod-napravleniya.json",
+   "url": "/oshibki/nevernyy-kod-napravleniya-rashodov/"
+  },
+  {
+   "id": "poyasnenie-ufk",
+   "name": "Пояснение в УФК",
+   "type": [
+    "document"
+   ],
+   "api": "/entity/poyasnenie-ufk.json",
+   "url": "/obraztsy/poyasnenie-v-ufk/"
+  },
+  {
+   "id": "ecp",
+   "name": "ЭЦП (УКЭП)",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/ecp.json",
+   "url": "/glossary/elektronnaya-podpis/"
+  },
+  {
+   "id": "service-start",
+   "name": "Сопровождение с первого дня",
+   "type": [
+    "service"
+   ],
+   "api": "/entity/service-start.json",
+   "url": "/services/start"
+  },
+  {
+   "id": "err-naznachenie",
+   "name": "Неверное назначение платежа",
+   "type": [
+    "error"
+   ],
+   "api": "/entity/err-naznachenie.json",
+   "url": "/oshibki/nevernoe-naznachenie-platezha/"
+  },
+  {
+   "id": "chek-list-otkrytie",
+   "name": "Чек-лист открытия счёта",
+   "type": [
+    "document"
+   ],
+   "api": "/entity/chek-list-otkrytie.json",
+   "url": "/obraztsy/chek-list-otkrytiya-scheta/"
+  },
+  {
+   "id": "chek-list-dokumenty",
+   "name": "Чек-лист проверки документов",
+   "type": [
+    "document"
+   ],
+   "api": "/entity/chek-list-dokumenty.json",
+   "url": "/obraztsy/chek-list-proverki-dokumentov/"
+  },
+  {
+   "id": "pismo-zapros",
+   "name": "Письмо-запрос в УФК",
+   "type": [
+    "document"
+   ],
+   "api": "/entity/pismo-zapros.json",
+   "url": "/obraztsy/pismo-zapros-v-ufk/"
+  },
+  {
+   "id": "ufk",
+   "name": "УФК",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/ufk.json",
+   "url": "/glossary/ufk/"
+  },
+  {
+   "id": "kontrakt-44",
+   "name": "Госконтракт",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/kontrakt-44.json",
+   "url": "/glossary/goskontrakt/"
+  },
+  {
+   "id": "law-ежегодный-закон-о-федеральном-бюджете",
+   "name": "Ежегодный закон о федеральном бюджете",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-ежегодный-закон-о-федеральном-бюджете.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
+   "id": "goz",
+   "name": "ГОЗ",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/goz.json",
+   "url": "/glossary/goz/"
+  },
+  {
+   "id": "kody-napravleniy",
+   "name": "Коды направлений расходования",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/kody-napravleniy.json",
+   "url": "/glossary/kody-napravleniy-rashodovaniya/"
+  },
+  {
+   "id": "err-razdelnyy-uchet",
+   "name": "Нет раздельного учёта ГОЗ",
+   "type": [
+    "error"
+   ],
+   "api": "/entity/err-razdelnyy-uchet.json",
+   "url": "/oshibki/net-razdelnogo-ucheta-goz/"
+  },
+  {
+   "id": "vozmeshchenie",
+   "name": "Возмещение расходов",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/vozmeshchenie.json",
+   "url": "/glossary/vozmeshchenie-rashodov/"
+  },
+  {
+   "id": "err-igk",
+   "name": "Ошибка в ИГК в платёжке",
+   "type": [
+    "error"
+   ],
+   "api": "/entity/err-igk.json",
+   "url": "/oshibki/oshibka-v-igk-platezh-ne-prohodit/"
+  },
+  {
+   "id": "err-mchd",
+   "name": "МЧД не проходит",
+   "type": [
+    "error"
+   ],
+   "api": "/entity/err-mchd.json",
+   "url": "/oshibki/mchd-ne-prohodit-proverku/"
+  },
+  {
+   "id": "prikaz-razdelnyy-uchet",
+   "name": "Приказ о раздельном учёте",
+   "type": [
+    "document"
+   ],
+   "api": "/entity/prikaz-razdelnyy-uchet.json",
+   "url": "/obraztsy/prikaz-o-razdelnom-uchete-goz/"
+  },
+  {
+   "id": "tsepochka-ks",
+   "name": "Цепочка кооперации",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/tsepochka-ks.json",
+   "url": "/glossary/tsepochka-kooperatsii/"
+  },
+  {
+   "id": "upolnomochennye",
+   "name": "Уполномоченное лицо",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/upolnomochennye.json",
+   "url": "/glossary/upolnomochennoe-litso/"
+  },
+  {
+   "id": "err-svedeniya-otkaz",
+   "name": "Не утверждают Сведения",
+   "type": [
+    "error"
+   ],
+   "api": "/entity/err-svedeniya-otkaz.json",
+   "url": "/oshibki/ufk-ne-utverzhdaet-svedeniya/"
+  },
+  {
+   "id": "err-kartochka",
+   "name": "Вернули карточку подписей",
+   "type": [
+    "error"
+   ],
+   "api": "/entity/err-kartochka.json",
+   "url": "/oshibki/ufk-vernulo-kartochku-podpisey/"
+  },
+  {
+   "id": "err-ecp",
+   "name": "ЭЦП не принимается",
+   "type": [
+    "error"
+   ],
+   "api": "/entity/err-ecp.json",
+   "url": "/oshibki/ecp-ne-podhodit-dlya-kaznacheystva/"
+  },
+  {
+   "id": "tofk",
+   "name": "ТОФК",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/tofk.json",
+   "url": "/glossary/tofk/"
+  },
+  {
+   "id": "avans",
+   "name": "Аванс по госконтракту",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/avans.json",
+   "url": "/glossary/avans/"
+  },
+  {
+   "id": "law-44-фз",
+   "name": "44-ФЗ",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-44-фз.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
+   "id": "svodnyy-reestr",
+   "name": "Сводный реестр",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/svodnyy-reestr.json",
+   "url": "/glossary/svodnyy-reestr/"
+  },
+  {
+   "id": "pribyl-ks",
+   "name": "Перечисление прибыли",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/pribyl-ks.json",
+   "url": "/glossary/perechislenie-pribyli/"
+  },
+  {
+   "id": "sroki-ufk",
+   "name": "Сроки рассмотрения УФК",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/sroki-ufk.json",
+   "url": "/glossary/sroki-rassmotreniya-ufk/"
+  },
+  {
+   "id": "law-63-фз",
+   "name": "63-ФЗ",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-63-фз.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
+   "id": "subsidiya",
+   "name": "Субсидия",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/subsidiya.json",
+   "url": "/glossary/subsidiya/"
+  },
+  {
+   "id": "naznachenie",
+   "name": "Назначение платежа",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/naznachenie.json",
+   "url": "/glossary/naznachenie-platezha/"
+  },
+  {
+   "id": "law-коап-рф-ст-1514",
+   "name": "КоАП РФ, ст. 15.14",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-коап-рф-ст-1514.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
+   "id": "soglashenie-subsidii",
+   "name": "Соглашение о предоставлении субсидии",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/soglashenie-subsidii.json",
+   "url": "/glossary/soglashenie-o-subsidii/"
+  },
+  {
+   "id": "komplekt-otkrytie",
+   "name": "Комплект на открытие",
+   "type": [
+    "document"
+   ],
+   "api": "/entity/komplekt-otkrytie.json",
+   "url": "/obraztsy/komplekt-dokumentov-otkrytie/"
+  },
+  {
+   "id": "kazn-monitoring",
+   "name": "Казначейский мониторинг",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/kazn-monitoring.json",
+   "url": "/glossary/kaznacheyskiy-monitoring/"
+  },
+  {
+   "id": "obs",
+   "name": "Отдельный счёт (ГОЗ)",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/obs.json",
+   "url": "/glossary/otdelnyy-schet-goz/"
+  },
+  {
+   "id": "kody-9xxx",
+   "name": "Коды 9XXX (возмещение)",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/kody-9xxx.json",
+   "url": "/glossary/kody-9xxx/"
+  },
+  {
+   "id": "err-subsidiya-rashody",
+   "name": "Не согласуют расходы субсидии",
+   "type": [
+    "error"
+   ],
+   "api": "/entity/err-subsidiya-rashody.json",
+   "url": "/oshibki/ufk-ne-soglasuet-rashody-po-subsidii/"
+  },
+  {
+   "id": "upd-akt",
+   "name": "Акт сдачи-приёмки",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/upd-akt.json",
+   "url": "/glossary/akt-sdachi-priyomki/"
+  },
+  {
+   "id": "law-приказ-фк-21н",
+   "name": "Приказ ФК № 21н",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-приказ-фк-21н.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
+   "id": "law-коап-рф-ст-1537",
+   "name": "КоАП РФ, ст. 15.37",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-коап-рф-ст-1537.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
+   "id": "komplekt-subsidii",
+   "name": "Комплект субсидий",
+   "type": [
+    "document"
+   ],
+   "api": "/entity/komplekt-subsidii.json",
+   "url": "/obraztsy/komplekt-dokumentov-subsidii/"
+  },
+  {
+   "id": "formulirovka-ks",
+   "name": "Формулировка КС в договор",
+   "type": [
+    "document"
+   ],
+   "api": "/entity/formulirovka-ks.json",
+   "url": "/obraztsy/formulirovka-ks-v-dogovor/"
+  },
+  {
+   "id": "porog-ks",
+   "name": "Порог казначейского сопровождения",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/porog-ks.json",
+   "url": "/glossary/porog-kaznacheyskogo-soprovozhdeniya/"
+  },
+  {
+   "id": "zakon-budget",
+   "name": "Закон о федеральном бюджете",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/zakon-budget.json",
+   "url": "/glossary/zakon-o-federalnom-byudzhete/"
+  },
+  {
+   "id": "err-svodnyy-reestr",
+   "name": "Нет в Сводном реестре",
+   "type": [
+    "error"
+   ],
+   "api": "/entity/err-svodnyy-reestr.json",
+   "url": "/oshibki/net-v-svodnom-reestre/"
+  },
+  {
+   "id": "raschetnyy-schet",
+   "name": "Расчётный счёт",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/raschetnyy-schet.json",
+   "url": "/glossary/raschetnyy-schet/"
+  },
+  {
+   "id": "law-пп-1465",
+   "name": "ПП № 1465",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-пп-1465.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
+   "id": "err-vozvrat-platezha",
+   "name": "Возврат платежа УФК",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/err-vozvrat-platezha.json",
+   "url": "/glossary/vozvrat-platezha/"
+  },
+  {
+   "id": "vypiska-ls",
+   "name": "Выписка из лицевого счёта",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/vypiska-ls.json",
+   "url": "/glossary/vypiska-iz-litsevogo-scheta/"
+  },
+  {
+   "id": "law-приказ-минцифры-1001",
+   "name": "Приказ Минцифры № 1001",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-приказ-минцифры-1001.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
+   "id": "registratsiya-eb",
+   "name": "Регистрация в «Электронном бюджете»",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/registratsiya-eb.json",
+   "url": "/glossary/registratsiya-v-eb/"
+  },
+  {
+   "id": "komplekt-goz",
+   "name": "Комплект ГОЗ",
+   "type": [
+    "document"
+   ],
+   "api": "/entity/komplekt-goz.json",
+   "url": "/obraztsy/komplekt-dokumentov-goz/"
+  },
+  {
+   "id": "otzyv-rasporyazheniya",
+   "name": "Отзыв распоряжения",
+   "type": [
+    "document",
+    "term"
+   ],
+   "api": "/entity/otzyv-rasporyazheniya.json",
+   "url": "/obraztsy/shablon-otzyva-rasporyazheniya/"
+  },
+  {
+   "id": "kontinent-tls",
+   "name": "Континент TLS",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/kontinent-tls.json",
+   "url": "/glossary/kontinent-tls/"
+  },
+  {
+   "id": "rekvizity-ks",
+   "name": "Реквизиты КС-счёта",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/rekvizity-ks.json",
+   "url": "/glossary/rekvizity-ks-scheta/"
+  },
+  {
+   "id": "vidy-tsen-goz",
+   "name": "Виды цен ГОЗ",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/vidy-tsen-goz.json",
+   "url": "/glossary/vidy-tsen-goz/"
+  },
+  {
+   "id": "kriptopro",
+   "name": "КриптоПро CSP",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/kriptopro.json",
+   "url": "/glossary/kriptopro-csp/"
+  },
+  {
+   "id": "poyasnenie-vozvrat",
+   "name": "Пояснение при возврате",
+   "type": [
+    "document"
+   ],
+   "api": "/entity/poyasnenie-vozvrat.json",
+   "url": "/obraztsy/poyasnenie-pri-vozvrate-platezha/"
+  },
+  {
+   "id": "rezervirovanie-ls",
+   "name": "Резервирование лицевого счёта",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/rezervirovanie-ls.json",
+   "url": "/glossary/rezervirovanie-scheta/"
+  },
+  {
+   "id": "zakrytie-ls",
+   "name": "Закрытие лицевого счёта",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/zakrytie-ls.json",
+   "url": "/glossary/zakrytie-scheta/"
+  },
+  {
+   "id": "neisp-ostatok",
+   "name": "Неиспользованный остаток",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/neisp-ostatok.json",
+   "url": "/glossary/neispolzovannyy-ostatok/"
+  },
+  {
+   "id": "norma-pribyli",
+   "name": "Норма прибыли ГОЗ (20+1)",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/norma-pribyli.json",
+   "url": "/glossary/norma-pribyli-goz/"
+  },
+  {
+   "id": "platezh",
+   "name": "Казначейский платёж",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/platezh.json",
+   "url": "/glossary/kaznacheyskiy-platezh/"
+  },
+  {
+   "id": "soprovoditelnoe-pismo",
+   "name": "Сопроводительное письмо",
+   "type": [
+    "document"
+   ],
+   "api": "/entity/soprovoditelnoe-pismo.json",
+   "url": "/obraztsy/soprovoditelnoe-pismo-v-ufk/"
+  },
+  {
+   "id": "fk",
+   "name": "Федеральное казначейство",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/fk.json",
+   "url": "/glossary/federalnoe-kaznacheystvo/"
+  },
+  {
+   "id": "zakazchik",
+   "name": "Госзаказчик",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/zakazchik.json",
+   "url": "/glossary/zakazchik/"
+  },
+  {
+   "id": "golovnoy-ispolnitel",
+   "name": "Головной исполнитель",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/golovnoy-ispolnitel.json",
+   "url": "/glossary/golovnoy-ispolnitel/"
+  },
+  {
+   "id": "prim-1",
+   "name": "Форма «Прим-1»",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/prim-1.json",
+   "url": "/glossary/prim-1/"
+  },
+  {
+   "id": "id-soglasheniya",
+   "name": "Идентификатор соглашения",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/id-soglasheniya.json",
+   "url": "/glossary/identifikator-soglasheniya/"
+  },
+  {
+   "id": "poluchatel-subsidii",
+   "name": "Получатель субсидии",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/poluchatel-subsidii.json",
+   "url": "/glossary/poluchatel-subsidii/"
+  },
+  {
+   "id": "upd",
+   "name": "УПД и счёт-фактура",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/upd.json",
+   "url": "/glossary/schet-faktura-upd/"
+  },
+  {
+   "id": "hub-scheta",
+   "name": "Лицевые счета",
+   "type": [
+    "hub"
+   ],
+   "api": "/entity/hub-scheta.json",
+   "url": "/scheta/"
+  },
+  {
+   "id": "hub-platezhi",
+   "name": "Платежи и вывод средств",
+   "type": [
+    "hub"
+   ],
+   "api": "/entity/hub-platezhi.json",
+   "url": "/platezhi/"
+  },
+  {
+   "id": "law-гк-рф-ст-185189",
+   "name": "ГК РФ, ст. 185–189",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-гк-рф-ст-185189.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
+   "id": "subpodryadchik",
+   "name": "Субподрядчик (соисполнитель)",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/subpodryadchik.json",
+   "url": "/glossary/subpodryadchik/"
+  },
+  {
+   "id": "etap-kontrakta",
+   "name": "Этап контракта",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/etap-kontrakta.json",
+   "url": "/glossary/etap-kontrakta/"
+  },
+  {
+   "id": "nds-ks",
+   "name": "НДС в казначейских платежах",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/nds-ks.json",
+   "url": "/glossary/nds-pri-ks/"
+  },
+  {
+   "id": "koap-15-49",
+   "name": "Штрафы КоАП при КС",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/koap-15-49.json",
+   "url": "/glossary/shtrafy-koap/"
+  },
+  {
+   "id": "fns",
+   "name": "УЦ ФНС",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/fns.json",
+   "url": "/glossary/fns-uc/"
+  },
+  {
+   "id": "psb",
+   "name": "ПСБ",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/psb.json",
+   "url": "/glossary/psb/"
+  },
+  {
+   "id": "kod-71",
+   "name": "Код 71 (тип лицевого счёта)",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/kod-71.json",
+   "url": "/glossary/kod-71/"
+  },
+  {
+   "id": "priostanovlenie",
+   "name": "Приостановление операций",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/priostanovlenie.json",
+   "url": "/glossary/priostanovlenie-operatsiy/"
+  },
+  {
+   "id": "hub-sankts",
+   "name": "Санкционирование и контроль",
+   "type": [
+    "hub"
+   ],
+   "api": "/entity/hub-sankts.json",
+   "url": "/sanktsionirovanie/"
+  },
+  {
+   "id": "service-reserve",
+   "name": "Резервирование счёта для тендера",
+   "type": [
+    "service"
+   ],
+   "api": "/entity/service-reserve.json",
+   "url": "/services/reserve"
+  },
+  {
+   "id": "vp-mo",
+   "name": "Военное представительство",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/vp-mo.json",
+   "url": "/glossary/voennoe-predstavitelstvo/"
+  },
+  {
+   "id": "eks",
+   "name": "ЕКС",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/eks.json",
+   "url": "/glossary/eks/"
+  },
+  {
+   "id": "nubp",
+   "name": "НУБП",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/nubp.json",
+   "url": "/glossary/nubp/"
+  },
+  {
+   "id": "kofk",
+   "name": "Код по КОФК",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/kofk.json",
+   "url": "/glossary/kofk/"
+  },
+  {
+   "id": "hub-ks",
+   "name": "Казначейское сопровождение",
+   "type": [
+    "hub"
+   ],
+   "api": "/entity/hub-ks.json",
+   "url": "/kaznacheyskoe-soprovozhdenie/"
+  },
+  {
+   "id": "zayavlenie-zakrytie",
+   "name": "Заявление на закрытие ЛС",
+   "type": [
+    "document"
+   ],
+   "api": "/entity/zayavlenie-zakrytie.json",
+   "url": "/obraztsy/zayavlenie-na-zakrytie-litsevogo-scheta/"
+  },
+  {
+   "id": "eis",
+   "name": "ЕИС",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/eis.json",
+   "url": "/glossary/eis/"
+  },
+  {
+   "id": "rasshirennoe-ks",
+   "name": "Расширенное казначейское сопровождение",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/rasshirennoe-ks.json",
+   "url": "/glossary/rasshirennoe-kaznacheyskoe-soprovozhdenie/"
+  },
+  {
+   "id": "bank-soprovozhdenie",
+   "name": "Банковское сопровождение",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/bank-soprovozhdenie.json",
+   "url": "/glossary/bankovskoe-soprovozhdenie/"
+  },
+  {
+   "id": "limit-ks",
+   "name": "Лимит на КС-счёте",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/limit-ks.json",
+   "url": "/glossary/limit-na-ks-schete/"
+  },
+  {
+   "id": "reestr-kontraktov",
+   "name": "Реестр контрактов",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/reestr-kontraktov.json",
+   "url": "/glossary/reestr-kontraktov/"
+  },
+  {
+   "id": "vozvrat-avansa",
+   "name": "Возврат аванса",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/vozvrat-avansa.json",
+   "url": "/glossary/vozvrat-avansa/"
+  },
+  {
+   "id": "doverennost-ufk",
+   "name": "Доверенность для УФК",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/doverennost-ufk.json",
+   "url": "/glossary/doverennost-dlya-ufk/"
+  },
+  {
+   "id": "kod-tselevyh",
+   "name": "Код целевых средств",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/kod-tselevyh.json",
+   "url": "/glossary/kod-tselevykh-sredstv/"
+  },
+  {
+   "id": "faq-kak-otkryt-schet",
+   "name": "Как открыть казначейский счёт?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kak-otkryt-schet.json",
+   "url": "/voprosy/kak-otkryt-kaznacheyskiy-schet/"
+  },
+  {
+   "id": "prikaz-214n",
+   "name": "Приказ Минфина № 214н",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/prikaz-214n.json",
+   "url": "/glossary/prikaz-214n/"
+  },
+  {
+   "id": "raskhodnaya-deklaratsiya",
+   "name": "Расходная декларация",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/raskhodnaya-deklaratsiya.json",
+   "url": "/glossary/raskhodnaya-deklaratsiya/"
+  },
+  {
+   "id": "otchet-subsidii",
+   "name": "Отчёт об использовании субсидии",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/otchet-subsidii.json",
+   "url": "/glossary/otchet-ob-ispolzovanii-subsidii/"
+  },
+  {
+   "id": "minfin",
+   "name": "Минфин России",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/minfin.json",
+   "url": "/glossary/minfin/"
+  },
+  {
+   "id": "finorgan",
+   "name": "Финансовый орган",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/finorgan.json",
+   "url": "/glossary/finansovyy-organ/"
+  },
+  {
+   "id": "sufd",
+   "name": "СУФД",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/sufd.json",
+   "url": "/glossary/sufd/"
+  },
+  {
+   "id": "opk",
+   "name": "ОПК",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/opk.json",
+   "url": "/glossary/opk/"
+  },
+  {
+   "id": "opornyy-bank",
+   "name": "Опорный банк",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/opornyy-bank.json",
+   "url": "/glossary/opornyy-bank/"
+  },
+  {
+   "id": "pryamoy-platezh",
+   "name": "Прямой платёж",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/pryamoy-platezh.json",
+   "url": "/glossary/pryamoy-platezh/"
+  },
+  {
+   "id": "bk-rf",
+   "name": "БК РФ, ст. 242.23–242.26",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/bk-rf.json",
+   "url": "/glossary/bk-rf-242/"
+  },
+  {
+   "id": "prom-otchetnost-goz",
+   "name": "Промежуточная отчётность ГОЗ",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/prom-otchetnost-goz.json",
+   "url": "/glossary/promezhutochnaya-otchetnost-goz/"
+  },
+  {
+   "id": "faq-srok-otkrytiya-scheta",
+   "name": "Сколько времени открывается казначейский счёт?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-srok-otkrytiya-scheta.json",
+   "url": "/voprosy/skolko-otkryvaetsya-schet/"
+  },
+  {
+   "id": "faq-dokumenty-dlya-otkrytiya",
+   "name": "Какие документы нужны для открытия лицевого счёта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-dokumenty-dlya-otkrytiya.json",
+   "url": "/voprosy/kakie-dokumenty-dlya-otkrytiya/"
+  },
+  {
+   "id": "faq-dokumenty-k-platezhu",
+   "name": "Какие документы прикладывать к платежу?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-dokumenty-k-platezhu.json",
+   "url": "/voprosy/kakie-dokumenty-prikladat-k-platezhu/"
+  },
+  {
+   "id": "faq-start-novichka",
+   "name": "Контракт под КС — с чего начать новичку?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-start-novichka.json",
+   "url": "/voprosy/s-chego-nachat-novichku/"
+  },
+  {
+   "id": "hub-goz",
+   "name": "ГОЗ",
+   "type": [
+    "hub"
+   ],
+   "api": "/entity/hub-goz.json",
+   "url": "/goz/"
+  },
+  {
+   "id": "hub-otchetnost",
+   "name": "Отчётность и учёт",
+   "type": [
+    "hub"
+   ],
+   "api": "/entity/hub-otchetnost.json",
+   "url": "/otchetnost/"
+  },
+  {
+   "id": "service-postpayment",
+   "name": "КС при постоплате",
+   "type": [
+    "service"
+   ],
+   "api": "/entity/service-postpayment.json",
+   "url": "/services/postpayment"
+  },
+  {
+   "id": "law-нк-рф-гл-21",
+   "name": "НК РФ, гл. 21",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-нк-рф-гл-21.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
+   "id": "girbo",
+   "name": "ГИРБО",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/girbo.json",
+   "url": "/glossary/girbo/"
+  },
+  {
+   "id": "koo-obs",
+   "name": "КОО",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/koo-obs.json",
+   "url": "/glossary/kaznacheyskoe-obespechenie-obyazatelstv/"
+  },
+  {
+   "id": "ens",
+   "name": "ЕНС",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/ens.json",
+   "url": "/glossary/ens/"
+  },
+  {
+   "id": "pereoformlenie-ls",
+   "name": "Переоформление лицевого счёта",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/pereoformlenie-ls.json",
+   "url": "/glossary/pereoformlenie-scheta/"
+  },
+  {
+   "id": "platezhnoe-poruchenie",
+   "name": "Платёжное поручение при КС",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/platezhnoe-poruchenie.json",
+   "url": "/glossary/platezhnoe-poruchenie/"
+  },
+  {
+   "id": "ks2-ks3",
+   "name": "КС-2 и КС-3",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/ks2-ks3.json",
+   "url": "/glossary/ks-2-ks-3/"
+  },
+  {
+   "id": "kody-71xx",
+   "name": "Коды источников поступлений",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/kody-71xx.json",
+   "url": "/glossary/kody-postupleniy/"
+  },
+  {
+   "id": "kbk",
+   "name": "КБК",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/kbk.json",
+   "url": "/glossary/kbk/"
+  },
+  {
+   "id": "ip",
+   "name": "ИП при казначейском сопровождении",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/ip.json",
+   "url": "/glossary/ip-pri-ks/"
+  },
+  {
+   "id": "ispolnitel",
+   "name": "Исполнитель по контракту",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/ispolnitel.json",
+   "url": "/glossary/ispolnitel-po-kontraktu/"
+  },
+  {
+   "id": "faq-kak-zarezervirovat-schet",
+   "name": "Как зарезервировать счёт для тендера?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kak-zarezervirovat-schet.json",
+   "url": "/voprosy/kak-zarezervirovat-schet-dlya-tendera/"
+  },
+  {
+   "id": "faq-srok-rezerva-scheta",
+   "name": "Сколько действует зарезервированный счёт?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-srok-rezerva-scheta.json",
+   "url": "/voprosy/rezervnyy-schet-deystvuet-skolko/"
+  },
+  {
+   "id": "faq-naznachenie-platezha",
+   "name": "Как заполнить назначение платежа для казначейства?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-naznachenie-platezha.json",
+   "url": "/voprosy/kak-zapolnit-naznachenie-platezha/"
+  },
+  {
+   "id": "faq-status-platezha",
+   "name": "Как узнать статус платежа в ГИИС?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-status-platezha.json",
+   "url": "/voprosy/kak-uznat-status-platezha/"
+  },
+  {
+   "id": "faq-kak-vozmestit-rashody",
+   "name": "Как возместить расходы, оплаченные с расчётного счёта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kak-vozmestit-rashody.json",
+   "url": "/voprosy/kak-vozmestit-rashody/"
+  },
+  {
+   "id": "faq-platezh-ne-sootvetstvuet-svedeniyam",
+   "name": "Платёж не соответствует Сведениям — как исправить?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-platezh-ne-sootvetstvuet-svedeniyam.json",
+   "url": "/voprosy/platezh-ne-sootvetstvuet-svedeniyam/"
+  },
+  {
+   "id": "faq-obyazannosti-ispolnitelya-goz",
+   "name": "Какие обязанности у исполнителя в кооперации ГОЗ?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-obyazannosti-ispolnitelya-goz.json",
+   "url": "/voprosy/obyazannosti-ispolnitelya-goz/"
+  },
+  {
+   "id": "faq-subpodryad-v-goz",
+   "name": "Стал субподрядчиком по ГОЗ — что от меня требуется?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-subpodryad-v-goz.json",
+   "url": "/voprosy/subpodryad-v-goz/"
+  },
+  {
+   "id": "faq-zaprety-otdelnyy-schet",
+   "name": "Какие операции запрещены по отдельному счёту ГОЗ?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-zaprety-otdelnyy-schet.json",
+   "url": "/voprosy/chto-zapreshcheno-po-otdelnomu-schetu/"
+  },
+  {
+   "id": "faq-postanovka-razdelnogo-ucheta",
+   "name": "Как поставить раздельный учёт с нуля?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-postanovka-razdelnogo-ucheta.json",
+   "url": "/voprosy/kak-postavit-razdelnyy-uchet/"
+  },
+  {
+   "id": "faq-shtraf-net-razdelnogo-ucheta",
+   "name": "Какой штраф за отсутствие раздельного учёта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-shtraf-net-razdelnogo-ucheta.json",
+   "url": "/voprosy/shtraf-za-otsutstvie-ru/"
+  },
+  {
+   "id": "faq-subsidiya-pod-ks",
+   "name": "Когда субсидия попадает под казначейское сопровождение?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-subsidiya-pod-ks.json",
+   "url": "/voprosy/kogda-subsidiya-pod-ks/"
+  },
+  {
+   "id": "faq-raskhody-subsidii",
+   "name": "На что можно тратить субсидию?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-raskhody-subsidii.json",
+   "url": "/voprosy/na-chto-mozhno-tratit-subsidiyu/"
+  },
+  {
+   "id": "faq-otchet-po-subsidii",
+   "name": "Как отчитаться об использовании субсидии?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-otchet-po-subsidii.json",
+   "url": "/voprosy/otchet-po-subsidii-kak-sdat/"
+  },
+  {
+   "id": "faq-kakie-kontrakty-pod-ks",
+   "name": "Какие контракты попадают под казначейское сопровождение?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kakie-kontrakty-pod-ks.json",
+   "url": "/voprosy/kakie-kontrakty-pod-ks-vopros/"
+  },
+  {
+   "id": "faq-s-kakoy-summy-ks",
+   "name": "С какой суммы контракт попадает под КС?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-s-kakoy-summy-ks.json",
+   "url": "/voprosy/s-kakoy-summy-ks/"
+  },
+  {
+   "id": "faq-kto-ustanavlivaet-sluchai-ks",
+   "name": "Кто и где устанавливает случаи казначейского сопровождения?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kto-ustanavlivaet-sluchai-ks.json",
+   "url": "/voprosy/kto-ustanavlivaet-sluchai-ks/"
+  },
+  {
+   "id": "faq-mozhno-li-izbezhat-ks",
+   "name": "Можно ли избежать казначейского сопровождения?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-mozhno-li-izbezhat-ks.json",
+   "url": "/voprosy/mozhno-li-izbezhat-ks/"
+  },
+  {
+   "id": "faq-ks-bez-avansa",
+   "name": "Будет ли КС, если контракт без аванса?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-ks-bez-avansa.json",
+   "url": "/voprosy/ks-bez-avansa/"
+  },
+  {
+   "id": "faq-sostav-uslugi-soprovozhdeniya",
+   "name": "Что входит в услугу сопровождения КС?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-sostav-uslugi-soprovozhdeniya.json",
+   "url": "/voprosy/chto-vhodit-v-soprovozhdenie/"
+  },
+  {
+   "id": "hub-subsidii",
+   "name": "Субсидии и гранты",
+   "type": [
+    "hub"
+   ],
+   "api": "/entity/hub-subsidii.json",
+   "url": "/subsidii/"
+  },
+  {
+   "id": "tool-diagnostika-kontrakta",
+   "name": "Диагностика контракта",
+   "type": [
+    "tool"
+   ],
+   "api": "/entity/tool-diagnostika-kontrakta.json",
+   "url": "/instrumenty/diagnostika-kontrakta/"
+  },
+  {
+   "id": "tool-podbor-scheta",
+   "name": "Подбор счёта",
+   "type": [
+    "tool"
+   ],
+   "api": "/entity/tool-podbor-scheta.json",
+   "url": "/instrumenty/podbor-litsevogo-scheta/"
+  },
+  {
+   "id": "tool-diagnostika-platezha",
+   "name": "Диагностика платежа",
+   "type": [
+    "tool"
+   ],
+   "api": "/entity/tool-diagnostika-platezha.json",
+   "url": "/instrumenty/diagnostika-platezha/"
+  },
+  {
+   "id": "tool-marshrutizator",
+   "name": "Маршрутизатор платежа",
+   "type": [
+    "tool"
+   ],
+   "api": "/entity/tool-marshrutizator.json",
+   "url": "/instrumenty/marshrutizator-platezha/"
+  },
+  {
+   "id": "tool-proverka-sankts",
+   "name": "Проверка готовности к санкционированию",
+   "type": [
+    "tool"
+   ],
+   "api": "/entity/tool-proverka-sankts.json",
+   "url": "/instrumenty/proverka-sanktsionirovaniya/"
+  },
+  {
+   "id": "law-пп-2053",
+   "name": "ПП № 2053",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-пп-2053.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
+   "id": "grbs",
+   "name": "ГРБС",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/grbs.json",
+   "url": "/glossary/grbs/"
+  },
+  {
+   "id": "ast-goz",
+   "name": "АСТ ГОЗ",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/ast-goz.json",
+   "url": "/glossary/ast-goz/"
+  },
+  {
+   "id": "epbs",
+   "name": "ЕПБС",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/epbs.json",
+   "url": "/glossary/epbs/"
+  },
+  {
+   "id": "municipalnyy",
+   "name": "Муниципальный контракт",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/municipalnyy.json",
+   "url": "/glossary/munitsipalnyy-kontrakt/"
+  },
+  {
+   "id": "tsifrovoy-kontrakt",
+   "name": "Цифровой контракт",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/tsifrovoy-kontrakt.json",
+   "url": "/glossary/tsifrovoy-kontrakt/"
+  },
+  {
+   "id": "ed-postavshchik",
+   "name": "Единственный поставщик",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/ed-postavshchik.json",
+   "url": "/glossary/edinstvennyy-postavshchik/"
+  },
+  {
+   "id": "grant",
+   "name": "Грант",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/grant.json",
+   "url": "/glossary/grant/"
+  },
+  {
+   "id": "kvr",
+   "name": "КВР",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/kvr.json",
+   "url": "/glossary/kvr/"
+  },
+  {
+   "id": "kosgu",
+   "name": "КОСГУ",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/kosgu.json",
+   "url": "/glossary/kosgu/"
+  },
+  {
+   "id": "oktmo",
+   "name": "ОКТМО",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/oktmo.json",
+   "url": "/glossary/oktmo/"
+  },
+  {
+   "id": "okpo",
+   "name": "ОКПО",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/okpo.json",
+   "url": "/glossary/okpo/"
+  },
+  {
+   "id": "glava-bk",
+   "name": "Глава по БК",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/glava-bk.json",
+   "url": "/glossary/glava-po-bk/"
+  },
+  {
+   "id": "44-fz",
+   "name": "44-ФЗ",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/44-fz.json",
+   "url": "/glossary/44-fz/"
+  },
+  {
+   "id": "223-fz",
+   "name": "223-ФЗ",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/223-fz.json",
+   "url": "/glossary/223-fz/"
+  },
+  {
+   "id": "275-fz",
+   "name": "275-ФЗ",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/275-fz.json",
+   "url": "/glossary/275-fz/"
+  },
+  {
+   "id": "63-fz",
+   "name": "63-ФЗ",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/63-fz.json",
+   "url": "/glossary/63-fz/"
+  },
+  {
+   "id": "prikaz-44n",
+   "name": "Приказ ФК № 44н",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/prikaz-44n.json",
+   "url": "/glossary/prikaz-44n/"
+  },
+  {
+   "id": "prikaz-21n",
+   "name": "Приказ ФК № 21н",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/prikaz-21n.json",
+   "url": "/glossary/prikaz-21n/"
+  },
+  {
+   "id": "pp-1465",
+   "name": "ПП № 1465",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/pp-1465.json",
+   "url": "/glossary/pp-1465/"
+  },
+  {
+   "id": "pp-2053",
+   "name": "ПП № 2053",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/pp-2053.json",
+   "url": "/glossary/pp-2053/"
+  },
+  {
+   "id": "faq-gde-otkryvaetsya-schet",
+   "name": "Где открывается КС-счёт — в банке или в казначействе?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-gde-otkryvaetsya-schet.json",
+   "url": "/voprosy/gde-otkryvaetsya-ks-schet/"
+  },
+  {
+   "id": "faq-schet-na-kazhdyy-kontrakt",
+   "name": "Нужен ли отдельный счёт на каждый контракт?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-schet-na-kazhdyy-kontrakt.json",
+   "url": "/voprosy/nuzhen-li-schet-na-kazhdyy-kontrakt/"
+  },
+  {
+   "id": "faq-chto-takoe-rezervirovanie",
+   "name": "Что такое резервирование лицевого счёта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-chto-takoe-rezervirovanie.json",
+   "url": "/voprosy/chto-takoe-rezervirovanie-scheta/"
+  },
+  {
+   "id": "faq-schet-subpodryadchiku",
+   "name": "Нужен ли казначейский счёт субподрядчику?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-schet-subpodryadchiku.json",
+   "url": "/voprosy/otkrytie-scheta-subpodryadchiku/"
+  },
+  {
+   "id": "faq-chto-takoe-svodnyy-reestr",
+   "name": "Что такое Сводный реестр и зачем в него включаться?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-chto-takoe-svodnyy-reestr.json",
+   "url": "/voprosy/chto-takoe-svodnyy-reestr-vopros/"
+  },
+  {
+   "id": "faq-vklyuchenie-v-svodnyy-reestr",
+   "name": "Как включиться в Сводный реестр?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-vklyuchenie-v-svodnyy-reestr.json",
+   "url": "/voprosy/kak-vklyuchitsya-v-svodnyy-reestr/"
+  },
+  {
+   "id": "faq-schet-otkryt-chto-dalshe",
+   "name": "Счёт открыт — что делать дальше?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-schet-otkryt-chto-dalshe.json",
+   "url": "/voprosy/schet-otkryt-chto-dalshe/"
+  },
+  {
+   "id": "faq-deneg-net-na-schete",
+   "name": "Заказчик говорит «оплатили», а денег на счёте нет — почему?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-deneg-net-na-schete.json",
+   "url": "/voprosy/pochemu-deneg-net-na-schete/"
+  },
+  {
+   "id": "faq-otlichie-ot-raschetnogo",
+   "name": "Чем казначейский счёт отличается от расчётного?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-otlichie-ot-raschetnogo.json",
+   "url": "/voprosy/chem-otlichaetsya-ot-raschetnogo/"
+  },
+  {
+   "id": "faq-kody-dlya-platezha",
+   "name": "Какие коды нужны для казначейского платежа?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kody-dlya-platezha.json",
+   "url": "/voprosy/kakie-kody-nuzhny-dlya-platezha/"
+  },
+  {
+   "id": "faq-kod-dlya-zarplaty",
+   "name": "Какой код использовать для выплаты зарплаты?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kod-dlya-zarplaty.json",
+   "url": "/voprosy/kakoy-kod-dlya-zarplaty/"
+  },
+  {
+   "id": "faq-provesti-platezh",
+   "name": "Как провести платёж с казначейского счёта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-provesti-platezh.json",
+   "url": "/voprosy/kak-provesti-platezh/"
+  },
+  {
+   "id": "faq-srok-platezha",
+   "name": "Сколько идёт платёж с казначейского счёта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-srok-platezha.json",
+   "url": "/voprosy/skolko-idet-platezh/"
+  },
+  {
+   "id": "faq-igk-v-platezhe",
+   "name": "Нужно ли указывать ИГК в каждом платеже?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-igk-v-platezhe.json",
+   "url": "/voprosy/nuzhen-li-igk-v-kazhdom-platezhe/"
+  },
+  {
+   "id": "faq-oplata-postavshchiku",
+   "name": "Как оплатить поставщику с лицевого счёта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-oplata-postavshchiku.json",
+   "url": "/voprosy/kak-oplatit-postavshchiku/"
+  },
+  {
+   "id": "faq-zarplata-s-ks",
+   "name": "Как платить зарплату с казначейского счёта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-zarplata-s-ks.json",
+   "url": "/voprosy/kak-platit-zarplatu-s-ks/"
+  },
+  {
+   "id": "faq-platezh-visit",
+   "name": "Платёж «висит» несколько дней — что делать?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-platezh-visit.json",
+   "url": "/voprosy/platezh-visit-chto-delat/"
+  },
+  {
+   "id": "faq-vyvod-na-raschetnyy",
+   "name": "Как вывести деньги с казначейского счёта на расчётный?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-vyvod-na-raschetnyy.json",
+   "url": "/voprosy/kak-vyvesti-dengi-na-raschetnyy/"
+  },
+  {
+   "id": "faq-kogda-zabrat-pribyl",
+   "name": "Когда можно забрать прибыль по контракту?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kogda-zabrat-pribyl.json",
+   "url": "/voprosy/kogda-mozhno-zabrat-pribyl/"
+  },
+  {
+   "id": "faq-skolko-pribyli",
+   "name": "Сколько прибыли можно вывести с казначейского счёта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-skolko-pribyli.json",
+   "url": "/voprosy/skolko-pribyli-mozhno-vyvesti/"
+  },
+  {
+   "id": "faq-dokumenty-vozmeshcheniya",
+   "name": "Какие документы нужны для возмещения расходов?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-dokumenty-vozmeshcheniya.json",
+   "url": "/voprosy/kakie-dokumenty-dlya-vozmeshcheniya/"
+  },
+  {
+   "id": "faq-skolko-dney-proveryaet-ufk",
+   "name": "Сколько дней УФК проверяет платёж?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-skolko-dney-proveryaet-ufk.json",
+   "url": "/voprosy/skolko-dney-proveryaet-ufk/"
+  },
+  {
+   "id": "faq-chto-proveryaet-kaznacheystvo",
+   "name": "Что именно проверяет казначейство в платеже?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-chto-proveryaet-kaznacheystvo.json",
+   "url": "/voprosy/chto-proveryaet-kaznacheystvo/"
+  },
+  {
+   "id": "faq-chto-takoe-dokumenty-osnovaniya",
+   "name": "Что такое документы-основания?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-chto-takoe-dokumenty-osnovaniya.json",
+   "url": "/voprosy/chto-takoe-dokumenty-osnovaniya-vopros/"
+  },
+  {
+   "id": "faq-kak-izmenit-svedeniya",
+   "name": "Как изменить утверждённые Сведения?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kak-izmenit-svedeniya.json",
+   "url": "/voprosy/kak-izmenit-svedeniya/"
+  },
+  {
+   "id": "faq-pochemu-vernuli-platezh",
+   "name": "Почему УФК вернуло платёж?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-pochemu-vernuli-platezh.json",
+   "url": "/voprosy/pochemu-ufk-vernulo-platezh/"
+  },
+  {
+   "id": "faq-deystviya-pri-vozvrate",
+   "name": "Казначейство вернуло платёж — что делать?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-deystviya-pri-vozvrate.json",
+   "url": "/voprosy/chto-delat-pri-vozvrate-platezha/"
+  },
+  {
+   "id": "faq-ispravit-igk",
+   "name": "Ошибка в ИГК — как исправить платёж?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-ispravit-igk.json",
+   "url": "/voprosy/oshibka-v-igk-kak-ispravit/"
+  },
+  {
+   "id": "faq-ispravit-naznachenie",
+   "name": "Неверное назначение платежа — как исправить?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-ispravit-naznachenie.json",
+   "url": "/voprosy/nevernoe-naznachenie-kak-ispravit/"
+  },
+  {
+   "id": "faq-vozvrat-iz-za-koda",
+   "name": "Вернули платёж из-за кода — что делать?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-vozvrat-iz-za-koda.json",
+   "url": "/voprosy/vernuli-iz-za-koda/"
+  },
+  {
+   "id": "faq-zaderzhka-platezha",
+   "name": "УФК задерживает платёж сверх срока — что делать?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-zaderzhka-platezha.json",
+   "url": "/voprosy/ufk-zaderzhivaet-platezh-vopros/"
+  },
+  {
+   "id": "faq-blokirovka-scheta",
+   "name": "Заблокировали операции по счёту — что делать?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-blokirovka-scheta.json",
+   "url": "/voprosy/zablokirovali-schet-chto-delat/"
+  },
+  {
+   "id": "faq-nevyyasnennye",
+   "name": "Деньги зависли на невыясненных — как вернуть?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-nevyyasnennye.json",
+   "url": "/voprosy/dengi-zavisli-na-nevyyasnennykh/"
+  },
+  {
+   "id": "faq-komu-poruchit",
+   "name": "Кому поручить решение проблем с казначейством?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-komu-poruchit.json",
+   "url": "/voprosy/komu-poruchit-reshenie-problem/"
+  },
+  {
+   "id": "faq-zayavlenie-0531368",
+   "name": "Как заполнить заявление по форме 0531368?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-zayavlenie-0531368.json",
+   "url": "/voprosy/kak-zapolnit-zayavlenie-0531368/"
+  },
+  {
+   "id": "faq-kartochka-0531753-zapolnenie",
+   "name": "Как заполнить карточку образцов подписей (0531753)?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kartochka-0531753-zapolnenie.json",
+   "url": "/voprosy/kak-zapolnit-kartochku-0531753/"
+  },
+  {
+   "id": "faq-proverka-pered-podachey",
+   "name": "Как проверить документы перед подачей в УФК?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-proverka-pered-podachey.json",
+   "url": "/voprosy/proverka-dokumentov-pered-podachey/"
+  },
+  {
+   "id": "faq-registratsiya-v-eb",
+   "name": "Как зарегистрироваться в «Электронном бюджете»?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-registratsiya-v-eb.json",
+   "url": "/voprosy/kak-zaregistrirovatsya-v-eb/"
+  },
+  {
+   "id": "faq-rabochee-mesto-eb",
+   "name": "Как настроить рабочее место для «Электронного бюджета»?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-rabochee-mesto-eb.json",
+   "url": "/voprosy/chto-nuzhno-dlya-rabochego-mesta/"
+  },
+  {
+   "id": "faq-kazna-ili-bank-goz",
+   "name": "Казначейское или банковское сопровождение — что будет по контракту ГОЗ?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kazna-ili-bank-goz.json",
+   "url": "/voprosy/kazna-ili-bank-po-goz/"
+  },
+  {
+   "id": "faq-chto-takoe-otdelnyy-schet",
+   "name": "Что такое отдельный счёт по 275-ФЗ?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-chto-takoe-otdelnyy-schet.json",
+   "url": "/voprosy/chto-takoe-otdelnyy-schet-vopros/"
+  },
+  {
+   "id": "faq-bank-dlya-goz",
+   "name": "В каком банке открывать отдельный счёт по ГОЗ?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-bank-dlya-goz.json",
+   "url": "/voprosy/kakoy-bank-dlya-goz/"
+  },
+  {
+   "id": "faq-igk-goz-vs-44fz",
+   "name": "Чем ИГК по ГОЗ отличается от ИГК по 44-ФЗ?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-igk-goz-vs-44fz.json",
+   "url": "/voprosy/igk-po-goz-otlichiya/"
+  },
+  {
+   "id": "faq-kto-vedet-razdelnyy-uchet",
+   "name": "Кто обязан вести раздельный учёт?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kto-vedet-razdelnyy-uchet.json",
+   "url": "/voprosy/kto-obyazan-vesti-razdelnyy-uchet/"
+  },
+  {
+   "id": "faq-chto-proveryaet-voenpred",
+   "name": "Что проверяет военное представительство?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-chto-proveryaet-voenpred.json",
+   "url": "/voprosy/chto-proveryaet-voenpred/"
+  },
+  {
+   "id": "faq-otchetnost-goz-girbo",
+   "name": "Какую отчётность исполнители ГОЗ сдают в ГИРБО?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-otchetnost-goz-girbo.json",
+   "url": "/voprosy/otchetnost-goz-v-girbo/"
+  },
+  {
+   "id": "faq-otkrytie-scheta-subsidiya",
+   "name": "Как открыть лицевой счёт для субсидии?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-otkrytie-scheta-subsidiya.json",
+   "url": "/voprosy/kak-otkryt-schet-dlya-subsidii/"
+  },
+  {
+   "id": "faq-ufk-ne-soglasuet-subsidiyu",
+   "name": "Почему УФК не согласует расходы по субсидии?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-ufk-ne-soglasuet-subsidiyu.json",
+   "url": "/voprosy/soglasovanie-raskhodov-po-subsidii/"
+  },
+  {
+   "id": "faq-razdelenie-subsidii-i-svoih",
+   "name": "Как разделять субсидию и собственные средства?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-razdelenie-subsidii-i-svoih.json",
+   "url": "/voprosy/sobstvennye-sredstva-i-subsidiya/"
+  },
+  {
+   "id": "faq-svedeniya-po-subsidii",
+   "name": "Нужны ли Сведения по субсидии и кто их утверждает?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-svedeniya-po-subsidii.json",
+   "url": "/voprosy/svedeniya-po-subsidii/"
+  },
+  {
+   "id": "faq-nedostizhenie-pokazateley",
+   "name": "Не достигли показателей по субсидии — что будет?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-nedostizhenie-pokazateley.json",
+   "url": "/voprosy/ne-dostigli-pokazateley/"
+  },
+  {
+   "id": "faq-vozvrat-subsidii",
+   "name": "Когда придётся вернуть субсидию?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-vozvrat-subsidii.json",
+   "url": "/voprosy/vozvrat-subsidii-kogda/"
+  },
+  {
+   "id": "faq-ostatok-subsidii",
+   "name": "Что делать с неиспользованным остатком субсидии?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-ostatok-subsidii.json",
+   "url": "/voprosy/ostatok-subsidii-chto-delat/"
+  },
+  {
+   "id": "faq-ks-menyaetsya-kazhdyy-god",
+   "name": "Правда ли, что условия КС меняются каждый год?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-ks-menyaetsya-kazhdyy-god.json",
+   "url": "/voprosy/ks-menyaetsya-kazhdyy-god/"
+  },
+  {
+   "id": "faq-kak-ponyat-est-li-ks",
+   "name": "Как понять, есть ли КС в моём контракте?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kak-ponyat-est-li-ks.json",
+   "url": "/voprosy/kak-ponyat-est-li-ks-v-kontrakte/"
+  },
+  {
+   "id": "faq-ks-po-223-fz",
+   "name": "Когда договор по 223-ФЗ попадает под КС?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-ks-po-223-fz.json",
+   "url": "/voprosy/ks-po-223-fz-kogda/"
+  },
+  {
+   "id": "faq-stoimost-soprovozhdeniya",
+   "name": "Сколько стоит казначейское сопровождение под ключ?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-stoimost-soprovozhdeniya.json",
+   "url": "/voprosy/skolko-stoit-soprovozhdenie/"
+  },
+  {
+   "id": "faq-stoimost-otkrytiya-scheta",
+   "name": "Сколько стоит открытие счёта под ключ?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-stoimost-otkrytiya-scheta.json",
+   "url": "/voprosy/skolko-stoit-otkrytie-pod-klyuch/"
+  },
+  {
+   "id": "faq-srok-podklyucheniya",
+   "name": "Как быстро вы подключаетесь к проекту?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-srok-podklyucheniya.json",
+   "url": "/voprosy/kak-bystro-podklyuchaetes/"
+  },
+  {
+   "id": "faq-srochnye-sluchai",
+   "name": "Берёте ли срочные случаи — заблокированные платежи?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-srochnye-sluchai.json",
+   "url": "/voprosy/berete-li-srochnye-slucai/"
+  },
+  {
+   "id": "faq-vygoda-autsorsinga",
+   "name": "Выгоден ли аутсорсинг казначейского сопровождения?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-vygoda-autsorsinga.json",
+   "url": "/voprosy/autsorsing-ks-vygodno-li/"
+  },
+  {
+   "id": "faq-bukhgalter-vs-autsorsing",
+   "name": "Справится ли штатный бухгалтер с КС?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-bukhgalter-vs-autsorsing.json",
+   "url": "/voprosy/svoy-bukhgalter-ili-autsorsing/"
+  },
+  {
+   "id": "faq-zona-klienta-pri-autsorsinge",
+   "name": "Что при аутсорсинге остаётся на стороне клиента?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-zona-klienta-pri-autsorsinge.json",
+   "url": "/voprosy/chto-ostaetsya-na-nashey-storone/"
+  },
+  {
+   "id": "faq-proverka-do-podpisaniya",
+   "name": "Что проверить до подписания контракта с КС?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-proverka-do-podpisaniya.json",
+   "url": "/voprosy/chek-list-pered-kontraktom/"
+  },
+  {
+   "id": "hub-zakony",
+   "name": "Законодательство",
+   "type": [
+    "hub"
+   ],
+   "api": "/entity/hub-zakony.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
+   "id": "tool-proverka-komplekta",
+   "name": "Проверка комплекта документов",
+   "type": [
+    "tool"
+   ],
+   "api": "/entity/tool-proverka-komplekta.json",
+   "url": "/instrumenty/proverka-komplekta-dokumentov/"
+  },
+  {
+   "id": "tool-proverka-goz",
+   "name": "Проверка обязанностей по ГОЗ",
+   "type": [
+    "tool"
+   ],
+   "api": "/entity/tool-proverka-goz.json",
+   "url": "/instrumenty/proverka-goz/"
+  },
+  {
+   "id": "tool-generator-chek-lista",
+   "name": "Генератор чек-листа",
+   "type": [
+    "tool"
+   ],
+   "api": "/entity/tool-generator-chek-lista.json",
+   "url": "/instrumenty/generator-chek-lista/"
+  },
+  {
+   "id": "law-223-фз",
+   "name": "223-ФЗ",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-223-фз.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
+   "id": "faq-kto-otkryvaet-schet",
+   "name": "Кто открывает лицевой счёт — заказчик или исполнитель?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kto-otkryvaet-schet.json",
+   "url": "/voprosy/kto-otkryvaet-litsevoy-schet/"
+  },
+  {
+   "id": "faq-otkrytie-bez-kontrakta",
+   "name": "Можно ли открыть казначейский счёт без подписанного контракта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-otkrytie-bez-kontrakta.json",
+   "url": "/voprosy/mozhno-li-otkryt-bez-kontrakta/"
+  },
+  {
+   "id": "faq-stoimost-otkrytiya",
+   "name": "Сколько стоит открытие казначейского счёта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-stoimost-otkrytiya.json",
+   "url": "/voprosy/skolko-stoit-otkrytie-scheta/"
+  },
+  {
+   "id": "faq-zayavlenie-cherez-giis",
+   "name": "Как подать заявление на счёт через ГИИС «Электронный бюджет»?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-zayavlenie-cherez-giis.json",
+   "url": "/voprosy/otkryt-schet-cherez-giis/"
+  },
+  {
+   "id": "faq-otkrytie-na-bumage",
+   "name": "Можно ли открыть счёт по бумажному заявлению?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-otkrytie-na-bumage.json",
+   "url": "/voprosy/otkryt-schet-na-bumage/"
+  },
+  {
+   "id": "faq-zachem-rezervirovat",
+   "name": "Зачем резервировать счёт заранее?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-zachem-rezervirovat.json",
+   "url": "/voprosy/zachem-rezervirovat-schet/"
+  },
+  {
+   "id": "faq-kak-uznat-ufk",
+   "name": "Как узнать своё УФК для открытия счёта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kak-uznat-ufk.json",
+   "url": "/voprosy/kak-uznat-svoyo-ufk/"
+  },
+  {
+   "id": "faq-ufk-neskolko-regionov",
+   "name": "В какое УФК подавать заявление, если контрактов несколько регионов?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-ufk-neskolko-regionov.json",
+   "url": "/voprosy/v-kakoe-ufk-podavat-zayavlenie/"
+  },
+  {
+   "id": "faq-otkrytie-scheta-ip",
+   "name": "Как ИП открыть казначейский счёт?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-otkrytie-scheta-ip.json",
+   "url": "/voprosy/otkrytie-scheta-dlya-ip/"
+  },
+  {
+   "id": "faq-dolgo-ne-otkryvayut",
+   "name": "Почему долго не открывают казначейский счёт?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-dolgo-ne-otkryvayut.json",
+   "url": "/voprosy/pochemu-dolgo-ne-otkryvayut-schet/"
+  },
+  {
+   "id": "faq-otkaz-v-otkrytii",
+   "name": "Отказали в открытии счёта — что делать?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-otkaz-v-otkrytii.json",
+   "url": "/voprosy/otkazali-v-otkrytii-chto-delat/"
+  },
+  {
+   "id": "faq-uskorit-otkrytie",
+   "name": "Можно ли ускорить открытие казначейского счёта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-uskorit-otkrytie.json",
+   "url": "/voprosy/mozhno-li-uskorit-otkrytie/"
+  },
+  {
+   "id": "faq-rekvizity-scheta",
+   "name": "Как получить реквизиты открытого лицевого счёта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-rekvizity-scheta.json",
+   "url": "/voprosy/kak-poluchit-rekvizity-scheta/"
+  },
+  {
+   "id": "faq-kak-zakryt-schet",
+   "name": "Как закрыть казначейский счёт после контракта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kak-zakryt-schet.json",
+   "url": "/voprosy/kak-zakryt-kaznacheyskiy-schet/"
+  },
+  {
+   "id": "faq-nuzhno-li-zakryvat-schet",
+   "name": "Обязательно ли закрывать счёт после исполнения контракта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-nuzhno-li-zakryvat-schet.json",
+   "url": "/voprosy/nuzhno-li-zakryvat-schet/"
+  },
+  {
+   "id": "faq-ostatok-pri-zakrytii",
+   "name": "Что делать с остатком на счёте при закрытии?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-ostatok-pri-zakrytii.json",
+   "url": "/voprosy/chto-delat-s-ostatkom-na-schete/"
+  },
+  {
+   "id": "faq-pereoformlenie-scheta",
+   "name": "Как переоформить лицевой счёт при смене наименования?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-pereoformlenie-scheta.json",
+   "url": "/voprosy/kak-pereoformit-schet/"
+  },
+  {
+   "id": "faq-smena-direktora",
+   "name": "Сменился директор — что менять в казначействе?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-smena-direktora.json",
+   "url": "/voprosy/smena-direktora-chto-menyat/"
+  },
+  {
+   "id": "faq-uznat-ostatok",
+   "name": "Как узнать остаток на казначейском счёте?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-uznat-ostatok.json",
+   "url": "/voprosy/kak-uznat-ostatok-na-schete/"
+  },
+  {
+   "id": "faq-poluchit-vypisku",
+   "name": "Как получить выписку по лицевому счёту?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-poluchit-vypisku.json",
+   "url": "/voprosy/kak-poluchit-vypisku/"
+  },
+  {
+   "id": "faq-limit-na-schete",
+   "name": "Что такое лимит на КС-счёте и как он формируется?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-limit-na-schete.json",
+   "url": "/voprosy/chto-takoe-limit-na-schete/"
+  },
+  {
+   "id": "faq-kod-napravleniya",
+   "name": "Что такое код направления расходования?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kod-napravleniya.json",
+   "url": "/voprosy/chto-takoe-kod-napravleniya/"
+  },
+  {
+   "id": "faq-gde-vzyat-kody",
+   "name": "Где взять коды направлений расходования?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-gde-vzyat-kody.json",
+   "url": "/voprosy/gde-vzyat-kody-rashodovaniya/"
+  },
+  {
+   "id": "faq-kod-dlya-nalogov",
+   "name": "Каким кодом платить налоги с лицевого счёта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kod-dlya-nalogov.json",
+   "url": "/voprosy/kakoy-kod-dlya-nalogov/"
+  },
+  {
+   "id": "faq-kod-dlya-materialov",
+   "name": "Какой код для оплаты материалов и услуг?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kod-dlya-materialov.json",
+   "url": "/voprosy/kakoy-kod-dlya-materialov/"
+  },
+  {
+   "id": "faq-kody-9xxx",
+   "name": "Что такое коды 9XXX и когда их применять?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kody-9xxx.json",
+   "url": "/voprosy/chto-takoe-kody-9xxx-vopros/"
+  },
+  {
+   "id": "faq-kod-vyvoda-pribyli",
+   "name": "Каким кодом выводится прибыль на расчётный счёт?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kod-vyvoda-pribyli.json",
+   "url": "/voprosy/kod-dlya-vyvoda-pribyli/"
+  },
+  {
+   "id": "faq-nepravilnyy-kod",
+   "name": "Указал неправильный код — что будет с платежом?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-nepravilnyy-kod.json",
+   "url": "/voprosy/nepravilnyy-kod-chto-budet/"
+  },
+  {
+   "id": "faq-kod-tselevykh-sredstv",
+   "name": "Что такое код целевых средств?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kod-tselevykh-sredstv.json",
+   "url": "/voprosy/chto-takoe-kod-tselevykh-sredstv-vopros/"
+  },
+  {
+   "id": "faq-kody-ks-vs-kbk",
+   "name": "Чем коды казначейского сопровождения отличаются от КБК?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kody-ks-vs-kbk.json",
+   "url": "/voprosy/chem-kod-otlichaetsya-ot-kbk/"
+  },
+  {
+   "id": "faq-kofk",
+   "name": "Что такое код по КОФК и где его взять?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kofk.json",
+   "url": "/voprosy/chto-takoe-kofk-vopros/"
+  },
+  {
+   "id": "faq-oktmo-v-zayavlenii",
+   "name": "Какой ОКТМО указывать в заявлении на счёт?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-oktmo-v-zayavlenii.json",
+   "url": "/voprosy/kakoy-oktmo-ukazyvat/"
+  },
+  {
+   "id": "faq-kod-71",
+   "name": "Что означает код 71 в номере счёта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kod-71.json",
+   "url": "/voprosy/chto-takoe-kod-71-vopros/"
+  },
+  {
+   "id": "faq-kody-postupleniy",
+   "name": "Что означают коды поступлений в выписке?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kody-postupleniy.json",
+   "url": "/voprosy/kod-postupleniy-v-vypiske/"
+  },
+  {
+   "id": "faq-chto-takoe-rkp",
+   "name": "Что такое распоряжение о казначейском платеже?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-chto-takoe-rkp.json",
+   "url": "/voprosy/chto-takoe-rkp-vopros/"
+  },
+  {
+   "id": "faq-platezhka-v-eb",
+   "name": "Как создать платёжное поручение в «Электронном бюджете»?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-platezhka-v-eb.json",
+   "url": "/voprosy/kak-sozdat-platezhku-v-eb/"
+  },
+  {
+   "id": "faq-nds-v-platezhke",
+   "name": "Как указать НДС в казначейской платёжке?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-nds-v-platezhke.json",
+   "url": "/voprosy/kak-ukazat-nds-v-platezhke/"
+  },
+  {
+   "id": "faq-platezh-bez-dogovora",
+   "name": "Можно ли оплатить счёт поставщика без договора?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-platezh-bez-dogovora.json",
+   "url": "/voprosy/mozhno-li-platit-bez-dogovora/"
+  },
+  {
+   "id": "faq-platezh-fizlitsu",
+   "name": "Можно ли платить физлицу с казначейского счёта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-platezh-fizlitsu.json",
+   "url": "/voprosy/mozhno-li-platit-fizlitsu/"
+  },
+  {
+   "id": "faq-nalogi-s-ks",
+   "name": "Как платить налоги и взносы с казначейского счёта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-nalogi-s-ks.json",
+   "url": "/voprosy/kak-platit-nalogi-s-ks/"
+  },
+  {
+   "id": "faq-nalichnye-s-ks",
+   "name": "Можно ли снять наличные с казначейского счёта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-nalichnye-s-ks.json",
+   "url": "/voprosy/mozhno-li-snyat-nalichnye/"
+  },
+  {
+   "id": "faq-oplata-arendy",
+   "name": "Можно ли оплатить аренду с казначейского счёта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-oplata-arendy.json",
+   "url": "/voprosy/mozhno-li-oplatit-arendu/"
+  },
+  {
+   "id": "faq-zaprety-rashodov",
+   "name": "На что нельзя тратить деньги с КС-счёта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-zaprety-rashodov.json",
+   "url": "/voprosy/na-chto-nelzya-tratit/"
+  },
+  {
+   "id": "faq-otzyv-platezha",
+   "name": "Как отозвать отправленный платёж?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-otzyv-platezha.json",
+   "url": "/voprosy/kak-otozvat-platezh/"
+  },
+  {
+   "id": "faq-perevod-mezhdu-schetami",
+   "name": "Можно ли перевести деньги между своими лицевыми счетами?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-perevod-mezhdu-schetami.json",
+   "url": "/voprosy/platezh-mezhdu-svoimi-schetami/"
+  },
+  {
+   "id": "faq-oplata-bez-akta",
+   "name": "Можно ли платить по счёту до подписания акта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-oplata-bez-akta.json",
+   "url": "/voprosy/oplata-po-schetu-bez-akta/"
+  },
+  {
+   "id": "faq-predoplata-postavshchiku",
+   "name": "Можно ли делать предоплату поставщику с КС-счёта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-predoplata-postavshchiku.json",
+   "url": "/voprosy/predoplata-postavshchiku/"
+  },
+  {
+   "id": "faq-oplata-subpodryadchiku",
+   "name": "Как оплатить субподрядчику при казначейском сопровождении?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-oplata-subpodryadchiku.json",
+   "url": "/voprosy/kak-oplatit-subpodryadchiku/"
+  },
+  {
+   "id": "faq-platezhi-v-vykhodnye",
+   "name": "Проводит ли казначейство платежи в выходные?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-platezhi-v-vykhodnye.json",
+   "url": "/voprosy/platezhi-v-vykhodnye/"
+  },
+  {
+   "id": "faq-limit-platezhey-v-den",
+   "name": "Есть ли ограничение на количество платежей в день?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-limit-platezhey-v-den.json",
+   "url": "/voprosy/skolko-platezhey-v-den/"
+  },
+  {
+   "id": "faq-oformit-perechislenie-pribyli",
+   "name": "Как оформить перечисление прибыли с КС-счёта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-oformit-perechislenie-pribyli.json",
+   "url": "/voprosy/kak-vyvesti-pribyl/"
+  },
+  {
+   "id": "faq-chto-takoe-vozmeshchenie",
+   "name": "Что такое возмещение произведённых расходов?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-chto-takoe-vozmeshchenie.json",
+   "url": "/voprosy/chto-takoe-vozmeshchenie-rashodov-vopros/"
+  },
+  {
+   "id": "faq-vozmeshchenie-proshlyy-period",
+   "name": "Можно ли возместить расходы за прошлый период?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-vozmeshchenie-proshlyy-period.json",
+   "url": "/voprosy/mozhno-li-vozmestit-zadnim-chislom/"
+  },
+  {
+   "id": "faq-vozmeshchenie-zarplaty",
+   "name": "Как возместить выплаченную зарплату?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-vozmeshchenie-zarplaty.json",
+   "url": "/voprosy/vozmeshchenie-zarplaty/"
+  },
+  {
+   "id": "faq-otkaz-v-vozmeshchenii",
+   "name": "Отказали в возмещении — что делать?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-otkaz-v-vozmeshchenii.json",
+   "url": "/voprosy/otkazali-v-vozmeshchenii/"
+  },
+  {
+   "id": "faq-avans-pri-ks",
+   "name": "Как работает аванс при казначейском сопровождении?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-avans-pri-ks.json",
+   "url": "/voprosy/chto-takoe-avans-pri-ks/"
+  },
+  {
+   "id": "faq-razmer-avansa",
+   "name": "Какой размер аванса бывает по госконтрактам?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-razmer-avansa.json",
+   "url": "/voprosy/kakoy-razmer-avansa/"
+  },
+  {
+   "id": "faq-poluchit-avans",
+   "name": "Как получить аванс на лицевой счёт?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-poluchit-avans.json",
+   "url": "/voprosy/kak-poluchit-avans/"
+  },
+  {
+   "id": "faq-trata-avansa",
+   "name": "На что можно тратить аванс?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-trata-avansa.json",
+   "url": "/voprosy/na-chto-mozhno-tratit-avans/"
+  },
+  {
+   "id": "faq-zachet-avansa",
+   "name": "Как засчитывается аванс при оплате этапов?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-zachet-avansa.json",
+   "url": "/voprosy/kak-zakryvaetsya-avans/"
+  },
+  {
+   "id": "faq-kogda-vozvrashchat-avans",
+   "name": "Когда нужно возвращать аванс?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kogda-vozvrashchat-avans.json",
+   "url": "/voprosy/nuzhno-li-vozvrashchat-avans/"
+  },
+  {
+   "id": "faq-vernut-avans",
+   "name": "Как вернуть неотработанный аванс заказчику?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-vernut-avans.json",
+   "url": "/voprosy/kak-vernut-avans/"
+  },
+  {
+   "id": "faq-avans-bez-scheta",
+   "name": "Дадут ли аванс без открытого лицевого счёта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-avans-bez-scheta.json",
+   "url": "/voprosy/avans-bez-kaznacheyskogo-scheta/"
+  },
+  {
+   "id": "faq-chto-takoe-koo",
+   "name": "Что такое казначейское обеспечение обязательств?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-chto-takoe-koo.json",
+   "url": "/voprosy/chto-takoe-koo-vopros/"
+  },
+  {
+   "id": "faq-uproshchennoe-perechislenie",
+   "name": "Что такое упрощённое перечисление средств?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-uproshchennoe-perechislenie.json",
+   "url": "/voprosy/uproshchennoe-perechislenie/"
+  },
+  {
+   "id": "faq-vyvesti-vsyu-summu",
+   "name": "Можно ли вывести всю сумму контракта на расчётный счёт?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-vyvesti-vsyu-summu.json",
+   "url": "/voprosy/mozhno-li-vyvesti-vsyu-summu/"
+  },
+  {
+   "id": "faq-ne-puskayut-pribyl",
+   "name": "Почему не пропускают платёж на вывод прибыли?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-ne-puskayut-pribyl.json",
+   "url": "/voprosy/pochemu-ne-puskayut-pribyl/"
+  },
+  {
+   "id": "faq-nakladnye-raskhody",
+   "name": "Как выводить накладные расходы?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-nakladnye-raskhody.json",
+   "url": "/voprosy/nakladnye-raskhody-kak-vyvesti/"
+  },
+  {
+   "id": "faq-rashody-do-otkrytiya",
+   "name": "Можно ли возместить расходы, понесённые до открытия счёта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-rashody-do-otkrytiya.json",
+   "url": "/voprosy/kompensatsiya-do-otkrytiya-scheta/"
+  },
+  {
+   "id": "faq-vyvod-ekonomii",
+   "name": "Можно ли забрать экономию по контракту?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-vyvod-ekonomii.json",
+   "url": "/voprosy/vyvod-ekonomii-po-kontraktu/"
+  },
+  {
+   "id": "faq-chto-takoe-sanktsionirovanie",
+   "name": "Что такое санкционирование платежа?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-chto-takoe-sanktsionirovanie.json",
+   "url": "/voprosy/chto-takoe-sanktsionirovanie-vopros/"
+  },
+  {
+   "id": "faq-osnovaniya-dlya-oplaty-uslug",
+   "name": "Какие документы-основания нужны для оплаты услуг?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-osnovaniya-dlya-oplaty-uslug.json",
+   "url": "/voprosy/kakie-osnovaniya-dlya-oplaty-uslug/"
+  },
+  {
+   "id": "faq-chto-takoe-svedeniya",
+   "name": "Что такое Сведения об операциях с целевыми средствами?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-chto-takoe-svedeniya.json",
+   "url": "/voprosy/chto-takoe-svedeniya-vopros/"
+  },
+  {
+   "id": "faq-zachem-nuzhny-svedeniya",
+   "name": "Зачем нужны Сведения и можно ли без них платить?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-zachem-nuzhny-svedeniya.json",
+   "url": "/voprosy/zachem-nuzhny-svedeniya/"
+  },
+  {
+   "id": "faq-kak-zapolnit-svedeniya",
+   "name": "Как заполнить Сведения (форма 0501213)?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kak-zapolnit-svedeniya.json",
+   "url": "/voprosy/kak-zapolnit-svedeniya/"
+  },
+  {
+   "id": "faq-kto-utverzhdaet-svedeniya",
+   "name": "Кто утверждает Сведения — заказчик или исполнитель?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kto-utverzhdaet-svedeniya.json",
+   "url": "/voprosy/kto-utverzhdaet-svedeniya/"
+  },
+  {
+   "id": "faq-zakazchik-ne-utverzhdaet-svedeniya",
+   "name": "Заказчик не утверждает Сведения — что делать?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-zakazchik-ne-utverzhdaet-svedeniya.json",
+   "url": "/voprosy/zakazchik-ne-utverzhdaet-svedeniya-vopros/"
+  },
+  {
+   "id": "faq-chto-takoe-kaznacheyskiy-monitoring",
+   "name": "Что такое казначейский мониторинг?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-chto-takoe-kaznacheyskiy-monitoring.json",
+   "url": "/voprosy/chto-takoe-kaznacheyskiy-monitoring-vopros/"
+  },
+  {
+   "id": "faq-pochemu-zaprosili-poyasneniya",
+   "name": "УФК запросило пояснения — это плохо?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-pochemu-zaprosili-poyasneniya.json",
+   "url": "/voprosy/pochemu-zaprosili-poyasneniya/"
+  },
+  {
+   "id": "faq-kak-otvetit-na-zapros-ufk",
+   "name": "Как ответить на запрос УФК?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kak-otvetit-na-zapros-ufk.json",
+   "url": "/voprosy/kak-otvetit-na-zapros-ufk/"
+  },
+  {
+   "id": "faq-mogut-li-zablokirovat-schet",
+   "name": "Могут ли заблокировать казначейский счёт?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-mogut-li-zablokirovat-schet.json",
+   "url": "/voprosy/mogut-li-zablokirovat-schet/"
+  },
+  {
+   "id": "faq-za-chto-priostanavlivayut-operatsii",
+   "name": "За что приостанавливают операции по счёту?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-za-chto-priostanavlivayut-operatsii.json",
+   "url": "/voprosy/za-chto-priostanavlivayut-operatsii/"
+  },
+  {
+   "id": "faq-kak-snyat-blokirovku",
+   "name": "Как снять приостановление операций?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kak-snyat-blokirovku.json",
+   "url": "/voprosy/kak-snyat-blokirovku/"
+  },
+  {
+   "id": "faq-chto-takoe-rasshirennoe-ks",
+   "name": "Что такое расширенное казначейское сопровождение?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-chto-takoe-rasshirennoe-ks.json",
+   "url": "/voprosy/chto-takoe-rasshirennoe-ks-vopros/"
+  },
+  {
+   "id": "faq-chto-takoe-raskhodnaya-deklaratsiya",
+   "name": "Что такое расходная декларация?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-chto-takoe-raskhodnaya-deklaratsiya.json",
+   "url": "/voprosy/chto-takoe-raskhodnaya-deklaratsiya-vopros/"
+  },
+  {
+   "id": "faq-proverka-tselevogo-ispolzovaniya",
+   "name": "Как проверяют целевое использование средств?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-proverka-tselevogo-ispolzovaniya.json",
+   "url": "/voprosy/proverka-tselevogo-ispolzovaniya/"
+  },
+  {
+   "id": "faq-chem-grozit-netselevoe",
+   "name": "Чем грозит нецелевое расходование?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-chem-grozit-netselevoe.json",
+   "url": "/voprosy/chem-grozit-netselevoe/"
+  },
+  {
+   "id": "faq-novyy-poryadok-sanktsionirovaniya",
+   "name": "Что меняется в порядке санкционирования с 2026 года?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-novyy-poryadok-sanktsionirovaniya.json",
+   "url": "/voprosy/novyy-poryadok-sanktsionirovaniya/"
+  },
+  {
+   "id": "faq-srochnyy-platezh-kak-uskorit",
+   "name": "Можно ли ускорить санкционирование срочного платежа?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-srochnyy-platezh-kak-uskorit.json",
+   "url": "/voprosy/srochnyy-platezh-kak-uskorit/"
+  },
+  {
+   "id": "faq-otvetstvennost-za-oshibki-v-platezhkah",
+   "name": "Кто отвечает за ошибки в платёжных документах?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-otvetstvennost-za-oshibki-v-platezhkah.json",
+   "url": "/voprosy/kto-neset-otvetstvennost-za-oshibki/"
+  },
+  {
+   "id": "faq-prichina-vozvrata-gde",
+   "name": "Как узнать точную причину возврата?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-prichina-vozvrata-gde.json",
+   "url": "/voprosy/kak-uznat-prichinu-vozvrata/"
+  },
+  {
+   "id": "faq-povtornyy-vozvrat",
+   "name": "Платёж возвращают повторно — в чём причина?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-povtornyy-vozvrat.json",
+   "url": "/voprosy/vozvrat-povtoryaetsya/"
+  },
+  {
+   "id": "faq-poteri-vremeni-vozvrat",
+   "name": "Сколько времени теряется при возврате платежа?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-poteri-vremeni-vozvrat.json",
+   "url": "/voprosy/skolko-vremeni-teryaetsya-pri-vozvrate/"
+  },
+  {
+   "id": "faq-otkaz-sanktsionirovanie",
+   "name": "УФК отказало в санкционировании — что делать?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-otkaz-sanktsionirovanie.json",
+   "url": "/voprosy/otkaz-v-sanktsionirovanii-chto-delat/"
+  },
+  {
+   "id": "faq-lishnie-dokumenty-ufk",
+   "name": "УФК требует документы, которых нет в контракте, — законно ли?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-lishnie-dokumenty-ufk.json",
+   "url": "/voprosy/ufk-trebuet-dokumenty-kotorykh-net/"
+  },
+  {
+   "id": "faq-osporit-otkaz",
+   "name": "Как оспорить отказ УФК?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-osporit-otkaz.json",
+   "url": "/voprosy/kak-osporit-otkaz-ufk/"
+  },
+  {
+   "id": "faq-vozvrat-kartochki",
+   "name": "Вернули карточку подписей — что исправить?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-vozvrat-kartochki.json",
+   "url": "/voprosy/vernuli-kartochku-podpisey-vopros/"
+  },
+  {
+   "id": "faq-vozvrat-zayavleniya",
+   "name": "Вернули заявление на открытие счёта — почему?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-vozvrat-zayavleniya.json",
+   "url": "/voprosy/vernuli-zayavlenie-na-schet/"
+  },
+  {
+   "id": "faq-ne-prinimayut-svedeniya",
+   "name": "УФК не принимает Сведения — какие причины?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-ne-prinimayut-svedeniya.json",
+   "url": "/voprosy/ne-prinimayut-svedeniya/"
+  },
+  {
+   "id": "faq-mchd-ne-prokhodit",
+   "name": "МЧД не проходит проверку — что делать?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-mchd-ne-prokhodit.json",
+   "url": "/voprosy/mchd-ne-prokhodit-vopros/"
+  },
+  {
+   "id": "faq-ecp-ne-podkhodit",
+   "name": "Система не принимает ЭЦП — как решить?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-ecp-ne-podkhodit.json",
+   "url": "/voprosy/ecp-ne-podkhodit-vopros/"
+  },
+  {
+   "id": "faq-vkhod-v-eb",
+   "name": "Не могу войти в «Электронный бюджет» — что проверить?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-vkhod-v-eb.json",
+   "url": "/voprosy/ne-mogu-voyti-v-eb/"
+  },
+  {
+   "id": "faq-zakazchik-zaderzhivaet",
+   "name": "Заказчик задерживает оплату на лицевой счёт — что делать?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-zakazchik-zaderzhivaet.json",
+   "url": "/voprosy/zakazchik-ne-platit-na-ks/"
+  },
+  {
+   "id": "faq-sryv-srokov",
+   "name": "Из-за казначейства срываются сроки контракта — как защититься?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-sryv-srokov.json",
+   "url": "/voprosy/sorvali-srok-iz-za-kaznacheystva/"
+  },
+  {
+   "id": "faq-shtrafy-ks",
+   "name": "Какие штрафы бывают при казначейском сопровождении?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-shtrafy-ks.json",
+   "url": "/voprosy/shtraf-za-narushenie-ks/"
+  },
+  {
+   "id": "faq-zhaloba-na-ufk",
+   "name": "Куда жаловаться на действия УФК?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-zhaloba-na-ufk.json",
+   "url": "/voprosy/kuda-zhalovatsya-na-ufk/"
+  },
+  {
+   "id": "faq-dokumenty-ks-spisok",
+   "name": "Какие документы нужны для казначейского сопровождения?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-dokumenty-ks-spisok.json",
+   "url": "/voprosy/kakie-dokumenty-nuzhny-dlya-ks/"
+  },
+  {
+   "id": "faq-gde-skachat-formy",
+   "name": "Где скачать официальные формы документов для УФК?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-gde-skachat-formy.json",
+   "url": "/voprosy/gde-skachat-formy-dokumentov/"
+  },
+  {
+   "id": "faq-kto-podpisyvaet-zayavlenie",
+   "name": "Кто подписывает заявление на открытие счёта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kto-podpisyvaet-zayavlenie.json",
+   "url": "/voprosy/kto-podpisyvaet-zayavlenie/"
+  },
+  {
+   "id": "faq-kartochka-podpisey-chto-eto",
+   "name": "Что такое карточка образцов подписей?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kartochka-podpisey-chto-eto.json",
+   "url": "/voprosy/chto-takoe-kartochka-podpisey-vopros/"
+  },
+  {
+   "id": "faq-kartochka-zaverenie",
+   "name": "Как заверить карточку образцов подписей?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kartochka-zaverenie.json",
+   "url": "/voprosy/kak-zaverit-kartochku/"
+  },
+  {
+   "id": "faq-kartochka-bez-glavbukha",
+   "name": "Как оформить карточку, если нет главного бухгалтера?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kartochka-bez-glavbukha.json",
+   "url": "/voprosy/kartochka-bez-glavbukha/"
+  },
+  {
+   "id": "faq-kartochka-pereoformlenie",
+   "name": "Когда нужно переоформлять карточку подписей?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kartochka-pereoformlenie.json",
+   "url": "/voprosy/kogda-menyat-kartochku/"
+  },
+  {
+   "id": "faq-mchd-chto-eto",
+   "name": "Что такое МЧД и зачем она нужна?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-mchd-chto-eto.json",
+   "url": "/voprosy/chto-takoe-mchd-vopros/"
+  },
+  {
+   "id": "faq-mchd-vypusk",
+   "name": "Как выпустить МЧД для казначейства?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-mchd-vypusk.json",
+   "url": "/voprosy/kak-vypustit-mchd/"
+  },
+  {
+   "id": "faq-mchd-format",
+   "name": "Какой формат МЧД нужен для «Электронного бюджета»?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-mchd-format.json",
+   "url": "/voprosy/kakoy-format-mchd-nuzhen/"
+  },
+  {
+   "id": "faq-bumazhnaya-doverennost",
+   "name": "Нужна ли бумажная доверенность для УФК?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-bumazhnaya-doverennost.json",
+   "url": "/voprosy/nuzhna-li-bumazhnaya-doverennost/"
+  },
+  {
+   "id": "faq-doverennost-v-ufk-oformlenie",
+   "name": "Как оформить доверенность для подачи документов в УФК?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-doverennost-v-ufk-oformlenie.json",
+   "url": "/voprosy/kak-oformit-doverennost-v-ufk/"
+  },
+  {
+   "id": "faq-zakryvayushchie-dokumenty",
+   "name": "Какие закрывающие документы нужны для оплаты?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-zakryvayushchie-dokumenty.json",
+   "url": "/voprosy/kakie-akty-nuzhny-dlya-oplaty/"
+  },
+  {
+   "id": "faq-upd-vs-akt",
+   "name": "Чем УПД отличается от акта для казначейства?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-upd-vs-akt.json",
+   "url": "/voprosy/chem-upd-otlichaetsya-ot-akta/"
+  },
+  {
+   "id": "faq-ks2-ks3",
+   "name": "Когда нужны КС-2 и КС-3?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-ks2-ks3.json",
+   "url": "/voprosy/nuzhny-li-ks2-ks3/"
+  },
+  {
+   "id": "faq-oshibka-v-akte",
+   "name": "Ошибка в акте — примет ли его казначейство?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-oshibka-v-akte.json",
+   "url": "/voprosy/oshibka-v-akte-chto-delat/"
+  },
+  {
+   "id": "faq-poyasnenie-v-ufk",
+   "name": "Как написать пояснение в УФК?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-poyasnenie-v-ufk.json",
+   "url": "/voprosy/kak-napisat-poyasnenie-v-ufk/"
+  },
+  {
+   "id": "faq-zapros-v-ufk",
+   "name": "Как написать официальный запрос в УФК?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-zapros-v-ufk.json",
+   "url": "/voprosy/kak-napisat-zapros-v-ufk/"
+  },
+  {
+   "id": "faq-soprovoditelnoe-pismo",
+   "name": "Нужно ли сопроводительное письмо к документам?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-soprovoditelnoe-pismo.json",
+   "url": "/voprosy/nuzhno-li-soprovoditelnoe-pismo/"
+  },
+  {
+   "id": "faq-reestr-dokumentov",
+   "name": "Зачем вести реестр документов по контракту?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-reestr-dokumentov.json",
+   "url": "/voprosy/chto-takoe-opis-dokumentov-vopros/"
+  },
+  {
+   "id": "faq-khranenie-dokumentov",
+   "name": "Сколько хранить документы по контракту с КС?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-khranenie-dokumentov.json",
+   "url": "/voprosy/skolko-khranit-dokumenty/"
+  },
+  {
+   "id": "faq-elektronno-ili-bumaga",
+   "name": "Какие документы подаются электронно, а какие на бумаге?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-elektronno-ili-bumaga.json",
+   "url": "/voprosy/elektronnye-ili-bumazhnye/"
+  },
+  {
+   "id": "faq-chto-takoe-giis-eb",
+   "name": "Что такое ГИИС «Электронный бюджет»?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-chto-takoe-giis-eb.json",
+   "url": "/voprosy/chto-takoe-giis-eb-vopros/"
+  },
+  {
+   "id": "faq-srok-registratsii-v-eb",
+   "name": "Сколько занимает регистрация в ГИИС?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-srok-registratsii-v-eb.json",
+   "url": "/voprosy/skolko-zanimaet-registratsiya-v-eb/"
+  },
+  {
+   "id": "faq-vhod-v-lk-eb",
+   "name": "Как войти в личный кабинет «Электронного бюджета»?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-vhod-v-lk-eb.json",
+   "url": "/voprosy/kak-voyti-v-lichnyy-kabinet-eb/"
+  },
+  {
+   "id": "faq-ecp-dlya-eb",
+   "name": "Какая электронная подпись нужна для «Электронного бюджета»?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-ecp-dlya-eb.json",
+   "url": "/voprosy/kakaya-ecp-nuzhna-dlya-eb/"
+  },
+  {
+   "id": "faq-gde-poluchit-ecp",
+   "name": "Где получить ЭЦП руководителю?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-gde-poluchit-ecp.json",
+   "url": "/voprosy/gde-poluchit-ecp-rukovoditelyu/"
+  },
+  {
+   "id": "faq-ecp-sotrudnika",
+   "name": "Может ли сотрудник работать в ГИИС со своей подписью?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-ecp-sotrudnika.json",
+   "url": "/voprosy/ecp-sotrudnika-kak-rabotaet/"
+  },
+  {
+   "id": "faq-kontinent-tls",
+   "name": "Что такое Континент TLS и зачем он нужен?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kontinent-tls.json",
+   "url": "/voprosy/chto-takoe-kontinent-tls-vopros/"
+  },
+  {
+   "id": "faq-nuzhen-li-kriptopro",
+   "name": "Нужен ли КриптоПро CSP и какая версия?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-nuzhen-li-kriptopro.json",
+   "url": "/voprosy/nuzhen-li-kriptopro/"
+  },
+  {
+   "id": "faq-brauzer-dlya-eb",
+   "name": "Какой браузер использовать для «Электронного бюджета»?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-brauzer-dlya-eb.json",
+   "url": "/voprosy/brauzer-dlya-eb/"
+  },
+  {
+   "id": "faq-eb-ne-vidit-sertifikat",
+   "name": "«Электронный бюджет» не видит сертификат — что делать?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-eb-ne-vidit-sertifikat.json",
+   "url": "/voprosy/eb-ne-vidit-sertifikat/"
+  },
+  {
+   "id": "faq-oshibka-vkhoda-v-eb",
+   "name": "Ошибка при входе в ЭБ — как диагностировать?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-oshibka-vkhoda-v-eb.json",
+   "url": "/voprosy/oshibka-pri-vkhode-v-eb/"
+  },
+  {
+   "id": "faq-istek-sertifikat",
+   "name": "Истёк сертификат ЭЦП — как быстро восстановить работу?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-istek-sertifikat.json",
+   "url": "/voprosy/istek-sertifikat-chto-delat/"
+  },
+  {
+   "id": "faq-dobavit-sotrudnika-v-eb",
+   "name": "Как добавить сотрудника в «Электронный бюджет»?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-dobavit-sotrudnika-v-eb.json",
+   "url": "/voprosy/kak-dobavit-sotrudnika-v-eb/"
+  },
+  {
+   "id": "faq-nastroyka-polnomochiy",
+   "name": "Как назначить полномочия в ГИИС?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-nastroyka-polnomochiy.json",
+   "url": "/voprosy/kak-nastroit-polnomochiya/"
+  },
+  {
+   "id": "faq-otzyv-dostupa-sotrudnika",
+   "name": "Как отозвать доступ уволенного сотрудника?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-otzyv-dostupa-sotrudnika.json",
+   "url": "/voprosy/kak-otozvat-dostup-sotrudnika/"
+  },
+  {
+   "id": "faq-rabota-bez-mchd",
+   "name": "Можно ли работать в ГИИС без МЧД?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-rabota-bez-mchd.json",
+   "url": "/voprosy/mozhno-li-rabotat-bez-mchd/"
+  },
+  {
+   "id": "faq-srok-deystviya-mchd",
+   "name": "Сколько действует МЧД и как продлить?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-srok-deystviya-mchd.json",
+   "url": "/voprosy/skolko-deystvuet-mchd/"
+  },
+  {
+   "id": "faq-podpisanie-v-eb",
+   "name": "Как подписываются документы в «Электронном бюджете»?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-podpisanie-v-eb.json",
+   "url": "/voprosy/podpisanie-dokumentov-v-eb/"
+  },
+  {
+   "id": "faq-uvedomleniya-ufk-v-eb",
+   "name": "Где смотреть уведомления и протоколы УФК?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-uvedomleniya-ufk-v-eb.json",
+   "url": "/voprosy/gde-smotret-uvedomleniya-ufk/"
+  },
+  {
+   "id": "faq-chto-takoe-sufd",
+   "name": "Что такое СУФД и нужен ли он подрядчику?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-chto-takoe-sufd.json",
+   "url": "/voprosy/chto-takoe-sufd-vopros/"
+  },
+  {
+   "id": "faq-eb-ne-rabotaet",
+   "name": "«Электронный бюджет» не работает — где проверить и что делать?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-eb-ne-rabotaet.json",
+   "url": "/voprosy/eb-ne-rabotaet-segodnya/"
+  },
+  {
+   "id": "faq-smena-rukovoditelya-eb",
+   "name": "Сменился руководитель — как перенастроить доступ в ЭБ?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-smena-rukovoditelya-eb.json",
+   "url": "/voprosy/smena-rukovoditelya-dostup-eb/"
+  },
+  {
+   "id": "faq-autsorsing-eb",
+   "name": "Можно ли поручить работу в ГИИС на аутсорс?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-autsorsing-eb.json",
+   "url": "/voprosy/autsorsing-raboty-v-eb/"
+  },
+  {
+   "id": "faq-chto-takoe-goz",
+   "name": "Что такое гособоронзаказ простыми словами?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-chto-takoe-goz.json",
+   "url": "/voprosy/chto-takoe-goz-vopros/"
+  },
+  {
+   "id": "faq-ks-goz-otlichiya",
+   "name": "Чем казначейское сопровождение ГОЗ отличается от обычного?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-ks-goz-otlichiya.json",
+   "url": "/voprosy/chem-ks-goz-otlichaetsya/"
+  },
+  {
+   "id": "faq-chto-takoe-razdelnyy-uchet",
+   "name": "Что такое раздельный учёт по ГОЗ?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-chto-takoe-razdelnyy-uchet.json",
+   "url": "/voprosy/chto-takoe-razdelnyy-uchet-vopros/"
+  },
+  {
+   "id": "faq-ru-po-44fz",
+   "name": "Нужен ли раздельный учёт по контрактам 44-ФЗ?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-ru-po-44fz.json",
+   "url": "/voprosy/nuzhen-li-ru-po-44fz/"
+  },
+  {
+   "id": "faq-raspredelenie-nakladnykh",
+   "name": "Как распределять накладные расходы в раздельном учёте?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-raspredelenie-nakladnykh.json",
+   "url": "/voprosy/kak-raspredelyat-nakladnye/"
+  },
+  {
+   "id": "faq-chto-takoe-prim-1",
+   "name": "Что такое форма «Прим-1» и кто её запрашивает?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-chto-takoe-prim-1.json",
+   "url": "/voprosy/chto-takoe-prim-1-vopros/"
+  },
+  {
+   "id": "faq-vidy-tsen-goz",
+   "name": "Какие виды цен бывают в контрактах ГОЗ?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-vidy-tsen-goz.json",
+   "url": "/voprosy/kakie-tseny-v-goz/"
+  },
+  {
+   "id": "faq-pravilo-20-1",
+   "name": "Что такое правило «20+1» в ГОЗ?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-pravilo-20-1.json",
+   "url": "/voprosy/chto-takoe-pravilo-20-1/"
+  },
+  {
+   "id": "faq-obosnovanie-tseny-goz",
+   "name": "Как обосновать цену контракта ГОЗ?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-obosnovanie-tseny-goz.json",
+   "url": "/voprosy/kak-obosnovat-tsenu-goz/"
+  },
+  {
+   "id": "faq-perevod-tseny-v-fiksirovannuyu",
+   "name": "Как перевести ориентировочную цену в фиксированную?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-perevod-tseny-v-fiksirovannuyu.json",
+   "url": "/voprosy/kak-perevesti-tsenu-v-fiksirovannuyu/"
+  },
+  {
+   "id": "faq-skolko-pribyli-goz",
+   "name": "Сколько можно заработать на контракте ГОЗ?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-skolko-pribyli-goz.json",
+   "url": "/voprosy/skolko-pribyli-v-goz/"
+  },
+  {
+   "id": "faq-vyvod-pribyli-goz",
+   "name": "Как вывести прибыль по контракту ГОЗ?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-vyvod-pribyli-goz.json",
+   "url": "/voprosy/kak-vyvesti-pribyl-goz/"
+  },
+  {
+   "id": "faq-soprovozhdenie-goz-pod-klyuch",
+   "name": "Кто поможет с сопровождением контракта ГОЗ?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-soprovozhdenie-goz-pod-klyuch.json",
+   "url": "/voprosy/soprovozhdenie-goz-pod-klyuch/"
+  },
+  {
+   "id": "faq-ks-subsidiy-vs-kontrakta",
+   "name": "Чем КС субсидии отличается от КС контракта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-ks-subsidiy-vs-kontrakta.json",
+   "url": "/voprosy/chem-ks-subsidiy-otlichaetsya/"
+  },
+  {
+   "id": "faq-soglashenie-o-subsidii",
+   "name": "Что такое соглашение о предоставлении субсидии?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-soglashenie-o-subsidii.json",
+   "url": "/voprosy/chto-takoe-soglashenie-o-subsidii-vopros/"
+  },
+  {
+   "id": "faq-identifikator-soglasheniya",
+   "name": "Что такое идентификатор соглашения?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-identifikator-soglasheniya.json",
+   "url": "/voprosy/chto-takoe-identifikator-soglasheniya-vopros/"
+  },
+  {
+   "id": "faq-zarplata-iz-subsidii",
+   "name": "Можно ли платить зарплату из субсидии?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-zarplata-iz-subsidii.json",
+   "url": "/voprosy/mozhno-li-zarplata-iz-subsidii/"
+  },
+  {
+   "id": "faq-oborudovanie-iz-subsidii",
+   "name": "Можно ли купить оборудование за счёт субсидии?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-oborudovanie-iz-subsidii.json",
+   "url": "/voprosy/mozhno-li-oborudovanie-iz-subsidii/"
+  },
+  {
+   "id": "faq-grant-pod-ks",
+   "name": "Грант попадает под казначейское сопровождение?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-grant-pod-ks.json",
+   "url": "/voprosy/grant-pod-ks/"
+  },
+  {
+   "id": "faq-regionalnaya-subsidiya",
+   "name": "Региональная субсидия — какие правила КС действуют?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-regionalnaya-subsidiya.json",
+   "url": "/voprosy/subsidiya-regionalnaya-pravila/"
+  },
+  {
+   "id": "faq-prodlenie-sroka-subsidii",
+   "name": "Можно ли продлить срок использования субсидии?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-prodlenie-sroka-subsidii.json",
+   "url": "/voprosy/prodlenie-sroka-subsidii/"
+  },
+  {
+   "id": "faq-neskolko-subsidiy-schet",
+   "name": "Несколько субсидий — нужен ли счёт на каждую?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-neskolko-subsidiy-schet.json",
+   "url": "/voprosy/neskolko-subsidiy-odin-schet/"
+  },
+  {
+   "id": "faq-pomoshch-s-subsidiey",
+   "name": "Кто поможет вести субсидию под казначейским сопровождением?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-pomoshch-s-subsidiey.json",
+   "url": "/voprosy/pomoshch-s-subsidiey/"
+  },
+  {
+   "id": "faq-otchetnost-pri-ks",
+   "name": "Какая отчётность появляется при казначейском сопровождении?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-otchetnost-pri-ks.json",
+   "url": "/voprosy/kakaya-otchetnost-pri-ks/"
+  },
+  {
+   "id": "faq-buhuchet-operatsiy-ls",
+   "name": "Как отражать операции по лицевому счёту в бухучёте?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-buhuchet-operatsiy-ls.json",
+   "url": "/voprosy/kak-uchityvat-operatsii-po-ls/"
+  },
+  {
+   "id": "faq-kalendar-dedlaynov-ks",
+   "name": "Какие регулярные дедлайны у подрядчика при КС?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kalendar-dedlaynov-ks.json",
+   "url": "/voprosy/kalendar-otchetnosti-ks/"
+  },
+  {
+   "id": "faq-podgotovka-k-proverke",
+   "name": "Как подготовиться к проверке казначейства?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-podgotovka-k-proverke.json",
+   "url": "/voprosy/audit-pered-proverkoy/"
+  },
+  {
+   "id": "faq-pamyatka-buhgalteru-ks",
+   "name": "Что бухгалтеру нужно знать про казначейский счёт?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-pamyatka-buhgalteru-ks.json",
+   "url": "/voprosy/dokumenty-dlya-buhgaltera/"
+  },
+  {
+   "id": "faq-ks-dlya-municipalnykh",
+   "name": "Действует ли КС для муниципальных контрактов?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-ks-dlya-municipalnykh.json",
+   "url": "/voprosy/ks-dlya-municipalnykh/"
+  },
+  {
+   "id": "faq-edinstvennyy-postavshchik-ks",
+   "name": "Попадают ли под КС контракты с единственным поставщиком?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-edinstvennyy-postavshchik-ks.json",
+   "url": "/voprosy/edinstvennyy-postavshchik-ks/"
+  },
+  {
+   "id": "faq-kakoy-zakon-reguliruet-ks",
+   "name": "Какой закон регулирует казначейское сопровождение?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kakoy-zakon-reguliruet-ks.json",
+   "url": "/voprosy/kakoy-zakon-reguliruet-ks/"
+  },
+  {
+   "id": "faq-bk-242",
+   "name": "Что говорят статьи 242.23–242.26 БК РФ?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-bk-242.json",
+   "url": "/voprosy/chto-takoe-bk-242/"
+  },
+  {
+   "id": "faq-prikaz-214n",
+   "name": "Что регулирует приказ Минфина № 214н?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-prikaz-214n.json",
+   "url": "/voprosy/chto-takoe-prikaz-214n-vopros/"
+  },
+  {
+   "id": "faq-prikaz-44n",
+   "name": "Что регулирует приказ ФК № 44н?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-prikaz-44n.json",
+   "url": "/voprosy/chto-takoe-prikaz-44n-vopros/"
+  },
+  {
+   "id": "faq-izmeneniya-sentyabr-2026",
+   "name": "Что меняется в КС с 1 сентября 2026 года?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-izmeneniya-sentyabr-2026.json",
+   "url": "/voprosy/chto-menyaetsya-s-sentyabrya-2026/"
+  },
+  {
+   "id": "faq-gde-sledit-za-izmeneniyami",
+   "name": "Где следить за изменениями правил КС?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-gde-sledit-za-izmeneniyami.json",
+   "url": "/voprosy/gde-sledit-za-izmeneniyami/"
+  },
+  {
+   "id": "faq-ks-vs-bankovskoe",
+   "name": "Чем казначейское сопровождение отличается от банковского?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-ks-vs-bankovskoe.json",
+   "url": "/voprosy/ks-i-bankovskoe-raznitsa-vopros/"
+  },
+  {
+   "id": "faq-narushenie-ks",
+   "name": "Что будет за нарушение правил казначейского сопровождения?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-narushenie-ks.json",
+   "url": "/voprosy/chto-budet-za-narushenie-ks/"
+  },
+  {
+   "id": "faq-ugolovnaya-otvetstvennost-ks",
+   "name": "Бывает ли уголовная ответственность при КС?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-ugolovnaya-otvetstvennost-ks.json",
+   "url": "/voprosy/ugolovnaya-otvetstvennost-ks/"
+  },
+  {
+   "id": "faq-otvetstvennost-direktora-ks",
+   "name": "Чем рискует директор при нарушениях КС?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-otvetstvennost-direktora-ks.json",
+   "url": "/voprosy/otvetstvennost-direktora-ks/"
+  },
+  {
+   "id": "faq-proverki-fas-goz",
+   "name": "Когда приходит ФАС по контрактам ГОЗ?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-proverki-fas-goz.json",
+   "url": "/voprosy/proverki-fas-po-goz/"
+  },
+  {
+   "id": "faq-srok-davnosti-ks",
+   "name": "Какой срок давности у нарушений при КС?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-srok-davnosti-ks.json",
+   "url": "/voprosy/srok-davnosti-narusheniy/"
+  },
+  {
+   "id": "faq-ks-eto-nadolgo",
+   "name": "Казначейское сопровождение — это временная мера?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-ks-eto-nadolgo.json",
+   "url": "/voprosy/ks-eto-nadolgo/"
+  },
+  {
+   "id": "faq-zachem-gosudarstvu-ks",
+   "name": "Зачем государству казначейское сопровождение?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-zachem-gosudarstvu-ks.json",
+   "url": "/voprosy/zachem-gosudarstvu-ks/"
+  },
+  {
+   "id": "faq-plyusy-ks-dlya-podryadchika",
+   "name": "Есть ли плюсы КС для подрядчика?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-plyusy-ks-dlya-podryadchika.json",
+   "url": "/voprosy/plyusy-ks-dlya-podryadchika/"
+  },
+  {
+   "id": "faq-faktory-tseny-soprovozhdeniya",
+   "name": "От чего зависит цена сопровождения?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-faktory-tseny-soprovozhdeniya.json",
+   "url": "/voprosy/ot-chego-zavisit-tsena-uslug/"
+  },
+  {
+   "id": "faq-kak-zakazat-uslugu",
+   "name": "Как заказать сопровождение контракта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kak-zakazat-uslugu.json",
+   "url": "/voprosy/kak-zakazat-soprovozhdenie/"
+  },
+  {
+   "id": "faq-geografiya-raboty",
+   "name": "Работаете ли вы по всей России?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-geografiya-raboty.json",
+   "url": "/voprosy/rabotaete-li-po-vsey-rossii/"
+  },
+  {
+   "id": "faq-polnomochiya-dlya-raboty",
+   "name": "Какие полномочия нужны вам для работы?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-polnomochiya-dlya-raboty.json",
+   "url": "/voprosy/nuzhna-li-doverennost-dlya-vas/"
+  },
+  {
+   "id": "faq-garantii",
+   "name": "Какие гарантии вы даёте?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-garantii.json",
+   "url": "/voprosy/garantii-rezultata/"
+  },
+  {
+   "id": "faq-konfidentsialnost",
+   "name": "Как обеспечивается конфиденциальность данных?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-konfidentsialnost.json",
+   "url": "/voprosy/konfidentsialnost-dannykh/"
+  },
+  {
+   "id": "faq-otraslevoy-opyt",
+   "name": "В каких отраслях у вас есть опыт?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-otraslevoy-opyt.json",
+   "url": "/voprosy/opyt-v-kakikh-otraslyakh/"
+  },
+  {
+   "id": "faq-opyt-v-tsifrakh",
+   "name": "Сколько контрактов вы уже сопровождали?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-opyt-v-tsifrakh.json",
+   "url": "/voprosy/skolko-kontraktov-vedete/"
+  },
+  {
+   "id": "faq-besplatnaya-diagnostika",
+   "name": "Есть ли бесплатная консультация?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-besplatnaya-diagnostika.json",
+   "url": "/voprosy/besplatnaya-konsultatsiya/"
+  },
+  {
+   "id": "faq-kalkulyator-stoimosti",
+   "name": "Как посчитать стоимость сопровождения самому?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kalkulyator-stoimosti.json",
+   "url": "/voprosy/kalkulyator-stoimosti-ks/"
+  },
+  {
+   "id": "faq-tolko-otkrytie-scheta",
+   "name": "Можно заказать только открытие счёта, без ведения?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-tolko-otkrytie-scheta.json",
+   "url": "/voprosy/pomozhete-li-tolko-s-otkrytiem/"
+  },
+  {
+   "id": "faq-ip-i-malyy-biznes",
+   "name": "Работаете ли с ИП и малым бизнесом?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-ip-i-malyy-biznes.json",
+   "url": "/voprosy/rabota-s-ip-i-malym-biznesom/"
+  },
+  {
+   "id": "faq-ks-prostymi-slovami",
+   "name": "Что такое казначейское сопровождение простыми словами?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-ks-prostymi-slovami.json",
+   "url": "/voprosy/ks-prostymi-slovami/"
+  },
+  {
+   "id": "faq-vremya-na-protsedury",
+   "name": "Сколько времени уходит на казначейские процедуры?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-vremya-na-protsedury.json",
+   "url": "/voprosy/skolko-vremeni-zanimaet-ks/"
+  },
+  {
+   "id": "faq-gde-uchitsya-ks",
+   "name": "Где научиться работать с казначейским сопровождением?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-gde-uchitsya-ks.json",
+   "url": "/voprosy/gde-uchitsya-rabote-s-ks/"
+  },
+  {
+   "id": "hub-ru",
+   "name": "Раздельный учёт",
+   "type": [
+    "hub"
+   ],
+   "api": "/entity/hub-ru.json",
+   "url": "/razdelnyj-uchet/"
+  },
+  {
+   "id": "hub-giis",
+   "name": "ГИИС ЭБ и доступ",
+   "type": [
+    "hub"
+   ],
+   "api": "/entity/hub-giis.json",
+   "url": "/giis/"
+  },
+  {
+   "id": "tool-proverka-ks",
+   "name": "Проверка необходимости КС",
+   "type": [
+    "tool"
+   ],
+   "api": "/entity/tool-proverka-ks.json",
+   "url": "/instrumenty/proverka-neobhodimosti-ks/"
+  },
+  {
+   "id": "tool-proverka-subsidii",
+   "name": "Проверка субсидии",
+   "type": [
+    "tool"
+   ],
+   "api": "/entity/tool-proverka-subsidii.json",
+   "url": "/instrumenty/proverka-subsidii/"
+  }
+ ]
+}

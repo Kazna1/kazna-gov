@@ -1,0 +1,163 @@
+{
+ "project": "kazna-gov.ru Knowledge Graph",
+ "version": "2026-07-09",
+ "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
+ "docs": "https://kazna-gov.ru/api/",
+ "nodes": 485,
+ "edges": 4025,
+ "byType": {
+  "error": 13,
+  "document": 19,
+  "term": 120,
+  "faq": 300,
+  "hub": 10,
+  "tool": 10,
+  "service": 6,
+  "law": 16
+ },
+ "relTypes": {
+  "SEE_ERROR": 377,
+  "MONETIZED_BY": 433,
+  "RELATED_DOC": 55,
+  "RELATED_TERM": 401,
+  "REQUIRES_DOC": 454,
+  "REGULATED_BY": 426,
+  "USES_TERM": 1266,
+  "DIAGNOSED_BY": 23,
+  "RELATED_HUB": 28,
+  "SEE_FAQ": 121,
+  "PART_OF_TOPIC": 22,
+  "PREVENTS": 49,
+  "RESOLVES_TO": 33,
+  "SERVICE_REQUIRES": 19,
+  "SERVICE_SOLVES": 18,
+  "SAME_CLUSTER": 300
+ },
+ "topAuthority": [
+  {
+   "id": "service-conduct",
+   "in": 273
+  },
+  {
+   "id": "err-otkaz-sanktsionirovaniya",
+   "in": 98
+  },
+  {
+   "id": "svedeniya-ssu",
+   "in": 98
+  },
+  {
+   "id": "service-open",
+   "in": 94
+  },
+  {
+   "id": "doverennost-mchd",
+   "in": 86
+  },
+  {
+   "id": "sanktsionirovanie",
+   "in": 79
+  },
+  {
+   "id": "law-приказ-минфина-214н",
+   "in": 77
+  },
+  {
+   "id": "law-бк-рф-ст-2422224226",
+   "in": 75
+  },
+  {
+   "id": "ls-71",
+   "in": 73
+  },
+  {
+   "id": "zayavlenie-ls",
+   "in": 68
+  },
+  {
+   "id": "kartochka-podpisey",
+   "in": 63
+  },
+  {
+   "id": "rkp",
+   "in": 61
+  },
+  {
+   "id": "err-necelevoe",
+   "in": 56
+  },
+  {
+   "id": "err-zatyanulos-otkrytie",
+   "in": 56
+  },
+  {
+   "id": "giis-eb",
+   "in": 55
+  }
+ ],
+ "multiLayerConcepts": [
+  {
+   "id": "err-otkaz-sanktsionirovaniya",
+   "type": [
+    "error",
+    "term"
+   ]
+  },
+  {
+   "id": "svedeniya-ssu",
+   "type": [
+    "document",
+    "term"
+   ]
+  },
+  {
+   "id": "doverennost-mchd",
+   "type": [
+    "document",
+    "term"
+   ]
+  },
+  {
+   "id": "zayavlenie-ls",
+   "type": [
+    "document",
+    "term"
+   ]
+  },
+  {
+   "id": "kartochka-podpisey",
+   "type": [
+    "document",
+    "term"
+   ]
+  },
+  {
+   "id": "rkp",
+   "type": [
+    "document",
+    "term"
+   ]
+  },
+  {
+   "id": "err-necelevoe",
+   "type": [
+    "error",
+    "term"
+   ]
+  },
+  {
+   "id": "reestr-dokumentov",
+   "type": [
+    "document",
+    "term"
+   ]
+  },
+  {
+   "id": "otzyv-rasporyazheniya",
+   "type": [
+    "document",
+    "term"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1000 @@
+{
+ "project": "kazna-gov.ru Knowledge Graph",
+ "version": "2026-07-09",
+ "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
+ "docs": "https://kazna-gov.ru/api/",
+ "count": 19,
+ "entities": [
+  {
+   "id": "svedeniya-ssu",
+   "type": [
+    "document",
+    "term"
+   ],
+   "name": "Сведения 0501213",
+   "aliases": [
+    "ссу",
+    "сведения",
+    "сведения 0501213",
+    "сведения об операциях с целевыми средствами",
+    "Форма по ОКУД 0501213"
+   ],
+   "summary": "Сведения об операциях с целевыми средствами (форма по ОКУД 0501213) — плановый документ, в пределах которого УФК санкционирует каждый платёж по контракту. Подаются и утверждаются в ГИИС «Электронный бюджет»; структура расходов задаётся укрупнёнными кодами направлений, итог равен сумме контракта. С 2026 года срыв срока утверждения — штраф по ст. 15.49 КоАП.",
+   "citation": "Рабочая заготовка для подготовки Сведений до внесения в ГИИС: структура расходов по кодам, суммы, контрольные равенства — чтобы форма прошла утверждение с первого раза.",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/svedeniya-ob-operatsiyah-0501213/",
+     "title": "Сведения 0501213"
+    },
+    {
+     "layer": "term",
+     "url": "/glossary/svedeniya-0501213/",
+     "title": "Сведения об операциях (ССУ)"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "komplekt-otkrytie",
+     "poyasnenie-ufk",
+     "doverennost-mchd"
+    ],
+    "SEE_ERROR": [
+     "err-svedeniya-otkaz",
+     "err-kod-napravleniya",
+     "err-otkaz-sanktsionirovaniya"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/svedeniya-ob-operatsiyah-s-tselevymi-sredstvami",
+     "/blog/codes",
+     "/blog/kalendar-otchetnosti-podryadchika-ks-2026"
+    ],
+    "RELATED_TERM": [
+     "sanktsionirovanie",
+     "kod-tselevyh",
+     "zakazchik",
+     "tselevye-sredstva"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-svedeniya-ssu",
+   "scores": {
+    "authority": 100,
+    "coverage": 83,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "doverennost-mchd",
+   "type": [
+    "document",
+    "term"
+   ],
+   "name": "Доверенность в УФК",
+   "aliases": [
+    "машиночитаемая доверенность",
+    "мчд 003",
+    "формат 003",
+    "электронная доверенность",
+    "Машиночитаемая доверенность"
+   ],
+   "summary": "Бумажная доверенность нужна для очных действий представителя в УФК: подача/получение документов, представление интересов. Для электронного подписания в ГИИС «Электронный бюджет» бумажная доверенность не работает — там требуется машиночитаемая доверенность (МЧД) формата 003. В доверенности указываются точные полномочия, срок и данные представителя.",
+   "citation": "Легитимизирует представителя для бумажного/очного контура взаимодействия с казначейством.",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/doverennost-v-ufk/",
+     "title": "Доверенность в УФК"
+    },
+    {
+     "layer": "document",
+     "url": "/obraztsy/mchd-dlya-kaznacheystva/",
+     "title": "МЧД для казначейства"
+    },
+    {
+     "layer": "term",
+     "url": "/glossary/mchd/",
+     "title": "МЧД"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "kartochka-podpisey",
+     "soprovoditelnoe-pismo"
+    ],
+    "SEE_ERROR": [
+     "err-mchd",
+     "err-zatyanulos-otkrytie",
+     "err-ecp",
+     "err-svedeniya-otkaz"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/doverennost-dlya-ufk",
+     "/blog/upolnomochennye-litsa-po-ks-schetu-kto-i-otvetstvennost",
+     "/novosti/mchd-novye-trebovaniya-2026/",
+     "/blog/sertifikat-ecp-kaznacheystva"
+    ],
+    "RELATED_TERM": [
+     "ecp",
+     "upolnomochennye",
+     "giis-eb"
+    ],
+    "REGULATED_BY": [
+     "law-приказ-минцифры-1001"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-doverennost-mchd",
+   "scores": {
+    "authority": 95,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "zayavlenie-ls",
+   "type": [
+    "document",
+    "term"
+   ],
+   "name": "Заявление на открытие ЛС",
+   "aliases": [
+    "заявление 0531368",
+    "заявление на открытие счета",
+    "Форма по КФД 0531368"
+   ],
+   "summary": "Заявление на открытие лицевого счёта подаёт исполнитель госконтракта в свой территориальный орган Федерального казначейства (ТОФК) — как правило, через ГИИС «Электронный бюджет». В заявлении указываются реквизиты организации, контракта (включая ИГК) и тип счёта (71 — участника казначейского сопровождения). При корректном комплекте счёт открывается за несколько рабочих дней.",
+   "citation": "Основной документ, инициирующий открытие лицевого счёта участника казначейского сопровождения в УФК. Без него невозможно получить аванс и вести расчёты по контракту с КС.",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/zayavlenie-na-otkrytie-litsevogo-scheta/",
+     "title": "Заявление на открытие ЛС"
+    },
+    {
+     "layer": "term",
+     "url": "/glossary/zayavlenie-na-otkrytie-ls/",
+     "title": "Заявление на открытие лицевого счёта"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "kartochka-podpisey",
+     "komplekt-otkrytie",
+     "soprovoditelnoe-pismo",
+     "doverennost-mchd"
+    ],
+    "SEE_ERROR": [
+     "err-zatyanulos-otkrytie",
+     "err-kartochka",
+     "err-svodnyy-reestr"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/zayavlenie-na-otkrytie-kaznacheyskogo-scheta",
+     "/blog/how_to_open/",
+     "/blog/kak-otkryt-licevoy-schet-71"
+    ],
+    "RELATED_TERM": [
+     "ls-71",
+     "svodnyy-reestr",
+     "kartochka-podpisey",
+     "igk"
+    ],
+    "REQUIRES_DOC": [
+     "chek-list-otkrytie"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-zayavlenie-ls",
+   "scores": {
+    "authority": 75,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "kartochka-podpisey",
+   "type": [
+    "document",
+    "term"
+   ],
+   "name": "Карточка образцов подписей",
+   "aliases": [
+    "карточка подписей",
+    "карточка 0531753",
+    "Форма по КФД 0531753"
+   ],
+   "summary": "Карточка образцов подписей (форма по КФД 0531753, приложение № 2 к приказу ФК № 21н) фиксирует, кто вправе подписывать распоряжения о совершении казначейских платежей по лицевому счёту: лица с правом первой подписи (руководитель и уполномоченные) и второй подписи (главный бухгалтер и уполномоченные). Если бухгалтера нет, в карточке указывается «Бухгалтерский работник в штате не предусмотрен». Полномочия и подлинность подписей удостоверяются на оборотной стороне; карточка должна точно совпадать с ЕГРЮЛ, при смене подписантов переоформляется незамедлительно.",
+   "citation": "Легитимизирует подписантов по лицевому счёту: без актуальной карточки УФК не принимает документы.",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/kartochka-obraztsov-podpisey/",
+     "title": "Карточка образцов подписей"
+    },
+    {
+     "layer": "term",
+     "url": "/glossary/kartochka-obraztsov-podpisey-termin/",
+     "title": "Карточка образцов подписей"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "zayavlenie-ls",
+     "doverennost-mchd",
+     "komplekt-otkrytie"
+    ],
+    "SEE_ERROR": [
+     "err-kartochka",
+     "err-zatyanulos-otkrytie"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kartochka-obraztsov-podpisey-ufk",
+     "/blog/upolnomochennye-litsa-po-ks-schetu-kto-i-otvetstvennost",
+     "/blog/smena-rukovoditelya-pri-deystvuyushchem-ks-schete"
+    ],
+    "RELATED_TERM": [
+     "upolnomochennye",
+     "zayavlenie-ls",
+     "prikaz-21n"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-kartochka-podpisey",
+   "scores": {
+    "authority": 69,
+    "coverage": 83,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "rkp",
+   "type": [
+    "document",
+    "term"
+   ],
+   "name": "Платёжка при КС (образец)",
+   "aliases": [
+    "ркп",
+    "распоряжение о платеже",
+    "заявка на кассовый расход",
+    "РКП"
+   ],
+   "summary": "Платёж при казначейском сопровождении оформляется распоряжением в ГИИС «Электронный бюджет» c обязательными элементами: лицевой счёт 71 плательщика, ИГК, код направления расходования и структурированное назначение (код; ИГК; предмет и документ-основание; НДС). Образец показывает корректное заполнение ключевых полей и три готовые формулировки назначения.",
+   "citation": "Эталон заполнения платёжных реквизитов и назначения — против самых частых причин возвратов.",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/platezhnoe-poruchenie-obrazec/",
+     "title": "Платёжка при КС (образец)"
+    },
+    {
+     "layer": "term",
+     "url": "/glossary/rasporyazhenie-o-platezhe/",
+     "title": "Распоряжение о совершении казначейского платежа"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "svedeniya-ssu",
+     "otzyv-rasporyazheniya",
+     "chek-list-dokumenty"
+    ],
+    "SEE_ERROR": [
+     "err-naznachenie",
+     "err-kod-napravleniya",
+     "err-igk"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/naznachenie-platezha-kaznachejstvo/",
+     "/blog/izmeneniya-platezhek-kaznachejstvo-2026/",
+     "/blog/codes",
+     "/blog/izmeneniya-platezhek-kaznachejstvo-2026"
+    ],
+    "RELATED_TERM": [
+     "platezh",
+     "naznachenie",
+     "otzyv-rasporyazheniya",
+     "giis-eb"
+    ],
+    "REQUIRES_DOC": [
+     "otzyv-rasporyazheniya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-rkp",
+   "scores": {
+    "authority": 67,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "reestr-dokumentov",
+   "type": [
+    "document",
+    "term"
+   ],
+   "name": "Реестр документов",
+   "aliases": [
+    "опись документов",
+    "реестр документов по контракту",
+    "досье контракта"
+   ],
+   "summary": "Реестр документов по контракту — сводная таблица всего документооборота с УФК: распоряжения, Сведения, пояснения, письма — с датами подачи, статусами и сроками ответа. Ведение реестра делает управляемым главный риск КС — потерю контроля над циклами «подача-возврат-повтор» при нескольких параллельных операциях.",
+   "citation": "Операционный контроль документооборота: ничего не «висит» незамеченным, каждый возврат имеет владельца и срок.",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/reestr-dokumentov-po-kontraktu/",
+     "title": "Реестр документов"
+    },
+    {
+     "layer": "term",
+     "url": "/glossary/opis-dokumentov/",
+     "title": "Опись (реестр) документов"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "chek-list-dokumenty",
+     "komplekt-goz",
+     "komplekt-subsidii"
+    ],
+    "SEE_ERROR": [
+     "err-zatyanulos-otkrytie",
+     "err-otkaz-sanktsionirovaniya"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/sroki-rassmotreniya-dokumentov-v-ufk-tablitsa",
+     "/blog/kalendar-otchetnosti-podryadchika-ks-2026",
+     "/blog/dokumenty-dlya-kaznacheyskogo-soprovozhdeniya"
+    ],
+    "RELATED_TERM": [
+     "dokumenty-osnovaniya",
+     "kontrakt-44"
+    ],
+    "REQUIRES_DOC": [
+     "chek-list-dokumenty"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-reestr-dokumentov",
+   "scores": {
+    "authority": 46,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "poyasnenie-ufk",
+   "type": [
+    "document"
+   ],
+   "name": "Пояснение в УФК",
+   "aliases": [],
+   "summary": "Пояснение в УФК — сопроводительное обоснование нетиповой операции или ответ на замечание казначейства. Работающая структура: реквизиты контракта и счёта → суть операции → обоснование связи с исполнением контракта (со ссылкой на пункт контракта и Сведения) → перечень приложений. Подаётся через ГИИС «Электронный бюджет» вместе с документом, к которому относится.",
+   "citation": "Снимает вопросы УФК до отказа: объясняет целевой характер и основание операции, экономя цикл «отказ → исправление» (до 5 рабочих дней).",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/poyasnenie-v-ufk/",
+     "title": "Пояснение в УФК"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "poyasnenie-vozvrat",
+     "pismo-zapros",
+     "svedeniya-ssu"
+    ],
+    "SEE_ERROR": [
+     "err-otkaz-sanktsionirovaniya",
+     "err-necelevoe"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/sanktsionirovanie-operatsiy-kaznacheystvom",
+     "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-poyasnenie-ufk",
+   "scores": {
+    "authority": 44,
+    "coverage": 67,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "chek-list-otkrytie",
+   "type": [
+    "document"
+   ],
+   "name": "Чек-лист открытия счёта",
+   "aliases": [],
+   "summary": "Чек-лист открытия лицевого счёта сводит процесс к 14 проверяемым пунктам в четырёх блоках: готовность организации (Сводный реестр, ЕГРЮЛ), доступ (КЭП, МЧД, ГИИС, Континент TLS), комплект документов (заявление, карточка, контракт с ИГК) и подача с контролем сроков. Прохождение всех пунктов до подачи — то, что на практике даёт открытие за 2 рабочих дня.",
+   "citation": "Предполётная проверка: исключает типовые причины возвратов и затягивания до подачи комплекта.",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/chek-list-otkrytiya-scheta/",
+     "title": "Чек-лист открытия счёта"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "komplekt-otkrytie",
+     "zayavlenie-ls",
+     "chek-list-dokumenty"
+    ],
+    "SEE_ERROR": [
+     "err-zatyanulos-otkrytie",
+     "err-kartochka"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/how_to_open/",
+     "/blog/sroki-rassmotreniya-dokumentov-v-ufk-tablitsa"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-chek-list-otkrytie",
+   "scores": {
+    "authority": 42,
+    "coverage": 67,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "chek-list-dokumenty",
+   "type": [
+    "document"
+   ],
+   "name": "Чек-лист проверки документов",
+   "aliases": [],
+   "summary": "Перед подачей любого документа в УФК проверьте четыре зоны: реквизиты (ИГК, номер счёта, наименование по ЕГРЮЛ), полномочия подписанта (карточка, МЧД), содержательное соответствие (Сведения, коды, суммы, документы-основания) и техническую отправку в ГИИС. По статистике возвратов, 8 из 10 замечаний ловятся этой самопроверкой за 10 минут.",
+   "citation": "Единая предподача-проверка для распоряжений, Сведений, заявлений и писем — снижает возвраты и циклы исправлений.",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/chek-list-proverki-dokumentov/",
+     "title": "Чек-лист проверки документов"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "chek-list-otkrytie",
+     "svedeniya-ssu",
+     "poyasnenie-ufk"
+    ],
+    "SEE_ERROR": [
+     "err-otkaz-sanktsionirovaniya",
+     "err-naznachenie",
+     "err-svedeniya-otkaz"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/dokumenty-dlya-kaznacheyskogo-soprovozhdeniya",
+     "/blog/sanktsionirovanie-operatsiy-kaznacheystvom"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-chek-list-dokumenty",
+   "scores": {
+    "authority": 37,
+    "coverage": 67,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "pismo-zapros",
+   "type": [
+    "document"
+   ],
+   "name": "Письмо-запрос в УФК",
+   "aliases": [],
+   "summary": "Письмо-запрос в УФК применяется в трёх ситуациях: узнать статус рассмотрения документов, получить разъяснение основания отказа, зафиксировать нарушение регламентного срока (вежливая эскалация). Структура: реквизиты счёта и документа → вопрос по существу → ссылка на дату подачи и регламентный срок → просьба ответить с указанием контакта.",
+   "citation": "Переводит «висящие» вопросы в официальную плоскость с датами: после письменного запроса ответ обязаны дать в порядке работы с обращениями.",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/pismo-zapros-v-ufk/",
+     "title": "Письмо-запрос в УФК"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "soprovoditelnoe-pismo",
+     "poyasnenie-ufk"
+    ],
+    "SEE_ERROR": [
+     "err-zatyanulos-otkrytie",
+     "err-otkaz-sanktsionirovaniya"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/sroki-rassmotreniya-dokumentov-v-ufk-tablitsa"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-pismo-zapros",
+   "scores": {
+    "authority": 36,
+    "coverage": 67,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "prikaz-razdelnyy-uchet",
+   "type": [
+    "document"
+   ],
+   "name": "Приказ о раздельном учёте",
+   "aliases": [],
+   "summary": "Приказ об организации раздельного учёта — внутренний документ исполнителя ГОЗ, который вводит методику раздельного учёта по 275-ФЗ: аналитика затрат по каждому контракту (ИГК), база распределения накладных расходов, ответственные лица и формы регистров. Приказ плюс дополнение учётной политики — минимальный комплект, который проверяющие смотрят первым.",
+   "citation": "Документально фиксирует ведение раздельного учёта: без приказа и методики учёт считается неорганизованным даже при фактической аналитике.",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/prikaz-o-razdelnom-uchete-goz/",
+     "title": "Приказ о раздельном учёте"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "komplekt-goz",
+     "formulirovka-ks"
+    ],
+    "SEE_ERROR": [
+     "err-razdelnyy-uchet"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/razdelnyj-uchet-goz-polnyy-guide-2026",
+     "/blog/razdelnyy-uchet-po-44-fz-vs-275-fz-otlichiya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-prikaz-razdelnyy-uchet",
+   "scores": {
+    "authority": 30,
+    "coverage": 67,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "komplekt-otkrytie",
+   "type": [
+    "document"
+   ],
+   "name": "Комплект на открытие",
+   "aliases": [],
+   "summary": "Базовый комплект на открытие лицевого счёта: заявление, карточка образцов подписей с документами полномочий, копия контракта с ИГК, документы организации (по требованиям ТОФК). Опись фиксирует состав и количество листов — при возврате видно, что именно вернулось, а при затягивании — что и когда подано.",
+   "citation": "Дисциплинирует комплект и создаёт доказательную базу подачи (состав, дата).",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/komplekt-dokumentov-otkrytie/",
+     "title": "Комплект на открытие"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "zayavlenie-ls",
+     "kartochka-podpisey",
+     "chek-list-otkrytie",
+     "soprovoditelnoe-pismo"
+    ],
+    "SEE_ERROR": [
+     "err-zatyanulos-otkrytie"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/dokumenty-dlya-kaznacheyskogo-soprovozhdeniya",
+     "/blog/how_to_open/"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-komplekt-otkrytie",
+   "scores": {
+    "authority": 21,
+    "coverage": 67,
+    "connectivity": 83,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "komplekt-subsidii",
+   "type": [
+    "document"
+   ],
+   "name": "Комплект субсидий",
+   "aliases": [],
+   "summary": "Получателю субсидии на казначейском сопровождении нужно держать в порядке: соглашение о предоставлении субсидии со всеми изменениями, плановые документы (смета/план использования), Сведения, первичные документы по каждому платежу и отчётность об использовании. УФК сверяет каждый расход именно с соглашением, поэтому досье — рабочая необходимость.",
+   "citation": "Собирает «досье субсидии»: расходы защищаются соглашением и планом, отчётность собирается из готовых блоков.",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/komplekt-dokumentov-subsidii/",
+     "title": "Комплект субсидий"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "svedeniya-ssu",
+     "poyasnenie-ufk",
+     "reestr-dokumentov"
+    ],
+    "SEE_ERROR": [
+     "err-subsidiya-rashody",
+     "err-kod-napravleniya"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-komplekt-subsidii",
+   "scores": {
+    "authority": 19,
+    "coverage": 67,
+    "connectivity": 77,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "formulirovka-ks",
+   "type": [
+    "document"
+   ],
+   "name": "Формулировка КС в договор",
+   "aliases": [],
+   "summary": "Условие о казначейском сопровождении в договоре фиксирует: расчёты ведутся через лицевые счета в УФК, подрядчик/соисполнитель обязан открыть счёт и соблюдать режим целевых средств, платежи — после санкционирования. Формулировка нужна в контракте и в договорах с соисполнителями по цепочке кооперации; при её отсутствии — оформляется допсоглашением.",
+   "citation": "Синхронизирует договорную базу с режимом КС: без условия в договоре соисполнитель не обязан открывать счёт, и цепочка платежей рвётся.",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/formulirovka-ks-v-dogovor/",
+     "title": "Формулировка КС в договор"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "zayavlenie-ls",
+     "prikaz-razdelnyy-uchet"
+    ],
+    "SEE_ERROR": [
+     "err-otkaz-sanktsionirovaniya"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-v-dogovore",
+     "/blog/tsepochka-kaznacheyskogo-soprovozhdeniya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-formulirovka-ks",
+   "scores": {
+    "authority": 19,
+    "coverage": 67,
+    "connectivity": 70,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "komplekt-goz",
+   "type": [
+    "document"
+   ],
+   "name": "Комплект ГОЗ",
+   "aliases": [],
+   "summary": "Исполнителю ГОЗ помимо базового комплекта на открытие счёта нужны: контракт с ИГК, учётная политика с методикой раздельного учёта, регистры затрат по контракту, расшифровка структуры цены (Прим-1), документы кооперации. Опись помогает держать досье контракта готовым к запросу военного представительства и проверкам.",
+   "citation": "Формирует «досье исполнителя ГОЗ» — всё, что запросят ВП МО, заказчик или проверка, в одном реестре.",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/komplekt-dokumentov-goz/",
+     "title": "Комплект ГОЗ"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "prikaz-razdelnyy-uchet",
+     "svedeniya-ssu",
+     "reestr-dokumentov"
+    ],
+    "SEE_ERROR": [
+     "err-razdelnyy-uchet",
+     "err-necelevoe"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid",
+     "/blog/razdelnyj-uchet-goz-polnyy-guide-2026",
+     "/novosti/promezhutochnaya-otchetnost-goz-s-01-07-2026/"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-komplekt-goz",
+   "scores": {
+    "authority": 13,
+    "coverage": 67,
+    "connectivity": 60,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "otzyv-rasporyazheniya",
+   "type": [
+    "document",
+    "term"
+   ],
+   "name": "Отзыв распоряжения",
+   "aliases": [
+    "отозвать платежку",
+    "аннулирование распоряжения",
+    "запрос на аннулирование",
+    "Аннулирование РКП"
+   ],
+   "summary": "Ошибочное распоряжение о казначейском платеже можно отозвать, пока оно не исполнено (не санкционировано и не проведено): в ГИИС «Электронный бюджет» — штатной операцией отзыва, при недоступности — письменным обращением в ТОФК с реквизитами распоряжения и причиной отзыва. После исполнения платежа отзыв невозможен — только возврат средств от получателя.",
+   "citation": "Останавливает ошибочный платёж до исполнения — дешевле и быстрее, чем возврат средств от контрагента.",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/shablon-otzyva-rasporyazheniya/",
+     "title": "Отзыв распоряжения"
+    },
+    {
+     "layer": "term",
+     "url": "/glossary/otzyv-rasporyazheniya/",
+     "title": "Отзыв распоряжения"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "poyasnenie-vozvrat",
+     "pismo-zapros"
+    ],
+    "SEE_ERROR": [
+     "err-naznachenie",
+     "err-igk",
+     "err-kod-napravleniya"
+    ],
+    "MONETIZED_BY": [
+     "service-vosstanovlenie",
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/izmeneniya-platezhek-kaznachejstvo-2026/",
+     "/blog/vozvrat-platezha-kaznachejstvo-chto-delat/",
+     "/blog/kaznacheyskoe-soprovozhdenie-platezhey"
+    ],
+    "RELATED_TERM": [
+     "rkp",
+     "err-vozvrat-platezha"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-otzyv-rasporyazheniya",
+   "scores": {
+    "authority": 13,
+    "coverage": 83,
+    "connectivity": 73,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 73
+   }
+  },
+  {
+   "id": "poyasnenie-vozvrat",
+   "type": [
+    "document"
+   ],
+   "name": "Пояснение при возврате",
+   "aliases": [],
+   "summary": "После возврата платежа УФК повторную подачу ускоряет короткое пояснение: реквизиты отклонённого распоряжения, дословное основание отказа, что именно исправлено в новом распоряжении. Такой документ показывает специалисту казначейства, что замечание отработано, и снижает риск повторного отказа по тому же основанию.",
+   "citation": "Связывает отклонённый и новый платёж: фиксирует устранение конкретного замечания, ускоряя санкционирование повторной подачи.",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/poyasnenie-pri-vozvrate-platezha/",
+     "title": "Пояснение при возврате"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "poyasnenie-ufk",
+     "otzyv-rasporyazheniya"
+    ],
+    "SEE_ERROR": [
+     "err-otkaz-sanktsionirovaniya",
+     "err-igk",
+     "err-naznachenie"
+    ],
+    "MONETIZED_BY": [
+     "service-vosstanovlenie"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/vozvrat-platezha-kaznachejstvo-chto-delat/",
+     "/blog/naznachenie-platezha-kaznachejstvo/"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-poyasnenie-vozvrat",
+   "scores": {
+    "authority": 12,
+    "coverage": 67,
+    "connectivity": 57,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "soprovoditelnoe-pismo",
+   "type": [
+    "document"
+   ],
+   "name": "Сопроводительное письмо",
+   "aliases": [],
+   "summary": "Сопроводительное письмо оформляет передачу комплекта документов в УФК: кто передаёт, что именно (перечень с реквизитами и количеством листов), в связи с чем. Обязательные элементы — исходящий номер, дата, перечень приложений и контакты исполнителя. Письмо создаёт след передачи и упрощает диалог при замечаниях.",
+   "citation": "Формализует передачу документов и даёт точку отсчёта сроков; контакт исполнителя ускоряет снятие вопросов.",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/soprovoditelnoe-pismo-v-ufk/",
+     "title": "Сопроводительное письмо"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "komplekt-otkrytie",
+     "pismo-zapros",
+     "poyasnenie-ufk"
+    ],
+    "SEE_ERROR": [
+     "err-zatyanulos-otkrytie"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/dokumenty-dlya-kaznacheyskogo-soprovozhdeniya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-soprovoditelnoe-pismo",
+   "scores": {
+    "authority": 11,
+    "coverage": 67,
+    "connectivity": 50,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "zayavlenie-zakrytie",
+   "type": [
+    "document"
+   ],
+   "name": "Заявление на закрытие ЛС",
+   "aliases": [],
+   "summary": "Заявление на закрытие лицевого счёта подаётся в ТОФК после полного исполнения контракта: обязательства закрыты, отчётность сдана, остаток средств возвращён заказчику или перечислен на расчётный счёт в разрешённых случаях. До подачи убедитесь, что по счёту нет неисполненных распоряжений и незакрытых Сведений.",
+   "citation": "Официально прекращает обслуживание лицевого счёта после завершения контракта, снимая с организации обязанности по счёту.",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/zayavlenie-na-zakrytie-litsevogo-scheta/",
+     "title": "Заявление на закрытие ЛС"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "zayavlenie-ls",
+     "reestr-dokumentov",
+     "soprovoditelnoe-pismo"
+    ],
+    "SEE_ERROR": [
+     "err-otkaz-sanktsionirovaniya"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/zakrytie-kaznacheyskogo-scheta-posle-kontrakta",
+     "/blog/vozvrat-avansa-po-goskontraktu-kaznacheystvo"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-zayavlenie-zakrytie",
+   "scores": {
+    "authority": 7,
+    "coverage": 67,
+    "connectivity": 37,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 73
+   }
+  }
+ ]
+}

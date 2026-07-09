@@ -1,0 +1,3412 @@
+{
+ "project": "kazna-gov.ru Knowledge Graph",
+ "version": "2026-07-09",
+ "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
+ "docs": "https://kazna-gov.ru/api/",
+ "map": {
+  "err-igk": {
+   "name": "Ошибка в ИГК в платёжке",
+   "type": [
+    "error"
+   ],
+   "url": "/oshibki/oshibka-v-igk-platezh-ne-prohodit/"
+  },
+  "err-naznachenie": {
+   "name": "Неверное назначение платежа",
+   "type": [
+    "error"
+   ],
+   "url": "/oshibki/nevernoe-naznachenie-platezha/"
+  },
+  "err-kod-napravleniya": {
+   "name": "Неверный код направления",
+   "type": [
+    "error"
+   ],
+   "url": "/oshibki/nevernyy-kod-napravleniya-rashodov/"
+  },
+  "err-otkaz-sanktsionirovaniya": {
+   "name": "Отказ в санкционировании",
+   "type": [
+    "error",
+    "term"
+   ],
+   "url": "/oshibki/ufk-otkazalo-v-sanktsionirovanii/"
+  },
+  "err-necelevoe": {
+   "name": "Нецелевое расходование",
+   "type": [
+    "error",
+    "term"
+   ],
+   "url": "/oshibki/necelevoe-rashodovanie-sredstv/"
+  },
+  "err-svedeniya-otkaz": {
+   "name": "Не утверждают Сведения",
+   "type": [
+    "error"
+   ],
+   "url": "/oshibki/ufk-ne-utverzhdaet-svedeniya/"
+  },
+  "err-zatyanulos-otkrytie": {
+   "name": "Затянулось открытие счёта",
+   "type": [
+    "error"
+   ],
+   "url": "/oshibki/zatyanulos-otkrytie-scheta/"
+  },
+  "err-kartochka": {
+   "name": "Вернули карточку подписей",
+   "type": [
+    "error"
+   ],
+   "url": "/oshibki/ufk-vernulo-kartochku-podpisey/"
+  },
+  "err-ecp": {
+   "name": "ЭЦП не принимается",
+   "type": [
+    "error"
+   ],
+   "url": "/oshibki/ecp-ne-podhodit-dlya-kaznacheystva/"
+  },
+  "err-mchd": {
+   "name": "МЧД не проходит",
+   "type": [
+    "error"
+   ],
+   "url": "/oshibki/mchd-ne-prohodit-proverku/"
+  },
+  "err-razdelnyy-uchet": {
+   "name": "Нет раздельного учёта ГОЗ",
+   "type": [
+    "error"
+   ],
+   "url": "/oshibki/net-razdelnogo-ucheta-goz/"
+  },
+  "err-subsidiya-rashody": {
+   "name": "Не согласуют расходы субсидии",
+   "type": [
+    "error"
+   ],
+   "url": "/oshibki/ufk-ne-soglasuet-rashody-po-subsidii/"
+  },
+  "err-svodnyy-reestr": {
+   "name": "Нет в Сводном реестре",
+   "type": [
+    "error"
+   ],
+   "url": "/oshibki/net-v-svodnom-reestre/"
+  },
+  "zayavlenie-ls": {
+   "name": "Заявление на открытие ЛС",
+   "type": [
+    "document",
+    "term"
+   ],
+   "url": "/obraztsy/zayavlenie-na-otkrytie-litsevogo-scheta/"
+  },
+  "zayavlenie-zakrytie": {
+   "name": "Заявление на закрытие ЛС",
+   "type": [
+    "document"
+   ],
+   "url": "/obraztsy/zayavlenie-na-zakrytie-litsevogo-scheta/"
+  },
+  "kartochka-podpisey": {
+   "name": "Карточка образцов подписей",
+   "type": [
+    "document",
+    "term"
+   ],
+   "url": "/obraztsy/kartochka-obraztsov-podpisey/"
+  },
+  "svedeniya-ssu": {
+   "name": "Сведения 0501213",
+   "type": [
+    "document",
+    "term"
+   ],
+   "url": "/obraztsy/svedeniya-ob-operatsiyah-0501213/"
+  },
+  "poyasnenie-ufk": {
+   "name": "Пояснение в УФК",
+   "type": [
+    "document"
+   ],
+   "url": "/obraztsy/poyasnenie-v-ufk/"
+  },
+  "poyasnenie-vozvrat": {
+   "name": "Пояснение при возврате",
+   "type": [
+    "document"
+   ],
+   "url": "/obraztsy/poyasnenie-pri-vozvrate-platezha/"
+  },
+  "doverennost-mchd": {
+   "name": "Доверенность в УФК",
+   "type": [
+    "document",
+    "term"
+   ],
+   "url": "/obraztsy/doverennost-v-ufk/"
+  },
+  "chek-list-otkrytie": {
+   "name": "Чек-лист открытия счёта",
+   "type": [
+    "document"
+   ],
+   "url": "/obraztsy/chek-list-otkrytiya-scheta/"
+  },
+  "chek-list-dokumenty": {
+   "name": "Чек-лист проверки документов",
+   "type": [
+    "document"
+   ],
+   "url": "/obraztsy/chek-list-proverki-dokumentov/"
+  },
+  "komplekt-otkrytie": {
+   "name": "Комплект на открытие",
+   "type": [
+    "document"
+   ],
+   "url": "/obraztsy/komplekt-dokumentov-otkrytie/"
+  },
+  "komplekt-goz": {
+   "name": "Комплект ГОЗ",
+   "type": [
+    "document"
+   ],
+   "url": "/obraztsy/komplekt-dokumentov-goz/"
+  },
+  "komplekt-subsidii": {
+   "name": "Комплект субсидий",
+   "type": [
+    "document"
+   ],
+   "url": "/obraztsy/komplekt-dokumentov-subsidii/"
+  },
+  "soprovoditelnoe-pismo": {
+   "name": "Сопроводительное письмо",
+   "type": [
+    "document"
+   ],
+   "url": "/obraztsy/soprovoditelnoe-pismo-v-ufk/"
+  },
+  "pismo-zapros": {
+   "name": "Письмо-запрос в УФК",
+   "type": [
+    "document"
+   ],
+   "url": "/obraztsy/pismo-zapros-v-ufk/"
+  },
+  "formulirovka-ks": {
+   "name": "Формулировка КС в договор",
+   "type": [
+    "document"
+   ],
+   "url": "/obraztsy/formulirovka-ks-v-dogovor/"
+  },
+  "prikaz-razdelnyy-uchet": {
+   "name": "Приказ о раздельном учёте",
+   "type": [
+    "document"
+   ],
+   "url": "/obraztsy/prikaz-o-razdelnom-uchete-goz/"
+  },
+  "reestr-dokumentov": {
+   "name": "Реестр документов",
+   "type": [
+    "document",
+    "term"
+   ],
+   "url": "/obraztsy/reestr-dokumentov-po-kontraktu/"
+  },
+  "otzyv-rasporyazheniya": {
+   "name": "Отзыв распоряжения",
+   "type": [
+    "document",
+    "term"
+   ],
+   "url": "/obraztsy/shablon-otzyva-rasporyazheniya/"
+  },
+  "rkp": {
+   "name": "Платёжка при КС (образец)",
+   "type": [
+    "document",
+    "term"
+   ],
+   "url": "/obraztsy/platezhnoe-poruchenie-obrazec/"
+  },
+  "fk": {
+   "name": "Федеральное казначейство",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/federalnoe-kaznacheystvo/"
+  },
+  "ufk": {
+   "name": "УФК",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/ufk/"
+  },
+  "tofk": {
+   "name": "ТОФК",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/tofk/"
+  },
+  "minfin": {
+   "name": "Минфин России",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/minfin/"
+  },
+  "fns": {
+   "name": "УЦ ФНС",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/fns-uc/"
+  },
+  "vp-mo": {
+   "name": "Военное представительство",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/voennoe-predstavitelstvo/"
+  },
+  "psb": {
+   "name": "ПСБ",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/psb/"
+  },
+  "zakazchik": {
+   "name": "Госзаказчик",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/zakazchik/"
+  },
+  "grbs": {
+   "name": "ГРБС",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/grbs/"
+  },
+  "finorgan": {
+   "name": "Финансовый орган",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/finansovyy-organ/"
+  },
+  "giis-eb": {
+   "name": "ГИИС «Электронный бюджет»",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/giis-elektronnyy-byudzhet/"
+  },
+  "eis": {
+   "name": "ЕИС",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/eis/"
+  },
+  "ast-goz": {
+   "name": "АСТ ГОЗ",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/ast-goz/"
+  },
+  "girbo": {
+   "name": "ГИРБО",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/girbo/"
+  },
+  "kontinent-tls": {
+   "name": "Континент TLS",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/kontinent-tls/"
+  },
+  "sufd": {
+   "name": "СУФД",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/sufd/"
+  },
+  "epbs": {
+   "name": "ЕПБС",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/epbs/"
+  },
+  "ks": {
+   "name": "Казначейское сопровождение",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/kaznacheyskoe-soprovozhdenie/"
+  },
+  "kazn-monitoring": {
+   "name": "Казначейский мониторинг",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/kaznacheyskiy-monitoring/"
+  },
+  "rasshirennoe-ks": {
+   "name": "Расширенное казначейское сопровождение",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/rasshirennoe-kaznacheyskoe-soprovozhdenie/"
+  },
+  "bank-soprovozhdenie": {
+   "name": "Банковское сопровождение",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/bankovskoe-soprovozhdenie/"
+  },
+  "koo-obs": {
+   "name": "КОО",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/kaznacheyskoe-obespechenie-obyazatelstv/"
+  },
+  "porog-ks": {
+   "name": "Порог казначейского сопровождения",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/porog-kaznacheyskogo-soprovozhdeniya/"
+  },
+  "ls-71": {
+   "name": "КС-счёт (лицевой счёт 71)",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/ks-schet/"
+  },
+  "eks": {
+   "name": "ЕКС",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/eks/"
+  },
+  "ens": {
+   "name": "ЕНС",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/ens/"
+  },
+  "raschetnyy-schet": {
+   "name": "Расчётный счёт",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/raschetnyy-schet/"
+  },
+  "obs": {
+   "name": "Отдельный счёт (ГОЗ)",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/otdelnyy-schet-goz/"
+  },
+  "tselevye-sredstva": {
+   "name": "Целевые средства",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/tselevye-sredstva/"
+  },
+  "limit-ks": {
+   "name": "Лимит на КС-счёте",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/limit-na-ks-schete/"
+  },
+  "kod-71": {
+   "name": "Код 71 (тип лицевого счёта)",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/kod-71/"
+  },
+  "rezervirovanie-ls": {
+   "name": "Резервирование лицевого счёта",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/rezervirovanie-scheta/"
+  },
+  "pereoformlenie-ls": {
+   "name": "Переоформление лицевого счёта",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/pereoformlenie-scheta/"
+  },
+  "zakrytie-ls": {
+   "name": "Закрытие лицевого счёта",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/zakrytie-scheta/"
+  },
+  "neisp-ostatok": {
+   "name": "Неиспользованный остаток",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/neispolzovannyy-ostatok/"
+  },
+  "rekvizity-ks": {
+   "name": "Реквизиты КС-счёта",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/rekvizity-ks-scheta/"
+  },
+  "kontrakt-44": {
+   "name": "Госконтракт",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/goskontrakt/"
+  },
+  "igk": {
+   "name": "ИГК",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/igk/"
+  },
+  "municipalnyy": {
+   "name": "Муниципальный контракт",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/munitsipalnyy-kontrakt/"
+  },
+  "tsepochka-ks": {
+   "name": "Цепочка кооперации",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/tsepochka-kooperatsii/"
+  },
+  "golovnoy-ispolnitel": {
+   "name": "Головной исполнитель",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/golovnoy-ispolnitel/"
+  },
+  "subpodryadchik": {
+   "name": "Субподрядчик (соисполнитель)",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/subpodryadchik/"
+  },
+  "etap-kontrakta": {
+   "name": "Этап контракта",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/etap-kontrakta/"
+  },
+  "reestr-kontraktov": {
+   "name": "Реестр контрактов",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/reestr-kontraktov/"
+  },
+  "tsifrovoy-kontrakt": {
+   "name": "Цифровой контракт",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/tsifrovoy-kontrakt/"
+  },
+  "ed-postavshchik": {
+   "name": "Единственный поставщик",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/edinstvennyy-postavshchik/"
+  },
+  "goz": {
+   "name": "ГОЗ",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/goz/"
+  },
+  "razdelnyy-uchet": {
+   "name": "Раздельный учёт",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/razdelnyy-uchet/"
+  },
+  "prim-1": {
+   "name": "Форма «Прим-1»",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/prim-1/"
+  },
+  "opk": {
+   "name": "ОПК",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/opk/"
+  },
+  "vidy-tsen-goz": {
+   "name": "Виды цен ГОЗ",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/vidy-tsen-goz/"
+  },
+  "norma-pribyli": {
+   "name": "Норма прибыли ГОЗ (20+1)",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/norma-pribyli-goz/"
+  },
+  "opornyy-bank": {
+   "name": "Опорный банк",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/opornyy-bank/"
+  },
+  "subsidiya": {
+   "name": "Субсидия",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/subsidiya/"
+  },
+  "grant": {
+   "name": "Грант",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/grant/"
+  },
+  "soglashenie-subsidii": {
+   "name": "Соглашение о предоставлении субсидии",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/soglashenie-o-subsidii/"
+  },
+  "id-soglasheniya": {
+   "name": "Идентификатор соглашения",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/identifikator-soglasheniya/"
+  },
+  "poluchatel-subsidii": {
+   "name": "Получатель субсидии",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/poluchatel-subsidii/"
+  },
+  "nubp": {
+   "name": "НУБП",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/nubp/"
+  },
+  "platezh": {
+   "name": "Казначейский платёж",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/kaznacheyskiy-platezh/"
+  },
+  "naznachenie": {
+   "name": "Назначение платежа",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/naznachenie-platezha/"
+  },
+  "avans": {
+   "name": "Аванс по госконтракту",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/avans/"
+  },
+  "vozmeshchenie": {
+   "name": "Возмещение расходов",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/vozmeshchenie-rashodov/"
+  },
+  "pryamoy-platezh": {
+   "name": "Прямой платёж",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/pryamoy-platezh/"
+  },
+  "vozvrat-avansa": {
+   "name": "Возврат аванса",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/vozvrat-avansa/"
+  },
+  "err-vozvrat-platezha": {
+   "name": "Возврат платежа УФК",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/vozvrat-platezha/"
+  },
+  "platezhnoe-poruchenie": {
+   "name": "Платёжное поручение при КС",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/platezhnoe-poruchenie/"
+  },
+  "nds-ks": {
+   "name": "НДС в казначейских платежах",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/nds-pri-ks/"
+  },
+  "pribyl-ks": {
+   "name": "Перечисление прибыли",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/perechislenie-pribyli/"
+  },
+  "priostanovlenie": {
+   "name": "Приостановление операций",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/priostanovlenie-operatsiy/"
+  },
+  "sanktsionirovanie": {
+   "name": "Санкционирование операций",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/sanktsionirovanie/"
+  },
+  "dokumenty-osnovaniya": {
+   "name": "Документы-основания",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/dokumenty-osnovaniya/"
+  },
+  "sroki-ufk": {
+   "name": "Сроки рассмотрения УФК",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/sroki-rassmotreniya-ufk/"
+  },
+  "doverennost-ufk": {
+   "name": "Доверенность для УФК",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/doverennost-dlya-ufk/"
+  },
+  "upd-akt": {
+   "name": "Акт сдачи-приёмки",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/akt-sdachi-priyomki/"
+  },
+  "upd": {
+   "name": "УПД и счёт-фактура",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/schet-faktura-upd/"
+  },
+  "ks2-ks3": {
+   "name": "КС-2 и КС-3",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/ks-2-ks-3/"
+  },
+  "vypiska-ls": {
+   "name": "Выписка из лицевого счёта",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/vypiska-iz-litsevogo-scheta/"
+  },
+  "ecp": {
+   "name": "ЭЦП (УКЭП)",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/elektronnaya-podpis/"
+  },
+  "kriptopro": {
+   "name": "КриптоПро CSP",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/kriptopro-csp/"
+  },
+  "registratsiya-eb": {
+   "name": "Регистрация в «Электронном бюджете»",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/registratsiya-v-eb/"
+  },
+  "upolnomochennye": {
+   "name": "Уполномоченное лицо",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/upolnomochennoe-litso/"
+  },
+  "kody-napravleniy": {
+   "name": "Коды направлений расходования",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/kody-napravleniy-rashodovaniya/"
+  },
+  "kody-9xxx": {
+   "name": "Коды 9XXX (возмещение)",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/kody-9xxx/"
+  },
+  "kody-71xx": {
+   "name": "Коды источников поступлений",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/kody-postupleniy/"
+  },
+  "kod-tselevyh": {
+   "name": "Код целевых средств",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/kod-tselevykh-sredstv/"
+  },
+  "kvr": {
+   "name": "КВР",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/kvr/"
+  },
+  "kosgu": {
+   "name": "КОСГУ",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/kosgu/"
+  },
+  "kbk": {
+   "name": "КБК",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/kbk/"
+  },
+  "oktmo": {
+   "name": "ОКТМО",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/oktmo/"
+  },
+  "okpo": {
+   "name": "ОКПО",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/okpo/"
+  },
+  "kofk": {
+   "name": "Код по КОФК",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/kofk/"
+  },
+  "svodnyy-reestr": {
+   "name": "Сводный реестр",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/svodnyy-reestr/"
+  },
+  "glava-bk": {
+   "name": "Глава по БК",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/glava-po-bk/"
+  },
+  "44-fz": {
+   "name": "44-ФЗ",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/44-fz/"
+  },
+  "223-fz": {
+   "name": "223-ФЗ",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/223-fz/"
+  },
+  "275-fz": {
+   "name": "275-ФЗ",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/275-fz/"
+  },
+  "63-fz": {
+   "name": "63-ФЗ",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/63-fz/"
+  },
+  "bk-rf": {
+   "name": "БК РФ, ст. 242.23–242.26",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/bk-rf-242/"
+  },
+  "zakon-budget": {
+   "name": "Закон о федеральном бюджете",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/zakon-o-federalnom-byudzhete/"
+  },
+  "prikaz-214n": {
+   "name": "Приказ Минфина № 214н",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/prikaz-214n/"
+  },
+  "prikaz-44n": {
+   "name": "Приказ ФК № 44н",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/prikaz-44n/"
+  },
+  "prikaz-21n": {
+   "name": "Приказ ФК № 21н",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/prikaz-21n/"
+  },
+  "pp-1465": {
+   "name": "ПП № 1465",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/pp-1465/"
+  },
+  "pp-2053": {
+   "name": "ПП № 2053",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/pp-2053/"
+  },
+  "koap-15-49": {
+   "name": "Штрафы КоАП при КС",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/shtrafy-koap/"
+  },
+  "raskhodnaya-deklaratsiya": {
+   "name": "Расходная декларация",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/raskhodnaya-deklaratsiya/"
+  },
+  "prom-otchetnost-goz": {
+   "name": "Промежуточная отчётность ГОЗ",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/promezhutochnaya-otchetnost-goz/"
+  },
+  "otchet-subsidii": {
+   "name": "Отчёт об использовании субсидии",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/otchet-ob-ispolzovanii-subsidii/"
+  },
+  "ip": {
+   "name": "ИП при казначейском сопровождении",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/ip-pri-ks/"
+  },
+  "ispolnitel": {
+   "name": "Исполнитель по контракту",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/ispolnitel-po-kontraktu/"
+  },
+  "faq-kak-otkryt-schet": {
+   "name": "Как открыть казначейский счёт?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-otkryt-kaznacheyskiy-schet/"
+  },
+  "faq-kto-otkryvaet-schet": {
+   "name": "Кто открывает лицевой счёт — заказчик или исполнитель?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kto-otkryvaet-litsevoy-schet/"
+  },
+  "faq-srok-otkrytiya-scheta": {
+   "name": "Сколько времени открывается казначейский счёт?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/skolko-otkryvaetsya-schet/"
+  },
+  "faq-dokumenty-dlya-otkrytiya": {
+   "name": "Какие документы нужны для открытия лицевого счёта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kakie-dokumenty-dlya-otkrytiya/"
+  },
+  "faq-gde-otkryvaetsya-schet": {
+   "name": "Где открывается КС-счёт — в банке или в казначействе?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/gde-otkryvaetsya-ks-schet/"
+  },
+  "faq-otkrytie-bez-kontrakta": {
+   "name": "Можно ли открыть казначейский счёт без подписанного контракта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/mozhno-li-otkryt-bez-kontrakta/"
+  },
+  "faq-schet-na-kazhdyy-kontrakt": {
+   "name": "Нужен ли отдельный счёт на каждый контракт?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/nuzhen-li-schet-na-kazhdyy-kontrakt/"
+  },
+  "faq-stoimost-otkrytiya": {
+   "name": "Сколько стоит открытие казначейского счёта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/skolko-stoit-otkrytie-scheta/"
+  },
+  "faq-zayavlenie-cherez-giis": {
+   "name": "Как подать заявление на счёт через ГИИС «Электронный бюджет»?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/otkryt-schet-cherez-giis/"
+  },
+  "faq-otkrytie-na-bumage": {
+   "name": "Можно ли открыть счёт по бумажному заявлению?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/otkryt-schet-na-bumage/"
+  },
+  "faq-chto-takoe-rezervirovanie": {
+   "name": "Что такое резервирование лицевого счёта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-rezervirovanie-scheta/"
+  },
+  "faq-kak-zarezervirovat-schet": {
+   "name": "Как зарезервировать счёт для тендера?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-zarezervirovat-schet-dlya-tendera/"
+  },
+  "faq-zachem-rezervirovat": {
+   "name": "Зачем резервировать счёт заранее?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/zachem-rezervirovat-schet/"
+  },
+  "faq-srok-rezerva-scheta": {
+   "name": "Сколько действует зарезервированный счёт?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/rezervnyy-schet-deystvuet-skolko/"
+  },
+  "faq-kak-uznat-ufk": {
+   "name": "Как узнать своё УФК для открытия счёта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-uznat-svoyo-ufk/"
+  },
+  "faq-ufk-neskolko-regionov": {
+   "name": "В какое УФК подавать заявление, если контрактов несколько регионов?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/v-kakoe-ufk-podavat-zayavlenie/"
+  },
+  "faq-otkrytie-scheta-ip": {
+   "name": "Как ИП открыть казначейский счёт?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/otkrytie-scheta-dlya-ip/"
+  },
+  "faq-schet-subpodryadchiku": {
+   "name": "Нужен ли казначейский счёт субподрядчику?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/otkrytie-scheta-subpodryadchiku/"
+  },
+  "faq-chto-takoe-svodnyy-reestr": {
+   "name": "Что такое Сводный реестр и зачем в него включаться?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-svodnyy-reestr-vopros/"
+  },
+  "faq-vklyuchenie-v-svodnyy-reestr": {
+   "name": "Как включиться в Сводный реестр?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-vklyuchitsya-v-svodnyy-reestr/"
+  },
+  "faq-dolgo-ne-otkryvayut": {
+   "name": "Почему долго не открывают казначейский счёт?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/pochemu-dolgo-ne-otkryvayut-schet/"
+  },
+  "faq-otkaz-v-otkrytii": {
+   "name": "Отказали в открытии счёта — что делать?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/otkazali-v-otkrytii-chto-delat/"
+  },
+  "faq-uskorit-otkrytie": {
+   "name": "Можно ли ускорить открытие казначейского счёта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/mozhno-li-uskorit-otkrytie/"
+  },
+  "faq-schet-otkryt-chto-dalshe": {
+   "name": "Счёт открыт — что делать дальше?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/schet-otkryt-chto-dalshe/"
+  },
+  "faq-rekvizity-scheta": {
+   "name": "Как получить реквизиты открытого лицевого счёта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-poluchit-rekvizity-scheta/"
+  },
+  "faq-kak-zakryt-schet": {
+   "name": "Как закрыть казначейский счёт после контракта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-zakryt-kaznacheyskiy-schet/"
+  },
+  "faq-nuzhno-li-zakryvat-schet": {
+   "name": "Обязательно ли закрывать счёт после исполнения контракта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/nuzhno-li-zakryvat-schet/"
+  },
+  "faq-ostatok-pri-zakrytii": {
+   "name": "Что делать с остатком на счёте при закрытии?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-delat-s-ostatkom-na-schete/"
+  },
+  "faq-pereoformlenie-scheta": {
+   "name": "Как переоформить лицевой счёт при смене наименования?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-pereoformit-schet/"
+  },
+  "faq-smena-direktora": {
+   "name": "Сменился директор — что менять в казначействе?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/smena-direktora-chto-menyat/"
+  },
+  "faq-uznat-ostatok": {
+   "name": "Как узнать остаток на казначейском счёте?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-uznat-ostatok-na-schete/"
+  },
+  "faq-poluchit-vypisku": {
+   "name": "Как получить выписку по лицевому счёту?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-poluchit-vypisku/"
+  },
+  "faq-limit-na-schete": {
+   "name": "Что такое лимит на КС-счёте и как он формируется?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-limit-na-schete/"
+  },
+  "faq-deneg-net-na-schete": {
+   "name": "Заказчик говорит «оплатили», а денег на счёте нет — почему?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/pochemu-deneg-net-na-schete/"
+  },
+  "faq-otlichie-ot-raschetnogo": {
+   "name": "Чем казначейский счёт отличается от расчётного?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chem-otlichaetsya-ot-raschetnogo/"
+  },
+  "faq-kody-dlya-platezha": {
+   "name": "Какие коды нужны для казначейского платежа?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kakie-kody-nuzhny-dlya-platezha/"
+  },
+  "faq-kod-napravleniya": {
+   "name": "Что такое код направления расходования?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-kod-napravleniya/"
+  },
+  "faq-gde-vzyat-kody": {
+   "name": "Где взять коды направлений расходования?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/gde-vzyat-kody-rashodovaniya/"
+  },
+  "faq-kod-dlya-zarplaty": {
+   "name": "Какой код использовать для выплаты зарплаты?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kakoy-kod-dlya-zarplaty/"
+  },
+  "faq-kod-dlya-nalogov": {
+   "name": "Каким кодом платить налоги с лицевого счёта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kakoy-kod-dlya-nalogov/"
+  },
+  "faq-kod-dlya-materialov": {
+   "name": "Какой код для оплаты материалов и услуг?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kakoy-kod-dlya-materialov/"
+  },
+  "faq-kody-9xxx": {
+   "name": "Что такое коды 9XXX и когда их применять?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-kody-9xxx-vopros/"
+  },
+  "faq-kod-vyvoda-pribyli": {
+   "name": "Каким кодом выводится прибыль на расчётный счёт?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kod-dlya-vyvoda-pribyli/"
+  },
+  "faq-nepravilnyy-kod": {
+   "name": "Указал неправильный код — что будет с платежом?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/nepravilnyy-kod-chto-budet/"
+  },
+  "faq-kod-tselevykh-sredstv": {
+   "name": "Что такое код целевых средств?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-kod-tselevykh-sredstv-vopros/"
+  },
+  "faq-kody-ks-vs-kbk": {
+   "name": "Чем коды казначейского сопровождения отличаются от КБК?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chem-kod-otlichaetsya-ot-kbk/"
+  },
+  "faq-kofk": {
+   "name": "Что такое код по КОФК и где его взять?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-kofk-vopros/"
+  },
+  "faq-oktmo-v-zayavlenii": {
+   "name": "Какой ОКТМО указывать в заявлении на счёт?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kakoy-oktmo-ukazyvat/"
+  },
+  "faq-kod-71": {
+   "name": "Что означает код 71 в номере счёта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-kod-71-vopros/"
+  },
+  "faq-kody-postupleniy": {
+   "name": "Что означают коды поступлений в выписке?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kod-postupleniy-v-vypiske/"
+  },
+  "faq-provesti-platezh": {
+   "name": "Как провести платёж с казначейского счёта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-provesti-platezh/"
+  },
+  "faq-chto-takoe-rkp": {
+   "name": "Что такое распоряжение о казначейском платеже?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-rkp-vopros/"
+  },
+  "faq-platezhka-v-eb": {
+   "name": "Как создать платёжное поручение в «Электронном бюджете»?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-sozdat-platezhku-v-eb/"
+  },
+  "faq-srok-platezha": {
+   "name": "Сколько идёт платёж с казначейского счёта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/skolko-idet-platezh/"
+  },
+  "faq-dokumenty-k-platezhu": {
+   "name": "Какие документы прикладывать к платежу?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kakie-dokumenty-prikladat-k-platezhu/"
+  },
+  "faq-naznachenie-platezha": {
+   "name": "Как заполнить назначение платежа для казначейства?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-zapolnit-naznachenie-platezha/"
+  },
+  "faq-igk-v-platezhe": {
+   "name": "Нужно ли указывать ИГК в каждом платеже?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/nuzhen-li-igk-v-kazhdom-platezhe/"
+  },
+  "faq-nds-v-platezhke": {
+   "name": "Как указать НДС в казначейской платёжке?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-ukazat-nds-v-platezhke/"
+  },
+  "faq-platezh-bez-dogovora": {
+   "name": "Можно ли оплатить счёт поставщика без договора?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/mozhno-li-platit-bez-dogovora/"
+  },
+  "faq-oplata-postavshchiku": {
+   "name": "Как оплатить поставщику с лицевого счёта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-oplatit-postavshchiku/"
+  },
+  "faq-platezh-fizlitsu": {
+   "name": "Можно ли платить физлицу с казначейского счёта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/mozhno-li-platit-fizlitsu/"
+  },
+  "faq-zarplata-s-ks": {
+   "name": "Как платить зарплату с казначейского счёта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-platit-zarplatu-s-ks/"
+  },
+  "faq-nalogi-s-ks": {
+   "name": "Как платить налоги и взносы с казначейского счёта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-platit-nalogi-s-ks/"
+  },
+  "faq-nalichnye-s-ks": {
+   "name": "Можно ли снять наличные с казначейского счёта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/mozhno-li-snyat-nalichnye/"
+  },
+  "faq-oplata-arendy": {
+   "name": "Можно ли оплатить аренду с казначейского счёта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/mozhno-li-oplatit-arendu/"
+  },
+  "faq-zaprety-rashodov": {
+   "name": "На что нельзя тратить деньги с КС-счёта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/na-chto-nelzya-tratit/"
+  },
+  "faq-otzyv-platezha": {
+   "name": "Как отозвать отправленный платёж?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-otozvat-platezh/"
+  },
+  "faq-platezh-visit": {
+   "name": "Платёж «висит» несколько дней — что делать?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/platezh-visit-chto-delat/"
+  },
+  "faq-status-platezha": {
+   "name": "Как узнать статус платежа в ГИИС?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-uznat-status-platezha/"
+  },
+  "faq-perevod-mezhdu-schetami": {
+   "name": "Можно ли перевести деньги между своими лицевыми счетами?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/platezh-mezhdu-svoimi-schetami/"
+  },
+  "faq-oplata-bez-akta": {
+   "name": "Можно ли платить по счёту до подписания акта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/oplata-po-schetu-bez-akta/"
+  },
+  "faq-predoplata-postavshchiku": {
+   "name": "Можно ли делать предоплату поставщику с КС-счёта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/predoplata-postavshchiku/"
+  },
+  "faq-oplata-subpodryadchiku": {
+   "name": "Как оплатить субподрядчику при казначейском сопровождении?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-oplatit-subpodryadchiku/"
+  },
+  "faq-platezhi-v-vykhodnye": {
+   "name": "Проводит ли казначейство платежи в выходные?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/platezhi-v-vykhodnye/"
+  },
+  "faq-limit-platezhey-v-den": {
+   "name": "Есть ли ограничение на количество платежей в день?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/skolko-platezhey-v-den/"
+  },
+  "faq-vyvod-na-raschetnyy": {
+   "name": "Как вывести деньги с казначейского счёта на расчётный?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-vyvesti-dengi-na-raschetnyy/"
+  },
+  "faq-kogda-zabrat-pribyl": {
+   "name": "Когда можно забрать прибыль по контракту?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kogda-mozhno-zabrat-pribyl/"
+  },
+  "faq-oformit-perechislenie-pribyli": {
+   "name": "Как оформить перечисление прибыли с КС-счёта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-vyvesti-pribyl/"
+  },
+  "faq-skolko-pribyli": {
+   "name": "Сколько прибыли можно вывести с казначейского счёта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/skolko-pribyli-mozhno-vyvesti/"
+  },
+  "faq-chto-takoe-vozmeshchenie": {
+   "name": "Что такое возмещение произведённых расходов?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-vozmeshchenie-rashodov-vopros/"
+  },
+  "faq-kak-vozmestit-rashody": {
+   "name": "Как возместить расходы, оплаченные с расчётного счёта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-vozmestit-rashody/"
+  },
+  "faq-dokumenty-vozmeshcheniya": {
+   "name": "Какие документы нужны для возмещения расходов?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kakie-dokumenty-dlya-vozmeshcheniya/"
+  },
+  "faq-vozmeshchenie-proshlyy-period": {
+   "name": "Можно ли возместить расходы за прошлый период?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/mozhno-li-vozmestit-zadnim-chislom/"
+  },
+  "faq-vozmeshchenie-zarplaty": {
+   "name": "Как возместить выплаченную зарплату?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/vozmeshchenie-zarplaty/"
+  },
+  "faq-otkaz-v-vozmeshchenii": {
+   "name": "Отказали в возмещении — что делать?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/otkazali-v-vozmeshchenii/"
+  },
+  "faq-avans-pri-ks": {
+   "name": "Как работает аванс при казначейском сопровождении?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-avans-pri-ks/"
+  },
+  "faq-razmer-avansa": {
+   "name": "Какой размер аванса бывает по госконтрактам?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kakoy-razmer-avansa/"
+  },
+  "faq-poluchit-avans": {
+   "name": "Как получить аванс на лицевой счёт?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-poluchit-avans/"
+  },
+  "faq-trata-avansa": {
+   "name": "На что можно тратить аванс?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/na-chto-mozhno-tratit-avans/"
+  },
+  "faq-zachet-avansa": {
+   "name": "Как засчитывается аванс при оплате этапов?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-zakryvaetsya-avans/"
+  },
+  "faq-kogda-vozvrashchat-avans": {
+   "name": "Когда нужно возвращать аванс?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/nuzhno-li-vozvrashchat-avans/"
+  },
+  "faq-vernut-avans": {
+   "name": "Как вернуть неотработанный аванс заказчику?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-vernut-avans/"
+  },
+  "faq-avans-bez-scheta": {
+   "name": "Дадут ли аванс без открытого лицевого счёта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/avans-bez-kaznacheyskogo-scheta/"
+  },
+  "faq-chto-takoe-koo": {
+   "name": "Что такое казначейское обеспечение обязательств?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-koo-vopros/"
+  },
+  "faq-uproshchennoe-perechislenie": {
+   "name": "Что такое упрощённое перечисление средств?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/uproshchennoe-perechislenie/"
+  },
+  "faq-vyvesti-vsyu-summu": {
+   "name": "Можно ли вывести всю сумму контракта на расчётный счёт?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/mozhno-li-vyvesti-vsyu-summu/"
+  },
+  "faq-ne-puskayut-pribyl": {
+   "name": "Почему не пропускают платёж на вывод прибыли?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/pochemu-ne-puskayut-pribyl/"
+  },
+  "faq-nakladnye-raskhody": {
+   "name": "Как выводить накладные расходы?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/nakladnye-raskhody-kak-vyvesti/"
+  },
+  "faq-rashody-do-otkrytiya": {
+   "name": "Можно ли возместить расходы, понесённые до открытия счёта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kompensatsiya-do-otkrytiya-scheta/"
+  },
+  "faq-vyvod-ekonomii": {
+   "name": "Можно ли забрать экономию по контракту?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/vyvod-ekonomii-po-kontraktu/"
+  },
+  "faq-chto-takoe-sanktsionirovanie": {
+   "name": "Что такое санкционирование платежа?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-sanktsionirovanie-vopros/"
+  },
+  "faq-skolko-dney-proveryaet-ufk": {
+   "name": "Сколько дней УФК проверяет платёж?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/skolko-dney-proveryaet-ufk/"
+  },
+  "faq-chto-proveryaet-kaznacheystvo": {
+   "name": "Что именно проверяет казначейство в платеже?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-proveryaet-kaznacheystvo/"
+  },
+  "faq-chto-takoe-dokumenty-osnovaniya": {
+   "name": "Что такое документы-основания?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-dokumenty-osnovaniya-vopros/"
+  },
+  "faq-osnovaniya-dlya-oplaty-uslug": {
+   "name": "Какие документы-основания нужны для оплаты услуг?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kakie-osnovaniya-dlya-oplaty-uslug/"
+  },
+  "faq-chto-takoe-svedeniya": {
+   "name": "Что такое Сведения об операциях с целевыми средствами?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-svedeniya-vopros/"
+  },
+  "faq-zachem-nuzhny-svedeniya": {
+   "name": "Зачем нужны Сведения и можно ли без них платить?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/zachem-nuzhny-svedeniya/"
+  },
+  "faq-kak-zapolnit-svedeniya": {
+   "name": "Как заполнить Сведения (форма 0501213)?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-zapolnit-svedeniya/"
+  },
+  "faq-kto-utverzhdaet-svedeniya": {
+   "name": "Кто утверждает Сведения — заказчик или исполнитель?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kto-utverzhdaet-svedeniya/"
+  },
+  "faq-kak-izmenit-svedeniya": {
+   "name": "Как изменить утверждённые Сведения?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-izmenit-svedeniya/"
+  },
+  "faq-zakazchik-ne-utverzhdaet-svedeniya": {
+   "name": "Заказчик не утверждает Сведения — что делать?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/zakazchik-ne-utverzhdaet-svedeniya-vopros/"
+  },
+  "faq-platezh-ne-sootvetstvuet-svedeniyam": {
+   "name": "Платёж не соответствует Сведениям — как исправить?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/platezh-ne-sootvetstvuet-svedeniyam/"
+  },
+  "faq-chto-takoe-kaznacheyskiy-monitoring": {
+   "name": "Что такое казначейский мониторинг?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-kaznacheyskiy-monitoring-vopros/"
+  },
+  "faq-pochemu-zaprosili-poyasneniya": {
+   "name": "УФК запросило пояснения — это плохо?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/pochemu-zaprosili-poyasneniya/"
+  },
+  "faq-kak-otvetit-na-zapros-ufk": {
+   "name": "Как ответить на запрос УФК?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-otvetit-na-zapros-ufk/"
+  },
+  "faq-mogut-li-zablokirovat-schet": {
+   "name": "Могут ли заблокировать казначейский счёт?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/mogut-li-zablokirovat-schet/"
+  },
+  "faq-za-chto-priostanavlivayut-operatsii": {
+   "name": "За что приостанавливают операции по счёту?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/za-chto-priostanavlivayut-operatsii/"
+  },
+  "faq-kak-snyat-blokirovku": {
+   "name": "Как снять приостановление операций?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-snyat-blokirovku/"
+  },
+  "faq-chto-takoe-rasshirennoe-ks": {
+   "name": "Что такое расширенное казначейское сопровождение?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-rasshirennoe-ks-vopros/"
+  },
+  "faq-chto-takoe-raskhodnaya-deklaratsiya": {
+   "name": "Что такое расходная декларация?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-raskhodnaya-deklaratsiya-vopros/"
+  },
+  "faq-proverka-tselevogo-ispolzovaniya": {
+   "name": "Как проверяют целевое использование средств?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/proverka-tselevogo-ispolzovaniya/"
+  },
+  "faq-chem-grozit-netselevoe": {
+   "name": "Чем грозит нецелевое расходование?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chem-grozit-netselevoe/"
+  },
+  "faq-novyy-poryadok-sanktsionirovaniya": {
+   "name": "Что меняется в порядке санкционирования с 2026 года?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/novyy-poryadok-sanktsionirovaniya/"
+  },
+  "faq-srochnyy-platezh-kak-uskorit": {
+   "name": "Можно ли ускорить санкционирование срочного платежа?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/srochnyy-platezh-kak-uskorit/"
+  },
+  "faq-otvetstvennost-za-oshibki-v-platezhkah": {
+   "name": "Кто отвечает за ошибки в платёжных документах?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kto-neset-otvetstvennost-za-oshibki/"
+  },
+  "faq-pochemu-vernuli-platezh": {
+   "name": "Почему УФК вернуло платёж?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/pochemu-ufk-vernulo-platezh/"
+  },
+  "faq-deystviya-pri-vozvrate": {
+   "name": "Казначейство вернуло платёж — что делать?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-delat-pri-vozvrate-platezha/"
+  },
+  "faq-prichina-vozvrata-gde": {
+   "name": "Как узнать точную причину возврата?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-uznat-prichinu-vozvrata/"
+  },
+  "faq-ispravit-igk": {
+   "name": "Ошибка в ИГК — как исправить платёж?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/oshibka-v-igk-kak-ispravit/"
+  },
+  "faq-ispravit-naznachenie": {
+   "name": "Неверное назначение платежа — как исправить?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/nevernoe-naznachenie-kak-ispravit/"
+  },
+  "faq-vozvrat-iz-za-koda": {
+   "name": "Вернули платёж из-за кода — что делать?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/vernuli-iz-za-koda/"
+  },
+  "faq-povtornyy-vozvrat": {
+   "name": "Платёж возвращают повторно — в чём причина?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/vozvrat-povtoryaetsya/"
+  },
+  "faq-poteri-vremeni-vozvrat": {
+   "name": "Сколько времени теряется при возврате платежа?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/skolko-vremeni-teryaetsya-pri-vozvrate/"
+  },
+  "faq-otkaz-sanktsionirovanie": {
+   "name": "УФК отказало в санкционировании — что делать?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/otkaz-v-sanktsionirovanii-chto-delat/"
+  },
+  "faq-lishnie-dokumenty-ufk": {
+   "name": "УФК требует документы, которых нет в контракте, — законно ли?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/ufk-trebuet-dokumenty-kotorykh-net/"
+  },
+  "faq-osporit-otkaz": {
+   "name": "Как оспорить отказ УФК?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-osporit-otkaz-ufk/"
+  },
+  "faq-zaderzhka-platezha": {
+   "name": "УФК задерживает платёж сверх срока — что делать?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/ufk-zaderzhivaet-platezh-vopros/"
+  },
+  "faq-vozvrat-kartochki": {
+   "name": "Вернули карточку подписей — что исправить?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/vernuli-kartochku-podpisey-vopros/"
+  },
+  "faq-vozvrat-zayavleniya": {
+   "name": "Вернули заявление на открытие счёта — почему?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/vernuli-zayavlenie-na-schet/"
+  },
+  "faq-ne-prinimayut-svedeniya": {
+   "name": "УФК не принимает Сведения — какие причины?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/ne-prinimayut-svedeniya/"
+  },
+  "faq-mchd-ne-prokhodit": {
+   "name": "МЧД не проходит проверку — что делать?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/mchd-ne-prokhodit-vopros/"
+  },
+  "faq-ecp-ne-podkhodit": {
+   "name": "Система не принимает ЭЦП — как решить?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/ecp-ne-podkhodit-vopros/"
+  },
+  "faq-vkhod-v-eb": {
+   "name": "Не могу войти в «Электронный бюджет» — что проверить?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/ne-mogu-voyti-v-eb/"
+  },
+  "faq-blokirovka-scheta": {
+   "name": "Заблокировали операции по счёту — что делать?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/zablokirovali-schet-chto-delat/"
+  },
+  "faq-nevyyasnennye": {
+   "name": "Деньги зависли на невыясненных — как вернуть?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/dengi-zavisli-na-nevyyasnennykh/"
+  },
+  "faq-zakazchik-zaderzhivaet": {
+   "name": "Заказчик задерживает оплату на лицевой счёт — что делать?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/zakazchik-ne-platit-na-ks/"
+  },
+  "faq-sryv-srokov": {
+   "name": "Из-за казначейства срываются сроки контракта — как защититься?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/sorvali-srok-iz-za-kaznacheystva/"
+  },
+  "faq-shtrafy-ks": {
+   "name": "Какие штрафы бывают при казначейском сопровождении?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/shtraf-za-narushenie-ks/"
+  },
+  "faq-zhaloba-na-ufk": {
+   "name": "Куда жаловаться на действия УФК?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kuda-zhalovatsya-na-ufk/"
+  },
+  "faq-komu-poruchit": {
+   "name": "Кому поручить решение проблем с казначейством?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/komu-poruchit-reshenie-problem/"
+  },
+  "faq-dokumenty-ks-spisok": {
+   "name": "Какие документы нужны для казначейского сопровождения?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kakie-dokumenty-nuzhny-dlya-ks/"
+  },
+  "faq-gde-skachat-formy": {
+   "name": "Где скачать официальные формы документов для УФК?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/gde-skachat-formy-dokumentov/"
+  },
+  "faq-zayavlenie-0531368": {
+   "name": "Как заполнить заявление по форме 0531368?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-zapolnit-zayavlenie-0531368/"
+  },
+  "faq-kto-podpisyvaet-zayavlenie": {
+   "name": "Кто подписывает заявление на открытие счёта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kto-podpisyvaet-zayavlenie/"
+  },
+  "faq-kartochka-podpisey-chto-eto": {
+   "name": "Что такое карточка образцов подписей?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-kartochka-podpisey-vopros/"
+  },
+  "faq-kartochka-0531753-zapolnenie": {
+   "name": "Как заполнить карточку образцов подписей (0531753)?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-zapolnit-kartochku-0531753/"
+  },
+  "faq-kartochka-zaverenie": {
+   "name": "Как заверить карточку образцов подписей?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-zaverit-kartochku/"
+  },
+  "faq-kartochka-bez-glavbukha": {
+   "name": "Как оформить карточку, если нет главного бухгалтера?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kartochka-bez-glavbukha/"
+  },
+  "faq-kartochka-pereoformlenie": {
+   "name": "Когда нужно переоформлять карточку подписей?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kogda-menyat-kartochku/"
+  },
+  "faq-mchd-chto-eto": {
+   "name": "Что такое МЧД и зачем она нужна?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-mchd-vopros/"
+  },
+  "faq-mchd-vypusk": {
+   "name": "Как выпустить МЧД для казначейства?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-vypustit-mchd/"
+  },
+  "faq-mchd-format": {
+   "name": "Какой формат МЧД нужен для «Электронного бюджета»?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kakoy-format-mchd-nuzhen/"
+  },
+  "faq-bumazhnaya-doverennost": {
+   "name": "Нужна ли бумажная доверенность для УФК?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/nuzhna-li-bumazhnaya-doverennost/"
+  },
+  "faq-doverennost-v-ufk-oformlenie": {
+   "name": "Как оформить доверенность для подачи документов в УФК?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-oformit-doverennost-v-ufk/"
+  },
+  "faq-zakryvayushchie-dokumenty": {
+   "name": "Какие закрывающие документы нужны для оплаты?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kakie-akty-nuzhny-dlya-oplaty/"
+  },
+  "faq-upd-vs-akt": {
+   "name": "Чем УПД отличается от акта для казначейства?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chem-upd-otlichaetsya-ot-akta/"
+  },
+  "faq-ks2-ks3": {
+   "name": "Когда нужны КС-2 и КС-3?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/nuzhny-li-ks2-ks3/"
+  },
+  "faq-oshibka-v-akte": {
+   "name": "Ошибка в акте — примет ли его казначейство?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/oshibka-v-akte-chto-delat/"
+  },
+  "faq-poyasnenie-v-ufk": {
+   "name": "Как написать пояснение в УФК?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-napisat-poyasnenie-v-ufk/"
+  },
+  "faq-zapros-v-ufk": {
+   "name": "Как написать официальный запрос в УФК?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-napisat-zapros-v-ufk/"
+  },
+  "faq-soprovoditelnoe-pismo": {
+   "name": "Нужно ли сопроводительное письмо к документам?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/nuzhno-li-soprovoditelnoe-pismo/"
+  },
+  "faq-reestr-dokumentov": {
+   "name": "Зачем вести реестр документов по контракту?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-opis-dokumentov-vopros/"
+  },
+  "faq-khranenie-dokumentov": {
+   "name": "Сколько хранить документы по контракту с КС?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/skolko-khranit-dokumenty/"
+  },
+  "faq-elektronno-ili-bumaga": {
+   "name": "Какие документы подаются электронно, а какие на бумаге?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/elektronnye-ili-bumazhnye/"
+  },
+  "faq-proverka-pered-podachey": {
+   "name": "Как проверить документы перед подачей в УФК?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/proverka-dokumentov-pered-podachey/"
+  },
+  "faq-chto-takoe-giis-eb": {
+   "name": "Что такое ГИИС «Электронный бюджет»?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-giis-eb-vopros/"
+  },
+  "faq-registratsiya-v-eb": {
+   "name": "Как зарегистрироваться в «Электронном бюджете»?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-zaregistrirovatsya-v-eb/"
+  },
+  "faq-srok-registratsii-v-eb": {
+   "name": "Сколько занимает регистрация в ГИИС?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/skolko-zanimaet-registratsiya-v-eb/"
+  },
+  "faq-vhod-v-lk-eb": {
+   "name": "Как войти в личный кабинет «Электронного бюджета»?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-voyti-v-lichnyy-kabinet-eb/"
+  },
+  "faq-ecp-dlya-eb": {
+   "name": "Какая электронная подпись нужна для «Электронного бюджета»?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kakaya-ecp-nuzhna-dlya-eb/"
+  },
+  "faq-gde-poluchit-ecp": {
+   "name": "Где получить ЭЦП руководителю?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/gde-poluchit-ecp-rukovoditelyu/"
+  },
+  "faq-ecp-sotrudnika": {
+   "name": "Может ли сотрудник работать в ГИИС со своей подписью?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/ecp-sotrudnika-kak-rabotaet/"
+  },
+  "faq-rabochee-mesto-eb": {
+   "name": "Как настроить рабочее место для «Электронного бюджета»?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-nuzhno-dlya-rabochego-mesta/"
+  },
+  "faq-kontinent-tls": {
+   "name": "Что такое Континент TLS и зачем он нужен?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-kontinent-tls-vopros/"
+  },
+  "faq-nuzhen-li-kriptopro": {
+   "name": "Нужен ли КриптоПро CSP и какая версия?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/nuzhen-li-kriptopro/"
+  },
+  "faq-brauzer-dlya-eb": {
+   "name": "Какой браузер использовать для «Электронного бюджета»?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/brauzer-dlya-eb/"
+  },
+  "faq-eb-ne-vidit-sertifikat": {
+   "name": "«Электронный бюджет» не видит сертификат — что делать?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/eb-ne-vidit-sertifikat/"
+  },
+  "faq-oshibka-vkhoda-v-eb": {
+   "name": "Ошибка при входе в ЭБ — как диагностировать?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/oshibka-pri-vkhode-v-eb/"
+  },
+  "faq-istek-sertifikat": {
+   "name": "Истёк сертификат ЭЦП — как быстро восстановить работу?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/istek-sertifikat-chto-delat/"
+  },
+  "faq-dobavit-sotrudnika-v-eb": {
+   "name": "Как добавить сотрудника в «Электронный бюджет»?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-dobavit-sotrudnika-v-eb/"
+  },
+  "faq-nastroyka-polnomochiy": {
+   "name": "Как назначить полномочия в ГИИС?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-nastroit-polnomochiya/"
+  },
+  "faq-otzyv-dostupa-sotrudnika": {
+   "name": "Как отозвать доступ уволенного сотрудника?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-otozvat-dostup-sotrudnika/"
+  },
+  "faq-rabota-bez-mchd": {
+   "name": "Можно ли работать в ГИИС без МЧД?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/mozhno-li-rabotat-bez-mchd/"
+  },
+  "faq-srok-deystviya-mchd": {
+   "name": "Сколько действует МЧД и как продлить?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/skolko-deystvuet-mchd/"
+  },
+  "faq-podpisanie-v-eb": {
+   "name": "Как подписываются документы в «Электронном бюджете»?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/podpisanie-dokumentov-v-eb/"
+  },
+  "faq-uvedomleniya-ufk-v-eb": {
+   "name": "Где смотреть уведомления и протоколы УФК?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/gde-smotret-uvedomleniya-ufk/"
+  },
+  "faq-chto-takoe-sufd": {
+   "name": "Что такое СУФД и нужен ли он подрядчику?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-sufd-vopros/"
+  },
+  "faq-eb-ne-rabotaet": {
+   "name": "«Электронный бюджет» не работает — где проверить и что делать?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/eb-ne-rabotaet-segodnya/"
+  },
+  "faq-smena-rukovoditelya-eb": {
+   "name": "Сменился руководитель — как перенастроить доступ в ЭБ?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/smena-rukovoditelya-dostup-eb/"
+  },
+  "faq-autsorsing-eb": {
+   "name": "Можно ли поручить работу в ГИИС на аутсорс?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/autsorsing-raboty-v-eb/"
+  },
+  "faq-chto-takoe-goz": {
+   "name": "Что такое гособоронзаказ простыми словами?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-goz-vopros/"
+  },
+  "faq-ks-goz-otlichiya": {
+   "name": "Чем казначейское сопровождение ГОЗ отличается от обычного?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chem-ks-goz-otlichaetsya/"
+  },
+  "faq-kazna-ili-bank-goz": {
+   "name": "Казначейское или банковское сопровождение — что будет по контракту ГОЗ?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kazna-ili-bank-po-goz/"
+  },
+  "faq-chto-takoe-otdelnyy-schet": {
+   "name": "Что такое отдельный счёт по 275-ФЗ?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-otdelnyy-schet-vopros/"
+  },
+  "faq-bank-dlya-goz": {
+   "name": "В каком банке открывать отдельный счёт по ГОЗ?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kakoy-bank-dlya-goz/"
+  },
+  "faq-igk-goz-vs-44fz": {
+   "name": "Чем ИГК по ГОЗ отличается от ИГК по 44-ФЗ?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/igk-po-goz-otlichiya/"
+  },
+  "faq-obyazannosti-ispolnitelya-goz": {
+   "name": "Какие обязанности у исполнителя в кооперации ГОЗ?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/obyazannosti-ispolnitelya-goz/"
+  },
+  "faq-subpodryad-v-goz": {
+   "name": "Стал субподрядчиком по ГОЗ — что от меня требуется?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/subpodryad-v-goz/"
+  },
+  "faq-zaprety-otdelnyy-schet": {
+   "name": "Какие операции запрещены по отдельному счёту ГОЗ?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-zapreshcheno-po-otdelnomu-schetu/"
+  },
+  "faq-chto-takoe-razdelnyy-uchet": {
+   "name": "Что такое раздельный учёт по ГОЗ?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-razdelnyy-uchet-vopros/"
+  },
+  "faq-kto-vedet-razdelnyy-uchet": {
+   "name": "Кто обязан вести раздельный учёт?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kto-obyazan-vesti-razdelnyy-uchet/"
+  },
+  "faq-postanovka-razdelnogo-ucheta": {
+   "name": "Как поставить раздельный учёт с нуля?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-postavit-razdelnyy-uchet/"
+  },
+  "faq-shtraf-net-razdelnogo-ucheta": {
+   "name": "Какой штраф за отсутствие раздельного учёта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/shtraf-za-otsutstvie-ru/"
+  },
+  "faq-ru-po-44fz": {
+   "name": "Нужен ли раздельный учёт по контрактам 44-ФЗ?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/nuzhen-li-ru-po-44fz/"
+  },
+  "faq-raspredelenie-nakladnykh": {
+   "name": "Как распределять накладные расходы в раздельном учёте?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-raspredelyat-nakladnye/"
+  },
+  "faq-chto-takoe-prim-1": {
+   "name": "Что такое форма «Прим-1» и кто её запрашивает?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-prim-1-vopros/"
+  },
+  "faq-vidy-tsen-goz": {
+   "name": "Какие виды цен бывают в контрактах ГОЗ?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kakie-tseny-v-goz/"
+  },
+  "faq-pravilo-20-1": {
+   "name": "Что такое правило «20+1» в ГОЗ?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-pravilo-20-1/"
+  },
+  "faq-obosnovanie-tseny-goz": {
+   "name": "Как обосновать цену контракта ГОЗ?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-obosnovat-tsenu-goz/"
+  },
+  "faq-perevod-tseny-v-fiksirovannuyu": {
+   "name": "Как перевести ориентировочную цену в фиксированную?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-perevesti-tsenu-v-fiksirovannuyu/"
+  },
+  "faq-chto-proveryaet-voenpred": {
+   "name": "Что проверяет военное представительство?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-proveryaet-voenpred/"
+  },
+  "faq-skolko-pribyli-goz": {
+   "name": "Сколько можно заработать на контракте ГОЗ?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/skolko-pribyli-v-goz/"
+  },
+  "faq-otchetnost-goz-girbo": {
+   "name": "Какую отчётность исполнители ГОЗ сдают в ГИРБО?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/otchetnost-goz-v-girbo/"
+  },
+  "faq-vyvod-pribyli-goz": {
+   "name": "Как вывести прибыль по контракту ГОЗ?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-vyvesti-pribyl-goz/"
+  },
+  "faq-soprovozhdenie-goz-pod-klyuch": {
+   "name": "Кто поможет с сопровождением контракта ГОЗ?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/soprovozhdenie-goz-pod-klyuch/"
+  },
+  "faq-subsidiya-pod-ks": {
+   "name": "Когда субсидия попадает под казначейское сопровождение?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kogda-subsidiya-pod-ks/"
+  },
+  "faq-ks-subsidiy-vs-kontrakta": {
+   "name": "Чем КС субсидии отличается от КС контракта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chem-ks-subsidiy-otlichaetsya/"
+  },
+  "faq-otkrytie-scheta-subsidiya": {
+   "name": "Как открыть лицевой счёт для субсидии?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-otkryt-schet-dlya-subsidii/"
+  },
+  "faq-soglashenie-o-subsidii": {
+   "name": "Что такое соглашение о предоставлении субсидии?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-soglashenie-o-subsidii-vopros/"
+  },
+  "faq-identifikator-soglasheniya": {
+   "name": "Что такое идентификатор соглашения?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-identifikator-soglasheniya-vopros/"
+  },
+  "faq-raskhody-subsidii": {
+   "name": "На что можно тратить субсидию?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/na-chto-mozhno-tratit-subsidiyu/"
+  },
+  "faq-ufk-ne-soglasuet-subsidiyu": {
+   "name": "Почему УФК не согласует расходы по субсидии?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/soglasovanie-raskhodov-po-subsidii/"
+  },
+  "faq-zarplata-iz-subsidii": {
+   "name": "Можно ли платить зарплату из субсидии?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/mozhno-li-zarplata-iz-subsidii/"
+  },
+  "faq-oborudovanie-iz-subsidii": {
+   "name": "Можно ли купить оборудование за счёт субсидии?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/mozhno-li-oborudovanie-iz-subsidii/"
+  },
+  "faq-razdelenie-subsidii-i-svoih": {
+   "name": "Как разделять субсидию и собственные средства?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/sobstvennye-sredstva-i-subsidiya/"
+  },
+  "faq-svedeniya-po-subsidii": {
+   "name": "Нужны ли Сведения по субсидии и кто их утверждает?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/svedeniya-po-subsidii/"
+  },
+  "faq-otchet-po-subsidii": {
+   "name": "Как отчитаться об использовании субсидии?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/otchet-po-subsidii-kak-sdat/"
+  },
+  "faq-nedostizhenie-pokazateley": {
+   "name": "Не достигли показателей по субсидии — что будет?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/ne-dostigli-pokazateley/"
+  },
+  "faq-vozvrat-subsidii": {
+   "name": "Когда придётся вернуть субсидию?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/vozvrat-subsidii-kogda/"
+  },
+  "faq-ostatok-subsidii": {
+   "name": "Что делать с неиспользованным остатком субсидии?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/ostatok-subsidii-chto-delat/"
+  },
+  "faq-grant-pod-ks": {
+   "name": "Грант попадает под казначейское сопровождение?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/grant-pod-ks/"
+  },
+  "faq-regionalnaya-subsidiya": {
+   "name": "Региональная субсидия — какие правила КС действуют?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/subsidiya-regionalnaya-pravila/"
+  },
+  "faq-prodlenie-sroka-subsidii": {
+   "name": "Можно ли продлить срок использования субсидии?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/prodlenie-sroka-subsidii/"
+  },
+  "faq-neskolko-subsidiy-schet": {
+   "name": "Несколько субсидий — нужен ли счёт на каждую?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/neskolko-subsidiy-odin-schet/"
+  },
+  "faq-pomoshch-s-subsidiey": {
+   "name": "Кто поможет вести субсидию под казначейским сопровождением?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/pomoshch-s-subsidiey/"
+  },
+  "faq-otchetnost-pri-ks": {
+   "name": "Какая отчётность появляется при казначейском сопровождении?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kakaya-otchetnost-pri-ks/"
+  },
+  "faq-buhuchet-operatsiy-ls": {
+   "name": "Как отражать операции по лицевому счёту в бухучёте?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-uchityvat-operatsii-po-ls/"
+  },
+  "faq-kalendar-dedlaynov-ks": {
+   "name": "Какие регулярные дедлайны у подрядчика при КС?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kalendar-otchetnosti-ks/"
+  },
+  "faq-podgotovka-k-proverke": {
+   "name": "Как подготовиться к проверке казначейства?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/audit-pered-proverkoy/"
+  },
+  "faq-pamyatka-buhgalteru-ks": {
+   "name": "Что бухгалтеру нужно знать про казначейский счёт?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/dokumenty-dlya-buhgaltera/"
+  },
+  "faq-kakie-kontrakty-pod-ks": {
+   "name": "Какие контракты попадают под казначейское сопровождение?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kakie-kontrakty-pod-ks-vopros/"
+  },
+  "faq-s-kakoy-summy-ks": {
+   "name": "С какой суммы контракт попадает под КС?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/s-kakoy-summy-ks/"
+  },
+  "faq-kto-ustanavlivaet-sluchai-ks": {
+   "name": "Кто и где устанавливает случаи казначейского сопровождения?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kto-ustanavlivaet-sluchai-ks/"
+  },
+  "faq-ks-menyaetsya-kazhdyy-god": {
+   "name": "Правда ли, что условия КС меняются каждый год?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/ks-menyaetsya-kazhdyy-god/"
+  },
+  "faq-kak-ponyat-est-li-ks": {
+   "name": "Как понять, есть ли КС в моём контракте?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-ponyat-est-li-ks-v-kontrakte/"
+  },
+  "faq-mozhno-li-izbezhat-ks": {
+   "name": "Можно ли избежать казначейского сопровождения?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/mozhno-li-izbezhat-ks/"
+  },
+  "faq-ks-po-223-fz": {
+   "name": "Когда договор по 223-ФЗ попадает под КС?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/ks-po-223-fz-kogda/"
+  },
+  "faq-ks-dlya-municipalnykh": {
+   "name": "Действует ли КС для муниципальных контрактов?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/ks-dlya-municipalnykh/"
+  },
+  "faq-ks-bez-avansa": {
+   "name": "Будет ли КС, если контракт без аванса?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/ks-bez-avansa/"
+  },
+  "faq-edinstvennyy-postavshchik-ks": {
+   "name": "Попадают ли под КС контракты с единственным поставщиком?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/edinstvennyy-postavshchik-ks/"
+  },
+  "faq-kakoy-zakon-reguliruet-ks": {
+   "name": "Какой закон регулирует казначейское сопровождение?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kakoy-zakon-reguliruet-ks/"
+  },
+  "faq-bk-242": {
+   "name": "Что говорят статьи 242.23–242.26 БК РФ?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-bk-242/"
+  },
+  "faq-prikaz-214n": {
+   "name": "Что регулирует приказ Минфина № 214н?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-prikaz-214n-vopros/"
+  },
+  "faq-prikaz-44n": {
+   "name": "Что регулирует приказ ФК № 44н?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-prikaz-44n-vopros/"
+  },
+  "faq-izmeneniya-sentyabr-2026": {
+   "name": "Что меняется в КС с 1 сентября 2026 года?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-menyaetsya-s-sentyabrya-2026/"
+  },
+  "faq-gde-sledit-za-izmeneniyami": {
+   "name": "Где следить за изменениями правил КС?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/gde-sledit-za-izmeneniyami/"
+  },
+  "faq-ks-vs-bankovskoe": {
+   "name": "Чем казначейское сопровождение отличается от банковского?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/ks-i-bankovskoe-raznitsa-vopros/"
+  },
+  "faq-narushenie-ks": {
+   "name": "Что будет за нарушение правил казначейского сопровождения?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-budet-za-narushenie-ks/"
+  },
+  "faq-ugolovnaya-otvetstvennost-ks": {
+   "name": "Бывает ли уголовная ответственность при КС?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/ugolovnaya-otvetstvennost-ks/"
+  },
+  "faq-otvetstvennost-direktora-ks": {
+   "name": "Чем рискует директор при нарушениях КС?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/otvetstvennost-direktora-ks/"
+  },
+  "faq-proverki-fas-goz": {
+   "name": "Когда приходит ФАС по контрактам ГОЗ?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/proverki-fas-po-goz/"
+  },
+  "faq-srok-davnosti-ks": {
+   "name": "Какой срок давности у нарушений при КС?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/srok-davnosti-narusheniy/"
+  },
+  "faq-ks-eto-nadolgo": {
+   "name": "Казначейское сопровождение — это временная мера?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/ks-eto-nadolgo/"
+  },
+  "faq-zachem-gosudarstvu-ks": {
+   "name": "Зачем государству казначейское сопровождение?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/zachem-gosudarstvu-ks/"
+  },
+  "faq-plyusy-ks-dlya-podryadchika": {
+   "name": "Есть ли плюсы КС для подрядчика?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/plyusy-ks-dlya-podryadchika/"
+  },
+  "faq-stoimost-soprovozhdeniya": {
+   "name": "Сколько стоит казначейское сопровождение под ключ?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/skolko-stoit-soprovozhdenie/"
+  },
+  "faq-sostav-uslugi-soprovozhdeniya": {
+   "name": "Что входит в услугу сопровождения КС?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-vhodit-v-soprovozhdenie/"
+  },
+  "faq-stoimost-otkrytiya-scheta": {
+   "name": "Сколько стоит открытие счёта под ключ?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/skolko-stoit-otkrytie-pod-klyuch/"
+  },
+  "faq-faktory-tseny-soprovozhdeniya": {
+   "name": "От чего зависит цена сопровождения?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/ot-chego-zavisit-tsena-uslug/"
+  },
+  "faq-kak-zakazat-uslugu": {
+   "name": "Как заказать сопровождение контракта?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-zakazat-soprovozhdenie/"
+  },
+  "faq-srok-podklyucheniya": {
+   "name": "Как быстро вы подключаетесь к проекту?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-bystro-podklyuchaetes/"
+  },
+  "faq-geografiya-raboty": {
+   "name": "Работаете ли вы по всей России?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/rabotaete-li-po-vsey-rossii/"
+  },
+  "faq-polnomochiya-dlya-raboty": {
+   "name": "Какие полномочия нужны вам для работы?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/nuzhna-li-doverennost-dlya-vas/"
+  },
+  "faq-srochnye-sluchai": {
+   "name": "Берёте ли срочные случаи — заблокированные платежи?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/berete-li-srochnye-slucai/"
+  },
+  "faq-garantii": {
+   "name": "Какие гарантии вы даёте?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/garantii-rezultata/"
+  },
+  "faq-vygoda-autsorsinga": {
+   "name": "Выгоден ли аутсорсинг казначейского сопровождения?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/autsorsing-ks-vygodno-li/"
+  },
+  "faq-bukhgalter-vs-autsorsing": {
+   "name": "Справится ли штатный бухгалтер с КС?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/svoy-bukhgalter-ili-autsorsing/"
+  },
+  "faq-zona-klienta-pri-autsorsinge": {
+   "name": "Что при аутсорсинге остаётся на стороне клиента?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-ostaetsya-na-nashey-storone/"
+  },
+  "faq-konfidentsialnost": {
+   "name": "Как обеспечивается конфиденциальность данных?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/konfidentsialnost-dannykh/"
+  },
+  "faq-otraslevoy-opyt": {
+   "name": "В каких отраслях у вас есть опыт?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/opyt-v-kakikh-otraslyakh/"
+  },
+  "faq-opyt-v-tsifrakh": {
+   "name": "Сколько контрактов вы уже сопровождали?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/skolko-kontraktov-vedete/"
+  },
+  "faq-besplatnaya-diagnostika": {
+   "name": "Есть ли бесплатная консультация?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/besplatnaya-konsultatsiya/"
+  },
+  "faq-kalkulyator-stoimosti": {
+   "name": "Как посчитать стоимость сопровождения самому?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kalkulyator-stoimosti-ks/"
+  },
+  "faq-tolko-otkrytie-scheta": {
+   "name": "Можно заказать только открытие счёта, без ведения?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/pomozhete-li-tolko-s-otkrytiem/"
+  },
+  "faq-ip-i-malyy-biznes": {
+   "name": "Работаете ли с ИП и малым бизнесом?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/rabota-s-ip-i-malym-biznesom/"
+  },
+  "faq-ks-prostymi-slovami": {
+   "name": "Что такое казначейское сопровождение простыми словами?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/ks-prostymi-slovami/"
+  },
+  "faq-start-novichka": {
+   "name": "Контракт под КС — с чего начать новичку?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/s-chego-nachat-novichku/"
+  },
+  "faq-vremya-na-protsedury": {
+   "name": "Сколько времени уходит на казначейские процедуры?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/skolko-vremeni-zanimaet-ks/"
+  },
+  "faq-proverka-do-podpisaniya": {
+   "name": "Что проверить до подписания контракта с КС?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chek-list-pered-kontraktom/"
+  },
+  "faq-gde-uchitsya-ks": {
+   "name": "Где научиться работать с казначейским сопровождением?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/gde-uchitsya-rabote-s-ks/"
+  },
+  "hub-ks": {
+   "name": "Казначейское сопровождение",
+   "type": [
+    "hub"
+   ],
+   "url": "/kaznacheyskoe-soprovozhdenie/"
+  },
+  "hub-scheta": {
+   "name": "Лицевые счета",
+   "type": [
+    "hub"
+   ],
+   "url": "/scheta/"
+  },
+  "hub-platezhi": {
+   "name": "Платежи и вывод средств",
+   "type": [
+    "hub"
+   ],
+   "url": "/platezhi/"
+  },
+  "hub-sankts": {
+   "name": "Санкционирование и контроль",
+   "type": [
+    "hub"
+   ],
+   "url": "/sanktsionirovanie/"
+  },
+  "hub-goz": {
+   "name": "ГОЗ",
+   "type": [
+    "hub"
+   ],
+   "url": "/goz/"
+  },
+  "hub-ru": {
+   "name": "Раздельный учёт",
+   "type": [
+    "hub"
+   ],
+   "url": "/razdelnyj-uchet/"
+  },
+  "hub-subsidii": {
+   "name": "Субсидии и гранты",
+   "type": [
+    "hub"
+   ],
+   "url": "/subsidii/"
+  },
+  "hub-giis": {
+   "name": "ГИИС ЭБ и доступ",
+   "type": [
+    "hub"
+   ],
+   "url": "/giis/"
+  },
+  "hub-zakony": {
+   "name": "Законодательство",
+   "type": [
+    "hub"
+   ],
+   "url": "/zakonodatelstvo/"
+  },
+  "hub-otchetnost": {
+   "name": "Отчётность и учёт",
+   "type": [
+    "hub"
+   ],
+   "url": "/otchetnost/"
+  },
+  "tool-diagnostika-kontrakta": {
+   "name": "Диагностика контракта",
+   "type": [
+    "tool"
+   ],
+   "url": "/instrumenty/diagnostika-kontrakta/"
+  },
+  "tool-proverka-ks": {
+   "name": "Проверка необходимости КС",
+   "type": [
+    "tool"
+   ],
+   "url": "/instrumenty/proverka-neobhodimosti-ks/"
+  },
+  "tool-podbor-scheta": {
+   "name": "Подбор счёта",
+   "type": [
+    "tool"
+   ],
+   "url": "/instrumenty/podbor-litsevogo-scheta/"
+  },
+  "tool-proverka-komplekta": {
+   "name": "Проверка комплекта документов",
+   "type": [
+    "tool"
+   ],
+   "url": "/instrumenty/proverka-komplekta-dokumentov/"
+  },
+  "tool-diagnostika-platezha": {
+   "name": "Диагностика платежа",
+   "type": [
+    "tool"
+   ],
+   "url": "/instrumenty/diagnostika-platezha/"
+  },
+  "tool-proverka-goz": {
+   "name": "Проверка обязанностей по ГОЗ",
+   "type": [
+    "tool"
+   ],
+   "url": "/instrumenty/proverka-goz/"
+  },
+  "tool-proverka-subsidii": {
+   "name": "Проверка субсидии",
+   "type": [
+    "tool"
+   ],
+   "url": "/instrumenty/proverka-subsidii/"
+  },
+  "tool-marshrutizator": {
+   "name": "Маршрутизатор платежа",
+   "type": [
+    "tool"
+   ],
+   "url": "/instrumenty/marshrutizator-platezha/"
+  },
+  "tool-proverka-sankts": {
+   "name": "Проверка готовности к санкционированию",
+   "type": [
+    "tool"
+   ],
+   "url": "/instrumenty/proverka-sanktsionirovaniya/"
+  },
+  "tool-generator-chek-lista": {
+   "name": "Генератор чек-листа",
+   "type": [
+    "tool"
+   ],
+   "url": "/instrumenty/generator-chek-lista/"
+  },
+  "service-open": {
+   "name": "Открытие казначейского счёта под ключ",
+   "type": [
+    "service"
+   ],
+   "url": "/services/open"
+  },
+  "service-conduct": {
+   "name": "Сопровождение платежей и ведение КС",
+   "type": [
+    "service"
+   ],
+   "url": "/services/conduct"
+  },
+  "service-reserve": {
+   "name": "Резервирование счёта для тендера",
+   "type": [
+    "service"
+   ],
+   "url": "/services/reserve"
+  },
+  "service-postpayment": {
+   "name": "КС при постоплате",
+   "type": [
+    "service"
+   ],
+   "url": "/services/postpayment"
+  },
+  "service-start": {
+   "name": "Сопровождение с первого дня",
+   "type": [
+    "service"
+   ],
+   "url": "/services/start"
+  },
+  "service-vosstanovlenie": {
+   "name": "Восстановление КС (антикризис)",
+   "type": [
+    "service"
+   ],
+   "url": "/services/vosstanovlenie"
+  },
+  "law-44-фз": {
+   "name": "44-ФЗ",
+   "type": [
+    "law"
+   ],
+   "url": "/zakonodatelstvo/"
+  },
+  "law-223-фз": {
+   "name": "223-ФЗ",
+   "type": [
+    "law"
+   ],
+   "url": "/zakonodatelstvo/"
+  },
+  "law-275-фз": {
+   "name": "275-ФЗ",
+   "type": [
+    "law"
+   ],
+   "url": "/zakonodatelstvo/"
+  },
+  "law-63-фз": {
+   "name": "63-ФЗ",
+   "type": [
+    "law"
+   ],
+   "url": "/zakonodatelstvo/"
+  },
+  "law-бк-рф-ст-2422224226": {
+   "name": "БК РФ, ст. 242.22–242.26",
+   "type": [
+    "law"
+   ],
+   "url": "/zakonodatelstvo/"
+  },
+  "law-ежегодный-закон-о-федеральном-бюджете": {
+   "name": "Ежегодный закон о федеральном бюджете",
+   "type": [
+    "law"
+   ],
+   "url": "/zakonodatelstvo/"
+  },
+  "law-приказ-минфина-214н": {
+   "name": "Приказ Минфина № 214н",
+   "type": [
+    "law"
+   ],
+   "url": "/zakonodatelstvo/"
+  },
+  "law-приказ-фк-44н": {
+   "name": "Приказ ФК № 44н",
+   "type": [
+    "law"
+   ],
+   "url": "/zakonodatelstvo/"
+  },
+  "law-приказ-фк-21н": {
+   "name": "Приказ ФК № 21н",
+   "type": [
+    "law"
+   ],
+   "url": "/zakonodatelstvo/"
+  },
+  "law-пп-1465": {
+   "name": "ПП № 1465",
+   "type": [
+    "law"
+   ],
+   "url": "/zakonodatelstvo/"
+  },
+  "law-пп-2053": {
+   "name": "ПП № 2053",
+   "type": [
+    "law"
+   ],
+   "url": "/zakonodatelstvo/"
+  },
+  "law-коап-рф-ст-1514": {
+   "name": "КоАП РФ, ст. 15.14",
+   "type": [
+    "law"
+   ],
+   "url": "/zakonodatelstvo/"
+  },
+  "law-коап-рф-ст-1537": {
+   "name": "КоАП РФ, ст. 15.37",
+   "type": [
+    "law"
+   ],
+   "url": "/zakonodatelstvo/"
+  },
+  "law-приказ-минцифры-1001": {
+   "name": "Приказ Минцифры № 1001",
+   "type": [
+    "law"
+   ],
+   "url": "/zakonodatelstvo/"
+  },
+  "law-гк-рф-ст-185189": {
+   "name": "ГК РФ, ст. 185–189",
+   "type": [
+    "law"
+   ],
+   "url": "/zakonodatelstvo/"
+  },
+  "law-нк-рф-гл-21": {
+   "name": "НК РФ, гл. 21",
+   "type": [
+    "law"
+   ],
+   "url": "/zakonodatelstvo/"
+  }
+ }
+}

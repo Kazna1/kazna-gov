@@ -1,0 +1,9 @@
+# Услуги (Money Layer) — kazna-gov.ru (machine readable, 6 entities)
+# Knowledge API: https://kazna-gov.ru/api/ · Graph: https://kazna-gov.ru/api/knowledge-graph.json
+
+- Сопровождение платежей и ведение КС [service-conduct]: Самостоятельно: бухгалтер учится на возвратах. С нами: платежи проходят с первого раза, штат не отвлекается. URL: https://kazna-gov.ru/services/conduct API: https://kazna-gov.ru/entity/service-conduct.json
+- Открытие казначейского счёта под ключ [service-open]: Самостоятельно: 5–10 дней с риском возвратов. С нами: 1–2 дня, без возвратов, фикс-цена. URL: https://kazna-gov.ru/services/open API: https://kazna-gov.ru/entity/service-open.json
+- Восстановление КС (антикризис) [service-vosstanovlenie]: Платежи стоят, сроки горят: стабилизируем контракт за 1–2 недели и ведём дальше. URL: https://kazna-gov.ru/services/vosstanovlenie API: https://kazna-gov.ru/entity/service-vosstanovlenie.json
+- Сопровождение с первого дня [service-start]: Первый контракт с КС: настроим весь контур за неделю и передадим команде — или останемся вести. URL: https://kazna-gov.ru/services/start API: https://kazna-gov.ru/entity/service-start.json
+- Резервирование счёта для тендера [service-reserve]: Нужны реквизиты счёта до подписания? Резервирование даёт номер за 1–2 дня. URL: https://kazna-gov.ru/services/reserve API: https://kazna-gov.ru/entity/service-reserve.json
+- КС при постоплате [service-postpayment]: Контракт без аванса: платить за месяцы сопровождения незачем — берите разовый пакет финального расчёта. URL: https://kazna-gov.ru/services/postpayment API: https://kazna-gov.ru/entity/service-postpayment.json

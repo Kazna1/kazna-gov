@@ -1,0 +1,586 @@
+{
+ "project": "kazna-gov.ru Knowledge Graph",
+ "version": "2026-07-09",
+ "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
+ "docs": "https://kazna-gov.ru/api/",
+ "count": 13,
+ "entities": [
+  {
+   "id": "err-otkaz-sanktsionirovaniya",
+   "type": [
+    "error",
+    "term"
+   ],
+   "name": "Отказ в санкционировании",
+   "aliases": [
+    "уфк отказало в платеже",
+    "отказ уфк"
+   ],
+   "summary": "Отказ в санкционировании — решение УФК не исполнять расход: платёж не соответствует Сведениям, основаниям, кодам или режиму целевых средств. Формально фиксируется протоколом с причиной. Лечится по алгоритму: понять причину → устранить (документ, Сведения, код) → подать заново; при спорной причине — пояснение или официальный запрос.",
+   "citation": "Отказ в санкционировании — это результат непрохождения контроля УФК: расход не соответствует Сведениям, документам-основаниям или правилам заполнения распоряжения. Основание отказа всегда указывается. Алгоритм: прочитать основание в ГИИС «Электронный бюджет», устранить конкретную причину (Сведения, код, ИГК, документы) и подать новое распоряжение — средства остаются на лицевом счёте.",
+   "pages": [
+    {
+     "layer": "error",
+     "url": "/oshibki/ufk-otkazalo-v-sanktsionirovanii/",
+     "title": "Отказ в санкционировании"
+    },
+    {
+     "layer": "term",
+     "url": "/glossary/otkaz-v-sanktsionirovanii/",
+     "title": "Отказ в санкционировании"
+    }
+   ],
+   "relations": {
+    "SEE_ERROR": [
+     "err-igk",
+     "err-kod-napravleniya",
+     "err-necelevoe",
+     "err-svedeniya-otkaz"
+    ],
+    "MONETIZED_BY": [
+     "service-vosstanovlenie"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/sanktsionirovanie-operatsiy-kaznacheystvom",
+     "/blog/ufk-zaderzhivaet-platezh-chto-delat",
+     "/blog/sroki-rassmotreniya-dokumentov-v-ufk-tablitsa",
+     "/oshibki/ufk-otkazalo-v-sanktsionirovanii/"
+    ],
+    "RELATED_TERM": [
+     "sanktsionirovanie",
+     "err-vozvrat-platezha",
+     "svedeniya-ssu"
+    ],
+    "REQUIRES_DOC": [
+     "poyasnenie-ufk",
+     "pismo-zapros"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-err-otkaz-sanktsionirovaniya",
+   "scores": {
+    "authority": 100,
+    "coverage": 83,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "err-necelevoe",
+   "type": [
+    "error",
+    "term"
+   ],
+   "name": "Нецелевое расходование",
+   "aliases": [
+    "нецелевка",
+    "нецелевое использование средств"
+   ],
+   "summary": "Нецелевое расходование — трата целевых средств на цели, не предусмотренные контрактом, соглашением или структурой цены. Последствия: возврат средств, штрафы (для бюджетных средств — вплоть до ст. 15.14 КоАП и уголовной ответственности при крупных суммах), расторжение и репутационные потери. Санкционирование фильтрует большинство попыток, но ответственность лежит на получателе.",
+   "citation": "Нецелевое расходование — оплата с лицевого счёта расходов, не связанных с исполнением контракта или не предусмотренных Сведениями: погашение старых долгов, депозиты, займы, расходы по другим контрактам. Последствия — от отказов в санкционировании до административной ответственности и претензий заказчика. Профилактика: каждый платёж сверять с условиями контракта и Сведениями до подачи.",
+   "pages": [
+    {
+     "layer": "error",
+     "url": "/oshibki/necelevoe-rashodovanie-sredstv/",
+     "title": "Нецелевое расходование"
+    },
+    {
+     "layer": "term",
+     "url": "/glossary/netselevoe-raskhodovanie/",
+     "title": "Нецелевое расходование"
+    }
+   ],
+   "relations": {
+    "SEE_ERROR": [
+     "err-otkaz-sanktsionirovaniya",
+     "err-kod-napravleniya",
+     "err-razdelnyy-uchet"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta",
+     "/blog/podvodnye-kamni-kaznacheyskogo-soprovozhdeniya",
+     "/blog/fines/",
+     "/oshibki/necelevoe-rashodovanie-sredstv/"
+    ],
+    "RELATED_TERM": [
+     "tselevye-sredstva",
+     "koap-15-49",
+     "kazn-monitoring"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-err-necelevoe",
+   "scores": {
+    "authority": 62,
+    "coverage": 67,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "err-zatyanulos-otkrytie",
+   "type": [
+    "error"
+   ],
+   "name": "Затянулось открытие счёта",
+   "aliases": [],
+   "summary": "",
+   "citation": "Штатно лицевой счёт участника казначейского сопровождения открывается за несколько рабочих дней после подачи корректного комплекта. Если срок вышел, процесс застрял на одном из этапов: включение в Сводный реестр, замечания к документам, доступ в ГИИС «Электронный бюджет» или очередь ТОФК. Найдите этап по статусам в ГИИС и запросам в УФК — и устраняйте точечно; общий «поторопите нас» не работает.",
+   "pages": [
+    {
+     "layer": "error",
+     "url": "/oshibki/zatyanulos-otkrytie-scheta/",
+     "title": "Затянулось открытие счёта"
+    }
+   ],
+   "relations": {
+    "SEE_ERROR": [
+     "err-kartochka",
+     "err-mchd",
+     "err-ecp"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/ne-otkryvaetsya-kaznacheyskiy-schet-prichiny-otkaza-2026",
+     "/blog/how_to_open/",
+     "/blog/sroki-rassmotreniya-dokumentov-v-ufk-tablitsa"
+    ]
+   },
+   "updated": "2026-07-08",
+   "schema_id": "https://kazna-gov.ru/#e-err-zatyanulos-otkrytie",
+   "scores": {
+    "authority": 62,
+    "coverage": 50,
+    "connectivity": 100,
+    "citation": 50,
+    "aiReadiness": 60,
+    "density": 100
+   }
+  },
+  {
+   "id": "err-kod-napravleniya",
+   "type": [
+    "error"
+   ],
+   "name": "Неверный код направления",
+   "aliases": [],
+   "summary": "",
+   "citation": "Код направления расходования в распоряжении должен соответствовать и фактическому назначению расхода, и укрупнённому коду в утверждённых Сведениях. Если код не совпадает или расход по нему не предусмотрен Сведениями — УФК отклоняет платёж. Решение: выбрать код по справочнику, при необходимости уточнить Сведения, затем подать новое распоряжение.",
+   "pages": [
+    {
+     "layer": "error",
+     "url": "/oshibki/nevernyy-kod-napravleniya-rashodov/",
+     "title": "Неверный код направления"
+    }
+   ],
+   "relations": {
+    "SEE_ERROR": [
+     "err-naznachenie",
+     "err-svedeniya-otkaz",
+     "err-necelevoe"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/codes",
+     "/blog/kody-vozmeshcheniya-rashodov",
+     "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta"
+    ]
+   },
+   "updated": "2026-07-08",
+   "schema_id": "https://kazna-gov.ru/#e-err-kod-napravleniya",
+   "scores": {
+    "authority": 44,
+    "coverage": 50,
+    "connectivity": 100,
+    "citation": 50,
+    "aiReadiness": 60,
+    "density": 100
+   }
+  },
+  {
+   "id": "err-naznachenie",
+   "type": [
+    "error"
+   ],
+   "name": "Неверное назначение платежа",
+   "aliases": [],
+   "summary": "",
+   "citation": "УФК возвращает платёж, если в назначении нет обязательных элементов: кода направления расходования, ИГК, реквизитов документа-основания и ставки НДС. Исправление — переписать назначение по структуре «код; ИГК; за что и по какому документу платим; НДС» и подать новое распоряжение в ГИИС «Электронный бюджет».",
+   "pages": [
+    {
+     "layer": "error",
+     "url": "/oshibki/nevernoe-naznachenie-platezha/",
+     "title": "Неверное назначение платежа"
+    }
+   ],
+   "relations": {
+    "SEE_ERROR": [
+     "err-igk",
+     "err-kod-napravleniya",
+     "err-otkaz-sanktsionirovaniya"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/naznachenie-platezha-kaznachejstvo/",
+     "/blog/izmeneniya-platezhek-kaznachejstvo-2026/",
+     "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta"
+    ]
+   },
+   "updated": "2026-07-08",
+   "schema_id": "https://kazna-gov.ru/#e-err-naznachenie",
+   "scores": {
+    "authority": 43,
+    "coverage": 50,
+    "connectivity": 100,
+    "citation": 50,
+    "aiReadiness": 60,
+    "density": 100
+   }
+  },
+  {
+   "id": "err-razdelnyy-uchet",
+   "type": [
+    "error"
+   ],
+   "name": "Нет раздельного учёта ГОЗ",
+   "aliases": [],
+   "summary": "",
+   "citation": "Исполнитель ГОЗ обязан вести раздельный учёт результатов финансово-хозяйственной деятельности по каждому контракту (275-ФЗ). Отсутствие или фиктивность учёта — административная ответственность (ст. 15.37 КоАП; с 2026 практика ужесточена) и претензии военпредставительства при приёмке цены. Минимальный комплект: учётная политика с методикой, регистры по контракту, база распределения накладных и расшифровка затрат (Прим-1).",
+   "pages": [
+    {
+     "layer": "error",
+     "url": "/oshibki/net-razdelnogo-ucheta-goz/",
+     "title": "Нет раздельного учёта ГОЗ"
+    }
+   ],
+   "relations": {
+    "SEE_ERROR": [
+     "err-necelevoe",
+     "err-svedeniya-otkaz"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/razdelnyj-uchet-goz-polnyy-guide-2026",
+     "/blog/razdelnyy-uchet-po-44-fz-vs-275-fz-otlichiya",
+     "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid"
+    ]
+   },
+   "updated": "2026-07-08",
+   "schema_id": "https://kazna-gov.ru/#e-err-razdelnyy-uchet",
+   "scores": {
+    "authority": 33,
+    "coverage": 50,
+    "connectivity": 100,
+    "citation": 50,
+    "aiReadiness": 60,
+    "density": 100
+   }
+  },
+  {
+   "id": "err-igk",
+   "type": [
+    "error"
+   ],
+   "name": "Ошибка в ИГК в платёжке",
+   "aliases": [],
+   "summary": "",
+   "citation": "Если УФК отклонило платёж из-за ИГК, идентификатор в распоряжении не совпадает с ИГК контракта в реестре. Возьмите точный ИГК из контракта или реестра контрактов ЕИС, исправьте его в распоряжении о казначейском платеже в ГИИС «Электронный бюджет» и отправьте платёж повторно — деньги при отклонении остаются на лицевом счёте.",
+   "pages": [
+    {
+     "layer": "error",
+     "url": "/oshibki/oshibka-v-igk-platezh-ne-prohodit/",
+     "title": "Ошибка в ИГК в платёжке"
+    }
+   ],
+   "relations": {
+    "SEE_ERROR": [
+     "err-otkaz-sanktsionirovaniya",
+     "err-kod-napravleniya",
+     "err-naznachenie"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/igk-v-platezhah-kaznacheystva",
+     "/blog/vozvrat-platezha-kaznachejstvo-chto-delat/",
+     "/blog/naznachenie-platezha-kaznachejstvo/"
+    ]
+   },
+   "updated": "2026-07-08",
+   "schema_id": "https://kazna-gov.ru/#e-err-igk",
+   "scores": {
+    "authority": 30,
+    "coverage": 50,
+    "connectivity": 100,
+    "citation": 50,
+    "aiReadiness": 60,
+    "density": 100
+   }
+  },
+  {
+   "id": "err-mchd",
+   "type": [
+    "error"
+   ],
+   "name": "МЧД не проходит",
+   "aliases": [],
+   "summary": "",
+   "citation": "МЧД для казначейства — электронная доверенность формата 003, выпускаемая руководителем через сервисы ФНС/УЦ. С 01.02.2026 обязательны срок действия и точное наименование полномочия (приказ Минцифры № 1001). Если МЧД не проходит: проверьте формат, срок, полномочие и статус в реестре — и перевыпустите доверенность с корректными атрибутами.",
+   "pages": [
+    {
+     "layer": "error",
+     "url": "/oshibki/mchd-ne-prohodit-proverku/",
+     "title": "МЧД не проходит"
+    }
+   ],
+   "relations": {
+    "SEE_ERROR": [
+     "err-ecp",
+     "err-svedeniya-otkaz",
+     "err-kartochka"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/doverennost-dlya-ufk",
+     "/novosti/mchd-novye-trebovaniya-2026/",
+     "/blog/upolnomochennye-litsa-po-ks-schetu-kto-i-otvetstvennost"
+    ]
+   },
+   "updated": "2026-07-08",
+   "schema_id": "https://kazna-gov.ru/#e-err-mchd",
+   "scores": {
+    "authority": 30,
+    "coverage": 50,
+    "connectivity": 100,
+    "citation": 50,
+    "aiReadiness": 60,
+    "density": 100
+   }
+  },
+  {
+   "id": "err-svedeniya-otkaz",
+   "type": [
+    "error"
+   ],
+   "name": "Не утверждают Сведения",
+   "aliases": [],
+   "summary": "",
+   "citation": "Без утверждённых Сведений (форма по ОКУД 0501213) УФК не санкционирует ни один платёж. Типовые причины возврата: коды не соответствуют структуре расходов контракта, суммы не бьются с ценой контракта, не подписал руководитель/уполномоченное лицо, вышла новая редакция контракта. С 2026 года срыв срока утверждения Сведений — административный штраф (ст. 15.49 КоАП), поэтому исправлять надо в первый же цикл.",
+   "pages": [
+    {
+     "layer": "error",
+     "url": "/oshibki/ufk-ne-utverzhdaet-svedeniya/",
+     "title": "Не утверждают Сведения"
+    }
+   ],
+   "relations": {
+    "SEE_ERROR": [
+     "err-otkaz-sanktsionirovaniya",
+     "err-kod-napravleniya",
+     "err-mchd"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/svedeniya-ob-operatsiyah-s-tselevymi-sredstvami",
+     "/novosti/novye-shtrafy-kaznacheyskoe-soprovozhdenie-15-49-15-37-1/",
+     "/blog/kalendar-otchetnosti-podryadchika-ks-2026"
+    ]
+   },
+   "updated": "2026-07-08",
+   "schema_id": "https://kazna-gov.ru/#e-err-svedeniya-otkaz",
+   "scores": {
+    "authority": 27,
+    "coverage": 50,
+    "connectivity": 97,
+    "citation": 50,
+    "aiReadiness": 60,
+    "density": 100
+   }
+  },
+  {
+   "id": "err-kartochka",
+   "type": [
+    "error"
+   ],
+   "name": "Вернули карточку подписей",
+   "aliases": [],
+   "summary": "",
+   "citation": "Карточку образцов подписей УФК возвращает из-за неполного заверения, расхождения подписантов с документами о полномочиях или ошибок оформления (сокращения, несовпадение наименования, пустые поля). Исправление занимает один день: привести подписантов в соответствие с приказами/доверенностями, оформить карточку заново и заверить установленным способом — но каждый возврат сдвигает открытие счёта.",
+   "pages": [
+    {
+     "layer": "error",
+     "url": "/oshibki/ufk-vernulo-kartochku-podpisey/",
+     "title": "Вернули карточку подписей"
+    }
+   ],
+   "relations": {
+    "SEE_ERROR": [
+     "err-zatyanulos-otkrytie",
+     "err-mchd"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kartochka-obraztsov-podpisey-ufk",
+     "/blog/upolnomochennye-litsa-po-ks-schetu-kto-i-otvetstvennost",
+     "/blog/ne-otkryvaetsya-kaznacheyskiy-schet-prichiny-otkaza-2026"
+    ]
+   },
+   "updated": "2026-07-08",
+   "schema_id": "https://kazna-gov.ru/#e-err-kartochka",
+   "scores": {
+    "authority": 27,
+    "coverage": 50,
+    "connectivity": 93,
+    "citation": 50,
+    "aiReadiness": 60,
+    "density": 100
+   }
+  },
+  {
+   "id": "err-ecp",
+   "type": [
+    "error"
+   ],
+   "name": "ЭЦП не принимается",
+   "aliases": [],
+   "summary": "",
+   "citation": "Для работы в ГИИС «Электронный бюджет» нужен квалифицированный сертификат: руководителю коммерческой организации его бесплатно выдаёт УЦ ФНС (или доверенные УЦ), сотрудникам — сертификат физлица плюс МЧД. Если система «не видит» подпись, причина в цепочке: не тот тип сертификата, не установлены корневые сертификаты, истёк срок, либо не настроен криптопровайдер/Континент TLS.",
+   "pages": [
+    {
+     "layer": "error",
+     "url": "/oshibki/ecp-ne-podhodit-dlya-kaznacheystva/",
+     "title": "ЭЦП не принимается"
+    }
+   ],
+   "relations": {
+    "SEE_ERROR": [
+     "err-mchd",
+     "err-zatyanulos-otkrytie"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/vhod-v-elektronnyy-byudzhet-po-sertifikatu",
+     "/blog/registratsiya-v-giis-elektronnyy-byudzhet-podryadchika",
+     "/blog/giis-elektronnyy-byudzhet-2026-polnaya-instruktsiya"
+    ]
+   },
+   "updated": "2026-07-08",
+   "schema_id": "https://kazna-gov.ru/#e-err-ecp",
+   "scores": {
+    "authority": 27,
+    "coverage": 50,
+    "connectivity": 93,
+    "citation": 50,
+    "aiReadiness": 60,
+    "density": 100
+   }
+  },
+  {
+   "id": "err-subsidiya-rashody",
+   "type": [
+    "error"
+   ],
+   "name": "Не согласуют расходы субсидии",
+   "aliases": [],
+   "summary": "",
+   "citation": "Средства субсидии на казначейском сопровождении расходуются строго в рамках соглашения о предоставлении субсидии и утверждённых плановых документов. УФК отказывает, когда платёж не соотносится с направлениями расходов соглашения, кодами или графиком. Решение: сверить расход с соглашением, при расхождении — сначала изменить соглашение/план у распорядителя, затем платить.",
+   "pages": [
+    {
+     "layer": "error",
+     "url": "/oshibki/ufk-ne-soglasuet-rashody-po-subsidii/",
+     "title": "Не согласуют расходы субсидии"
+    }
+   ],
+   "relations": {
+    "SEE_ERROR": [
+     "err-otkaz-sanktsionirovaniya",
+     "err-kod-napravleniya",
+     "err-necelevoe"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026",
+     "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta",
+     "/blog/sanktsionirovanie-operatsiy-kaznacheystvom"
+    ]
+   },
+   "updated": "2026-07-08",
+   "schema_id": "https://kazna-gov.ru/#e-err-subsidiya-rashody",
+   "scores": {
+    "authority": 20,
+    "coverage": 50,
+    "connectivity": 73,
+    "citation": 50,
+    "aiReadiness": 60,
+    "density": 100
+   }
+  },
+  {
+   "id": "err-svodnyy-reestr",
+   "type": [
+    "error"
+   ],
+   "name": "Нет в Сводном реестре",
+   "aliases": [],
+   "summary": "",
+   "citation": "Лицевой счёт участника казначейского сопровождения открывается только организации, включённой в Сводный реестр (реестр участников и неучастников бюджетного процесса). Включение инициирует не сам исполнитель: сведения направляет заказчик (или распорядитель субсидии). Если записи нет — запросите включение у заказчика письменно и отслеживайте появление записи, затем подавайте заявление на счёт.",
+   "pages": [
+    {
+     "layer": "error",
+     "url": "/oshibki/net-v-svodnom-reestre/",
+     "title": "Нет в Сводном реестре"
+    }
+   ],
+   "relations": {
+    "SEE_ERROR": [
+     "err-zatyanulos-otkrytie",
+     "err-kartochka"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kak-otkryt-licevoy-schet-71",
+     "/blog/ne-otkryvaetsya-kaznacheyskiy-schet-prichiny-otkaza-2026",
+     "/blog/tsepochka-kaznacheyskogo-soprovozhdeniya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-err-svodnyy-reestr",
+   "scores": {
+    "authority": 18,
+    "coverage": 50,
+    "connectivity": 63,
+    "citation": 50,
+    "aiReadiness": 60,
+    "density": 100
+   }
+  }
+ ]
+}

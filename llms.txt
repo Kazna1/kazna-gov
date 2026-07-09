@@ -10,6 +10,7 @@
 - [Ошибки: разборы и решения](https://kazna-gov.ru/oshibki/)
 - [Глоссарий терминов КС](https://kazna-gov.ru/glossary/)
 - [Вопросы и ответы: 300 FAQ](https://kazna-gov.ru/voprosy/)
+- [Knowledge API — граф знаний в JSON](https://kazna-gov.ru/api/): 485 сущностей, 4025 связей; карточки /entity/<id>.json; выгрузки llms-{glossary,faq,documents,errors,tools,services,entities}.txt
 - [Документы и образцы](https://kazna-gov.ru/obraztsy/)
 - База знаний: [все материалы блога](https://kazna-gov.ru/blog)
 - [Отзывы](https://kazna-gov.ru/review)
