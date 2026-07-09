@@ -1,18 +1,46 @@
 /* Service Knowledge Layer (R2.08) — блок базы знаний под лендингом услуги */
-.sv-knowledge { background: #F7F5EE; padding: 40px 0 30px; margin-top: 40px; border-top: 1px solid #E6E2D8;
+.sv-knowledge { background: #F7F5EE; padding: 52px 0 36px; margin-top: 40px; border-top: 1px solid #E6E2D8;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1C1E20; }
 .sv-inner { max-width: 1060px; margin: 0 auto; padding: 0 20px; }
-.sv-h { font-size: 26px; margin: 0 0 16px; }
-.sv-knowledge h3 { font-size: 17px; margin: 18px 0 8px; }
+
+.sv-h { font-size: 26px; margin: 0 0 18px; letter-spacing: -0.01em; }
+.sv-h::before { content: 'База знаний'; display: block; margin-bottom: 10px;
+  font-family: ui-monospace, 'JetBrains Mono', SFMono-Regular, Menlo, monospace;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #15846B; }
+
+.sv-knowledge h3 { margin: 0 0 10px; font-family: ui-monospace, 'JetBrains Mono', SFMono-Regular, Menlo, monospace;
+  font-size: 11.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #15846B;
+  display: flex; align-items: center; gap: 8px; }
+.sv-knowledge h3::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: #15846B; flex-shrink: 0; }
+.sv-knowledge h3:not(:first-child) { margin-top: 18px; }
+
 .sv-knowledge ul, .sv-knowledge ol { padding-left: 20px; margin: 6px 0; }
-.sv-knowledge li { margin: 5px 0; font-size: 14.5px; line-height: 1.5; }
-.sv-knowledge p { font-size: 14.5px; line-height: 1.55; }
-.sv-knowledge a { color: #15846B; }
-.sv-ai { background: #E9F5F0; border-left: 4px solid #15846B; border-radius: 10px; padding: 14px 16px; margin: 0 0 14px; }
-.sv-ai p { margin: 0; font-size: 15px; }
-.sv-grid { display: grid; grid-template-columns: 1fr; gap: 4px 28px; }
+.sv-knowledge li { margin: 7px 0; font-size: 14.5px; line-height: 1.55; }
+.sv-knowledge ul li::marker { color: #15846B; }
+.sv-knowledge p { font-size: 14.5px; line-height: 1.6; }
+.sv-knowledge p a, .sv-knowledge li a { color: #15846B; text-underline-offset: 3px; display: inline-block; padding: 3px 0; }
+.sv-knowledge p a:hover, .sv-knowledge li a:hover { color: #0F6B56; }
+
+.sv-ai { background: #E9F5F0; border-left: 4px solid #15846B; border-radius: 10px; padding: 16px 18px; margin: 0 0 16px; }
+.sv-ai p { margin: 0; font-size: 15.5px; line-height: 1.6; }
+
+/* Карточная сетка секций */
+.sv-grid { display: grid; grid-template-columns: 1fr; gap: 12px; margin: 12px 0; }
 @media (min-width: 760px) { .sv-grid { grid-template-columns: 1fr 1fr; } }
-.sv-sec { margin: 10px 0; }
-.sv-stages li { margin: 7px 0; }
-.sv-knowledge .oe-rels { display: grid; grid-template-columns: 1fr; gap: 8px; margin: 8px 0; }
+.sv-grid > section, .sv-sec { background: #fff; border: 1px solid #E6E2D8; border-radius: 14px;
+  padding: 18px 20px 16px; margin: 0; }
+.sv-sec { margin: 12px 0; }
+
+/* Этапы работы — нумерованный тайм-лайн */
+.sv-stages { list-style: none; padding: 0 !important; margin: 4px 0 0 !important; counter-reset: svstage; }
+.sv-stages li { position: relative; margin: 0; padding: 9px 0 9px 42px; counter-increment: svstage;
+  border-bottom: 1px solid #F0EDE4; }
+.sv-stages li:last-child { border-bottom: 0; }
+.sv-stages li::before { content: counter(svstage, decimal-leading-zero); position: absolute; left: 0; top: 10px;
+  font-family: ui-monospace, 'JetBrains Mono', SFMono-Regular, Menlo, monospace;
+  font-size: 12px; font-weight: 700; color: #15846B;
+  background: #E9F5F0; border: 1px solid #BFE8D9; border-radius: 8px; padding: 3px 6px; line-height: 1; }
+
+.sv-knowledge .oe-rels { display: grid; grid-template-columns: 1fr; gap: 8px; margin: 8px 0 2px; }
 @media (min-width: 760px) { .sv-knowledge .oe-rels { grid-template-columns: 1fr 1fr; } }
+.sv-knowledge .oe-rel { padding: 13px 15px; }

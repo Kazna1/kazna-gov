@@ -164,26 +164,26 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 --> <meta charset="UTF-8"> <!-- КАЗНА · Резервирование казначейского счёта · v2 · kzop2__ namespace --> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"> <style>
 /* ─── DESIGN TOKENS ─── */
 :root{
-  --bg:#F7F9FE;
+  --bg:#F6FAF8;
   --bg-w:#FFFFFF;
-  --bg-s:#EEF2FA;
-  --bg-dark:#0C1B33;
-  --bg-dark2:#091526;
+  --bg-s:#EBF4F0;
+  --bg-dark:#0d1f1a;
+  --bg-dark2:#0a1612;
   --bg-risk:#FFF5F5;
 
-  --text:#0D1424;
+  --text:#0F1714;
   --t2:#374151;
   --t3:#6B7280;
   --t-inv:#FFFFFF;
   --t-inv2:rgba(255,255,255,0.65);
 
-  --blue:#1E50D4;
-  --blue-h:#1641BC;
-  --blue-bg:#EAF1FF;
-  --blue-br:#BAD0FF;
+  --blue:#15846B;
+  --blue-h:#0F6B56;
+  --blue-bg:#EAF7F2;
+  --blue-br:#BFE8D9;
 
-  --navy:#0C1B33;
-  --navy-l:#162544;
+  --navy:#10231D;
+  --navy-l:#18332B;
 
   --green:#059669;
   --green-bg:#ECFDF5;
@@ -208,7 +208,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   --sh-s:0 1px 3px rgba(0,0,0,0.06),0 1px 2px rgba(0,0,0,0.04);
   --sh:0 4px 20px rgba(0,0,0,0.06),0 2px 8px rgba(0,0,0,0.04);
   --sh-l:0 20px 60px rgba(0,0,0,0.08),0 8px 24px rgba(0,0,0,0.05);
-  --sh-blue:0 4px 20px rgba(30,80,212,0.18);
+  --sh-blue:0 4px 20px rgba(21,132,107,0.18);
 
   --tr:0.2s cubic-bezier(0.4,0,0.2,1);
   --font:'Manrope',-apple-system,sans-serif;
@@ -246,7 +246,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 .kzop2__btn--primary{background:var(--blue)!important;color:#fff!important}
 .kzop2__btn--primary:hover{background:var(--blue-h)!important;transform:translateY(-2px);box-shadow:var(--sh-blue)}
 .kzop2__btn--outline{background:transparent;color:var(--navy);border:1.5px solid var(--border2)}
-.kzop2__btn--outline:hover{border-color:var(--navy);background:rgba(12,27,51,0.04);transform:translateY(-1px)}
+.kzop2__btn--outline:hover{border-color:var(--navy);background:rgba(10,25,20,0.04);transform:translateY(-1px)}
 .kzop2__btn--white{background:#fff;color:var(--navy)}
 .kzop2__btn--white:hover{background:#F3F1EE;transform:translateY(-2px)}
 .kzop2__btn--ghost{background:rgba(255,255,255,0.12);color:#fff;border:1px solid rgba(255,255,255,0.2)}
@@ -264,8 +264,8 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 /* ─── HERO ─── */
 .kzop2__hero{
   background:
-    radial-gradient(ellipse 900px 700px at 105% -5%, rgba(30,80,212,0.22) 0%, rgba(91,138,255,0.08) 45%, transparent 65%),
-    radial-gradient(ellipse 500px 400px at -6% 110%, rgba(30,80,212,0.13) 0%, transparent 65%),
+    radial-gradient(ellipse 900px 700px at 105% -5%, rgba(21,132,107,0.22) 0%, rgba(43,200,154,0.08) 45%, transparent 65%),
+    radial-gradient(ellipse 500px 400px at -6% 110%, rgba(21,132,107,0.13) 0%, transparent 65%),
     var(--bg-w);
   padding:calc(var(--hdr) + 16px) 0 64px;
   min-height:calc(100vh - var(--hdr));
@@ -276,7 +276,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 .kzop2__hero::before{
   content:'';position:absolute;
   top:0;left:0;right:0;height:3px;
-  background:linear-gradient(90deg,transparent 0%,var(--blue) 18%,rgba(91,138,255,0.55) 60%,transparent 100%);
+  background:linear-gradient(90deg,transparent 0%,var(--blue) 18%,rgba(43,200,154,0.55) 60%,transparent 100%);
   pointer-events:none;z-index:2;
 }
 /* глубокий синий orb справа-сверху */
@@ -284,7 +284,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   content:'';position:absolute;
   top:-200px;right:-180px;
   width:900px;height:900px;border-radius:50%;
-  background:radial-gradient(ellipse at 50% 40%, rgba(91,138,255,0.14) 0%, rgba(30,80,212,0.07) 45%, transparent 68%);
+  background:radial-gradient(ellipse at 50% 40%, rgba(43,200,154,0.14) 0%, rgba(21,132,107,0.07) 45%, transparent 68%);
   pointer-events:none;z-index:0;
 }
 .kzop2__hero-grid{
@@ -345,15 +345,15 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   border:1.5px solid transparent;
   background-image:
     linear-gradient(var(--bg-w), var(--bg-w)),
-    linear-gradient(145deg, rgba(30,80,212,0.55) 0%, rgba(91,138,255,0.25) 50%, rgba(30,80,212,0.06) 100%);
+    linear-gradient(145deg, rgba(21,132,107,0.55) 0%, rgba(43,200,154,0.25) 50%, rgba(21,132,107,0.06) 100%);
   background-origin:border-box;
   background-clip:padding-box, border-box;
   background-color:var(--bg-w);
   box-shadow:
-    0 0 0 12px rgba(30,80,212,0.05),
-    0 0 0 32px rgba(30,80,212,0.025),
-    0 24px 64px rgba(30,80,212,0.16),
-    0 8px 24px rgba(30,80,212,0.10);
+    0 0 0 12px rgba(21,132,107,0.05),
+    0 0 0 32px rgba(21,132,107,0.025),
+    0 24px 64px rgba(21,132,107,0.16),
+    0 8px 24px rgba(21,132,107,0.10);
 }
 .kzop2__card-tag{
   font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;
@@ -391,7 +391,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   display:flex;align-items:flex-start;gap:10px;
   padding:14px;border-radius:10px;
   background:var(--blue-bg);border:1px solid var(--blue-br);
-  font-size:12.5px;color:#1e40af;line-height:1.45;
+  font-size:12.5px;color:#0F6B56;line-height:1.45;
   margin-top:16px;
 }
 .kzop2__card-guarantee svg{width:16px;height:16px;flex-shrink:0;color:var(--blue);stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;margin-top:1px}
@@ -407,8 +407,8 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   transition:box-shadow 0.3s cubic-bezier(0.4,0,0.2,1),transform 0.3s cubic-bezier(0.4,0,0.2,1),border-color 0.3s cubic-bezier(0.4,0,0.2,1);
 }
 .kzop2__who-card:hover{
-  border-color:rgba(30,80,212,0.3);
-  box-shadow:0 8px 32px rgba(30,80,212,0.09),0 2px 8px rgba(30,80,212,0.06);
+  border-color:rgba(21,132,107,0.3);
+  box-shadow:0 8px 32px rgba(21,132,107,0.09),0 2px 8px rgba(21,132,107,0.06);
   transform:translateY(-3px);
 }
 .kzop2__who-icon{
@@ -431,8 +431,8 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   transition:box-shadow 0.3s cubic-bezier(0.4,0,0.2,1),transform 0.3s cubic-bezier(0.4,0,0.2,1),border-color 0.3s cubic-bezier(0.4,0,0.2,1);
 }
 .kzop2__inc-card:hover{
-  border-color:rgba(30,80,212,0.25);
-  box-shadow:0 8px 28px rgba(30,80,212,0.08),0 2px 8px rgba(30,80,212,0.05);
+  border-color:rgba(21,132,107,0.25);
+  box-shadow:0 8px 28px rgba(21,132,107,0.08),0 2px 8px rgba(21,132,107,0.05);
   transform:translateY(-2px);
 }
 .kzop2__inc-num{
@@ -457,7 +457,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   content:'';position:absolute;
   top:28px;left:calc(20% / 2);right:calc(20% / 2);
   height:2px;
-  background:linear-gradient(90deg,var(--blue) 0%,rgba(30,80,212,0.4) 100%);
+  background:linear-gradient(90deg,var(--blue) 0%,rgba(21,132,107,0.4) 100%);
   z-index:0;
   transform-origin:left center;
   transform:scaleX(0);
@@ -476,7 +476,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   font-size:18px;font-weight:800;
   display:flex;align-items:center;justify-content:center;
   margin-bottom:20px;flex-shrink:0;
-  box-shadow:0 4px 16px rgba(12,27,51,0.2);
+  box-shadow:0 4px 16px rgba(10,25,20,0.2);
 }
 .kzop2__step:last-child .kzop2__step-num{background:var(--green)}
 .kzop2__step-time{
@@ -527,7 +527,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   content:'';position:absolute;
   top:-150px;right:-120px;
   width:640px;height:640px;border-radius:50%;
-  background:radial-gradient(ellipse at center, rgba(30,80,212,0.28) 0%, transparent 65%);
+  background:radial-gradient(ellipse at center, rgba(21,132,107,0.28) 0%, transparent 65%);
   pointer-events:none;z-index:0;
 }
 .kzop2__midcta-center{
@@ -592,7 +592,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   overflow:hidden;background:var(--bg-w);
   transition:border-color var(--tr),box-shadow var(--tr);
 }
-.kzop2__faq-item.open{border-color:var(--blue-br);box-shadow:0 0 0 3px rgba(30,80,212,0.06)}
+.kzop2__faq-item.open{border-color:var(--blue-br);box-shadow:0 0 0 3px rgba(21,132,107,0.06)}
 .kzop2__faq-q{
   width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;
   padding:20px 24px;background:none;border:none;cursor:pointer;
@@ -643,7 +643,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   content:'';position:absolute;
   bottom:-180px;left:-120px;
   width:700px;height:700px;border-radius:50%;
-  background:radial-gradient(ellipse at center, rgba(30,80,212,0.22) 0%, transparent 65%);
+  background:radial-gradient(ellipse at center, rgba(21,132,107,0.22) 0%, transparent 65%);
   pointer-events:none;z-index:0;
 }
 .kzop2__final-inner{
@@ -696,7 +696,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   outline:none;transition:border-color var(--tr),background var(--tr);
 }
 .kzop2__field input::placeholder{color:rgba(255,255,255,0.3)}
-.kzop2__field input:focus{border-color:rgba(30,80,212,0.6);background:rgba(255,255,255,0.12)}
+.kzop2__field input:focus{border-color:rgba(21,132,107,0.6);background:rgba(255,255,255,0.12)}
 .kzop2__form-submit{
   width:100%;height:52px;border-radius:12px;
   background:var(--blue);color:#fff;border:none;
@@ -784,6 +784,8 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   font-size:11px;color:var(--t3);line-height:1.5;cursor:pointer;
 }
 .kzop2__consent a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.kzop2__consent--err label{color:var(--red)}
+.kzop2__consent--err input[type=checkbox]{outline:2px solid var(--red);outline-offset:2px}
 .kzop2__consent--dark label{color:rgba(255,255,255,0.32)}
 .kzop2__consent--dark a{color:rgba(255,255,255,0.5)}
 
@@ -1134,7 +1136,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 
 /* ─── 1. EYEBROW PILLS ─── */
 .kzop2__eyebrow{
-  background:rgba(30,80,212,0.08);
+  background:rgba(21,132,107,0.08);
   border-radius:100px;
   padding:5px 14px;
   display:inline-block;
@@ -1143,32 +1145,32 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 
 /* ─── 2. COMPARE TABLE: "С нами" — gradient column ─── */
 .kzop2__cmp th.kzop2-col-us{
-  background:linear-gradient(135deg,#1e4fd4 0%,#3B6AE8 100%);
+  background:linear-gradient(135deg,#15846b 0%,#1FA887 100%);
   position:relative;
 }
 .kzop2__cmp td.kzop2-col-us{
-  background:linear-gradient(180deg,rgba(30,80,212,0.07) 0%,rgba(30,80,212,0.04) 100%);
-  border-left:2px solid rgba(30,80,212,0.18);
-  border-right:2px solid rgba(30,80,212,0.18);
+  background:linear-gradient(180deg,rgba(21,132,107,0.07) 0%,rgba(21,132,107,0.04) 100%);
+  border-left:2px solid rgba(21,132,107,0.18);
+  border-right:2px solid rgba(21,132,107,0.18);
   font-weight:600;
 }
-.kzop2__cmp tbody tr:last-child td.kzop2-col-us{border-bottom:2px solid rgba(30,80,212,0.18)}
+.kzop2__cmp tbody tr:last-child td.kzop2-col-us{border-bottom:2px solid rgba(21,132,107,0.18)}
 
 /* ─── 3. INC-NUM: gradient badge вместо просто цифры ─── */
 .kzop2__inc-num{
   width:44px;height:44px;border-radius:12px;
-  background:linear-gradient(135deg,var(--blue) 0%,#5B8AFF 100%);
+  background:linear-gradient(135deg,var(--blue) 0%,#2BC89A 100%);
   color:#fff;font-size:13px;font-weight:800;
   display:flex;align-items:center;justify-content:center;
   letter-spacing:0.02em;margin-bottom:16px;
-  box-shadow:0 4px 12px rgba(30,80,212,0.22);
+  box-shadow:0 4px 12px rgba(21,132,107,0.22);
 }
 
 /* ─── 4. FORM INPUT FOCUS GLOW ─── */
 .kzop2__field input:focus{
-  border-color:rgba(30,80,212,0.5)!important;
+  border-color:rgba(21,132,107,0.5)!important;
   background:rgba(255,255,255,0.14)!important;
-  box-shadow:0 0 0 3px rgba(30,80,212,0.18)!important;
+  box-shadow:0 0 0 3px rgba(21,132,107,0.18)!important;
 }
 
 /* ─── 5. TRUST SECTION — стили перенесены в .kzop2__section--trust (wow pack) ─── */
@@ -1176,7 +1178,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 /* ─── 6. SCROLL PROGRESS BAR ─── */
 #kzop2-progress{
   position:fixed;top:0;left:0;right:0;height:3px;
-  background:linear-gradient(90deg,var(--blue) 0%,rgba(91,138,255,0.85) 100%);
+  background:linear-gradient(90deg,var(--blue) 0%,rgba(43,200,154,0.85) 100%);
   z-index:10001;transform-origin:left;transform:scaleX(0);
   transition:transform 0.08s linear;pointer-events:none;
 }
@@ -1184,22 +1186,22 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 /* ─── 7. GRADIENT TEXT на span в тёмных секциях ─── */
 .kzop2__midcta-title span,
 .kzop2__final-title span{
-  background:linear-gradient(135deg,#7ab3ff 0%,#b8d4ff 100%);
+  background:linear-gradient(135deg,#7de5c4 0%,#c6f2e3 100%);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  background-clip:text;color:#7ab3ff;
+  background-clip:text;color:#7de5c4;
 }
 
 /* ─── 8. PARALLAX ORB (JS-controlled) ─── */
 .kzop2__hero-orb{
   position:absolute;top:-200px;right:-180px;
   width:900px;height:900px;border-radius:50%;
-  background:radial-gradient(ellipse at 50% 40%,rgba(91,138,255,0.15) 0%,rgba(30,80,212,0.07) 45%,transparent 68%);
+  background:radial-gradient(ellipse at 50% 40%,rgba(43,200,154,0.15) 0%,rgba(21,132,107,0.07) 45%,transparent 68%);
   pointer-events:none;z-index:0;will-change:transform;
 }
 
 /* ─── GRADIENT TEXT: span в hero-title ─── */
 .kzop2__hero-title span{
-  background:linear-gradient(135deg,#2356D8 0%,#5B8AFF 100%);
+  background:linear-gradient(135deg,#128268 0%,#2BC89A 100%);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   background-clip:text;
@@ -1311,16 +1313,16 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 /* ─── TRUST SECTION: premium light gradient ─── */
 .kzop2__section--trust{
   background:linear-gradient(160deg,#EBF2FF 0%,#F7F9FE 40%,#EEF5FF 100%);
-  border-top:1px solid rgba(30,80,212,0.1);
-  border-bottom:1px solid rgba(30,80,212,0.1);
+  border-top:1px solid rgba(21,132,107,0.1);
+  border-bottom:1px solid rgba(21,132,107,0.1);
   padding:64px 0;
 }
 @media(max-width:560px){.kzop2__section--trust{padding:48px 0}}
 .kzop2__section--trust .kzop2__trust-grid{
   background:rgba(255,255,255,0.7);
-  border:1px solid rgba(30,80,212,0.12);
+  border:1px solid rgba(21,132,107,0.12);
   backdrop-filter:blur(8px);
-  box-shadow:0 8px 40px rgba(30,80,212,0.07),0 2px 12px rgba(30,80,212,0.05);
+  box-shadow:0 8px 40px rgba(21,132,107,0.07),0 2px 12px rgba(21,132,107,0.05);
 }
 .kzop2__section--trust .kzop2__trust-item{
   background:transparent;
@@ -1328,15 +1330,15 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 }
 .kzop2__section--trust .kzop2__trust-item:not(:last-child)::after{
   content:'';position:absolute;right:0;top:20%;bottom:20%;
-  width:1px;background:rgba(30,80,212,0.1);
+  width:1px;background:rgba(21,132,107,0.1);
 }
 .kzop2__section--trust .kzop2__trust-num{
   font-size:clamp(48px,5.5vw,68px);
-  background:linear-gradient(135deg,#0C1B33 0%,#1E50D4 100%);
+  background:linear-gradient(135deg,#10231D 0%,#15846B 100%);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
 }
 .kzop2__section--trust .kzop2__trust-num span{
-  background:linear-gradient(135deg,#1E50D4 0%,#5B8AFF 100%);
+  background:linear-gradient(135deg,#15846B 0%,#2BC89A 100%);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
 }
 .kzop2__section--trust .kzop2__trust-label{
@@ -1350,7 +1352,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 .kzop2-spotlight::before{
   content:'';
   position:absolute;inset:0;
-  background:radial-gradient(circle 260px at var(--sx,50%) var(--sy,50%),rgba(30,80,212,0.07) 0%,transparent 68%);
+  background:radial-gradient(circle 260px at var(--sx,50%) var(--sy,50%),rgba(21,132,107,0.07) 0%,transparent 68%);
   opacity:0;transition:opacity 0.35s ease;
   pointer-events:none;z-index:1;border-radius:inherit;
 }
@@ -1373,7 +1375,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 /* ─── COSMOS SECTION ─── */
 .kzop2__section--cosmos{background:#060D1A;padding:56px 0 44px}
 @media(max-width:768px){.kzop2__section--cosmos{padding:40px 0 28px}}
-.kzop2__section--cosmos .kzop2__eyebrow{color:rgba(91,138,255,0.75)}
+.kzop2__section--cosmos .kzop2__eyebrow{color:rgba(43,200,154,0.75)}
 .kzop2__section--cosmos .kzop2__h2{color:#E8F0FF}
 .kzop2__section--cosmos .kzop2__lead{color:rgba(180,200,240,0.5)}
 /* Hide HTML nodes in canvas 3D mode (desktop); show as pills on mobile */
@@ -1407,7 +1409,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   transform:translate(-50%,-50%);
   display:inline-flex;align-items:center;gap:7px;
   background:rgba(6,15,42,0.80);
-  border:1px solid rgba(91,138,255,0.22);
+  border:1px solid rgba(43,200,154,0.22);
   border-radius:100px;
   padding:6px 13px 6px 7px;
   cursor:default;z-index:2;
@@ -1425,13 +1427,13 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 /* Hover */
 .kzop2__web-node.kz-hover{
   background:rgba(8,22,72,0.97)!important;
-  border-color:rgba(91,138,255,0.85)!important;
-  box-shadow:0 0 0 3px rgba(91,138,255,0.12),0 0 24px rgba(91,138,255,0.55),0 0 52px rgba(91,138,255,0.2)!important;
+  border-color:rgba(43,200,154,0.85)!important;
+  box-shadow:0 0 0 3px rgba(43,200,154,0.12),0 0 24px rgba(43,200,154,0.55),0 0 52px rgba(43,200,154,0.2)!important;
   transform:translate(-50%,-50%) scale(1.35)!important;
   z-index:20!important;
 }
 .kzop2__web-node.kz-connected{
-  border-color:rgba(91,138,255,0.42)!important;
+  border-color:rgba(43,200,154,0.42)!important;
   background:rgba(7,18,58,0.9)!important;
 }
 /* Monogram badge */
@@ -1440,11 +1442,11 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   display:flex;align-items:center;justify-content:center;
   font-size:7.5px;font-weight:800;flex-shrink:0;
 }
-.kzop2__client-mono--a{background:rgba(30,80,212,0.42);color:#7ab3ff}
-.kzop2__client-mono--b{background:rgba(100,50,200,0.42);color:#c084fc}
+.kzop2__client-mono--a{background:rgba(21,132,107,0.42);color:#7de5c4}
+.kzop2__client-mono--b{background:rgba(31,168,135,0.32);color:#8ff0d2}
 .kzop2__client-mono--c{background:rgba(5,110,100,0.42);color:#2dd4bf}
 .kzop2__client-mono--d{background:rgba(130,75,5,0.42);color:#fbbf24}
-.kzop2__client-mono--e{background:rgba(40,55,90,0.55);color:#94a3b8}
+.kzop2__client-mono--e{background:rgba(70,90,82,0.5);color:#a8bdb4}
 @media(max-width:768px){
   .kzop2__web-node{
     position:static;transform:none!important;
@@ -1452,19 +1454,19 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
     flex:0 0 auto;
     display:inline-flex;
     background:rgba(10,22,55,0.72)!important;
-    border-color:rgba(91,138,255,0.28)!important;
+    border-color:rgba(43,200,154,0.28)!important;
   }
 }
 
 /* ─── FOOTER — prominent 314+ counter ─── */
 .kzop2__clients-footer{
   text-align:center;margin-top:28px;
-  font-size:14px;color:rgba(140,165,215,0.5);font-weight:500;letter-spacing:0.01em;
+  font-size:14px;color:rgba(160,190,178,0.55);font-weight:500;letter-spacing:0.01em;
 }
 .kzop2__clients-footer strong{
-  color:#5B8AFF;font-size:24px;font-weight:800;
+  color:#2BC89A;font-size:24px;font-weight:800;
   letter-spacing:-0.02em;margin-right:3px;
-  text-shadow:0 0 20px rgba(91,138,255,0.4);
+  text-shadow:0 0 20px rgba(43,200,154,0.4);
 }
 
 /* ─── TEAM / EXPERTS ─── */
@@ -1522,7 +1524,7 @@ document.addEventListener('DOMContentLoaded',t_setvisRecs);}})();</script><scrip
 <style id="kgh-gap-fix">#allrecords{padding-top:0!important}</style>
 <!-- @service-ld:start -->
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["Service","ProfessionalService"],"@id":"https://kazna-gov.ru/#e-service-reserve","name":"Резервирование счёта для тендера","description":"Резервируем номер лицевого счёта до заключения контракта: подаём заявление 0531368 с отметкой «резервирование», получаем реквизиты для заявки или проекта контракта за 1–2 дня. Цена 19 000 ₽ без скрытых доплат; после победы завершаем открытие. Дистанционно по всей России.","url":"https://kazna-gov.ru/services/reserve","inLanguage":"ru","provider":{"@id":"https://kazna-gov.ru/#organization"},"areaServed":"RU","serviceType":"Казначейское сопровождение госконтрактов","offers":{"@type":"Offer","price":"19000","priceCurrency":"RUB","description":"19 000 ₽ фикс за резервирование под ключ; активация после победы — в рамках услуги открытия."}},{"@type":"HowTo","@id":"https://kazna-gov.ru/services/reserve#stages","name":"Этапы: Резервирование счёта для тендера","step":[{"@type":"HowToStep","position":1,"name":"Разбор: реестр, сроки заявки"},{"@type":"HowToStep","position":2,"name":"Договор"},{"@type":"HowToStep","position":3,"name":"Заявление на резервирование"},{"@type":"HowToStep","position":4,"name":"Номер счёта — в вашу заявку"}],"inLanguage":"ru"},{"@type":"FAQPage","@id":"https://kazna-gov.ru/services/reserve#pricing-faq","mainEntity":[{"@type":"Question","name":"Резерв сгорает, если тендер проигран?","acceptedAnswer":{"@type":"Answer","text":"Ничего страшного не происходит: зарезервированный номер просто не активируется. Обязательств он не создаёт."}}],"inLanguage":"ru"},{"@type":"WebPage","@id":"https://kazna-gov.ru/services/reserve#page","name":"Резервирование счёта для тендера","url":"https://kazna-gov.ru/services/reserve","inLanguage":"ru","speakable":{"@type":"SpeakableSpecification","cssSelector":[".sv-ai"]},"publisher":{"@id":"https://kazna-gov.ru/#organization"}},{"@type":"Organization","@id":"https://kazna-gov.ru/#organization","name":"Казна","alternateName":"ИП Михайлов Я.А.","taxID":"781428314589","url":"https://kazna-gov.ru/","telephone":"+74951084232"}]}</script>
-<link rel="stylesheet" href="/assets/oshibki.css?v=7ac7dae6"><link rel="stylesheet" href="/assets/glossary.css?v=e6491eaf"><link rel="stylesheet" href="/assets/dokumenty.css?v=eb2b6d97"><link rel="stylesheet" href="/assets/services.css?v=d66adbad"><script defer src="/assets/services.js?v=c3c20514"></script>
+<link rel="stylesheet" href="/assets/oshibki.css?v=173350b3"><link rel="stylesheet" href="/assets/glossary.css?v=e6491eaf"><link rel="stylesheet" href="/assets/dokumenty.css?v=eb2b6d97"><link rel="stylesheet" href="/assets/services.css?v=85e9dfc3"><script defer src="/assets/services.js?v=c3c20514"></script>
 <!-- @service-ld:end -->
 <!-- kz:head:start -->
 <!-- head-common · R1.04: общий слой <head> для всех страниц.
@@ -1770,14 +1772,14 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
   background:linear-gradient(180deg,#ffffff 0%,#f3f7ff 100%);
   border:1px solid var(--blue-br);border-radius:16px;
   box-shadow:inset 0 1px 0 rgba(255,255,255,0.9),
-             0 12px 30px rgba(30,80,212,0.13),
-             0 3px 10px rgba(30,80,212,0.08);
+             0 12px 30px rgba(21,132,107,0.13),
+             0 3px 10px rgba(21,132,107,0.08);
 }
 .kzhero__stats-label{
   display:flex;align-items:center;justify-content:center;gap:7px;padding:0 16px;
-  background:linear-gradient(135deg,#1E50D4 0%,#3f72e6 100%);
+  background:linear-gradient(135deg,#15846B 0%,#3f72e6 100%);
   border-radius:12px;font-size:12px;font-weight:700;color:#fff;white-space:nowrap;
-  box-shadow:0 5px 14px rgba(30,80,212,0.32);
+  box-shadow:0 5px 14px rgba(21,132,107,0.32);
 }
 .kzhero__stats-label svg{width:17px;height:17px;flex-shrink:0}
 .kzhero__stats-row{display:flex;align-items:stretch;flex:1}
@@ -1792,7 +1794,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 }
 .kzhero__stat-num{
   font-size:26px;font-weight:800;letter-spacing:-0.02em;line-height:1.05;
-  background:linear-gradient(135deg,#1E50D4 0%,#5b8aff 100%);
+  background:linear-gradient(135deg,#15846B 0%,#2BC89A 100%);
   -webkit-background-clip:text;background-clip:text;
   -webkit-text-fill-color:transparent;color:var(--blue);
 }
@@ -1815,11 +1817,11 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
   transition:border-color var(--tr),box-shadow var(--tr);
 }
 .kzhero__input::placeholder{color:#9CA3AF}
-.kzhero__input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(30,80,212,0.12)}
+.kzhero__input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(21,132,107,0.12)}
 .kzhero__input.kzhero--invalid{border-color:rgba(192,57,43,0.7)}
 
 .kzhero__submit{width:100%;height:46px;margin-top:10px;justify-content:center;font-size:15.5px}
-.kzhero__submit:disabled{background:#9DB4E8!important;cursor:not-allowed;transform:none!important;box-shadow:none!important}
+.kzhero__submit:disabled{background:#A9CFC2!important;cursor:not-allowed;transform:none!important;box-shadow:none!important}
 .kzhero__submit:disabled:hover{transform:none!important}
 .kzhero__btn-mobile{display:none}
 
@@ -1845,7 +1847,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 
 /* ── Sticky-док (мобильный) — оформление как на /open ── */
 .kzop2__sticky{
-  background:linear-gradient(to top,var(--bg) 42%,rgba(247,249,254,0.82) 72%,rgba(247,249,254,0));
+  background:linear-gradient(to top,var(--bg) 42%,rgba(246,250,248,0.82) 72%,rgba(246,250,248,0));
   -webkit-backdrop-filter:none;backdrop-filter:none;
   padding:22px 16px calc(16px + env(safe-area-inset-bottom,0px));
   gap:12px;border-top:none;box-shadow:none;
@@ -1859,24 +1861,24 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 .kzop2__sticky .kzop2__btn--ghost:hover{
   flex:0 0 56px;width:56px;padding:0;border-radius:50%;
   background:#fff;color:#059669;border:1.5px solid #D6EFE3;
-  box-shadow:0 8px 20px rgba(12,27,51,0.14);
+  box-shadow:0 8px 20px rgba(10,25,20,0.14);
 }
 .kzop2__sticky .kzop2__btn--ghost svg{width:22px;height:22px}
 .kzop2__sticky .kzop2__btn--primary,
 .kzop2__sticky .kzop2__btn--primary:hover{
   flex:1;border-radius:999px;gap:10px;
-  background:linear-gradient(135deg,#3B6BEA 0%,#1E50D4 62%,#1A45BE 100%)!important;
-  box-shadow:0 10px 28px rgba(30,80,212,0.42);
+  background:linear-gradient(135deg,#1FA887 0%,#15846B 55%,#0F6B56 100%)!important;
+  box-shadow:0 10px 28px rgba(21,132,107,0.42);
   animation:kzcta-glow 2.8s ease-in-out infinite;
 }
 .kzcta-arrow{
   display:flex;align-items:center;justify-content:center;flex-shrink:0;
   width:30px;height:30px;border-radius:50%;background:#fff;
 }
-.kzcta-arrow svg{width:14px;height:14px;stroke:#1E50D4;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.kzcta-arrow svg{width:14px;height:14px;stroke:#15846B;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 @keyframes kzcta-glow{
-  0%,100%{box-shadow:0 8px 22px rgba(30,80,212,0.34)}
-  50%{box-shadow:0 14px 36px rgba(30,80,212,0.56)}
+  0%,100%{box-shadow:0 8px 22px rgba(21,132,107,0.34)}
+  50%{box-shadow:0 14px 36px rgba(21,132,107,0.56)}
 }
 @media(prefers-reduced-motion:reduce){
   .kzop2__sticky .kzop2__btn--primary{animation:none}
@@ -1924,7 +1926,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 </style> <div class="kzop2"> <section class="kzop2__hero" data-section="hero" id="kgc-top"> <div class="kzop2__hero-grid"> <!-- Left --> <div class="kzhero__col"> <div class="kzop2__hero-badge">Казначейское сопровождение с&nbsp;2016 года · 400+ клиентов</div> <h1 class="kzhero__title">
         Казначейский счёт&nbsp;—<br> <span style="color:var(--blue)">зарезервируйте заранее</span> </h1> <p class="kzhero__sub">
         Резервируем счёт до подписания контракта — пока вы ещё участвуете в тендере. Если не выиграете — закроем счёт без доплат.
-      </p> <div class="kzhero__stats"> <div class="kzhero__stats-label"> <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"> <circle cx="10" cy="10" r="10" fill="#34D399"></circle> <path d="M5.6 10.3l2.9 2.9 6-6.5" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path> </svg> <span data-hv="statsMonthLabel">За апрель 2026</span> </div> <div class="kzhero__stats-row"> <div class="kzhero__stat"> <span class="kzhero__stat-num" data-hv="statsOperations">82</span> <span class="kzhero__stat-lbl">счетов</span> </div> <div class="kzhero__stat"> <span class="kzhero__stat-num" data-hv="statsReturns">97%</span> <span class="kzhero__stat-lbl">с&nbsp;первого раза</span> </div> <div class="kzhero__stat"> <span class="kzhero__stat-num">2</span> <span class="kzhero__stat-lbl">дня до резерва</span> </div> </div> </div> <div class="kzhero__form-card"> <form class="kzhero__form" novalidate> <div class="kzhero__form-title">Оставьте заявку —<br class="kzhero__title-br"> зарезервируем счёт</div> <div class="kzhero__fields"> <div class="kzhero__field kzhero__field--name"> <label class="kzhero__label" for="kzhero-name">Имя</label> <input class="kzhero__input" id="kzhero-name" name="name" type="text" autocomplete="given-name" maxlength="60" placeholder="Иван Иванов"> </div> <div class="kzhero__field"> <label class="kzhero__label" for="kzhero-phone">Телефон</label> <input class="kzhero__input kzhero__phone" id="kzhero-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="18" placeholder="+7 (___) ___-__-__" required> </div> </div> <input type="text" class="kzhero__hp" name="company_extra" tabindex="-1" autocomplete="off" aria-hidden="true"> <button class="kzop2__btn kzop2__btn--primary kzhero__submit" type="submit" disabled> <span class="kzhero__btn-desktop">Оставить заявку</span> <span class="kzhero__btn-mobile">Оставить заявку</span> <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M8 3l5 5-5 5"/></svg> </button> <p class="kzhero__microcopy">Перезвоним за 5 минут. Без спама. Согласие на ОПД.</p> <div class="kzop2__consent"> <input type="checkbox" id="kzhero-consent" required> <label for="kzhero-consent">
+      </p> <div class="kzhero__stats"> <div class="kzhero__stats-label"> <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"> <circle cx="10" cy="10" r="10" fill="#34D399"></circle> <path d="M5.6 10.3l2.9 2.9 6-6.5" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path> </svg> <span data-hv="statsMonthLabel">За апрель 2026</span> </div> <div class="kzhero__stats-row"> <div class="kzhero__stat"> <span class="kzhero__stat-num" data-hv="statsOperations">82</span> <span class="kzhero__stat-lbl">счетов</span> </div> <div class="kzhero__stat"> <span class="kzhero__stat-num" data-hv="statsReturns">97%</span> <span class="kzhero__stat-lbl">с&nbsp;первого раза</span> </div> <div class="kzhero__stat"> <span class="kzhero__stat-num">2</span> <span class="kzhero__stat-lbl">дня до резерва</span> </div> </div> </div> <div class="kzhero__form-card"> <form class="kzhero__form" novalidate> <div class="kzhero__form-title">Оставьте заявку —<br class="kzhero__title-br"> зарезервируем счёт</div> <div class="kzhero__fields"> <div class="kzhero__field kzhero__field--name"> <label class="kzhero__label" for="kzhero-name">Имя</label> <input class="kzhero__input" id="kzhero-name" name="name" type="text" autocomplete="given-name" maxlength="60" placeholder="Иван Иванов"> </div> <div class="kzhero__field"> <label class="kzhero__label" for="kzhero-phone">Телефон</label> <input class="kzhero__input kzhero__phone" id="kzhero-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="18" placeholder="+7 (___) ___-__-__" required> </div> </div> <input type="text" class="kzhero__hp" name="company_extra" tabindex="-1" autocomplete="off" aria-hidden="true"> <button class="kzop2__btn kzop2__btn--primary kzhero__submit" type="submit"> <span class="kzhero__btn-desktop">Оставить заявку</span> <span class="kzhero__btn-mobile">Оставить заявку</span> <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M8 3l5 5-5 5"/></svg> </button> <p class="kzhero__microcopy">Перезвоним за 5 минут. Без спама. Согласие на ОПД.</p> <div class="kzop2__consent"> <input type="checkbox" id="kzhero-consent" required> <label for="kzhero-consent">
               Я согласен на обработку персональных данных в соответствии с <a href="https://kazna-gov.ru/personal_data_policy">политикой в отношении обработки персональных данных</a> </label> </div> </form> <div class="kzhero__msg" role="status" aria-live="polite" hidden></div> </div> <p class="kzhero__phone-cta">
         Или позвоните: <a data-hv-href="phoneLink" href="tel:+74951084232" data-goal="hero_cta_click" data-cta="hero_phone" data-hv="phoneDisplay">+7 (495) 108-42-32</a> </p> </div> <!-- Right card --> <div class="kzop2__hero-card" style="position:relative"> <div class="kzop2__stat-badge">до&nbsp;подписания контракта</div> <div class="kzop2__card-tag">Резервирование казначейского счёта</div> <div class="kzop2__card-price-row"> <div class="kzop2__card-price">19 000</div> <div class="kzop2__card-price-note">₽</div> </div> <div class="kzop2__card-period">единоразово · счёт зарезервирован до результата тендера</div> <div class="kzop2__card-divider"></div> <ul class="kzop2__card-includes"> <li>Сбор данных и анализ требований казначейства</li> <li>Установка и настройка ГИИС Электронный бюджет</li> <li>Заполнение и подача запроса в казначейство</li> <li>Получение реквизитов зарезервированного счёта</li> <li>Закрытие счёта при проигрыше тендера — включено</li> </ul> <div class="kzop2__card-guarantee"> <svg viewBox="0 0 16 16"><path d="M8 1l1.8 3.6L14 5.5l-3 2.9.7 4.1L8 10.5l-3.7 1.9.7-4.1L2 5.5l4.2-0.9L8 1z"/></svg> <div><strong>Полный сервис:</strong> если не выиграли тендер — закроем счёт без дополнительных оплат</div> </div> </div> </div> </section> <!-- TILDA: Zero Block · Название блока: "Для кого — 4 ситуации" --> <section class="kzop2__section kzop2__section--gray" data-section="forwho"> <div class="kzop2__wrap"> <div class="kzop2__section-header"> <span class="kzop2__eyebrow">Для кого</span> <h2 class="kzop2__h2">Когда нужно <span>резервирование счёта</span></h2> <p class="kzop2__lead">Четыре ситуации — когда резервирование даёт вам преимущество.</p> </div> <div class="kzop2__who-grid"> <div class="kzop2__who-card"> <div class="kzop2__who-icon"> <svg viewBox="0 0 22 22"><path d="M11 2l2.4 4.8L19 7.9l-4 3.9.9 5.5L11 15l-4.9 2.3.9-5.5L3 7.9l5.6-1.1L11 2z"/></svg> </div> <div class="kzop2__who-title">Участвуете в тендере и хотите быть готовы к победе</div> <div class="kzop2__who-desc">Открытие счёта после победы занимает время. Зарезервируйте заранее — чтобы сразу передать реквизиты заказчику.</div> </div> <div class="kzop2__who-card"> <div class="kzop2__who-icon"> <svg viewBox="0 0 22 22"><rect x="3" y="5" width="16" height="14" rx="2"/><path d="M7 5V3M15 5V3M3 10h16"/></svg> </div> <div class="kzop2__who-title">Контракт предусматривает обязательное наличие счёта при подписании</div> <div class="kzop2__who-desc">Часть заказчиков требует реквизиты казначейского счёта ещё на стадии заключения договора. Мы закрываем этот вопрос заранее.</div> </div> <div class="kzop2__who-card"> <div class="kzop2__who-icon"> <svg viewBox="0 0 22 22"><circle cx="11" cy="11" r="9"/><path d="M11 7v4l3 2"/></svg> </div> <div class="kzop2__who-title">Ограниченные сроки после победы — нет времени ждать</div> <div class="kzop2__who-desc">Сжатые дедлайны по контракту не оставляют время на открытие. Готовый счёт в день победы — максимальная скорость.</div> </div> <div class="kzop2__who-card"> <div class="kzop2__who-icon"> <svg viewBox="0 0 22 22"><path d="M18 8h-1V6a6 6 0 00-12 0v2H4a2 2 0 00-2 2v8a2 2 0 002 2h14a2 2 0 002-2v-8a2 2 0 00-2-2zm-6 6a2 2 0 110-4 2 2 0 010 4z"/></svg> </div> <div class="kzop2__who-title">Нет ресурса на параллельное ведение тендера и подготовку документов</div> <div class="kzop2__who-desc">Пока вы ведёте тендер — мы готовим счёт. Сдача документов заказчику в первый день после победы без суеты.</div> </div> </div> </div> </section> <!-- TILDA: Zero Block · Название блока: "Что входит — 6 пунктов" --> <section class="kzop2__section" data-section="includes"> <div class="kzop2__wrap"> <div class="kzop2__section-header"> <span class="kzop2__eyebrow">Что входит в услугу</span> <h2 class="kzop2__h2">Всё под ключ — <span>от заявки до реквизитов счёта</span></h2> <p class="kzop2__lead">Вы предоставляете документы — мы делаем всё остальное.</p> </div> <div class="kzop2__inc-grid"> <div class="kzop2__inc-card"> <span class="kzop2__inc-num">01</span> <div class="kzop2__inc-title">Сбор и анализ данных</div> <div class="kzop2__inc-desc">Изучаем условия тендера, требования казначейства и параметры будущего контракта. Определяем тип счёта и необходимый пакет документов.</div> </div> <div class="kzop2__inc-card"> <span class="kzop2__inc-num">02</span> <div class="kzop2__inc-title">Установка ГИИС Электронный бюджет</div> <div class="kzop2__inc-desc">Устанавливаем и настраиваем программу ГИИС ЭБ на вашей стороне. Настройка ролей, сертификатов и параметров доступа.</div> </div> <div class="kzop2__inc-card"> <span class="kzop2__inc-num">03</span> <div class="kzop2__inc-title">Подача запроса в казначейство</div> <div class="kzop2__inc-desc">Готовим и подаём полный пакет документов для резервирования счёта в Федеральное казначейство. Контролируем процесс до результата.</div> </div> <div class="kzop2__inc-card"> <span class="kzop2__inc-num">04</span> <div class="kzop2__inc-title">Получение реквизитов</div> <div class="kzop2__inc-desc">Получаем ответ казначейства с реквизитами зарезервированного счёта и передаём вам. Счёт готов к передаче заказчику.</div> </div> <div class="kzop2__inc-card"> <span class="kzop2__inc-num">05</span> <div class="kzop2__inc-title">Сопровождение при победе</div> <div class="kzop2__inc-desc">При победе в тендере — активируем счёт для работы по контракту. Настраиваем операции, консультируем до первой выплаты.</div> </div> <div class="kzop2__inc-card"> <span class="kzop2__inc-num">06</span> <div class="kzop2__inc-title">Закрытие счёта при проигрыше</div> <div class="kzop2__inc-desc">Если тендер проигран — корректно закрываем зарезервированный счёт в казначействе. Входит в стоимость, без доплат.</div> </div> </div> </div> </section> <!-- TILDA: Zero Block · Название блока: "Что потребуется от вас" --> <section class="kzop2__section kzop2__section--gray" data-section="docs"> <div class="kzop2__wrap"> <div class="kzop2__section-header"> <span class="kzop2__eyebrow">Ваш вклад</span> <h2 class="kzop2__h2">Что потребуется <span>от вас</span></h2> <p class="kzop2__lead">Минимум документов — максимум результата. Всё остальное на нас.</p> </div> <div class="kzop2__docs-grid"> <div class="kzop2__doc-card"> <div class="kzop2__doc-icon"> <svg viewBox="0 0 20 20"><path d="M4 4h12v14H4zM7 4V2h6v2M8 9h4M8 12h4M8 15h2"/></svg> </div> <div class="kzop2__doc-title">Документация по тендеру</div> <div class="kzop2__doc-hint">Номер тендера, предмет контракта и сведения о заказчике</div> </div> <div class="kzop2__doc-card"> <div class="kzop2__doc-icon"> <svg viewBox="0 0 20 20"><rect x="3" y="3" width="14" height="14" rx="2"/><path d="M7 7h6M7 10h6M7 13h4"/></svg> </div> <div class="kzop2__doc-title">ИНН организации</div> <div class="kzop2__doc-hint">Идентификационный номер налогоплательщика вашей компании</div> </div> <div class="kzop2__doc-card"> <div class="kzop2__doc-icon"> <svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="8"/><path d="M10 6v4l3 2"/></svg> </div> <div class="kzop2__doc-title">ОГРН организации</div> <div class="kzop2__doc-hint">Основной государственный регистрационный номер компании</div> </div> <div class="kzop2__doc-card"> <div class="kzop2__doc-icon"> <svg viewBox="0 0 20 20"><path d="M10 2a4 4 0 100 8 4 4 0 000-8zM4 18a6 6 0 0112 0"/></svg> </div> <div class="kzop2__doc-title">СНИЛС директора</div> <div class="kzop2__doc-hint">Страховой номер индивидуального лицевого счёта руководителя</div> </div> </div> <div class="kzop2__docs-note"> <svg viewBox="0 0 16 16"><path d="M8 1a7 7 0 100 14A7 7 0 008 1zm0 3v4m0 2v1"/></svg> <div>Все документы пересылаются в электронном виде за <strong>5–10 минут</strong>. Присутствие не требуется — работаем дистанционно по всей России.</div> </div> </div> </section> <!-- TILDA: Zero Block · Название блока: "Как это работает — 4 шага" --> <section class="kzop2__section" data-section="process"> <div class="kzop2__wrap"> <div class="kzop2__section-header" style="text-align:center"> <span class="kzop2__eyebrow">Как это работает</span> <h2 class="kzop2__h2" style="max-width:560px;margin-left:auto;margin-right:auto">
         От заявки до готовых реквизитов — <span>за 2 рабочих дня</span> </h2> </div> <div class="kzop2__process-track" style="grid-template-columns:repeat(4,1fr)"> <div class="kzop2__step"> <div class="kzop2__step-num">1</div> <div class="kzop2__step-time">Сегодня · 5 минут</div> <div class="kzop2__step-title">Оставляете заявку</div> <div class="kzop2__step-desc">Форма или звонок. Уточняем детали тендера, определяем требования к счёту.</div> </div> <div class="kzop2__step"> <div class="kzop2__step-num">2</div> <div class="kzop2__step-time">В тот же день · 1–2 часа</div> <div class="kzop2__step-title">Установка ГИИС Электронный бюджет</div> <div class="kzop2__step-desc">Устанавливаем программу, настраиваем роли и параметры доступа для вашей организации.</div> </div> <div class="kzop2__step"> <div class="kzop2__step-num">3</div> <div class="kzop2__step-time">2–4 часа</div> <div class="kzop2__step-title">Запрос в казначейство</div> <div class="kzop2__step-desc">Готовим полный пакет документов и подаём заявку на резервирование счёта в Федеральное казначейство.</div> </div> <div class="kzop2__step"> <div class="kzop2__step-num">4</div> <div class="kzop2__step-time">2 рабочих дня</div> <div class="kzop2__step-title">Реквизиты у вас ✓</div> <div class="kzop2__step-desc">Получаете реквизиты зарезервированного счёта. Готово для передачи заказчику при победе.</div> </div> </div> </div> </section> <!-- TILDA: Zero Block · Название блока: "Риски без резервирования" --> <section class="kzop2__section kzop2__section--risk" data-section="risks"> <div class="kzop2__wrap"> <div class="kzop2__section-header"> <span class="kzop2__eyebrow" style="color:var(--red)">Если не резервировать заранее</span> <h2 class="kzop2__h2">Что идёт не так <span style="color:var(--red)">без подготовки</span></h2> <p class="kzop2__lead">Победа в тендере без готового счёта — источник дорогостоящих проблем.</p> </div> <div class="kzop2__risks-grid"> <div class="kzop2__risk-card"> <div class="kzop2__risk-icon"><svg viewBox="0 0 20 20"><path d="M10 2L2 17h16L10 2z"/><path d="M10 8v5M10 14.5v.5"/></svg></div> <div class="kzop2__risk-title">Просроченные сроки передачи реквизитов заказчику</div> <div class="kzop2__risk-desc">Заказчик ждёт реквизиты счёта сразу после победы. Открытие «с нуля» займёт 1–3 дня — и это уже нарушение.</div> </div> <div class="kzop2__risk-card"> <div class="kzop2__risk-icon"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="8"/><path d="M10 6v4l3 2"/></svg></div> <div class="kzop2__risk-title">Задержка выплаты аванса по контракту</div> <div class="kzop2__risk-desc">Без готовых реквизитов казначейского счёта заказчик не может перечислить аванс. Финансирование проекта тормозит.</div> </div> <div class="kzop2__risk-card"> <div class="kzop2__risk-icon"><svg viewBox="0 0 20 20"><rect x="2" y="4" width="16" height="14" rx="2"/><path d="M6 4V2M14 4V2M2 9h16"/></svg></div> <div class="kzop2__risk-title">Ошибки при срочном открытии под давлением дедлайна</div> <div class="kzop2__risk-desc">Спешное оформление без опыта — типичный источник ошибок в документах. Возврат из казначейства съедает ещё 1–2 недели.</div> </div> <div class="kzop2__risk-card"> <div class="kzop2__risk-icon"><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16A8 8 0 0010 2z"/><path d="M7 13l3-3-3-3M13 13l-3-3 3-3" opacity=".5"/></svg></div> <div class="kzop2__risk-title">Неверный тип счёта под параметры конкретного контракта</div> <div class="kzop2__risk-desc">У разных контрактов разные требования к счёту. Без анализа документов тендера высок риск открыть счёт с неверными параметрами.</div> </div> <div class="kzop2__risk-card"> <div class="kzop2__risk-icon"><svg viewBox="0 0 20 20"><path d="M10 2v9M6 6l4-4 4 4"/><rect x="3" y="15" width="14" height="3" rx="1"/></svg></div> <div class="kzop2__risk-title">Потеря контракта из-за несоблюдения условий</div> <div class="kzop2__risk-desc">Заказчик вправе расторгнуть договор, если исполнитель нарушил условия передачи реквизитов. Контракт уходит следующему участнику.</div> </div> <div class="kzop2__risk-card"> <div class="kzop2__risk-icon"><svg viewBox="0 0 20 20"><path d="M4 4h12v12H4zM8 8h4M8 12h2"/></svg></div> <div class="kzop2__risk-title">Затраты времени руководителя в критический момент</div> <div class="kzop2__risk-desc">После победы в тендере ваше время нужно для организации работ. Не тратьте его на бюрократию с казначейством.</div> </div> </div> </div> </section> <!-- TILDA: Zero Block · Название блока: "Сравнение: сами vs с нами" --> <section class="kzop2__section" data-section="compare"> <div class="kzop2__wrap"> <div class="kzop2__section-header"> <span class="kzop2__eyebrow">Сравнение</span> <h2 class="kzop2__h2">Самостоятельно <span>или с нами</span></h2> <p class="kzop2__lead">Цифры говорят сами за себя.</p> </div> <div class="kzop2__cmp-wrap"> <table class="kzop2__cmp"> <thead> <tr> <th class="kzop2-col-param">Параметр</th> <th class="kzop2-col-self">Самостоятельно</th> <th class="kzop2-col-us">С нами</th> </tr> </thead> <tbody> <tr> <td>Срок резервирования</td> <td class="kzop2-col-self"><span class="kzop2__cmp-badge kzop2__cmp-badge--bad">2–4 недели</span></td> <td class="kzop2-col-us"><span class="kzop2__cmp-badge kzop2__cmp-badge--good">2 рабочих дня</span></td> </tr> <tr> <td>Риск ошибки в документах</td> <td class="kzop2-col-self">Высокий — без знания требований казначейства</td> <td class="kzop2-col-us">Минимальный · 97% с первого раза</td> </tr> <tr> <td>Настройка ГИИС Электронный бюджет</td> <td class="kzop2-col-self">Самостоятельно, без поддержки</td> <td class="kzop2-col-us">Включено в стоимость</td> </tr> <tr> <td>Закрытие счёта при проигрыше</td> <td class="kzop2-col-self">Самостоятельно, дополнительное время</td> <td class="kzop2-col-us">Включено, без доплат</td> </tr> <tr> <td>Цена ошибки</td> <td class="kzop2-col-self"><span class="kzop2__cmp-badge kzop2__cmp-badge--bad">Потеря контракта</span></td> <td class="kzop2-col-us"><span class="kzop2__cmp-badge kzop2__cmp-badge--good">0 ₽</span></td> </tr> <tr> <td>Гарантия результата</td> <td class="kzop2-col-self">Нет</td> <td class="kzop2-col-us">Зафиксирована в договоре</td> </tr> <tr> <td>Ваши затраты времени</td> <td class="kzop2-col-self"><span class="kzop2__cmp-badge kzop2__cmp-badge--bad">15–30 часов</span></td> <td class="kzop2-col-us"><span class="kzop2__cmp-badge kzop2__cmp-badge--good">5–10 минут</span></td> </tr> </tbody> </table> </div> </div> </section> <!-- TILDA: Zero Block · Название блока: "CTA — Перезвон" --> <section class="kzop2__midcta" data-section="midcta"> <div class="kzop2__midcta-center"> <div class="kzop2__midcta-label">Готовы начать?</div> <div class="kzop2__midcta-title">Зарезервируем счёт <span>за 2 рабочих дня</span></div> <div class="kzop2__midcta-sub">Пока вы участвуете в тендере — мы подготовим счёт. Готовые реквизиты в день победы.</div> <div class="kzop2__midcta-form"> <div class="kzop2__midcta-input-row"> <input type="tel" class="kzop2__midcta-tel kzop2__input-phone" placeholder="+7 (___) ___-__-__" maxlength="18" autocomplete="tel" data-goal="midcta_phone_focus"> <button class="kzop2__btn kzop2__btn--white" id="kzop2-mid-submit" style="flex-shrink:0">
@@ -1950,7 +1952,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 
     /* ↓↓↓ число операций за прошлый месяц — обновлять вручную ↓↓↓ */
     statsOperations: "82",
-    statsReturns:    "0",
+    statsReturns:    "97%", /* доля резервов, принятых казначейством с первого раза */
 
     phoneDisplay:    "+7 (495) 108-42-32",
     phoneLink:       "tel:+74951084232"
@@ -1960,7 +1962,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
   var LEAD_ENDPOINT = "https://api.kazna-gov.ru/api/lead/reserve";
   var PAGE_SLUG     = "reserve";
   var PAGE_LABEL    = "Резервирование казначейского счёта";
-  var SERVICE_PRICE = 15000;
+  var SERVICE_PRICE = 19000;
 
   var hero = document.querySelector(".kzop2__hero");
   if (!hero) return;
@@ -1977,6 +1979,17 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
   hero.querySelectorAll('[data-hv-href="phoneLink"]').forEach(function (n) {
     n.setAttribute("href", KZ_HERO.phoneLink);
   });
+
+  /* Склонение метки «счетов» под текущее число */
+  (function () {
+    var n = parseInt(KZ_HERO.statsOperations, 10);
+    var num = hero.querySelector('[data-hv="statsOperations"]');
+    var lbl = num && num.nextElementSibling;
+    if (!lbl || isNaN(n)) return;
+    var m10 = n % 10, m100 = n % 100;
+    lbl.textContent = (m10 === 1 && m100 !== 11) ? "счёт"
+      : (m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14)) ? "счёта" : "счетов";
+  })();
 
   /* ── Анимация счётчиков trust-полосы ── */
   (function () {
@@ -2044,11 +2057,15 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
   var hpEl      = form.querySelector(".kzhero__hp");
   var submitEl  = form.querySelector(".kzhero__submit");
   var msgEl     = hero.querySelector(".kzhero__msg");
+  if (consentEl) consentEl.addEventListener("change", function () {
+    var cw = this.closest(".kzop2__consent");
+    if (cw) cw.classList.remove("kzop2__consent--err");
+  });
   var formCard  = hero.querySelector(".kzhero__form-card");
 
   function refreshSubmit() {
     if (!form.classList.contains("kzhero--loading")) {
-      submitEl.disabled = !phoneValid(phoneEl.value);
+      submitEl.disabled = false;
     }
   }
 
@@ -2160,7 +2177,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 
   function setLoading(on) {
     form.classList.toggle("kzhero--loading", on);
-    submitEl.disabled = on || !phoneValid(phoneEl.value);
+    submitEl.disabled = on;
     var d = submitEl.querySelector(".kzhero__btn-desktop");
     var m = submitEl.querySelector(".kzhero__btn-mobile");
     if (on) {
@@ -2193,6 +2210,9 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
       return;
     }
     if (consentEl && !consentEl.checked) {
+      var cw = consentEl.closest(".kzop2__consent");
+      if (cw) cw.classList.add("kzop2__consent--err");
+      consentEl.focus();
       showMsg("err", "Подтвердите согласие на обработку персональных данных.");
       return;
     }
@@ -2289,7 +2309,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
       });
   });
 })();
-</script> <!-- nominify end --> </div> </div> </div> </div> <div id="rec2332932801" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <!-- TILDA: Zero Block · Название блока: "Цифры доверия" --> <div class="kzop2"> <section class="kzop2__section kzop2__section--trust" data-section="trust"> <div class="kzop2__wrap"> <div class="kzop2__trust-grid"> <div class="kzop2__trust-item"> <span class="kzop2__trust-num"><span>8</span> лет</span> <div class="kzop2__trust-label">Специализируемся<br>на казначейском сопровождении</div> </div> <div class="kzop2__trust-item"> <span class="kzop2__trust-num"><span>400</span>+</span> <div class="kzop2__trust-label">Клиентов успешно<br>обслужено с 2016 года</div> </div> <div class="kzop2__trust-item"> <span class="kzop2__trust-num"><span>97</span>%</span> <div class="kzop2__trust-label">Счетов резервируется<br>без замечаний с первого раза</div> </div> <div class="kzop2__trust-item"> <span class="kzop2__trust-num"><span>1</span> день</span> <div class="kzop2__trust-label">Срок резервирования.<br>Реквизиты за 2 рабочих дня.</div> </div> </div> </div> </section> <!-- TILDA: Zero Block · Название блока: "Клиенты" --> <section class="kzop2__section kzop2__section--cosmos" data-section="clients"> <div class="kzop2__wrap"> <div class="kzop2__section-header" style="text-align:center"> <span class="kzop2__eyebrow">Клиенты</span> <h2 class="kzop2__h2">Уже зарезервировали и открыли казначейский счёт</h2> <p class="kzop2__lead" style="margin:0 auto;text-align:center">Среди наших клиентов — производственные, строительные и технологические компании из 28 регионов России</p> </div> <div class="kzop2__clients-web" id="kzop2-web"> <svg id="kzop2-web-svg" aria-hidden="true"></svg> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">СМ</span>СТРАНА МУРАВИЯ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">КЦ</span>КЦПП</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">ПЭ</span>ПРОМЭНЕРГОРЕСУРС</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">ТА</span>ТАН</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">СР</span>СК РАДА</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">АВ</span>АВЕРОН</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">БЗ</span>БРИЗ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">РС</span>РСИ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">СМ</span>СЕВМЕБЕЛЬПРОМ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">АГ</span>АГС</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">УС</span>УСАДЬБА СКОРНЯКОВО</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">ДЛ</span>ДОЛЬЧЕ ЛАЙТ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">АБ</span>АБС-ЛОГИСТИКА</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">СИ</span>СИТИСЕРВИС</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">МЛ</span>МЕЛИОР</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">АС</span>АС52</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">КБ</span>КУЛЬТУРА БЛАГОТ.</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">НК</span>НТЦ КАЧЕСТВО</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">МИ</span>МЕДИНВЕСТСИТИ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">НП</span>НПГ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">АИ</span>АЛЬФА ИНЖИНИРИНГ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">ЦЧ</span>ЦЧП</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">ТИ</span>ТРАКИНТЕРЛОГ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">ВК</span>ВЕКТОР</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">БД</span>БЕТОН+ДОСТАВКА</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">АК</span>АКВАБИОГРАФИЯ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">ТВ</span>ТХЭКВОНДО ВИЛЮЧ.</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">СС</span>СТРОЙСЕРВИС</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">КП</span>КУРИЛЬСКИЙ ПРОЛИВ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">ПС</span>ПО СКК</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">СТ</span>СЕВЕР-ТРАК</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">ПА</span>ПИК АТЛАС</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">ТЛ</span>ТПК ЛЕГИОН</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">ВД</span>ГК ВОДОКАНАЛ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">АГ</span>АГАТ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">ТС</span>ТИС</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">СК</span>СТРОЙ К</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">НМ</span>НМ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">АФ</span>СК АФИНА</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">ДС</span>ДОСААФ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">АТ</span>АТМОСФЕРА</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">ПЗ</span>ПЗСМ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">ЭК</span>ЭКОЛОС</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">АБЗ</span>АБЗ-1</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">СА</span>СК-АДМИРАЛ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">УФ</span>БК УФИМЕЦ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">ЛК</span>ЛИК</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">МП</span>МПА-М</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">ЛС</span>ЛУГУГЛЕСЕРВИС</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">ТП</span>ТСН ПРОФ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">СО</span>СУПЕРОКНА</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">ВЛ</span>ВАЛДЕКС</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">КМ</span>КАРМЕН</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">ТН</span>ТЕХНОСТРОЙ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">ТД</span>ТАВРИДА</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">КС</span>КРЫМАРМСТРОЙ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">ЛГ</span>ЛЕГИОН-СТРОЙ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">ЛА</span>ЛАГРАН</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">ДП</span>ДКБ ПЛАСТ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">ВС</span>ВОСТОК</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">АП</span>АРХСТРОЙПРОЕКТ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">СВ</span>СК ВЕРОНА</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">МС</span>МЕГАСЕТЬ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">АС</span>АВТОСБЫТ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">МИ</span>МИР</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">МО</span>МОСТСТРОЙИНЖ.</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">УН</span>УНИВЕРСАЛ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">ГЗ</span>СК ГОРИЗОНТ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">АМ</span>АЛЮМИНИЙСТРОЙ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">ЗМ</span>МЕТЕОРИТ-Н</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">РМ</span>РСМ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">ВТ</span>ВОСТОКТРАНСАВТО</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">ГА</span>СК ГАЛАКТИКА</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">ЕС</span>ЕГОРШИНСКАЯ СК</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">ВМ</span>ВОЛЛМАКС</div> </div> <p class="kzop2__clients-footer">Более <strong>400+</strong> компаний по всей России — строительство, производство, логистика, НКО</p> </div> </section> <!-- TILDA: Zero Block · Название блока: "Кейсы клиентов" --> <section class="kzop2__section kzop2__section--gray" data-section="cases"> <div class="kzop2__wrap"> <div class="kzop2__cases-carousel" id="kzCarousel"> <!-- ══ КЕЙС 1 · Telegram · резервирование до победы ══ --> <div class="kzop2__case-slide kzop2__case-slide--active" data-case="0"> <div class="kzop2__case-layout"> <div> <div class="kzop2__chat-badge kzop2__chat-badge--tg"><svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8l-1.68 7.92c-.12.56-.46.7-.93.43l-2.58-1.9-1.25 1.2c-.14.13-.26.24-.52.24l.19-2.64 4.83-4.36c.21-.19-.05-.29-.32-.1L7.6 14.37l-2.54-.79c-.55-.17-.56-.55.12-.82l9.96-3.84c.46-.17.86.11.7.82l-.2-.94z"/></svg> Telegram</div> <div class="kzop2__iphone kzop2__iphone--tg"> <div class="kzop2__iphone-inner"> <div class="kzop2__iphone-chrome"><div class="kzop2__iphone-island"></div></div> <div class="kzop2__iphone-status"> <span>9:41</span> <span class="kzop2__iphone-status-icons"> <svg width="16" height="11" viewBox="0 0 16 11" fill="white"><rect x="0" y="4" width="3" height="7" rx="1"/><rect x="4.5" y="2.5" width="3" height="8.5" rx="1"/><rect x="9" y="1" width="3" height="10" rx="1"/><rect x="13.5" y="0" width="2.5" height="11" rx="1" opacity=".4"/></svg> <svg width="15" height="11" viewBox="0 0 15 11" fill="white"><path d="M7.5 2.5C9.8 2.5 11.9 3.4 13.4 4.9L14.8 3.5C12.9 1.6 10.3.5 7.5.5S2.1 1.6.2 3.5L1.6 4.9C3.1 3.4 5.2 2.5 7.5 2.5z" opacity=".4"/><path d="M7.5 5.5C9 5.5 10.3 6.1 11.3 7L12.7 5.6C11.3 4.3 9.5 3.5 7.5 3.5S3.7 4.3 2.3 5.6L3.7 7C4.7 6.1 6 5.5 7.5 5.5z"/><circle cx="7.5" cy="9.5" r="1.5"/></svg> <svg width="24" height="11" viewBox="0 0 24 11" fill="white"><rect x="0" y="1" width="20" height="9" rx="2" stroke="white" stroke-width="1" fill="none"/><rect x="1" y="2" width="15" height="7" rx="1" fill="white"/><rect x="21" y="3.5" width="2.5" height="4" rx="1" fill="white" opacity=".5"/></svg> </span> </div> <div class="kzop2__chat-header"> <div class="kzop2__chat-avatar">ПС</div> <div class="kzop2__chat-hinfo"> <div class="kzop2__chat-hname"><span class="kzop2__chat-hname-blur">ПромСервис-Урал</span></div> <div class="kzop2__chat-hstatus">был(а) только что</div> </div> </div> <div class="kzop2__chat-body"> <div class="kzop2__chat-date-sep"><span>сегодня</span></div> <div class="kzop2__chat-msg kzop2__chat-msg--in">
+</script> <!-- nominify end --> </div> </div> </div> </div> <div id="rec2332932801" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <!-- TILDA: Zero Block · Название блока: "Цифры доверия" --> <div class="kzop2"> <section class="kzop2__section kzop2__section--trust" data-section="trust"> <div class="kzop2__wrap"> <div class="kzop2__trust-grid"> <div class="kzop2__trust-item"> <span class="kzop2__trust-num"><span>8</span> лет</span> <div class="kzop2__trust-label">Специализируемся<br>на казначейском сопровождении</div> </div> <div class="kzop2__trust-item"> <span class="kzop2__trust-num"><span>400</span>+</span> <div class="kzop2__trust-label">Клиентов успешно<br>обслужено с 2016 года</div> </div> <div class="kzop2__trust-item"> <span class="kzop2__trust-num"><span>97</span>%</span> <div class="kzop2__trust-label">Счетов резервируется<br>без замечаний с первого раза</div> </div> <div class="kzop2__trust-item"> <span class="kzop2__trust-num"><span>2</span> дня</span> <div class="kzop2__trust-label">От заявки до готовых<br>реквизитов счёта</div> </div> </div> </div> </section> <!-- TILDA: Zero Block · Название блока: "Клиенты" --> <section class="kzop2__section kzop2__section--cosmos" data-section="clients"> <div class="kzop2__wrap"> <div class="kzop2__section-header" style="text-align:center"> <span class="kzop2__eyebrow">Клиенты</span> <h2 class="kzop2__h2">Уже зарезервировали и открыли казначейский счёт</h2> <p class="kzop2__lead" style="margin:0 auto;text-align:center">Среди наших клиентов — производственные, строительные и технологические компании из 28 регионов России</p> </div> <div class="kzop2__clients-web" id="kzop2-web"> <svg id="kzop2-web-svg" aria-hidden="true"></svg> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">СМ</span>СТРАНА МУРАВИЯ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">КЦ</span>КЦПП</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">ПЭ</span>ПРОМЭНЕРГОРЕСУРС</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">ТА</span>ТАН</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">СР</span>СК РАДА</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">АВ</span>АВЕРОН</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">БЗ</span>БРИЗ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">РС</span>РСИ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">СМ</span>СЕВМЕБЕЛЬПРОМ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">АГ</span>АГС</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">УС</span>УСАДЬБА СКОРНЯКОВО</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">ДЛ</span>ДОЛЬЧЕ ЛАЙТ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">АБ</span>АБС-ЛОГИСТИКА</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">СИ</span>СИТИСЕРВИС</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">МЛ</span>МЕЛИОР</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">АС</span>АС52</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">КБ</span>КУЛЬТУРА БЛАГОТ.</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">НК</span>НТЦ КАЧЕСТВО</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">МИ</span>МЕДИНВЕСТСИТИ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">НП</span>НПГ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">АИ</span>АЛЬФА ИНЖИНИРИНГ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">ЦЧ</span>ЦЧП</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">ТИ</span>ТРАКИНТЕРЛОГ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">ВК</span>ВЕКТОР</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">БД</span>БЕТОН+ДОСТАВКА</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">АК</span>АКВАБИОГРАФИЯ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">ТВ</span>ТХЭКВОНДО ВИЛЮЧ.</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">СС</span>СТРОЙСЕРВИС</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">КП</span>КУРИЛЬСКИЙ ПРОЛИВ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">ПС</span>ПО СКК</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">СТ</span>СЕВЕР-ТРАК</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">ПА</span>ПИК АТЛАС</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">ТЛ</span>ТПК ЛЕГИОН</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">ВД</span>ГК ВОДОКАНАЛ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">АГ</span>АГАТ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">ТС</span>ТИС</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">СК</span>СТРОЙ К</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">НМ</span>НМ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">АФ</span>СК АФИНА</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">ДС</span>ДОСААФ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">АТ</span>АТМОСФЕРА</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">ПЗ</span>ПЗСМ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">ЭК</span>ЭКОЛОС</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">АБЗ</span>АБЗ-1</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">СА</span>СК-АДМИРАЛ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">УФ</span>БК УФИМЕЦ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">ЛК</span>ЛИК</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">МП</span>МПА-М</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">ЛС</span>ЛУГУГЛЕСЕРВИС</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">ТП</span>ТСН ПРОФ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">СО</span>СУПЕРОКНА</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">ВЛ</span>ВАЛДЕКС</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">КМ</span>КАРМЕН</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">ТН</span>ТЕХНОСТРОЙ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">ТД</span>ТАВРИДА</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">КС</span>КРЫМАРМСТРОЙ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">ЛГ</span>ЛЕГИОН-СТРОЙ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">ЛА</span>ЛАГРАН</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">ДП</span>ДКБ ПЛАСТ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">ВС</span>ВОСТОК</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">АП</span>АРХСТРОЙПРОЕКТ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">СВ</span>СК ВЕРОНА</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">МС</span>МЕГАСЕТЬ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">АС</span>АВТОСБЫТ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">МИ</span>МИР</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">МО</span>МОСТСТРОЙИНЖ.</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">УН</span>УНИВЕРСАЛ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">ГЗ</span>СК ГОРИЗОНТ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">АМ</span>АЛЮМИНИЙСТРОЙ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">ЗМ</span>МЕТЕОРИТ-Н</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--a">РМ</span>РСМ</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--b">ВТ</span>ВОСТОКТРАНСАВТО</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--c">ГА</span>СК ГАЛАКТИКА</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--d">ЕС</span>ЕГОРШИНСКАЯ СК</div> <div class="kzop2__web-node"><span class="kzop2__web-mono-sm kzop2__client-mono--e">ВМ</span>ВОЛЛМАКС</div> </div> <p class="kzop2__clients-footer">Более <strong>400+</strong> компаний по всей России — строительство, производство, логистика, НКО</p> </div> </section> <!-- TILDA: Zero Block · Название блока: "Кейсы клиентов" --> <section class="kzop2__section kzop2__section--gray" data-section="cases"> <div class="kzop2__wrap"> <div class="kzop2__cases-carousel" id="kzCarousel"> <!-- ══ КЕЙС 1 · Telegram · резервирование до победы ══ --> <div class="kzop2__case-slide kzop2__case-slide--active" data-case="0"> <div class="kzop2__case-layout"> <div> <div class="kzop2__chat-badge kzop2__chat-badge--tg"><svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8l-1.68 7.92c-.12.56-.46.7-.93.43l-2.58-1.9-1.25 1.2c-.14.13-.26.24-.52.24l.19-2.64 4.83-4.36c.21-.19-.05-.29-.32-.1L7.6 14.37l-2.54-.79c-.55-.17-.56-.55.12-.82l9.96-3.84c.46-.17.86.11.7.82l-.2-.94z"/></svg> Telegram</div> <div class="kzop2__iphone kzop2__iphone--tg"> <div class="kzop2__iphone-inner"> <div class="kzop2__iphone-chrome"><div class="kzop2__iphone-island"></div></div> <div class="kzop2__iphone-status"> <span>9:41</span> <span class="kzop2__iphone-status-icons"> <svg width="16" height="11" viewBox="0 0 16 11" fill="white"><rect x="0" y="4" width="3" height="7" rx="1"/><rect x="4.5" y="2.5" width="3" height="8.5" rx="1"/><rect x="9" y="1" width="3" height="10" rx="1"/><rect x="13.5" y="0" width="2.5" height="11" rx="1" opacity=".4"/></svg> <svg width="15" height="11" viewBox="0 0 15 11" fill="white"><path d="M7.5 2.5C9.8 2.5 11.9 3.4 13.4 4.9L14.8 3.5C12.9 1.6 10.3.5 7.5.5S2.1 1.6.2 3.5L1.6 4.9C3.1 3.4 5.2 2.5 7.5 2.5z" opacity=".4"/><path d="M7.5 5.5C9 5.5 10.3 6.1 11.3 7L12.7 5.6C11.3 4.3 9.5 3.5 7.5 3.5S3.7 4.3 2.3 5.6L3.7 7C4.7 6.1 6 5.5 7.5 5.5z"/><circle cx="7.5" cy="9.5" r="1.5"/></svg> <svg width="24" height="11" viewBox="0 0 24 11" fill="white"><rect x="0" y="1" width="20" height="9" rx="2" stroke="white" stroke-width="1" fill="none"/><rect x="1" y="2" width="15" height="7" rx="1" fill="white"/><rect x="21" y="3.5" width="2.5" height="4" rx="1" fill="white" opacity=".5"/></svg> </span> </div> <div class="kzop2__chat-header"> <div class="kzop2__chat-avatar">ПС</div> <div class="kzop2__chat-hinfo"> <div class="kzop2__chat-hname"><span class="kzop2__chat-hname-blur">ПромСервис-Урал</span></div> <div class="kzop2__chat-hstatus">был(а) только что</div> </div> </div> <div class="kzop2__chat-body"> <div class="kzop2__chat-date-sep"><span>сегодня</span></div> <div class="kzop2__chat-msg kzop2__chat-msg--in">
                     Добрый день. Мы участвуем в тендере на 12 млн. Итоги через 5 дней. Заказчик в документации указал что счёт нужен в день подписания договора. Как быть?
                     <span class="kzop2__chat-time">10:12</span> </div> <div class="kzop2__chat-msg kzop2__chat-msg--out">
                     Добрый день! Именно для таких ситуаций есть резервирование — зарезервируем счёт до победы. Реквизиты будут готовы ещё до того как узнаете результат.
@@ -2335,7 +2355,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
                     Казань — активируем счёт для работы по контракту. Самару — закроем без вашего участия. Поздравляю с победой! 🎉
                     <span class="kzop2__chat-time">11:43 <span class="kzop2__chat-tick">✓✓</span></span> </div> </div> <div class="kzop2__iphone-home"><div class="kzop2__iphone-home-bar"></div></div> </div> </div> </div> <div class="kzop2__case-info"> <span class="kzop2__eyebrow" style="margin-bottom:10px">Из практики</span> <h2 class="kzop2__h2" style="font-size:clamp(20px,2vw,26px);margin-bottom:6px;letter-spacing:-0.02em">Как мы <span>решали задачи клиентов</span></h2> <p class="kzop2__lead" style="margin-bottom:0;font-size:14px;color:var(--t3)">Реальные ситуации — без приукрашивания.</p> <div style="height:1px;background:var(--border2);margin:18px 0 16px;opacity:0.6"></div> <div class="kzop2__case-ind">Монтаж оборудования · 2 региона</div> <div class="kzop2__case-title">Два тендера в разных регионах — оба счёта зарезервированы за один день</div> <div class="kzop2__case-blocks"> <div class="kzop2__case-block kzop2__case-block--prb"> <div class="kzop2__case-block-label">Проблема</div> <div class="kzop2__case-block-text">Два тендера одновременно в Казани и Самаре. Итоги через 10 дней. По каждому нужен казначейский счёт — и неизвестно, в каком выиграют.</div> </div> <div class="kzop2__case-block kzop2__case-block--did"> <div class="kzop2__case-block-label">Что сделали</div> <div class="kzop2__case-block-text">Зарезервировали два счёта в разных казначействах параллельно. <strong>На следующий день у клиента были реквизиты обоих счетов.</strong></div> </div> <div class="kzop2__case-block kzop2__case-block--res"> <div class="kzop2__case-block-label">Результат</div> <div class="kzop2__case-block-text"><strong>Победа в Казани — счёт активирован.</strong> Самара — закрыта без доплат. Клиент вышел на объект в первый рабочий день после победы.</div> </div> </div> <div style="flex:0 1 20px;min-height:8px"></div> <div class="kzop2__case-nav"> <button class="kzop2__case-nav-btn" data-dir="-1"> <svg viewBox="0 0 14 14"><path d="M9 2L4 7l5 5"/></svg> Назад
               </button> <div class="kzop2__case-dots"> <button class="kzop2__case-dot" data-dot="0" aria-label="Кейс 1"><span class="kzop2__case-dot-fill"></span></button> <button class="kzop2__case-dot" data-dot="1" aria-label="Кейс 2"><span class="kzop2__case-dot-fill"></span></button> <button class="kzop2__case-dot kzop2__case-dot--active" data-dot="2" aria-label="Кейс 3"><span class="kzop2__case-dot-fill"></span></button> </div> <button class="kzop2__case-nav-btn" data-dir="1" disabled>
-                Следующий кейс <svg viewBox="0 0 14 14"><path d="M5 2l5 5-5 5"/></svg> </button> </div> </div> </div> </div> </div><!-- /carousel --> </div> </section> <!-- TILDA: Zero Block · Название блока: "Все услуги" --> <section class="kzop2__section" data-section="services"> <div class="kzop2__wrap"> <div class="kzop2__section-header"> <span class="kzop2__eyebrow">Все услуги</span> <h2 class="kzop2__h2">Подберите <span>нужную услугу</span></h2> </div> <div class="kzop2__services-grid"> <a href="/services/reserve" class="kzop2__svc-card kzop2__svc-card--active" data-goal="service_card_click" data-service="reserve"> <div class="kzop2__svc-active-badge">Текущая страница</div> <div class="kzop2__svc-name">Резервирование счёта</div> <div class="kzop2__svc-desc">Зарезервируем казначейский счёт под конкретный контракт до заключения договора</div> <div class="kzop2__svc-price">19 000 ₽</div> <div class="kzop2__svc-cta" style="color:var(--navy)">Вы здесь</div> </a> <a href="/services/open" class="kzop2__svc-card" data-goal="service_card_click" data-service="open"> <div class="kzop2__svc-name">Открытие счёта</div> <div class="kzop2__svc-desc">Полный пакет документов, подача в казначейство, контроль открытия за 2 рабочих дня</div> <div class="kzop2__svc-price">29 000 ₽</div> <div class="kzop2__svc-cta">Подробнее <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div> </a> <a href="/services/postpayment" class="kzop2__svc-card" data-goal="service_card_click" data-service="postpayment"> <div class="kzop2__svc-name">Постоплата по госконтракту</div> <div class="kzop2__svc-desc">Проведём постоплату без возврата, ошибок и задержек. Работаем в срок.</div> <div class="kzop2__svc-price">49 000 ₽</div> <div class="kzop2__svc-cta">Подробнее <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div> </a> <a href="/services/conduct" class="kzop2__svc-card" data-goal="service_card_click" data-service="conduct"> <div class="kzop2__svc-name">Полное сопровождение</div> <div class="kzop2__svc-desc">Берём на себя всё казначейское сопровождение. Безлимит операций, раздельный учёт.</div> <div class="kzop2__svc-price">69 000 ₽/мес</div> <div class="kzop2__svc-cta">Подробнее <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div> </a> </div> </div> </section> </div><!-- /.kzop2 --> <!-- nominify end --> </div> </div> </div> </div> <div id="rec2332932771" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <!-- TILDA: Zero Block · Название блока: "Команда — Эксперты" --> <!-- reserve_landing_v2_body_part3.html: Team section --> <div class="kzop2"> <section class="kzop2__section" data-section="team"> <div class="kzop2__wrap"> <div class="kzop2__section-header"> <span class="kzop2__eyebrow">Команда</span> <h2 class="kzop2__h2">Эксперты, которые <span>зарезервируют ваш счёт</span></h2> <p class="kzop2__lead">Не колл-центр и не агрегатор — живые специалисты с профильным опытом в казначейском сопровождении</p> </div> <div class="kzop2__team-grid"> <!-- Expert 1 --> <div class="kzop2__expert-card kzop2-fade"> <div class="kzop2__expert-avatar"> <img src="data:image/jpeg;base64,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" alt="Андрей В." style="width:72px;height:72px;display:block;object-fit:cover;object-position:center top"> </div> <div> <div class="kzop2__expert-name">Андрей В.</div> <div class="kzop2__expert-role">Руководитель направления</div> <p class="kzop2__expert-bio">15+ лет специализации на казначейском сопровождении по 44-ФЗ и 223-ФЗ. Лично сопровождал открытие и резервирование более 200 казначейских счетов. Знает все требования казначейства и типичные причины возвратов.</p> <div class="kzop2__expert-stats"> <span class="kzop2__expert-stat">200+ счетов</span> <span class="kzop2__expert-stat">15+ лет опыта</span> <span class="kzop2__expert-stat">44-ФЗ / 223-ФЗ</span> </div> </div> </div> <!-- Expert 2 --> <div class="kzop2__expert-card kzop2-fade" style="--fd:1"> <div class="kzop2__expert-avatar"> <img src="data:image/jpeg;base64,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" alt="Наталья К." style="width:72px;height:72px;display:block;object-fit:cover;object-position:center top"> </div> <div> <div class="kzop2__expert-name">Наталья К.</div> <div class="kzop2__expert-role">Главный специалист ГИИС ЭБ</div> <p class="kzop2__expert-bio">Сертифицированный специалист по ГИИС Электронный бюджет. Отвечает за техническую настройку систем при резервировании. 0 ошибок при подключении за последние 3 года работы.</p> <div class="kzop2__expert-stats"> <span class="kzop2__expert-stat">ГИИС ЭБ</span> <span class="kzop2__expert-stat">0 ошибок</span> <span class="kzop2__expert-stat">6 лет опыта</span> </div> </div> </div> </div> </div> </section> </div><!-- /.kzop2 --> <!-- nominify end --> </div> </div> </div> </div> <div id="rec2332932031" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <!-- reserve_landing_v2_body_part4.html: FAQ + Финальная форма + JS --> <div style="width:100%;padding:24px 20px;box-sizing:border-box;"><aside style="max-width:820px;margin:0 auto;border-left:4px solid #15846B;background:#f2f7f5;border-radius:12px;padding:18px 22px;font:16px/1.62 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#1a1a1a;"><div style="font-weight:700;color:#15846B;margin:0 0 6px;font-size:15px;letter-spacing:.02em;">Правовая основа</div><p style="margin:0;">Резервирование — это заблаговременное открытие лицевого счёта участника казначейского сопровождения до подписания контракта. Процедура прямо предусмотрена Порядком, утверждённым приказом Федерального казначейства от 22.12.2021 № 44н (в нём — форма заявления на резервирование и закрытие лицевого счёта), в рамках главы 24.4 Бюджетного кодекса РФ (ст. 242.23). <a href="https://publication.pravo.gov.ru/document/0001202202070025" target="_blank" rel="noopener" style="color:#15846B;">официальная публикация приказа № 44н</a>.</p></aside></div>
+                Следующий кейс <svg viewBox="0 0 14 14"><path d="M5 2l5 5-5 5"/></svg> </button> </div> </div> </div> </div> </div><!-- /carousel --> </div> </section> <!-- TILDA: Zero Block · Название блока: "Все услуги" --> <section class="kzop2__section" data-section="services"> <div class="kzop2__wrap"> <div class="kzop2__section-header"> <span class="kzop2__eyebrow">Все услуги</span> <h2 class="kzop2__h2">Подберите <span>нужную услугу</span></h2> </div> <div class="kzop2__services-grid"> <a href="/services/reserve" class="kzop2__svc-card kzop2__svc-card--active" data-goal="service_card_click" data-service="reserve"> <div class="kzop2__svc-active-badge">Текущая страница</div> <div class="kzop2__svc-name">Резервирование счёта</div> <div class="kzop2__svc-desc">Зарезервируем казначейский счёт под конкретный контракт до заключения договора</div> <div class="kzop2__svc-price">19 000 ₽</div> <div class="kzop2__svc-cta" style="color:var(--navy)">Вы здесь</div> </a> <a href="/services/open" class="kzop2__svc-card" data-goal="service_card_click" data-service="open"> <div class="kzop2__svc-name">Открытие счёта</div> <div class="kzop2__svc-desc">Полный пакет документов, подача в казначейство, контроль открытия за 2 рабочих дня</div> <div class="kzop2__svc-price">29 000 ₽</div> <div class="kzop2__svc-cta">Подробнее <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div> </a> <a href="/services/postpayment" class="kzop2__svc-card" data-goal="service_card_click" data-service="postpayment"> <div class="kzop2__svc-name">Постоплата по госконтракту</div> <div class="kzop2__svc-desc">Проведём постоплату без возврата, ошибок и задержек. Работаем в срок.</div> <div class="kzop2__svc-price">49 000 ₽</div> <div class="kzop2__svc-cta">Подробнее <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div> </a> <a href="/services/conduct" class="kzop2__svc-card" data-goal="service_card_click" data-service="conduct"> <div class="kzop2__svc-name">Полное сопровождение</div> <div class="kzop2__svc-desc">Берём на себя всё казначейское сопровождение. Безлимит операций, раздельный учёт.</div> <div class="kzop2__svc-price">69 000 ₽/мес</div> <div class="kzop2__svc-cta">Подробнее <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div> </a> </div> </div> </section> </div><!-- /.kzop2 --> <!-- nominify end --> </div> </div> </div> </div> <div id="rec2332932771" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <!-- TILDA: Zero Block · Название блока: "Команда — Эксперты" --> <!-- reserve_landing_v2_body_part3.html: Team section --> <div class="kzop2"> <section class="kzop2__section" data-section="team"> <div class="kzop2__wrap"> <div class="kzop2__section-header"> <span class="kzop2__eyebrow">Команда</span> <h2 class="kzop2__h2">Эксперты, которые <span>зарезервируют ваш счёт</span></h2> <p class="kzop2__lead">Не колл-центр и не агрегатор — живые специалисты с профильным опытом в казначейском сопровождении</p> </div> <div class="kzop2__team-grid"> <!-- Expert 1 --> <div class="kzop2__expert-card kzop2-fade"> <div class="kzop2__expert-avatar"> <img src="data:image/jpeg;base64,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" alt="Андрей В." width="72" height="72" style="width:72px;height:72px;display:block;object-fit:cover;object-position:center top"> </div> <div> <div class="kzop2__expert-name">Андрей В.</div> <div class="kzop2__expert-role">Руководитель направления</div> <p class="kzop2__expert-bio">15+ лет специализации на казначейском сопровождении по 44-ФЗ и 223-ФЗ. Лично сопровождал открытие и резервирование более 200 казначейских счетов. Знает все требования казначейства и типичные причины возвратов.</p> <div class="kzop2__expert-stats"> <span class="kzop2__expert-stat">200+ счетов</span> <span class="kzop2__expert-stat">15+ лет опыта</span> <span class="kzop2__expert-stat">44-ФЗ / 223-ФЗ</span> </div> </div> </div> <!-- Expert 2 --> <div class="kzop2__expert-card kzop2-fade" style="--fd:1"> <div class="kzop2__expert-avatar"> <img src="data:image/jpeg;base64,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" alt="Наталья К." width="72" height="72" style="width:72px;height:72px;display:block;object-fit:cover;object-position:center top"> </div> <div> <div class="kzop2__expert-name">Наталья К.</div> <div class="kzop2__expert-role">Главный специалист ГИИС ЭБ</div> <p class="kzop2__expert-bio">Сертифицированный специалист по ГИИС Электронный бюджет. Отвечает за техническую настройку систем при резервировании. 0 ошибок при подключении за последние 3 года работы.</p> <div class="kzop2__expert-stats"> <span class="kzop2__expert-stat">ГИИС ЭБ</span> <span class="kzop2__expert-stat">0 ошибок</span> <span class="kzop2__expert-stat">6 лет опыта</span> </div> </div> </div> </div> </div> </section> </div><!-- /.kzop2 --> <!-- nominify end --> </div> </div> </div> </div> <div id="rec2332932031" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <!-- reserve_landing_v2_body_part4.html: FAQ + Финальная форма + JS --> <div style="width:100%;padding:24px 20px;box-sizing:border-box;"><aside style="max-width:820px;margin:0 auto;border-left:4px solid #15846B;background:#f2f7f5;border-radius:12px;padding:18px 22px;font:16px/1.62 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#1a1a1a;"><div style="font-weight:700;color:#15846B;margin:0 0 6px;font-size:15px;letter-spacing:.02em;">Правовая основа</div><p style="margin:0;">Резервирование — это заблаговременное открытие лицевого счёта участника казначейского сопровождения до подписания контракта. Процедура прямо предусмотрена Порядком, утверждённым приказом Федерального казначейства от 22.12.2021 № 44н (в нём — форма заявления на резервирование и закрытие лицевого счёта), в рамках главы 24.4 Бюджетного кодекса РФ (ст. 242.23). <a href="https://publication.pravo.gov.ru/document/0001202202070025" target="_blank" rel="noopener" style="color:#15846B;">официальная публикация приказа № 44н</a>.</p></aside></div>
 <!-- TILDA: Zero Block · Название блока: "FAQ — Частые вопросы" --> <div class="kzop2"> <section class="kzop2__section kzop2__section--gray" data-section="faq"> <div class="kzop2__wrap"> <div class="kzop2__section-header" style="text-align:center"> <span class="kzop2__eyebrow">Частые вопросы</span> <h2 class="kzop2__h2" style="margin-left:auto;margin-right:auto;max-width:520px">
         Отвечаем <span>на главные вопросы</span> </h2> </div> <div class="kzop2__faq-list"> <div class="kzop2__faq-item"> <button class="kzop2__faq-q" data-faq="1">
           Зачем резервировать счёт заранее — нельзя открыть после победы?
@@ -2487,7 +2507,7 @@ fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Ty
 .kzop2__success{
   position:fixed;inset:0;z-index:99999;display:none;
   align-items:center;justify-content:center;
-  background:rgba(12,27,51,0.55);
+  background:rgba(10,25,20,0.55);
   -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
   padding:20px;
   animation:kzop2-mfade .22s ease both;
@@ -2497,7 +2517,7 @@ fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Ty
   background:#fff;border-radius:20px;
   width:100%;max-width:440px;padding:40px 32px 28px;
   text-align:center;position:relative;
-  box-shadow:0 24px 64px rgba(12,27,51,0.28);
+  box-shadow:0 24px 64px rgba(10,25,20,0.28);
   font-family:var(--font, -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif);
   animation:kzop2-mpop .28s cubic-bezier(0.34,1.56,0.64,1) both;
 }
@@ -2510,19 +2530,19 @@ fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Ty
 }
 .kzop2__success-icon svg{width:32px;height:32px;color:#fff}
 .kzop2__success-title{
-  font-size:22px;font-weight:800;color:var(--text,#0D1424);
+  font-size:22px;font-weight:800;color:var(--text,#0F1714);
   letter-spacing:-0.02em;line-height:1.25;margin-bottom:10px;
 }
 .kzop2__success-sub{
   font-size:15px;color:#5a6480;line-height:1.55;margin-bottom:24px;
 }
 .kzop2__success-close{
-  background:var(--blue,#1E50D4);color:#fff;border:none;cursor:pointer;
+  background:var(--blue,#15846B);color:#fff;border:none;cursor:pointer;
   font-weight:700;font-size:15px;border-radius:12px;
   padding:14px 28px;min-width:160px;
   transition:background .2s ease,transform .2s ease,box-shadow .2s ease;
 }
-.kzop2__success-close:hover{background:var(--blue-h,#1641BC);transform:translateY(-1px);box-shadow:0 8px 18px rgba(30,80,212,0.28)}
+.kzop2__success-close:hover{background:var(--blue-h,#1641BC);transform:translateY(-1px);box-shadow:0 8px 18px rgba(21,132,107,0.28)}
 .kzop2__success-x{
   position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:50%;
   border:none;background:rgba(13,20,36,0.06);color:#5a6480;cursor:pointer;
@@ -2530,7 +2550,7 @@ fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Ty
   font-size:20px;line-height:1;font-weight:400;
   transition:background .15s ease,color .15s ease;
 }
-.kzop2__success-x:hover{background:rgba(13,20,36,0.12);color:#0D1424}
+.kzop2__success-x:hover{background:rgba(13,20,36,0.12);color:#0F1714}
 @keyframes kzop2-mfade{from{opacity:0}to{opacity:1}}
 @keyframes kzop2-mpop{from{opacity:0;transform:scale(0.92) translateY(8px)}to{opacity:1;transform:scale(1) translateY(0)}}
 @media(prefers-reduced-motion:reduce){
