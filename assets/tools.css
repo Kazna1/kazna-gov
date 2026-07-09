@@ -1,0 +1,22 @@
+/* Knowledge Tools — Decision Engine (R2.07); база: oshibki/glossary.css */
+.tl-wizard { margin: 18px 0; padding: 20px; background: #fff; border: 2px solid #15846B; border-radius: 14px; }
+.tl-progress { font-size: 12.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: #15846B; margin-bottom: 8px; }
+.tl-q { font-size: 19px; font-weight: 800; margin: 0 0 6px; color: #1C1E20; }
+.tl-help { font-size: 14px; color: #5a6067; margin: 0 0 12px; }
+.tl-options { display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
+.tl-opt { text-align: left; padding: 12px 16px; min-height: 48px; border: 1.5px solid #d8d3c6; border-radius: 10px;
+  background: #FDFCF9; font-size: 15px; font-weight: 600; color: #1C1E20; cursor: pointer; }
+.tl-opt:hover { border-color: #15846B; color: #15846B; }
+.tl-opt:focus-visible { outline: 2px solid #15846B; outline-offset: 2px; }
+.tl-back { margin-top: 12px; padding: 8px 0; border: 0; background: none; color: #6b7178; font-size: 14px; font-weight: 600; cursor: pointer; }
+.tl-back:hover { color: #15846B; }
+.tl-outcome { margin: 18px 0; padding: 18px 20px; background: #fff; border: 1px solid #E6E2D8; border-left: 4px solid var(--risk, #15846B); border-radius: 12px; }
+.tl-outcome__t { margin: 0 0 6px; font-size: 19px; }
+.tl-risk { font-size: 14px; color: var(--risk, #15846B); font-weight: 600; margin: 0 0 10px; }
+.tl-risk strong { text-transform: uppercase; letter-spacing: .03em; }
+.tl-outcome h4 { margin: 16px 0 8px; font-size: 15.5px; }
+.tl-checklist li { margin: 6px 0; }
+@media print {
+  .kzHeader, header[id], footer, .tl-wizard, .oe-toc, #drugie { display: none !important; }
+  .tl-outcome[hidden] { display: none !important; }
+}

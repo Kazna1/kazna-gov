@@ -15,6 +15,20 @@
 - [Отзывы](https://kazna-gov.ru/review)
 - Полезные разделы: [Ошибки и их решения](https://kazna-gov.ru/oshibki/) · [Глоссарий терминов](https://kazna-gov.ru/glossary/) · [Инструменты и калькуляторы](https://kazna-gov.ru/instrumenty/) · [Образцы документов](https://kazna-gov.ru/obraztsy/) · [Кейсы](https://kazna-gov.ru/keysy/) · [Новости](https://kazna-gov.ru/novosti/) · [Регионы](https://kazna-gov.ru/regiony/) · [Вопросы и ответы — 300 FAQ](https://kazna-gov.ru/voprosy/)
 
+## Мастера диагностики (раздел /instrumenty — R2.07)
+
+Интерактивные Decision Engines: несколько вопросов — диагноз, уровень риска, чек-лист, документы и услуга.
+- [Диагностика контракта](https://kazna-gov.ru/instrumenty/diagnostika-kontrakta/): Вход: источник средств, тип контракта, аванс. Выход: режим исполнения (КС / банковское / свободный) + план подготовки.
+- [Проверка необходимости КС](https://kazna-gov.ru/instrumenty/proverka-neobhodimosti-ks/): Вход: кто вы и какие средства получаете. Выход: нужно КС / не нужно / зависит от условий года.
+- [Подбор счёта](https://kazna-gov.ru/instrumenty/podbor-litsevogo-scheta/): Вход: тип контракта и режим сопровождения. Выход: тип счёта + где открывать + формы.
+- [Проверка комплекта документов](https://kazna-gov.ru/instrumenty/proverka-komplekta-dokumentov/): Вход: что уже готово. Выход: готов пакет / есть дыры (какие именно закрыть).
+- [Диагностика платежа](https://kazna-gov.ru/instrumenty/diagnostika-platezha/): Вход: симптом и формулировка УФК. Выход: причина + пошаговое исправление.
+- [Проверка обязанностей по ГОЗ](https://kazna-gov.ru/instrumenty/proverka-goz/): Вход: роль в кооперации и состояние учёта. Выход: карта обязанностей + приоритетные дыры.
+- [Проверка субсидии](https://kazna-gov.ru/instrumenty/proverka-subsidii/): Вход: стадия и тип субсидии. Выход: карта обязанностей получателя + риски.
+- [Маршрутизатор платежа](https://kazna-gov.ru/instrumenty/marshrutizator-platezha/): Вход: кому и за что платите. Выход: тип операции + код + документы + шаблон назначения.
+- [Проверка готовности к санкционированию](https://kazna-gov.ru/instrumenty/proverka-sanktsionirovaniya/): Вход: состояние платежа по 4 контрольным точкам. Выход: готов / что чинить до подачи.
+- [Генератор чек-листа](https://kazna-gov.ru/instrumenty/generator-chek-lista/): Вход: тип средств и стадия. Выход: пошаговый чек-лист старта с формами и сроками.
+
 ## Тематические экспертные центры (R2.06)
 
 - [Казначейское сопровождение](https://kazna-gov.ru/kaznacheyskoe-soprovozhdenie/): Казначейское сопровождение — режим контроля целевых средств госконтрактов и субсидий: деньги живут на лицевом счёте в УФК, каждый платёж проходит санкционирование.
