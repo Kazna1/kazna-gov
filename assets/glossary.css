@@ -1,0 +1,19 @@
+/* Glossary Intelligence Center — доп. слой поверх oshibki.css (R2.04) */
+.gl-full { font-size: .62em; font-weight: 600; color: #6b7178; display: block; margin-top: 4px; }
+@media (min-width: 720px) { .gl-full { display: inline; margin-top: 0; } }
+
+.gl-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; }
+.gl-chip { display: inline-block; padding: 6px 14px; background: #E9F5F0; border-radius: 999px;
+  font-size: 14px; font-weight: 600; color: #15846B !important; text-decoration: none !important; }
+.gl-chip:hover { background: #15846B; color: #fff !important; }
+.gl-chip--all { background: #fff; border: 1.5px solid #d8d3c6; color: #6b7178 !important; }
+.gl-chip--all:hover { border-color: #15846B; background: #fff; color: #15846B !important; }
+.gl-main-mark { font-size: 12.5px; color: #6b7178; font-weight: 600; }
+
+.gl-alpha { display: flex; flex-wrap: wrap; gap: 6px; margin: 14px 0 6px; }
+.gl-letter { min-width: 36px; min-height: 36px; padding: 0 8px; border: 1px solid #d8d3c6; border-radius: 8px;
+  background: #fff; font-size: 14px; font-weight: 700; color: #1C1E20; cursor: pointer; }
+.gl-letter:hover { border-color: #15846B; color: #15846B; }
+.gl-letter.is-active { background: #15846B; border-color: #15846B; color: #fff; }
+.gl-letter--reset { color: #6b7178; font-weight: 600; }
+.gl-letter:focus-visible { outline: 2px solid #15846B; outline-offset: 2px; }

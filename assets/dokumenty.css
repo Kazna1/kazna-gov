@@ -31,3 +31,7 @@
 .dd-official p { margin: 0; font-size: 14.5px; }
 .dd-official--ok { background: #E9F5F0; border-left-color: #15846B; }
 .dd-official--ok .dd-official__t { color: #0f6a55; }
+
+/* R2.04: термин-чипы стали ссылками на /glossary/ */
+a.dd-term { text-decoration: none !important; }
+a.dd-term:hover { background: #15846B; color: #fff !important; }
