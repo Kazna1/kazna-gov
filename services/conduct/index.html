@@ -165,26 +165,26 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 --> <meta charset="UTF-8"> <!-- КАЗНА · Казначейское сопровождение · v2 · kzop2__ namespace --> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"> <style>
 /* ─── DESIGN TOKENS ─── */
 :root{
-  --bg:#F7F9FE;
+  --bg:#F6FAF8;
   --bg-w:#FFFFFF;
-  --bg-s:#EEF2FA;
-  --bg-dark:#0C1B33;
-  --bg-dark2:#091526;
+  --bg-s:#EBF4F0;
+  --bg-dark:#0d1f1a;
+  --bg-dark2:#0a1612;
   --bg-risk:#FFF5F5;
 
-  --text:#0D1424;
+  --text:#0F1714;
   --t2:#374151;
   --t3:#6B7280;
   --t-inv:#FFFFFF;
   --t-inv2:rgba(255,255,255,0.65);
 
-  --blue:#1E50D4;
-  --blue-h:#1641BC;
-  --blue-bg:#EAF1FF;
-  --blue-br:#BAD0FF;
+  --blue:#15846B;
+  --blue-h:#0F6B56;
+  --blue-bg:#EAF7F2;
+  --blue-br:#BFE8D9;
 
-  --navy:#0C1B33;
-  --navy-l:#162544;
+  --navy:#10231D;
+  --navy-l:#18332B;
 
   --green:#059669;
   --green-bg:#ECFDF5;
@@ -209,7 +209,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   --sh-s:0 1px 3px rgba(0,0,0,0.06),0 1px 2px rgba(0,0,0,0.04);
   --sh:0 4px 20px rgba(0,0,0,0.06),0 2px 8px rgba(0,0,0,0.04);
   --sh-l:0 20px 60px rgba(0,0,0,0.08),0 8px 24px rgba(0,0,0,0.05);
-  --sh-blue:0 4px 20px rgba(30,80,212,0.18);
+  --sh-blue:0 4px 20px rgba(21,132,107,0.18);
 
   --tr:0.2s cubic-bezier(0.4,0,0.2,1);
   --font:'Manrope',-apple-system,sans-serif;
@@ -247,7 +247,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 .kzop2__btn--primary{background:var(--blue)!important;color:#fff!important}
 .kzop2__btn--primary:hover{background:var(--blue-h)!important;transform:translateY(-2px);box-shadow:var(--sh-blue)}
 .kzop2__btn--outline{background:transparent;color:var(--navy);border:1.5px solid var(--border2)}
-.kzop2__btn--outline:hover{border-color:var(--navy);background:rgba(12,27,51,0.04);transform:translateY(-1px)}
+.kzop2__btn--outline:hover{border-color:var(--navy);background:rgba(10,25,20,0.04);transform:translateY(-1px)}
 .kzop2__btn--white{background:#fff;color:var(--navy)}
 .kzop2__btn--white:hover{background:#F3F1EE;transform:translateY(-2px)}
 .kzop2__btn--ghost{background:rgba(255,255,255,0.12);color:#fff;border:1px solid rgba(255,255,255,0.2)}
@@ -265,8 +265,8 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 /* ─── HERO ─── */
 .kzop2__hero{
   background:
-    radial-gradient(ellipse 900px 700px at 105% -5%, rgba(30,80,212,0.22) 0%, rgba(91,138,255,0.08) 45%, transparent 65%),
-    radial-gradient(ellipse 500px 400px at -6% 110%, rgba(30,80,212,0.13) 0%, transparent 65%),
+    radial-gradient(ellipse 900px 700px at 105% -5%, rgba(21,132,107,0.22) 0%, rgba(43,200,154,0.08) 45%, transparent 65%),
+    radial-gradient(ellipse 500px 400px at -6% 110%, rgba(21,132,107,0.13) 0%, transparent 65%),
     var(--bg-w);
   padding:calc(var(--hdr) + 16px) 0 64px;
   min-height:calc(100vh - var(--hdr));
@@ -277,7 +277,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 .kzop2__hero::before{
   content:'';position:absolute;
   top:0;left:0;right:0;height:3px;
-  background:linear-gradient(90deg,transparent 0%,var(--blue) 18%,rgba(91,138,255,0.55) 60%,transparent 100%);
+  background:linear-gradient(90deg,transparent 0%,var(--blue) 18%,rgba(43,200,154,0.55) 60%,transparent 100%);
   pointer-events:none;z-index:2;
 }
 /* глубокий синий orb справа-сверху */
@@ -285,7 +285,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   content:'';position:absolute;
   top:-200px;right:-180px;
   width:900px;height:900px;border-radius:50%;
-  background:radial-gradient(ellipse at 50% 40%, rgba(91,138,255,0.14) 0%, rgba(30,80,212,0.07) 45%, transparent 68%);
+  background:radial-gradient(ellipse at 50% 40%, rgba(43,200,154,0.14) 0%, rgba(21,132,107,0.07) 45%, transparent 68%);
   pointer-events:none;z-index:0;
 }
 .kzop2__hero-grid{
@@ -346,15 +346,15 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   border:1.5px solid transparent;
   background-image:
     linear-gradient(var(--bg-w), var(--bg-w)),
-    linear-gradient(145deg, rgba(30,80,212,0.55) 0%, rgba(91,138,255,0.25) 50%, rgba(30,80,212,0.06) 100%);
+    linear-gradient(145deg, rgba(21,132,107,0.55) 0%, rgba(43,200,154,0.25) 50%, rgba(21,132,107,0.06) 100%);
   background-origin:border-box;
   background-clip:padding-box, border-box;
   background-color:var(--bg-w);
   box-shadow:
-    0 0 0 12px rgba(30,80,212,0.05),
-    0 0 0 32px rgba(30,80,212,0.025),
-    0 24px 64px rgba(30,80,212,0.16),
-    0 8px 24px rgba(30,80,212,0.10);
+    0 0 0 12px rgba(21,132,107,0.05),
+    0 0 0 32px rgba(21,132,107,0.025),
+    0 24px 64px rgba(21,132,107,0.16),
+    0 8px 24px rgba(21,132,107,0.10);
 }
 .kzop2__card-tag{
   font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;
@@ -392,7 +392,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   display:flex;align-items:flex-start;gap:10px;
   padding:14px;border-radius:10px;
   background:var(--blue-bg);border:1px solid var(--blue-br);
-  font-size:12.5px;color:#1e40af;line-height:1.45;
+  font-size:12.5px;color:#0F6B56;line-height:1.45;
   margin-top:16px;
 }
 .kzop2__card-guarantee svg{width:16px;height:16px;flex-shrink:0;color:var(--blue);stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;margin-top:1px}
@@ -408,8 +408,8 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   transition:box-shadow 0.3s cubic-bezier(0.4,0,0.2,1),transform 0.3s cubic-bezier(0.4,0,0.2,1),border-color 0.3s cubic-bezier(0.4,0,0.2,1);
 }
 .kzop2__who-card:hover{
-  border-color:rgba(30,80,212,0.3);
-  box-shadow:0 8px 32px rgba(30,80,212,0.09),0 2px 8px rgba(30,80,212,0.06);
+  border-color:rgba(21,132,107,0.3);
+  box-shadow:0 8px 32px rgba(21,132,107,0.09),0 2px 8px rgba(21,132,107,0.06);
   transform:translateY(-3px);
 }
 .kzop2__who-icon{
@@ -432,8 +432,8 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   transition:box-shadow 0.3s cubic-bezier(0.4,0,0.2,1),transform 0.3s cubic-bezier(0.4,0,0.2,1),border-color 0.3s cubic-bezier(0.4,0,0.2,1);
 }
 .kzop2__inc-card:hover{
-  border-color:rgba(30,80,212,0.25);
-  box-shadow:0 8px 28px rgba(30,80,212,0.08),0 2px 8px rgba(30,80,212,0.05);
+  border-color:rgba(21,132,107,0.25);
+  box-shadow:0 8px 28px rgba(21,132,107,0.08),0 2px 8px rgba(21,132,107,0.05);
   transform:translateY(-2px);
 }
 .kzop2__inc-num{
@@ -458,7 +458,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   content:'';position:absolute;
   top:28px;left:calc(20% / 2);right:calc(20% / 2);
   height:2px;
-  background:linear-gradient(90deg,var(--blue) 0%,rgba(30,80,212,0.4) 100%);
+  background:linear-gradient(90deg,var(--blue) 0%,rgba(21,132,107,0.4) 100%);
   z-index:0;
   transform-origin:left center;
   transform:scaleX(0);
@@ -477,7 +477,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   font-size:18px;font-weight:800;
   display:flex;align-items:center;justify-content:center;
   margin-bottom:20px;flex-shrink:0;
-  box-shadow:0 4px 16px rgba(12,27,51,0.2);
+  box-shadow:0 4px 16px rgba(10,25,20,0.2);
 }
 .kzop2__step:last-child .kzop2__step-num{background:var(--green)}
 .kzop2__step-time{
@@ -528,7 +528,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   content:'';position:absolute;
   top:-150px;right:-120px;
   width:640px;height:640px;border-radius:50%;
-  background:radial-gradient(ellipse at center, rgba(30,80,212,0.28) 0%, transparent 65%);
+  background:radial-gradient(ellipse at center, rgba(21,132,107,0.28) 0%, transparent 65%);
   pointer-events:none;z-index:0;
 }
 .kzop2__midcta-center{
@@ -539,7 +539,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 .kzop2__midcta-label{font-size:11px;font-weight:600;letter-spacing:0.09em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:14px}
 .kzop2__midcta-sub{font-size:15px;color:rgba(255,255,255,0.5);margin-top:10px;line-height:1.5}
 .kzop2__midcta-title{font-size:clamp(24px,3vw,38px);font-weight:800;color:#fff;letter-spacing:-0.025em;line-height:1.1}
-.kzop2__midcta-title span{color:#6fa3f7}
+.kzop2__midcta-title span{color:#5af0c0}
 .kzop2__midcta-btns{display:flex;align-items:center;gap:12px;flex-wrap:wrap;flex-shrink:0}
 
 /* ─── TRUST ─── */
@@ -593,7 +593,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   overflow:hidden;background:var(--bg-w);
   transition:border-color var(--tr),box-shadow var(--tr);
 }
-.kzop2__faq-item.open{border-color:var(--blue-br);box-shadow:0 0 0 3px rgba(30,80,212,0.06)}
+.kzop2__faq-item.open{border-color:var(--blue-br);box-shadow:0 0 0 3px rgba(21,132,107,0.06)}
 .kzop2__faq-q{
   width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;
   padding:20px 24px;background:none;border:none;cursor:pointer;
@@ -644,7 +644,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   content:'';position:absolute;
   bottom:-180px;left:-120px;
   width:700px;height:700px;border-radius:50%;
-  background:radial-gradient(ellipse at center, rgba(30,80,212,0.22) 0%, transparent 65%);
+  background:radial-gradient(ellipse at center, rgba(21,132,107,0.22) 0%, transparent 65%);
   pointer-events:none;z-index:0;
 }
 .kzop2__final-inner{
@@ -660,7 +660,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   font-size:clamp(28px,4vw,44px);font-weight:800;color:#fff;
   letter-spacing:-0.025em;line-height:1.1;margin-bottom:16px;
 }
-.kzop2__final-title span{color:#6fa3f7}
+.kzop2__final-title span{color:#5af0c0}
 .kzop2__final-sub{font-size:15px;color:rgba(255,255,255,0.6);line-height:1.6;max-width:400px;margin-bottom:36px}
 .kzop2__final-points{list-style:none;display:flex;flex-direction:column;gap:12px}
 .kzop2__final-points li{
@@ -697,7 +697,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   outline:none;transition:border-color var(--tr),background var(--tr);
 }
 .kzop2__field input::placeholder{color:rgba(255,255,255,0.3)}
-.kzop2__field input:focus{border-color:rgba(30,80,212,0.6);background:rgba(255,255,255,0.12)}
+.kzop2__field input:focus{border-color:rgba(21,132,107,0.6);background:rgba(255,255,255,0.12)}
 .kzop2__form-submit{
   width:100%;height:52px;border-radius:12px;
   background:var(--blue);color:#fff;border:none;
@@ -785,6 +785,8 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   font-size:11px;color:var(--t3);line-height:1.5;cursor:pointer;
 }
 .kzop2__consent a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.kzop2__consent--err label{color:var(--red)}
+.kzop2__consent--err input[type=checkbox]{outline:2px solid var(--red);outline-offset:2px}
 .kzop2__consent--dark label{color:rgba(255,255,255,0.32)}
 .kzop2__consent--dark a{color:rgba(255,255,255,0.5)}
 
@@ -1135,7 +1137,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 
 /* ─── 1. EYEBROW PILLS ─── */
 .kzop2__eyebrow{
-  background:rgba(30,80,212,0.08);
+  background:rgba(21,132,107,0.08);
   border-radius:100px;
   padding:5px 14px;
   display:inline-block;
@@ -1144,32 +1146,32 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 
 /* ─── 2. COMPARE TABLE: "С нами" — gradient column ─── */
 .kzop2__cmp th.kzop2-col-us{
-  background:linear-gradient(135deg,#1e4fd4 0%,#3B6AE8 100%);
+  background:linear-gradient(135deg,#15846b 0%,#1FA887 100%);
   position:relative;
 }
 .kzop2__cmp td.kzop2-col-us{
-  background:linear-gradient(180deg,rgba(30,80,212,0.07) 0%,rgba(30,80,212,0.04) 100%);
-  border-left:2px solid rgba(30,80,212,0.18);
-  border-right:2px solid rgba(30,80,212,0.18);
+  background:linear-gradient(180deg,rgba(21,132,107,0.07) 0%,rgba(21,132,107,0.04) 100%);
+  border-left:2px solid rgba(21,132,107,0.18);
+  border-right:2px solid rgba(21,132,107,0.18);
   font-weight:600;
 }
-.kzop2__cmp tbody tr:last-child td.kzop2-col-us{border-bottom:2px solid rgba(30,80,212,0.18)}
+.kzop2__cmp tbody tr:last-child td.kzop2-col-us{border-bottom:2px solid rgba(21,132,107,0.18)}
 
 /* ─── 3. INC-NUM: gradient badge вместо просто цифры ─── */
 .kzop2__inc-num{
   width:44px;height:44px;border-radius:12px;
-  background:linear-gradient(135deg,var(--blue) 0%,#5B8AFF 100%);
+  background:linear-gradient(135deg,var(--blue) 0%,#2BC89A 100%);
   color:#fff;font-size:13px;font-weight:800;
   display:flex;align-items:center;justify-content:center;
   letter-spacing:0.02em;margin-bottom:16px;
-  box-shadow:0 4px 12px rgba(30,80,212,0.22);
+  box-shadow:0 4px 12px rgba(21,132,107,0.22);
 }
 
 /* ─── 4. FORM INPUT FOCUS GLOW ─── */
 .kzop2__field input:focus{
-  border-color:rgba(30,80,212,0.5)!important;
+  border-color:rgba(21,132,107,0.5)!important;
   background:rgba(255,255,255,0.14)!important;
-  box-shadow:0 0 0 3px rgba(30,80,212,0.18)!important;
+  box-shadow:0 0 0 3px rgba(21,132,107,0.18)!important;
 }
 
 /* ─── 5. TRUST SECTION — стили перенесены в .kzop2__section--trust (wow pack) ─── */
@@ -1177,7 +1179,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 /* ─── 6. SCROLL PROGRESS BAR ─── */
 #kzop2-progress{
   position:fixed;top:0;left:0;right:0;height:3px;
-  background:linear-gradient(90deg,var(--blue) 0%,rgba(91,138,255,0.85) 100%);
+  background:linear-gradient(90deg,var(--blue) 0%,rgba(43,200,154,0.85) 100%);
   z-index:10001;transform-origin:left;transform:scaleX(0);
   transition:transform 0.08s linear;pointer-events:none;
 }
@@ -1185,22 +1187,22 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 /* ─── 7. GRADIENT TEXT на span в тёмных секциях ─── */
 .kzop2__midcta-title span,
 .kzop2__final-title span{
-  background:linear-gradient(135deg,#7ab3ff 0%,#b8d4ff 100%);
+  background:linear-gradient(135deg,#7de5c4 0%,#c6f2e3 100%);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  background-clip:text;color:#7ab3ff;
+  background-clip:text;color:#7de5c4;
 }
 
 /* ─── 8. PARALLAX ORB (JS-controlled) ─── */
 .kzop2__hero-orb{
   position:absolute;top:-200px;right:-180px;
   width:900px;height:900px;border-radius:50%;
-  background:radial-gradient(ellipse at 50% 40%,rgba(91,138,255,0.15) 0%,rgba(30,80,212,0.07) 45%,transparent 68%);
+  background:radial-gradient(ellipse at 50% 40%,rgba(43,200,154,0.15) 0%,rgba(21,132,107,0.07) 45%,transparent 68%);
   pointer-events:none;z-index:0;will-change:transform;
 }
 
 /* ─── GRADIENT TEXT: span в hero-title ─── */
 .kzop2__hero-title span{
-  background:linear-gradient(135deg,#2356D8 0%,#5B8AFF 100%);
+  background:linear-gradient(135deg,#128268 0%,#2BC89A 100%);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   background-clip:text;
@@ -1312,16 +1314,16 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 /* ─── TRUST SECTION: premium light gradient ─── */
 .kzop2__section--trust{
   background:linear-gradient(160deg,#EBF2FF 0%,#F7F9FE 40%,#EEF5FF 100%);
-  border-top:1px solid rgba(30,80,212,0.1);
-  border-bottom:1px solid rgba(30,80,212,0.1);
+  border-top:1px solid rgba(21,132,107,0.1);
+  border-bottom:1px solid rgba(21,132,107,0.1);
   padding:64px 0;
 }
 @media(max-width:560px){.kzop2__section--trust{padding:48px 0}}
 .kzop2__section--trust .kzop2__trust-grid{
   background:rgba(255,255,255,0.7);
-  border:1px solid rgba(30,80,212,0.12);
+  border:1px solid rgba(21,132,107,0.12);
   backdrop-filter:blur(8px);
-  box-shadow:0 8px 40px rgba(30,80,212,0.07),0 2px 12px rgba(30,80,212,0.05);
+  box-shadow:0 8px 40px rgba(21,132,107,0.07),0 2px 12px rgba(21,132,107,0.05);
 }
 .kzop2__section--trust .kzop2__trust-item{
   background:transparent;
@@ -1329,15 +1331,15 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 }
 .kzop2__section--trust .kzop2__trust-item:not(:last-child)::after{
   content:'';position:absolute;right:0;top:20%;bottom:20%;
-  width:1px;background:rgba(30,80,212,0.1);
+  width:1px;background:rgba(21,132,107,0.1);
 }
 .kzop2__section--trust .kzop2__trust-num{
   font-size:clamp(48px,5.5vw,68px);
-  background:linear-gradient(135deg,#0C1B33 0%,#1E50D4 100%);
+  background:linear-gradient(135deg,#10231D 0%,#15846B 100%);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
 }
 .kzop2__section--trust .kzop2__trust-num span{
-  background:linear-gradient(135deg,#1E50D4 0%,#5B8AFF 100%);
+  background:linear-gradient(135deg,#15846B 0%,#2BC89A 100%);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
 }
 .kzop2__section--trust .kzop2__trust-label{
@@ -1351,7 +1353,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 .kzop2-spotlight::before{
   content:'';
   position:absolute;inset:0;
-  background:radial-gradient(circle 260px at var(--sx,50%) var(--sy,50%),rgba(30,80,212,0.07) 0%,transparent 68%);
+  background:radial-gradient(circle 260px at var(--sx,50%) var(--sy,50%),rgba(21,132,107,0.07) 0%,transparent 68%);
   opacity:0;transition:opacity 0.35s ease;
   pointer-events:none;z-index:1;border-radius:inherit;
 }
@@ -1372,11 +1374,11 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 .kzop2__btn--primary{transition:background var(--tr),transform 0.25s cubic-bezier(0.23,1,0.32,1),box-shadow var(--tr)}
 
 /* ─── COSMOS SECTION ─── */
-.kzop2__section--cosmos{background:#060D1A;padding:56px 0 44px}
+.kzop2__section--cosmos{background:#071410;padding:56px 0 44px}
 @media(max-width:768px){.kzop2__section--cosmos{padding:40px 0 28px}}
-.kzop2__section--cosmos .kzop2__eyebrow{color:rgba(91,138,255,0.75)}
-.kzop2__section--cosmos .kzop2__h2{color:#E8F0FF}
-.kzop2__section--cosmos .kzop2__lead{color:rgba(180,200,240,0.5)}
+.kzop2__section--cosmos .kzop2__eyebrow{color:rgba(43,200,154,0.75)}
+.kzop2__section--cosmos .kzop2__h2{color:#E8F0EC}
+.kzop2__section--cosmos .kzop2__lead{color:rgba(190,215,205,0.55)}
 /* Hide HTML nodes in canvas 3D mode (desktop); show as pills on mobile */
 .kzop2__clients-web.kz-3d .kzop2__web-node{display:none}
 
@@ -1407,13 +1409,13 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   left:0;top:0;
   transform:translate(-50%,-50%);
   display:inline-flex;align-items:center;gap:7px;
-  background:rgba(6,15,42,0.80);
-  border:1px solid rgba(91,138,255,0.22);
+  background:rgba(8,26,20,0.80);
+  border:1px solid rgba(43,200,154,0.22);
   border-radius:100px;
   padding:6px 13px 6px 7px;
   cursor:default;z-index:2;
   white-space:nowrap;
-  font-size:12px;font-weight:600;color:rgba(215,230,255,0.9);
+  font-size:12px;font-weight:600;color:rgba(222,240,232,0.9);
   font-family:var(--font);
   backdrop-filter:blur(10px);
   transition:box-shadow 0.35s,border-color 0.35s,background 0.35s,transform 0.35s;
@@ -1426,13 +1428,13 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 /* Hover */
 .kzop2__web-node.kz-hover{
   background:rgba(8,22,72,0.97)!important;
-  border-color:rgba(91,138,255,0.85)!important;
-  box-shadow:0 0 0 3px rgba(91,138,255,0.12),0 0 24px rgba(91,138,255,0.55),0 0 52px rgba(91,138,255,0.2)!important;
+  border-color:rgba(43,200,154,0.85)!important;
+  box-shadow:0 0 0 3px rgba(43,200,154,0.12),0 0 24px rgba(43,200,154,0.55),0 0 52px rgba(43,200,154,0.2)!important;
   transform:translate(-50%,-50%) scale(1.35)!important;
   z-index:20!important;
 }
 .kzop2__web-node.kz-connected{
-  border-color:rgba(91,138,255,0.42)!important;
+  border-color:rgba(43,200,154,0.42)!important;
   background:rgba(7,18,58,0.9)!important;
 }
 /* Monogram badge */
@@ -1441,31 +1443,31 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   display:flex;align-items:center;justify-content:center;
   font-size:7.5px;font-weight:800;flex-shrink:0;
 }
-.kzop2__client-mono--a{background:rgba(30,80,212,0.42);color:#7ab3ff}
-.kzop2__client-mono--b{background:rgba(100,50,200,0.42);color:#c084fc}
+.kzop2__client-mono--a{background:rgba(21,132,107,0.42);color:#7de5c4}
+.kzop2__client-mono--b{background:rgba(31,168,135,0.32);color:#8ff0d2}
 .kzop2__client-mono--c{background:rgba(5,110,100,0.42);color:#2dd4bf}
 .kzop2__client-mono--d{background:rgba(130,75,5,0.42);color:#fbbf24}
-.kzop2__client-mono--e{background:rgba(40,55,90,0.55);color:#94a3b8}
+.kzop2__client-mono--e{background:rgba(70,90,82,0.5);color:#a8bdb4}
 @media(max-width:768px){
   .kzop2__web-node{
     position:static;transform:none!important;
     backdrop-filter:none;
     flex:0 0 auto;
     display:inline-flex;
-    background:rgba(10,22,55,0.72)!important;
-    border-color:rgba(91,138,255,0.28)!important;
+    background:rgba(12,32,25,0.72)!important;
+    border-color:rgba(43,200,154,0.28)!important;
   }
 }
 
 /* ─── FOOTER — prominent 314+ counter ─── */
 .kzop2__clients-footer{
   text-align:center;margin-top:28px;
-  font-size:14px;color:rgba(140,165,215,0.5);font-weight:500;letter-spacing:0.01em;
+  font-size:14px;color:rgba(160,190,178,0.55);font-weight:500;letter-spacing:0.01em;
 }
 .kzop2__clients-footer strong{
-  color:#5B8AFF;font-size:24px;font-weight:800;
+  color:#2BC89A;font-size:24px;font-weight:800;
   letter-spacing:-0.02em;margin-right:3px;
-  text-shadow:0 0 20px rgba(91,138,255,0.4);
+  text-shadow:0 0 20px rgba(43,200,154,0.4);
 }
 
 /* ─── TEAM / EXPERTS ─── */
@@ -1856,14 +1858,14 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
   background:linear-gradient(180deg,#ffffff 0%,#f3f7ff 100%);
   border:1px solid var(--blue-br);border-radius:16px;
   box-shadow:inset 0 1px 0 rgba(255,255,255,0.9),
-             0 12px 30px rgba(30,80,212,0.13),
-             0 3px 10px rgba(30,80,212,0.08);
+             0 12px 30px rgba(21,132,107,0.13),
+             0 3px 10px rgba(21,132,107,0.08);
 }
 .kzhero__stats-label{
   display:flex;align-items:center;justify-content:center;gap:7px;padding:0 16px;
-  background:linear-gradient(135deg,#1E50D4 0%,#3f72e6 100%);
+  background:linear-gradient(135deg,#15846B 0%,#1FA887 100%);
   border-radius:12px;font-size:12px;font-weight:700;color:#fff;white-space:nowrap;
-  box-shadow:0 5px 14px rgba(30,80,212,0.32);
+  box-shadow:0 5px 14px rgba(21,132,107,0.32);
 }
 .kzhero__stats-label svg{width:17px;height:17px;flex-shrink:0}
 .kzhero__stats-row{display:flex;align-items:stretch;flex:1}
@@ -1878,7 +1880,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 }
 .kzhero__stat-num{
   font-size:26px;font-weight:800;letter-spacing:-0.02em;line-height:1.05;
-  background:linear-gradient(135deg,#1E50D4 0%,#5b8aff 100%);
+  background:linear-gradient(135deg,#15846B 0%,#2BC89A 100%);
   -webkit-background-clip:text;background-clip:text;
   -webkit-text-fill-color:transparent;color:var(--blue);
 }
@@ -1901,11 +1903,11 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
   transition:border-color var(--tr),box-shadow var(--tr);
 }
 .kzhero__input::placeholder{color:#9CA3AF}
-.kzhero__input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(30,80,212,0.12)}
+.kzhero__input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(21,132,107,0.12)}
 .kzhero__input.kzhero--invalid{border-color:rgba(192,57,43,0.7)}
 
 .kzhero__submit{width:100%;height:46px;margin-top:10px;justify-content:center;font-size:15.5px}
-.kzhero__submit:disabled{background:#9DB4E8!important;cursor:not-allowed;transform:none!important;box-shadow:none!important}
+.kzhero__submit:disabled{background:#A9CFC2!important;cursor:not-allowed;transform:none!important;box-shadow:none!important}
 .kzhero__submit:disabled:hover{transform:none!important}
 .kzhero__btn-mobile{display:none}
 
@@ -1931,7 +1933,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 
 /* ── Sticky-док (мобильный) — оформление как на /open ── */
 .kzop2__sticky{
-  background:linear-gradient(to top,var(--bg) 42%,rgba(247,249,254,0.82) 72%,rgba(247,249,254,0));
+  background:linear-gradient(to top,var(--bg) 42%,rgba(246,250,248,0.82) 72%,rgba(246,250,248,0));
   -webkit-backdrop-filter:none;backdrop-filter:none;
   padding:22px 16px calc(16px + env(safe-area-inset-bottom,0px));
   gap:12px;border-top:none;box-shadow:none;
@@ -1945,24 +1947,24 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 .kzop2__sticky .kzop2__btn--ghost:hover{
   flex:0 0 56px;width:56px;padding:0;border-radius:50%;
   background:#fff;color:#059669;border:1.5px solid #D6EFE3;
-  box-shadow:0 8px 20px rgba(12,27,51,0.14);
+  box-shadow:0 8px 20px rgba(10,25,20,0.14);
 }
 .kzop2__sticky .kzop2__btn--ghost svg{width:22px;height:22px}
 .kzop2__sticky .kzop2__btn--primary,
 .kzop2__sticky .kzop2__btn--primary:hover{
   flex:1;border-radius:999px;gap:10px;
-  background:linear-gradient(135deg,#3B6BEA 0%,#1E50D4 62%,#1A45BE 100%)!important;
-  box-shadow:0 10px 28px rgba(30,80,212,0.42);
+  background:linear-gradient(135deg,#1FA887 0%,#15846B 62%,#0F6B56 100%)!important;
+  box-shadow:0 10px 28px rgba(21,132,107,0.42);
   animation:kzcta-glow 2.8s ease-in-out infinite;
 }
 .kzcta-arrow{
   display:flex;align-items:center;justify-content:center;flex-shrink:0;
   width:30px;height:30px;border-radius:50%;background:#fff;
 }
-.kzcta-arrow svg{width:14px;height:14px;stroke:#1E50D4;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.kzcta-arrow svg{width:14px;height:14px;stroke:#15846B;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 @keyframes kzcta-glow{
-  0%,100%{box-shadow:0 8px 22px rgba(30,80,212,0.34)}
-  50%{box-shadow:0 14px 36px rgba(30,80,212,0.56)}
+  0%,100%{box-shadow:0 8px 22px rgba(21,132,107,0.34)}
+  50%{box-shadow:0 14px 36px rgba(21,132,107,0.56)}
 }
 @media(prefers-reduced-motion:reduce){
   .kzop2__sticky .kzop2__btn--primary{animation:none}
@@ -2010,7 +2012,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 </style> <div class="kzop2"> <!-- ═══ HERO (v6.7 — понятное сообщение при rate-limit бэкенда) ═══ --> <section class="kzop2__hero" data-section="hero" id="kgc-top"> <div class="kzop2__hero-grid"> <!-- Left --> <div class="kzhero__col"> <div class="kzop2__hero-badge">Казначейское сопровождение с 2018 года · 400+ клиентов</div> <h1 class="kzhero__title">
         Ведём казначейский счёт<br> <span style="color:var(--blue)">без ошибок и просрочек</span> </h1> <p class="kzhero__sub">
         Проводим платежи через УФК, ведём реестры, раздельный учёт и переписку с казначейством — под ключ, без вашего участия.
-      </p> <div class="kzhero__stats"> <div class="kzhero__stats-label"> <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"> <circle cx="10" cy="10" r="10" fill="#34D399"></circle> <path d="M5.6 10.3l2.9 2.9 6-6.5" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path> </svg> <span data-hv="statsMonthLabel">За апрель 2026</span> </div> <div class="kzhero__stats-row"> <div class="kzhero__stat"> <span class="kzhero__stat-num" data-hv="statsOperations">479</span> <span class="kzhero__stat-lbl">операций</span> </div> <div class="kzhero__stat"> <span class="kzhero__stat-num" data-hv="statsReturns">0</span> <span class="kzhero__stat-lbl">возвратов</span> </div> <div class="kzhero__stat"> <span class="kzhero__stat-num">1–2</span> <span class="kzhero__stat-lbl">дня до старта</span> </div> </div> </div> <div class="kzhero__form-card"> <form class="kzhero__form" novalidate> <div class="kzhero__form-title">Оставьте заявку —<br class="kzhero__title-br"> подключим сопровождение</div> <div class="kzhero__fields"> <div class="kzhero__field kzhero__field--name"> <label class="kzhero__label" for="kzhero-name">Имя</label> <input class="kzhero__input" id="kzhero-name" name="name" type="text" autocomplete="given-name" maxlength="60" placeholder="Иван Иванов"> </div> <div class="kzhero__field"> <label class="kzhero__label" for="kzhero-phone">Телефон</label> <input class="kzhero__input kzhero__phone" id="kzhero-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="18" placeholder="+7 (___) ___-__-__" required> </div> </div> <input type="text" class="kzhero__hp" name="company_extra" tabindex="-1" autocomplete="off" aria-hidden="true"> <button class="kzop2__btn kzop2__btn--primary kzhero__submit" type="submit" disabled> <span class="kzhero__btn-desktop">Оставить заявку</span> <span class="kzhero__btn-mobile">Оставить заявку</span> <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M8 3l5 5-5 5"/></svg> </button> <p class="kzhero__microcopy">Перезвоним за 5 минут. Без спама. Согласие на ОПД.</p> <div class="kzop2__consent"> <input type="checkbox" id="kzhero-consent" required> <label for="kzhero-consent">
+      </p> <div class="kzhero__stats"> <div class="kzhero__stats-label"> <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"> <circle cx="10" cy="10" r="10" fill="#34D399"></circle> <path d="M5.6 10.3l2.9 2.9 6-6.5" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path> </svg> <span data-hv="statsMonthLabel">За апрель 2026</span> </div> <div class="kzhero__stats-row"> <div class="kzhero__stat"> <span class="kzhero__stat-num" data-hv="statsOperations">479</span> <span class="kzhero__stat-lbl">операций</span> </div> <div class="kzhero__stat"> <span class="kzhero__stat-num" data-hv="statsReturns">0</span> <span class="kzhero__stat-lbl">возвратов</span> </div> <div class="kzhero__stat"> <span class="kzhero__stat-num">1–2</span> <span class="kzhero__stat-lbl">дня до старта</span> </div> </div> </div> <div class="kzhero__form-card"> <form class="kzhero__form" novalidate> <div class="kzhero__form-title">Оставьте заявку —<br class="kzhero__title-br"> подключим сопровождение</div> <div class="kzhero__fields"> <div class="kzhero__field kzhero__field--name"> <label class="kzhero__label" for="kzhero-name">Имя</label> <input class="kzhero__input" id="kzhero-name" name="name" type="text" autocomplete="given-name" maxlength="60" placeholder="Иван Иванов"> </div> <div class="kzhero__field"> <label class="kzhero__label" for="kzhero-phone">Телефон</label> <input class="kzhero__input kzhero__phone" id="kzhero-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="18" placeholder="+7 (___) ___-__-__" required> </div> </div> <input type="text" class="kzhero__hp" name="company_extra" tabindex="-1" autocomplete="off" aria-hidden="true"> <button class="kzop2__btn kzop2__btn--primary kzhero__submit" type="submit"> <span class="kzhero__btn-desktop">Оставить заявку</span> <span class="kzhero__btn-mobile">Оставить заявку</span> <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M8 3l5 5-5 5"/></svg> </button> <p class="kzhero__microcopy">Перезвоним за 5 минут. Без спама. Согласие на ОПД.</p> <div class="kzop2__consent"> <input type="checkbox" id="kzhero-consent" required> <label for="kzhero-consent">
               Я согласен на обработку персональных данных в соответствии с <a href="https://kazna-gov.ru/personal_data_policy">политикой в отношении обработки персональных данных</a> </label> </div> </form> <div class="kzhero__msg" role="status" aria-live="polite" hidden></div> </div> <p class="kzhero__phone-cta">
         Или позвоните: <a data-hv-href="phoneLink" href="tel:+74951084232" data-goal="hero_cta_click" data-cta="hero_phone" data-hv="phoneDisplay">+7 (495) 108-42-32</a> </p> </div> <!-- Right card --> <div class="kzop2__hero-card" style="position:relative"> <div class="kzop2__stat-badge">Безлимит операций</div> <div class="kzop2__card-tag">Казначейское сопровождение</div> <div class="kzop2__card-price-row"> <div class="kzop2__card-price">69 000</div> <div class="kzop2__card-price-note">₽/мес</div> </div> <div class="kzop2__card-period">фиксированная подписка · выход в любой момент</div> <div class="kzop2__card-divider"></div> <ul class="kzop2__card-includes"> <li>Все платежи через УФК — в срок</li> <li>Ведение реестров и отчётность в казначейство</li> <li>Раздельный учёт по каждому контракту</li> <li>Переписка с казначейством — на нашей стороне</li> <li>Контроль сроков и статусов всех операций</li> </ul> <div class="kzop2__card-guarantee"> <svg viewBox="0 0 16 16"><path d="M8 1l1.8 3.6L14 5.5l-3 2.9.7 4.1L8 10.5l-3.7 1.9.7-4.1L2 5.5l4.2-0.9L8 1z"/></svg> <div><strong>Прозрачная подписка:</strong> фиксированная цена, без скрытых платежей и доплат</div> </div> </div> </div> </section>
 <!-- ═══ КОРОТКИЙ ОТВЕТ (AI) ═══ -->
@@ -2078,6 +2080,17 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
     n.setAttribute("href", KZ_HERO.phoneLink);
   });
 
+  /* Склонение метки под текущее число */
+  (function () {
+    var n = parseInt(KZ_HERO.statsOperations, 10);
+    var num = hero.querySelector('[data-hv="statsOperations"]');
+    var lbl = num && num.nextElementSibling;
+    if (!lbl || isNaN(n)) return;
+    var m10 = n % 10, m100 = n % 100;
+    lbl.textContent = (m10 === 1 && m100 !== 11) ? "операция"
+      : (m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14)) ? "операции" : "операций";
+  })();
+
   /* ── Анимация счётчиков trust-полосы ── */
   (function () {
     var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -2144,11 +2157,15 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
   var hpEl      = form.querySelector(".kzhero__hp");
   var submitEl  = form.querySelector(".kzhero__submit");
   var msgEl     = hero.querySelector(".kzhero__msg");
+  if (consentEl) consentEl.addEventListener("change", function () {
+    var cw = this.closest(".kzop2__consent");
+    if (cw) cw.classList.remove("kzop2__consent--err");
+  });
   var formCard  = hero.querySelector(".kzhero__form-card");
 
   function refreshSubmit() {
     if (!form.classList.contains("kzhero--loading")) {
-      submitEl.disabled = !phoneValid(phoneEl.value);
+      submitEl.disabled = false;
     }
   }
 
@@ -2260,7 +2277,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 
   function setLoading(on) {
     form.classList.toggle("kzhero--loading", on);
-    submitEl.disabled = on || !phoneValid(phoneEl.value);
+    submitEl.disabled = on;
     var d = submitEl.querySelector(".kzhero__btn-desktop");
     var m = submitEl.querySelector(".kzhero__btn-mobile");
     if (on) {
@@ -2293,6 +2310,9 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
       return;
     }
     if (consentEl && !consentEl.checked) {
+      var cw = consentEl.closest(".kzop2__consent");
+      if (cw) cw.classList.add("kzop2__consent--err");
+      consentEl.focus();
       showMsg("err", "Подтвердите согласие на обработку персональных данных.");
       return;
     }
@@ -2402,7 +2422,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 .kzexit.kzexit--open{opacity:1;visibility:visible}
 .kzexit__overlay{
   position:absolute;inset:0;
-  background:rgba(12,27,51,0.55);
+  background:rgba(10,25,20,0.55);
   -webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);
 }
 .kzexit__card{
@@ -2410,7 +2430,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
   background:linear-gradient(180deg,#ffffff 0%,#f5f8ff 100%);
   border:1px solid var(--blue-br);border-radius:24px;
   padding:38px 38px 30px;text-align:center;
-  box-shadow:0 40px 90px rgba(12,27,51,0.4),inset 0 0 0 1px rgba(255,255,255,0.6);
+  box-shadow:0 40px 90px rgba(10,25,20,0.4),inset 0 0 0 1px rgba(255,255,255,0.6);
   transform:translateY(16px) scale(0.97);
   transition:transform .32s cubic-bezier(0.16,1,0.3,1);
 }
@@ -2418,15 +2438,15 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 .kzexit__close{
   position:absolute;top:14px;right:16px;
   width:34px;height:34px;border:none;border-radius:50%;
-  background:rgba(12,27,51,0.06);color:var(--t3);
+  background:rgba(10,25,20,0.06);color:var(--t3);
   font-size:22px;line-height:1;cursor:pointer;transition:background .15s;
 }
-.kzexit__close:hover{background:rgba(12,27,51,0.12)}
+.kzexit__close:hover{background:rgba(10,25,20,0.12)}
 .kzexit__icon{
   width:56px;height:56px;margin:0 auto 16px;border-radius:16px;
-  background:linear-gradient(135deg,#1E50D4,#3f72e6);
+  background:linear-gradient(135deg,#15846B,#1FA887);
   display:flex;align-items:center;justify-content:center;
-  box-shadow:0 10px 24px rgba(30,80,212,0.36);
+  box-shadow:0 10px 24px rgba(21,132,107,0.36);
 }
 .kzexit__icon svg{width:28px;height:28px}
 .kzexit__eyebrow{
@@ -2445,21 +2465,21 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
   background:#fff;border:1px solid var(--border2);border-radius:12px;outline:none;
   transition:border-color .15s,box-shadow .15s;
 }
-.kzexit__input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(30,80,212,0.14)}
+.kzexit__input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(21,132,107,0.14)}
 .kzexit__input.kzexit--invalid{border-color:rgba(192,57,43,0.7)}
 .kzexit__hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none}
 .kzexit__submit{
   margin-top:10px;width:100%;height:54px;
   display:flex;align-items:center;justify-content:center;gap:8px;
   font-family:inherit;font-size:16px;font-weight:700;color:#fff;
-  background:linear-gradient(135deg,#2E5FE0 0%,#1E50D4 100%);
+  background:linear-gradient(135deg,#1FA887 0%,#15846B 100%);
   border:none;border-radius:13px;cursor:pointer;
-  box-shadow:0 10px 24px rgba(30,80,212,0.34);
+  box-shadow:0 10px 24px rgba(21,132,107,0.34);
   transition:transform .12s,filter .15s;
 }
 .kzexit__submit:hover{filter:brightness(1.05);transform:translateY(-1px)}
 .kzexit__submit:active{transform:translateY(0)}
-.kzexit__submit:disabled{background:#9DB4E8;box-shadow:none;cursor:not-allowed;transform:none;filter:none}
+.kzexit__submit:disabled{background:#A9CFC2;box-shadow:none;cursor:not-allowed;transform:none;filter:none}
 .kzexit__submit svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .kzexit__consent{
   display:flex;align-items:flex-start;gap:8px;margin-top:14px;text-align:left;
@@ -2513,7 +2533,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
     return r;
   }
   function phoneValid(v) { var d = String(v || "").replace(/\D/g, ""); return d.length === 11 && d[0] === "7"; }
-  function refresh() { if (!form.classList.contains("kzexit--loading")) submitEl.disabled = !phoneValid(phoneEl.value); }
+  function refresh() { if (!form.classList.contains("kzexit--loading")) submitEl.disabled = false; }
 
   phoneEl.addEventListener("focus", function () { if (!this.value) this.value = "+7 "; });
   phoneEl.addEventListener("input", function () { this.value = fmtPhone(this.value); this.classList.remove("kzexit--invalid"); refresh(); });
@@ -2561,7 +2581,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
   /* ── отправка ── */
   function setLoading(on) {
     form.classList.toggle("kzexit--loading", on);
-    submitEl.disabled = on || !phoneValid(phoneEl.value);
+    submitEl.disabled = on;
     labelEl.textContent = on ? "Отправляем…" : "Получить разбор контракта";
   }
   function showMsg(kind, text) {
@@ -2589,6 +2609,9 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
       return;
     }
     if (consentEl && !consentEl.checked) {
+      var cw = consentEl.closest(".kzop2__consent");
+      if (cw) cw.classList.add("kzop2__consent--err");
+      consentEl.focus();
       showMsg("err", "Подтвердите согласие на обработку персональных данных.");
       return;
     }
@@ -2788,7 +2811,7 @@ fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Ty
 <section class="kzop2__final" data-section="final_form" id="form"> <div class="kzop2__final-inner"> <div> <span class="kzop2__final-label">Оставьте заявку</span> <div class="kzop2__final-title">Подключите сопровождение <span>сегодня</span></div> <p class="kzop2__final-sub">Начнём работу в тот же день. Без сложного оформления — просто звонок и документы.</p> <ul class="kzop2__final-points"> <li>Полное ведение казначейского счёта — все операции и реестры</li> <li>Безлимит операций — одна фиксированная цена в месяц</li> <li>Ответственность специалиста закреплена в договоре</li> <li>Выход в любой момент без штрафов и удержаний</li> </ul> <div style="margin-top:32px"> <div class="kzop2-avail kzop2-avail--dark" id="kzop2-avail"> <span class="kzop2-avail__dot"></span> <span id="kzop2-avail-text">Принимаем заявки прямо сейчас</span> </div> </div> </div> <div> <div class="kzop2__form-card"> <div class="kzop2__form-card-title">Получить консультацию</div> <div class="kzop2__form-card-sub">Расскажем о сопровождении и рассчитаем стоимость под ваш контракт</div> <div class="kzop2__form-fields"> <div class="kzop2__field"> <label for="kzop2-name">Имя</label> <input type="text" id="kzop2-name" class="kzop2__input-name" placeholder="Иван Петров" autocomplete="name"> </div> <div class="kzop2__field"> <label for="kzop2-phone">Телефон</label> <input type="tel" id="kzop2-phone" class="kzop2__input-phone" placeholder="+7 (___) ___-__-__" maxlength="18" autocomplete="tel"> </div> </div> <input type="text" class="kzop2__hp" name="hp_final" tabindex="-1" autocomplete="off" aria-hidden="true"> <button class="kzop2__form-submit" id="kzop2-final-submit" data-goal="final_form_submit">
           Подключить сопровождение
         </button> <div class="kzop2__consent" style="margin-top:14px"> <input type="checkbox" id="kzop2-final-consent" required> <label for="kzop2-final-consent">
-            Нажимая кнопку, я даю согласие на обработку персональных данных в соответствии с <a href="https://kazna-gov.ru/personal_data_policy" style="color:rgba(255,255,255,0.4)">политикой конфиденциальности</a> </label> </div> </div> </div> </div> </section> <!-- ═══ STICKY MOBILE CTA — оформление как на /open ═══ --> <div class="kzop2__sticky" id="kzop2-sticky"> <a href="tel:+74951084232" class="kzop2__btn kzop2__btn--ghost" data-goal="sticky_phone_click" aria-label="Позвонить"> <svg viewBox="0 0 16 16"><path d="M5 2H3a1 1 0 00-1 1v1c0 6.075 4.925 11 11 11h1a1 1 0 001-1v-2l-4-1-1 1.5A9 9 0 014.5 5L6 4 5 2z"/></svg> </a> <a href="#form" class="kzop2__btn kzop2__btn--primary" data-goal="sticky_cta_click">
+            Нажимая кнопку, я даю согласие на обработку персональных данных в соответствии с <a href="https://kazna-gov.ru/personal_data_policy" style="color:rgba(255,255,255,0.4)">политикой конфиденциальности</a> </label> </div> </div> </div> </div> </section> <!-- ═══ STICKY MOBILE CTA — оформление как на /open ═══ --> <div class="kzop2__sticky" id="kzop2-sticky"> <a href="tel:+74951084232" class="kzop2__btn kzop2__btn--ghost" data-goal="sticky_phone_click" aria-label="Позвонить +7 (495) 108-42-32" title="Позвонить"> <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.25c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 3.5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg> </a> <a href="#form" class="kzop2__btn kzop2__btn--primary" data-goal="sticky_cta_click">
     Подключить сопровождение
     <span class="kzcta-arrow"><svg viewBox="0 0 16 16"><path d="M3 8h10M8 3l5 5-5 5"/></svg></span> </a> </div> <!-- ═══ SOCIAL PROOF ═══ --> <div id="kzop2-sp" aria-hidden="true"> <div class="kzop2-sp-av">М</div> <div class="kzop2-sp-body"> <div class="kzop2-sp-name"></div> <div class="kzop2-sp-act"></div> <div class="kzop2-sp-time"></div> </div> </div> <!-- ═══ SCROLL PROGRESS ═══ --> <div id="kzop2-progress" role="progressbar" aria-hidden="true"></div> <!-- ═══ SUCCESS MODAL ═══ --> <style>
 .kzop2 .kzop2__hp{position:absolute!important;left:-9999px!important;top:auto!important;width:1px;height:1px;opacity:0;pointer-events:none}
@@ -2796,7 +2819,7 @@ fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Ty
 .kzop2__success{
   position:fixed;inset:0;z-index:99999;display:none;
   align-items:center;justify-content:center;
-  background:rgba(12,27,51,0.55);
+  background:rgba(10,25,20,0.55);
   -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
   padding:20px;
   animation:kzop2-mfade .22s ease both;
@@ -2806,7 +2829,7 @@ fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Ty
   background:#fff;border-radius:20px;
   width:100%;max-width:440px;padding:40px 32px 28px;
   text-align:center;position:relative;
-  box-shadow:0 24px 64px rgba(12,27,51,0.28);
+  box-shadow:0 24px 64px rgba(10,25,20,0.28);
   font-family:var(--font, -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif);
   animation:kzop2-mpop .28s cubic-bezier(0.34,1.56,0.64,1) both;
 }
@@ -2819,19 +2842,19 @@ fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Ty
 }
 .kzop2__success-icon svg{width:32px;height:32px;color:#fff}
 .kzop2__success-title{
-  font-size:22px;font-weight:800;color:var(--text,#0D1424);
+  font-size:22px;font-weight:800;color:var(--text,#0F1714);
   letter-spacing:-0.02em;line-height:1.25;margin-bottom:10px;
 }
 .kzop2__success-sub{
   font-size:15px;color:#5a6480;line-height:1.55;margin-bottom:24px;
 }
 .kzop2__success-close{
-  background:var(--blue,#1E50D4);color:#fff;border:none;cursor:pointer;
+  background:var(--blue,#15846B);color:#fff;border:none;cursor:pointer;
   font-weight:700;font-size:15px;border-radius:12px;
   padding:14px 28px;min-width:160px;
   transition:background .2s ease,transform .2s ease,box-shadow .2s ease;
 }
-.kzop2__success-close:hover{background:var(--blue-h,#1641BC);transform:translateY(-1px);box-shadow:0 8px 18px rgba(30,80,212,0.28)}
+.kzop2__success-close:hover{background:var(--blue-h,#0F6B56);transform:translateY(-1px);box-shadow:0 8px 18px rgba(21,132,107,0.28)}
 .kzop2__success-x{
   position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:50%;
   border:none;background:rgba(13,20,36,0.06);color:#5a6480;cursor:pointer;
@@ -2839,7 +2862,7 @@ fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Ty
   font-size:20px;line-height:1;font-weight:400;
   transition:background .15s ease,color .15s ease;
 }
-.kzop2__success-x:hover{background:rgba(13,20,36,0.12);color:#0D1424}
+.kzop2__success-x:hover{background:rgba(13,20,36,0.12);color:#0F1714}
 @keyframes kzop2-mfade{from{opacity:0}to{opacity:1}}
 @keyframes kzop2-mpop{from{opacity:0;transform:scale(0.92) translateY(8px)}to{opacity:1;transform:scale(1) translateY(0)}}
 @media(prefers-reduced-motion:reduce){
@@ -3697,7 +3720,7 @@ fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Ty
         ctx.beginPath();
         ctx.arc(s.x * W, s.y * H, s.r, 0, Math.PI * 2);
         ctx.fillStyle = s.blue
-          ? 'rgba(110,165,255,' + a.toFixed(3) + ')'
+          ? 'rgba(84,214,175,' + a.toFixed(3) + ')'
           : 'rgba(215,230,255,' + a.toFixed(3) + ')';
         ctx.fill();
       });
@@ -3746,9 +3769,9 @@ fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Ty
         var isH  = (c.a === hovered || c.b === hovered);
         var al   = isH ? 0.78 : (hovered >= 0 ? 0.025 : 0.06 + dAvg * 0.26);
         var grad = ctx.createLinearGradient(ni.sx, ni.sy, nj.sx, nj.sy);
-        grad.addColorStop(0,   'rgba(91,138,255,' + al.toFixed(3) + ')');
-        grad.addColorStop(0.5, 'rgba(140,175,255,' + (al * 0.55).toFixed(3) + ')');
-        grad.addColorStop(1,   'rgba(91,138,255,' + al.toFixed(3) + ')');
+        grad.addColorStop(0,   'rgba(43,200,154,' + al.toFixed(3) + ')');
+        grad.addColorStop(0.5, 'rgba(120,235,195,' + (al * 0.55).toFixed(3) + ')');
+        grad.addColorStop(1,   'rgba(43,200,154,' + al.toFixed(3) + ')');
         ctx.beginPath();
         ctx.moveTo(ni.sx, ni.sy);
         ctx.lineTo(nj.sx, nj.sy);

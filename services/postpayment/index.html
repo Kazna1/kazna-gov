@@ -165,26 +165,26 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 --> <meta charset="UTF-8"> <!-- КАЗНА · Разовое сопровождение при постоплате · v2 · kzop2__ namespace --> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"> <style>
 /* ─── DESIGN TOKENS ─── */
 :root{
-  --bg:#F7F9FE;
+  --bg:#F6FAF8;
   --bg-w:#FFFFFF;
-  --bg-s:#EEF2FA;
-  --bg-dark:#0C1B33;
-  --bg-dark2:#091526;
+  --bg-s:#EBF4F0;
+  --bg-dark:#0d1f1a;
+  --bg-dark2:#0a1612;
   --bg-risk:#FFF5F5;
 
-  --text:#0D1424;
+  --text:#0F1714;
   --t2:#374151;
   --t3:#6B7280;
   --t-inv:#FFFFFF;
   --t-inv2:rgba(255,255,255,0.65);
 
-  --blue:#1E50D4;
-  --blue-h:#1641BC;
-  --blue-bg:#EAF1FF;
-  --blue-br:#BAD0FF;
+  --blue:#15846B;
+  --blue-h:#0F6B56;
+  --blue-bg:#EAF7F2;
+  --blue-br:#BFE8D9;
 
-  --navy:#0C1B33;
-  --navy-l:#162544;
+  --navy:#10231D;
+  --navy-l:#18332B;
 
   --green:#059669;
   --green-bg:#ECFDF5;
@@ -209,7 +209,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   --sh-s:0 1px 3px rgba(0,0,0,0.06),0 1px 2px rgba(0,0,0,0.04);
   --sh:0 4px 20px rgba(0,0,0,0.06),0 2px 8px rgba(0,0,0,0.04);
   --sh-l:0 20px 60px rgba(0,0,0,0.08),0 8px 24px rgba(0,0,0,0.05);
-  --sh-blue:0 4px 20px rgba(30,80,212,0.18);
+  --sh-blue:0 4px 20px rgba(21,132,107,0.18);
 
   --tr:0.2s cubic-bezier(0.4,0,0.2,1);
   --font:'Manrope',-apple-system,sans-serif;
@@ -227,7 +227,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 .kzop2__eyebrow{
   font-size:11px;font-weight:600;letter-spacing:0.09em;text-transform:uppercase;
   color:var(--blue);margin-bottom:16px;display:block;
-  background:rgba(30,80,212,0.08);border-radius:100px;padding:5px 14px;display:inline-block;
+  background:rgba(21,132,107,0.08);border-radius:100px;padding:5px 14px;display:inline-block;
 }
 .kzop2__h2{
   font-size:clamp(26px,3vw,36px);font-weight:800;color:var(--navy);
@@ -256,7 +256,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 .kzop2__btn--primary:hover{background:var(--blue-h)!important;transform:translateY(-2px);box-shadow:var(--sh-blue)}
 .kzop2__btn--primary{transition:background var(--tr),transform 0.25s cubic-bezier(0.23,1,0.32,1),box-shadow var(--tr)}
 .kzop2__btn--outline{background:transparent;color:var(--navy);border:1.5px solid var(--border2)}
-.kzop2__btn--outline:hover{border-color:var(--navy);background:rgba(12,27,51,0.04);transform:translateY(-1px)}
+.kzop2__btn--outline:hover{border-color:var(--navy);background:rgba(10,25,20,0.04);transform:translateY(-1px)}
 .kzop2__btn--white{background:#fff;color:var(--navy)}
 .kzop2__btn--white:hover{background:#F3F1EE;transform:translateY(-2px)}
 .kzop2__btn--ghost{background:rgba(255,255,255,0.12);color:#fff;border:1px solid rgba(255,255,255,0.2)}
@@ -275,8 +275,8 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 /* ─── HERO ─── */
 .kzop2__hero{
   background:
-    radial-gradient(ellipse 900px 700px at 105% -5%, rgba(30,80,212,0.22) 0%, rgba(91,138,255,0.08) 45%, transparent 65%),
-    radial-gradient(ellipse 500px 400px at -6% 110%, rgba(30,80,212,0.13) 0%, transparent 65%),
+    radial-gradient(ellipse 900px 700px at 105% -5%, rgba(21,132,107,0.22) 0%, rgba(43,200,154,0.08) 45%, transparent 65%),
+    radial-gradient(ellipse 500px 400px at -6% 110%, rgba(21,132,107,0.13) 0%, transparent 65%),
     var(--bg-w);
   padding:calc(var(--hdr) + 16px) 0 64px;
   min-height:calc(100vh - var(--hdr));
@@ -285,13 +285,13 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 }
 .kzop2__hero::before{
   content:'';position:absolute;top:0;left:0;right:0;height:3px;
-  background:linear-gradient(90deg,transparent 0%,var(--blue) 18%,rgba(91,138,255,0.55) 60%,transparent 100%);
+  background:linear-gradient(90deg,transparent 0%,var(--blue) 18%,rgba(43,200,154,0.55) 60%,transparent 100%);
   pointer-events:none;z-index:2;
 }
 .kzop2__hero::after{
   content:'';position:absolute;top:-200px;right:-180px;
   width:900px;height:900px;border-radius:50%;
-  background:radial-gradient(ellipse at 50% 40%, rgba(91,138,255,0.14) 0%, rgba(30,80,212,0.07) 45%, transparent 68%);
+  background:radial-gradient(ellipse at 50% 40%, rgba(43,200,154,0.14) 0%, rgba(21,132,107,0.07) 45%, transparent 68%);
   pointer-events:none;z-index:0;
 }
 .kzop2__hero-grid{
@@ -314,7 +314,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   letter-spacing:-0.03em;line-height:1.05;margin-bottom:20px;
 }
 .kzop2__hero-title span{
-  background:linear-gradient(135deg,#2356D8 0%,#5B8AFF 100%);
+  background:linear-gradient(135deg,#128268 0%,#2BC89A 100%);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;color:var(--blue);
 }
 .kzop2__hero-sub{font-size:17px;color:var(--t2);line-height:1.65;max-width:540px;margin-bottom:32px;}
@@ -329,10 +329,10 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   border-radius:var(--r-xl);padding:32px;position:relative;
   border:1.5px solid transparent;
   background-image:linear-gradient(var(--bg-w), var(--bg-w)),
-    linear-gradient(145deg, rgba(30,80,212,0.55) 0%, rgba(91,138,255,0.25) 50%, rgba(30,80,212,0.06) 100%);
+    linear-gradient(145deg, rgba(21,132,107,0.55) 0%, rgba(43,200,154,0.25) 50%, rgba(21,132,107,0.06) 100%);
   background-origin:border-box;background-clip:padding-box, border-box;background-color:var(--bg-w);
-  box-shadow:0 0 0 12px rgba(30,80,212,0.05),0 0 0 32px rgba(30,80,212,0.025),
-    0 24px 64px rgba(30,80,212,0.16),0 8px 24px rgba(30,80,212,0.10);
+  box-shadow:0 0 0 12px rgba(21,132,107,0.05),0 0 0 32px rgba(21,132,107,0.025),
+    0 24px 64px rgba(21,132,107,0.16),0 8px 24px rgba(21,132,107,0.10);
   animation:kzop2-float 4.5s ease-in-out infinite;animation-delay:1.4s;
 }
 @keyframes kzop2-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
@@ -353,7 +353,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 }
 .kzop2__card-guarantee{
   display:flex;align-items:flex-start;gap:10px;padding:14px;border-radius:10px;
-  background:var(--blue-bg);border:1px solid var(--blue-br);font-size:12.5px;color:#1e40af;line-height:1.45;margin-top:16px;
+  background:var(--blue-bg);border:1px solid var(--blue-br);font-size:12.5px;color:#0F6B56;line-height:1.45;margin-top:16px;
 }
 .kzop2__card-guarantee svg{width:16px;height:16px;flex-shrink:0;color:var(--blue);stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;margin-top:1px}
 .kzop2__card-guarantee strong{font-weight:700}
@@ -374,7 +374,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   background:var(--bg-w);border:1px solid var(--border);border-radius:var(--r-l);padding:28px 24px;
   transition:box-shadow 0.3s cubic-bezier(0.4,0,0.2,1),transform 0.3s cubic-bezier(0.4,0,0.2,1),border-color 0.3s cubic-bezier(0.4,0,0.2,1);
 }
-.kzop2__who-card:hover{border-color:rgba(30,80,212,0.3);box-shadow:0 8px 32px rgba(30,80,212,0.09),0 2px 8px rgba(30,80,212,0.06);transform:translateY(-3px);}
+.kzop2__who-card:hover{border-color:rgba(21,132,107,0.3);box-shadow:0 8px 32px rgba(21,132,107,0.09),0 2px 8px rgba(21,132,107,0.06);transform:translateY(-3px);}
 .kzop2__who-icon{width:44px;height:44px;border-radius:12px;background:var(--blue-bg);border:1px solid var(--blue-br);display:flex;align-items:center;justify-content:center;margin-bottom:18px;}
 .kzop2__who-icon svg{width:22px;height:22px;stroke:var(--blue);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .kzop2__who-title{font-size:15px;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:8px}
@@ -386,13 +386,13 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   background:var(--bg-w);border:1px solid var(--border);border-radius:var(--r-l);padding:28px 24px;
   transition:box-shadow 0.3s cubic-bezier(0.4,0,0.2,1),transform 0.3s cubic-bezier(0.4,0,0.2,1),border-color 0.3s cubic-bezier(0.4,0,0.2,1);
 }
-.kzop2__inc-card:hover{border-color:rgba(30,80,212,0.25);box-shadow:0 8px 28px rgba(30,80,212,0.08),0 2px 8px rgba(30,80,212,0.05);transform:translateY(-2px);}
+.kzop2__inc-card:hover{border-color:rgba(21,132,107,0.25);box-shadow:0 8px 28px rgba(21,132,107,0.08),0 2px 8px rgba(21,132,107,0.05);transform:translateY(-2px);}
 .kzop2__inc-num{
   width:44px;height:44px;border-radius:12px;
-  background:linear-gradient(135deg,var(--blue) 0%,#5B8AFF 100%);
+  background:linear-gradient(135deg,var(--blue) 0%,#2BC89A 100%);
   color:#fff;font-size:13px;font-weight:800;
   display:flex;align-items:center;justify-content:center;letter-spacing:0.02em;margin-bottom:16px;
-  box-shadow:0 4px 12px rgba(30,80,212,0.22);
+  box-shadow:0 4px 12px rgba(21,132,107,0.22);
 }
 .kzop2__inc-title{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;line-height:1.3}
 .kzop2__inc-desc{font-size:13.5px;color:var(--t3);line-height:1.55}
@@ -405,7 +405,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 }
 .kzop2__process-track::after{
   content:'';position:absolute;top:28px;left:calc(20% / 2);right:calc(20% / 2);
-  height:2px;background:linear-gradient(90deg,var(--blue) 0%,rgba(30,80,212,0.4) 100%);
+  height:2px;background:linear-gradient(90deg,var(--blue) 0%,rgba(21,132,107,0.4) 100%);
   z-index:0;transform-origin:left center;transform:scaleX(0);
   transition:transform 1.1s cubic-bezier(0.16,1,0.3,1) 0.2s;
 }
@@ -417,7 +417,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 [data-section="process"].kzop2-seen .kzop2__step:nth-child(3){opacity:1;transform:none;transition-delay:0.25s}
 [data-section="process"].kzop2-seen .kzop2__step:nth-child(4){opacity:1;transform:none;transition-delay:0.35s}
 [data-section="process"].kzop2-seen .kzop2__step:nth-child(5){opacity:1;transform:none;transition-delay:0.45s}
-.kzop2__step-num{width:56px;height:56px;border-radius:50%;background:var(--navy);color:#fff;font-size:18px;font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:20px;flex-shrink:0;box-shadow:0 4px 16px rgba(12,27,51,0.2);}
+.kzop2__step-num{width:56px;height:56px;border-radius:50%;background:var(--navy);color:#fff;font-size:18px;font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:20px;flex-shrink:0;box-shadow:0 4px 16px rgba(10,25,20,0.2);}
 .kzop2__step:last-child .kzop2__step-num{background:var(--green)}
 .kzop2__step-time{font-size:11px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--blue);margin-bottom:6px;}
 .kzop2__step-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:6px;line-height:1.3}
@@ -438,12 +438,12 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 /* ─── MID CTA ─── */
 .kzop2__midcta{background:var(--bg-dark);padding:72px 0;position:relative;overflow:hidden;}
 .kzop2__midcta::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle, rgba(255,255,255,0.065) 1px, transparent 1px);background-size:28px 28px;pointer-events:none;z-index:0;}
-.kzop2__midcta::after{content:'';position:absolute;top:-150px;right:-120px;width:640px;height:640px;border-radius:50%;background:radial-gradient(ellipse at center, rgba(30,80,212,0.28) 0%, transparent 65%);pointer-events:none;z-index:0;}
+.kzop2__midcta::after{content:'';position:absolute;top:-150px;right:-120px;width:640px;height:640px;border-radius:50%;background:radial-gradient(ellipse at center, rgba(21,132,107,0.28) 0%, transparent 65%);pointer-events:none;z-index:0;}
 .kzop2__midcta-center{max-width:var(--max);margin:0 auto;padding:0 40px;display:flex;flex-direction:column;align-items:center;text-align:center;position:relative;z-index:1;}
 .kzop2__midcta-label{font-size:11px;font-weight:600;letter-spacing:0.09em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:14px}
 .kzop2__midcta-sub{font-size:15px;color:rgba(255,255,255,0.5);margin-top:10px;line-height:1.5}
 .kzop2__midcta-title{font-size:clamp(24px,3vw,38px);font-weight:800;color:#fff;letter-spacing:-0.025em;line-height:1.1}
-.kzop2__midcta-title span{background:linear-gradient(135deg,#7ab3ff 0%,#b8d4ff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;color:#7ab3ff;}
+.kzop2__midcta-title span{background:linear-gradient(135deg,#7de5c4 0%,#c6f2e3 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;color:#7de5c4;}
 .kzop2__midcta-form{max-width:500px;width:100%;margin-top:28px}
 .kzop2__midcta-input-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 .kzop2__midcta-tel{flex:1;min-width:180px;height:50px;padding:0 18px;border-radius:12px;border:1px solid rgba(255,255,255,0.18);background:rgba(255,255,255,0.09);font-family:var(--font);font-size:15px;color:#fff;outline:none;transition:border-color var(--tr),background var(--tr);}
@@ -453,17 +453,17 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 /* ─── TRUST ─── */
 .kzop2__section--trust{
   background:linear-gradient(160deg,#EBF2FF 0%,#F7F9FE 40%,#EEF5FF 100%);
-  border-top:1px solid rgba(30,80,212,0.1);border-bottom:1px solid rgba(30,80,212,0.1);padding:64px 0;
+  border-top:1px solid rgba(21,132,107,0.1);border-bottom:1px solid rgba(21,132,107,0.1);padding:64px 0;
 }
 .kzop2__trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border-radius:var(--r-l);overflow:hidden;border:1px solid var(--border);}
-.kzop2__section--trust .kzop2__trust-grid{background:rgba(255,255,255,0.7);border:1px solid rgba(30,80,212,0.12);backdrop-filter:blur(8px);box-shadow:0 8px 40px rgba(30,80,212,0.07),0 2px 12px rgba(30,80,212,0.05);}
+.kzop2__section--trust .kzop2__trust-grid{background:rgba(255,255,255,0.7);border:1px solid rgba(21,132,107,0.12);backdrop-filter:blur(8px);box-shadow:0 8px 40px rgba(21,132,107,0.07),0 2px 12px rgba(21,132,107,0.05);}
 .kzop2__trust-item{background:var(--bg-w);padding:36px 28px;text-align:center;}
 .kzop2__section--trust .kzop2__trust-item{background:transparent;position:relative;}
-.kzop2__section--trust .kzop2__trust-item:not(:last-child)::after{content:'';position:absolute;right:0;top:20%;bottom:20%;width:1px;background:rgba(30,80,212,0.1);}
+.kzop2__section--trust .kzop2__trust-item:not(:last-child)::after{content:'';position:absolute;right:0;top:20%;bottom:20%;width:1px;background:rgba(21,132,107,0.1);}
 .kzop2__trust-num{font-size:clamp(44px,5vw,64px);font-weight:800;color:var(--navy);letter-spacing:-0.04em;line-height:1;margin-bottom:10px;display:block;transition:color 0.3s;}
 .kzop2__trust-num span{color:var(--blue)}
-.kzop2__section--trust .kzop2__trust-num{font-size:clamp(48px,5.5vw,68px);background:linear-gradient(135deg,#0C1B33 0%,#1E50D4 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
-.kzop2__section--trust .kzop2__trust-num span{background:linear-gradient(135deg,#1E50D4 0%,#5B8AFF 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.kzop2__section--trust .kzop2__trust-num{font-size:clamp(48px,5.5vw,68px);background:linear-gradient(135deg,#10231D 0%,#15846B 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.kzop2__section--trust .kzop2__trust-num span{background:linear-gradient(135deg,#15846B 0%,#2BC89A 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
 .kzop2__trust-label{font-size:13px;color:var(--t3);line-height:1.45;font-weight:500}
 .kzop2__section--trust .kzop2__trust-label{color:var(--t2);font-size:13.5px;}
 
@@ -482,7 +482,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 /* ─── FAQ ─── */
 .kzop2__faq-list{display:flex;flex-direction:column;gap:8px;max-width:800px;margin:0 auto}
 .kzop2__faq-item{border:1px solid var(--border);border-radius:var(--r);overflow:hidden;background:var(--bg-w);transition:border-color var(--tr),box-shadow var(--tr);}
-.kzop2__faq-item.open{border-color:var(--blue-br);box-shadow:0 0 0 3px rgba(30,80,212,0.06)}
+.kzop2__faq-item.open{border-color:var(--blue-br);box-shadow:0 0 0 3px rgba(21,132,107,0.06)}
 .kzop2__faq-q{width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 24px;background:none;border:none;cursor:pointer;text-align:left;font-family:var(--font);font-size:15px;font-weight:700;color:var(--navy);transition:background var(--tr);}
 .kzop2__faq-q:hover{background:#FAFAF8}
 .kzop2__faq-icon{width:28px;height:28px;flex-shrink:0;border-radius:50%;background:var(--bg-s);display:flex;align-items:center;justify-content:center;transition:background var(--tr),transform var(--tr);}
@@ -499,11 +499,11 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 /* ─── FINAL FORM ─── */
 .kzop2__final{background:var(--bg-dark);padding:96px 0;position:relative;overflow:hidden;}
 .kzop2__final::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle, rgba(255,255,255,0.055) 1px, transparent 1px);background-size:28px 28px;pointer-events:none;z-index:0;}
-.kzop2__final::after{content:'';position:absolute;bottom:-180px;left:-120px;width:700px;height:700px;border-radius:50%;background:radial-gradient(ellipse at center, rgba(30,80,212,0.22) 0%, transparent 65%);pointer-events:none;z-index:0;}
+.kzop2__final::after{content:'';position:absolute;bottom:-180px;left:-120px;width:700px;height:700px;border-radius:50%;background:radial-gradient(ellipse at center, rgba(21,132,107,0.22) 0%, transparent 65%);pointer-events:none;z-index:0;}
 .kzop2__final-inner{max-width:var(--max);margin:0 auto;padding:0 40px;display:grid;grid-template-columns:1fr 480px;gap:80px;align-items:start;position:relative;z-index:1;}
 .kzop2__final-label{font-size:11px;font-weight:600;letter-spacing:0.09em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:16px;display:block;}
 .kzop2__final-title{font-size:clamp(28px,4vw,44px);font-weight:800;color:#fff;letter-spacing:-0.025em;line-height:1.1;margin-bottom:16px;}
-.kzop2__final-title span{background:linear-gradient(135deg,#7ab3ff 0%,#b8d4ff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;color:#7ab3ff;}
+.kzop2__final-title span{background:linear-gradient(135deg,#7de5c4 0%,#c6f2e3 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;color:#7de5c4;}
 .kzop2__final-sub{font-size:15px;color:rgba(255,255,255,0.6);line-height:1.6;max-width:400px;margin-bottom:36px}
 .kzop2__final-points{list-style:none;display:flex;flex-direction:column;gap:12px}
 .kzop2__final-points li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:rgba(255,255,255,0.75);line-height:1.5;}
@@ -520,7 +520,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 .kzop2__field label{display:block;font-size:12px;font-weight:600;color:rgba(255,255,255,0.5);margin-bottom:6px;letter-spacing:0.03em;}
 .kzop2__field input{width:100%;height:48px;padding:0 16px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.14);border-radius:10px;font-family:var(--font);font-size:15px;color:#fff;outline:none;transition:border-color var(--tr),background var(--tr);}
 .kzop2__field input::placeholder{color:rgba(255,255,255,0.3)}
-.kzop2__field input:focus{border-color:rgba(30,80,212,0.5)!important;background:rgba(255,255,255,0.14)!important;box-shadow:0 0 0 3px rgba(30,80,212,0.18)!important;}
+.kzop2__field input:focus{border-color:rgba(21,132,107,0.5)!important;background:rgba(255,255,255,0.14)!important;box-shadow:0 0 0 3px rgba(21,132,107,0.18)!important;}
 .kzop2__form-submit{width:100%;height:52px;border-radius:12px;background:var(--blue);color:#fff;border:none;font-family:var(--font);font-size:15px;font-weight:700;cursor:pointer;transition:background var(--tr),transform var(--tr);}
 .kzop2__form-submit:hover{background:var(--blue-h);transform:translateY(-2px)}
 
@@ -529,6 +529,8 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 .kzop2__consent input[type=checkbox]{flex-shrink:0;width:15px;height:15px;margin-top:2px;cursor:pointer;accent-color:var(--blue);}
 .kzop2__consent label{font-size:11px;color:var(--t3);line-height:1.5;cursor:pointer;}
 .kzop2__consent a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.kzop2__consent--err label{color:var(--red)}
+.kzop2__consent--err input[type=checkbox]{outline:2px solid var(--red);outline-offset:2px}
 .kzop2__consent--dark label{color:rgba(255,255,255,0.32)}
 .kzop2__consent--dark a{color:rgba(255,255,255,0.5)}
 
@@ -561,14 +563,14 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 .kzop2__cmp thead tr th{padding:14px 20px;font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;}
 .kzop2__cmp th.kzop2-col-param{background:var(--bg-s);color:var(--t3);text-align:left;width:32%}
 .kzop2__cmp th.kzop2-col-self{background:var(--red-bg);color:var(--red);text-align:center;width:34%}
-.kzop2__cmp th.kzop2-col-us{background:linear-gradient(135deg,#1e4fd4 0%,#3B6AE8 100%);color:#fff;text-align:center;width:34%}
+.kzop2__cmp th.kzop2-col-us{background:linear-gradient(135deg,#15846b 0%,#1FA887 100%);color:#fff;text-align:center;width:34%}
 .kzop2__cmp tbody tr:nth-child(even) td{background:rgba(0,0,0,0.015)}
 .kzop2__cmp tbody tr:hover td{background:var(--blue-bg)}
 .kzop2__cmp td{padding:13px 20px;font-size:14px;border-top:1px solid var(--border);}
 .kzop2__cmp td:first-child{font-weight:600;color:var(--navy);background:var(--bg-w)}
 .kzop2__cmp td.kzop2-col-self{text-align:center;color:var(--red);background:rgba(254,242,242,0.5)}
-.kzop2__cmp td.kzop2-col-us{text-align:center;color:var(--blue);font-weight:700;background:linear-gradient(180deg,rgba(30,80,212,0.07) 0%,rgba(30,80,212,0.04) 100%);border-left:2px solid rgba(30,80,212,0.18);border-right:2px solid rgba(30,80,212,0.18);}
-.kzop2__cmp tbody tr:last-child td.kzop2-col-us{border-bottom:2px solid rgba(30,80,212,0.18)}
+.kzop2__cmp td.kzop2-col-us{text-align:center;color:var(--blue);font-weight:700;background:linear-gradient(180deg,rgba(21,132,107,0.07) 0%,rgba(21,132,107,0.04) 100%);border-left:2px solid rgba(21,132,107,0.18);border-right:2px solid rgba(21,132,107,0.18);}
+.kzop2__cmp tbody tr:last-child td.kzop2-col-us{border-bottom:2px solid rgba(21,132,107,0.18)}
 .kzop2__cmp-badge{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:700;padding:3px 10px;border-radius:100px;}
 .kzop2__cmp-badge--good{background:var(--green-bg);color:var(--green)}
 .kzop2__cmp-badge--bad{background:var(--red-bg);color:var(--red)}
@@ -654,31 +656,31 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 @media(max-width:600px){.kzop2__iphone{width:100%;max-width:290px}.kzop2__case-nav{gap:8px}.kzop2__case-nav-btn{font-size:12.5px;padding:0 12px}}
 
 /* ─── COSMOS ─── */
-.kzop2__section--cosmos{background:#060D1A;padding:56px 0 44px}
+.kzop2__section--cosmos{background:#071410;padding:56px 0 44px}
 @media(max-width:768px){.kzop2__section--cosmos{padding:40px 0 28px}}
-.kzop2__section--cosmos .kzop2__eyebrow{color:rgba(91,138,255,0.75)}
-.kzop2__section--cosmos .kzop2__h2{color:#E8F0FF}
-.kzop2__section--cosmos .kzop2__lead{color:rgba(180,200,240,0.5)}
+.kzop2__section--cosmos .kzop2__eyebrow{color:rgba(43,200,154,0.75)}
+.kzop2__section--cosmos .kzop2__h2{color:#E8F0EC}
+.kzop2__section--cosmos .kzop2__lead{color:rgba(190,215,205,0.55)}
 .kzop2__clients-web.kz-3d .kzop2__web-node{display:none}
 .kzop2__clients-web{position:relative;height:460px;margin-top:32px;width:100vw;left:50%;transform:translateX(-50%);overflow:hidden;}
 @media(max-width:768px){.kzop2__clients-web{width:100%;left:0;transform:none;height:auto;overflow:visible;display:flex;flex-wrap:wrap;align-items:flex-start;gap:8px;padding:16px 20px 24px;}}
 #kzop2-web-svg{display:none}
-.kzop2__web-node{position:absolute;left:0;top:0;transform:translate(-50%,-50%);display:inline-flex;align-items:center;gap:7px;background:rgba(6,15,42,0.80);border:1px solid rgba(91,138,255,0.22);border-radius:100px;padding:6px 13px 6px 7px;cursor:default;z-index:2;white-space:nowrap;font-size:12px;font-weight:600;color:rgba(215,230,255,0.9);font-family:var(--font);backdrop-filter:blur(10px);transition:box-shadow 0.35s,border-color 0.35s,background 0.35s,transform 0.35s;}
+.kzop2__web-node{position:absolute;left:0;top:0;transform:translate(-50%,-50%);display:inline-flex;align-items:center;gap:7px;background:rgba(8,26,20,0.80);border:1px solid rgba(43,200,154,0.22);border-radius:100px;padding:6px 13px 6px 7px;cursor:default;z-index:2;white-space:nowrap;font-size:12px;font-weight:600;color:rgba(222,240,232,0.9);font-family:var(--font);backdrop-filter:blur(10px);transition:box-shadow 0.35s,border-color 0.35s,background 0.35s,transform 0.35s;}
 .kzop2__web-node.kz-sm{font-size:10.5px;padding:4px 10px 4px 5px}
 .kzop2__web-node.kz-sm .kzop2__web-mono-sm{width:16px;height:16px;font-size:6px}
 .kzop2__web-node.kz-lg{font-size:14px;padding:9px 17px 9px 9px}
 .kzop2__web-node.kz-lg .kzop2__web-mono-sm{width:24px;height:24px;font-size:9px}
-.kzop2__web-node.kz-hover{background:rgba(8,22,72,0.97)!important;border-color:rgba(91,138,255,0.85)!important;box-shadow:0 0 0 3px rgba(91,138,255,0.12),0 0 24px rgba(91,138,255,0.55),0 0 52px rgba(91,138,255,0.2)!important;transform:translate(-50%,-50%) scale(1.35)!important;z-index:20!important;}
-.kzop2__web-node.kz-connected{border-color:rgba(91,138,255,0.42)!important;background:rgba(7,18,58,0.9)!important;}
+.kzop2__web-node.kz-hover{background:rgba(8,22,72,0.97)!important;border-color:rgba(43,200,154,0.85)!important;box-shadow:0 0 0 3px rgba(43,200,154,0.12),0 0 24px rgba(43,200,154,0.55),0 0 52px rgba(43,200,154,0.2)!important;transform:translate(-50%,-50%) scale(1.35)!important;z-index:20!important;}
+.kzop2__web-node.kz-connected{border-color:rgba(43,200,154,0.42)!important;background:rgba(7,18,58,0.9)!important;}
 .kzop2__web-mono-sm{width:20px;height:20px;border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:7.5px;font-weight:800;flex-shrink:0;}
-.kzop2__client-mono--a{background:rgba(30,80,212,0.42);color:#7ab3ff}
-.kzop2__client-mono--b{background:rgba(100,50,200,0.42);color:#c084fc}
+.kzop2__client-mono--a{background:rgba(21,132,107,0.42);color:#7de5c4}
+.kzop2__client-mono--b{background:rgba(31,168,135,0.32);color:#8ff0d2}
 .kzop2__client-mono--c{background:rgba(5,110,100,0.42);color:#2dd4bf}
 .kzop2__client-mono--d{background:rgba(130,75,5,0.42);color:#fbbf24}
-.kzop2__client-mono--e{background:rgba(40,55,90,0.55);color:#94a3b8}
-@media(max-width:768px){.kzop2__web-node{position:static;transform:none!important;backdrop-filter:none;flex:0 0 auto;display:inline-flex;background:rgba(10,22,55,0.72)!important;border-color:rgba(91,138,255,0.28)!important;}}
-.kzop2__clients-footer{text-align:center;margin-top:28px;font-size:14px;color:rgba(140,165,215,0.5);font-weight:500;letter-spacing:0.01em;}
-.kzop2__clients-footer strong{color:#5B8AFF;font-size:24px;font-weight:800;letter-spacing:-0.02em;margin-right:3px;text-shadow:0 0 20px rgba(91,138,255,0.4);}
+.kzop2__client-mono--e{background:rgba(70,90,82,0.5);color:#a8bdb4}
+@media(max-width:768px){.kzop2__web-node{position:static;transform:none!important;backdrop-filter:none;flex:0 0 auto;display:inline-flex;background:rgba(12,32,25,0.72)!important;border-color:rgba(43,200,154,0.28)!important;}}
+.kzop2__clients-footer{text-align:center;margin-top:28px;font-size:14px;color:rgba(160,190,178,0.55);font-weight:500;letter-spacing:0.01em;}
+.kzop2__clients-footer strong{color:#2BC89A;font-size:24px;font-weight:800;letter-spacing:-0.02em;margin-right:3px;text-shadow:0 0 20px rgba(43,200,154,0.4);}
 
 /* ─── TEAM MARQUEE ─── */
 @keyframes kz-marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
@@ -704,7 +706,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 
 /* ─── SPOTLIGHT ─── */
 .kzop2-spotlight{position:relative;overflow:hidden;}
-.kzop2-spotlight::before{content:'';position:absolute;inset:0;background:radial-gradient(circle 260px at var(--sx,50%) var(--sy,50%),rgba(30,80,212,0.07) 0%,transparent 68%);opacity:0;transition:opacity 0.35s ease;pointer-events:none;z-index:1;border-radius:inherit;}
+.kzop2-spotlight::before{content:'';position:absolute;inset:0;background:radial-gradient(circle 260px at var(--sx,50%) var(--sy,50%),rgba(21,132,107,0.07) 0%,transparent 68%);opacity:0;transition:opacity 0.35s ease;pointer-events:none;z-index:1;border-radius:inherit;}
 .kzop2-spotlight:hover::before{opacity:1}
 
 /* ─── TYPED ─── */
@@ -712,7 +714,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 #kzop2-typed.kz-out{opacity:0;transform:translateY(-6px);display:inline-block;}
 
 /* ─── SCROLL PROGRESS ─── */
-#kzop2-progress{position:fixed;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--blue) 0%,rgba(91,138,255,0.85) 100%);z-index:10001;transform-origin:left;transform:scaleX(0);transition:transform 0.08s linear;pointer-events:none;}
+#kzop2-progress{position:fixed;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--blue) 0%,rgba(43,200,154,0.85) 100%);z-index:10001;transform-origin:left;transform:scaleX(0);transition:transform 0.08s linear;pointer-events:none;}
 
 /* ─── SOCIAL PROOF ─── */
 #kzop2-sp{position:fixed;bottom:28px;left:24px;z-index:9990;background:#fff;border:1px solid var(--border);border-radius:16px;padding:14px 18px;box-shadow:0 8px 36px rgba(0,0,0,0.11),0 2px 8px rgba(0,0,0,0.06);display:flex;align-items:center;gap:12px;max-width:310px;opacity:0;transform:translateY(18px);transition:opacity 0.45s cubic-bezier(0.16,1,0.3,1),transform 0.45s cubic-bezier(0.16,1,0.3,1);pointer-events:none;}
@@ -727,7 +729,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 .kzop2__section--dark,.kzop2__final,.kzop2__midcta{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.72' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.038'/%3E%3C/svg%3E");}
 
 /* ─── HERO ORB ─── */
-.kzop2__hero-orb{position:absolute;top:-200px;right:-180px;width:900px;height:900px;border-radius:50%;background:radial-gradient(ellipse at 50% 40%,rgba(91,138,255,0.15) 0%,rgba(30,80,212,0.07) 45%,transparent 68%);pointer-events:none;z-index:0;will-change:transform;}
+.kzop2__hero-orb{position:absolute;top:-200px;right:-180px;width:900px;height:900px;border-radius:50%;background:radial-gradient(ellipse at 50% 40%,rgba(43,200,154,0.15) 0%,rgba(21,132,107,0.07) 45%,transparent 68%);pointer-events:none;z-index:0;will-change:transform;}
 @media(prefers-reduced-motion:reduce){.kzop2__hero-orb{display:none}}
 
 /* ─── RESPONSIVE ─── */
@@ -1071,14 +1073,14 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
   background:linear-gradient(180deg,#ffffff 0%,#f3f7ff 100%);
   border:1px solid var(--blue-br);border-radius:16px;
   box-shadow:inset 0 1px 0 rgba(255,255,255,0.9),
-             0 12px 30px rgba(30,80,212,0.13),
-             0 3px 10px rgba(30,80,212,0.08);
+             0 12px 30px rgba(21,132,107,0.13),
+             0 3px 10px rgba(21,132,107,0.08);
 }
 .kzhero__stats-label{
   display:flex;align-items:center;justify-content:center;gap:7px;padding:0 16px;
-  background:linear-gradient(135deg,#1E50D4 0%,#3f72e6 100%);
+  background:linear-gradient(135deg,#15846B 0%,#1FA887 100%);
   border-radius:12px;font-size:12px;font-weight:700;color:#fff;white-space:nowrap;
-  box-shadow:0 5px 14px rgba(30,80,212,0.32);
+  box-shadow:0 5px 14px rgba(21,132,107,0.32);
 }
 .kzhero__stats-label svg{width:17px;height:17px;flex-shrink:0}
 .kzhero__stats-row{display:flex;align-items:stretch;flex:1}
@@ -1093,7 +1095,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 }
 .kzhero__stat-num{
   font-size:26px;font-weight:800;letter-spacing:-0.02em;line-height:1.05;
-  background:linear-gradient(135deg,#1E50D4 0%,#5b8aff 100%);
+  background:linear-gradient(135deg,#15846B 0%,#2BC89A 100%);
   -webkit-background-clip:text;background-clip:text;
   -webkit-text-fill-color:transparent;color:var(--blue);
 }
@@ -1116,11 +1118,11 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
   transition:border-color var(--tr),box-shadow var(--tr);
 }
 .kzhero__input::placeholder{color:#9CA3AF}
-.kzhero__input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(30,80,212,0.12)}
+.kzhero__input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(21,132,107,0.12)}
 .kzhero__input.kzhero--invalid{border-color:rgba(192,57,43,0.7)}
 
 .kzhero__submit{width:100%;height:46px;margin-top:10px;justify-content:center;font-size:15.5px}
-.kzhero__submit:disabled{background:#9DB4E8!important;cursor:not-allowed;transform:none!important;box-shadow:none!important}
+.kzhero__submit:disabled{background:#A9CFC2!important;cursor:not-allowed;transform:none!important;box-shadow:none!important}
 .kzhero__submit:disabled:hover{transform:none!important}
 .kzhero__btn-mobile{display:none}
 
@@ -1146,7 +1148,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 
 /* ── Sticky-док (мобильный) — оформление как на /open ── */
 .kzop2__sticky{
-  background:linear-gradient(to top,var(--bg) 42%,rgba(247,249,254,0.82) 72%,rgba(247,249,254,0));
+  background:linear-gradient(to top,var(--bg) 42%,rgba(246,250,248,0.82) 72%,rgba(246,250,248,0));
   -webkit-backdrop-filter:none;backdrop-filter:none;
   padding:22px 16px calc(16px + env(safe-area-inset-bottom,0px));
   gap:12px;border-top:none;box-shadow:none;
@@ -1160,24 +1162,24 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 .kzop2__sticky .kzop2__btn--ghost:hover{
   flex:0 0 56px;width:56px;padding:0;border-radius:50%;
   background:#fff;color:#059669;border:1.5px solid #D6EFE3;
-  box-shadow:0 8px 20px rgba(12,27,51,0.14);
+  box-shadow:0 8px 20px rgba(10,25,20,0.14);
 }
 .kzop2__sticky .kzop2__btn--ghost svg{width:22px;height:22px}
 .kzop2__sticky .kzop2__btn--primary,
 .kzop2__sticky .kzop2__btn--primary:hover{
   flex:1;border-radius:999px;gap:10px;
-  background:linear-gradient(135deg,#3B6BEA 0%,#1E50D4 62%,#1A45BE 100%)!important;
-  box-shadow:0 10px 28px rgba(30,80,212,0.42);
+  background:linear-gradient(135deg,#1FA887 0%,#15846B 62%,#0F6B56 100%)!important;
+  box-shadow:0 10px 28px rgba(21,132,107,0.42);
   animation:kzcta-glow 2.8s ease-in-out infinite;
 }
 .kzcta-arrow{
   display:flex;align-items:center;justify-content:center;flex-shrink:0;
   width:30px;height:30px;border-radius:50%;background:#fff;
 }
-.kzcta-arrow svg{width:14px;height:14px;stroke:#1E50D4;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.kzcta-arrow svg{width:14px;height:14px;stroke:#15846B;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 @keyframes kzcta-glow{
-  0%,100%{box-shadow:0 8px 22px rgba(30,80,212,0.34)}
-  50%{box-shadow:0 14px 36px rgba(30,80,212,0.56)}
+  0%,100%{box-shadow:0 8px 22px rgba(21,132,107,0.34)}
+  50%{box-shadow:0 14px 36px rgba(21,132,107,0.56)}
 }
 @media(prefers-reduced-motion:reduce){
   .kzop2__sticky .kzop2__btn--primary{animation:none}
@@ -1225,7 +1227,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 </style> <div class="kzop2"> <section class="kzop2__hero" data-section="hero" id="kgc-top"> <div class="kzop2__hero-grid"> <!-- Left --> <div class="kzhero__col"> <div class="kzop2__hero-badge">Постоплата по госконтракту · 400+ клиентов</div> <h1 class="kzhero__title">
         Деньги с&nbsp;казначейского счёта<br> <span style="color:var(--blue)">без задержек</span> </h1> <p class="kzhero__sub">
         Выполнили работы или поставили товары по госконтракту — берём на себя все документы и операции, чтобы деньги пришли на ваш расчётный счёт быстро и без возвратов. Договор на 1 месяц.
-      </p> <div class="kzhero__stats"> <div class="kzhero__stats-label"> <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"> <circle cx="10" cy="10" r="10" fill="#34D399"></circle> <path d="M5.6 10.3l2.9 2.9 6-6.5" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path> </svg> <span data-hv="statsMonthLabel">За апрель 2026</span> </div> <div class="kzhero__stats-row"> <div class="kzhero__stat"> <span class="kzhero__stat-num" data-hv="statsOperations">47</span> <span class="kzhero__stat-lbl">счетов</span> </div> <div class="kzhero__stat"> <span class="kzhero__stat-num" data-hv="statsReturns">0</span> <span class="kzhero__stat-lbl">возвратов</span> </div> <div class="kzhero__stat"> <span class="kzhero__stat-num">5&ndash;7</span> <span class="kzhero__stat-lbl">дн до денег</span> </div> </div> </div> <div class="kzhero__form-card"> <form class="kzhero__form" novalidate> <div class="kzhero__form-title">Оставьте заявку —<br class="kzhero__title-br"> подключим выплату</div> <div class="kzhero__fields"> <div class="kzhero__field kzhero__field--name"> <label class="kzhero__label" for="kzhero-name">Имя</label> <input class="kzhero__input" id="kzhero-name" name="name" type="text" autocomplete="given-name" maxlength="60" placeholder="Иван Иванов"> </div> <div class="kzhero__field"> <label class="kzhero__label" for="kzhero-phone">Телефон</label> <input class="kzhero__input kzhero__phone" id="kzhero-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="18" placeholder="+7 (___) ___-__-__" required> </div> </div> <input type="text" class="kzhero__hp" name="company_extra" tabindex="-1" autocomplete="off" aria-hidden="true"> <button class="kzop2__btn kzop2__btn--primary kzhero__submit" type="submit" disabled> <span class="kzhero__btn-desktop">Оставить заявку</span> <span class="kzhero__btn-mobile">Оставить заявку</span> <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M8 3l5 5-5 5"/></svg> </button> <p class="kzhero__microcopy">Перезвоним за 5 минут. Без спама. Согласие на ОПД.</p> <div class="kzop2__consent"> <input type="checkbox" id="kzhero-consent" required> <label for="kzhero-consent">
+      </p> <div class="kzhero__stats"> <div class="kzhero__stats-label"> <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"> <circle cx="10" cy="10" r="10" fill="#34D399"></circle> <path d="M5.6 10.3l2.9 2.9 6-6.5" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path> </svg> <span data-hv="statsMonthLabel">За апрель 2026</span> </div> <div class="kzhero__stats-row"> <div class="kzhero__stat"> <span class="kzhero__stat-num" data-hv="statsOperations">47</span> <span class="kzhero__stat-lbl">счетов</span> </div> <div class="kzhero__stat"> <span class="kzhero__stat-num" data-hv="statsReturns">0</span> <span class="kzhero__stat-lbl">возвратов</span> </div> <div class="kzhero__stat"> <span class="kzhero__stat-num">5&ndash;7</span> <span class="kzhero__stat-lbl">дн до денег</span> </div> </div> </div> <div class="kzhero__form-card"> <form class="kzhero__form" novalidate> <div class="kzhero__form-title">Оставьте заявку —<br class="kzhero__title-br"> подключим выплату</div> <div class="kzhero__fields"> <div class="kzhero__field kzhero__field--name"> <label class="kzhero__label" for="kzhero-name">Имя</label> <input class="kzhero__input" id="kzhero-name" name="name" type="text" autocomplete="given-name" maxlength="60" placeholder="Иван Иванов"> </div> <div class="kzhero__field"> <label class="kzhero__label" for="kzhero-phone">Телефон</label> <input class="kzhero__input kzhero__phone" id="kzhero-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="18" placeholder="+7 (___) ___-__-__" required> </div> </div> <input type="text" class="kzhero__hp" name="company_extra" tabindex="-1" autocomplete="off" aria-hidden="true"> <button class="kzop2__btn kzop2__btn--primary kzhero__submit" type="submit"> <span class="kzhero__btn-desktop">Оставить заявку</span> <span class="kzhero__btn-mobile">Оставить заявку</span> <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M8 3l5 5-5 5"/></svg> </button> <p class="kzhero__microcopy">Перезвоним за 5 минут. Без спама. Согласие на ОПД.</p> <div class="kzop2__consent"> <input type="checkbox" id="kzhero-consent" required> <label for="kzhero-consent">
               Я согласен на обработку персональных данных в соответствии с <a href="https://kazna-gov.ru/personal_data_policy">политикой в отношении обработки персональных данных</a> </label> </div> </form> <div class="kzhero__msg" role="status" aria-live="polite" hidden></div> </div> <p class="kzhero__phone-cta">
         Или позвоните: <a data-hv-href="phoneLink" href="tel:+74951084232" data-goal="hero_cta_click" data-cta="hero_phone" data-hv="phoneDisplay">+7 (495) 108-42-32</a> </p> </div> <!-- Right card --> <div class="kzop2__hero-card" style="position:relative"> <div class="kzop2__stat-badge">Договор на 1 месяц</div> <div class="kzop2__card-tag">Разовое сопровождение при постоплате</div> <div class="kzop2__card-price-row"> <div class="kzop2__card-price">49 000</div> <div class="kzop2__card-price-note">₽</div> </div> <div class="kzop2__card-period">разовый платёж · всё включено · договор 1 месяц</div> <div class="kzop2__card-divider"></div> <ul class="kzop2__card-includes"> <li>Открытие лицевого счёта в ТОФК (если нет)</li> <li>Сведения об операциях с целевыми средствами</li> <li>Платёжные документы по выполненным работам / товарам</li> <li>Проверка и подача закрывающих документов</li> <li>Выписки с лицевого счёта и отчётность для бухгалтера</li> </ul> <div class="kzop2__card-guarantee"> <svg viewBox="0 0 16 16"><path d="M8 1l1.8 3.6L14 5.5l-3 2.9.7 4.1L8 10.5l-3.7 1.9.7-4.1L2 5.5l4.2-0.9L8 1z"/></svg> <div><strong>Фиксированная цена:</strong> 49 000 ₽ за полный цикл — от открытия счёта до поступления денег</div> </div> </div> </div> </section> <!-- ═══ ДЛЯ КОГО ═══ --> <section class="kzop2__section kzop2__section--gray" data-section="forwho"> <div class="kzop2__wrap"> <div class="kzop2__section-header"> <span class="kzop2__eyebrow">Для кого</span> <h2 class="kzop2__h2">Когда нужна <span>наша помощь</span></h2> <p class="kzop2__lead">Четыре ситуации, когда разовое казначейское сопровождение — лучшее решение.</p> </div> <div class="kzop2__who-grid"> <div class="kzop2__who-card"> <div class="kzop2__who-icon"> <svg viewBox="0 0 22 22"><path d="M4 4h14v14H4zM8 4V2h6v2M8 11h6M8 15h4"/></svg> </div> <div class="kzop2__who-title">Сдали работы — ждёте деньги</div> <div class="kzop2__who-desc">Акты подписаны, контракт выполнен. Нужно провести платёжные документы через ТОФК и получить деньги на расчётный счёт без задержек.</div> </div> <div class="kzop2__who-card"> <div class="kzop2__who-icon"> <svg viewBox="0 0 22 22"><circle cx="11" cy="11" r="9"/><path d="M11 7v4l2.5 2.5"/></svg> </div> <div class="kzop2__who-title">Первый раз работаете с постоплатой</div> <div class="kzop2__who-desc">Опыта с казначейским счётом и ТОФК нет. Не знаете, какие документы нужны и в каком порядке их подавать — мы сделаем всё сами.</div> </div> <div class="kzop2__who-card"> <div class="kzop2__who-icon"> <svg viewBox="0 0 22 22"><path d="M11 2l2.4 4.8L19 7.9l-4 3.9.9 5.5L11 15l-4.9 2.3.9-5.5L3 7.9l5.6-1.1L11 2z"/></svg> </div> <div class="kzop2__who-title">Вернули платёж или запросили замечания</div> <div class="kzop2__who-desc">Казначейство отказало в проведении платежа или выдало замечания. Нужен специалист, чтобы быстро устранить причину и повторно подать документы.</div> </div> <div class="kzop2__who-card"> <div class="kzop2__who-icon"> <svg viewBox="0 0 22 22"><path d="M17 21v-2a4 4 0 00-4-4H9a4 4 0 00-4 4v2"/><circle cx="11" cy="7" r="4"/></svg> </div> <div class="kzop2__who-title">Бухгалтер не знает казначейской специфики</div> <div class="kzop2__who-desc">Штатный бухгалтер занят основным учётом и не работал с казначейским счётом. Казначейские операции — отдельная специализация, требующая опыта.</div> </div> </div> </div> </section> <!-- ═══ ЧТО ВХОДИТ ═══ --> <section class="kzop2__section" data-section="includes"> <div class="kzop2__wrap"> <div class="kzop2__section-header"> <span class="kzop2__eyebrow">Что входит в услугу</span> <h2 class="kzop2__h2">Полный цикл — <span>от открытия счёта до получения денег</span></h2> <p class="kzop2__lead">Берём на себя все шаги казначейского процесса — вы передаёте документы и ждёте поступления на расчётный счёт.</p> </div> <div class="kzop2__inc-grid"> <div class="kzop2__inc-card"> <span class="kzop2__inc-num">01</span> <div class="kzop2__inc-title">Открытие лицевого счёта</div> <div class="kzop2__inc-desc">Если казначейского счёта ещё нет — открываем лицевой счёт в ТОФК. Включено в стоимость, занимает 2 дня.</div> </div> <div class="kzop2__inc-card"> <span class="kzop2__inc-num">02</span> <div class="kzop2__inc-title">Сведения об операциях с целевыми средствами</div> <div class="kzop2__inc-desc">Формируем и подаём сведения об операциях с целевыми средствами в казначейство в установленном формате.</div> </div> <div class="kzop2__inc-card"> <span class="kzop2__inc-num">03</span> <div class="kzop2__inc-title">Платёжные документы</div> <div class="kzop2__inc-desc">Оформляем платёжные поручения по выполненным работам или поставленным товарам с правильными кодами и реквизитами.</div> </div> <div class="kzop2__inc-card"> <span class="kzop2__inc-num">04</span> <div class="kzop2__inc-title">Закрывающие документы</div> <div class="kzop2__inc-desc">Проверяем полный комплект первичных документов — акты, УПД, счета. Подаём в казначейство вместе с платёжными поручениями.</div> </div> <div class="kzop2__inc-card"> <span class="kzop2__inc-num">05</span> <div class="kzop2__inc-title">Отчётность для бухгалтера</div> <div class="kzop2__inc-desc">Готовим выписки и отчёты о движении средств по лицевому счёту — в удобном формате для бухгалтерского учёта.</div> </div> <div class="kzop2__inc-card"> <span class="kzop2__inc-num">06</span> <div class="kzop2__inc-title">Выписки с лицевого счёта</div> <div class="kzop2__inc-desc">Выдаём полный пакет выписок с лицевого счёта для закрытия контракта и архива бухгалтерских документов.</div> </div> </div> </div> </section> <!-- ═══ ЧТО ПОТРЕБУЕТСЯ ═══ --> <section class="kzop2__section kzop2__section--gray" data-section="docs"> <div class="kzop2__wrap"> <div class="kzop2__section-header"> <span class="kzop2__eyebrow">Ваш вклад</span> <h2 class="kzop2__h2">Что потребуется <span>от вас</span></h2> <p class="kzop2__lead">Минимум действий с вашей стороны. Всё остальное — наша работа.</p> </div> <div class="kzop2__docs-grid"> <div class="kzop2__doc-card"> <div class="kzop2__doc-icon"> <svg viewBox="0 0 20 20"><path d="M4 4h12v14H4zM7 4V2h6v2M8 9h4M8 12h4M8 15h2"/></svg> </div> <div class="kzop2__doc-title">Госконтракт</div> <div class="kzop2__doc-hint">Текст и реквизиты контракта — для понимания требований к операциям</div> </div> <div class="kzop2__doc-card"> <div class="kzop2__doc-icon"> <svg viewBox="0 0 20 20"><rect x="3" y="3" width="14" height="14" rx="2"/><path d="M7 7h6M7 10h6M7 13h4"/></svg> </div> <div class="kzop2__doc-title">Закрывающие документы</div> <div class="kzop2__doc-hint">Подписанные акты, УПД или товарные накладные, счёт-фактура</div> </div> <div class="kzop2__doc-card"> <div class="kzop2__doc-icon"> <svg viewBox="0 0 20 20"><path d="M10 2a4 4 0 100 8 4 4 0 000-8zM4 18a6 6 0 0112 0"/></svg> </div> <div class="kzop2__doc-title">Реквизиты р/с и компании</div> <div class="kzop2__doc-hint">Расчётный счёт и реквизиты организации — для платёжных поручений</div> </div> <div class="kzop2__doc-card"> <div class="kzop2__doc-icon"> <svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="8"/><path d="M10 6v4l3 2"/></svg> </div> <div class="kzop2__doc-title">Доступ к ГИИС ЭБ (если есть)</div> <div class="kzop2__doc-hint">Если доступа нет или счёт не открыт — настраиваем с нуля в первые 2 дня</div> </div> </div> <div class="kzop2__docs-note"> <svg viewBox="0 0 16 16"><path d="M8 1a7 7 0 100 14A7 7 0 008 1zm0 3v4m0 2v1"/></svg> <div>Передача документов занимает <strong>5–10 минут</strong>. После этого мы работаем самостоятельно — вы получаете подтверждение каждого шага.</div> </div> </div> </section> <!-- ═══ КАК РАБОТАЕТ ═══ --> <section class="kzop2__section" data-section="process"> <div class="kzop2__wrap"> <div class="kzop2__section-header" style="text-align:center"> <span class="kzop2__eyebrow">Как это работает</span> <h2 class="kzop2__h2" style="max-width:560px;margin-left:auto;margin-right:auto">
         От заявки до поступления денег — <span>за 1 месяц</span> </h2> </div> <div class="kzop2__process-track"> <div class="kzop2__step"> <div class="kzop2__step-num">1</div> <div class="kzop2__step-time">Сегодня · 5 минут</div> <div class="kzop2__step-title">Оставляете заявку</div> <div class="kzop2__step-desc">Форма или звонок. Рассказываете о контракте — уточняем объём и наличие счёта.</div> </div> <div class="kzop2__step"> <div class="kzop2__step-num">2</div> <div class="kzop2__step-time">В тот же день</div> <div class="kzop2__step-title">Открываем счёт</div> <div class="kzop2__step-desc">Если лицевого счёта нет — открываем в ТОФК. Если есть — сразу переходим к документам.</div> </div> <div class="kzop2__step"> <div class="kzop2__step-num">3</div> <div class="kzop2__step-time">1–3 дня</div> <div class="kzop2__step-title">Подаём сведения и документы</div> <div class="kzop2__step-desc">Формируем сведения об операциях с целевыми средствами, оформляем платёжные поручения с закрывашками.</div> </div> <div class="kzop2__step"> <div class="kzop2__step-num">4</div> <div class="kzop2__step-time">3–10 дней</div> <div class="kzop2__step-title">Проводим все операции</div> <div class="kzop2__step-desc">Проводим платежи, устраняем замечания если появляются. Взаимодействие с казначейством — полностью на нас.</div> </div> <div class="kzop2__step"> <div class="kzop2__step-num">5</div> <div class="kzop2__step-time">≤ 1 месяц</div> <div class="kzop2__step-title">Деньги на р/с ✓</div> <div class="kzop2__step-desc">Деньги поступают на расчётный счёт. Передаём выписки с лицевого счёта и отчётность для бухгалтера.</div> </div> </div> </div> </section> <!-- ═══ РИСКИ ═══ --> <section class="kzop2__section kzop2__section--risk" data-section="risks"> <div class="kzop2__wrap"> <div class="kzop2__section-header"> <span class="kzop2__eyebrow" style="color:var(--red)">Если делать самостоятельно</span> <h2 class="kzop2__h2">Что идёт не так <span style="color:var(--red)">без специалиста</span></h2> <p class="kzop2__lead">Казначейская постоплата — сложный процесс. Любая ошибка замораживает деньги на недели.</p> </div> <div class="kzop2__risks-grid"> <div class="kzop2__risk-card"> <div class="kzop2__risk-icon"><svg viewBox="0 0 20 20"><path d="M10 2L2 17h16L10 2z"/><path d="M10 8v5M10 14.5v.5"/></svg></div> <div class="kzop2__risk-title">Возврат платежа из-за ошибки в реквизитах</div> <div class="kzop2__risk-desc">Неверный код цели, ошибка в ОКТМО или КБК — платёж возвращается. Деньги зависают ещё на неделю-другую.</div> </div> <div class="kzop2__risk-card"> <div class="kzop2__risk-icon"><svg viewBox="0 0 20 20"><rect x="2" y="4" width="16" height="14" rx="2"/><path d="M6 4V2M14 4V2M2 9h16"/></svg></div> <div class="kzop2__risk-title">Задержка из-за неверного комплекта документов</div> <div class="kzop2__risk-desc">Казначейство запрашивает дополнительные документы или находит несоответствие — процесс затягивается на 2–4 недели.</div> </div> <div class="kzop2__risk-card"> <div class="kzop2__risk-icon"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="8"/><path d="M10 6v4l3 2"/></svg></div> <div class="kzop2__risk-title">Замечания по сведениям об операциях</div> <div class="kzop2__risk-desc">Сведения об операциях с целевыми средствами поданы с ошибками — казначейство их отклоняет. Нужно переделывать и подавать заново.</div> </div> <div class="kzop2__risk-card"> <div class="kzop2__risk-icon"><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16A8 8 0 0010 2z"/><path d="M7 13l3-3-3-3M13 13l-3-3 3-3" opacity=".5"/></svg></div> <div class="kzop2__risk-title">Ошибки в раздельном учёте → претензии ФНС</div> <div class="kzop2__risk-desc">Некорректная классификация расходов по контракту ведёт к налоговым нарушениям и претензиям инспекции.</div> </div> <div class="kzop2__risk-card"> <div class="kzop2__risk-icon"><svg viewBox="0 0 20 20"><path d="M10 2v9M6 6l4-4 4 4"/><rect x="3" y="15" width="14" height="3" rx="1"/></svg></div> <div class="kzop2__risk-title">Деньги зависают на казначейском счёте</div> <div class="kzop2__risk-desc">Без знания процедуры средства могут месяцами «висеть» на лицевом счёте — компания не может ими пользоваться.</div> </div> <div class="kzop2__risk-card"> <div class="kzop2__risk-icon"><svg viewBox="0 0 20 20"><path d="M4 4h12v12H4zM8 8h4M8 12h2"/></svg></div> <div class="kzop2__risk-title">Неустойка субподрядчику за просрочку оплаты</div> <div class="kzop2__risk-desc">Если из-за ошибок задержалась оплата субподрядчику — он вправе выставить неустойку по договору. Штраф часто превышает стоимость нашей услуги.</div> </div> </div> </div> </section> <!-- ═══ СРАВНЕНИЕ ═══ --> <section class="kzop2__section" data-section="compare"> <div class="kzop2__wrap"> <div class="kzop2__section-header"> <span class="kzop2__eyebrow">Сравнение</span> <h2 class="kzop2__h2">Самостоятельно <span>или с нами</span></h2> <p class="kzop2__lead">Одна ошибка в постоплате стоит дороже нашего гонорара.</p> </div> <div class="kzop2__cmp-wrap"> <table class="kzop2__cmp"> <thead> <tr> <th class="kzop2-col-param">Параметр</th> <th class="kzop2-col-self">Самостоятельно</th> <th class="kzop2-col-us">С нами</th> </tr> </thead> <tbody> <tr> <td>Ошибок в документах</td> <td class="kzop2-col-self"><span class="kzop2__cmp-badge kzop2__cmp-badge--bad">Высокий риск</span></td> <td class="kzop2-col-us"><span class="kzop2__cmp-badge kzop2__cmp-badge--good">0 — гарантия</span></td> </tr> <tr> <td>Срок поступления денег на р/с</td> <td class="kzop2-col-self"><span class="kzop2__cmp-badge kzop2__cmp-badge--bad">1–3+ месяца</span></td> <td class="kzop2-col-us"><span class="kzop2__cmp-badge kzop2__cmp-badge--good">≤ 1 месяц</span></td> </tr> <tr> <td>Время на казначейство</td> <td class="kzop2-col-self">Недели разбирательств</td> <td class="kzop2-col-us">Только передача документов</td> </tr> <tr> <td>Возвраты платежей</td> <td class="kzop2-col-self">Часто при первом опыте</td> <td class="kzop2-col-us">Не допускаем — проверяем заранее</td> </tr> <tr> <td>Взаимодействие с ТОФК</td> <td class="kzop2-col-self">Самостоятельно без опыта</td> <td class="kzop2-col-us">Берём на себя полностью</td> </tr> <tr> <td>Стоимость одной ошибки</td> <td class="kzop2-col-self"><span class="kzop2__cmp-badge kzop2__cmp-badge--bad">Штраф + задержка</span></td> <td class="kzop2-col-us"><span class="kzop2__cmp-badge kzop2__cmp-badge--good">0 ₽</span></td> </tr> <tr> <td>Отчётность для бухгалтера</td> <td class="kzop2-col-self">Разбираетесь сами</td> <td class="kzop2-col-us">Готовые выписки и отчёты</td> </tr> </tbody> </table> </div> </div> </section> <!-- ═══ MID CTA ═══ --> <section class="kzop2__midcta" data-section="midcta"> <div class="kzop2__midcta-center"> <div class="kzop2__midcta-label">Готовы начать?</div> <div class="kzop2__midcta-title">Выведем деньги на расчётный счёт <span>быстро</span></div> <div class="kzop2__midcta-sub">Начнём работу в день обращения. Договор на 1 месяц — фиксированная цена 49 000 ₽.</div> <div class="kzop2__midcta-form"> <div class="kzop2__midcta-input-row"> <input type="tel" class="kzop2__midcta-tel kzop2__input-phone" placeholder="+7 (___) ___-__-__" maxlength="18" autocomplete="tel" data-goal="midcta_phone_focus"> <button class="kzop2__btn kzop2__btn--white" id="kzop2-mid-submit" style="flex-shrink:0">
@@ -1278,6 +1280,17 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
   hero.querySelectorAll('[data-hv-href="phoneLink"]').forEach(function (n) {
     n.setAttribute("href", KZ_HERO.phoneLink);
   });
+
+  /* Склонение метки под текущее число */
+  (function () {
+    var n = parseInt(KZ_HERO.statsOperations, 10);
+    var num = hero.querySelector('[data-hv="statsOperations"]');
+    var lbl = num && num.nextElementSibling;
+    if (!lbl || isNaN(n)) return;
+    var m10 = n % 10, m100 = n % 100;
+    lbl.textContent = (m10 === 1 && m100 !== 11) ? "счёт"
+      : (m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14)) ? "счёта" : "счетов";
+  })();
 
   /* ── Анимация счётчиков trust-полосы ── */
   (function () {
@@ -1345,11 +1358,15 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
   var hpEl      = form.querySelector(".kzhero__hp");
   var submitEl  = form.querySelector(".kzhero__submit");
   var msgEl     = hero.querySelector(".kzhero__msg");
+  if (consentEl) consentEl.addEventListener("change", function () {
+    var cw = this.closest(".kzop2__consent");
+    if (cw) cw.classList.remove("kzop2__consent--err");
+  });
   var formCard  = hero.querySelector(".kzhero__form-card");
 
   function refreshSubmit() {
     if (!form.classList.contains("kzhero--loading")) {
-      submitEl.disabled = !phoneValid(phoneEl.value);
+      submitEl.disabled = false;
     }
   }
 
@@ -1461,7 +1478,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 
   function setLoading(on) {
     form.classList.toggle("kzhero--loading", on);
-    submitEl.disabled = on || !phoneValid(phoneEl.value);
+    submitEl.disabled = on;
     var d = submitEl.querySelector(".kzhero__btn-desktop");
     var m = submitEl.querySelector(".kzhero__btn-mobile");
     if (on) {
@@ -1494,6 +1511,9 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
       return;
     }
     if (consentEl && !consentEl.checked) {
+      var cw = consentEl.closest(".kzop2__consent");
+      if (cw) cw.classList.add("kzop2__consent--err");
+      consentEl.focus();
       showMsg("err", "Подтвердите согласие на обработку персональных данных.");
       return;
     }
@@ -1723,13 +1743,13 @@ fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Ty
 <section class="kzop2__final" data-section="final_form" id="form"> <div class="kzop2__final-inner"> <div> <span class="kzop2__final-label">Оставьте заявку</span> <div class="kzop2__final-title">Выведите деньги на расчётный счёт <span>быстро</span></div> <p class="kzop2__final-sub">Подключимся в тот же день. Открытие счёта, документы, платежи — всё под ключ за 1 месяц.</p> <ul class="kzop2__final-points"> <li>Открытие казначейского счёта — входит в стоимость</li> <li>Платёжные документы с закрывающими — без доплат</li> <li>Устранение возвратов казначейства включено</li> <li>Фиксированная цена 49 000 ₽ — без сюрпризов</li> </ul> <div style="margin-top:32px"> <div class="kzop2-avail kzop2-avail--dark" id="kzop2-avail"> <span class="kzop2-avail__dot"></span> <span id="kzop2-avail-text">Принимаем заявки прямо сейчас</span> </div> </div> </div> <div> <div class="kzop2__form-card"> <div class="kzop2__form-card-title">Получить деньги на р/с</div> <div class="kzop2__form-card-sub">Расскажем о процессе и рассчитаем сроки под ваш контракт</div> <div class="kzop2__form-fields"> <div class="kzop2__field"> <label for="kzop2-name">Имя</label> <input type="text" id="kzop2-name" class="kzop2__input-name" placeholder="Иван Петров" autocomplete="name"> </div> <div class="kzop2__field"> <label for="kzop2-phone">Телефон</label> <input type="tel" id="kzop2-phone" class="kzop2__input-phone" placeholder="+7 (___) ___-__-__" maxlength="18" autocomplete="tel"> </div> </div> <input type="text" class="kzop2__hp" name="hp_final" tabindex="-1" autocomplete="off" aria-hidden="true"> <button class="kzop2__form-submit" id="kzop2-final-submit" data-goal="final_form_submit">
           Получить деньги на р/с
         </button> <div class="kzop2__consent" style="margin-top:14px"> <input type="checkbox" id="kzop2-final-consent" required> <label for="kzop2-final-consent">
-            Нажимая кнопку, я даю согласие на обработку персональных данных в соответствии с <a href="https://kazna-gov.ru/personal_data_policy" target="_blank" style="color:rgba(255,255,255,0.6);text-decoration:underline">политикой конфиденциальности</a> </label> </div> </div> </div> </div> </section> <!-- ═══ STICKY MOBILE CTA ═══ --> <div class="kzop2__sticky" id="kzop2-sticky"> <a href="#form" class="kzop2__btn kzop2__btn--primary" data-goal="sticky_cta_click">Получить деньги на р/с</a> <a href="tel:+74951084232" class="kzop2__btn kzop2__btn--ghost" data-goal="sticky_phone_click"> <svg viewBox="0 0 16 16"><path d="M5 2H3a1 1 0 00-1 1v1c0 6.075 4.925 11 11 11h1a1 1 0 001-1v-2l-4-1-1 1.5A9 9 0 014.5 5L6 4 5 2z"/></svg> </a> </div> <!-- ═══ SOCIAL PROOF ═══ --> <div id="kzop2-sp" aria-hidden="true"> <div class="kzop2-sp-av">М</div> <div class="kzop2-sp-body"> <div class="kzop2-sp-name"></div> <div class="kzop2-sp-act"></div> <div class="kzop2-sp-time"></div> </div> </div> <!-- ═══ SCROLL PROGRESS ═══ --> <div id="kzop2-progress" role="progressbar" aria-hidden="true"></div> <!-- ═══ SUCCESS MODAL ═══ --> <style>
+            Нажимая кнопку, я даю согласие на обработку персональных данных в соответствии с <a href="https://kazna-gov.ru/personal_data_policy" target="_blank" style="color:rgba(255,255,255,0.6);text-decoration:underline">политикой конфиденциальности</a> </label> </div> </div> </div> </div> </section> <!-- ═══ STICKY MOBILE CTA ═══ --> <div class="kzop2__sticky" id="kzop2-sticky"> <a href="#form" class="kzop2__btn kzop2__btn--primary" data-goal="sticky_cta_click">Получить деньги на р/с</a> <a href="tel:+74951084232" class="kzop2__btn kzop2__btn--ghost" data-goal="sticky_phone_click" aria-label="Позвонить +7 (495) 108-42-32" title="Позвонить"> <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.25c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 3.5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg> </a> </div> <!-- ═══ SOCIAL PROOF ═══ --> <div id="kzop2-sp" aria-hidden="true"> <div class="kzop2-sp-av">М</div> <div class="kzop2-sp-body"> <div class="kzop2-sp-name"></div> <div class="kzop2-sp-act"></div> <div class="kzop2-sp-time"></div> </div> </div> <!-- ═══ SCROLL PROGRESS ═══ --> <div id="kzop2-progress" role="progressbar" aria-hidden="true"></div> <!-- ═══ SUCCESS MODAL ═══ --> <style>
 .kzop2 .kzop2__hp{position:absolute!important;left:-9999px!important;top:auto!important;width:1px;height:1px;opacity:0;pointer-events:none}
 .kzop2__err-msg{font-size:13px;color:#dc2626;margin-top:10px;line-height:1.45;text-align:center;font-weight:500}
 .kzop2__success{
   position:fixed;inset:0;z-index:99999;display:none;
   align-items:center;justify-content:center;
-  background:rgba(12,27,51,0.55);
+  background:rgba(10,25,20,0.55);
   -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
   padding:20px;
   animation:kzop2-mfade .22s ease both;
@@ -1739,7 +1759,7 @@ fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Ty
   background:#fff;border-radius:20px;
   width:100%;max-width:440px;padding:40px 32px 28px;
   text-align:center;position:relative;
-  box-shadow:0 24px 64px rgba(12,27,51,0.28);
+  box-shadow:0 24px 64px rgba(10,25,20,0.28);
   font-family:var(--font, -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif);
   animation:kzop2-mpop .28s cubic-bezier(0.34,1.56,0.64,1) both;
 }
@@ -1752,19 +1772,19 @@ fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Ty
 }
 .kzop2__success-icon svg{width:32px;height:32px;color:#fff}
 .kzop2__success-title{
-  font-size:22px;font-weight:800;color:var(--text,#0D1424);
+  font-size:22px;font-weight:800;color:var(--text,#0F1714);
   letter-spacing:-0.02em;line-height:1.25;margin-bottom:10px;
 }
 .kzop2__success-sub{
   font-size:15px;color:#5a6480;line-height:1.55;margin-bottom:24px;
 }
 .kzop2__success-close{
-  background:var(--blue,#1E50D4);color:#fff;border:none;cursor:pointer;
+  background:var(--blue,#15846B);color:#fff;border:none;cursor:pointer;
   font-weight:700;font-size:15px;border-radius:12px;
   padding:14px 28px;min-width:160px;
   transition:background .2s ease,transform .2s ease,box-shadow .2s ease;
 }
-.kzop2__success-close:hover{background:var(--blue-h,#1641BC);transform:translateY(-1px);box-shadow:0 8px 18px rgba(30,80,212,0.28)}
+.kzop2__success-close:hover{background:var(--blue-h,#0F6B56);transform:translateY(-1px);box-shadow:0 8px 18px rgba(21,132,107,0.28)}
 .kzop2__success-x{
   position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:50%;
   border:none;background:rgba(13,20,36,0.06);color:#5a6480;cursor:pointer;
@@ -1772,7 +1792,7 @@ fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Ty
   font-size:20px;line-height:1;font-weight:400;
   transition:background .15s ease,color .15s ease;
 }
-.kzop2__success-x:hover{background:rgba(13,20,36,0.12);color:#0D1424}
+.kzop2__success-x:hover{background:rgba(13,20,36,0.12);color:#0F1714}
 @keyframes kzop2-mfade{from{opacity:0}to{opacity:1}}
 @keyframes kzop2-mpop{from{opacity:0;transform:scale(0.92) translateY(8px)}to{opacity:1;transform:scale(1) translateY(0)}}
 @media(prefers-reduced-motion:reduce){
@@ -2630,7 +2650,7 @@ fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Ty
         ctx.beginPath();
         ctx.arc(s.x * W, s.y * H, s.r, 0, Math.PI * 2);
         ctx.fillStyle = s.blue
-          ? 'rgba(110,165,255,' + a.toFixed(3) + ')'
+          ? 'rgba(84,214,175,' + a.toFixed(3) + ')'
           : 'rgba(215,230,255,' + a.toFixed(3) + ')';
         ctx.fill();
       });
@@ -2679,9 +2699,9 @@ fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Ty
         var isH  = (c.a === hovered || c.b === hovered);
         var al   = isH ? 0.78 : (hovered >= 0 ? 0.025 : 0.06 + dAvg * 0.26);
         var grad = ctx.createLinearGradient(ni.sx, ni.sy, nj.sx, nj.sy);
-        grad.addColorStop(0,   'rgba(91,138,255,' + al.toFixed(3) + ')');
-        grad.addColorStop(0.5, 'rgba(140,175,255,' + (al * 0.55).toFixed(3) + ')');
-        grad.addColorStop(1,   'rgba(91,138,255,' + al.toFixed(3) + ')');
+        grad.addColorStop(0,   'rgba(43,200,154,' + al.toFixed(3) + ')');
+        grad.addColorStop(0.5, 'rgba(120,235,195,' + (al * 0.55).toFixed(3) + ')');
+        grad.addColorStop(1,   'rgba(43,200,154,' + al.toFixed(3) + ')');
         ctx.beginPath();
         ctx.moveTo(ni.sx, ni.sy);
         ctx.lineTo(nj.sx, nj.sy);

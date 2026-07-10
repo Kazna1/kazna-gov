@@ -165,26 +165,26 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 --> <meta charset="UTF-8"> <!-- КАЗНА · Открытие казначейского счёта · v2 · kzop2__ namespace --> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"> <style>
 /* ─── DESIGN TOKENS ─── */
 :root{
-  --bg:#F7F9FE;
+  --bg:#F6FAF8;
   --bg-w:#FFFFFF;
-  --bg-s:#EEF2FA;
-  --bg-dark:#0C1B33;
-  --bg-dark2:#091526;
+  --bg-s:#EBF4F0;
+  --bg-dark:#0d1f1a;
+  --bg-dark2:#0a1612;
   --bg-risk:#FFF5F5;
 
-  --text:#0D1424;
+  --text:#0F1714;
   --t2:#374151;
   --t3:#6B7280;
   --t-inv:#FFFFFF;
   --t-inv2:rgba(255,255,255,0.65);
 
-  --blue:#1E50D4;
-  --blue-h:#1641BC;
-  --blue-bg:#EAF1FF;
-  --blue-br:#BAD0FF;
+  --blue:#15846B;
+  --blue-h:#0F6B56;
+  --blue-bg:#EAF7F2;
+  --blue-br:#BFE8D9;
 
-  --navy:#0C1B33;
-  --navy-l:#162544;
+  --navy:#10231D;
+  --navy-l:#18332B;
 
   --green:#059669;
   --green-bg:#ECFDF5;
@@ -209,7 +209,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   --sh-s:0 1px 3px rgba(0,0,0,0.06),0 1px 2px rgba(0,0,0,0.04);
   --sh:0 4px 20px rgba(0,0,0,0.06),0 2px 8px rgba(0,0,0,0.04);
   --sh-l:0 20px 60px rgba(0,0,0,0.08),0 8px 24px rgba(0,0,0,0.05);
-  --sh-blue:0 4px 20px rgba(30,80,212,0.18);
+  --sh-blue:0 4px 20px rgba(21,132,107,0.18);
 
   --tr:0.2s cubic-bezier(0.4,0,0.2,1);
   --font:'Manrope',-apple-system,sans-serif;
@@ -247,7 +247,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 .kzop2__btn--primary{background:var(--blue)!important;color:#fff!important}
 .kzop2__btn--primary:hover{background:var(--blue-h)!important;transform:translateY(-2px);box-shadow:var(--sh-blue)}
 .kzop2__btn--outline{background:transparent;color:var(--navy);border:1.5px solid var(--border2)}
-.kzop2__btn--outline:hover{border-color:var(--navy);background:rgba(12,27,51,0.04);transform:translateY(-1px)}
+.kzop2__btn--outline:hover{border-color:var(--navy);background:rgba(10,25,20,0.04);transform:translateY(-1px)}
 .kzop2__btn--white{background:#fff;color:var(--navy)}
 .kzop2__btn--white:hover{background:#F3F1EE;transform:translateY(-2px)}
 .kzop2__btn--ghost{background:rgba(255,255,255,0.12);color:#fff;border:1px solid rgba(255,255,255,0.2)}
@@ -265,8 +265,8 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 /* ─── HERO ─── */
 .kzop2__hero{
   background:
-    radial-gradient(ellipse 900px 700px at 105% -5%, rgba(30,80,212,0.22) 0%, rgba(91,138,255,0.08) 45%, transparent 65%),
-    radial-gradient(ellipse 500px 400px at -6% 110%, rgba(30,80,212,0.13) 0%, transparent 65%),
+    radial-gradient(ellipse 900px 700px at 105% -5%, rgba(21,132,107,0.22) 0%, rgba(43,200,154,0.08) 45%, transparent 65%),
+    radial-gradient(ellipse 500px 400px at -6% 110%, rgba(21,132,107,0.13) 0%, transparent 65%),
     var(--bg-w);
   padding:calc(var(--hdr) + 16px) 0 64px;
   min-height:calc(100vh - var(--hdr));
@@ -277,7 +277,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 .kzop2__hero::before{
   content:'';position:absolute;
   top:0;left:0;right:0;height:3px;
-  background:linear-gradient(90deg,transparent 0%,var(--blue) 18%,rgba(91,138,255,0.55) 60%,transparent 100%);
+  background:linear-gradient(90deg,transparent 0%,var(--blue) 18%,rgba(43,200,154,0.55) 60%,transparent 100%);
   pointer-events:none;z-index:2;
 }
 /* глубокий синий orb справа-сверху */
@@ -285,7 +285,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   content:'';position:absolute;
   top:-200px;right:-180px;
   width:900px;height:900px;border-radius:50%;
-  background:radial-gradient(ellipse at 50% 40%, rgba(91,138,255,0.14) 0%, rgba(30,80,212,0.07) 45%, transparent 68%);
+  background:radial-gradient(ellipse at 50% 40%, rgba(43,200,154,0.14) 0%, rgba(21,132,107,0.07) 45%, transparent 68%);
   pointer-events:none;z-index:0;
 }
 .kzop2__hero-grid{
@@ -346,15 +346,15 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   border:1.5px solid transparent;
   background-image:
     linear-gradient(var(--bg-w), var(--bg-w)),
-    linear-gradient(145deg, rgba(30,80,212,0.55) 0%, rgba(91,138,255,0.25) 50%, rgba(30,80,212,0.06) 100%);
+    linear-gradient(145deg, rgba(21,132,107,0.55) 0%, rgba(43,200,154,0.25) 50%, rgba(21,132,107,0.06) 100%);
   background-origin:border-box;
   background-clip:padding-box, border-box;
   background-color:var(--bg-w);
   box-shadow:
-    0 0 0 12px rgba(30,80,212,0.05),
-    0 0 0 32px rgba(30,80,212,0.025),
-    0 24px 64px rgba(30,80,212,0.16),
-    0 8px 24px rgba(30,80,212,0.10);
+    0 0 0 12px rgba(21,132,107,0.05),
+    0 0 0 32px rgba(21,132,107,0.025),
+    0 24px 64px rgba(21,132,107,0.16),
+    0 8px 24px rgba(21,132,107,0.10);
 }
 .kzop2__card-tag{
   font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;
@@ -392,7 +392,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   display:flex;align-items:flex-start;gap:10px;
   padding:14px;border-radius:10px;
   background:var(--blue-bg);border:1px solid var(--blue-br);
-  font-size:12.5px;color:#1e40af;line-height:1.45;
+  font-size:12.5px;color:#0F6B56;line-height:1.45;
   margin-top:16px;
 }
 .kzop2__card-guarantee svg{width:16px;height:16px;flex-shrink:0;color:var(--blue);stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;margin-top:1px}
@@ -408,8 +408,8 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   transition:box-shadow 0.3s cubic-bezier(0.4,0,0.2,1),transform 0.3s cubic-bezier(0.4,0,0.2,1),border-color 0.3s cubic-bezier(0.4,0,0.2,1);
 }
 .kzop2__who-card:hover{
-  border-color:rgba(30,80,212,0.3);
-  box-shadow:0 8px 32px rgba(30,80,212,0.09),0 2px 8px rgba(30,80,212,0.06);
+  border-color:rgba(21,132,107,0.3);
+  box-shadow:0 8px 32px rgba(21,132,107,0.09),0 2px 8px rgba(21,132,107,0.06);
   transform:translateY(-3px);
 }
 .kzop2__who-icon{
@@ -432,8 +432,8 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   transition:box-shadow 0.3s cubic-bezier(0.4,0,0.2,1),transform 0.3s cubic-bezier(0.4,0,0.2,1),border-color 0.3s cubic-bezier(0.4,0,0.2,1);
 }
 .kzop2__inc-card:hover{
-  border-color:rgba(30,80,212,0.25);
-  box-shadow:0 8px 28px rgba(30,80,212,0.08),0 2px 8px rgba(30,80,212,0.05);
+  border-color:rgba(21,132,107,0.25);
+  box-shadow:0 8px 28px rgba(21,132,107,0.08),0 2px 8px rgba(21,132,107,0.05);
   transform:translateY(-2px);
 }
 .kzop2__inc-num{
@@ -458,7 +458,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   content:'';position:absolute;
   top:28px;left:calc(20% / 2);right:calc(20% / 2);
   height:2px;
-  background:linear-gradient(90deg,var(--blue) 0%,rgba(30,80,212,0.4) 100%);
+  background:linear-gradient(90deg,var(--blue) 0%,rgba(21,132,107,0.4) 100%);
   z-index:0;
   transform-origin:left center;
   transform:scaleX(0);
@@ -477,7 +477,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   font-size:18px;font-weight:800;
   display:flex;align-items:center;justify-content:center;
   margin-bottom:20px;flex-shrink:0;
-  box-shadow:0 4px 16px rgba(12,27,51,0.2);
+  box-shadow:0 4px 16px rgba(10,25,20,0.2);
 }
 .kzop2__step:last-child .kzop2__step-num{background:var(--green)}
 .kzop2__step-time{
@@ -528,7 +528,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   content:'';position:absolute;
   top:-150px;right:-120px;
   width:640px;height:640px;border-radius:50%;
-  background:radial-gradient(ellipse at center, rgba(30,80,212,0.28) 0%, transparent 65%);
+  background:radial-gradient(ellipse at center, rgba(21,132,107,0.28) 0%, transparent 65%);
   pointer-events:none;z-index:0;
 }
 .kzop2__midcta-center{
@@ -539,7 +539,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 .kzop2__midcta-label{font-size:11px;font-weight:600;letter-spacing:0.09em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:14px}
 .kzop2__midcta-sub{font-size:15px;color:rgba(255,255,255,0.5);margin-top:10px;line-height:1.5}
 .kzop2__midcta-title{font-size:clamp(24px,3vw,38px);font-weight:800;color:#fff;letter-spacing:-0.025em;line-height:1.1}
-.kzop2__midcta-title span{color:#6fa3f7}
+.kzop2__midcta-title span{color:#5af0c0}
 .kzop2__midcta-btns{display:flex;align-items:center;gap:12px;flex-wrap:wrap;flex-shrink:0}
 
 /* ─── TRUST ─── */
@@ -593,7 +593,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   overflow:hidden;background:var(--bg-w);
   transition:border-color var(--tr),box-shadow var(--tr);
 }
-.kzop2__faq-item.open{border-color:var(--blue-br);box-shadow:0 0 0 3px rgba(30,80,212,0.06)}
+.kzop2__faq-item.open{border-color:var(--blue-br);box-shadow:0 0 0 3px rgba(21,132,107,0.06)}
 .kzop2__faq-q{
   width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;
   padding:20px 24px;background:none;border:none;cursor:pointer;
@@ -644,7 +644,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   content:'';position:absolute;
   bottom:-180px;left:-120px;
   width:700px;height:700px;border-radius:50%;
-  background:radial-gradient(ellipse at center, rgba(30,80,212,0.22) 0%, transparent 65%);
+  background:radial-gradient(ellipse at center, rgba(21,132,107,0.22) 0%, transparent 65%);
   pointer-events:none;z-index:0;
 }
 .kzop2__final-inner{
@@ -660,7 +660,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   font-size:clamp(28px,4vw,44px);font-weight:800;color:#fff;
   letter-spacing:-0.025em;line-height:1.1;margin-bottom:16px;
 }
-.kzop2__final-title span{color:#6fa3f7}
+.kzop2__final-title span{color:#5af0c0}
 .kzop2__final-sub{font-size:15px;color:rgba(255,255,255,0.6);line-height:1.6;max-width:400px;margin-bottom:36px}
 .kzop2__final-points{list-style:none;display:flex;flex-direction:column;gap:12px}
 .kzop2__final-points li{
@@ -697,7 +697,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   outline:none;transition:border-color var(--tr),background var(--tr);
 }
 .kzop2__field input::placeholder{color:rgba(255,255,255,0.3)}
-.kzop2__field input:focus{border-color:rgba(30,80,212,0.6);background:rgba(255,255,255,0.12)}
+.kzop2__field input:focus{border-color:rgba(21,132,107,0.6);background:rgba(255,255,255,0.12)}
 .kzop2__form-submit{
   width:100%;height:52px;border-radius:12px;
   background:var(--blue);color:#fff;border:none;
@@ -785,6 +785,8 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   font-size:11px;color:var(--t3);line-height:1.5;cursor:pointer;
 }
 .kzop2__consent a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.kzop2__consent--err label{color:var(--red)}
+.kzop2__consent--err input[type=checkbox]{outline:2px solid var(--red);outline-offset:2px}
 .kzop2__consent--dark label{color:rgba(255,255,255,0.32)}
 .kzop2__consent--dark a{color:rgba(255,255,255,0.5)}
 
@@ -1135,7 +1137,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 
 /* ─── 1. EYEBROW PILLS ─── */
 .kzop2__eyebrow{
-  background:rgba(30,80,212,0.08);
+  background:rgba(21,132,107,0.08);
   border-radius:100px;
   padding:5px 14px;
   display:inline-block;
@@ -1144,32 +1146,32 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 
 /* ─── 2. COMPARE TABLE: "С нами" — gradient column ─── */
 .kzop2__cmp th.kzop2-col-us{
-  background:linear-gradient(135deg,#1e4fd4 0%,#3B6AE8 100%);
+  background:linear-gradient(135deg,#15846b 0%,#1FA887 100%);
   position:relative;
 }
 .kzop2__cmp td.kzop2-col-us{
-  background:linear-gradient(180deg,rgba(30,80,212,0.07) 0%,rgba(30,80,212,0.04) 100%);
-  border-left:2px solid rgba(30,80,212,0.18);
-  border-right:2px solid rgba(30,80,212,0.18);
+  background:linear-gradient(180deg,rgba(21,132,107,0.07) 0%,rgba(21,132,107,0.04) 100%);
+  border-left:2px solid rgba(21,132,107,0.18);
+  border-right:2px solid rgba(21,132,107,0.18);
   font-weight:600;
 }
-.kzop2__cmp tbody tr:last-child td.kzop2-col-us{border-bottom:2px solid rgba(30,80,212,0.18)}
+.kzop2__cmp tbody tr:last-child td.kzop2-col-us{border-bottom:2px solid rgba(21,132,107,0.18)}
 
 /* ─── 3. INC-NUM: gradient badge вместо просто цифры ─── */
 .kzop2__inc-num{
   width:44px;height:44px;border-radius:12px;
-  background:linear-gradient(135deg,var(--blue) 0%,#5B8AFF 100%);
+  background:linear-gradient(135deg,var(--blue) 0%,#2BC89A 100%);
   color:#fff;font-size:13px;font-weight:800;
   display:flex;align-items:center;justify-content:center;
   letter-spacing:0.02em;margin-bottom:16px;
-  box-shadow:0 4px 12px rgba(30,80,212,0.22);
+  box-shadow:0 4px 12px rgba(21,132,107,0.22);
 }
 
 /* ─── 4. FORM INPUT FOCUS GLOW ─── */
 .kzop2__field input:focus{
-  border-color:rgba(30,80,212,0.5)!important;
+  border-color:rgba(21,132,107,0.5)!important;
   background:rgba(255,255,255,0.14)!important;
-  box-shadow:0 0 0 3px rgba(30,80,212,0.18)!important;
+  box-shadow:0 0 0 3px rgba(21,132,107,0.18)!important;
 }
 
 /* ─── 5. TRUST SECTION — стили перенесены в .kzop2__section--trust (wow pack) ─── */
@@ -1177,7 +1179,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 /* ─── 6. SCROLL PROGRESS BAR ─── */
 #kzop2-progress{
   position:fixed;top:0;left:0;right:0;height:3px;
-  background:linear-gradient(90deg,var(--blue) 0%,rgba(91,138,255,0.85) 100%);
+  background:linear-gradient(90deg,var(--blue) 0%,rgba(43,200,154,0.85) 100%);
   z-index:10001;transform-origin:left;transform:scaleX(0);
   transition:transform 0.08s linear;pointer-events:none;
 }
@@ -1185,22 +1187,22 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 /* ─── 7. GRADIENT TEXT на span в тёмных секциях ─── */
 .kzop2__midcta-title span,
 .kzop2__final-title span{
-  background:linear-gradient(135deg,#7ab3ff 0%,#b8d4ff 100%);
+  background:linear-gradient(135deg,#7de5c4 0%,#c6f2e3 100%);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  background-clip:text;color:#7ab3ff;
+  background-clip:text;color:#7de5c4;
 }
 
 /* ─── 8. PARALLAX ORB (JS-controlled) ─── */
 .kzop2__hero-orb{
   position:absolute;top:-200px;right:-180px;
   width:900px;height:900px;border-radius:50%;
-  background:radial-gradient(ellipse at 50% 40%,rgba(91,138,255,0.15) 0%,rgba(30,80,212,0.07) 45%,transparent 68%);
+  background:radial-gradient(ellipse at 50% 40%,rgba(43,200,154,0.15) 0%,rgba(21,132,107,0.07) 45%,transparent 68%);
   pointer-events:none;z-index:0;will-change:transform;
 }
 
 /* ─── GRADIENT TEXT: span в hero-title ─── */
 .kzop2__hero-title span{
-  background:linear-gradient(135deg,#2356D8 0%,#5B8AFF 100%);
+  background:linear-gradient(135deg,#128268 0%,#2BC89A 100%);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   background-clip:text;
@@ -1312,16 +1314,16 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 /* ─── TRUST SECTION: premium light gradient ─── */
 .kzop2__section--trust{
   background:linear-gradient(160deg,#EBF2FF 0%,#F7F9FE 40%,#EEF5FF 100%);
-  border-top:1px solid rgba(30,80,212,0.1);
-  border-bottom:1px solid rgba(30,80,212,0.1);
+  border-top:1px solid rgba(21,132,107,0.1);
+  border-bottom:1px solid rgba(21,132,107,0.1);
   padding:64px 0;
 }
 @media(max-width:560px){.kzop2__section--trust{padding:48px 0}}
 .kzop2__section--trust .kzop2__trust-grid{
   background:rgba(255,255,255,0.7);
-  border:1px solid rgba(30,80,212,0.12);
+  border:1px solid rgba(21,132,107,0.12);
   backdrop-filter:blur(8px);
-  box-shadow:0 8px 40px rgba(30,80,212,0.07),0 2px 12px rgba(30,80,212,0.05);
+  box-shadow:0 8px 40px rgba(21,132,107,0.07),0 2px 12px rgba(21,132,107,0.05);
 }
 .kzop2__section--trust .kzop2__trust-item{
   background:transparent;
@@ -1329,15 +1331,15 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 }
 .kzop2__section--trust .kzop2__trust-item:not(:last-child)::after{
   content:'';position:absolute;right:0;top:20%;bottom:20%;
-  width:1px;background:rgba(30,80,212,0.1);
+  width:1px;background:rgba(21,132,107,0.1);
 }
 .kzop2__section--trust .kzop2__trust-num{
   font-size:clamp(48px,5.5vw,68px);
-  background:linear-gradient(135deg,#0C1B33 0%,#1E50D4 100%);
+  background:linear-gradient(135deg,#10231D 0%,#15846B 100%);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
 }
 .kzop2__section--trust .kzop2__trust-num span{
-  background:linear-gradient(135deg,#1E50D4 0%,#5B8AFF 100%);
+  background:linear-gradient(135deg,#15846B 0%,#2BC89A 100%);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
 }
 .kzop2__section--trust .kzop2__trust-label{
@@ -1351,7 +1353,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 .kzop2-spotlight::before{
   content:'';
   position:absolute;inset:0;
-  background:radial-gradient(circle 260px at var(--sx,50%) var(--sy,50%),rgba(30,80,212,0.07) 0%,transparent 68%);
+  background:radial-gradient(circle 260px at var(--sx,50%) var(--sy,50%),rgba(21,132,107,0.07) 0%,transparent 68%);
   opacity:0;transition:opacity 0.35s ease;
   pointer-events:none;z-index:1;border-radius:inherit;
 }
@@ -1372,11 +1374,11 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 .kzop2__btn--primary{transition:background var(--tr),transform 0.25s cubic-bezier(0.23,1,0.32,1),box-shadow var(--tr)}
 
 /* ─── COSMOS SECTION ─── */
-.kzop2__section--cosmos{background:#060D1A;padding:56px 0 44px}
+.kzop2__section--cosmos{background:#071410;padding:56px 0 44px}
 @media(max-width:768px){.kzop2__section--cosmos{padding:40px 0 28px}}
-.kzop2__section--cosmos .kzop2__eyebrow{color:rgba(91,138,255,0.75)}
-.kzop2__section--cosmos .kzop2__h2{color:#E8F0FF}
-.kzop2__section--cosmos .kzop2__lead{color:rgba(180,200,240,0.5)}
+.kzop2__section--cosmos .kzop2__eyebrow{color:rgba(43,200,154,0.75)}
+.kzop2__section--cosmos .kzop2__h2{color:#E8F0EC}
+.kzop2__section--cosmos .kzop2__lead{color:rgba(190,215,205,0.55)}
 /* Hide HTML nodes in canvas 3D mode (desktop); show as pills on mobile */
 .kzop2__clients-web.kz-3d .kzop2__web-node{display:none}
 
@@ -1407,13 +1409,13 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   left:0;top:0;
   transform:translate(-50%,-50%);
   display:inline-flex;align-items:center;gap:7px;
-  background:rgba(6,15,42,0.80);
-  border:1px solid rgba(91,138,255,0.22);
+  background:rgba(8,26,20,0.80);
+  border:1px solid rgba(43,200,154,0.22);
   border-radius:100px;
   padding:6px 13px 6px 7px;
   cursor:default;z-index:2;
   white-space:nowrap;
-  font-size:12px;font-weight:600;color:rgba(215,230,255,0.9);
+  font-size:12px;font-weight:600;color:rgba(222,240,232,0.9);
   font-family:var(--font);
   backdrop-filter:blur(10px);
   transition:box-shadow 0.35s,border-color 0.35s,background 0.35s,transform 0.35s;
@@ -1426,13 +1428,13 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 /* Hover */
 .kzop2__web-node.kz-hover{
   background:rgba(8,22,72,0.97)!important;
-  border-color:rgba(91,138,255,0.85)!important;
-  box-shadow:0 0 0 3px rgba(91,138,255,0.12),0 0 24px rgba(91,138,255,0.55),0 0 52px rgba(91,138,255,0.2)!important;
+  border-color:rgba(43,200,154,0.85)!important;
+  box-shadow:0 0 0 3px rgba(43,200,154,0.12),0 0 24px rgba(43,200,154,0.55),0 0 52px rgba(43,200,154,0.2)!important;
   transform:translate(-50%,-50%) scale(1.35)!important;
   z-index:20!important;
 }
 .kzop2__web-node.kz-connected{
-  border-color:rgba(91,138,255,0.42)!important;
+  border-color:rgba(43,200,154,0.42)!important;
   background:rgba(7,18,58,0.9)!important;
 }
 /* Monogram badge */
@@ -1441,31 +1443,31 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   display:flex;align-items:center;justify-content:center;
   font-size:7.5px;font-weight:800;flex-shrink:0;
 }
-.kzop2__client-mono--a{background:rgba(30,80,212,0.42);color:#7ab3ff}
-.kzop2__client-mono--b{background:rgba(100,50,200,0.42);color:#c084fc}
+.kzop2__client-mono--a{background:rgba(21,132,107,0.42);color:#7de5c4}
+.kzop2__client-mono--b{background:rgba(31,168,135,0.32);color:#8ff0d2}
 .kzop2__client-mono--c{background:rgba(5,110,100,0.42);color:#2dd4bf}
 .kzop2__client-mono--d{background:rgba(130,75,5,0.42);color:#fbbf24}
-.kzop2__client-mono--e{background:rgba(40,55,90,0.55);color:#94a3b8}
+.kzop2__client-mono--e{background:rgba(70,90,82,0.5);color:#a8bdb4}
 @media(max-width:768px){
   .kzop2__web-node{
     position:static;transform:none!important;
     backdrop-filter:none;
     flex:0 0 auto;
     display:inline-flex;
-    background:rgba(10,22,55,0.72)!important;
-    border-color:rgba(91,138,255,0.28)!important;
+    background:rgba(12,32,25,0.72)!important;
+    border-color:rgba(43,200,154,0.28)!important;
   }
 }
 
 /* ─── FOOTER — prominent 314+ counter ─── */
 .kzop2__clients-footer{
   text-align:center;margin-top:28px;
-  font-size:14px;color:rgba(140,165,215,0.5);font-weight:500;letter-spacing:0.01em;
+  font-size:14px;color:rgba(160,190,178,0.55);font-weight:500;letter-spacing:0.01em;
 }
 .kzop2__clients-footer strong{
-  color:#5B8AFF;font-size:24px;font-weight:800;
+  color:#2BC89A;font-size:24px;font-weight:800;
   letter-spacing:-0.02em;margin-right:3px;
-  text-shadow:0 0 20px rgba(91,138,255,0.4);
+  text-shadow:0 0 20px rgba(43,200,154,0.4);
 }
 
 /* ─── TEAM / EXPERTS ─── */
@@ -1769,14 +1771,14 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
   background:linear-gradient(180deg,#ffffff 0%,#f3f7ff 100%);
   border:1px solid var(--blue-br);border-radius:16px;
   box-shadow:inset 0 1px 0 rgba(255,255,255,0.9),
-             0 12px 30px rgba(30,80,212,0.13),
-             0 3px 10px rgba(30,80,212,0.08);
+             0 12px 30px rgba(21,132,107,0.13),
+             0 3px 10px rgba(21,132,107,0.08);
 }
 .kzhero__stats-label{
   display:flex;align-items:center;justify-content:center;gap:7px;padding:0 16px;
-  background:linear-gradient(135deg,#1E50D4 0%,#3f72e6 100%);
+  background:linear-gradient(135deg,#15846B 0%,#1FA887 100%);
   border-radius:12px;font-size:12px;font-weight:700;color:#fff;white-space:nowrap;
-  box-shadow:0 5px 14px rgba(30,80,212,0.32);
+  box-shadow:0 5px 14px rgba(21,132,107,0.32);
 }
 .kzhero__stats-label svg{width:17px;height:17px;flex-shrink:0}
 .kzhero__stats-row{display:flex;align-items:stretch;flex:1}
@@ -1791,7 +1793,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 }
 .kzhero__stat-num{
   font-size:26px;font-weight:800;letter-spacing:-0.02em;line-height:1.05;
-  background:linear-gradient(135deg,#1E50D4 0%,#5b8aff 100%);
+  background:linear-gradient(135deg,#15846B 0%,#2BC89A 100%);
   -webkit-background-clip:text;background-clip:text;
   -webkit-text-fill-color:transparent;color:var(--blue);
 }
@@ -1814,11 +1816,11 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
   transition:border-color var(--tr),box-shadow var(--tr);
 }
 .kzhero__input::placeholder{color:#9CA3AF}
-.kzhero__input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(30,80,212,0.12)}
+.kzhero__input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(21,132,107,0.12)}
 .kzhero__input.kzhero--invalid{border-color:rgba(192,57,43,0.7)}
 
 .kzhero__submit{width:100%;height:46px;margin-top:10px;justify-content:center;font-size:15.5px}
-.kzhero__submit:disabled{background:#9DB4E8!important;cursor:not-allowed;transform:none!important;box-shadow:none!important}
+.kzhero__submit:disabled{background:#A9CFC2!important;cursor:not-allowed;transform:none!important;box-shadow:none!important}
 .kzhero__submit:disabled:hover{transform:none!important}
 .kzhero__btn-mobile{display:none}
 
@@ -1846,7 +1848,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 
 /* ── Sticky-док (мобильный) — 2026 ── */
 .kzop2__sticky{
-  background:linear-gradient(to top,var(--bg) 42%,rgba(247,249,254,0.82) 72%,rgba(247,249,254,0));
+  background:linear-gradient(to top,var(--bg) 42%,rgba(246,250,248,0.82) 72%,rgba(246,250,248,0));
   -webkit-backdrop-filter:none;backdrop-filter:none;
   padding:22px 16px calc(16px + env(safe-area-inset-bottom,0px));
   gap:12px;border-top:none;box-shadow:none;
@@ -1861,25 +1863,25 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 .kzop2__sticky .kzop2__btn--ghost:hover{
   flex:0 0 56px;width:56px;padding:0;border-radius:50%;
   background:#fff;color:#059669;border:1.5px solid #D6EFE3;
-  box-shadow:0 8px 20px rgba(12,27,51,0.14);
+  box-shadow:0 8px 20px rgba(10,25,20,0.14);
 }
 .kzop2__sticky .kzop2__btn--ghost svg{width:22px;height:22px}
 /* «Открыть счёт» — синяя пилюля-CTA с акцентом */
 .kzop2__sticky .kzop2__btn--primary,
 .kzop2__sticky .kzop2__btn--primary:hover{
   flex:1;border-radius:999px;gap:10px;
-  background:linear-gradient(135deg,#3B6BEA 0%,#1E50D4 62%,#1A45BE 100%)!important;
-  box-shadow:0 10px 28px rgba(30,80,212,0.42);
+  background:linear-gradient(135deg,#1FA887 0%,#15846B 62%,#0F6B56 100%)!important;
+  box-shadow:0 10px 28px rgba(21,132,107,0.42);
   animation:kzcta-glow 2.8s ease-in-out infinite;
 }
 .kzcta-arrow{
   display:flex;align-items:center;justify-content:center;flex-shrink:0;
   width:30px;height:30px;border-radius:50%;background:#fff;
 }
-.kzcta-arrow svg{width:14px;height:14px;stroke:#1E50D4;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.kzcta-arrow svg{width:14px;height:14px;stroke:#15846B;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 @keyframes kzcta-glow{
-  0%,100%{box-shadow:0 8px 22px rgba(30,80,212,0.34)}
-  50%{box-shadow:0 14px 36px rgba(30,80,212,0.56)}
+  0%,100%{box-shadow:0 8px 22px rgba(21,132,107,0.34)}
+  50%{box-shadow:0 14px 36px rgba(21,132,107,0.56)}
 }
 @media(prefers-reduced-motion:reduce){
   .kzop2__sticky .kzop2__btn--primary{animation:none}
@@ -1932,7 +1934,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 </style> <!-- TILDA: Zero Block · Название блока: "Герой — Открытие счёта" --> <section class="kzop2__hero" data-section="hero"> <div class="kzop2__hero-grid"> <!-- Left --> <div class="kzhero__col"> <div class="kzop2__hero-badge">Казначейское сопровождение с 2016 года · 400+ клиентов</div> <h1 class="kzhero__title">
         Открыть казначейский счёт<br> <span style="color:var(--blue)">за&nbsp;2&nbsp;рабочих&nbsp;дня</span> </h1> <p class="kzhero__sub">
         Подача документов в УФК, настройка ГИИС «Электронный бюджет» и открытие счёта — под ключ, без вашего участия.
-      </p> <div class="kzhero__stats"> <div class="kzhero__stats-label"> <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"> <circle cx="10" cy="10" r="10" fill="#34D399"></circle> <path d="M5.6 10.3l2.9 2.9 6-6.5" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path> </svg> <span data-hv="statsMonthLabel">За апрель 2026</span> </div> <div class="kzhero__stats-row"> <div class="kzhero__stat"> <span class="kzhero__stat-num" data-hv="statsAccounts">47</span> <span class="kzhero__stat-lbl">счетов</span> </div> <div class="kzhero__stat"> <span class="kzhero__stat-num" data-hv="statsReturns">0</span> <span class="kzhero__stat-lbl">возвратов</span> </div> <div class="kzhero__stat"> <span class="kzhero__stat-num" data-hv="statsAvgDays">2</span> <span class="kzhero__stat-lbl">дня</span> </div> </div> </div> <div class="kzhero__form-card"> <form class="kzhero__form" novalidate> <div class="kzhero__form-title">Оставьте заявку —<br class="kzhero__title-br"> откроем счёт за 2 дня</div> <div class="kzhero__fields"> <div class="kzhero__field kzhero__field--name"> <label class="kzhero__label" for="kzhero-name">Имя</label> <input class="kzhero__input" id="kzhero-name" name="name" type="text" autocomplete="given-name" maxlength="60" placeholder="Иван Иванов"> </div> <div class="kzhero__field"> <label class="kzhero__label" for="kzhero-phone">Телефон</label> <input class="kzhero__input kzhero__phone" id="kzhero-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="18" placeholder="+7 (___) ___-__-__" required> </div> </div> <input type="text" class="kzhero__hp" name="company_extra" tabindex="-1" autocomplete="off" aria-hidden="true"> <button class="kzop2__btn kzop2__btn--primary kzhero__submit" type="submit" disabled> <span class="kzhero__btn-desktop">Оставить заявку</span> <span class="kzhero__btn-mobile">Оставить заявку</span> <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M8 3l5 5-5 5"/></svg> </button> <p class="kzhero__microcopy">Перезвоним за 5 минут. Без спама. Согласие на ОПД.</p> <div class="kzop2__consent"> <input type="checkbox" id="kzhero-consent" required> <label for="kzhero-consent">
+      </p> <div class="kzhero__stats"> <div class="kzhero__stats-label"> <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"> <circle cx="10" cy="10" r="10" fill="#34D399"></circle> <path d="M5.6 10.3l2.9 2.9 6-6.5" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path> </svg> <span data-hv="statsMonthLabel">За апрель 2026</span> </div> <div class="kzhero__stats-row"> <div class="kzhero__stat"> <span class="kzhero__stat-num" data-hv="statsAccounts">47</span> <span class="kzhero__stat-lbl">счетов</span> </div> <div class="kzhero__stat"> <span class="kzhero__stat-num" data-hv="statsReturns">0</span> <span class="kzhero__stat-lbl">возвратов</span> </div> <div class="kzhero__stat"> <span class="kzhero__stat-num" data-hv="statsAvgDays">2</span> <span class="kzhero__stat-lbl">дня</span> </div> </div> </div> <div class="kzhero__form-card"> <form class="kzhero__form" novalidate> <div class="kzhero__form-title">Оставьте заявку —<br class="kzhero__title-br"> откроем счёт за 2 дня</div> <div class="kzhero__fields"> <div class="kzhero__field kzhero__field--name"> <label class="kzhero__label" for="kzhero-name">Имя</label> <input class="kzhero__input" id="kzhero-name" name="name" type="text" autocomplete="given-name" maxlength="60" placeholder="Иван Иванов"> </div> <div class="kzhero__field"> <label class="kzhero__label" for="kzhero-phone">Телефон</label> <input class="kzhero__input kzhero__phone" id="kzhero-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="18" placeholder="+7 (___) ___-__-__" required> </div> </div> <input type="text" class="kzhero__hp" name="company_extra" tabindex="-1" autocomplete="off" aria-hidden="true"> <button class="kzop2__btn kzop2__btn--primary kzhero__submit" type="submit"> <span class="kzhero__btn-desktop">Оставить заявку</span> <span class="kzhero__btn-mobile">Оставить заявку</span> <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M8 3l5 5-5 5"/></svg> </button> <p class="kzhero__microcopy">Перезвоним за 5 минут. Без спама. Согласие на ОПД.</p> <div class="kzop2__consent"> <input type="checkbox" id="kzhero-consent" required> <label for="kzhero-consent">
               Я согласен на обработку персональных данных в соответствии с <a href="https://kazna-gov.ru/personal_data_policy">политикой в отношении обработки персональных данных</a> </label> </div> </form> <div class="kzhero__msg" role="status" aria-live="polite" hidden></div> </div> <p class="kzhero__phone-cta">
         Или позвоните: <a data-hv-href="phoneLink" href="tel:+74951084232" data-goal="hero_cta_click" data-cta="hero_phone" data-hv="phoneDisplay">+7 (495) 108-42-32</a> </p> </div> <!-- Right card --> <div class="kzop2__hero-card" style="position:relative"> <div class="kzop2__stat-badge">97% с первого раза</div> <div class="kzop2__card-tag">Открытие казначейского счёта</div> <div class="kzop2__card-price-row"> <div class="kzop2__card-price">29 000</div> <div class="kzop2__card-price-note">₽</div> </div> <div class="kzop2__card-period">единоразово · результат за 2 рабочих дня</div> <div class="kzop2__card-divider"></div> <ul class="kzop2__card-includes"> <li>Анализ госконтракта и требований казначейства</li> <li>Полный пакет документов для казначейства</li> <li>Подача заявки и контроль статуса</li> <li>Устранение замечаний казначейства — без доплат</li> <li>Настройка операций, поддержка до первой выплаты</li> </ul> <div class="kzop2__card-guarantee"> <svg viewBox="0 0 16 16"><path d="M8 1l1.8 3.6L14 5.5l-3 2.9.7 4.1L8 10.5l-3.7 1.9.7-4.1L2 5.5l4.2-0.9L8 1z"/></svg> <div><strong>Гарантия результата:</strong> счёт открыт или возвращаем 100% оплаты</div> </div> </div> </div> </section> <!-- TILDA: Zero Block · Название блока: "Для кого — 4 ситуации" --> <section class="kzop2__section kzop2__section--gray" data-section="forwho"> <div class="kzop2__wrap"> <div class="kzop2__section-header"> <span class="kzop2__eyebrow">Для кого</span> <h2 class="kzop2__h2">Когда вам нужна <span>наша помощь</span></h2> <p class="kzop2__lead">Четыре ситуации — мы берём всё на себя и закрываем вопрос.</p> </div> <div class="kzop2__who-grid"> <div class="kzop2__who-card"> <div class="kzop2__who-icon"> <svg viewBox="0 0 22 22"><path d="M11 2l2.4 4.8L19 7.9l-4 3.9.9 5.5L11 15l-4.9 2.3.9-5.5L3 7.9l5.6-1.1L11 2z"/></svg> </div> <div class="kzop2__who-title">Выиграли контракт — не знаете, что делать дальше</div> <div class="kzop2__who-desc">Госконтракт требует казначейский счёт, а сроки поджимают. Разберёмся и откроем за 2 дня.</div> </div> <div class="kzop2__who-card"> <div class="kzop2__who-icon"> <svg viewBox="0 0 22 22"><rect x="3" y="5" width="16" height="14" rx="2"/><path d="M7 5V3M15 5V3M3 10h16"/></svg> </div> <div class="kzop2__who-title">Получили требование открыть казначейский счёт</div> <div class="kzop2__who-desc">Заказчик прислал официальное требование — срок исполнения ограничен. Действуем сразу.</div> </div> <div class="kzop2__who-card"> <div class="kzop2__who-icon"> <svg viewBox="0 0 22 22"><circle cx="11" cy="11" r="9"/><path d="M11 7v4l3 2"/></svg> </div> <div class="kzop2__who-title">Предыдущий счёт открыт с ошибками — возвраты</div> <div class="kzop2__who-desc">Неправильная карточка или неверные реквизиты приводят к возвратам. Переоткроем без ошибок.</div> </div> <div class="kzop2__who-card"> <div class="kzop2__who-icon"> <svg viewBox="0 0 22 22"><path d="M18 8h-1V6a6 6 0 00-12 0v2H4a2 2 0 00-2 2v8a2 2 0 002 2h14a2 2 0 002-2v-8a2 2 0 00-2-2zm-6 6a2 2 0 110-4 2 2 0 010 4z"/></svg> </div> <div class="kzop2__who-title">Нет времени самостоятельно разбираться с казначейством</div> <div class="kzop2__who-desc">Открытие казначейского счёта — не ваша специализация. Делегируйте и займитесь основным бизнесом.</div> </div> </div> </div> </section> <!-- TILDA: Zero Block · Название блока: "Что входит — 6 пунктов" --> <section class="kzop2__section" data-section="includes"> <div class="kzop2__wrap"> <div class="kzop2__section-header"> <span class="kzop2__eyebrow">Что входит в услугу</span> <h2 class="kzop2__h2">Всё под ключ — <span>от документов до первой операции</span></h2> <p class="kzop2__lead">Мы делаем всё сами — вы получаете готовый результат.</p> </div> <div class="kzop2__inc-grid"> <div class="kzop2__inc-card"> <span class="kzop2__inc-num">01</span> <div class="kzop2__inc-title">Анализ госконтракта</div> <div class="kzop2__inc-desc">Проверяем условия и требования к счёту: реквизиты, параметры раздельного учёта, ограничения по операциям.</div> </div> <div class="kzop2__inc-card"> <span class="kzop2__inc-num">02</span> <div class="kzop2__inc-title">Полный пакет документов</div> <div class="kzop2__inc-desc">Готовим все документы в полном соответствии с требованиями казначейства. Без замечаний.</div> </div> <div class="kzop2__inc-card"> <span class="kzop2__inc-num">03</span> <div class="kzop2__inc-title">Подача заявки в казначейство</div> <div class="kzop2__inc-desc">Передаём документы, сопровождаем процесс, устраняем замечания казначейства — без вашего участия.</div> </div> <div class="kzop2__inc-card"> <span class="kzop2__inc-num">04</span> <div class="kzop2__inc-title">Контроль открытия</div> <div class="kzop2__inc-desc">Следим за статусом заявки, оперативно реагируем на запросы казначейства. Вы в курсе каждого шага.</div> </div> <div class="kzop2__inc-card"> <span class="kzop2__inc-num">05</span> <div class="kzop2__inc-title">Настройка операций</div> <div class="kzop2__inc-desc">Настраиваем ГИИС Электронный бюджет для бесперебойной работы в программе с первого дня.</div> </div> <div class="kzop2__inc-card"> <span class="kzop2__inc-num">06</span> <div class="kzop2__inc-title">Поддержка после открытия</div> <div class="kzop2__inc-desc">Консультации по казначейским вопросам до проведения первой операции. Не бросаем после открытия.</div> </div> </div> </div> </section> <!-- TILDA: Zero Block · Название блока: "Что потребуется от вас" --> <section class="kzop2__section kzop2__section--gray" data-section="docs"> <div class="kzop2__wrap"> <div class="kzop2__section-header"> <span class="kzop2__eyebrow">Ваш вклад</span> <h2 class="kzop2__h2">Что потребуется <span>от вас</span></h2> <p class="kzop2__lead">Список минимальный. Всё остальное — наша работа.</p> </div> <div class="kzop2__docs-grid"> <div class="kzop2__doc-card"> <div class="kzop2__doc-icon"> <svg viewBox="0 0 20 20"><path d="M4 4h12v14H4zM7 4V2h6v2M8 9h4M8 12h4M8 15h2"/></svg> </div> <div class="kzop2__doc-title">Госконтракт</div> <div class="kzop2__doc-hint">Реквизиты и текст контракта — для анализа требований к счёту</div> </div> <div class="kzop2__doc-card"> <div class="kzop2__doc-icon"> <svg viewBox="0 0 20 20"><rect x="3" y="3" width="14" height="14" rx="2"/><path d="M7 7h6M7 10h6M7 13h4"/></svg> </div> <div class="kzop2__doc-title">ИНН организации</div> <div class="kzop2__doc-hint">Идентификационный номер налогоплательщика вашей компании</div> </div> <div class="kzop2__doc-card"> <div class="kzop2__doc-icon"> <svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="8"/><path d="M10 6v4l3 2"/></svg> </div> <div class="kzop2__doc-title">ОГРН организации</div> <div class="kzop2__doc-hint">Основной государственный регистрационный номер компании</div> </div> <div class="kzop2__doc-card"> <div class="kzop2__doc-icon"> <svg viewBox="0 0 20 20"><path d="M10 2a4 4 0 100 8 4 4 0 000-8zM4 18a6 6 0 0112 0"/></svg> </div> <div class="kzop2__doc-title">СНИЛС директора</div> <div class="kzop2__doc-hint">Страховой номер индивидуального лицевого счёта руководителя</div> </div> </div> <div class="kzop2__docs-note"> <svg viewBox="0 0 16 16"><path d="M8 1a7 7 0 100 14A7 7 0 008 1zm0 3v4m0 2v1"/></svg> <div>Всё что выше — занимает <strong>5 минут на пересылку</strong>. Документы, пакет для казначейства, переписку — берём на себя мы.</div> </div> </div> </section> <!-- TILDA: Zero Block · Название блока: "Как это работает — 6 шагов" --> <section class="kzop2__section" data-section="process"> <div class="kzop2__wrap"> <div class="kzop2__section-header" style="text-align:center"> <span class="kzop2__eyebrow">Как это работает</span> <h2 class="kzop2__h2" style="max-width:560px;margin-left:auto;margin-right:auto">
         От заявки до открытого счёта — <span>2 рабочих дня</span> </h2> </div> <div class="kzop2__process-track"> <div class="kzop2__step"> <div class="kzop2__step-num">1</div> <div class="kzop2__step-time">Сегодня · 5 минут</div> <div class="kzop2__step-title">Оставляете заявку</div> <div class="kzop2__step-desc">Форма или звонок. Коротко описываете ситуацию — мы уточняем детали.</div> </div> <div class="kzop2__step"> <div class="kzop2__step-num">2</div> <div class="kzop2__step-time">В тот же день</div> <div class="kzop2__step-title">Изучаем контракт</div> <div class="kzop2__step-desc">Анализируем госконтракт, определяем требования к счёту, запрашиваем недостающее.</div> </div> <div class="kzop2__step"> <div class="kzop2__step-num">3</div> <div class="kzop2__step-time">2 рабочих дня</div> <div class="kzop2__step-title">Включаем в сводный реестр Казначейства</div> <div class="kzop2__step-desc">Проходим обязательный этап — включение в сводный реестр неучастников бюджетного процесса. Без него счёт открыть нельзя.</div> </div> <div class="kzop2__step"> <div class="kzop2__step-num">4</div> <div class="kzop2__step-time">1–2 часа</div> <div class="kzop2__step-title">Настройка ГИИС Электронный бюджет</div> <div class="kzop2__step-desc">Настраиваем роли и параметры в программе для бесперебойного проведения платежей.</div> </div> <div class="kzop2__step"> <div class="kzop2__step-num">5</div> <div class="kzop2__step-time">2–4 часа</div> <div class="kzop2__step-title">Готовим и подаём документы</div> <div class="kzop2__step-desc">Полный пакет документов, подача в казначейство, сопровождение до подтверждения.</div> </div> <div class="kzop2__step"> <div class="kzop2__step-num">6</div> <div class="kzop2__step-time">2 рабочих дня</div> <div class="kzop2__step-title">Счёт открыт ✓</div> <div class="kzop2__step-desc">Получаете реквизиты, счёт настроен, раздельный учёт включён. Готово к работе.</div> </div> </div> </div> </section> <!-- TILDA: Zero Block · Название блока: "Риски без специалиста" --> <section class="kzop2__section kzop2__section--risk" data-section="risks"> <div class="kzop2__wrap"> <div class="kzop2__section-header"> <span class="kzop2__eyebrow" style="color:var(--red)">Если открывать счёт самостоятельно</span> <h2 class="kzop2__h2">Что идёт не так <span style="color:var(--red)">без специалиста</span></h2> <p class="kzop2__lead">Ошибки при самостоятельном открытии обходятся дорого.</p> </div> <div class="kzop2__risks-grid"> <div class="kzop2__risk-card"> <div class="kzop2__risk-icon"><svg viewBox="0 0 20 20"><path d="M10 2L2 17h16L10 2z"/><path d="M10 8v5M10 14.5v.5"/></svg></div> <div class="kzop2__risk-title">Казначейство возвращает документы с замечаниями</div> <div class="kzop2__risk-desc">Потеря 2–3 недели на переоформление. Срок исполнения контракта горит.</div> </div> <div class="kzop2__risk-card"> <div class="kzop2__risk-icon"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="8"/><path d="M10 6v4l3 2"/></svg></div> <div class="kzop2__risk-title">Неверная настройка ГИИС Электронный бюджет</div> <div class="kzop2__risk-desc">Неправильные параметры операций приводят к автоматическому возврату каждого платежа.</div> </div> <div class="kzop2__risk-card"> <div class="kzop2__risk-icon"><svg viewBox="0 0 20 20"><rect x="2" y="4" width="16" height="14" rx="2"/><path d="M6 4V2M14 4V2M2 9h16"/></svg></div> <div class="kzop2__risk-title">Штрафы за нарушение требований казначейства</div> <div class="kzop2__risk-desc">Некорректное оформление счёта — основание для санкций от контролирующих органов.</div> </div> <div class="kzop2__risk-card"> <div class="kzop2__risk-icon"><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16A8 8 0 0010 2z"/><path d="M7 13l3-3-3-3M13 13l-3-3 3-3" opacity=".5"/></svg></div> <div class="kzop2__risk-title">Заказчик не принимает счёт — срыв контракта</div> <div class="kzop2__risk-desc">Ошибка в реквизитах или типе счёта — заказчик вернёт всё на доработку. Риск потери контракта.</div> </div> <div class="kzop2__risk-card"> <div class="kzop2__risk-icon"><svg viewBox="0 0 20 20"><path d="M10 2v9M6 6l4-4 4 4"/><rect x="3" y="15" width="14" height="3" rx="1"/></svg></div> <div class="kzop2__risk-title">Потеря авансового платежа</div> <div class="kzop2__risk-desc">Аванс по госконтракту не пройдёт на счёт с ошибочными реквизитами — зависнет или вернётся.</div> </div> <div class="kzop2__risk-card"> <div class="kzop2__risk-icon"><svg viewBox="0 0 20 20"><path d="M4 4h12v12H4zM8 8h4M8 12h2"/></svg></div> <div class="kzop2__risk-title">Неправильный раздельный учёт — налоговые риски</div> <div class="kzop2__risk-desc">Без правильной настройки раздельного учёта — налоговые нарушения и претензии ФНС.</div> </div> </div> </div> </section> <!-- ═══════════════════════════════════════
@@ -2044,6 +2046,17 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
     n.setAttribute("href", KZ_HERO.phoneLink);
   });
 
+  /* Склонение метки под текущее число */
+  (function () {
+    var n = parseInt(KZ_HERO.statsAccounts, 10);
+    var num = hero.querySelector('[data-hv="statsAccounts"]');
+    var lbl = num && num.nextElementSibling;
+    if (!lbl || isNaN(n)) return;
+    var m10 = n % 10, m100 = n % 100;
+    lbl.textContent = (m10 === 1 && m100 !== 11) ? "счёт"
+      : (m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14)) ? "счёта" : "счетов";
+  })();
+
   /* ── Анимация счётчиков trust-полосы ── */
   (function () {
     var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -2110,11 +2123,15 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
   var hpEl      = form.querySelector(".kzhero__hp");
   var submitEl  = form.querySelector(".kzhero__submit");
   var msgEl     = hero.querySelector(".kzhero__msg");
+  if (consentEl) consentEl.addEventListener("change", function () {
+    var cw = this.closest(".kzop2__consent");
+    if (cw) cw.classList.remove("kzop2__consent--err");
+  });
   var formCard  = hero.querySelector(".kzhero__form-card");
 
   function refreshSubmit() {
     if (!form.classList.contains("kzhero--loading")) {
-      submitEl.disabled = !phoneValid(phoneEl.value);
+      submitEl.disabled = false;
     }
   }
 
@@ -2226,7 +2243,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 
   function setLoading(on) {
     form.classList.toggle("kzhero--loading", on);
-    submitEl.disabled = on || !phoneValid(phoneEl.value);
+    submitEl.disabled = on;
     var d = submitEl.querySelector(".kzhero__btn-desktop");
     var m = submitEl.querySelector(".kzhero__btn-mobile");
     if (on) {
@@ -2259,6 +2276,9 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
       return;
     }
     if (consentEl && !consentEl.checked) {
+      var cw = consentEl.closest(".kzop2__consent");
+      if (cw) cw.classList.add("kzop2__consent--err");
+      consentEl.focus();
       showMsg("err", "Подтвердите согласие на обработку персональных данных.");
       return;
     }
@@ -2365,7 +2385,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 .kzexit.kzexit--open{opacity:1;visibility:visible}
 .kzexit__overlay{
   position:absolute;inset:0;
-  background:rgba(12,27,51,0.55);
+  background:rgba(10,25,20,0.55);
   -webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);
 }
 .kzexit__card{
@@ -2373,7 +2393,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
   background:linear-gradient(180deg,#ffffff 0%,#f5f8ff 100%);
   border:1px solid var(--blue-br);border-radius:24px;
   padding:38px 38px 30px;text-align:center;
-  box-shadow:0 40px 90px rgba(12,27,51,0.4),inset 0 0 0 1px rgba(255,255,255,0.6);
+  box-shadow:0 40px 90px rgba(10,25,20,0.4),inset 0 0 0 1px rgba(255,255,255,0.6);
   transform:translateY(16px) scale(0.97);
   transition:transform .32s cubic-bezier(0.16,1,0.3,1);
 }
@@ -2381,15 +2401,15 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 .kzexit__close{
   position:absolute;top:14px;right:16px;
   width:34px;height:34px;border:none;border-radius:50%;
-  background:rgba(12,27,51,0.06);color:var(--t3);
+  background:rgba(10,25,20,0.06);color:var(--t3);
   font-size:22px;line-height:1;cursor:pointer;transition:background .15s;
 }
-.kzexit__close:hover{background:rgba(12,27,51,0.12)}
+.kzexit__close:hover{background:rgba(10,25,20,0.12)}
 .kzexit__icon{
   width:56px;height:56px;margin:0 auto 16px;border-radius:16px;
-  background:linear-gradient(135deg,#1E50D4,#3f72e6);
+  background:linear-gradient(135deg,#15846B,#1FA887);
   display:flex;align-items:center;justify-content:center;
-  box-shadow:0 10px 24px rgba(30,80,212,0.36);
+  box-shadow:0 10px 24px rgba(21,132,107,0.36);
 }
 .kzexit__icon svg{width:28px;height:28px}
 .kzexit__eyebrow{
@@ -2408,21 +2428,21 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
   background:#fff;border:1px solid var(--border2);border-radius:12px;outline:none;
   transition:border-color .15s,box-shadow .15s;
 }
-.kzexit__input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(30,80,212,0.14)}
+.kzexit__input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(21,132,107,0.14)}
 .kzexit__input.kzexit--invalid{border-color:rgba(192,57,43,0.7)}
 .kzexit__hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none}
 .kzexit__submit{
   margin-top:10px;width:100%;height:54px;
   display:flex;align-items:center;justify-content:center;gap:8px;
   font-family:inherit;font-size:16px;font-weight:700;color:#fff;
-  background:linear-gradient(135deg,#2E5FE0 0%,#1E50D4 100%);
+  background:linear-gradient(135deg,#1FA887 0%,#15846B 100%);
   border:none;border-radius:13px;cursor:pointer;
-  box-shadow:0 10px 24px rgba(30,80,212,0.34);
+  box-shadow:0 10px 24px rgba(21,132,107,0.34);
   transition:transform .12s,filter .15s;
 }
 .kzexit__submit:hover{filter:brightness(1.05);transform:translateY(-1px)}
 .kzexit__submit:active{transform:translateY(0)}
-.kzexit__submit:disabled{background:#9DB4E8;box-shadow:none;cursor:not-allowed;transform:none;filter:none}
+.kzexit__submit:disabled{background:#A9CFC2;box-shadow:none;cursor:not-allowed;transform:none;filter:none}
 .kzexit__submit svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .kzexit__consent{
   display:flex;align-items:flex-start;gap:8px;margin-top:14px;text-align:left;
@@ -2476,7 +2496,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
     return r;
   }
   function phoneValid(v) { var d = String(v || "").replace(/\D/g, ""); return d.length === 11 && d[0] === "7"; }
-  function refresh() { if (!form.classList.contains("kzexit--loading")) submitEl.disabled = !phoneValid(phoneEl.value); }
+  function refresh() { if (!form.classList.contains("kzexit--loading")) submitEl.disabled = false; }
 
   phoneEl.addEventListener("focus", function () { if (!this.value) this.value = "+7 "; });
   phoneEl.addEventListener("input", function () { this.value = fmtPhone(this.value); this.classList.remove("kzexit--invalid"); refresh(); });
@@ -2524,7 +2544,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
   /* ── отправка ── */
   function setLoading(on) {
     form.classList.toggle("kzexit--loading", on);
-    submitEl.disabled = on || !phoneValid(phoneEl.value);
+    submitEl.disabled = on;
     labelEl.textContent = on ? "Отправляем…" : "Получить расчёт";
   }
   function showMsg(kind, text) {
@@ -2614,6 +2634,9 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
       return;
     }
     if (consentEl && !consentEl.checked) {
+      var cw = consentEl.closest(".kzop2__consent");
+      if (cw) cw.classList.add("kzop2__consent--err");
+      consentEl.focus();
       showMsg("err", "Подтвердите согласие на обработку персональных данных.");
       return;
     }
@@ -2708,7 +2731,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
           Подробнее
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> </div> </a> <a href="/services/conduct" class="kzop2__svc-card" data-goal="service_card_click" data-service="conduct"> <div class="kzop2__svc-name">Полное сопровождение</div> <div class="kzop2__svc-desc">Берём на себя всё казначейское сопровождение. Безлимит операций, раздельный учёт.</div> <div class="kzop2__svc-price">69 000 ₽/мес</div> <div class="kzop2__svc-cta">
           Подробнее
-          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> </div> </a> </div> </div> </section> <!-- TILDA: Zero Block · Название блока: "Команда — Эксперты" --> <section class="kzop2__section" id="company" data-section="team"> <div class="kzop2__wrap"> <div class="kzop2__section-header"> <span class="kzop2__eyebrow">Команда</span> <h2 class="kzop2__h2">Эксперты, которые <span>открывают ваш счёт</span></h2> <p class="kzop2__lead">Не колл-центр и не агрегатор — живые специалисты с профильным опытом именно в казначейском сопровождении</p> </div> <div class="kzop2__team-grid"> <!-- Expert 1 --> <div class="kzop2__expert-card kzop2-fade"> <div class="kzop2__expert-avatar"> <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBAUEBAYFBQUGBgYHCQ4JCQgICRINDQoOFRIWFhUSFBQXGiEcFxgfGRQUHScdHyIjJSUlFhwpLCgkKyEkJST/2wBDAQYGBgkICREJCREkGBQYJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCT/wAARCADIAMgDASIAAhEBAxEB/8QAHAAAAAcBAQAAAAAAAAAAAAAAAAIDBAUGBwEI/8QARhAAAgEDAgQDBQUFBAYLAAAAAQIDAAQRBSEGEjFBE1FhByJxgZEUIzKxwRVCUqHRM2KSoiQ0Q3KCshclJlNkg6PC4eLw/8QAGQEAAgMBAAAAAAAAAAAAAAAAAQMAAgQF/8QAJhEAAgICAgEFAAMBAQAAAAAAAAECEQMhEjEEEyIyQVEUYcGh8P/aAAwDAQACEQMRAD8AnwlHCZNHCUYLVCBQuBijBd6Py10LQIE5aAXPalMVzFEgXFdOAK6BRHqECvIsalnYKqjJJOABVU1D2o8P2UxiikmuypwzQqOQf8RIz8qpPtL45bULl9J0+45bOHaV1O0zfqo7Dud6z6GZZ3AmdxFnGzdfpS3J/Q2MP03M+1PTCqmKyuXz/FIi5H1NSdhx7pF6VSTx7Zm/jUMv1XNYFbX9naMSIvFznAkOQMH86ltM1EiZOVhGWO3cfDftQcmiygmeiIJYbmMSwSpKh6MjZFKYrKtLkvbFlubZmjc4GVfGSemR0IPrmtD0DWo9ZtScqtxEeSaMfut/Q0yLtCpRokCKKaVIzRStQqJGk2G9LEUUiowiR3oEZFHIopqoaCAUVhmjnaiE0AiZFJsBSpojUCCLChRmFCoElAtd5aMB2o2KaLOBaAG1HwK6BUIExQ5aORXQKhBNhtVX9oGsvoXDN1PGcTS4hjPcFup+QzVrbpWa+2qQroVmnUNcHbz900JdFo9mN2ljc67fLbw5Ck+8ewHc1bLvgPwbIC2z4g6jzpHgGERXkrEAsQd60GMswBXf0rn5szjKkdPx8KlG39mYW3BGpM525QexqyaR7Nr6XBZ0Xz27VfIYhygmMCpa0PKp7fCjHPJl340EV/T/AGTz3Vq0X7QmLlcABs4qn6e2tcMcXMZneSeBvDl7eMvqPUd/OvQ3B08VtcB5VzzDG9Ur2vcPJpvF8GswoBDd27IwHTnBGPzNaopuNmTKop1ROW8iXMEc0Zykihh8CM0ZhTPh8EaJZBuoiAp8aaZBMrRCtLNtSRoBQRhRCKOetFYUCBCKIw2o5orEkVUgkfWisKORXMUCCOKFHIoVAknjFGHSh2owFOFgWjYoDau9ahAYzXOtdoYqECsKzL21vG2k2MQdTItxzMvcKVIz/KtObptWQcfxG51/UIJctLOI4YV7YCgg/UmlZZ8UP8fHzb/pETwrZJa2K3b+60w5iT0VamTxPpVscG4VMfvHoaSmsnOnpbwAFY1C46ZxVem0rUZHQSXipHzfeRrEMcvpkVgUVOWzpXKEaSND0fiG0vAAJI5Fx+JTmpK3v4/E2YYPasw0Cwmj1VI8YiLEZUcpx2z2zVi43s5rCS2W2D8k0akuXIAztnb4UeCTpDObcbZtHDU9rcmOEtyv+7k96ifazdAx2kU6nw15h8SO35VknBV1qtvMLm5g1GOKKUI0qSGTw99nIIzy9N87VsHFNumq6JpU97KCouyZmVc+6FOSB8q2RdKmYMicnr7CWEH2ayggAwEjA/lSxoxxk4zjPeisacYwhpNqOxpMmgEKaITRjXDvVSBQM0UijdKI8iopLHAFBkCkZop2oRzxTfgdW+BrrCgQTNCukYoVAkoKMKrFvx7pFxMkSSNzueVRjqas8fvAHzp4sNQx5UYLXcYqECAV3FGxmhigQIRtWc8dae0OvxX+CfEQcpHbA5WB+WK0mmOraXbapaPDcQJNgFo+YfhbGxFLyw5xodgy+nKzLbG7aOQAbD1qYmMRtzI/LgDeq6r+G4Xof1pa4vFaPwpCeXuPOubWzsxa47HekeHeX0bjCIWyh6c3wrUeINN0i70HTmvUAeWLkiONiR1GfPqaw6OwvlvGu4WmEUS55RnAHpWgy21/Po3gtqM0kZ8OaOFlAETAbeu+e/nT8cWk2hc5xbSeiy8JaWumTsIAfCIwx3Ix8KsWtmJ4rO0to82w5xIcbKvIfzOKrHBGpSHmSQ8rgcrA1ZLm4VIXgAJZyCT2x/WmwXJUhGWXB8hhnOSeporV00RmwN60nMOEUm21B5lUElgPiaRM8ZXm8RcHvmqthDOwpJpMVxp422DqT6Gm8r471RsI48Ve7AfGmuo6hZ2kP+lSqqPtkmozWr61s7KS4uHOEHQGqHqouNT0JtRM7NAGyI36gVRyKydEtYSTWvFKCxmeS0lJbBOVxVpuOI4RdG0tlM8w6hegqiWfGFqbK1t4IfDkjPKzgdBVl0/UbDAh05QbpxzeKejGhBorF/hZIHuHGZkC57eVCoQ8SXNipTULY5Bxzx7rQq1ovyRV77TBYXmnzBcFZlzj41sFqeaFD5qKzfiaFvAjlz+CVT/OtD0xuayhbPVBXT8rc7Mni6hQ82xVY17je10a4jtzDJLI5wFQZqfvJxFAxB3xWZ6tG0/FFjJgkK+TWNvaRqrRZhxtN30e9/wUYcbMBvpN7/gqZu9b0my5Unv7COTH4HmQH6Zqoa37WdF0tJFhjF7OM8qxDC59WP6ZplFScs+M4bm8itHs7mF5c8vOhAqQ1fiPTtCspr69uoo4oF5m94Fj6AdyfKvOvEftD1XiS9DzzeHEhOI4RyKo9O/zO5qGtJhdX9tC+fDkmRSCc7Fxmo4omzR7q4E13JKI2jEreKqHqoO+D6jOKF3bQ3zI8gkVlAxyMRv57U44rtHt9VuOQlcuZIzjqrbj9R8qi9P1k27FblckdD2rkuLt0dmM0krHVtHDaS8xbUlY7Zjl7fA9aulzp1xc6Gk2n6xd+4A/h3Kqx27BsZA9Kh9K12yQxOyROS3cCr2mp6M9iWgiBd2AEUYzk46ACnQTaJkyIT4aHiW8NyTiSbd/rU9LJzuWPeqdxLdalwzFpkloiRG5Mj8hAYYQqCh/x52qv6h7VdTsIZbl9Osp4o5Qpjjd1fl7nJzuD6Vrw4JKPI53kZlKXH8NMd8Cms0wUFj0AzVd4c9oOi8Txr4E/wBnnPWCchW+R6Gp4jmHMMMvmNxUlaFGfa3LretasYrFJoIPwljsDTrX4rrReGBFM8kpUfjQ+8KuTbHIUD4CmWqIk1nMkihhynY0hqtg4mcPqvj2Vu+nz3SXKDL5JI+dSLcfctikYHiXS7Mo71I8LaVFHBNNLGPvCQAR0FQt9w/b2+thtMUNJuXXtSrdWV2lYjZafe8TW91cXNw6RHJWMnaoTUrq5t9MfTZomSFWwrjYH407Oo6tYapMkUbBAcvEOmKeXnFulzWHJdWTnn65WokDTRTotOntJVYTBUO/oam7u/1I2VpFC8KAthXjOH+tQk7JfT+ErtHCze6PSlbPhe+aZnSWQrF72d9qEE/solRc9K+2jTL21a+jklC8xSU7/I0KgNJaztWlOqSMcghZQd6FXWy3ZqvEVmn7GnIG4Gan9EmB0i3kYgDkBJPammrRL+xZQ5A5oyN6rmta7HpHs7dmk5Z7iFreADqzsuPoBkmuplfJlMapEFxJ7XhPNNa6PbphGIW4mOecDuq/lk/KqDqPEGoam/i3d5LJnoM8oHyG1QTTAyKwwrL1HlSvNuy/SlcRwtLcq2CM5FMrudih3NKkYptOvMMVZRJY3jAVAQOvWipI0MysmzKcr8RuKOhYsVdSCBjIGxrko5SGoUQ9BSW0XFOi2t0hVZXiWSJz094ZKn0z9DVMu9MkgmeKaJkdThlYbg1M+yjVftPDqW77m1kaL/hO4/P+VX650Cz1mJRNswGElX8Sf1HpWaWDk7XZox5+KqXRlmlcPtfXCBQCA247itd4e0mz023hgtYC1xKQiAbsxPYVWG0GfQdSMdsqXTuRHzRyqEyexJOVPpjNa37P+Gjp8i3l8wmvGXHNjCxL/Co7ep6mjjwzbplsmWEVa2UD23cukarwlpGVLpZ3MshHm7qPzWsc1YeNf3VvkJGIi5Hr51ffblrv7S9r724/s9OtI7ZfU7s382/lWb3V3jU38Tf7qRWPfkx/OulFVBI5rbcmyrW0ktjdsmSpU5FWrT+Kb2N1ljvJreYDBaNsc2PMdDVVkkklk5pFKhByoD1x60aOUg0la0O7NR072nalEQt2sF2nmw5G+o/pVqsOKtP1krDHzxzsnOYmGdunWsOjuDtvVm4Fu3l4huCCfdiCD02/+aq8MZ6+wcnHZqRkSMciYUelZzr/ABHf6Bq86WzIc75arxPJ7+RWacfAjVifNaxQjvY6RHnjXVHupJz4fM45TtUnpd22rWLR3KIQvQgb1TOjGrTw22LeTPlWmEI30Ll0M4rmRNbt0jVeVHCgHuM1sdtZxMofkUGROVgB1rHtPTxeIYQO8o/OtthTCqAOgFVlFJ6Iiu6jwdbma3MMQMXN94vpQq1DIGKFJcUFRQTVdVkvNOkgFqwZQSDWb+0TUYk4Z0S2BVrpXeZk7hMcv5j+VWWTiS0eN/8ASVAKnPvdNqyHWdTbU7+WZiSCcID2UdBWp19FVf2R0gWQGWM53zS6MXCt2IxTCYNAxdclD+IeXrTiGcCNBn978xVohY85d96RuV5U5h23p2q5QNRHUMCp3B7U2tFbGbDbNJSplTS8aHk5W6qcGiuh5TS2gmgexa7zfXtix2kjWQD1Bx+oqY9pXGuq6TZCz0UvDAxMc94h94H+FfIf3vkPOqHwDM9txBEEdkLo6gqcZ2zj/LWucXaHp99Ak06fdXa80u+wGMk/rVarZYxTRlOo3UcchMnvZ985+delvYx7Rru3lXh7iCSWW3kP/V97Nu0Y/djkbuD+6x3GwNebuDjEutxxuwaBn5Sx2JXPX44r0tp/gQ310kVskccNvM2Co2wpwKfHcRMvkY1x9qBvvaXrdwGyTKR8OlVy+mUyFyMllKHArt6zjifVOd2dlkwWY5LHAyfrTS5fmyc9Ohop3ElbGa4QMCQyhSRncU3VSEzTkkukmerYWk5sRqFNLouFhfLDJqxcFzm1utUvB0hQt/KqxBvKB61O8N3sNmuqxXK5hn9x2BwVAOT/AEq2PtAn0aBwpcT3mh2sty5aVuYknqRzHFVn2jxiO9hf+JatHCtwlzYmQxiPnwY4x+6oGy/T86rPHM0OutElpKqyxHlYMay+RFY58n0xuFPIqXaKIDlqs2hty2zj0qPtuFr+QjEsP1qxadwhqwhKpNbjI70uHk40+x0vFy18SP4aj8fieAf381tqpgVk/D+izaDrq3eozR+Gmfw+danDqdnNbiVZkw3Tej6kZP2spLFOHyQsaFJCZG3VlI9DQqoDE9d1XwLYwpaRL4wILr1X4VVx950Jz59xUjxDfRSavdS20mbYyHw4sfhTt8NqaQGO4BZBgjcinwjSpgySUnaG5mIU86c3L+IDuPMU0d/BOEPNGSGU/pUo0KvjDDnH4T51D3a+C7Ly4UnPL5GmNUhaZYrKXxIFPlXJhjcUx0+flAFSD4ZfjTIu0B6Y2WQNOV/iXPzH/wCFGIGKZyuYLqNuwbB+dPmXr670EQdcOS/Z9bs3zjE6A/AnH61qvtK1FrTgG3Kth5fuAfj1/kDWQ2zmG4WQbFGDD5HNaH7Xbn/sroMA6ySySfID/wC1UaCjOeHJRHqMbMMrzbj0r0HwXrb6joWomY80ttavCXPVsDAJ+WK86aY5ScMOxrXvZ3qHPYcQoG2Fqr49c4P6UyPwKP5GdX0vPxBqrg/iuH3+dNGk94hjQSXxLy8kz+OZz/mNJS7k0I/Es+xeAAR56jOaZXb5ene8duKjpGLyYqS6BHsd6UiveIZNkX3m+A3pmt74meY8sbSGSQ+ZJyFp07Czsp5M+80fKPntUTAMlSRsPwr5etB6SQVvZonCOszNcJJKCoYhYV8l7nFT+raVZS3kk6xKyucll6AnqPjWf6PMWm8aeRhGuAQu23lWncParZyxAQKs4RCeVhsu3TFWyQWXHQMc3inZBGyhj/AuPnRhJJFsruPnVkk4hhCkjT4BTd+I4+UMNPgrk+z/AMjr3k/P+lbmAm/Hzt8TRHmdUEas4UdBk1PvxKO1hBSDcS/+Cgq64roo+T7REftS+iHuTyChT2bih+gsrehRtfpRr+jN0Ky5HusfMd6T/wBVmV16HYilY4+Rg46eVKz24kTK1tSMLZ24gLRCSPY9Qah9Qyd2BHNuPQ9xU1yM9nHyPyOmRmoTUJnYBJAMg9hV5rRWL2K20nKRipaOTnQVBQtgCpG3m2xQgwtHNQjLAkU6tn8W3R+uRvScpEimiaY+PFh/hPMKP2D6HI/HjzGKtftKuzcaTwsh3zYtKR8SB+lVUbSKfWpDi28+0w6FGD/Y6Yif52qSWiLshLQYbNaDwHdeHHr6g7nTGb6OprPYGwd6tXCl14MmrAnHPpdyOvkoP6VLqLBXuK7ZPlGf+Ik0aTdhmm1qSsC79qO75UkHrtRXQWL3EyeEig5OOgppFEzOCWAGe1dCqN80dHVBkAUe+wdCOtTKsMUKjGDk+tM425EHL+I0lezeLcZY5Ao0Dr4gZjsKVJ2y0VSJyGZLSySMbu25qz8GnkL3fjCBhspFUlpVkP4tqmtPvolRI/H8LByc9KbjnsrOOjQtTibwftXuEPsxT8OfP0zUYXzEKf6LqFvcWL2ssqzLKOX7s5PocVH3MLWrPA/4o2Kn5Vh8zCoS5R6Z0PDzOceEu0IucmkWPWju1IM2xrJZrEJG3oUhM+KFXQp9lbSecj/Ujj/fpX7UYFBnsrhE/iXDClIhAQA8ZYg5yGIP1FPHVZYeSJnUEEbuSR8D1rqRr9OU7I6XUI5IG+yuNtyCN6hrmVrglmAwB2p7JaSxyBriJ4ZAf7VBlW+OKbXKCNnAAAzgVWcm0GKEYjtTqOQjbNM12NKhsVRMsPRKcUnbzGG8Vuze6aKjZFJ3Hu4YdRvV7+wUS0j+9t50lf3BnliB/wBlEIx8Mk/rSX2lnCkDqKX0/SdQ1vUXttPtZLmXbKr227noPnRnJVbBGLbpDeM0+tb02n2hlJy9tLH/AIlxV2t/Y7cvoctw2pQrqaEEWwIMbb7rzDcN64x+dJx+yWXwydQ1mG3blPuxRF/5kikPycddmj+JlvoocbqkahjgVySMEAoc961Sx9jena7pbRafrTR6ih91rlB4Mvptup9d6o2v8BcT8KyyftLSbhIVblE0Y8SJvUMuf54pkMsZLRTJgnB1JEKrAjDdaSuJgEIFEd8GmsrFzgb0xypCUi1WvDkd/wAGrOy8twGknjbG+OmPgQtVGNlG9a9a2Z0/SbezcbxQopHxUE/nWVavp7aXqM1u2QA2Uz3U9DWLFN8pRZrzQSjGSBE6A5PSnEdxCWwckegzTSC1uZ2HhW8jr/EUOP6VO2WgS3C+/ceHjtyGtMU30Zm0P+HJ7KC/jnmvPACbjtvVy1ZheWq30bGUAhGlwPf8jt9Kq0fC086Isc0YkUe7IIxg+jY/OkYpbvSXltZ0NrcjHOmfurhCeu2xwfnvsc7U2cOUHBorCfCamiWd/WkGbrRRMJFDgFc9QeoPcUiX61x2mnTOymmrQlO29Ck5GHWhV0LZApMRSyXgQ7ZJqOD5o4mC9Bk10Ec0mo9SuOQgyBExuAOtJ+JBM4JSNlX93lGD8ajPEd+ppWL+6cUbAOZdNsZjzBGhPlGdvoakeHPZ1qPFl01vo+ZAmDJLKOWOIf3m/TrSehaNecQapBp1oMyytgt2Qd2Pwr0Xp9vp3APDBSGP7m2TJ7NPIdtz5k/QfCqydbLJW6Ri2oewviTTMc99orZGVH2oqzfIr/PpUDcezHirAxpysD3WZD+ta9FdXV14t7cv4lxO3PIew8lHkANgKUe65eU461zsnmyuorR0oeDCvc9mfaF7LJooI5NamGR0t4G/5n/p9a0LSoodGtvAsIYrUDfEagE+vqfU0R7vABDcvypnNfIvvM5O+OnSs08uTI/czVDDjx/FDq1W0a4nnnjmeV3LH70gZ+AxSa3lmLsiOBHl7AAyMPrnFduNRtrAiOTwmJGS2aTi4lspIzbWgUsf3YF/PFRQY2UyQiuNUto5M2l4yE8wwhyPlTey4n1JdQRY7C7UykRgyLyjc989Km9H1cTRkSz2scsYAPVj88U8EVxcvGXu7CYs3uqpK/mKbGKEuT/Cq8d+xm94mgi1GOS1tdXVOWVET7qdc+6Sw/extncYxWS3ns04k0KQT6pp7RWyuA86nnjX1JXOBXrmzulitYo5yC6+44X3hnyzSOpw2EtvKtxAjwSIVkVl2YEbgit6lKNHOljjJu+zKNF4MuuPpWXQdX0R7hYVL2880kcuwwSF5Mkeoqn8W8Farw3q0dpxJp629wM+BIwDRSA/wONj8Dg+lW3Q9Kt9P0yG+TUprNrG+mFvdb+JbFDlAnKpL5BIIJA23zmtW1TVdJ9rHs4S9kSGd0doZsLgc69SAegI5WHlnHan44xb9RLszZJSS9Nvo88Wls8aiMv91nDKQCAPhSF9pcFrepLGXtJCQySDeKT0OOlPJbZ9C1r9l3kjGFm5YZW6r5AnuD09KnTaW7QtFcMGjPUHtW2NSVoySbiyvre3OmSrO0IuLRzuUILRn0I/EPLO9L8QW9jrOmR3JxJGM4kUbqDsfp3FM9R059JkN3psoltnPJcQE7YP5VE2mqCC/Nszk2t6OXHYNjY/oat1plO9oa2DzfZmhud57eRoXb+LHQ/TFdL7mjySAsZFGDIq8/qyjlJ/kKa825rieQqyM7fju8aCytsaFIytsaFUQWyseNzbA7UojE7AZNWpvZVxL1/Zn/rJ/Wij2W8Tg+7p5X/zk/rW+mc6ytgt23paMNk52IqxR+zPiyMjlsl285k/rSn/AEa8VmIounwLnublfnUSZLRZ/ZtdW+ixR3fNiW42LHqB2Hwq38bay0+k2f3nPGLkFgO/unH61ntjwBx1GvLC1sgzsGmU4+gpxqWiccaFphe/hsbmzBxJhmblHYnGCPiKE42qLY5cZJlk0/iayeNkedFcfuk704/akMsOVIYA1jt3f3UsmRAqNn8SMx/Ol7PiPUbbCtG0i/DB+tYX434dBeX+o1N9QONn29aZ3M3jKT4wI7qNqrVvxrB4QWa1nQ46lM/lTW74qs2ORzf4SMUr0X+DfXj+loOkSXsC3CNI0TbKznCjFL6ZoF5CzGXVrSJeyrGSfmc1SoeKmuXislvhbwu2OYqcJS8t8YSS2tRzAH8JPL+VM9N1snrRe0XGSK5tbiQQ6hGT+8CuAfXrSR1W6jnWMalE80Z5hHGhJz61VbLjW30eYkCOZs/j/GfqRU/a+19wXZeQe5gAoNvpVljf4UWWLfZonCOoyvZTz3NxLDclwGA3Uj0B6VP3Wpq9pI7eIRy9HbINZG3tVkvYokSykJUAM6Q7nc+fxxQ17jfW73R2t9MsTEW/FNOwyB6KP1pig/sVPIr0SOjahBraX+g3Clbqx8SW3jiJPjs2QxwTuRkHA/rUvwXrJ4O4W1KOecRpJIgKE5w6qef57gH1U1iFvpWuXVzJL70kjPzNIezeealLrQNb1G3jE167xQryrEo5VT4AVtxe2KpdHOy+6Tf6L8a8YDV77xT75Q7Ln6Dau6txJN7qCYeJgBwW6EioO04fEGpwC8u0t4VfLSSLlU9cdz5DvUnDaafc30ktqZZLZDsJG96Q56tjqSfLAqLJwsnDkMoOJpoPtCNNzLImCBk5PamsV7JJa2oEDmSKQtz9Ns5Aq7afqsKwFJYUt4FOEUQjDnuM42PxqwnhPSNbsGvtKZJkRQ0qcgimgYkDcD3Sp/i6eeKp/I3TD6X2it2X2C4gVjaZbHvc7MCT36HFLfY7EdLGH5s5/wDdRNUurPhd1W4sHmiY48aSRgFbyIUbfrTePjbS3CiO2so/PI5v+ZhSZQTbdDo5JJJWPYrbTAcTaVBID3DMD+dCkDrFrdovO0BHXEcAP/LmhVHgi9/6XXkTWv8AEbFzxjsfpQIQ9FoUK6BjOiMf92x+VdCAf7Nl+IxQoVCC9vKsLg7Y7in07W11AACp81YbEd6FCg0FGb8WeyyKcyX+grGrH3ntM7H/AHPL4Vm1xZtaytDNC0UiHDKwwQaFCs84pbHwk2J+EhFIS2kbDJFChSqGDY6dGTzAYNGGnA+tChVgUGTTY+b3lFPLfTYeb+zX6UKFQskixafbQRRqAq7Cnk9wixcgGKFCoiSOWLItuwCgZpzHMsFmwCjJoUK1R6Mcuym61HNcLKgiRw3aqmdPvoG91G+RoUKVIvEew6zrttA1uTLJA5UsjrzA46fSpbQ+OtT0W5WaHTyTylWVWYB1IwQfQ0KFU4oNtE8/G19xRw5ecP3eiWccM0gkju3jZpoemyt0wcd6qU3Bkw3inDfEUKFWmwRGUnDV9A2fd+IoUKFBEs//2Q==" alt="Андрей В." style="width:72px;height:72px;display:block;object-fit:cover;object-position:center 15%"> </div> <div> <div class="kzop2__expert-name">Андрей В.</div> <div class="kzop2__expert-role">Руководитель направления</div> <p class="kzop2__expert-bio">15+ лет специализации на казначейском сопровождении по 44-ФЗ и 223-ФЗ. Лично сопровождал открытие более 200 казначейских счетов. Знает все актуальные требования казначейства и типичные причины возвратов.</p> <div class="kzop2__expert-stats"> <span class="kzop2__expert-stat">200+ счетов</span> <span class="kzop2__expert-stat">15+ лет опыта</span> <span class="kzop2__expert-stat">44-ФЗ / 223-ФЗ</span> </div> </div> </div> <!-- Expert 2 --> <div class="kzop2__expert-card kzop2-fade" style="--fd:1"> <div class="kzop2__expert-avatar"> <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBAUEBAYFBQUGBgYHCQ4JCQgICRINDQoOFRIWFhUSFBQXGiEcFxgfGRQUHScdHyIjJSUlFhwpLCgkKyEkJST/2wBDAQYGBgkICREJCREkGBQYJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCT/wAARCADIAMgDASIAAhEBAxEB/8QAHAAAAAcBAQAAAAAAAAAAAAAAAAIDBAUGBwEI/8QARxAAAQMCBAMFAwgIAwcFAAAAAQACAwQRBQYSIQcxQRMiUWFxgaGxFCMkMkJykcEIFTM0UmLR4RaS8CVTY4KistIYQ2TC8f/EABoBAAIDAQEAAAAAAAAAAAAAAAABAgMEBQb/xAAmEQACAgICAgICAgMAAAAAAAAAAQIRAyESMQRBEyIUUWGBMnHw/9oADAMBAAIRAxEAPwDRXA3Sbm7pw4JJwVJcJO2TeUXTpzUjI290hkXirQKPkmlOLsCf4sLUgsEzgF2hL2Ao1pOwTujIZKLkBN2i1zyVBzvnl1JUuwvDpNM3KWVp3Z/KPNJugSs1eqzPhdDaOorqdjvAvF1Ssa4u4G2XsIu3qC11iWNs38SscqamerbJ2crgWtL5JCbk+V/NRVJIJHNY+4bfnqUW2SUUb3h3EDB68hrnSwnxeNvcrHDNFURtkhkbIx3JzTcFYRRdlQtBcCWuGzvsg+fh6p9h2aMQy9WianfeIm74nHuPHmOh8woqbXZN40+jbA26PpsFHYBjdJmCgZWUjjY7PY760bvA/wCt1KaVcnasparsbSt70Y/mSwGy5Izvx/eSwYgQlpCNpSmldDUAEA6JOrZell+4fgnGlJ1QtSy/cPwQMFO35qMfyj4JXShC35pm32R8EoB5IAKG3XWt6o4augIA4AeiCUA25IJ0AoRdJPbuljsiOTFYi5qQlFmlOnBIyN2SGReKg/JAU1hF2gp7izfoYTWFtmj0UX2BD5wxwYBgk1U0jtdmRNPV55f19iwOSqf27i4umqJnE26knqStB4uYt2lfDQ6vm6ZhkePFx/t8VX+FuXW41VSYjVjU3WdIPIKuckk5MuxY3JqK9kpljJtbX0M5fGW9qy2/QJKr4eYlh4L6fS8DfQ5vNbHQU8VLGI4wAALJ05jHD6oKxvNJnTj40EqPPdXUT0p7GpgfTm1i07tPmD+SYOqJGHQXXb9l3gPzC2zN2U6bGKZ3zLWutzA5LDcWw+owetkoajV3bmN3i3wV+LIp6MmfC4bXRZcmZqky1icc3aO+SSEMqIuYAvzHpzC3yGRs8bJWODmPAc1wOxB5FeVYqkQyNa/dkgtfwW28JMyGuwx+EVD7z0m8dzuYyfyPxCuj9XRmntWX5470f3ktbwScg70V/wCL8ksFaUnAF0NuV21kZvNAADfJJVbfo0t/4SlxzSdUPo0v3SgAQfsmfdHwSgaiwj5tv3QlUAcARgEAEYBMDjQgjAIIAM4Ip5I7iiWTEE6pKWxSrkjILpAMcVbelCZsPc35AJ9iY+jBMnNvA6xsdJUGM8/cR6x0+MYhKTuZAweQAV04UQCLBYC3k4Xus2zxVa6+ssb6pXu9/wDZT+T5b5VhqZ8bqKFg7jY4LXPr5qjJHlD+zZglxn/RuLJI2i190jXY5BhkDpZLkDo0XJ8gsxy5maKOoLIsSq6yxsRLutCqqP5ZhcdRFZxfYi45LK48XTOlHIpq0Q/+LcXxqTQ1kWEUY5yS96R/oOirGe8vnEqT5XBWx1kke4IjDXH8Niu45lnEcQle1tTNBL2nNhOks9m91Zcs5NdSQySSyTva7cMkcS0bee6nJqKUkUpSm3Fowx0YeHUsvcffuOPQ+CnMi5ikwXHaWrkJaYZOynF+bTsfdv7FI8TsttwuodVws0tJ3AVLopu0qmy3vrGiQeY6/gtUJc42jBkhwnxZ66Dw8QuG4JuPwTgBVzJeJjFct4dNe72gRv8AVosrKOSuTtWZmqdAAuugWQC6DdMR0BJ1X7vL90pUJKr/AHaX7pQAeEfNs9AlQEnEPm2egSrUAAAFdGyC6gDtgguBBABiiO2RyURyYBHFJSctksUlIkAxxL91umRPzLj5J9iYvShMmDuKLGjypmycuxWtZ1a9zfbcq2cNsHbjuCwaS4PpagkWPI8x8VVc405ZmGusLapnnf1KsfBnG48PxqfDJnhraoCSO/8AE3mPw+CqyJ/HcTRhr5UpezT8PyhTUDpZzExjnnU4gbk+ZVywyP8A2MxoH1Nx5gKHrq1skPZggF2yjn4jiIhkpg7RHyY5h5D0XPbc+zsxhGHRaG1lK6QRSt0PtcahzCcTzwsi0tP91B0lJJHRh1bM+ofpFnvABA9ibwTmqY4wVDZYh9oH81FoncUVziVTCtwmaQ8omOcSOlt1i9E6OSsMkDtURtva3Q72W35zljgyziBkIB+TvuT42KxPDoRS0hvzDQVt8b/A5Xl7mjc+DmIiaiqKJzt45GyNHkQb+9aeAvP3CnFxQ5kpmudZk94j+S9AgrRjeqMeRbsMG3XRtsgN12ysKzqSq/3WX7pSvRI1m1NL90oAVh/Zt9AlAUlF+zZ90JQIAMCug3RLroQAcboLgQQACUUldJRSUwCuKSebhKOOyScUgG2JfuyZs2ZdPMRN6YJkSBGfIEqLGjzdnKkvjc5I3Mjt/aqcysmwutp62nNpaeUPb7Dy9FoWb2h+JTSW3Drn8FntVDqhJAuQb+9RxSTVFmWLTtG94BitJj2FxVtNNYyMu25vpPVp8wUpUOxJkgDq0Rjo6KK4+KwvLeZq/LNSX0ztcDyDJA4913mPA+a2nKOccKzLS6t2SsOlzJBYg/msuTC8btdHS8bylJq+yRoMMhqXgT9rUnm50p2P/KNlPVLG00I0MbE0AANAsLIkeK0FC2wDADysOahcXxabEDoiBYy/tKpl9uzVkneylcTsZfU0rcPhf3HPBlcOoB5KlGT6HM8DoPj/AEVozlRkQFwHIqpvcRRTFouRvbxWrD1RzM98rH+DV7qKrZKz67HNlYvUGXMYix3B6aujNxIwavJ3ULyJTVDi9oa4B7d4ydg4eC2fg3m/5LM/B609nHMdURdyD/D2qd8Zf7KH9omztKOCibLoKuKA10nVH6LL90o9+qTqv3aX7pTAUjPzbfQI6Ti+o30CUuhABGCKDddTA6DZBcBQQBw8kUrpOyI5yAOE2STyuuck3OFikAhiDh8mF/FQmN45QYNRGSuq4qcSAsZrO7nW5AdVLYk+1M1ebs85nlzHm2UxyXpqd3YwAfwg2J9pufwUasLJLMb4qmaaSE6mkCx8RaxKpfyYOfNDbne3kVaHv1O7M27zLD3qCqj2NY5wHIgn0/0VlxN7NmRKkVydmi45EKy8PpdNZUQk914afbuoPEmBk8jfA+48lM5CjLq6otsWhrh71py7xsz4tZEathTHEaH94jbdSogB6JphbBIxsgbe43UrG3ZwI3AXN6OuuinZrpmup5CbANaSVmlFUsqGuBNg5puPBaJxIrf1fgkh5SVDhCz28z+F1k1PI6CQOHQLbhx3Gzn+RkqdB3gUk5bpdzuBcWPpfopvDMUnYA6JjInjfX4KOjxCKFlzEX2/9twDm+y+4XGVklU7U8Mjb0YwWaFdw5aaM3OumXvC+JmYcPnaXYnPURNI1Me7mPAG2y03BuNeXqqJjMQZVUUtu85ze0Zf1bv7l597TSFwzHk3mrVjiuitzb7PXODY/hmYKT5XhdZFVQ30uLDu0+BB3B9U7qT9Hk+6V5t4U5l/w7nCjjfUgQ17xSzR32Oo2afUOt+JXpCqNqeW/wDCVFqhp2Ehow2tNaJZbuiEZj1dy3O9vFO7JOM9xvoEYFIYcFduUQELvVMAyC4SgkARzrpNzrLrjYJIuugAFyTe5cebbpF8oa0kuAAFySdgo2Mo/GXMEuC5ViigeWy10pg1A7taBd1vcPavP1A4mr1HleysnE7ODs1ZgdJE8miprw0w6Ft93+rjv6WVUpJhHM0kk77DxKsa+pBP7Foln+fpneJUfX74nK22zgUcSaoYpP8Adv8AzSdXtibT0LgPcsENSN8ncSKxZpNQwAXL2jbxKuGVMBmwzNVdhsm0sFPHqHntf4qLwjB343nDDKBn2pdR9G3cf+1aVjlGcO4xhxFm4jhjJR5m2/vaVpnvFf8ABVjr5d/stGDYcIacBzbE77pwxgErwW3B2CWpiQ2xsQjzOZEx8jrNa0FxJ6Bcq70drglsw7i5iTqrMUdA03jo2AuA5B7t/hZUqw5lW7OeHSxUlLi9VcVON1M9YGnmIW2az4lVW2y7WKNQSPPZpcptjcSajaJtx1ceSVZJ2MV7XKDzpbfkb226pOU95jfJWFQ4E2qznInayS3ERsORd/RN3O7R+hps0fWKcwjawBDRsAOiYEhgcMcOJUkjrXZPG50t7lgDgSbcyQvR9XxWys+KRrayclwNrwOXnGhIjc2zQPRKSVLnciQVCSsaZ6Og4r5Sc1rTiMjTYDvQPt8FY8Kxmgxun+UYfVxVMYNiWHdp8COYXkps8g+0tF4Q43VwZypaIPJhqoHxyNvsdILmn2W96XElZvwKNdEBXbpDDXQXAgkAk47JF70Z77XTeR6TGEe+5Wf8Xs2fqHADh8DiKrEQ5gIO7IxbUfbe34q6V1fBQUs1XVStighYXve7k0BecOIGZxmnMM9bGX/JmgRU7XCxDB1t0JJJ9qcVbFJ0iqTSar3KTbclh5ELs3WyLT7g+QVpWPaDEywugmuWOGx8FKzllVHHLG4F+3XqP7KvMju5yUAexpDXEA7qmeFN2i6GVpUzVeDFJT4hnI1UrgHwQP0tPMOLhf3X/FXHihCKTiHk+rbsJKeSnJ9HH/yUd+j1l4VtLXYpVxhz9QMLiNxa4up/jrSmknyjXNG8VeWXH82k29yODUHFklNclL+STpm7KKzMZa19DgNO/TUYtOKcEc2RDeR3saLe1TER0Nuo/IdO7MfETF8WcL02Cw/IYPDtXbvPusuX4uPnPfSOx5mbhjpdszLjxUQjOkGG0wDYMOoYoGNH2b3d8CFnHXdWbiViH6zz9jtQ03b8rdE0+TLM/wDqqz1XaOAxOU3c1vQbpCc2mH3UtzcXeabVDvnQf5UxCkPedpA25lPo7W8h4JnTN7qdsBteyAHEL7SN9UoSL8k2+cabtDbhKCU39nXokwD9eSvnCJnaZ/oiPsU8rv8ApP8AVUFslytG4Kt7TPDn2/Z0Uh/7R+aXoa7N+B2XTsk2uR9SrJhwUETUOSCTkl2MbPfsmsr7bo8j7KvZvzLTZaweatmeO0sWwx9XyW2A9OZ8kD6KBxgzvC+nly7RanPD2mplB7oI37PzN7E+lljpk1bE29U4qqiSpke+WQue9xc5x5knclMJQb77q1KkVN2CU87LlKdn+qI/ujnddo3bOv4piHEbd3I7tm7C66w7FS2VsMONZmwrDgLioqo2EeV7n3AoA9RcKsBOB5doqUs0v+Ss1ebjufeVFfpARObkuirGjv0OIxSg+Gzv7LQaGNlIWNFmt06fRVbjPh/6w4eYw1t3GKNs9vuvBPuugn6I/HtGBUuLYzM36DQ0orIieUrpB81GPHvGx8gn3CzBpMtcPIqip7tZWtfiFQ93PU/ff0bZUzMeKS5pyzw+ym2QvGMGKpqdJ37KMaSD7Q7/ACrTeItazBOHeOVcfzfZUMjIxfkS3S0D8QqsWKONOvZblzSyNOXo8Z1lQ6rrJ6lxuZpXyEn+Yk/mkJDpbfr0QG23hsiyEF4HQbq0zhSA1gCZznvt38k6kcLHdNH9+Rg80APYdgByTtuw25pqwhouVK4M2jfPqrY3yM5BrXWt5pgFpaKpq9Rp6aebR9bs4y7T625JKqifDM4SMdGednNI+K3jg9juDYXHM2nr8EoA5xDWTN+lE+vVvqtc/wASwva0VDaGraeZkjjeHfmmo2S4nihhaXAam7+BWqcDIS7NWJyWv2dIG7ebm/0XoxkWTsSaPl2WcLeT9oUcbx8Lp1T5MyPKS+kwnD4XO59heFx9dJCjJegSorGq3kjB1ytLgo6eCFsUUMTYhuGhoIv4+qhMbOA0bJHVMNOJA0uIYdJH4KuSUVbZJMqAhjkc18hNmXNh1QTGmhxTM4qJMGpjBQtYSJ5nfWI8EFkcOb5VYNjGtr4aGhlrKmQRwRRmR7zyDQLledM6ZsqM1Yo6qka9kDLsgjv9Rn9TzP8AZTHEzO9Zjk4wijndT4fTWa8s+tO8AXJP8IOwHldZ6+SeLnIZG/zf1C2RjRGTs7I+7jpKQe8nnbZd7VsjvByI+58FMiIynuqWrcvVeCYbhtbV939ZMfLHHbdrQQAT63v6WTnJOWX5mx+KncxxpISJal1tgwH6vq47fir1xvgDaDBpWtADJJYwByALWkD3KLluh1qzMmP2Pqr5wSibNxKwtzxcQtll9oYQPis+p3XDrq/cG6kUmdGTn7NO8fiQpAuz1ZO8Otp6JHFqJuNZdxaicLmejmiHqWG3vsmMNW6oja6MjdSGG1BikeH7+Xigm0YPwOfNjOaG1dX3m4Jhop4ARfTrkPv7z1ofHjEizhlXs1bzSQxm3gZAfyUBwuy6zAqvMEjauGZ0laW2i+wwOfZp80nxxrO2yTUw3+rNC7/rH9UEao88axfdJB1yXDqUUu2KTaSBZBEO5yRYbzNQe5dgY5zi8AkDaw5oAetts47NCeYdUMMxGkgDcHxTFpf9tvLoeilsBoHYniUNLEJRrNnGOMvLG9XWHOyANa4H4HhlXis2LVOMNoJaZtmxS/NMeCernd1wPgFuVRgElRCJIqamxCF4u19OY3ah4i/NVTBczZMrqCiy98pgrZKaJrHvr4Ax5sANxawN7K2syqI4gyklqqJrfqtiJYG+gsro9aJENVYLSUztU/bYef54DHb2jZFjp5WN1RV4nZ0c4X94KsApMdpGgMxOeYD/AHsYN/I2Tcztie59bhcRk6viZpLvwA991Z32F10Nqevr6UscysNuoabhQlTll9fWz1dbUSVJmfqPett4WVgdU4MZO17HsnkWv4fik/lOGOJtMB5D/wDVRPApO5IfZJQZhfhVJHSwQwNiDdIYBpsgot0uFgajUP8AR3L4oKXBfoDxrVQulqpdVyNXMlFNDFa9rE9RsnU5+cJ8QD7knruFSQI6ooHt3YdVvxR8GwarzDi9LhVNZtRUSaBr2AHMuPkACVrPDvhzR4rSNxDHqaqlZUWNLTxOLS5v8biOQPTl4+C1XD8o5ewV0cmHYJQ087NmvazVI2+x7xuQsmXzIwbS2bcfhTmlJukyuYLlShyfl+KioYibuDpp3DvTP8T+Q6Kn8aI45cs0pv346prgPItcD+S21kDZodD2teRtvsoXH8h4RmKjkpK+nc6OSxOh5abjlYhZoearuSL5+Dr6s8jU5Gp3orPkKqNLmBsgNu7b1WkYt+jlC0ulwfGZY/8AhVUYeP8AM2x9yiabgvjmXnyYnLiVBJHTRulc1jZLkAXty8lrj5mF+zK/Dyx9GmYRmJ9D2YkOqF+4PgrlSYtFUAPie3URy8V5yHEWtFKIG0dMGnq4uJCTg4kY5SM0xSQAdNUeq3vWoosvGQ8RpKLFc19jBPDOa8vl7WUO1G7twABYblNeJtQ6ryfXyScyYyP87VQoc54pSCoFM+nhNTIZJXshbqc4knmfMlNa/MmK4pTPpayvmngeLOjdbTzv0CPQrKlJs2x6ogva9jZTTIIGG4jZcdbXRrgDp6IIkIKeaT6sTz7LJZtHURxEkhoBuWg7lShkJ5lJvcEANmyTg6HCJ58CSFKYe6pgYZYmS07njSSDYkezoo0BrmaCL2NgpAv0sLr8ggB5FUVoI0ySmxv4q5UfFHiNBoZTY9ihDQALtDxb2hZvFiszTpLR43uQtKGUqOhy5T4tiGPyUcktMJzC4j6xbfS25ueiOVDRJQ8cOJdGfnMS7UeE1Iw/kE8Z+kDn/Td7aCUeJox/VZVh+LYvVVkVPQuqJJ53iNsTZbm58b7D1UnikuZMGqzT1NNWSA2GuNge0m1+Y/1spWPRoQ/SDzgR8/huDy+OqmI/NIu494/IT2mC4P8A8sBH5qh4bU4tirZAYxAI9r1EWkk+SWZguKlxIdTvJ/4lknOmOtaLc/jbjEgIfhdE0H+GNBQeE5flcC6rALr7Na7UEFnn5kYuitzrRSKr60fmwFKYTT/LsWoqPRqE08cbh4guF/ddS0WFYZVUPbVpro5I7hhgewBwvy0uFyfREbgdDFPFJTYviVO++tpdSt1tt17r9vVWNliW7NywzHOyi1PIbTlzw0M2s1h0geQACnxiNO+C8s/ZsIuAz+qxHBMUlwyhgoo68VMcL3v1SNsS19yWuN+d7lJZlxmfG8GbSw1MlL9kujksJSNrW5kLl/jy5Udn8mLjfs3PD8wUhdop543s9dvxUzHXwOtqexx8l4/pcNxrD2RTUVaYnatjBK86DysbCw9FfcmZmzpXV8OGNmw6rkfs11S4xFx8L7XPlZWS8RRRTHy+T2qPQj8SpW3DreirmZ8ZidhdXTR8ponxm3gWlQtRg2fWRlxwvDXutsGVLh8QVUcTiz3SRSfLcKZqsbBjgQfbzWdYrejRLNFLZlQeA0DVyXHEHqEzfN2biHNe0g7gtKSfO3SHBw9NxZdqzhD0gdCk9T2HncJqJ2l4b2jAD9q+yOZ2A2MrD7UxC/a36brhf0um/atvs4H2rvaX5IAV1LhN0nr2XHOuOaAOhw5crKSbC+WGURNLjouABdRTNLntDnENJFyOgVjpIYHVEcUtS+GkcQ2R0cd5Gt8hexPtQgIAUsrHsDoy5xOkM6uJ5ABWnC+G2Y8xT/Sr0TWADXXOIJHKzRzPuWn5Hytw4pKyOopM3sqKt9tMeIQiNzHeLbjY+1aMcrCpdcSdvGNw5j9z+B3U4xXslRjuDZQqsmOnOGmWSomYGSTEi9h0HgLppV/rpjnOkpJHXP1hzW1zZckkjMQeY2j6oc2x/FRFRlbEoCTG8SM52cz+imlEVMx4z1DHapKR9/B106wrTiOJ01KaRwMzw0kOOy0WqoayI6ZMPppm9SbtPwSEEbaSRk/6qbE6M6rhwcoZMem0FsjcUiZhc7qamjDWh2kE8yUE0r6x9XiAne4HUSWt8AguIqrZQUF9e52rsKyOK4s09nu30IK4WXpmxwdjrv3zq2k/NBBdcvsP2Lu5qoppgdi2BgIaR17xsU4qDRxNL4oMSZPLsPlMTGMB6hoB39qCCVDtjRlYaCR0dO245O3AdfqRz3S2uapiaKdkceh2oB7nOdfxtsEEEnFElJj6hx/MGGVEU9Jj1dHIx2rTJI7s/a07EeRXoXINRXY3lSjqcTngrKuTUXSQsABbfu3A2Bsggs2WKdGiEnTZPsypSVZ1VEVG0ddUbXFOG5Dy3pBlw+nlPO5iZY+XJBBaI4IL0UyySYpLkrKs1i/L2F36fRWj4BNn8OMmS31Zcww38YQggraREZ1HCPINR+0yxhnsiAUZPwH4eTk/7ApWfdFkEEuKCxhN+jtkGS/Z4bG30c/8nKPn/RuyQTYU0jT4Nlk/8kEFH41/zCxD/wBMWUnt2bUNJ/8AkvFl59xWj/VuJ1lEQWmCd8Vnc+64j8kEE1GiL2I0tQaWpimEbJAxwdocLh1uhW0YZxhyvFTxMNLX00gaA5rW3a0+RB5exBBTjNroiTMfGfANOhuIVLWnpNAXBPKfi3lyVwEeKUwcfsuDmX/FBBTU79EqJKkzfgmKkh1VTEHlocD+acmHC6hhEc7C0jxCCCsZFMyPHqI4bilS0ODmNJ0OHK3RBBBcLIqk0US0z//Z" alt="Наталья К." style="width:72px;height:72px;display:block;object-fit:cover;object-position:center 15%"> </div> <div> <div class="kzop2__expert-name">Наталья К.</div> <div class="kzop2__expert-role">Главный специалист ГИИС ЭБ</div> <p class="kzop2__expert-bio">Сертифицированный специалист по ГИИС Электронный бюджет. Отвечает за техническую настройку систем и интеграцию с казначейскими порталами. 0 ошибок при подключении за последние 3 года работы.</p> <div class="kzop2__expert-stats"> <span class="kzop2__expert-stat">ГИИС ЭБ</span> <span class="kzop2__expert-stat">0 ошибок</span> <span class="kzop2__expert-stat">6 лет опыта</span> </div> </div> </div> </div> </div> </section> <div style="width:100%;padding:24px 20px;box-sizing:border-box;"><aside style="max-width:820px;margin:0 auto;border-left:4px solid #15846B;background:#f2f7f5;border-radius:12px;padding:18px 22px;font:16px/1.62 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#1a1a1a;"><div style="font-weight:700;color:#15846B;margin:0 0 6px;font-size:15px;letter-spacing:.02em;">Правовая основа</div><p style="margin:0;">Открытие лицевого счёта участника казначейского сопровождения в территориальном органе Федерального казначейства регулируется главой 24.4 Бюджетного кодекса РФ (ст. 242.23) и Порядком, утверждённым приказом Федерального казначейства от 22.12.2021 № 44н (в действующей редакции). Мы работаем строго в рамках этих требований. <a href="https://publication.pravo.gov.ru/document/0001202202070025" target="_blank" rel="noopener" style="color:#15846B;">официальная публикация приказа № 44н</a>.</p></aside></div>
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> </div> </a> </div> </div> </section> <!-- TILDA: Zero Block · Название блока: "Команда — Эксперты" --> <section class="kzop2__section" id="company" data-section="team"> <div class="kzop2__wrap"> <div class="kzop2__section-header"> <span class="kzop2__eyebrow">Команда</span> <h2 class="kzop2__h2">Эксперты, которые <span>открывают ваш счёт</span></h2> <p class="kzop2__lead">Не колл-центр и не агрегатор — живые специалисты с профильным опытом именно в казначейском сопровождении</p> </div> <div class="kzop2__team-grid"> <!-- Expert 1 --> <div class="kzop2__expert-card kzop2-fade"> <div class="kzop2__expert-avatar"> <img src="data:image/jpeg;base64,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" alt="Андрей В." width="72" height="72" style="width:72px;height:72px;display:block;object-fit:cover;object-position:center 15%"> </div> <div> <div class="kzop2__expert-name">Андрей В.</div> <div class="kzop2__expert-role">Руководитель направления</div> <p class="kzop2__expert-bio">15+ лет специализации на казначейском сопровождении по 44-ФЗ и 223-ФЗ. Лично сопровождал открытие более 200 казначейских счетов. Знает все актуальные требования казначейства и типичные причины возвратов.</p> <div class="kzop2__expert-stats"> <span class="kzop2__expert-stat">200+ счетов</span> <span class="kzop2__expert-stat">15+ лет опыта</span> <span class="kzop2__expert-stat">44-ФЗ / 223-ФЗ</span> </div> </div> </div> <!-- Expert 2 --> <div class="kzop2__expert-card kzop2-fade" style="--fd:1"> <div class="kzop2__expert-avatar"> <img src="data:image/jpeg;base64,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" alt="Наталья К." width="72" height="72" style="width:72px;height:72px;display:block;object-fit:cover;object-position:center 15%"> </div> <div> <div class="kzop2__expert-name">Наталья К.</div> <div class="kzop2__expert-role">Главный специалист ГИИС ЭБ</div> <p class="kzop2__expert-bio">Сертифицированный специалист по ГИИС Электронный бюджет. Отвечает за техническую настройку систем и интеграцию с казначейскими порталами. 0 ошибок при подключении за последние 3 года работы.</p> <div class="kzop2__expert-stats"> <span class="kzop2__expert-stat">ГИИС ЭБ</span> <span class="kzop2__expert-stat">0 ошибок</span> <span class="kzop2__expert-stat">6 лет опыта</span> </div> </div> </div> </div> </div> </section> <div style="width:100%;padding:24px 20px;box-sizing:border-box;"><aside style="max-width:820px;margin:0 auto;border-left:4px solid #15846B;background:#f2f7f5;border-radius:12px;padding:18px 22px;font:16px/1.62 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#1a1a1a;"><div style="font-weight:700;color:#15846B;margin:0 0 6px;font-size:15px;letter-spacing:.02em;">Правовая основа</div><p style="margin:0;">Открытие лицевого счёта участника казначейского сопровождения в территориальном органе Федерального казначейства регулируется главой 24.4 Бюджетного кодекса РФ (ст. 242.23) и Порядком, утверждённым приказом Федерального казначейства от 22.12.2021 № 44н (в действующей редакции). Мы работаем строго в рамках этих требований. <a href="https://publication.pravo.gov.ru/document/0001202202070025" target="_blank" rel="noopener" style="color:#15846B;">официальная публикация приказа № 44н</a>.</p></aside></div>
 <!-- TILDA: Zero Block · Название блока: "FAQ — Частые вопросы" --> <section class="kzop2__section kzop2__section--gray" data-section="faq"> <div class="kzop2__wrap"> <div class="kzop2__section-header" style="text-align:center"> <span class="kzop2__eyebrow">Частые вопросы</span> <h2 class="kzop2__h2" style="margin-left:auto;margin-right:auto;max-width:500px">
         Отвечаем <span>на главные возражения</span> </h2> </div> <div class="kzop2__faq-list"> <div class="kzop2__faq-item"> <button class="kzop2__faq-q" data-faq="1">
           У нас есть бухгалтер — зачем нам вы?
@@ -2785,7 +2808,7 @@ fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Ty
       </p> <ul class="kzop2__final-points"> <li>Открытие казначейского счёта за 2 рабочих дня</li> <li>Гарантия результата — зафиксирована в договоре</li> <li>Работаем по всей России дистанционно</li> <li>Фиксированная стоимость — 29 000 ₽, без скрытых доплат</li> </ul> </div> <div class="kzop2__form-card"> <div class="kzop2__form-card-title">Открытие казначейского счёта</div> <div class="kzop2__form-card-sub kzop2-avail kzop2-avail--dark" id="kzop2-avail-main"><span class="kzop2-avail__dot"></span><span>Ответим за 5 минут в рабочее время</span></div> <!-- ⚠️ TILDA: Вставить embed формы здесь перед публикацией --> <!-- UTM: заполняются автоматически через JS --> <input type="hidden" name="utm_source"   class="kzop2-utm-field" data-utm="utm_source"> <input type="hidden" name="utm_medium"   class="kzop2-utm-field" data-utm="utm_medium"> <input type="hidden" name="utm_campaign" class="kzop2-utm-field" data-utm="utm_campaign"> <input type="hidden" name="utm_term"     class="kzop2-utm-field" data-utm="utm_term"> <input type="hidden" name="utm_content"  class="kzop2-utm-field" data-utm="utm_content"> <input type="hidden" name="yclid"        class="kzop2-utm-field" data-utm="yclid"> <input type="hidden" name="page"         value="open"> <div class="kzop2__form-fields"> <div class="kzop2__field"> <label>Ваше имя</label> <input type="text" class="kzop2__input-name" placeholder="Иван Иванов" autocomplete="given-name" maxlength="60"> </div> <div class="kzop2__field"> <label>Телефон</label> <input type="tel" class="kzop2__input-phone" placeholder="+7 (___) ___-__-__" maxlength="18" autocomplete="tel"> </div> </div> <input type="text" class="kzop2__hp" name="hp_final" tabindex="-1" autocomplete="off" aria-hidden="true"> <div class="kzop2__consent kzop2__consent--dark" style="margin-bottom:16px"> <input type="checkbox" id="kzop2-final-consent" required> <label for="kzop2-final-consent">
           Нажимая «Отправить заявку», я даю согласие на обработку персональных данных в соответствии с <a href="https://kazna-gov.ru/personal_data_policy">политикой в отношении обработки персональных данных</a> </label> </div> <button class="kzop2__form-submit" id="kzop2-final-submit">
         Отправить заявку
-      </button> </div> </div> </section> <!-- TILDA: Zero Block · Название блока: "Sticky CTA (мобильный)" --> <div class="kzop2__sticky" id="kzop2-sticky"> <a href="tel:+74951084232" class="kzop2__btn kzop2__btn--ghost" data-goal="sticky_phone_click" aria-label="Позвонить"> <svg viewBox="0 0 16 16"><path d="M5 2H3a1 1 0 00-1 1v1c0 6.075 4.925 11 11 11h1a1 1 0 001-1v-2l-4-1-1 1.5A9 9 0 014.5 5L6 4 5 2z"/></svg> </a> <a href="#form" class="kzop2__btn kzop2__btn--primary" data-goal="sticky_cta_click">
+      </button> </div> </div> </section> <!-- TILDA: Zero Block · Название блока: "Sticky CTA (мобильный)" --> <div class="kzop2__sticky" id="kzop2-sticky"> <a href="tel:+74951084232" class="kzop2__btn kzop2__btn--ghost" data-goal="sticky_phone_click" aria-label="Позвонить +7 (495) 108-42-32" title="Позвонить"> <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.25c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 3.5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg> </a> <a href="#form" class="kzop2__btn kzop2__btn--primary" data-goal="sticky_cta_click">
     Открыть счёт
     <span class="kzcta-arrow"><svg viewBox="0 0 16 16"><path d="M3 8h10M8 3l5 5-5 5"/></svg></span> </a> </div> <script type="application/ld+json">
 {
@@ -2860,7 +2883,7 @@ fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Ty
 .kzop2__success{
   position:fixed;inset:0;z-index:99999;display:none;
   align-items:center;justify-content:center;
-  background:rgba(12,27,51,0.55);
+  background:rgba(10,25,20,0.55);
   -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
   padding:20px;
   animation:kzop2-mfade .22s ease both;
@@ -2870,7 +2893,7 @@ fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Ty
   background:#fff;border-radius:20px;
   width:100%;max-width:440px;padding:40px 32px 28px;
   text-align:center;position:relative;
-  box-shadow:0 24px 64px rgba(12,27,51,0.28);
+  box-shadow:0 24px 64px rgba(10,25,20,0.28);
   font-family:var(--font, -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif);
   animation:kzop2-mpop .28s cubic-bezier(0.34,1.56,0.64,1) both;
 }
@@ -2883,19 +2906,19 @@ fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Ty
 }
 .kzop2__success-icon svg{width:32px;height:32px;color:#fff}
 .kzop2__success-title{
-  font-size:22px;font-weight:800;color:var(--text,#0D1424);
+  font-size:22px;font-weight:800;color:var(--text,#0F1714);
   letter-spacing:-0.02em;line-height:1.25;margin-bottom:10px;
 }
 .kzop2__success-sub{
   font-size:15px;color:#5a6480;line-height:1.55;margin-bottom:24px;
 }
 .kzop2__success-close{
-  background:var(--blue,#1E50D4);color:#fff;border:none;cursor:pointer;
+  background:var(--blue,#15846B);color:#fff;border:none;cursor:pointer;
   font-weight:700;font-size:15px;border-radius:12px;
   padding:14px 28px;min-width:160px;
   transition:background .2s ease,transform .2s ease,box-shadow .2s ease;
 }
-.kzop2__success-close:hover{background:var(--blue-h,#1641BC);transform:translateY(-1px);box-shadow:0 8px 18px rgba(30,80,212,0.28)}
+.kzop2__success-close:hover{background:var(--blue-h,#0F6B56);transform:translateY(-1px);box-shadow:0 8px 18px rgba(21,132,107,0.28)}
 .kzop2__success-x{
   position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:50%;
   border:none;background:rgba(13,20,36,0.06);color:#5a6480;cursor:pointer;
@@ -2903,7 +2926,7 @@ fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Ty
   font-size:20px;line-height:1;font-weight:400;
   transition:background .15s ease,color .15s ease;
 }
-.kzop2__success-x:hover{background:rgba(13,20,36,0.12);color:#0D1424}
+.kzop2__success-x:hover{background:rgba(13,20,36,0.12);color:#0F1714}
 @keyframes kzop2-mfade{from{opacity:0}to{opacity:1}}
 @keyframes kzop2-mpop{from{opacity:0;transform:scale(0.92) translateY(8px)}to{opacity:1;transform:scale(1) translateY(0)}}
 @media(prefers-reduced-motion:reduce){
@@ -3748,7 +3771,7 @@ fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Ty
         ctx.beginPath();
         ctx.arc(s.x * W, s.y * H, s.r, 0, Math.PI * 2);
         ctx.fillStyle = s.blue
-          ? 'rgba(110,165,255,' + a.toFixed(3) + ')'
+          ? 'rgba(84,214,175,' + a.toFixed(3) + ')'
           : 'rgba(215,230,255,' + a.toFixed(3) + ')';
         ctx.fill();
       });
@@ -3805,9 +3828,9 @@ fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Ty
         var isH  = (c.a === hovered || c.b === hovered);
         var al   = isH ? 0.78 : (hovered >= 0 ? 0.025 : 0.06 + dAvg * 0.26);
         var grad = ctx.createLinearGradient(ni.sx, ni.sy, nj.sx, nj.sy);
-        grad.addColorStop(0,   'rgba(91,138,255,' + al.toFixed(3) + ')');
-        grad.addColorStop(0.5, 'rgba(140,175,255,' + (al * 0.55).toFixed(3) + ')');
-        grad.addColorStop(1,   'rgba(91,138,255,' + al.toFixed(3) + ')');
+        grad.addColorStop(0,   'rgba(43,200,154,' + al.toFixed(3) + ')');
+        grad.addColorStop(0.5, 'rgba(120,235,195,' + (al * 0.55).toFixed(3) + ')');
+        grad.addColorStop(1,   'rgba(43,200,154,' + al.toFixed(3) + ')');
         ctx.beginPath();
         ctx.moveTo(ni.sx, ni.sy);
         ctx.lineTo(nj.sx, nj.sy);
