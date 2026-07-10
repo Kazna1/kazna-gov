@@ -1,7 +1,7 @@
 /* Service Knowledge Layer (R2.08) — блок базы знаний под лендингом услуги.
    Тёмный премиум: канон тёмных секций лендингов и футера (глубокий зелёный + минт + стекло). */
 .sv-knowledge { position: relative; background: linear-gradient(180deg, #0d1f1a 0%, #0a1612 55%, #081210 100%);
-  padding: 64px 0 48px; margin-top: 48px; overflow: hidden;
+  padding: 66px 0 56px; margin-top: 0; overflow: hidden;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(232, 240, 236, 0.78); }
 .sv-knowledge::before { content: ''; position: absolute; inset: 0; pointer-events: none;
   background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
@@ -91,3 +91,13 @@
 .sv-knowledge .oe-cta__btn { background: #1FA887; }
 .sv-knowledge .oe-cta__btn:hover { background: #2BC89A; }
 .sv-knowledge .oe-cta__srv { color: #9fdcc9 !important; }
+
+/* Премиум-разделитель: живая минт-полоска по верхней кромке секции */
+.sv-knowledge::after { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent 0%, rgba(90, 240, 192, 0.05) 25%,
+    rgba(90, 240, 192, 0.65) 50%, rgba(90, 240, 192, 0.05) 75%, transparent 100%);
+  background-size: 200% 100%; animation: sv-divider 7s linear infinite; }
+@keyframes sv-divider { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+@media (prefers-reduced-motion: reduce) { .sv-knowledge::after { animation: none; } }
+/* Футер идёт сразу за тёмной базой знаний — без светлого зазора */
+.sv-knowledge + .kzfoot { margin-top: 0; }
