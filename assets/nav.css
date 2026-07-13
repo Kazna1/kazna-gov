@@ -460,3 +460,9 @@
   body:has(.kzop2__sticky) .kg-tg-fab { display: none !important; }
   .kg-cookie-reset { display: none !important; }
 }
+
+/* --- TG-FAB не перекрывает CTA (фикс 13.07): мобайл — скрыт (Telegram уже в стики-барах);
+       десктоп — прячется, когда в вьюпорте форма/контакты/футер (логика в nav.js) --- */
+@media (max-width:768px){ .kg-tg-fab{ display:none !important } }
+.kg-tg-fab{ transition:transform .2s ease, box-shadow .2s ease, opacity .25s ease !important }
+.kg-tg-fab--hidden{ opacity:0 !important; pointer-events:none !important; transform:translateY(12px) !important }

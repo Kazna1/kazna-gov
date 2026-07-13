@@ -183,3 +183,19 @@
     });
   }, { passive: true });
 })();
+
+/* TG-FAB: не перекрывать конверсионные зоны — скрытие при видимых форме/контактах/футере */
+(function(){
+  var fab=document.querySelector('.kg-tg-fab');
+  if(!fab||!('IntersectionObserver' in window))return;
+  var targets=['#form','#contacts','#audit','.kzfoot','footer']
+    .map(function(s){return document.querySelector(s)}).filter(Boolean);
+  if(!targets.length)return;
+  var states=new Map();
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){states.set(e.target,e.isIntersecting)});
+    var anyVisible=false; states.forEach(function(v){if(v)anyVisible=true});
+    fab.classList.toggle('kg-tg-fab--hidden',anyVisible);
+  },{rootMargin:'0px 0px -8% 0px'});
+  targets.forEach(function(t){io.observe(t)});
+})();
