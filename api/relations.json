@@ -14465,6 +14465,36 @@
    "rel": "MONETIZED_BY"
   },
   {
+   "from": "faq-obsluzhivanie-vs-soprovozhdenie",
+   "to": "ks",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "faq-obsluzhivanie-vs-soprovozhdenie",
+   "to": "eks",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "faq-obsluzhivanie-vs-soprovozhdenie",
+   "to": "fk",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "faq-obsluzhivanie-vs-soprovozhdenie",
+   "to": "tofk",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "faq-obsluzhivanie-vs-soprovozhdenie",
+   "to": "law-бк-рф-ст-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "faq-obsluzhivanie-vs-soprovozhdenie",
+   "to": "service-start",
+   "rel": "MONETIZED_BY"
+  },
+  {
    "from": "faq-narushenie-ks",
    "to": "err-necelevoe",
    "rel": "USES_TERM"
@@ -19961,6 +19991,11 @@
   },
   {
    "from": "faq-ks-vs-bankovskoe",
+   "to": "faq-obsluzhivanie-vs-soprovozhdenie",
+   "rel": "SAME_CLUSTER"
+  },
+  {
+   "from": "faq-obsluzhivanie-vs-soprovozhdenie",
    "to": "faq-ks-eto-nadolgo",
    "rel": "SAME_CLUSTER"
   },

@@ -2883,6 +2883,13 @@
    ],
    "url": "/voprosy/ks-i-bankovskoe-raznitsa-vopros/"
   },
+  "faq-obsluzhivanie-vs-soprovozhdenie": {
+   "name": "Чем казначейское обслуживание отличается от казначейского сопровождения?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kaznacheyskoe-obsluzhivanie-vs-soprovozhdenie/"
+  },
   "faq-narushenie-ks": {
    "name": "Что будет за нарушение правил казначейского сопровождения?",
    "type": [

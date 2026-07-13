@@ -3,7 +3,7 @@
  "version": "2026-07-09",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
- "count": 485,
+ "count": 486,
  "entities": [
   {
    "id": "service-conduct",
@@ -221,6 +221,15 @@
    "url": "/glossary/tselevye-sredstva/"
   },
   {
+   "id": "service-start",
+   "name": "Сопровождение с первого дня",
+   "type": [
+    "service"
+   ],
+   "api": "/entity/service-start.json",
+   "url": "/services/start"
+  },
+  {
    "id": "law-приказ-фк-44н",
    "name": "Приказ ФК № 44н",
    "type": [
@@ -255,15 +264,6 @@
    ],
    "api": "/entity/ecp.json",
    "url": "/glossary/elektronnaya-podpis/"
-  },
-  {
-   "id": "service-start",
-   "name": "Сопровождение с первого дня",
-   "type": [
-    "service"
-   ],
-   "api": "/entity/service-start.json",
-   "url": "/services/start"
   },
   {
    "id": "err-naznachenie",
@@ -410,6 +410,15 @@
    "url": "/glossary/upolnomochennoe-litso/"
   },
   {
+   "id": "tofk",
+   "name": "ТОФК",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/tofk.json",
+   "url": "/glossary/tofk/"
+  },
+  {
    "id": "err-svedeniya-otkaz",
    "name": "Не утверждают Сведения",
    "type": [
@@ -435,15 +444,6 @@
    ],
    "api": "/entity/err-ecp.json",
    "url": "/oshibki/ecp-ne-podhodit-dlya-kaznacheystva/"
-  },
-  {
-   "id": "tofk",
-   "name": "ТОФК",
-   "type": [
-    "term"
-   ],
-   "api": "/entity/tofk.json",
-   "url": "/glossary/tofk/"
   },
   {
    "id": "avans",
@@ -771,6 +771,15 @@
    "url": "/obraztsy/poyasnenie-pri-vozvrate-platezha/"
   },
   {
+   "id": "fk",
+   "name": "Федеральное казначейство",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/fk.json",
+   "url": "/glossary/federalnoe-kaznacheystvo/"
+  },
+  {
    "id": "rezervirovanie-ls",
    "name": "Резервирование лицевого счёта",
    "type": [
@@ -823,15 +832,6 @@
    ],
    "api": "/entity/soprovoditelnoe-pismo.json",
    "url": "/obraztsy/soprovoditelnoe-pismo-v-ufk/"
-  },
-  {
-   "id": "fk",
-   "name": "Федеральное казначейство",
-   "type": [
-    "term"
-   ],
-   "api": "/entity/fk.json",
-   "url": "/glossary/federalnoe-kaznacheystvo/"
   },
   {
    "id": "zakazchik",
@@ -969,6 +969,15 @@
    "url": "/glossary/psb/"
   },
   {
+   "id": "eks",
+   "name": "ЕКС",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/eks.json",
+   "url": "/glossary/eks/"
+  },
+  {
    "id": "kod-71",
    "name": "Код 71 (тип лицевого счёта)",
    "type": [
@@ -1012,15 +1021,6 @@
    ],
    "api": "/entity/vp-mo.json",
    "url": "/glossary/voennoe-predstavitelstvo/"
-  },
-  {
-   "id": "eks",
-   "name": "ЕКС",
-   "type": [
-    "term"
-   ],
-   "api": "/entity/eks.json",
-   "url": "/glossary/eks/"
   },
   {
    "id": "nubp",
@@ -4135,6 +4135,15 @@
    ],
    "api": "/entity/faq-ks-vs-bankovskoe.json",
    "url": "/voprosy/ks-i-bankovskoe-raznitsa-vopros/"
+  },
+  {
+   "id": "faq-obsluzhivanie-vs-soprovozhdenie",
+   "name": "Чем казначейское обслуживание отличается от казначейского сопровождения?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-obsluzhivanie-vs-soprovozhdenie.json",
+   "url": "/voprosy/kaznacheyskoe-obsluzhivanie-vs-soprovozhdenie/"
   },
   {
    "id": "faq-narushenie-ks",

@@ -3,7 +3,7 @@
  "version": "2026-07-09",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
- "count": 485,
+ "count": 486,
  "entities": [
   {
    "id": "service-conduct",
@@ -446,7 +446,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-law-бк-рф-ст-2422224226",
    "scores": {
-    "authority": 82,
+    "authority": 84,
     "coverage": 0,
     "connectivity": 100,
     "citation": 100,
@@ -903,7 +903,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-ks",
    "scores": {
-    "authority": 56,
+    "authority": 57,
     "coverage": 50,
     "connectivity": 100,
     "citation": 100,
@@ -1275,6 +1275,71 @@
    }
   },
   {
+   "id": "service-start",
+   "type": [
+    "service"
+   ],
+   "name": "Сопровождение с первого дня",
+   "aliases": [],
+   "summary": "Полный запуск казначейского сопровождения под ключ от 59 000 ₽: открываем счёт, настраиваем ГИИС и Сведения, ставим раздельный учёт, готовим шаблоны платёжных документов и обучаем вашу команду — либо продолжаем вести контракт сами. Для тех, кто выиграл первый контракт с КС и не хочет учиться на возвратах.",
+   "citation": "Первый контракт с КС: настроим весь контур за неделю и передадим команде — или останемся вести.",
+   "pages": [
+    {
+     "layer": "service",
+     "url": "/services/start",
+     "title": "Сопровождение с первого дня"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "ks",
+     "ls-71",
+     "razdelnyy-uchet",
+     "svedeniya-ssu"
+    ],
+    "SERVICE_REQUIRES": [
+     "chek-list-otkrytie",
+     "komplekt-otkrytie",
+     "prikaz-razdelnyy-uchet"
+    ],
+    "SERVICE_SOLVES": [
+     "err-zatyanulos-otkrytie",
+     "err-naznachenie",
+     "err-razdelnyy-uchet"
+    ],
+    "SEE_FAQ": [
+     "faq-start-novichka",
+     "faq-srok-podklyucheniya",
+     "faq-zona-klienta-pri-autsorsinge"
+    ],
+    "PART_OF_TOPIC": [
+     "hub-ks"
+    ],
+    "REGULATED_BY": [
+     "law-бк-рф-ст-2422224226",
+     "law-приказ-фк-44н"
+    ],
+    "DIAGNOSED_BY": [
+     "tool-generator-chek-lista",
+     "tool-diagnostika-kontrakta"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
+     "/blog/soprovozhdenie-goskontraktov-pod-kluch"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-service-start",
+   "scores": {
+    "authority": 45,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
    "id": "law-приказ-фк-44н",
    "type": [
     "law"
@@ -1441,71 +1506,6 @@
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "service-start",
-   "type": [
-    "service"
-   ],
-   "name": "Сопровождение с первого дня",
-   "aliases": [],
-   "summary": "Полный запуск казначейского сопровождения под ключ от 59 000 ₽: открываем счёт, настраиваем ГИИС и Сведения, ставим раздельный учёт, готовим шаблоны платёжных документов и обучаем вашу команду — либо продолжаем вести контракт сами. Для тех, кто выиграл первый контракт с КС и не хочет учиться на возвратах.",
-   "citation": "Первый контракт с КС: настроим весь контур за неделю и передадим команде — или останемся вести.",
-   "pages": [
-    {
-     "layer": "service",
-     "url": "/services/start",
-     "title": "Сопровождение с первого дня"
-    }
-   ],
-   "relations": {
-    "USES_TERM": [
-     "ks",
-     "ls-71",
-     "razdelnyy-uchet",
-     "svedeniya-ssu"
-    ],
-    "SERVICE_REQUIRES": [
-     "chek-list-otkrytie",
-     "komplekt-otkrytie",
-     "prikaz-razdelnyy-uchet"
-    ],
-    "SERVICE_SOLVES": [
-     "err-zatyanulos-otkrytie",
-     "err-naznachenie",
-     "err-razdelnyy-uchet"
-    ],
-    "SEE_FAQ": [
-     "faq-start-novichka",
-     "faq-srok-podklyucheniya",
-     "faq-zona-klienta-pri-autsorsinge"
-    ],
-    "PART_OF_TOPIC": [
-     "hub-ks"
-    ],
-    "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-приказ-фк-44н"
-    ],
-    "DIAGNOSED_BY": [
-     "tool-generator-chek-lista",
-     "tool-diagnostika-kontrakta"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
-     "/blog/soprovozhdenie-goskontraktov-pod-kluch"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-service-start",
-   "scores": {
-    "authority": 44,
-    "coverage": 100,
-    "connectivity": 100,
-    "citation": 80,
     "aiReadiness": 100,
     "density": 100
    }
@@ -1695,6 +1695,9 @@
    "aliases": [
     "управление федерального казначейства",
     "уфк по региону",
+    "уфк это",
+    "что такое уфк",
+    "уфк расшифровка",
     "Управление Федерального казначейства по субъекту РФ"
    ],
    "summary": "УФК — управление Федерального казначейства по субъекту РФ. Именно УФК открывает подрядчику лицевой счёт участника казначейского сопровождения, проверяет и санкционирует каждый платёж с этого счёта, принимает карточку подписей и Сведения. Все документы по КС подаются в своё УФК — по месту, определённому порядком казначейства.",
@@ -2241,6 +2244,56 @@
    }
   },
   {
+   "id": "tofk",
+   "type": [
+    "term"
+   ],
+   "name": "ТОФК",
+   "aliases": [
+    "территориальный орган казначейства",
+    "Территориальный орган Федерального казначейства"
+   ],
+   "summary": "ТОФК — территориальный орган Федерального казначейства: обобщающее название УФК по субъектам РФ и их отделов. В документах КС «ТОФК» встречается как реквизит: каждый орган имеет код (КОФК), который указывается в заявлениях, карточке подписей и платёжных документах. Свой ТОФК определяется правилами порядка лицевых счетов.",
+   "citation": "Общее название территориальных органов казначейства (УФК и их отделения). В формах КС фигурирует как «орган Федерального казначейства» со своим кодом КОФК.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/tofk/",
+     "title": "ТОФК"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ufk",
+     "kofk",
+     "fk"
+    ],
+    "REQUIRES_DOC": [
+     "zayavlenie-ls",
+     "kartochka-podpisey"
+    ],
+    "SEE_ERROR": [
+     "err-zatyanulos-otkrytie"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/tofk"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-tofk",
+   "scores": {
+    "authority": 29,
+    "coverage": 83,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
    "id": "err-svedeniya-otkaz",
    "type": [
     "error"
@@ -2361,56 +2414,6 @@
     "connectivity": 93,
     "citation": 50,
     "aiReadiness": 60,
-    "density": 100
-   }
-  },
-  {
-   "id": "tofk",
-   "type": [
-    "term"
-   ],
-   "name": "ТОФК",
-   "aliases": [
-    "территориальный орган казначейства",
-    "Территориальный орган Федерального казначейства"
-   ],
-   "summary": "ТОФК — территориальный орган Федерального казначейства: обобщающее название УФК по субъектам РФ и их отделов. В документах КС «ТОФК» встречается как реквизит: каждый орган имеет код (КОФК), который указывается в заявлениях, карточке подписей и платёжных документах. Свой ТОФК определяется правилами порядка лицевых счетов.",
-   "citation": "Общее название территориальных органов казначейства (УФК и их отделения). В формах КС фигурирует как «орган Федерального казначейства» со своим кодом КОФК.",
-   "pages": [
-    {
-     "layer": "term",
-     "url": "/glossary/tofk/",
-     "title": "ТОФК"
-    }
-   ],
-   "relations": {
-    "RELATED_TERM": [
-     "ufk",
-     "kofk",
-     "fk"
-    ],
-    "REQUIRES_DOC": [
-     "zayavlenie-ls",
-     "kartochka-podpisey"
-    ],
-    "SEE_ERROR": [
-     "err-zatyanulos-otkrytie"
-    ],
-    "MONETIZED_BY": [
-     "service-open"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/tofk"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-tofk",
-   "scores": {
-    "authority": 27,
-    "coverage": 83,
-    "connectivity": 100,
-    "citation": 100,
-    "aiReadiness": 100,
     "density": 100
    }
   },
@@ -3981,6 +3984,55 @@
    }
   },
   {
+   "id": "fk",
+   "type": [
+    "term"
+   ],
+   "name": "Федеральное казначейство",
+   "aliases": [
+    "казначейство россии",
+    "фк",
+    "roskazna",
+    "Казначейство России"
+   ],
+   "summary": "Федеральное казначейство — федеральная служба в ведении Минфина России, которая ведёт лицевые счета участников казначейского сопровождения, санкционирует расходы по госконтрактам и субсидиям и управляет единым казначейским счётом. Для подрядчика это «банк» по целевым средствам: деньги контракта проходят только через его территориальные органы — УФК.",
+   "citation": "Федеральный орган (служба при Минфине), который исполняет бюджет, ведёт лицевые счета и контролирует движение целевых средств. Именно казначейство, а не банк, проводит и проверяет платежи при казначейском сопровождении.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/federalnoe-kaznacheystvo/",
+     "title": "Федеральное казначейство"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ufk",
+     "tofk",
+     "eks",
+     "giis-eb"
+    ],
+    "REQUIRES_DOC": [
+     "zayavlenie-ls"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/ks_2025/"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-fk",
+   "scores": {
+    "authority": 12,
+    "coverage": 67,
+    "connectivity": 57,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
    "id": "rezervirovanie-ls",
    "type": [
     "term"
@@ -4255,55 +4307,6 @@
     "coverage": 67,
     "connectivity": 50,
     "citation": 80,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "fk",
-   "type": [
-    "term"
-   ],
-   "name": "Федеральное казначейство",
-   "aliases": [
-    "казначейство россии",
-    "фк",
-    "roskazna",
-    "Казначейство России"
-   ],
-   "summary": "Федеральное казначейство — федеральная служба в ведении Минфина России, которая ведёт лицевые счета участников казначейского сопровождения, санкционирует расходы по госконтрактам и субсидиям и управляет единым казначейским счётом. Для подрядчика это «банк» по целевым средствам: деньги контракта проходят только через его территориальные органы — УФК.",
-   "citation": "Федеральный орган (служба при Минфине), который исполняет бюджет, ведёт лицевые счета и контролирует движение целевых средств. Именно казначейство, а не банк, проводит и проверяет платежи при казначейском сопровождении.",
-   "pages": [
-    {
-     "layer": "term",
-     "url": "/glossary/federalnoe-kaznacheystvo/",
-     "title": "Федеральное казначейство"
-    }
-   ],
-   "relations": {
-    "RELATED_TERM": [
-     "ufk",
-     "tofk",
-     "eks",
-     "giis-eb"
-    ],
-    "REQUIRES_DOC": [
-     "zayavlenie-ls"
-    ],
-    "MONETIZED_BY": [
-     "service-open"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/ks_2025/"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-fk",
-   "scores": {
-    "authority": 11,
-    "coverage": 67,
-    "connectivity": 53,
-    "citation": 100,
     "aiReadiness": 100,
     "density": 100
    }
@@ -5035,6 +5038,49 @@
    }
   },
   {
+   "id": "eks",
+   "type": [
+    "term"
+   ],
+   "name": "ЕКС",
+   "aliases": [
+    "единый казначейский счет",
+    "Единый казначейский счёт"
+   ],
+   "summary": "ЕКС — единый казначейский счёт: банковский счёт Федерального казначейства в Банке России, на котором физически лежат все средства бюджетной системы. Лицевые счета участников КС — учётные записи «внутри» ЕКС: у подрядчика нет отдельного банковского счёта, его деньги — запись в учёте казначейства на ЕКС.",
+   "citation": "Счёт казначейства в ЦБ, объединяющий средства бюджетов. Лицевые счета (включая КС-счета) — аналитические счета на ЕКС, а не самостоятельные банковские счета.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/eks/",
+     "title": "ЕКС"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ls-71",
+     "ens",
+     "fk"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/edinyy-kaznacheyskiy-schet-vs-ks-schet-otlichiya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-eks",
+   "scores": {
+    "authority": 9,
+    "coverage": 50,
+    "connectivity": 40,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 80
+   }
+  },
+  {
    "id": "kod-71",
    "type": [
     "term"
@@ -5290,49 +5336,6 @@
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
-   }
-  },
-  {
-   "id": "eks",
-   "type": [
-    "term"
-   ],
-   "name": "ЕКС",
-   "aliases": [
-    "единый казначейский счет",
-    "Единый казначейский счёт"
-   ],
-   "summary": "ЕКС — единый казначейский счёт: банковский счёт Федерального казначейства в Банке России, на котором физически лежат все средства бюджетной системы. Лицевые счета участников КС — учётные записи «внутри» ЕКС: у подрядчика нет отдельного банковского счёта, его деньги — запись в учёте казначейства на ЕКС.",
-   "citation": "Счёт казначейства в ЦБ, объединяющий средства бюджетов. Лицевые счета (включая КС-счета) — аналитические счета на ЕКС, а не самостоятельные банковские счета.",
-   "pages": [
-    {
-     "layer": "term",
-     "url": "/glossary/eks/",
-     "title": "ЕКС"
-    }
-   ],
-   "relations": {
-    "RELATED_TERM": [
-     "ls-71",
-     "ens",
-     "fk"
-    ],
-    "MONETIZED_BY": [
-     "service-open"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/edinyy-kaznacheyskiy-schet-vs-ks-schet-otlichiya"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-eks",
-   "scores": {
-    "authority": 8,
-    "coverage": 50,
-    "connectivity": 37,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 73
    }
   },
   {
@@ -8253,10 +8256,12 @@
     "от какой цены контракта применяется кс",
     "с какой суммы нужен казначейский счет",
     "стоимостной порог кс по госконтрактам",
-    "при какой цене договора открывают счет в уфк"
+    "при какой цене договора открывают счет в уфк",
+    "лимит казначейского сопровождения",
+    "со скольки обязательно казначейское сопровождение"
    ],
    "summary": "",
-   "citation": "Пороговые суммы КС каждый год заново устанавливает закон о федеральном бюджете, и они различаются по категориям средств — ориентируйтесь на редакцию текущего года и текст своего контракта.",
+   "citation": "По 44-ФЗ — от 3 млн ₽ при авансе больше 50% или от 100 млн ₽ независимо от аванса; гособоронзаказ — независимо от суммы. Пороги на год закрепляет закон о бюджете (на 2026 — № 426-ФЗ).",
    "pages": [
     {
      "layer": "faq",
@@ -24837,7 +24842,7 @@
      "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid"
     ],
     "SAME_CLUSTER": [
-     "faq-ks-eto-nadolgo"
+     "faq-obsluzhivanie-vs-soprovozhdenie"
     ]
    },
    "updated": "2026-07-09",
@@ -24849,6 +24854,59 @@
     "citation": 50,
     "aiReadiness": 60,
     "density": 60
+   }
+  },
+  {
+   "id": "faq-obsluzhivanie-vs-soprovozhdenie",
+   "type": [
+    "faq"
+   ],
+   "name": "Чем казначейское обслуживание отличается от казначейского сопровождения?",
+   "aliases": [
+    "казначейское обслуживание это",
+    "что такое казначейское обслуживание",
+    "казначейское обслуживание исполнения бюджетов",
+    "казначейское обслуживание и сопровождение разница",
+    "отличие обслуживания от сопровождения казначейства"
+   ],
+   "summary": "",
+   "citation": "Обслуживание — ведение казначейством счетов бюджетов и кассовых операций (ст. 242.15 БК РФ). Сопровождение — контроль целевых средств по контрактам и субсидиям (ст. 242.23–242.26). Разный охват и разные статьи кодекса.",
+   "pages": [
+    {
+     "layer": "faq",
+     "url": "/voprosy/kaznacheyskoe-obsluzhivanie-vs-soprovozhdenie/",
+     "title": "Чем казначейское обслуживание отличается от казначейского сопровождения?"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "ks",
+     "eks",
+     "fk",
+     "tofk"
+    ],
+    "REGULATED_BY": [
+     "law-бк-рф-ст-2422224226"
+    ],
+    "MONETIZED_BY": [
+     "service-start"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/ks_2025"
+    ],
+    "SAME_CLUSTER": [
+     "faq-ks-eto-nadolgo"
+    ]
+   },
+   "updated": "2026-07-13",
+   "schema_id": "https://kazna-gov.ru/#e-faq-obsluzhivanie-vs-soprovozhdenie",
+   "scores": {
+    "authority": 1,
+    "coverage": 83,
+    "connectivity": 27,
+    "citation": 50,
+    "aiReadiness": 60,
+    "density": 53
    }
   },
   {

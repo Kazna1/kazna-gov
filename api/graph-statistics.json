@@ -3,13 +3,13 @@
  "version": "2026-07-09",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
- "nodes": 485,
- "edges": 4025,
+ "nodes": 486,
+ "edges": 4032,
  "byType": {
   "error": 13,
   "document": 19,
   "term": 120,
-  "faq": 300,
+  "faq": 301,
   "hub": 10,
   "tool": 10,
   "service": 6,
@@ -17,12 +17,12 @@
  },
  "relTypes": {
   "SEE_ERROR": 377,
-  "MONETIZED_BY": 433,
+  "MONETIZED_BY": 434,
   "RELATED_DOC": 55,
   "RELATED_TERM": 401,
   "REQUIRES_DOC": 454,
-  "REGULATED_BY": 426,
-  "USES_TERM": 1266,
+  "REGULATED_BY": 427,
+  "USES_TERM": 1270,
   "DIAGNOSED_BY": 23,
   "RELATED_HUB": 28,
   "SEE_FAQ": 121,
@@ -31,7 +31,7 @@
   "RESOLVES_TO": 33,
   "SERVICE_REQUIRES": 19,
   "SERVICE_SOLVES": 18,
-  "SAME_CLUSTER": 300
+  "SAME_CLUSTER": 301
  },
  "topAuthority": [
   {
@@ -64,7 +64,7 @@
   },
   {
    "id": "law-бк-рф-ст-2422224226",
-   "in": 75
+   "in": 76
   },
   {
    "id": "ls-71",
