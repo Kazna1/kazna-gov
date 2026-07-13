@@ -39,7 +39,12 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
     img.src = ENDPOINT_URL + "?" + q.toString();
   } catch (e) {}
 })();
-</script> <!-- 7. УНИВЕРСАЛЬНАЯ МОДАЛКА — fallback для страниц без своего баннера --> <style>
+</script> <!-- kz:cookie-consent:start -->
+<!-- cookie-consent · единый источник правды для kgcb-fallback-баннера и мини-кнопки «Настройки cookies».
+     Извлечён из 14 страниц (байт-идентичный блок 7–8 HEAD INJECTION) + a11y-фиксы:
+     без aria-modal (баннер немодальный), Esc = скрыть без записи согласия, отступ над sticky-CTA ≤720px.
+     Инлайн-копий в страницах быть не должно — только маркер cookie-consent. -->
+<!-- 7. УНИВЕРСАЛЬНАЯ МОДАЛКА — fallback для страниц без своего баннера --> <style>
 .kgcb-mask,.kgcb-mask *{box-sizing:border-box}
 .kgcb-mask{position:fixed;left:0;right:0;bottom:0;top:auto;background:none;z-index:10000;display:none;align-items:flex-end;justify-content:center;padding:0 16px 16px;pointer-events:none;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;}
 .kgcb-mask.is-open{display:flex;animation:kgcbFadeIn .25s ease;}
@@ -58,6 +63,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 @keyframes kgcbFadeIn{from{opacity:0}to{opacity:1}}
 @keyframes kgcbPop{from{transform:translateY(12px) scale(.98);opacity:0}to{transform:translateY(0) scale(1);opacity:1}}
 @media (max-width:520px){.kgcb-card{padding:22px 18px 18px;}.kgcb-actions{flex-direction:column-reverse;}.kgcb-btn{width:100%;}}
+@media (max-width:720px){.kgcb-mask{padding-bottom:88px;}}
 @media (prefers-reduced-motion:reduce){.kgcb-mask.is-open,.kgcb-card{animation:none;}}
 </style> <script>
 (function(){
@@ -88,7 +94,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
     if(document.getElementById('kgcbMask'))return;
     var m=document.createElement('div');
     m.id='kgcbMask';m.className='kgcb-mask';
-    m.innerHTML='<div class="kgcb-card" role="dialog" aria-modal="true" aria-labelledby="kgcbTitle"><h3 id="kgcbTitle">Используем cookies для&nbsp;аналитики</h3><p>Помогает понять, как читают материалы и&nbsp;улучшать сервис. Подробнее в&nbsp;<a href="/personal_data_policy" target="_blank" rel="noopener">политике обработки персональных данных</a>.</p><div class="kgcb-actions"><button type="button" class="kgcb-btn kgcb-btn--secondary" data-act="decline" style="display:none">Только необходимые</button><button type="button" class="kgcb-btn kgcb-btn--primary" data-act="accept">Хорошо</button></div></div>';
+    m.innerHTML='<div class="kgcb-card" role="dialog" aria-labelledby="kgcbTitle"><h3 id="kgcbTitle">Используем cookies для&nbsp;аналитики</h3><p>Помогает понять, как читают материалы и&nbsp;улучшать сервис. Подробнее в&nbsp;<a href="/personal_data_policy" target="_blank" rel="noopener">политике обработки персональных данных</a>.</p><div class="kgcb-actions"><button type="button" class="kgcb-btn kgcb-btn--secondary" data-act="decline" style="display:none">Только необходимые</button><button type="button" class="kgcb-btn kgcb-btn--primary" data-act="accept">Хорошо</button></div></div>';
     function attach(){
       document.body.appendChild(m);
       requestAnimationFrame(function(){m.classList.add('is-open');});
@@ -100,6 +106,13 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
       }
       m.querySelector('[data-act="accept"]').addEventListener('click',function(){close('all');});
       m.querySelector('[data-act="decline"]').addEventListener('click',function(){close('necessary');});
+      document.addEventListener('keydown',function kgcbEsc(e){
+        if(e.key==='Escape'&&document.getElementById('kgcbMask')){
+          m.classList.remove('is-open');
+          setTimeout(function(){if(m.parentNode)m.parentNode.removeChild(m);},220);
+          document.removeEventListener('keydown',kgcbEsc);
+        }
+      });
     }
     if(document.body){attach();}else{document.addEventListener('DOMContentLoaded',attach);}
   }
@@ -157,7 +170,8 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   }
   if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',inject);}else{inject();}
 })();
-</script><!-- nominify end --><!-- nominify begin --><!-- ============================================== --> <!-- HEAD-блок (Page Settings → код в HEAD) --> <!-- ============================================== --> <meta name="description" content="Все услуги казначейского сопровождения под ключ — 19 000–69 000 ₽. Открытие счёта в УФК за 2 дня, документы, платежи, отчётность. Через нас — 40+ млрд ₽ контрактов."> <meta name="author" content="Стелла Иванова"> <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"> <meta name="referrer" content="strict-origin-when-cross-origin"> <meta name="format-detection" content="telephone=no"> <meta property="og:type" content="article"> <meta property="og:locale" content="ru_RU"> <meta property="og:site_name" content="Казна"> <meta property="og:title" content="Услуги казначейского сопровождения 2026 — цены, сроки"> <meta property="og:description" content="Все услуги казначейского сопровождения под ключ. Открытие счёта в УФК за 2 дня. 40+ млрд ₽ опыта."> <meta property="og:url" content="https://kazna-gov.ru/uslugi"> <meta property="og:image" content="https://api.kazna-gov.ru/og/uslugi.jpg"> <meta property="og:image:secure_url" content="https://api.kazna-gov.ru/og/uslugi.jpg"> <meta property="og:image:type" content="image/jpeg"> <meta property="og:image:width" content="1200"> <meta property="og:image:height" content="630"> <meta property="og:image:alt" content="Казначейское сопровождение 2026 — Казна"> <meta property="article:published_time" content="2026-05-07T09:00:00+03:00"> <meta property="article:modified_time" content="2026-07-04T10:00:00+03:00"> <meta property="article:author" content="https://kazna-gov.ru/expert/stella"> <meta property="article:section" content="Казначейское сопровождение"> <meta property="article:tag" content="44-ФЗ"> <meta property="article:tag" content="ГОЗ"> <meta property="article:tag" content="275-ФЗ"> <meta property="article:tag" content="казначейское сопровождение"> <meta property="article:tag" content="ПП 1552"> <meta name="twitter:card" content="summary_large_image"> <meta name="twitter:site" content="@kazna_gov"> <meta name="twitter:creator" content="@kazna_gov"> <meta name="twitter:title" content="Услуги казначейского сопровождения 2026 — цены от 19 000 ₽"> <meta name="twitter:description" content="Все услуги казначейского сопровождения под ключ: открытие счёта, платежи, отчётность. Цены 19 000–69 000 ₽, счёт за 2 дня. 40+ млрд ₽ контрактов, разбор контракта — 9 900 ₽."> <meta name="twitter:image" content="https://api.kazna-gov.ru/og/uslugi.jpg"> <meta name="twitter:image:alt" content="Казначейское сопровождение 2026 — Казна"> <meta property="telegram:channel" content="@kazna_gov"> <link rel="alternate" hreflang="ru-RU" href="https://kazna-gov.ru/uslugi"> <link rel="alternate" hreflang="x-default" href="https://kazna-gov.ru/uslugi"> <!-- RSS feed (актуальный, обновляется автоматически после каждой публикации) --> <link rel="alternate" type="application/rss+xml" title="Казна — блог" href="https://api.kazna-gov.ru/feed.xml"> <!-- Schema.org --> <script type="application/ld+json">
+</script>
+<!-- kz:cookie-consent:end --><!-- nominify end --><!-- nominify begin --><!-- ============================================== --> <!-- HEAD-блок (Page Settings → код в HEAD) --> <!-- ============================================== --> <meta name="description" content="Все услуги казначейского сопровождения под ключ — 19 000–69 000 ₽. Открытие счёта в УФК за 2 дня, документы, платежи, отчётность. Через нас — 40+ млрд ₽ контрактов."> <meta name="author" content="Стелла Иванова"> <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"> <meta name="referrer" content="strict-origin-when-cross-origin"> <meta name="format-detection" content="telephone=no"> <meta property="og:type" content="article"> <meta property="og:locale" content="ru_RU"> <meta property="og:site_name" content="Казна"> <meta property="og:title" content="Услуги казначейского сопровождения 2026 — цены, сроки"> <meta property="og:description" content="Все услуги казначейского сопровождения под ключ. Открытие счёта в УФК за 2 дня. 40+ млрд ₽ опыта."> <meta property="og:url" content="https://kazna-gov.ru/uslugi"> <meta property="og:image" content="https://api.kazna-gov.ru/og/uslugi.jpg"> <meta property="og:image:secure_url" content="https://api.kazna-gov.ru/og/uslugi.jpg"> <meta property="og:image:type" content="image/jpeg"> <meta property="og:image:width" content="1200"> <meta property="og:image:height" content="630"> <meta property="og:image:alt" content="Казначейское сопровождение 2026 — Казна"> <meta property="article:published_time" content="2026-05-07T09:00:00+03:00"> <meta property="article:modified_time" content="2026-07-04T10:00:00+03:00"> <meta property="article:author" content="https://kazna-gov.ru/expert/stella"> <meta property="article:section" content="Казначейское сопровождение"> <meta property="article:tag" content="44-ФЗ"> <meta property="article:tag" content="ГОЗ"> <meta property="article:tag" content="275-ФЗ"> <meta property="article:tag" content="казначейское сопровождение"> <meta property="article:tag" content="ПП 1552"> <meta name="twitter:card" content="summary_large_image"> <meta name="twitter:site" content="@kazna_gov"> <meta name="twitter:creator" content="@kazna_gov"> <meta name="twitter:title" content="Услуги казначейского сопровождения 2026 — цены от 19 000 ₽"> <meta name="twitter:description" content="Все услуги казначейского сопровождения под ключ: открытие счёта, платежи, отчётность. Цены 19 000–69 000 ₽, счёт за 2 дня. 40+ млрд ₽ контрактов, разбор контракта — 9 900 ₽."> <meta name="twitter:image" content="https://api.kazna-gov.ru/og/uslugi.jpg"> <meta name="twitter:image:alt" content="Казначейское сопровождение 2026 — Казна"> <meta property="telegram:channel" content="@kazna_gov"> <link rel="alternate" hreflang="ru-RU" href="https://kazna-gov.ru/uslugi"> <link rel="alternate" hreflang="x-default" href="https://kazna-gov.ru/uslugi"> <!-- RSS feed (актуальный, обновляется автоматически после каждой публикации) --> <link rel="alternate" type="application/rss+xml" title="Казна — блог" href="https://api.kazna-gov.ru/feed.xml"> <!-- Schema.org --> <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [

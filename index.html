@@ -39,7 +39,12 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
     img.src = ENDPOINT_URL + "?" + q.toString();
   } catch (e) {}
 })();
-</script> <!-- 7. УНИВЕРСАЛЬНАЯ МОДАЛКА — fallback для страниц без своего баннера --> <style>
+</script> <!-- kz:cookie-consent:start -->
+<!-- cookie-consent · единый источник правды для kgcb-fallback-баннера и мини-кнопки «Настройки cookies».
+     Извлечён из 14 страниц (байт-идентичный блок 7–8 HEAD INJECTION) + a11y-фиксы:
+     без aria-modal (баннер немодальный), Esc = скрыть без записи согласия, отступ над sticky-CTA ≤720px.
+     Инлайн-копий в страницах быть не должно — только маркер cookie-consent. -->
+<!-- 7. УНИВЕРСАЛЬНАЯ МОДАЛКА — fallback для страниц без своего баннера --> <style>
 .kgcb-mask,.kgcb-mask *{box-sizing:border-box}
 .kgcb-mask{position:fixed;left:0;right:0;bottom:0;top:auto;background:none;z-index:10000;display:none;align-items:flex-end;justify-content:center;padding:0 16px 16px;pointer-events:none;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;}
 .kgcb-mask.is-open{display:flex;animation:kgcbFadeIn .25s ease;}
@@ -58,6 +63,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 @keyframes kgcbFadeIn{from{opacity:0}to{opacity:1}}
 @keyframes kgcbPop{from{transform:translateY(12px) scale(.98);opacity:0}to{transform:translateY(0) scale(1);opacity:1}}
 @media (max-width:520px){.kgcb-card{padding:22px 18px 18px;}.kgcb-actions{flex-direction:column-reverse;}.kgcb-btn{width:100%;}}
+@media (max-width:720px){.kgcb-mask{padding-bottom:88px;}}
 @media (prefers-reduced-motion:reduce){.kgcb-mask.is-open,.kgcb-card{animation:none;}}
 </style> <script>
 (function(){
@@ -88,7 +94,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
     if(document.getElementById('kgcbMask'))return;
     var m=document.createElement('div');
     m.id='kgcbMask';m.className='kgcb-mask';
-    m.innerHTML='<div class="kgcb-card" role="dialog" aria-modal="true" aria-labelledby="kgcbTitle"><h3 id="kgcbTitle">Используем cookies для&nbsp;аналитики</h3><p>Помогает понять, как читают материалы и&nbsp;улучшать сервис. Подробнее в&nbsp;<a href="/personal_data_policy" target="_blank" rel="noopener">политике обработки персональных данных</a>.</p><div class="kgcb-actions"><button type="button" class="kgcb-btn kgcb-btn--secondary" data-act="decline" style="display:none">Только необходимые</button><button type="button" class="kgcb-btn kgcb-btn--primary" data-act="accept">Хорошо</button></div></div>';
+    m.innerHTML='<div class="kgcb-card" role="dialog" aria-labelledby="kgcbTitle"><h3 id="kgcbTitle">Используем cookies для&nbsp;аналитики</h3><p>Помогает понять, как читают материалы и&nbsp;улучшать сервис. Подробнее в&nbsp;<a href="/personal_data_policy" target="_blank" rel="noopener">политике обработки персональных данных</a>.</p><div class="kgcb-actions"><button type="button" class="kgcb-btn kgcb-btn--secondary" data-act="decline" style="display:none">Только необходимые</button><button type="button" class="kgcb-btn kgcb-btn--primary" data-act="accept">Хорошо</button></div></div>';
     function attach(){
       document.body.appendChild(m);
       requestAnimationFrame(function(){m.classList.add('is-open');});
@@ -100,6 +106,13 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
       }
       m.querySelector('[data-act="accept"]').addEventListener('click',function(){close('all');});
       m.querySelector('[data-act="decline"]').addEventListener('click',function(){close('necessary');});
+      document.addEventListener('keydown',function kgcbEsc(e){
+        if(e.key==='Escape'&&document.getElementById('kgcbMask')){
+          m.classList.remove('is-open');
+          setTimeout(function(){if(m.parentNode)m.parentNode.removeChild(m);},220);
+          document.removeEventListener('keydown',kgcbEsc);
+        }
+      });
     }
     if(document.body){attach();}else{document.addEventListener('DOMContentLoaded',attach);}
   }
@@ -157,7 +170,8 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   }
   if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',inject);}else{inject();}
 })();
-</script><!-- nominify end --><!-- nominify begin --><!-- ============================================ --> <!-- KAZNA · HEAD INJECTION                       --> <!-- Tilda: Настройки сайта → Ещё → Код → В код <head> --> <!-- ============================================ --> <meta name="keywords" content="казначейское сопровождение, УФК, казначейский счёт, госконтракт, 44-ФЗ, 223-ФЗ, ГОЗ, нацпроекты, сопровождение контракта, открытие счёта в УФК"> <meta name="theme-color" content="#0a1612"> <!-- OpenGraph --> <meta property="og:type" content="website"> <meta property="og:locale" content="ru_RU"> <meta property="og:site_name" content="Казна · Казначейское сопровождение"> <meta property="og:title" content="Казна · Казначейское сопровождение под ключ — от 49 000 ₽/мес"> <meta property="og:description" content="Открытие счёта в УФК за 2 рабочих дня. Личное ведение экспертом с опытом 15+ лет. Контакты бывших клиентов по запросу."> <meta property="og:url" content="https://kazna-gov.ru/"> <meta property="og:image" content="https://api.kazna-gov.ru/og-default.jpg"> <meta property="og:image:width" content="1200"> <meta property="og:image:height" content="630"> <!-- Twitter Card --> <meta name="twitter:card" content="summary_large_image"> <meta name="twitter:title" content="Казна · Казначейское сопровождение под ключ — от 49 000 ₽/мес"> <meta name="twitter:description" content="Казначейское сопровождение госконтрактов под ключ: счёт в УФК за 2 дня, платежи, отчётность. 15+ лет, 400+ клиентов, 0 возвратов. Разбор контракта — 9 900 ₽."> <meta name="twitter:image" content="https://api.kazna-gov.ru/og-default.jpg"> <!-- Шрифты: preconnect + preload + non-blocking load --> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Аналитика и форма: ранняя установка соединения для LCP/INP --> <link rel="preconnect" href="https://mc.yandex.ru" crossorigin> <link rel="preconnect" href="https://forms.tildaapi.pro" crossorigin> <link rel="preconnect" href="https://cf.kazna-gov.ru" crossorigin> <!-- ШРИФТЫ: cyrillic + базовый latin only (отказ от Google Fonts CSS2:
+</script>
+<!-- kz:cookie-consent:end --><!-- nominify end --><!-- nominify begin --><!-- ============================================ --> <!-- KAZNA · HEAD INJECTION                       --> <!-- Tilda: Настройки сайта → Ещё → Код → В код <head> --> <!-- ============================================ --> <meta name="keywords" content="казначейское сопровождение, УФК, казначейский счёт, госконтракт, 44-ФЗ, 223-ФЗ, ГОЗ, нацпроекты, сопровождение контракта, открытие счёта в УФК"> <meta name="theme-color" content="#0a1612"> <!-- OpenGraph --> <meta property="og:type" content="website"> <meta property="og:locale" content="ru_RU"> <meta property="og:site_name" content="Казна · Казначейское сопровождение"> <meta property="og:title" content="Казна · Казначейское сопровождение под ключ — от 49 000 ₽/мес"> <meta property="og:description" content="Открытие счёта в УФК за 2 рабочих дня. Личное ведение экспертом с опытом 15+ лет. Контакты бывших клиентов по запросу."> <meta property="og:url" content="https://kazna-gov.ru/"> <meta property="og:image" content="https://api.kazna-gov.ru/og-default.jpg"> <meta property="og:image:width" content="1200"> <meta property="og:image:height" content="630"> <!-- Twitter Card --> <meta name="twitter:card" content="summary_large_image"> <meta name="twitter:title" content="Казна · Казначейское сопровождение под ключ — от 49 000 ₽/мес"> <meta name="twitter:description" content="Казначейское сопровождение госконтрактов под ключ: счёт в УФК за 2 дня, платежи, отчётность. 15+ лет, 400+ клиентов, 0 возвратов. Разбор контракта — 9 900 ₽."> <meta name="twitter:image" content="https://api.kazna-gov.ru/og-default.jpg"> <!-- Шрифты: preconnect + preload + non-blocking load --> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Аналитика и форма: ранняя установка соединения для LCP/INP --> <link rel="preconnect" href="https://mc.yandex.ru" crossorigin> <link rel="preconnect" href="https://forms.tildaapi.pro" crossorigin> <link rel="preconnect" href="https://cf.kazna-gov.ru" crossorigin> <!-- ШРИФТЫ: cyrillic + базовый latin only (отказ от Google Fonts CSS2:
      избегаем 6 файлов latin-ext/vietnamese на ~340 KB. Берём напрямую
      с Cloudflare Fonts proxy / Tilda CDN — variable woff2). --> <link rel="preload" as="font" type="font/woff2" crossorigin
       href="/cf-fonts/v/inter-tight/5.0.18/cyrillic/wght/normal.woff2"> <link rel="preload" as="font" type="font/woff2" crossorigin
@@ -1891,14 +1905,23 @@ a.panel__row, .panel__row {
     if (existing && existing.parentNode) existing.parentNode.removeChild(existing);
     var m = document.createElement('div');
     m.id = 'kzSuccessModal';
+    m.setAttribute('role','dialog');
+    m.setAttribute('aria-modal','true');
+    m.setAttribute('aria-labelledby','kzSuccessTitle');
+    var kzPrevFocus = document.activeElement;
     m.style.cssText = 'position:fixed;inset:0;background:rgba(14,15,16,.7);z-index:99999;display:flex;align-items:center;justify-content:center;padding:24px;-webkit-backdrop-filter:blur(8px) saturate(140%);backdrop-filter:blur(8px) saturate(140%);font-family:Inter,-apple-system,sans-serif;animation:kzModalFadeIn .25s ease';
-    m.innerHTML = '<div style="background:#fff;color:#0E0F0E;max-width:420px;width:100%;border-radius:18px;padding:36px 30px 28px;box-shadow:0 24px 64px -16px rgba(0,0,0,.5),0 2px 8px rgba(0,0,0,.2);text-align:center;animation:kzModalPop .3s cubic-bezier(.2,.8,.3,1.2)"><div style="width:64px;height:64px;margin:0 auto 18px;border-radius:50%;background:#15846B;display:flex;align-items:center;justify-content:center"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div><h3 style="font-family:Lora,Georgia,serif;font-weight:700;font-size:22px;letter-spacing:-.02em;line-height:1.25;margin:0 0 10px;color:#0E0F0E">'+title+'</h3><p style="margin:0 0 22px;font-size:14.5px;line-height:1.55;color:#3F4347">'+text+'</p><button type="button" id="kzSuccessClose" style="background:#15846B;color:#fff;font-family:Inter,sans-serif;font-weight:600;font-size:14px;padding:12px 24px;border-radius:10px;border:0;cursor:pointer;min-width:140px;transition:background .15s">Хорошо</button></div>';
+    m.innerHTML = '<div style="background:#fff;color:#0E0F0E;max-width:420px;width:100%;border-radius:18px;padding:36px 30px 28px;box-shadow:0 24px 64px -16px rgba(0,0,0,.5),0 2px 8px rgba(0,0,0,.2);text-align:center;animation:kzModalPop .3s cubic-bezier(.2,.8,.3,1.2)"><div style="width:64px;height:64px;margin:0 auto 18px;border-radius:50%;background:#15846B;display:flex;align-items:center;justify-content:center"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div><h3 id="kzSuccessTitle" style="font-family:Lora,Georgia,serif;font-weight:700;font-size:22px;letter-spacing:-.02em;line-height:1.25;margin:0 0 10px;color:#0E0F0E">'+title+'</h3><p style="margin:0 0 22px;font-size:14.5px;line-height:1.55;color:#3F4347">'+text+'</p><button type="button" id="kzSuccessClose" style="background:#15846B;color:#fff;font-family:Inter,sans-serif;font-weight:600;font-size:14px;padding:12px 24px;border-radius:10px;border:0;cursor:pointer;min-width:140px;transition:background .15s">Хорошо</button></div>';
     document.body.appendChild(m);
     var close = function(){
       m.classList.add('is-closing');
-      setTimeout(function(){ if (m.parentNode) m.parentNode.removeChild(m); }, 250);
+      setTimeout(function(){
+        if (m.parentNode) m.parentNode.removeChild(m);
+        if (kzPrevFocus && typeof kzPrevFocus.focus === 'function') kzPrevFocus.focus();
+      }, 250);
     };
     var btn = m.querySelector('#kzSuccessClose');
+    btn.focus();
+    m.addEventListener('keydown', function(e){ if (e.key === 'Tab'){ e.preventDefault(); btn.focus(); } });
     btn.addEventListener('click', close);
     btn.addEventListener('mouseenter', function(){ btn.style.background = '#1FA887'; });
     btn.addEventListener('mouseleave', function(){ btn.style.background = '#15846B'; });
