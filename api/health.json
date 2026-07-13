@@ -1,13 +1,13 @@
 {
- "generated": "2026-07-13T16:58:49.489Z",
- "nodes": 486,
- "edges": 4032,
+ "generated": "2026-07-13T18:23:35.745Z",
+ "nodes": 487,
+ "edges": 4093,
  "byType": {
   "term": 120,
   "faq": 301,
   "document": 19,
   "error": 13,
-  "tool": 10,
+  "tool": 11,
   "hub": 10,
   "service": 6,
   "law": 16
@@ -16,10 +16,10 @@
   "coverage": 85,
   "authority": 8,
   "connectivity": 44,
-  "citationDensity": 26,
-  "graphDensity": 8.3,
+  "citationDensity": 25,
+  "graphDensity": 8.4,
   "machineReadability": 100,
-  "aiReadiness": 73,
+  "aiReadiness": 74,
   "registryCompleteness": 100,
   "linkQuality": 100,
   "moneyQuality": 100,
@@ -27,8 +27,8 @@
   "documentCoverage": 67,
   "errorCoverage": 62,
   "glossaryCoverage": 96,
-  "faqCoverage": 67,
-  "hubQuality": 41,
+  "faqCoverage": 68,
+  "hubQuality": 42,
   "knowledgeScore": 62
  }
 }
