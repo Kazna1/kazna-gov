@@ -50,8 +50,8 @@
      "hub-platezhi"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н",
-     "law-бк-рф-ст-2422224226"
+     "law-prikaz-minfina-214n",
+     "law-bk-rf-st-2422224226"
     ],
     "DIAGNOSED_BY": [
      "tool-diagnostika-platezha",
@@ -118,8 +118,8 @@
      "hub-scheta"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н",
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-44n",
+     "law-prikaz-fk-21n"
     ],
     "DIAGNOSED_BY": [
      "tool-proverka-komplekta",
@@ -183,8 +183,8 @@
      "hub-sankts"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-приказ-минфина-214н"
+     "law-bk-rf-st-2422224226",
+     "law-prikaz-minfina-214n"
     ],
     "DIAGNOSED_BY": [
      "tool-diagnostika-platezha",
@@ -248,8 +248,8 @@
      "hub-ks"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-приказ-фк-44н"
+     "law-bk-rf-st-2422224226",
+     "law-prikaz-fk-44n"
     ],
     "DIAGNOSED_BY": [
      "tool-generator-chek-lista",
@@ -310,7 +310,7 @@
      "hub-scheta"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "DIAGNOSED_BY": [
      "tool-podbor-scheta"
@@ -370,7 +370,7 @@
      "hub-platezhi"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "DIAGNOSED_BY": [
      "tool-marshrutizator",

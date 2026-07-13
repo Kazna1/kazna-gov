@@ -47,6 +47,26 @@ ErrorDocument 404 /404.html
 
 # --- RSS блога -> живой фид на api ---
 RewriteRule ^blog/rss/?$ https://api.kazna-gov.ru/feed.xml [R=301,L]
+
+# --- 301: law-сущности /entity/ — транслитерация слагов (кириллица → латиница) ---
+# Старые кириллические URL публиковались в llms-entities.txt; файлы переименованы gen-graph.js.
+RewriteRule ^entity/law-44-фз\.json$ /entity/law-44-fz.json [R=301,L]
+RewriteRule ^entity/law-223-фз\.json$ /entity/law-223-fz.json [R=301,L]
+RewriteRule ^entity/law-275-фз\.json$ /entity/law-275-fz.json [R=301,L]
+RewriteRule ^entity/law-63-фз\.json$ /entity/law-63-fz.json [R=301,L]
+RewriteRule ^entity/law-бк-рф-ст-2422224226\.json$ /entity/law-bk-rf-st-2422224226.json [R=301,L]
+RewriteRule ^entity/law-гк-рф-ст-185189\.json$ /entity/law-gk-rf-st-185189.json [R=301,L]
+RewriteRule ^entity/law-ежегодный-закон-о-федеральном-бюджете\.json$ /entity/law-ezhegodnyy-zakon-o-federalnom-byudzhete.json [R=301,L]
+RewriteRule ^entity/law-коап-рф-ст-1514\.json$ /entity/law-koap-rf-st-1514.json [R=301,L]
+RewriteRule ^entity/law-коап-рф-ст-1537\.json$ /entity/law-koap-rf-st-1537.json [R=301,L]
+RewriteRule ^entity/law-нк-рф-гл-21\.json$ /entity/law-nk-rf-gl-21.json [R=301,L]
+RewriteRule ^entity/law-пп-1465\.json$ /entity/law-pp-1465.json [R=301,L]
+RewriteRule ^entity/law-пп-2053\.json$ /entity/law-pp-2053.json [R=301,L]
+RewriteRule ^entity/law-приказ-минфина-214н\.json$ /entity/law-prikaz-minfina-214n.json [R=301,L]
+RewriteRule ^entity/law-приказ-минцифры-1001\.json$ /entity/law-prikaz-mintsifry-1001.json [R=301,L]
+RewriteRule ^entity/law-приказ-фк-21н\.json$ /entity/law-prikaz-fk-21n.json [R=301,L]
+RewriteRule ^entity/law-приказ-фк-44н\.json$ /entity/law-prikaz-fk-44n.json [R=301,L]
+
 # --- 301 редиректы (перенос с Tilda) ---
 RewriteRule ^how_to_open/?$ /blog/how_to_open [R=301,L]
 RewriteRule ^tofk/?$ /blog/tofk [R=301,L]

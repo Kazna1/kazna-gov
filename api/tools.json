@@ -61,10 +61,10 @@
      "hub-ks"
     ],
     "REGULATED_BY": [
-     "law-ежегодный-закон-о-федеральном-бюджете",
-     "law-бк-рф-ст-2422224226",
-     "law-приказ-фк-44н",
-     "law-275-фз"
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+     "law-bk-rf-st-2422224226",
+     "law-prikaz-fk-44n",
+     "law-275-fz"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kakie-kontrakty-popadayut-pod-kaznachejskoe-soprovozhdenie/",
@@ -147,9 +147,9 @@
      "hub-scheta"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н",
-     "law-275-фз",
-     "law-бк-рф-ст-2422224226"
+     "law-prikaz-fk-44n",
+     "law-275-fz",
+     "law-bk-rf-st-2422224226"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/how_to_open/",
@@ -240,7 +240,7 @@
      "hub-platezhi"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/vozvrat-platezha-kaznachejstvo-chto-delat/",
@@ -323,8 +323,8 @@
      "hub-platezhi"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н",
-     "law-пп-2053"
+     "law-prikaz-minfina-214n",
+     "law-pp-2053"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/avans-vs-vozmeshchenie-vs-pryamoy-platezh-tri-tipa-operatsiy-ks",
@@ -395,7 +395,7 @@
      "hub-sankts"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/sanktsionirovanie-operatsiy-kaznacheystvom",
@@ -470,9 +470,9 @@
      "hub-scheta"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н",
-     "law-приказ-фк-21н",
-     "law-63-фз"
+     "law-prikaz-fk-44n",
+     "law-prikaz-fk-21n",
+     "law-63-fz"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/zayavlenie-na-otkrytie-kaznacheyskogo-scheta",
@@ -548,8 +548,8 @@
      "hub-goz"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-коап-рф-ст-1537"
+     "law-275-fz",
+     "law-koap-rf-st-1537"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid",
@@ -624,10 +624,10 @@
      "hub-ks"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н",
-     "law-бк-рф-ст-2422224226",
-     "law-275-фз",
-     "law-коап-рф-ст-1537"
+     "law-prikaz-fk-44n",
+     "law-bk-rf-st-2422224226",
+     "law-275-fz",
+     "law-koap-rf-st-1537"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
@@ -703,8 +703,8 @@
      "hub-zakony"
     ],
     "REGULATED_BY": [
-     "law-ежегодный-закон-о-федеральном-бюджете",
-     "law-бк-рф-ст-2422224226"
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+     "law-bk-rf-st-2422224226"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-2026-opredeleniya",
@@ -777,9 +777,9 @@
      "hub-subsidii"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-ежегодный-закон-о-федеральном-бюджете",
-     "law-коап-рф-ст-1514"
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+     "law-koap-rf-st-1514"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"

@@ -43,8 +43,8 @@
      "err-zatyanulos-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н",
-     "law-бк-рф-ст-2422224226"
+     "law-prikaz-fk-44n",
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -105,7 +105,7 @@
      "err-zatyanulos-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -167,8 +167,8 @@
      "err-kartochka"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н",
-     "law-приказ-минцифры-1001"
+     "law-prikaz-fk-44n",
+     "law-prikaz-mintsifry-1001"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -230,7 +230,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -292,7 +292,7 @@
      "err-svodnyy-reestr"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -349,8 +349,8 @@
      "doverennost-mchd"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н",
-     "law-44-фз"
+     "law-prikaz-fk-44n",
+     "law-44-fz"
     ],
     "MONETIZED_BY": [
      "service-reserve"
@@ -403,7 +403,7 @@
      "ls-71"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-reserve"
@@ -463,7 +463,7 @@
      "err-naznachenie"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -576,7 +576,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -637,7 +637,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -699,8 +699,8 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-коап-рф-ст-1537"
+     "law-275-fz",
+     "law-koap-rf-st-1537"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -761,7 +761,7 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-275-фз"
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -819,8 +819,8 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-коап-рф-ст-1514"
+     "law-275-fz",
+     "law-koap-rf-st-1514"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -881,8 +881,8 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-коап-рф-ст-1537"
+     "law-275-fz",
+     "law-koap-rf-st-1537"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -940,8 +940,8 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-коап-рф-ст-1537",
-     "law-275-фз"
+     "law-koap-rf-st-1537",
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -997,8 +997,8 @@
      "komplekt-subsidii"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -1061,8 +1061,8 @@
      "err-kod-napravleniya"
     ],
     "REGULATED_BY": [
-     "law-коап-рф-ст-1514",
-     "law-приказ-минфина-214н"
+     "law-koap-rf-st-1514",
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -1174,8 +1174,8 @@
      "formulirovka-ks"
     ],
     "REGULATED_BY": [
-     "law-ежегодный-закон-о-федеральном-бюджете",
-     "law-бк-рф-ст-2422224226"
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -1231,7 +1231,7 @@
      "avans"
     ],
     "REGULATED_BY": [
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -1285,8 +1285,8 @@
      "finorgan"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-2026-opredeleniya",
@@ -1340,8 +1340,8 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-ежегодный-закон-о-федеральном-бюджете",
-     "law-коап-рф-ст-1514"
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+     "law-koap-rf-st-1514"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -1395,7 +1395,7 @@
      "ks"
     ],
     "REGULATED_BY": [
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-postpayment"
@@ -1453,7 +1453,7 @@
      "poyasnenie-ufk"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -1507,8 +1507,8 @@
      "raschetnyy-schet"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-275-фз"
+     "law-bk-rf-st-2422224226",
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -1565,8 +1565,8 @@
      "svedeniya-ssu"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н",
-     "law-275-фз"
+     "law-prikaz-fk-44n",
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -1622,7 +1622,7 @@
      "zayavlenie-ls"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-reserve"
@@ -1679,8 +1679,8 @@
      "formulirovka-ks"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -1737,7 +1737,7 @@
      "err-svodnyy-reestr"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -1797,7 +1797,7 @@
      "err-svodnyy-reestr"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -1858,7 +1858,7 @@
      "err-svedeniya-otkaz"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -1971,7 +1971,7 @@
      "tselevye-sredstva"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -2032,7 +2032,7 @@
      "err-naznachenie"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -2152,8 +2152,8 @@
      "err-igk"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н",
-     "law-бк-рф-ст-2422224226"
+     "law-prikaz-minfina-214n",
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -2213,7 +2213,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -2273,8 +2273,8 @@
      "err-igk"
     ],
     "REGULATED_BY": [
-     "law-44-фз",
-     "law-275-фз"
+     "law-44-fz",
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -2336,7 +2336,7 @@
      "err-kod-napravleniya"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -2455,7 +2455,7 @@
      "err-igk"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -2518,8 +2518,8 @@
      "err-naznachenie"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-приказ-минфина-214н"
+     "law-bk-rf-st-2422224226",
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -2579,7 +2579,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -2636,8 +2636,8 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-пп-1465",
-     "law-275-фз"
+     "law-pp-1465",
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -2748,7 +2748,7 @@
      "platezh"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -2808,7 +2808,7 @@
      "err-naznachenie"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -2868,7 +2868,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -2924,7 +2924,7 @@
      "svedeniya-ssu"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -2985,8 +2985,8 @@
      "err-naznachenie"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н",
-     "law-бк-рф-ст-2422224226"
+     "law-prikaz-minfina-214n",
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -3047,7 +3047,7 @@
      "err-kod-napravleniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -3107,8 +3107,8 @@
      "err-igk"
     ],
     "REGULATED_BY": [
-     "law-44-фз",
-     "law-275-фз"
+     "law-44-fz",
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -3167,8 +3167,8 @@
      "err-naznachenie"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н",
-     "law-нк-рф-гл-21"
+     "law-prikaz-minfina-214n",
+     "law-nk-rf-gl-21"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -3228,7 +3228,7 @@
      "err-svedeniya-otkaz"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -3288,7 +3288,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -3348,8 +3348,8 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-коап-рф-ст-1514"
+     "law-bk-rf-st-2422224226",
+     "law-koap-rf-st-1514"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -3523,7 +3523,7 @@
      "err-zatyanulos-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -3583,7 +3583,7 @@
      "err-kartochka"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-21n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -3645,7 +3645,7 @@
      "err-igk"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -3706,7 +3706,7 @@
      "err-zatyanulos-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-63-фз"
+     "law-63-fz"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -3814,8 +3814,8 @@
      "psb"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-275-fz",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -3872,7 +3872,7 @@
      "err-naznachenie"
     ],
     "REGULATED_BY": [
-     "law-275-фз"
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -3926,7 +3926,7 @@
      "golovnoy-ispolnitel"
     ],
     "REGULATED_BY": [
-     "law-275-фз"
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -3983,8 +3983,8 @@
      "err-igk"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-44-фз"
+     "law-275-fz",
+     "law-44-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -4044,8 +4044,8 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-бк-рф-ст-2422224226"
+     "law-275-fz",
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -4099,8 +4099,8 @@
      "goz"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-пп-1465"
+     "law-275-fz",
+     "law-pp-1465"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -4160,7 +4160,7 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-275-фз"
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -4224,7 +4224,7 @@
      "err-svodnyy-reestr"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -4287,7 +4287,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -4345,7 +4345,7 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-коап-рф-ст-1514"
+     "law-koap-rf-st-1514"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -4405,7 +4405,7 @@
      "err-svedeniya-otkaz"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -4516,7 +4516,7 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-коап-рф-ст-1514"
+     "law-koap-rf-st-1514"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -4624,8 +4624,8 @@
      "ks"
     ],
     "REGULATED_BY": [
-     "law-ежегодный-закон-о-федеральном-бюджете",
-     "law-приказ-минфина-214н"
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -4683,8 +4683,8 @@
      "chek-list-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-44-фз",
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-44-fz",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -4738,8 +4738,8 @@
      "tsepochka-ks"
     ],
     "REGULATED_BY": [
-     "law-223-фз",
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-223-fz",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -4847,7 +4847,7 @@
      "err-zatyanulos-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -5173,8 +5173,8 @@
      "chek-list-dokumenty"
     ],
     "REGULATED_BY": [
-     "law-44-фз",
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-44-fz",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-v-dogovore",
@@ -5228,8 +5228,8 @@
      "doverennost-mchd"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-44-фз"
+     "law-bk-rf-st-2422224226",
+     "law-44-fz"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -5285,7 +5285,7 @@
      "zayavlenie-ls"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-reserve"
@@ -5341,7 +5341,7 @@
      "chek-list-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-63-фз"
+     "law-63-fz"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -5403,8 +5403,8 @@
      "err-mchd"
     ],
     "REGULATED_BY": [
-     "law-63-фз",
-     "law-приказ-фк-44н"
+     "law-63-fz",
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -5466,8 +5466,8 @@
      "err-kartochka"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н",
-     "law-гк-рф-ст-185189"
+     "law-prikaz-fk-44n",
+     "law-gk-rf-st-185189"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -5524,7 +5524,7 @@
      "chek-list-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-44-фз"
+     "law-44-fz"
     ],
     "MONETIZED_BY": [
      "service-reserve"
@@ -5577,7 +5577,7 @@
      "kofk"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-21n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -5631,7 +5631,7 @@
      "igk"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-21n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -5692,8 +5692,8 @@
      "err-ecp"
     ],
     "REGULATED_BY": [
-     "law-63-фз",
-     "law-приказ-фк-44н"
+     "law-63-fz",
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -5755,7 +5755,7 @@
      "err-svodnyy-reestr"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -5817,7 +5817,7 @@
      "err-kartochka"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -5877,7 +5877,7 @@
      "err-zatyanulos-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -5931,7 +5931,7 @@
      "tofk"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-21n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -5988,8 +5988,8 @@
      "zayavlenie-zakrytie"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н",
-     "law-бк-рф-ст-2422224226"
+     "law-prikaz-fk-44n",
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -6046,7 +6046,7 @@
      "zayavlenie-zakrytie"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-21n"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/zakrytie-kaznacheyskogo-scheta-posle-kontrakta"
@@ -6102,7 +6102,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -6160,7 +6160,7 @@
      "doverennost-mchd"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-21n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -6222,8 +6222,8 @@
      "err-mchd"
     ],
     "REGULATED_BY": [
-     "law-63-фз",
-     "law-приказ-минцифры-1001"
+     "law-63-fz",
+     "law-prikaz-mintsifry-1001"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -6440,7 +6440,7 @@
      "err-kod-napravleniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -6500,7 +6500,7 @@
      "err-kod-napravleniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/codes",
@@ -6554,7 +6554,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-нк-рф-гл-21"
+     "law-nk-rf-gl-21"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -6725,8 +6725,8 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-пп-1465"
+     "law-275-fz",
+     "law-pp-1465"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -7002,7 +7002,7 @@
      "err-zatyanulos-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -7056,7 +7056,7 @@
      "rekvizity-ks"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-21n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -7164,7 +7164,7 @@
      "rkp"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -7225,7 +7225,7 @@
      "err-kod-napravleniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -7285,7 +7285,7 @@
      "err-naznachenie"
     ],
     "REGULATED_BY": [
-     "law-нк-рф-гл-21"
+     "law-nk-rf-gl-21"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -7344,7 +7344,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -7511,7 +7511,7 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -7630,8 +7630,8 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-коап-рф-ст-1514"
+     "law-bk-rf-st-2422224226",
+     "law-koap-rf-st-1514"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -7747,7 +7747,7 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -7806,7 +7806,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -7866,7 +7866,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-44-фз"
+     "law-44-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -7927,8 +7927,8 @@
      "err-igk"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-275-фз"
+     "law-bk-rf-st-2422224226",
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -8093,7 +8093,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -8155,7 +8155,7 @@
      "err-kod-napravleniya"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -8329,7 +8329,7 @@
      "err-kod-napravleniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -8390,8 +8390,8 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-44-фз"
+     "law-bk-rf-st-2422224226",
+     "law-44-fz"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -8445,9 +8445,9 @@
      "goz"
     ],
     "REGULATED_BY": [
-     "law-44-фз",
-     "law-275-фз",
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-44-fz",
+     "law-275-fz",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kak-rasschitat-summu-avansa-po-goskontraktu",
@@ -8565,8 +8565,8 @@
      "err-kod-napravleniya"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-коап-рф-ст-1514"
+     "law-bk-rf-st-2422224226",
+     "law-koap-rf-st-1514"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -8622,7 +8622,7 @@
      "reestr-dokumentov"
     ],
     "REGULATED_BY": [
-     "law-44-фз"
+     "law-44-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -8675,7 +8675,7 @@
      "neisp-ostatok"
     ],
     "REGULATED_BY": [
-     "law-44-фз"
+     "law-44-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -8795,7 +8795,7 @@
      "err-svodnyy-reestr"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-reserve"
@@ -8848,7 +8848,7 @@
      "tsepochka-ks"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -8905,7 +8905,7 @@
      "pismo-zapros"
     ],
     "REGULATED_BY": [
-     "law-пп-2053"
+     "law-pp-2053"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -8965,8 +8965,8 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-коап-рф-ст-1514"
+     "law-bk-rf-st-2422224226",
+     "law-koap-rf-st-1514"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -9029,8 +9029,8 @@
      "err-naznachenie"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н",
-     "law-пп-1465"
+     "law-prikaz-minfina-214n",
+     "law-pp-1465"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -9093,8 +9093,8 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-коап-рф-ст-1537"
+     "law-275-fz",
+     "law-koap-rf-st-1537"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -9212,8 +9212,8 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-44-фз",
-     "law-пп-1465"
+     "law-44-fz",
+     "law-pp-1465"
     ],
     "MONETIZED_BY": [
      "service-postpayment"
@@ -9270,8 +9270,8 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н",
-     "law-бк-рф-ст-2422224226"
+     "law-prikaz-minfina-214n",
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -9325,7 +9325,7 @@
      "sanktsionirovanie"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -9384,7 +9384,7 @@
      "err-svedeniya-otkaz"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -9443,7 +9443,7 @@
      "err-svedeniya-otkaz"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -9503,7 +9503,7 @@
      "err-svedeniya-otkaz"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -9564,7 +9564,7 @@
      "err-svedeniya-otkaz"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -9623,7 +9623,7 @@
      "err-svedeniya-otkaz"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -9676,7 +9676,7 @@
      "ufk"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -9843,7 +9843,7 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -9900,7 +9900,7 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -9957,7 +9957,7 @@
      "pismo-zapros"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -10010,8 +10010,8 @@
      "kazn-monitoring"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -10064,7 +10064,7 @@
      "tselevye-sredstva"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -10123,8 +10123,8 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-коап-рф-ст-1514"
+     "law-bk-rf-st-2422224226",
+     "law-koap-rf-st-1514"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -10181,8 +10181,8 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-коап-рф-ст-1514",
-     "law-бк-рф-ст-2422224226"
+     "law-koap-rf-st-1514",
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -10236,7 +10236,7 @@
      "giis-eb"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -10295,7 +10295,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -10352,8 +10352,8 @@
      "err-naznachenie"
     ],
     "REGULATED_BY": [
-     "law-коап-рф-ст-1514",
-     "law-63-фз"
+     "law-koap-rf-st-1514",
+     "law-63-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -10470,7 +10470,7 @@
      "err-kod-napravleniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -10526,7 +10526,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -10587,8 +10587,8 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н",
-     "law-бк-рф-ст-2422224226"
+     "law-prikaz-minfina-214n",
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -10649,8 +10649,8 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н",
-     "law-бк-рф-ст-2422224226"
+     "law-prikaz-minfina-214n",
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -10711,7 +10711,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -10770,7 +10770,7 @@
      "err-kartochka"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -10833,8 +10833,8 @@
      "err-svodnyy-reestr"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н",
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-44n",
+     "law-prikaz-fk-21n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -10894,7 +10894,7 @@
      "err-svedeniya-otkaz"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -10954,8 +10954,8 @@
      "err-mchd"
     ],
     "REGULATED_BY": [
-     "law-приказ-минцифры-1001",
-     "law-гк-рф-ст-185189"
+     "law-prikaz-mintsifry-1001",
+     "law-gk-rf-st-185189"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -11012,7 +11012,7 @@
      "err-ecp"
     ],
     "REGULATED_BY": [
-     "law-63-фз"
+     "law-63-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -11070,7 +11070,7 @@
      "err-mchd"
     ],
     "REGULATED_BY": [
-     "law-63-фз"
+     "law-63-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -11124,7 +11124,7 @@
      "ls-71"
     ],
     "REGULATED_BY": [
-     "law-44-фз"
+     "law-44-fz"
     ],
     "MONETIZED_BY": [
      "service-postpayment"
@@ -11185,7 +11185,7 @@
      "err-zatyanulos-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-44-фз"
+     "law-44-fz"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -11246,8 +11246,8 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-коап-рф-ст-1514",
-     "law-коап-рф-ст-1537"
+     "law-koap-rf-st-1514",
+     "law-koap-rf-st-1537"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -11367,8 +11367,8 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-приказ-фк-44н"
+     "law-bk-rf-st-2422224226",
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -11430,8 +11430,8 @@
      "err-zatyanulos-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н",
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-44n",
+     "law-prikaz-fk-21n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -11492,8 +11492,8 @@
      "err-mchd"
     ],
     "REGULATED_BY": [
-     "law-63-фз",
-     "law-приказ-фк-44н"
+     "law-63-fz",
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -11553,7 +11553,7 @@
      "err-kartochka"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-21n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -11614,8 +11614,8 @@
      "err-kartochka"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-21н",
-     "law-гк-рф-ст-185189"
+     "law-prikaz-fk-21n",
+     "law-gk-rf-st-185189"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -11673,7 +11673,7 @@
      "err-kartochka"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-21n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -11732,7 +11732,7 @@
      "err-kartochka"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-21n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -11792,8 +11792,8 @@
      "err-mchd"
     ],
     "REGULATED_BY": [
-     "law-приказ-минцифры-1001",
-     "law-63-фз"
+     "law-prikaz-mintsifry-1001",
+     "law-63-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -11853,8 +11853,8 @@
      "err-mchd"
     ],
     "REGULATED_BY": [
-     "law-приказ-минцифры-1001",
-     "law-63-фз"
+     "law-prikaz-mintsifry-1001",
+     "law-63-fz"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -11913,7 +11913,7 @@
      "err-mchd"
     ],
     "REGULATED_BY": [
-     "law-приказ-минцифры-1001"
+     "law-prikaz-mintsifry-1001"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -11969,7 +11969,7 @@
      "doverennost-mchd"
     ],
     "REGULATED_BY": [
-     "law-гк-рф-ст-185189"
+     "law-gk-rf-st-185189"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -12025,7 +12025,7 @@
      "soprovoditelnoe-pismo"
     ],
     "REGULATED_BY": [
-     "law-гк-рф-ст-185189"
+     "law-gk-rf-st-185189"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -12085,7 +12085,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -12141,7 +12141,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-нк-рф-гл-21"
+     "law-nk-rf-gl-21"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -12200,7 +12200,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-44-фз"
+     "law-44-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -12260,7 +12260,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -12538,8 +12538,8 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-44-фз",
-     "law-275-фз"
+     "law-44-fz",
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -12600,7 +12600,7 @@
      "err-ecp"
     ],
     "REGULATED_BY": [
-     "law-63-фз"
+     "law-63-fz"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -12654,7 +12654,7 @@
      "eis"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -12824,7 +12824,7 @@
      "err-ecp"
     ],
     "REGULATED_BY": [
-     "law-63-фз"
+     "law-63-fz"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -12880,7 +12880,7 @@
      "err-ecp"
     ],
     "REGULATED_BY": [
-     "law-63-фз"
+     "law-63-fz"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -12940,8 +12940,8 @@
      "err-mchd"
     ],
     "REGULATED_BY": [
-     "law-63-фз",
-     "law-приказ-минцифры-1001"
+     "law-63-fz",
+     "law-prikaz-mintsifry-1001"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -13047,7 +13047,7 @@
      "err-ecp"
     ],
     "REGULATED_BY": [
-     "law-63-фз"
+     "law-63-fz"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -13269,7 +13269,7 @@
      "err-ecp"
     ],
     "REGULATED_BY": [
-     "law-63-фз"
+     "law-63-fz"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -13329,7 +13329,7 @@
      "err-mchd"
     ],
     "REGULATED_BY": [
-     "law-приказ-минцифры-1001"
+     "law-prikaz-mintsifry-1001"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -13448,7 +13448,7 @@
      "err-kartochka"
     ],
     "REGULATED_BY": [
-     "law-гк-рф-ст-185189"
+     "law-gk-rf-st-185189"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -13508,8 +13508,8 @@
      "err-mchd"
     ],
     "REGULATED_BY": [
-     "law-приказ-минцифры-1001",
-     "law-гк-рф-ст-185189"
+     "law-prikaz-mintsifry-1001",
+     "law-gk-rf-st-185189"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -13568,8 +13568,8 @@
      "err-mchd"
     ],
     "REGULATED_BY": [
-     "law-приказ-минцифры-1001",
-     "law-гк-рф-ст-185189"
+     "law-prikaz-mintsifry-1001",
+     "law-gk-rf-st-185189"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -13626,7 +13626,7 @@
      "err-ecp"
     ],
     "REGULATED_BY": [
-     "law-63-фз"
+     "law-63-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -13686,7 +13686,7 @@
      "err-svedeniya-otkaz"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -13855,8 +13855,8 @@
      "err-mchd"
     ],
     "REGULATED_BY": [
-     "law-63-фз",
-     "law-гк-рф-ст-185189"
+     "law-63-fz",
+     "law-gk-rf-st-185189"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -13913,7 +13913,7 @@
      "doverennost-mchd"
     ],
     "REGULATED_BY": [
-     "law-приказ-минцифры-1001"
+     "law-prikaz-mintsifry-1001"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -13971,7 +13971,7 @@
      "komplekt-goz"
     ],
     "REGULATED_BY": [
-     "law-275-фз"
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -14032,9 +14032,9 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-бк-рф-ст-2422224226",
-     "law-коап-рф-ст-1537"
+     "law-275-fz",
+     "law-bk-rf-st-2422224226",
+     "law-koap-rf-st-1537"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -14094,8 +14094,8 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-коап-рф-ст-1537"
+     "law-275-fz",
+     "law-koap-rf-st-1537"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -14152,9 +14152,9 @@
      "prikaz-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-44-фз",
-     "law-бк-рф-ст-2422224226",
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-44-fz",
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -14213,8 +14213,8 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-пп-1465"
+     "law-275-fz",
+     "law-pp-1465"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -14273,8 +14273,8 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-пп-1465"
+     "law-275-fz",
+     "law-pp-1465"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -14328,8 +14328,8 @@
      "razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-пп-1465",
-     "law-275-фз"
+     "law-pp-1465",
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -14382,7 +14382,7 @@
      "razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-пп-1465"
+     "law-pp-1465"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -14439,8 +14439,8 @@
      "reestr-dokumentov"
     ],
     "REGULATED_BY": [
-     "law-пп-1465",
-     "law-275-фз"
+     "law-pp-1465",
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -14498,8 +14498,8 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-пп-1465",
-     "law-275-фз"
+     "law-pp-1465",
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -14551,8 +14551,8 @@
      "pribyl-ks"
     ],
     "REGULATED_BY": [
-     "law-пп-1465",
-     "law-275-фз"
+     "law-pp-1465",
+     "law-275-fz"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/vidy-cen-goz",
@@ -14609,7 +14609,7 @@
      "err-naznachenie"
     ],
     "REGULATED_BY": [
-     "law-275-фз"
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -14666,7 +14666,7 @@
      "komplekt-goz"
     ],
     "REGULATED_BY": [
-     "law-275-фз"
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -14728,7 +14728,7 @@
      "err-subsidiya-rashody"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -14785,7 +14785,7 @@
      "komplekt-subsidii"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -14901,7 +14901,7 @@
      "err-subsidiya-rashody"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -14962,7 +14962,7 @@
      "err-subsidiya-rashody"
     ],
     "REGULATED_BY": [
-     "law-коап-рф-ст-1514"
+     "law-koap-rf-st-1514"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -15019,7 +15019,7 @@
      "komplekt-subsidii"
     ],
     "REGULATED_BY": [
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -15076,7 +15076,7 @@
      "komplekt-subsidii"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -15186,7 +15186,7 @@
      "svedeniya-ssu"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -15303,8 +15303,8 @@
      "err-svedeniya-otkaz"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н",
-     "law-коап-рф-ст-1537"
+     "law-prikaz-minfina-214n",
+     "law-koap-rf-st-1537"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -15475,8 +15475,8 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-коап-рф-ст-1514",
-     "law-коап-рф-ст-1537"
+     "law-koap-rf-st-1514",
+     "law-koap-rf-st-1537"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -15538,7 +15538,7 @@
      "err-naznachenie"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -15593,8 +15593,8 @@
      "ks"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-44-фз"
+     "law-bk-rf-st-2422224226",
+     "law-44-fz"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -15648,8 +15648,8 @@
      "zakon-budget"
     ],
     "REGULATED_BY": [
-     "law-44-фз",
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-44-fz",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -15703,9 +15703,9 @@
      "ks"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-ежегодный-закон-о-федеральном-бюджете",
-     "law-приказ-минфина-214н"
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+     "law-prikaz-minfina-214n"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-2026-opredeleniya",
@@ -15756,7 +15756,7 @@
      "kazn-monitoring"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-2026-opredeleniya",
@@ -15813,7 +15813,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -15874,8 +15874,8 @@
      "err-zatyanulos-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н",
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-44n",
+     "law-prikaz-fk-21n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -15935,7 +15935,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -15989,7 +15989,7 @@
      "ufk"
     ],
     "REGULATED_BY": [
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/ks_2025",
@@ -16040,8 +16040,8 @@
      "opornyy-bank"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-275-фз"
+     "law-bk-rf-st-2422224226",
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -16095,7 +16095,7 @@
      "tofk"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -16152,8 +16152,8 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-коап-рф-ст-1514",
-     "law-коап-рф-ст-1537"
+     "law-koap-rf-st-1514",
+     "law-koap-rf-st-1537"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -16210,8 +16210,8 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-коап-рф-ст-1514",
-     "law-275-фз"
+     "law-koap-rf-st-1514",
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -16271,8 +16271,8 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-коап-рф-ст-1514",
-     "law-коап-рф-ст-1537"
+     "law-koap-rf-st-1514",
+     "law-koap-rf-st-1537"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -16332,9 +16332,9 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-коап-рф-ст-1537",
-     "law-пп-1465"
+     "law-275-fz",
+     "law-koap-rf-st-1537",
+     "law-pp-1465"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -16394,8 +16394,8 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-коап-рф-ст-1514",
-     "law-коап-рф-ст-1537"
+     "law-koap-rf-st-1514",
+     "law-koap-rf-st-1537"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/podvodnye-kamni-kaznacheyskogo-soprovozhdeniya",
@@ -16446,8 +16446,8 @@
      "kazn-monitoring"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -16501,7 +16501,7 @@
      "tsepochka-ks"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
@@ -16552,7 +16552,7 @@
      "tsepochka-ks"
     ],
     "REGULATED_BY": [
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -16606,7 +16606,7 @@
      "razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-275-фз"
+     "law-275-fz"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/tseny-na-kaznacheyskoe-soprovozhdenie-2026",
@@ -16763,8 +16763,8 @@
      "err-mchd"
     ],
     "REGULATED_BY": [
-     "law-приказ-минцифры-1001",
-     "law-гк-рф-ст-185189"
+     "law-prikaz-mintsifry-1001",
+     "law-gk-rf-st-185189"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -16868,7 +16868,7 @@
      "doverennost-mchd"
     ],
     "REGULATED_BY": [
-     "law-63-фз"
+     "law-63-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -16922,7 +16922,7 @@
      "razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-275-фз"
+     "law-275-fz"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-stroitelstvo",
@@ -17117,7 +17117,7 @@
      "chek-list-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -17171,7 +17171,7 @@
      "porog-ks"
     ],
     "REGULATED_BY": [
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -17225,8 +17225,8 @@
      "sanktsionirovanie"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-44-фз"
+     "law-bk-rf-st-2422224226",
+     "law-44-fz"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/ks_2025",
@@ -17277,7 +17277,7 @@
      "ls-71"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -17333,7 +17333,7 @@
      "chek-list-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",

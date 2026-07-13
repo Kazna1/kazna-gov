@@ -23,8 +23,8 @@
    ],
    "relations": {
     "REGULATED_BY": [
-     "law-приказ-фк-44н",
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-44n",
+     "law-prikaz-fk-21n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -79,8 +79,8 @@
    ],
    "relations": {
     "REGULATED_BY": [
-     "law-приказ-минфина-214н",
-     "law-пп-2053"
+     "law-prikaz-minfina-214n",
+     "law-pp-2053"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -136,9 +136,9 @@
    ],
    "relations": {
     "REGULATED_BY": [
-     "law-приказ-минфина-214н",
-     "law-бк-рф-ст-2422224226",
-     "law-коап-рф-ст-1514"
+     "law-prikaz-minfina-214n",
+     "law-bk-rf-st-2422224226",
+     "law-koap-rf-st-1514"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -187,9 +187,9 @@
    ],
    "relations": {
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-ежегодный-закон-о-федеральном-бюджете",
-     "law-44-фз"
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+     "law-44-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -244,9 +244,9 @@
    ],
    "relations": {
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-пп-1465",
-     "law-коап-рф-ст-1537"
+     "law-275-fz",
+     "law-pp-1465",
+     "law-koap-rf-st-1537"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -297,8 +297,8 @@
    ],
    "relations": {
     "REGULATED_BY": [
-     "law-приказ-минфина-214н",
-     "law-275-фз"
+     "law-prikaz-minfina-214n",
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -343,8 +343,8 @@
    ],
    "relations": {
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -392,11 +392,11 @@
    ],
    "relations": {
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-ежегодный-закон-о-федеральном-бюджете",
-     "law-44-фз",
-     "law-275-фз",
-     "law-223-фз"
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+     "law-44-fz",
+     "law-275-fz",
+     "law-223-fz"
     ],
     "DIAGNOSED_BY": [
      "tool-proverka-ks"
@@ -445,8 +445,8 @@
    ],
    "relations": {
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-коап-рф-ст-1537"
+     "law-275-fz",
+     "law-koap-rf-st-1537"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -495,8 +495,8 @@
    ],
    "relations": {
     "REGULATED_BY": [
-     "law-63-фз",
-     "law-приказ-минцифры-1001"
+     "law-63-fz",
+     "law-prikaz-mintsifry-1001"
     ],
     "MONETIZED_BY": [
      "service-open"

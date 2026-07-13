@@ -967,7 +967,7 @@
      "giis-eb"
     ],
     "REGULATED_BY": [
-     "law-приказ-минцифры-1001"
+     "law-prikaz-mintsifry-1001"
     ]
    },
    "updated": "2026-07-09",
@@ -1855,7 +1855,7 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-пп-1465"
+     "law-pp-1465"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -6886,8 +6886,8 @@
      "err-zatyanulos-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н",
-     "law-бк-рф-ст-2422224226"
+     "law-prikaz-fk-44n",
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -6944,8 +6944,8 @@
      "doverennost-mchd"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-44-фз"
+     "law-bk-rf-st-2422224226",
+     "law-44-fz"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -7006,7 +7006,7 @@
      "err-zatyanulos-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -7068,8 +7068,8 @@
      "err-kartochka"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н",
-     "law-приказ-минцифры-1001"
+     "law-prikaz-fk-44n",
+     "law-prikaz-mintsifry-1001"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -7124,8 +7124,8 @@
      "raschetnyy-schet"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-275-фз"
+     "law-bk-rf-st-2422224226",
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -7181,7 +7181,7 @@
      "zayavlenie-ls"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-reserve"
@@ -7238,8 +7238,8 @@
      "svedeniya-ssu"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н",
-     "law-275-фз"
+     "law-prikaz-fk-44n",
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -7295,7 +7295,7 @@
      "chek-list-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-63-фз"
+     "law-63-fz"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -7357,8 +7357,8 @@
      "err-mchd"
     ],
     "REGULATED_BY": [
-     "law-63-фз",
-     "law-приказ-фк-44н"
+     "law-63-fz",
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -7420,8 +7420,8 @@
      "err-kartochka"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н",
-     "law-гк-рф-ст-185189"
+     "law-prikaz-fk-44n",
+     "law-gk-rf-st-185189"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -7477,7 +7477,7 @@
      "zayavlenie-ls"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-reserve"
@@ -7534,8 +7534,8 @@
      "doverennost-mchd"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н",
-     "law-44-фз"
+     "law-prikaz-fk-44n",
+     "law-44-fz"
     ],
     "MONETIZED_BY": [
      "service-reserve"
@@ -7592,7 +7592,7 @@
      "chek-list-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-44-фз"
+     "law-44-fz"
     ],
     "MONETIZED_BY": [
      "service-reserve"
@@ -7645,7 +7645,7 @@
      "ls-71"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-reserve"
@@ -7698,7 +7698,7 @@
      "kofk"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-21n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -7752,7 +7752,7 @@
      "igk"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-21n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -7813,8 +7813,8 @@
      "err-ecp"
     ],
     "REGULATED_BY": [
-     "law-63-фз",
-     "law-приказ-фк-44н"
+     "law-63-fz",
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -7871,8 +7871,8 @@
      "formulirovka-ks"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -7929,7 +7929,7 @@
      "err-svodnyy-reestr"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -7989,7 +7989,7 @@
      "err-svodnyy-reestr"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -8051,7 +8051,7 @@
      "err-svodnyy-reestr"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -8113,7 +8113,7 @@
      "err-kartochka"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -8173,7 +8173,7 @@
      "err-zatyanulos-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -8234,7 +8234,7 @@
      "err-svedeniya-otkaz"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -8289,7 +8289,7 @@
      "tofk"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-21n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -8346,8 +8346,8 @@
      "zayavlenie-zakrytie"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н",
-     "law-бк-рф-ст-2422224226"
+     "law-prikaz-fk-44n",
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -8404,7 +8404,7 @@
      "zayavlenie-zakrytie"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-21n"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/zakrytie-kaznacheyskogo-scheta-posle-kontrakta"
@@ -8460,7 +8460,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -8518,7 +8518,7 @@
      "doverennost-mchd"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-21n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -8580,8 +8580,8 @@
      "err-mchd"
     ],
     "REGULATED_BY": [
-     "law-63-фз",
-     "law-приказ-минцифры-1001"
+     "law-63-fz",
+     "law-prikaz-mintsifry-1001"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -8851,7 +8851,7 @@
      "tselevye-sredstva"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -8912,7 +8912,7 @@
      "err-naznachenie"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -8972,7 +8972,7 @@
      "err-kod-napravleniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -9032,7 +9032,7 @@
      "err-kod-napravleniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/codes",
@@ -9143,7 +9143,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-нк-рф-гл-21"
+     "law-nk-rf-gl-21"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -9314,8 +9314,8 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-пп-1465"
+     "law-275-fz",
+     "law-pp-1465"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -9591,7 +9591,7 @@
      "err-zatyanulos-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -9645,7 +9645,7 @@
      "rekvizity-ks"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-21n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -9758,8 +9758,8 @@
      "err-igk"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н",
-     "law-бк-рф-ст-2422224226"
+     "law-prikaz-minfina-214n",
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -9817,7 +9817,7 @@
      "rkp"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -9878,7 +9878,7 @@
      "err-kod-napravleniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -9938,7 +9938,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -9999,7 +9999,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -10059,7 +10059,7 @@
      "err-naznachenie"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -10119,8 +10119,8 @@
      "err-igk"
     ],
     "REGULATED_BY": [
-     "law-44-фз",
-     "law-275-фз"
+     "law-44-fz",
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -10179,7 +10179,7 @@
      "err-naznachenie"
     ],
     "REGULATED_BY": [
-     "law-нк-рф-гл-21"
+     "law-nk-rf-gl-21"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -10238,7 +10238,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -10300,7 +10300,7 @@
      "err-kod-napravleniya"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -10524,7 +10524,7 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -10643,8 +10643,8 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-коап-рф-ст-1514"
+     "law-bk-rf-st-2422224226",
+     "law-koap-rf-st-1514"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -10762,7 +10762,7 @@
      "err-igk"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -10873,7 +10873,7 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -10932,7 +10932,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -10992,7 +10992,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-44-фз"
+     "law-44-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -11053,8 +11053,8 @@
      "err-igk"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-275-фз"
+     "law-bk-rf-st-2422224226",
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -11219,8 +11219,8 @@
      "err-naznachenie"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-приказ-минфина-214н"
+     "law-bk-rf-st-2422224226",
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -11280,7 +11280,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -11342,7 +11342,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -11400,8 +11400,8 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-пп-1465",
-     "law-275-фз"
+     "law-pp-1465",
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -11462,7 +11462,7 @@
      "err-kod-napravleniya"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -11525,7 +11525,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -11757,7 +11757,7 @@
      "err-kod-napravleniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -11818,8 +11818,8 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-44-фз"
+     "law-bk-rf-st-2422224226",
+     "law-44-fz"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -11873,9 +11873,9 @@
      "goz"
     ],
     "REGULATED_BY": [
-     "law-44-фз",
-     "law-275-фз",
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-44-fz",
+     "law-275-fz",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kak-rasschitat-summu-avansa-po-goskontraktu",
@@ -11993,8 +11993,8 @@
      "err-kod-napravleniya"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-коап-рф-ст-1514"
+     "law-bk-rf-st-2422224226",
+     "law-koap-rf-st-1514"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -12050,7 +12050,7 @@
      "reestr-dokumentov"
     ],
     "REGULATED_BY": [
-     "law-44-фз"
+     "law-44-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -12103,7 +12103,7 @@
      "neisp-ostatok"
     ],
     "REGULATED_BY": [
-     "law-44-фз"
+     "law-44-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -12223,7 +12223,7 @@
      "err-svodnyy-reestr"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-reserve"
@@ -12276,7 +12276,7 @@
      "tsepochka-ks"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -12333,7 +12333,7 @@
      "pismo-zapros"
     ],
     "REGULATED_BY": [
-     "law-пп-2053"
+     "law-pp-2053"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -12393,8 +12393,8 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-коап-рф-ст-1514"
+     "law-bk-rf-st-2422224226",
+     "law-koap-rf-st-1514"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -12457,8 +12457,8 @@
      "err-naznachenie"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н",
-     "law-пп-1465"
+     "law-prikaz-minfina-214n",
+     "law-pp-1465"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -12521,8 +12521,8 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-коап-рф-ст-1537"
+     "law-275-fz",
+     "law-koap-rf-st-1537"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -12640,8 +12640,8 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-44-фз",
-     "law-пп-1465"
+     "law-44-fz",
+     "law-pp-1465"
     ],
     "MONETIZED_BY": [
      "service-postpayment"
@@ -12698,8 +12698,8 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н",
-     "law-бк-рф-ст-2422224226"
+     "law-prikaz-minfina-214n",
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -12752,7 +12752,7 @@
      "platezh"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -12812,7 +12812,7 @@
      "err-naznachenie"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -12872,7 +12872,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -12926,7 +12926,7 @@
      "sanktsionirovanie"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -12985,7 +12985,7 @@
      "err-svedeniya-otkaz"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -13044,7 +13044,7 @@
      "err-svedeniya-otkaz"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -13104,7 +13104,7 @@
      "err-svedeniya-otkaz"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -13165,7 +13165,7 @@
      "err-svedeniya-otkaz"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -13221,7 +13221,7 @@
      "svedeniya-ssu"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -13280,7 +13280,7 @@
      "err-svedeniya-otkaz"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -13341,7 +13341,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -13394,7 +13394,7 @@
      "ufk"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -13561,7 +13561,7 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -13618,7 +13618,7 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -13675,7 +13675,7 @@
      "pismo-zapros"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -13728,8 +13728,8 @@
      "kazn-monitoring"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -13782,7 +13782,7 @@
      "tselevye-sredstva"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -13841,8 +13841,8 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-коап-рф-ст-1514"
+     "law-bk-rf-st-2422224226",
+     "law-koap-rf-st-1514"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -13899,8 +13899,8 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-коап-рф-ст-1514",
-     "law-бк-рф-ст-2422224226"
+     "law-koap-rf-st-1514",
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -13954,7 +13954,7 @@
      "giis-eb"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -14013,7 +14013,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -14070,8 +14070,8 @@
      "err-naznachenie"
     ],
     "REGULATED_BY": [
-     "law-коап-рф-ст-1514",
-     "law-63-фз"
+     "law-koap-rf-st-1514",
+     "law-63-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -14132,8 +14132,8 @@
      "err-naznachenie"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н",
-     "law-бк-рф-ст-2422224226"
+     "law-prikaz-minfina-214n",
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -14194,7 +14194,7 @@
      "err-kod-napravleniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -14310,8 +14310,8 @@
      "err-igk"
     ],
     "REGULATED_BY": [
-     "law-44-фз",
-     "law-275-фз"
+     "law-44-fz",
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -14370,8 +14370,8 @@
      "err-naznachenie"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н",
-     "law-нк-рф-гл-21"
+     "law-prikaz-minfina-214n",
+     "law-nk-rf-gl-21"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -14431,7 +14431,7 @@
      "err-svedeniya-otkaz"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -14492,7 +14492,7 @@
      "err-kod-napravleniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -14548,7 +14548,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -14609,8 +14609,8 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н",
-     "law-бк-рф-ст-2422224226"
+     "law-prikaz-minfina-214n",
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -14671,8 +14671,8 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н",
-     "law-бк-рф-ст-2422224226"
+     "law-prikaz-minfina-214n",
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -14733,7 +14733,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -14793,7 +14793,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -14852,7 +14852,7 @@
      "err-kartochka"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -14915,8 +14915,8 @@
      "err-svodnyy-reestr"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н",
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-44n",
+     "law-prikaz-fk-21n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -14976,7 +14976,7 @@
      "err-svedeniya-otkaz"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -15036,8 +15036,8 @@
      "err-mchd"
     ],
     "REGULATED_BY": [
-     "law-приказ-минцифры-1001",
-     "law-гк-рф-ст-185189"
+     "law-prikaz-mintsifry-1001",
+     "law-gk-rf-st-185189"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -15094,7 +15094,7 @@
      "err-ecp"
     ],
     "REGULATED_BY": [
-     "law-63-фз"
+     "law-63-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -15152,7 +15152,7 @@
      "err-mchd"
     ],
     "REGULATED_BY": [
-     "law-63-фз"
+     "law-63-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -15212,8 +15212,8 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-коап-рф-ст-1514"
+     "law-bk-rf-st-2422224226",
+     "law-koap-rf-st-1514"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -15325,7 +15325,7 @@
      "ls-71"
     ],
     "REGULATED_BY": [
-     "law-44-фз"
+     "law-44-fz"
     ],
     "MONETIZED_BY": [
      "service-postpayment"
@@ -15386,7 +15386,7 @@
      "err-zatyanulos-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-44-фз"
+     "law-44-fz"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -15447,8 +15447,8 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-коап-рф-ст-1514",
-     "law-коап-рф-ст-1537"
+     "law-koap-rf-st-1514",
+     "law-koap-rf-st-1537"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -15622,8 +15622,8 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-приказ-фк-44н"
+     "law-bk-rf-st-2422224226",
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -15685,8 +15685,8 @@
      "err-zatyanulos-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н",
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-44n",
+     "law-prikaz-fk-21n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -15748,7 +15748,7 @@
      "err-zatyanulos-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -15809,8 +15809,8 @@
      "err-mchd"
     ],
     "REGULATED_BY": [
-     "law-63-фз",
-     "law-приказ-фк-44н"
+     "law-63-fz",
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -15870,7 +15870,7 @@
      "err-kartochka"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-21n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -15930,7 +15930,7 @@
      "err-kartochka"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-21n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -15991,8 +15991,8 @@
      "err-kartochka"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-21н",
-     "law-гк-рф-ст-185189"
+     "law-prikaz-fk-21n",
+     "law-gk-rf-st-185189"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -16050,7 +16050,7 @@
      "err-kartochka"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-21n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -16109,7 +16109,7 @@
      "err-kartochka"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-21n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -16169,8 +16169,8 @@
      "err-mchd"
     ],
     "REGULATED_BY": [
-     "law-приказ-минцифры-1001",
-     "law-63-фз"
+     "law-prikaz-mintsifry-1001",
+     "law-63-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -16230,8 +16230,8 @@
      "err-mchd"
     ],
     "REGULATED_BY": [
-     "law-приказ-минцифры-1001",
-     "law-63-фз"
+     "law-prikaz-mintsifry-1001",
+     "law-63-fz"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -16290,7 +16290,7 @@
      "err-mchd"
     ],
     "REGULATED_BY": [
-     "law-приказ-минцифры-1001"
+     "law-prikaz-mintsifry-1001"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -16346,7 +16346,7 @@
      "doverennost-mchd"
     ],
     "REGULATED_BY": [
-     "law-гк-рф-ст-185189"
+     "law-gk-rf-st-185189"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -16402,7 +16402,7 @@
      "soprovoditelnoe-pismo"
     ],
     "REGULATED_BY": [
-     "law-гк-рф-ст-185189"
+     "law-gk-rf-st-185189"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -16462,7 +16462,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -16518,7 +16518,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-нк-рф-гл-21"
+     "law-nk-rf-gl-21"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -16577,7 +16577,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-44-фз"
+     "law-44-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -16637,7 +16637,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -16915,8 +16915,8 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-44-фз",
-     "law-275-фз"
+     "law-44-fz",
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -16977,7 +16977,7 @@
      "err-ecp"
     ],
     "REGULATED_BY": [
-     "law-63-фз"
+     "law-63-fz"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -17039,7 +17039,7 @@
      "err-igk"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -17093,7 +17093,7 @@
      "eis"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -17154,7 +17154,7 @@
      "err-zatyanulos-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-63-фз"
+     "law-63-fz"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -17324,7 +17324,7 @@
      "err-ecp"
     ],
     "REGULATED_BY": [
-     "law-63-фз"
+     "law-63-fz"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -17380,7 +17380,7 @@
      "err-ecp"
     ],
     "REGULATED_BY": [
-     "law-63-фз"
+     "law-63-fz"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -17440,8 +17440,8 @@
      "err-mchd"
     ],
     "REGULATED_BY": [
-     "law-63-фз",
-     "law-приказ-минцифры-1001"
+     "law-63-fz",
+     "law-prikaz-mintsifry-1001"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -17601,7 +17601,7 @@
      "err-ecp"
     ],
     "REGULATED_BY": [
-     "law-63-фз"
+     "law-63-fz"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -17823,7 +17823,7 @@
      "err-ecp"
     ],
     "REGULATED_BY": [
-     "law-63-фз"
+     "law-63-fz"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -17883,7 +17883,7 @@
      "err-mchd"
     ],
     "REGULATED_BY": [
-     "law-приказ-минцифры-1001"
+     "law-prikaz-mintsifry-1001"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -18002,7 +18002,7 @@
      "err-kartochka"
     ],
     "REGULATED_BY": [
-     "law-гк-рф-ст-185189"
+     "law-gk-rf-st-185189"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -18062,8 +18062,8 @@
      "err-mchd"
     ],
     "REGULATED_BY": [
-     "law-приказ-минцифры-1001",
-     "law-гк-рф-ст-185189"
+     "law-prikaz-mintsifry-1001",
+     "law-gk-rf-st-185189"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -18122,8 +18122,8 @@
      "err-mchd"
     ],
     "REGULATED_BY": [
-     "law-приказ-минцифры-1001",
-     "law-гк-рф-ст-185189"
+     "law-prikaz-mintsifry-1001",
+     "law-gk-rf-st-185189"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -18180,7 +18180,7 @@
      "err-ecp"
     ],
     "REGULATED_BY": [
-     "law-63-фз"
+     "law-63-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -18240,7 +18240,7 @@
      "err-svedeniya-otkaz"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -18409,8 +18409,8 @@
      "err-mchd"
     ],
     "REGULATED_BY": [
-     "law-63-фз",
-     "law-гк-рф-ст-185189"
+     "law-63-fz",
+     "law-gk-rf-st-185189"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -18467,7 +18467,7 @@
      "doverennost-mchd"
     ],
     "REGULATED_BY": [
-     "law-приказ-минцифры-1001"
+     "law-prikaz-mintsifry-1001"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -18525,7 +18525,7 @@
      "komplekt-goz"
     ],
     "REGULATED_BY": [
-     "law-275-фз"
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -18586,9 +18586,9 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-бк-рф-ст-2422224226",
-     "law-коап-рф-ст-1537"
+     "law-275-fz",
+     "law-bk-rf-st-2422224226",
+     "law-koap-rf-st-1537"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -18642,8 +18642,8 @@
      "psb"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-275-fz",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -18700,7 +18700,7 @@
      "err-naznachenie"
     ],
     "REGULATED_BY": [
-     "law-275-фз"
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -18754,7 +18754,7 @@
      "golovnoy-ispolnitel"
     ],
     "REGULATED_BY": [
-     "law-275-фз"
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -18811,8 +18811,8 @@
      "err-igk"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-44-фз"
+     "law-275-fz",
+     "law-44-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -18874,8 +18874,8 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-коап-рф-ст-1537"
+     "law-275-fz",
+     "law-koap-rf-st-1537"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -18936,7 +18936,7 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-275-фз"
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -18994,8 +18994,8 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-коап-рф-ст-1514"
+     "law-275-fz",
+     "law-koap-rf-st-1514"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -19055,8 +19055,8 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-коап-рф-ст-1537"
+     "law-275-fz",
+     "law-koap-rf-st-1537"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -19116,8 +19116,8 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-бк-рф-ст-2422224226"
+     "law-275-fz",
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -19178,8 +19178,8 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-коап-рф-ст-1537"
+     "law-275-fz",
+     "law-koap-rf-st-1537"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -19237,8 +19237,8 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-коап-рф-ст-1537",
-     "law-275-фз"
+     "law-koap-rf-st-1537",
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -19294,9 +19294,9 @@
      "prikaz-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-44-фз",
-     "law-бк-рф-ст-2422224226",
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-44-fz",
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -19355,8 +19355,8 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-пп-1465"
+     "law-275-fz",
+     "law-pp-1465"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -19415,8 +19415,8 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-пп-1465"
+     "law-275-fz",
+     "law-pp-1465"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -19470,8 +19470,8 @@
      "razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-пп-1465",
-     "law-275-фз"
+     "law-pp-1465",
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -19524,7 +19524,7 @@
      "razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-пп-1465"
+     "law-pp-1465"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -19581,8 +19581,8 @@
      "reestr-dokumentov"
     ],
     "REGULATED_BY": [
-     "law-пп-1465",
-     "law-275-фз"
+     "law-pp-1465",
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -19640,8 +19640,8 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-пп-1465",
-     "law-275-фз"
+     "law-pp-1465",
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -19694,8 +19694,8 @@
      "goz"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-пп-1465"
+     "law-275-fz",
+     "law-pp-1465"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -19748,8 +19748,8 @@
      "pribyl-ks"
     ],
     "REGULATED_BY": [
-     "law-пп-1465",
-     "law-275-фз"
+     "law-pp-1465",
+     "law-275-fz"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/vidy-cen-goz",
@@ -19806,7 +19806,7 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-275-фз"
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -19866,7 +19866,7 @@
      "err-naznachenie"
     ],
     "REGULATED_BY": [
-     "law-275-фз"
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -19923,7 +19923,7 @@
      "komplekt-goz"
     ],
     "REGULATED_BY": [
-     "law-275-фз"
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -19981,8 +19981,8 @@
      "komplekt-subsidii"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -20043,7 +20043,7 @@
      "err-subsidiya-rashody"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -20107,7 +20107,7 @@
      "err-svodnyy-reestr"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -20165,7 +20165,7 @@
      "komplekt-subsidii"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -20284,8 +20284,8 @@
      "err-kod-napravleniya"
     ],
     "REGULATED_BY": [
-     "law-коап-рф-ст-1514",
-     "law-приказ-минфина-214н"
+     "law-koap-rf-st-1514",
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -20348,7 +20348,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -20409,7 +20409,7 @@
      "err-subsidiya-rashody"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -20470,7 +20470,7 @@
      "err-subsidiya-rashody"
     ],
     "REGULATED_BY": [
-     "law-коап-рф-ст-1514"
+     "law-koap-rf-st-1514"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -20527,7 +20527,7 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-коап-рф-ст-1514"
+     "law-koap-rf-st-1514"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -20587,7 +20587,7 @@
      "err-svedeniya-otkaz"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -20752,7 +20752,7 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-коап-рф-ст-1514"
+     "law-koap-rf-st-1514"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -20864,7 +20864,7 @@
      "komplekt-subsidii"
     ],
     "REGULATED_BY": [
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -20921,7 +20921,7 @@
      "komplekt-subsidii"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -21031,7 +21031,7 @@
      "svedeniya-ssu"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -21148,8 +21148,8 @@
      "err-svedeniya-otkaz"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н",
-     "law-коап-рф-ст-1537"
+     "law-prikaz-minfina-214n",
+     "law-koap-rf-st-1537"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -21320,8 +21320,8 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-коап-рф-ст-1514",
-     "law-коап-рф-ст-1537"
+     "law-koap-rf-st-1514",
+     "law-koap-rf-st-1537"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -21383,7 +21383,7 @@
      "err-naznachenie"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -21441,8 +21441,8 @@
      "formulirovka-ks"
     ],
     "REGULATED_BY": [
-     "law-ежегодный-закон-о-федеральном-бюджете",
-     "law-бк-рф-ст-2422224226"
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -21498,7 +21498,7 @@
      "avans"
     ],
     "REGULATED_BY": [
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -21552,8 +21552,8 @@
      "finorgan"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-2026-opredeleniya",
@@ -21603,8 +21603,8 @@
      "ks"
     ],
     "REGULATED_BY": [
-     "law-ежегодный-закон-о-федеральном-бюджете",
-     "law-приказ-минфина-214н"
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -21662,8 +21662,8 @@
      "chek-list-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-44-фз",
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-44-fz",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -21720,8 +21720,8 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-ежегодный-закон-о-федеральном-бюджете",
-     "law-коап-рф-ст-1514"
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+     "law-koap-rf-st-1514"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -21775,8 +21775,8 @@
      "tsepochka-ks"
     ],
     "REGULATED_BY": [
-     "law-223-фз",
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-223-fz",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -21830,8 +21830,8 @@
      "ks"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-44-фз"
+     "law-bk-rf-st-2422224226",
+     "law-44-fz"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -21885,7 +21885,7 @@
      "ks"
     ],
     "REGULATED_BY": [
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-postpayment"
@@ -21939,8 +21939,8 @@
      "zakon-budget"
     ],
     "REGULATED_BY": [
-     "law-44-фз",
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-44-fz",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -21994,9 +21994,9 @@
      "ks"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-ежегодный-закон-о-федеральном-бюджете",
-     "law-приказ-минфина-214н"
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+     "law-prikaz-minfina-214n"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-2026-opredeleniya",
@@ -22047,7 +22047,7 @@
      "kazn-monitoring"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-2026-opredeleniya",
@@ -22104,7 +22104,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -22165,8 +22165,8 @@
      "err-zatyanulos-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н",
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-44n",
+     "law-prikaz-fk-21n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -22226,7 +22226,7 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -22280,7 +22280,7 @@
      "ufk"
     ],
     "REGULATED_BY": [
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/ks_2025",
@@ -22331,8 +22331,8 @@
      "opornyy-bank"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-275-фз"
+     "law-bk-rf-st-2422224226",
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -22386,7 +22386,7 @@
      "tofk"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -22443,8 +22443,8 @@
      "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-коап-рф-ст-1514",
-     "law-коап-рф-ст-1537"
+     "law-koap-rf-st-1514",
+     "law-koap-rf-st-1537"
     ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
@@ -22501,8 +22501,8 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-коап-рф-ст-1514",
-     "law-275-фз"
+     "law-koap-rf-st-1514",
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -22562,8 +22562,8 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-коап-рф-ст-1514",
-     "law-коап-рф-ст-1537"
+     "law-koap-rf-st-1514",
+     "law-koap-rf-st-1537"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -22623,9 +22623,9 @@
      "err-razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-коап-рф-ст-1537",
-     "law-пп-1465"
+     "law-275-fz",
+     "law-koap-rf-st-1537",
+     "law-pp-1465"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -22685,8 +22685,8 @@
      "err-necelevoe"
     ],
     "REGULATED_BY": [
-     "law-коап-рф-ст-1514",
-     "law-коап-рф-ст-1537"
+     "law-koap-rf-st-1514",
+     "law-koap-rf-st-1537"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/podvodnye-kamni-kaznacheyskogo-soprovozhdeniya",
@@ -22737,8 +22737,8 @@
      "kazn-monitoring"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -22792,7 +22792,7 @@
      "tsepochka-ks"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
@@ -22843,7 +22843,7 @@
      "tsepochka-ks"
     ],
     "REGULATED_BY": [
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -22948,7 +22948,7 @@
      "poyasnenie-ufk"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -23009,7 +23009,7 @@
      "err-zatyanulos-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -23063,7 +23063,7 @@
      "razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-275-фз"
+     "law-275-fz"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/tseny-na-kaznacheyskoe-soprovozhdenie-2026",
@@ -23273,8 +23273,8 @@
      "err-mchd"
     ],
     "REGULATED_BY": [
-     "law-приказ-минцифры-1001",
-     "law-гк-рф-ст-185189"
+     "law-prikaz-mintsifry-1001",
+     "law-gk-rf-st-185189"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -23593,7 +23593,7 @@
      "doverennost-mchd"
     ],
     "REGULATED_BY": [
-     "law-63-фз"
+     "law-63-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -23647,7 +23647,7 @@
      "razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-275-фз"
+     "law-275-fz"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-stroitelstvo",
@@ -23842,7 +23842,7 @@
      "chek-list-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -23896,7 +23896,7 @@
      "porog-ks"
     ],
     "REGULATED_BY": [
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -23950,8 +23950,8 @@
      "sanktsionirovanie"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-44-фз"
+     "law-bk-rf-st-2422224226",
+     "law-44-fz"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/ks_2025",
@@ -24011,7 +24011,7 @@
      "err-svodnyy-reestr"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-start"
@@ -24064,7 +24064,7 @@
      "ls-71"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -24122,8 +24122,8 @@
      "chek-list-dokumenty"
     ],
     "REGULATED_BY": [
-     "law-44-фз",
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-44-fz",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-v-dogovore",
@@ -24176,7 +24176,7 @@
      "chek-list-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226"
+     "law-bk-rf-st-2422224226"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
@@ -24215,9 +24215,9 @@
    ],
    "relations": {
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-ежегодный-закон-о-федеральном-бюджете",
-     "law-44-фз"
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+     "law-44-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -24272,8 +24272,8 @@
    ],
    "relations": {
     "REGULATED_BY": [
-     "law-приказ-фк-44н",
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-44n",
+     "law-prikaz-fk-21n"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -24328,8 +24328,8 @@
    ],
    "relations": {
     "REGULATED_BY": [
-     "law-приказ-минфина-214н",
-     "law-пп-2053"
+     "law-prikaz-minfina-214n",
+     "law-pp-2053"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -24385,9 +24385,9 @@
    ],
    "relations": {
     "REGULATED_BY": [
-     "law-приказ-минфина-214н",
-     "law-бк-рф-ст-2422224226",
-     "law-коап-рф-ст-1514"
+     "law-prikaz-minfina-214n",
+     "law-bk-rf-st-2422224226",
+     "law-koap-rf-st-1514"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -24436,9 +24436,9 @@
    ],
    "relations": {
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-пп-1465",
-     "law-коап-рф-ст-1537"
+     "law-275-fz",
+     "law-pp-1465",
+     "law-koap-rf-st-1537"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -24489,8 +24489,8 @@
    ],
    "relations": {
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-коап-рф-ст-1537"
+     "law-275-fz",
+     "law-koap-rf-st-1537"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -24539,8 +24539,8 @@
    ],
    "relations": {
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-ежегодный-закон-о-федеральном-бюджете"
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -24588,8 +24588,8 @@
    ],
    "relations": {
     "REGULATED_BY": [
-     "law-63-фз",
-     "law-приказ-минцифры-1001"
+     "law-63-fz",
+     "law-prikaz-mintsifry-1001"
     ],
     "MONETIZED_BY": [
      "service-open"
@@ -24636,11 +24636,11 @@
    ],
    "relations": {
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-ежегодный-закон-о-федеральном-бюджете",
-     "law-44-фз",
-     "law-275-фз",
-     "law-223-фз"
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+     "law-44-fz",
+     "law-275-fz",
+     "law-223-fz"
     ],
     "DIAGNOSED_BY": [
      "tool-proverka-ks"
@@ -24689,8 +24689,8 @@
    ],
    "relations": {
     "REGULATED_BY": [
-     "law-приказ-минфина-214н",
-     "law-275-фз"
+     "law-prikaz-minfina-214n",
+     "law-275-fz"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -24773,10 +24773,10 @@
      "hub-ks"
     ],
     "REGULATED_BY": [
-     "law-ежегодный-закон-о-федеральном-бюджете",
-     "law-бк-рф-ст-2422224226",
-     "law-приказ-фк-44н",
-     "law-275-фз"
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+     "law-bk-rf-st-2422224226",
+     "law-prikaz-fk-44n",
+     "law-275-fz"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kakie-kontrakty-popadayut-pod-kaznachejskoe-soprovozhdenie/",
@@ -24854,8 +24854,8 @@
      "hub-zakony"
     ],
     "REGULATED_BY": [
-     "law-ежегодный-закон-о-федеральном-бюджете",
-     "law-бк-рф-ст-2422224226"
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+     "law-bk-rf-st-2422224226"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-2026-opredeleniya",
@@ -24929,9 +24929,9 @@
      "hub-scheta"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н",
-     "law-275-фз",
-     "law-бк-рф-ст-2422224226"
+     "law-prikaz-fk-44n",
+     "law-275-fz",
+     "law-bk-rf-st-2422224226"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/how_to_open/",
@@ -25011,9 +25011,9 @@
      "hub-scheta"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н",
-     "law-приказ-фк-21н",
-     "law-63-фз"
+     "law-prikaz-fk-44n",
+     "law-prikaz-fk-21n",
+     "law-63-fz"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/zayavlenie-na-otkrytie-kaznacheyskogo-scheta",
@@ -25102,7 +25102,7 @@
      "hub-platezhi"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/vozvrat-platezha-kaznachejstvo-chto-delat/",
@@ -25182,8 +25182,8 @@
      "hub-goz"
     ],
     "REGULATED_BY": [
-     "law-275-фз",
-     "law-коап-рф-ст-1537"
+     "law-275-fz",
+     "law-koap-rf-st-1537"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid",
@@ -25256,9 +25256,9 @@
      "hub-subsidii"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-ежегодный-закон-о-федеральном-бюджете",
-     "law-коап-рф-ст-1514"
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+     "law-koap-rf-st-1514"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
@@ -25334,8 +25334,8 @@
      "hub-platezhi"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н",
-     "law-пп-2053"
+     "law-prikaz-minfina-214n",
+     "law-pp-2053"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/avans-vs-vozmeshchenie-vs-pryamoy-platezh-tri-tipa-operatsiy-ks",
@@ -25406,7 +25406,7 @@
      "hub-sankts"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/sanktsionirovanie-operatsiy-kaznacheystvom",
@@ -25482,10 +25482,10 @@
      "hub-ks"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н",
-     "law-бк-рф-ст-2422224226",
-     "law-275-фз",
-     "law-коап-рф-ст-1537"
+     "law-prikaz-fk-44n",
+     "law-bk-rf-st-2422224226",
+     "law-275-fz",
+     "law-koap-rf-st-1537"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
@@ -25566,8 +25566,8 @@
      "hub-scheta"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н",
-     "law-приказ-фк-21н"
+     "law-prikaz-fk-44n",
+     "law-prikaz-fk-21n"
     ],
     "DIAGNOSED_BY": [
      "tool-proverka-komplekta",
@@ -25634,8 +25634,8 @@
      "hub-platezhi"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н",
-     "law-бк-рф-ст-2422224226"
+     "law-prikaz-minfina-214n",
+     "law-bk-rf-st-2422224226"
     ],
     "DIAGNOSED_BY": [
      "tool-diagnostika-platezha",
@@ -25697,7 +25697,7 @@
      "hub-scheta"
     ],
     "REGULATED_BY": [
-     "law-приказ-фк-44н"
+     "law-prikaz-fk-44n"
     ],
     "DIAGNOSED_BY": [
      "tool-podbor-scheta"
@@ -25757,7 +25757,7 @@
      "hub-platezhi"
     ],
     "REGULATED_BY": [
-     "law-приказ-минфина-214н"
+     "law-prikaz-minfina-214n"
     ],
     "DIAGNOSED_BY": [
      "tool-marshrutizator",
@@ -25820,8 +25820,8 @@
      "hub-ks"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-приказ-фк-44н"
+     "law-bk-rf-st-2422224226",
+     "law-prikaz-fk-44n"
     ],
     "DIAGNOSED_BY": [
      "tool-generator-chek-lista",
@@ -25885,8 +25885,8 @@
      "hub-sankts"
     ],
     "REGULATED_BY": [
-     "law-бк-рф-ст-2422224226",
-     "law-приказ-минфина-214н"
+     "law-bk-rf-st-2422224226",
+     "law-prikaz-minfina-214n"
     ],
     "DIAGNOSED_BY": [
      "tool-diagnostika-platezha",
@@ -25909,7 +25909,7 @@
    }
   },
   {
-   "id": "law-44-фз",
+   "id": "law-44-fz",
    "type": [
     "law"
    ],
@@ -25928,7 +25928,7 @@
    ],
    "relations": {},
    "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-44-фз",
+   "schema_id": "https://kazna-gov.ru/#e-law-44-fz",
    "scores": {
     "authority": 26,
     "coverage": 0,
@@ -25939,7 +25939,7 @@
    }
   },
   {
-   "id": "law-223-фз",
+   "id": "law-223-fz",
    "type": [
     "law"
    ],
@@ -25958,7 +25958,7 @@
    ],
    "relations": {},
    "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-223-фз",
+   "schema_id": "https://kazna-gov.ru/#e-law-223-fz",
    "scores": {
     "authority": 2,
     "coverage": 0,
@@ -25969,7 +25969,7 @@
    }
   },
   {
-   "id": "law-275-фз",
+   "id": "law-275-fz",
    "type": [
     "law"
    ],
@@ -25988,7 +25988,7 @@
    ],
    "relations": {},
    "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-275-фз",
+   "schema_id": "https://kazna-gov.ru/#e-law-275-fz",
    "scores": {
     "authority": 55,
     "coverage": 0,
@@ -25999,7 +25999,7 @@
    }
   },
   {
-   "id": "law-63-фз",
+   "id": "law-63-fz",
    "type": [
     "law"
    ],
@@ -26018,7 +26018,7 @@
    ],
    "relations": {},
    "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-63-фз",
+   "schema_id": "https://kazna-gov.ru/#e-law-63-fz",
    "scores": {
     "authority": 24,
     "coverage": 0,
@@ -26029,7 +26029,7 @@
    }
   },
   {
-   "id": "law-бк-рф-ст-2422224226",
+   "id": "law-bk-rf-st-2422224226",
    "type": [
     "law"
    ],
@@ -26048,7 +26048,7 @@
    ],
    "relations": {},
    "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-бк-рф-ст-2422224226",
+   "schema_id": "https://kazna-gov.ru/#e-law-bk-rf-st-2422224226",
    "scores": {
     "authority": 84,
     "coverage": 0,
@@ -26059,7 +26059,7 @@
    }
   },
   {
-   "id": "law-ежегодный-закон-о-федеральном-бюджете",
+   "id": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "type": [
     "law"
    ],
@@ -26078,7 +26078,7 @@
    ],
    "relations": {},
    "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-ежегодный-закон-о-федеральном-бюджете",
+   "schema_id": "https://kazna-gov.ru/#e-law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "scores": {
     "authority": 35,
     "coverage": 0,
@@ -26089,7 +26089,7 @@
    }
   },
   {
-   "id": "law-приказ-минфина-214н",
+   "id": "law-prikaz-minfina-214n",
    "type": [
     "law"
    ],
@@ -26108,7 +26108,7 @@
    ],
    "relations": {},
    "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-приказ-минфина-214н",
+   "schema_id": "https://kazna-gov.ru/#e-law-prikaz-minfina-214n",
    "scores": {
     "authority": 85,
     "coverage": 0,
@@ -26119,7 +26119,7 @@
    }
   },
   {
-   "id": "law-приказ-фк-44н",
+   "id": "law-prikaz-fk-44n",
    "type": [
     "law"
    ],
@@ -26138,7 +26138,7 @@
    ],
    "relations": {},
    "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-приказ-фк-44н",
+   "schema_id": "https://kazna-gov.ru/#e-law-prikaz-fk-44n",
    "scores": {
     "authority": 45,
     "coverage": 0,
@@ -26149,7 +26149,7 @@
    }
   },
   {
-   "id": "law-приказ-фк-21н",
+   "id": "law-prikaz-fk-21n",
    "type": [
     "law"
    ],
@@ -26168,7 +26168,7 @@
    ],
    "relations": {},
    "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-приказ-фк-21н",
+   "schema_id": "https://kazna-gov.ru/#e-law-prikaz-fk-21n",
    "scores": {
     "authority": 20,
     "coverage": 0,
@@ -26179,7 +26179,7 @@
    }
   },
   {
-   "id": "law-пп-1465",
+   "id": "law-pp-1465",
    "type": [
     "law"
    ],
@@ -26198,7 +26198,7 @@
    ],
    "relations": {},
    "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-пп-1465",
+   "schema_id": "https://kazna-gov.ru/#e-law-pp-1465",
    "scores": {
     "authority": 16,
     "coverage": 0,
@@ -26209,7 +26209,7 @@
    }
   },
   {
-   "id": "law-пп-2053",
+   "id": "law-pp-2053",
    "type": [
     "law"
    ],
@@ -26228,7 +26228,7 @@
    ],
    "relations": {},
    "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-пп-2053",
+   "schema_id": "https://kazna-gov.ru/#e-law-pp-2053",
    "scores": {
     "authority": 3,
     "coverage": 0,
@@ -26239,7 +26239,7 @@
    }
   },
   {
-   "id": "law-коап-рф-ст-1514",
+   "id": "law-koap-rf-st-1514",
    "type": [
     "law"
    ],
@@ -26258,7 +26258,7 @@
    ],
    "relations": {},
    "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-коап-рф-ст-1514",
+   "schema_id": "https://kazna-gov.ru/#e-law-koap-rf-st-1514",
    "scores": {
     "authority": 23,
     "coverage": 0,
@@ -26269,7 +26269,7 @@
    }
   },
   {
-   "id": "law-коап-рф-ст-1537",
+   "id": "law-koap-rf-st-1537",
    "type": [
     "law"
    ],
@@ -26288,7 +26288,7 @@
    ],
    "relations": {},
    "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-коап-рф-ст-1537",
+   "schema_id": "https://kazna-gov.ru/#e-law-koap-rf-st-1537",
    "scores": {
     "authority": 20,
     "coverage": 0,
@@ -26299,7 +26299,7 @@
    }
   },
   {
-   "id": "law-приказ-минцифры-1001",
+   "id": "law-prikaz-mintsifry-1001",
    "type": [
     "law"
    ],
@@ -26318,7 +26318,7 @@
    ],
    "relations": {},
    "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-приказ-минцифры-1001",
+   "schema_id": "https://kazna-gov.ru/#e-law-prikaz-mintsifry-1001",
    "scores": {
     "authority": 15,
     "coverage": 0,
@@ -26329,7 +26329,7 @@
    }
   },
   {
-   "id": "law-гк-рф-ст-185189",
+   "id": "law-gk-rf-st-185189",
    "type": [
     "law"
    ],
@@ -26348,7 +26348,7 @@
    ],
    "relations": {},
    "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-гк-рф-ст-185189",
+   "schema_id": "https://kazna-gov.ru/#e-law-gk-rf-st-185189",
    "scores": {
     "authority": 11,
     "coverage": 0,
@@ -26359,7 +26359,7 @@
    }
   },
   {
-   "id": "law-нк-рф-гл-21",
+   "id": "law-nk-rf-gl-21",
    "type": [
     "law"
    ],
@@ -26378,7 +26378,7 @@
    ],
    "relations": {},
    "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-нк-рф-гл-21",
+   "schema_id": "https://kazna-gov.ru/#e-law-nk-rf-gl-21",
    "scores": {
     "authority": 4,
     "coverage": 0,
@@ -27407,7 +27407,7 @@
   },
   {
    "from": "vp-mo",
-   "to": "law-пп-1465",
+   "to": "law-pp-1465",
    "rel": "REGULATED_BY"
   },
   {
@@ -29477,7 +29477,7 @@
   },
   {
    "from": "doverennost-mchd",
-   "to": "law-приказ-минцифры-1001",
+   "to": "law-prikaz-mintsifry-1001",
    "rel": "REGULATED_BY"
   },
   {
@@ -30582,12 +30582,12 @@
   },
   {
    "from": "faq-kak-otkryt-schet",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-kak-otkryt-schet",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -30627,12 +30627,12 @@
   },
   {
    "from": "faq-kto-otkryvaet-schet",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-kto-otkryvaet-schet",
-   "to": "law-44-фз",
+   "to": "law-44-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -30677,7 +30677,7 @@
   },
   {
    "from": "faq-srok-otkrytiya-scheta",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
@@ -30727,12 +30727,12 @@
   },
   {
    "from": "faq-dokumenty-dlya-otkrytiya",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-dokumenty-dlya-otkrytiya",
-   "to": "law-приказ-минцифры-1001",
+   "to": "law-prikaz-mintsifry-1001",
    "rel": "REGULATED_BY"
   },
   {
@@ -30762,12 +30762,12 @@
   },
   {
    "from": "faq-gde-otkryvaetsya-schet",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-gde-otkryvaetsya-schet",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -30797,7 +30797,7 @@
   },
   {
    "from": "faq-otkrytie-bez-kontrakta",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
@@ -30832,12 +30832,12 @@
   },
   {
    "from": "faq-schet-na-kazhdyy-kontrakt",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-schet-na-kazhdyy-kontrakt",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -30867,7 +30867,7 @@
   },
   {
    "from": "faq-stoimost-otkrytiya",
-   "to": "law-63-фз",
+   "to": "law-63-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -30917,12 +30917,12 @@
   },
   {
    "from": "faq-zayavlenie-cherez-giis",
-   "to": "law-63-фз",
+   "to": "law-63-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-zayavlenie-cherez-giis",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
@@ -30967,12 +30967,12 @@
   },
   {
    "from": "faq-otkrytie-na-bumage",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-otkrytie-na-bumage",
-   "to": "law-гк-рф-ст-185189",
+   "to": "law-gk-rf-st-185189",
    "rel": "REGULATED_BY"
   },
   {
@@ -31002,7 +31002,7 @@
   },
   {
    "from": "faq-chto-takoe-rezervirovanie",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
@@ -31037,12 +31037,12 @@
   },
   {
    "from": "faq-kak-zarezervirovat-schet",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-kak-zarezervirovat-schet",
-   "to": "law-44-фз",
+   "to": "law-44-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -31077,7 +31077,7 @@
   },
   {
    "from": "faq-zachem-rezervirovat",
-   "to": "law-44-фз",
+   "to": "law-44-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -31102,7 +31102,7 @@
   },
   {
    "from": "faq-srok-rezerva-scheta",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
@@ -31127,7 +31127,7 @@
   },
   {
    "from": "faq-kak-uznat-ufk",
-   "to": "law-приказ-фк-21н",
+   "to": "law-prikaz-fk-21n",
    "rel": "REGULATED_BY"
   },
   {
@@ -31157,7 +31157,7 @@
   },
   {
    "from": "faq-ufk-neskolko-regionov",
-   "to": "law-приказ-фк-21н",
+   "to": "law-prikaz-fk-21n",
    "rel": "REGULATED_BY"
   },
   {
@@ -31202,12 +31202,12 @@
   },
   {
    "from": "faq-otkrytie-scheta-ip",
-   "to": "law-63-фз",
+   "to": "law-63-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-otkrytie-scheta-ip",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
@@ -31242,12 +31242,12 @@
   },
   {
    "from": "faq-schet-subpodryadchiku",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-schet-subpodryadchiku",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
@@ -31277,7 +31277,7 @@
   },
   {
    "from": "faq-chto-takoe-svodnyy-reestr",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -31317,7 +31317,7 @@
   },
   {
    "from": "faq-vklyuchenie-v-svodnyy-reestr",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -31367,7 +31367,7 @@
   },
   {
    "from": "faq-dolgo-ne-otkryvayut",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
@@ -31417,7 +31417,7 @@
   },
   {
    "from": "faq-otkaz-v-otkrytii",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
@@ -31457,7 +31457,7 @@
   },
   {
    "from": "faq-uskorit-otkrytie",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
@@ -31502,7 +31502,7 @@
   },
   {
    "from": "faq-schet-otkryt-chto-dalshe",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -31532,7 +31532,7 @@
   },
   {
    "from": "faq-rekvizity-scheta",
-   "to": "law-приказ-фк-21н",
+   "to": "law-prikaz-fk-21n",
    "rel": "REGULATED_BY"
   },
   {
@@ -31567,12 +31567,12 @@
   },
   {
    "from": "faq-kak-zakryt-schet",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-kak-zakryt-schet",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -31607,7 +31607,7 @@
   },
   {
    "from": "faq-nuzhno-li-zakryvat-schet",
-   "to": "law-приказ-фк-21н",
+   "to": "law-prikaz-fk-21n",
    "rel": "REGULATED_BY"
   },
   {
@@ -31642,7 +31642,7 @@
   },
   {
    "from": "faq-ostatok-pri-zakrytii",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -31682,7 +31682,7 @@
   },
   {
    "from": "faq-pereoformlenie-scheta",
-   "to": "law-приказ-фк-21н",
+   "to": "law-prikaz-fk-21n",
    "rel": "REGULATED_BY"
   },
   {
@@ -31732,12 +31732,12 @@
   },
   {
    "from": "faq-smena-direktora",
-   "to": "law-63-фз",
+   "to": "law-63-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-smena-direktora",
-   "to": "law-приказ-минцифры-1001",
+   "to": "law-prikaz-mintsifry-1001",
    "rel": "REGULATED_BY"
   },
   {
@@ -31882,7 +31882,7 @@
   },
   {
    "from": "faq-otlichie-ot-raschetnogo",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -31927,7 +31927,7 @@
   },
   {
    "from": "faq-kody-dlya-platezha",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -31962,7 +31962,7 @@
   },
   {
    "from": "faq-kod-napravleniya",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -32002,7 +32002,7 @@
   },
   {
    "from": "faq-gde-vzyat-kody",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -32067,7 +32067,7 @@
   },
   {
    "from": "faq-kod-dlya-nalogov",
-   "to": "law-нк-рф-гл-21",
+   "to": "law-nk-rf-gl-21",
    "rel": "REGULATED_BY"
   },
   {
@@ -32172,12 +32172,12 @@
   },
   {
    "from": "faq-kod-vyvoda-pribyli",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-kod-vyvoda-pribyli",
-   "to": "law-пп-1465",
+   "to": "law-pp-1465",
    "rel": "REGULATED_BY"
   },
   {
@@ -32342,7 +32342,7 @@
   },
   {
    "from": "faq-oktmo-v-zayavlenii",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
@@ -32372,7 +32372,7 @@
   },
   {
    "from": "faq-kod-71",
-   "to": "law-приказ-фк-21н",
+   "to": "law-prikaz-fk-21n",
    "rel": "REGULATED_BY"
   },
   {
@@ -32447,12 +32447,12 @@
   },
   {
    "from": "faq-provesti-platezh",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-provesti-platezh",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -32487,7 +32487,7 @@
   },
   {
    "from": "faq-chto-takoe-rkp",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -32532,7 +32532,7 @@
   },
   {
    "from": "faq-platezhka-v-eb",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -32567,7 +32567,7 @@
   },
   {
    "from": "faq-srok-platezha",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -32612,7 +32612,7 @@
   },
   {
    "from": "faq-dokumenty-k-platezhu",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -32652,7 +32652,7 @@
   },
   {
    "from": "faq-naznachenie-platezha",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -32692,12 +32692,12 @@
   },
   {
    "from": "faq-igk-v-platezhe",
-   "to": "law-44-фз",
+   "to": "law-44-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-igk-v-platezhe",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -32732,7 +32732,7 @@
   },
   {
    "from": "faq-nds-v-platezhke",
-   "to": "law-нк-рф-гл-21",
+   "to": "law-nk-rf-gl-21",
    "rel": "REGULATED_BY"
   },
   {
@@ -32767,7 +32767,7 @@
   },
   {
    "from": "faq-platezh-bez-dogovora",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -32817,7 +32817,7 @@
   },
   {
    "from": "faq-oplata-postavshchiku",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -32947,7 +32947,7 @@
   },
   {
    "from": "faq-nalichnye-s-ks",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -33032,12 +33032,12 @@
   },
   {
    "from": "faq-zaprety-rashodov",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-zaprety-rashodov",
-   "to": "law-коап-рф-ст-1514",
+   "to": "law-koap-rf-st-1514",
    "rel": "REGULATED_BY"
   },
   {
@@ -33117,7 +33117,7 @@
   },
   {
    "from": "faq-platezh-visit",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -33177,7 +33177,7 @@
   },
   {
    "from": "faq-perevod-mezhdu-schetami",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -33212,7 +33212,7 @@
   },
   {
    "from": "faq-oplata-bez-akta",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -33252,7 +33252,7 @@
   },
   {
    "from": "faq-predoplata-postavshchiku",
-   "to": "law-44-фз",
+   "to": "law-44-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -33297,12 +33297,12 @@
   },
   {
    "from": "faq-oplata-subpodryadchiku",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-oplata-subpodryadchiku",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -33397,12 +33397,12 @@
   },
   {
    "from": "faq-vyvod-na-raschetnyy",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-vyvod-na-raschetnyy",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -33437,7 +33437,7 @@
   },
   {
    "from": "faq-kogda-zabrat-pribyl",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -33487,7 +33487,7 @@
   },
   {
    "from": "faq-oformit-perechislenie-pribyli",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -33522,12 +33522,12 @@
   },
   {
    "from": "faq-skolko-pribyli",
-   "to": "law-пп-1465",
+   "to": "law-pp-1465",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-skolko-pribyli",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -33572,7 +33572,7 @@
   },
   {
    "from": "faq-chto-takoe-vozmeshchenie",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -33627,7 +33627,7 @@
   },
   {
    "from": "faq-kak-vozmestit-rashody",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -33777,7 +33777,7 @@
   },
   {
    "from": "faq-otkaz-v-vozmeshchenii",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -33817,12 +33817,12 @@
   },
   {
    "from": "faq-avans-pri-ks",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-avans-pri-ks",
-   "to": "law-44-фз",
+   "to": "law-44-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -33852,17 +33852,17 @@
   },
   {
    "from": "faq-razmer-avansa",
-   "to": "law-44-фз",
+   "to": "law-44-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-razmer-avansa",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-razmer-avansa",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
@@ -33947,12 +33947,12 @@
   },
   {
    "from": "faq-trata-avansa",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-trata-avansa",
-   "to": "law-коап-рф-ст-1514",
+   "to": "law-koap-rf-st-1514",
    "rel": "REGULATED_BY"
   },
   {
@@ -33982,7 +33982,7 @@
   },
   {
    "from": "faq-zachet-avansa",
-   "to": "law-44-фз",
+   "to": "law-44-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -34007,7 +34007,7 @@
   },
   {
    "from": "faq-kogda-vozvrashchat-avans",
-   "to": "law-44-фз",
+   "to": "law-44-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -34097,7 +34097,7 @@
   },
   {
    "from": "faq-avans-bez-scheta",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -34122,7 +34122,7 @@
   },
   {
    "from": "faq-chto-takoe-koo",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -34157,7 +34157,7 @@
   },
   {
    "from": "faq-uproshchennoe-perechislenie",
-   "to": "law-пп-2053",
+   "to": "law-pp-2053",
    "rel": "REGULATED_BY"
   },
   {
@@ -34197,12 +34197,12 @@
   },
   {
    "from": "faq-vyvesti-vsyu-summu",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-vyvesti-vsyu-summu",
-   "to": "law-коап-рф-ст-1514",
+   "to": "law-koap-rf-st-1514",
    "rel": "REGULATED_BY"
   },
   {
@@ -34252,12 +34252,12 @@
   },
   {
    "from": "faq-ne-puskayut-pribyl",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-ne-puskayut-pribyl",
-   "to": "law-пп-1465",
+   "to": "law-pp-1465",
    "rel": "REGULATED_BY"
   },
   {
@@ -34307,12 +34307,12 @@
   },
   {
    "from": "faq-nakladnye-raskhody",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-nakladnye-raskhody",
-   "to": "law-коап-рф-ст-1537",
+   "to": "law-koap-rf-st-1537",
    "rel": "REGULATED_BY"
   },
   {
@@ -34392,12 +34392,12 @@
   },
   {
    "from": "faq-vyvod-ekonomii",
-   "to": "law-44-фз",
+   "to": "law-44-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-vyvod-ekonomii",
-   "to": "law-пп-1465",
+   "to": "law-pp-1465",
    "rel": "REGULATED_BY"
   },
   {
@@ -34432,12 +34432,12 @@
   },
   {
    "from": "faq-chto-takoe-sanktsionirovanie",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-chto-takoe-sanktsionirovanie",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -34462,7 +34462,7 @@
   },
   {
    "from": "faq-skolko-dney-proveryaet-ufk",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -34502,7 +34502,7 @@
   },
   {
    "from": "faq-chto-proveryaet-kaznacheystvo",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -34542,7 +34542,7 @@
   },
   {
    "from": "faq-chto-takoe-dokumenty-osnovaniya",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -34572,7 +34572,7 @@
   },
   {
    "from": "faq-osnovaniya-dlya-oplaty-uslug",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -34607,7 +34607,7 @@
   },
   {
    "from": "faq-chto-takoe-svedeniya",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -34642,7 +34642,7 @@
   },
   {
    "from": "faq-zachem-nuzhny-svedeniya",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -34682,7 +34682,7 @@
   },
   {
    "from": "faq-kak-zapolnit-svedeniya",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -34722,7 +34722,7 @@
   },
   {
    "from": "faq-kto-utverzhdaet-svedeniya",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -34752,7 +34752,7 @@
   },
   {
    "from": "faq-kak-izmenit-svedeniya",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -34787,7 +34787,7 @@
   },
   {
    "from": "faq-zakazchik-ne-utverzhdaet-svedeniya",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -34832,7 +34832,7 @@
   },
   {
    "from": "faq-platezh-ne-sootvetstvuet-svedeniyam",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -34857,7 +34857,7 @@
   },
   {
    "from": "faq-chto-takoe-kaznacheyskiy-monitoring",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -34952,7 +34952,7 @@
   },
   {
    "from": "faq-mogut-li-zablokirovat-schet",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -34987,7 +34987,7 @@
   },
   {
    "from": "faq-za-chto-priostanavlivayut-operatsii",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -35022,7 +35022,7 @@
   },
   {
    "from": "faq-kak-snyat-blokirovku",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -35047,12 +35047,12 @@
   },
   {
    "from": "faq-chto-takoe-rasshirennoe-ks",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-chto-takoe-rasshirennoe-ks",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
@@ -35077,7 +35077,7 @@
   },
   {
    "from": "faq-chto-takoe-raskhodnaya-deklaratsiya",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -35112,12 +35112,12 @@
   },
   {
    "from": "faq-proverka-tselevogo-ispolzovaniya",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-proverka-tselevogo-ispolzovaniya",
-   "to": "law-коап-рф-ст-1514",
+   "to": "law-koap-rf-st-1514",
    "rel": "REGULATED_BY"
   },
   {
@@ -35152,12 +35152,12 @@
   },
   {
    "from": "faq-chem-grozit-netselevoe",
-   "to": "law-коап-рф-ст-1514",
+   "to": "law-koap-rf-st-1514",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-chem-grozit-netselevoe",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -35187,7 +35187,7 @@
   },
   {
    "from": "faq-novyy-poryadok-sanktsionirovaniya",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -35222,7 +35222,7 @@
   },
   {
    "from": "faq-srochnyy-platezh-kak-uskorit",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -35257,12 +35257,12 @@
   },
   {
    "from": "faq-otvetstvennost-za-oshibki-v-platezhkah",
-   "to": "law-коап-рф-ст-1514",
+   "to": "law-koap-rf-st-1514",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-otvetstvennost-za-oshibki-v-platezhkah",
-   "to": "law-63-фз",
+   "to": "law-63-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -35307,12 +35307,12 @@
   },
   {
    "from": "faq-pochemu-vernuli-platezh",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-pochemu-vernuli-platezh",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -35357,7 +35357,7 @@
   },
   {
    "from": "faq-deystviya-pri-vozvrate",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -35427,12 +35427,12 @@
   },
   {
    "from": "faq-ispravit-igk",
-   "to": "law-44-фз",
+   "to": "law-44-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-ispravit-igk",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -35467,12 +35467,12 @@
   },
   {
    "from": "faq-ispravit-naznachenie",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-ispravit-naznachenie",
-   "to": "law-нк-рф-гл-21",
+   "to": "law-nk-rf-gl-21",
    "rel": "REGULATED_BY"
   },
   {
@@ -35512,7 +35512,7 @@
   },
   {
    "from": "faq-vozvrat-iz-za-koda",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -35557,7 +35557,7 @@
   },
   {
    "from": "faq-povtornyy-vozvrat",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -35587,7 +35587,7 @@
   },
   {
    "from": "faq-poteri-vremeni-vozvrat",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -35632,12 +35632,12 @@
   },
   {
    "from": "faq-otkaz-sanktsionirovanie",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-otkaz-sanktsionirovanie",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -35682,12 +35682,12 @@
   },
   {
    "from": "faq-lishnie-dokumenty-ufk",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-lishnie-dokumenty-ufk",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -35732,7 +35732,7 @@
   },
   {
    "from": "faq-osporit-otkaz",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -35772,7 +35772,7 @@
   },
   {
    "from": "faq-zaderzhka-platezha",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -35807,7 +35807,7 @@
   },
   {
    "from": "faq-vozvrat-kartochki",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
@@ -35862,12 +35862,12 @@
   },
   {
    "from": "faq-vozvrat-zayavleniya",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-vozvrat-zayavleniya",
-   "to": "law-приказ-фк-21н",
+   "to": "law-prikaz-fk-21n",
    "rel": "REGULATED_BY"
   },
   {
@@ -35907,7 +35907,7 @@
   },
   {
    "from": "faq-ne-prinimayut-svedeniya",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -35952,12 +35952,12 @@
   },
   {
    "from": "faq-mchd-ne-prokhodit",
-   "to": "law-приказ-минцифры-1001",
+   "to": "law-prikaz-mintsifry-1001",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-mchd-ne-prokhodit",
-   "to": "law-гк-рф-ст-185189",
+   "to": "law-gk-rf-st-185189",
    "rel": "REGULATED_BY"
   },
   {
@@ -35992,7 +35992,7 @@
   },
   {
    "from": "faq-ecp-ne-podkhodit",
-   "to": "law-63-фз",
+   "to": "law-63-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -36032,7 +36032,7 @@
   },
   {
    "from": "faq-vkhod-v-eb",
-   "to": "law-63-фз",
+   "to": "law-63-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -36072,12 +36072,12 @@
   },
   {
    "from": "faq-blokirovka-scheta",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-blokirovka-scheta",
-   "to": "law-коап-рф-ст-1514",
+   "to": "law-koap-rf-st-1514",
    "rel": "REGULATED_BY"
   },
   {
@@ -36147,7 +36147,7 @@
   },
   {
    "from": "faq-zakazchik-zaderzhivaet",
-   "to": "law-44-фз",
+   "to": "law-44-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -36192,7 +36192,7 @@
   },
   {
    "from": "faq-sryv-srokov",
-   "to": "law-44-фз",
+   "to": "law-44-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -36237,12 +36237,12 @@
   },
   {
    "from": "faq-shtrafy-ks",
-   "to": "law-коап-рф-ст-1514",
+   "to": "law-koap-rf-st-1514",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-shtrafy-ks",
-   "to": "law-коап-рф-ст-1537",
+   "to": "law-koap-rf-st-1537",
    "rel": "REGULATED_BY"
   },
   {
@@ -36357,12 +36357,12 @@
   },
   {
    "from": "faq-dokumenty-ks-spisok",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-dokumenty-ks-spisok",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
@@ -36412,12 +36412,12 @@
   },
   {
    "from": "faq-gde-skachat-formy",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-gde-skachat-formy",
-   "to": "law-приказ-фк-21н",
+   "to": "law-prikaz-fk-21n",
    "rel": "REGULATED_BY"
   },
   {
@@ -36467,7 +36467,7 @@
   },
   {
    "from": "faq-zayavlenie-0531368",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
@@ -36517,12 +36517,12 @@
   },
   {
    "from": "faq-kto-podpisyvaet-zayavlenie",
-   "to": "law-63-фз",
+   "to": "law-63-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-kto-podpisyvaet-zayavlenie",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
@@ -36562,7 +36562,7 @@
   },
   {
    "from": "faq-kartochka-podpisey-chto-eto",
-   "to": "law-приказ-фк-21н",
+   "to": "law-prikaz-fk-21n",
    "rel": "REGULATED_BY"
   },
   {
@@ -36602,7 +36602,7 @@
   },
   {
    "from": "faq-kartochka-0531753-zapolnenie",
-   "to": "law-приказ-фк-21н",
+   "to": "law-prikaz-fk-21n",
    "rel": "REGULATED_BY"
   },
   {
@@ -36647,12 +36647,12 @@
   },
   {
    "from": "faq-kartochka-zaverenie",
-   "to": "law-приказ-фк-21н",
+   "to": "law-prikaz-fk-21n",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-kartochka-zaverenie",
-   "to": "law-гк-рф-ст-185189",
+   "to": "law-gk-rf-st-185189",
    "rel": "REGULATED_BY"
   },
   {
@@ -36687,7 +36687,7 @@
   },
   {
    "from": "faq-kartochka-bez-glavbukha",
-   "to": "law-приказ-фк-21н",
+   "to": "law-prikaz-fk-21n",
    "rel": "REGULATED_BY"
   },
   {
@@ -36722,7 +36722,7 @@
   },
   {
    "from": "faq-kartochka-pereoformlenie",
-   "to": "law-приказ-фк-21н",
+   "to": "law-prikaz-fk-21n",
    "rel": "REGULATED_BY"
   },
   {
@@ -36762,12 +36762,12 @@
   },
   {
    "from": "faq-mchd-chto-eto",
-   "to": "law-приказ-минцифры-1001",
+   "to": "law-prikaz-mintsifry-1001",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-mchd-chto-eto",
-   "to": "law-63-фз",
+   "to": "law-63-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -36807,12 +36807,12 @@
   },
   {
    "from": "faq-mchd-vypusk",
-   "to": "law-приказ-минцифры-1001",
+   "to": "law-prikaz-mintsifry-1001",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-mchd-vypusk",
-   "to": "law-63-фз",
+   "to": "law-63-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -36847,7 +36847,7 @@
   },
   {
    "from": "faq-mchd-format",
-   "to": "law-приказ-минцифры-1001",
+   "to": "law-prikaz-mintsifry-1001",
    "rel": "REGULATED_BY"
   },
   {
@@ -36882,7 +36882,7 @@
   },
   {
    "from": "faq-bumazhnaya-doverennost",
-   "to": "law-гк-рф-ст-185189",
+   "to": "law-gk-rf-st-185189",
    "rel": "REGULATED_BY"
   },
   {
@@ -36917,7 +36917,7 @@
   },
   {
    "from": "faq-doverennost-v-ufk-oformlenie",
-   "to": "law-гк-рф-ст-185189",
+   "to": "law-gk-rf-st-185189",
    "rel": "REGULATED_BY"
   },
   {
@@ -36962,7 +36962,7 @@
   },
   {
    "from": "faq-zakryvayushchie-dokumenty",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -36992,7 +36992,7 @@
   },
   {
    "from": "faq-upd-vs-akt",
-   "to": "law-нк-рф-гл-21",
+   "to": "law-nk-rf-gl-21",
    "rel": "REGULATED_BY"
   },
   {
@@ -37032,7 +37032,7 @@
   },
   {
    "from": "faq-ks2-ks3",
-   "to": "law-44-фз",
+   "to": "law-44-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -37072,7 +37072,7 @@
   },
   {
    "from": "faq-oshibka-v-akte",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -37237,12 +37237,12 @@
   },
   {
    "from": "faq-khranenie-dokumentov",
-   "to": "law-44-фз",
+   "to": "law-44-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-khranenie-dokumentov",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -37292,7 +37292,7 @@
   },
   {
    "from": "faq-elektronno-ili-bumaga",
-   "to": "law-63-фз",
+   "to": "law-63-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -37342,7 +37342,7 @@
   },
   {
    "from": "faq-proverka-pered-podachey",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -37372,7 +37372,7 @@
   },
   {
    "from": "faq-chto-takoe-giis-eb",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -37417,7 +37417,7 @@
   },
   {
    "from": "faq-registratsiya-v-eb",
-   "to": "law-63-фз",
+   "to": "law-63-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -37517,7 +37517,7 @@
   },
   {
    "from": "faq-ecp-dlya-eb",
-   "to": "law-63-фз",
+   "to": "law-63-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -37547,7 +37547,7 @@
   },
   {
    "from": "faq-gde-poluchit-ecp",
-   "to": "law-63-фз",
+   "to": "law-63-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -37587,12 +37587,12 @@
   },
   {
    "from": "faq-ecp-sotrudnika",
-   "to": "law-63-фз",
+   "to": "law-63-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-ecp-sotrudnika",
-   "to": "law-приказ-минцифры-1001",
+   "to": "law-prikaz-mintsifry-1001",
    "rel": "REGULATED_BY"
   },
   {
@@ -37672,7 +37672,7 @@
   },
   {
    "from": "faq-nuzhen-li-kriptopro",
-   "to": "law-63-фз",
+   "to": "law-63-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -37807,7 +37807,7 @@
   },
   {
    "from": "faq-istek-sertifikat",
-   "to": "law-63-фз",
+   "to": "law-63-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -37847,7 +37847,7 @@
   },
   {
    "from": "faq-dobavit-sotrudnika-v-eb",
-   "to": "law-приказ-минцифры-1001",
+   "to": "law-prikaz-mintsifry-1001",
    "rel": "REGULATED_BY"
   },
   {
@@ -37932,7 +37932,7 @@
   },
   {
    "from": "faq-otzyv-dostupa-sotrudnika",
-   "to": "law-гк-рф-ст-185189",
+   "to": "law-gk-rf-st-185189",
    "rel": "REGULATED_BY"
   },
   {
@@ -37977,12 +37977,12 @@
   },
   {
    "from": "faq-rabota-bez-mchd",
-   "to": "law-приказ-минцифры-1001",
+   "to": "law-prikaz-mintsifry-1001",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-rabota-bez-mchd",
-   "to": "law-гк-рф-ст-185189",
+   "to": "law-gk-rf-st-185189",
    "rel": "REGULATED_BY"
   },
   {
@@ -38017,12 +38017,12 @@
   },
   {
    "from": "faq-srok-deystviya-mchd",
-   "to": "law-приказ-минцифры-1001",
+   "to": "law-prikaz-mintsifry-1001",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-srok-deystviya-mchd",
-   "to": "law-гк-рф-ст-185189",
+   "to": "law-gk-rf-st-185189",
    "rel": "REGULATED_BY"
   },
   {
@@ -38057,7 +38057,7 @@
   },
   {
    "from": "faq-podpisanie-v-eb",
-   "to": "law-63-фз",
+   "to": "law-63-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -38097,7 +38097,7 @@
   },
   {
    "from": "faq-uvedomleniya-ufk-v-eb",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -38202,12 +38202,12 @@
   },
   {
    "from": "faq-smena-rukovoditelya-eb",
-   "to": "law-63-фз",
+   "to": "law-63-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-smena-rukovoditelya-eb",
-   "to": "law-гк-рф-ст-185189",
+   "to": "law-gk-rf-st-185189",
    "rel": "REGULATED_BY"
   },
   {
@@ -38242,7 +38242,7 @@
   },
   {
    "from": "faq-autsorsing-eb",
-   "to": "law-приказ-минцифры-1001",
+   "to": "law-prikaz-mintsifry-1001",
    "rel": "REGULATED_BY"
   },
   {
@@ -38277,7 +38277,7 @@
   },
   {
    "from": "faq-chto-takoe-goz",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -38322,17 +38322,17 @@
   },
   {
    "from": "faq-ks-goz-otlichiya",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-ks-goz-otlichiya",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-ks-goz-otlichiya",
-   "to": "law-коап-рф-ст-1537",
+   "to": "law-koap-rf-st-1537",
    "rel": "REGULATED_BY"
   },
   {
@@ -38362,12 +38362,12 @@
   },
   {
    "from": "faq-kazna-ili-bank-goz",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-kazna-ili-bank-goz",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
@@ -38402,7 +38402,7 @@
   },
   {
    "from": "faq-chto-takoe-otdelnyy-schet",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -38432,7 +38432,7 @@
   },
   {
    "from": "faq-bank-dlya-goz",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -38467,12 +38467,12 @@
   },
   {
    "from": "faq-igk-goz-vs-44fz",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-igk-goz-vs-44fz",
-   "to": "law-44-фз",
+   "to": "law-44-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -38522,12 +38522,12 @@
   },
   {
    "from": "faq-obyazannosti-ispolnitelya-goz",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-obyazannosti-ispolnitelya-goz",
-   "to": "law-коап-рф-ст-1537",
+   "to": "law-koap-rf-st-1537",
    "rel": "REGULATED_BY"
   },
   {
@@ -38572,7 +38572,7 @@
   },
   {
    "from": "faq-subpodryad-v-goz",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -38612,12 +38612,12 @@
   },
   {
    "from": "faq-zaprety-otdelnyy-schet",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-zaprety-otdelnyy-schet",
-   "to": "law-коап-рф-ст-1514",
+   "to": "law-koap-rf-st-1514",
    "rel": "REGULATED_BY"
   },
   {
@@ -38657,12 +38657,12 @@
   },
   {
    "from": "faq-chto-takoe-razdelnyy-uchet",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-chto-takoe-razdelnyy-uchet",
-   "to": "law-коап-рф-ст-1537",
+   "to": "law-koap-rf-st-1537",
    "rel": "REGULATED_BY"
   },
   {
@@ -38702,12 +38702,12 @@
   },
   {
    "from": "faq-kto-vedet-razdelnyy-uchet",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-kto-vedet-razdelnyy-uchet",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -38752,12 +38752,12 @@
   },
   {
    "from": "faq-postanovka-razdelnogo-ucheta",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-postanovka-razdelnogo-ucheta",
-   "to": "law-коап-рф-ст-1537",
+   "to": "law-koap-rf-st-1537",
    "rel": "REGULATED_BY"
   },
   {
@@ -38792,12 +38792,12 @@
   },
   {
    "from": "faq-shtraf-net-razdelnogo-ucheta",
-   "to": "law-коап-рф-ст-1537",
+   "to": "law-koap-rf-st-1537",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-shtraf-net-razdelnogo-ucheta",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -38832,17 +38832,17 @@
   },
   {
    "from": "faq-ru-po-44fz",
-   "to": "law-44-фз",
+   "to": "law-44-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-ru-po-44fz",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-ru-po-44fz",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
@@ -38877,12 +38877,12 @@
   },
   {
    "from": "faq-raspredelenie-nakladnykh",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-raspredelenie-nakladnykh",
-   "to": "law-пп-1465",
+   "to": "law-pp-1465",
    "rel": "REGULATED_BY"
   },
   {
@@ -38922,12 +38922,12 @@
   },
   {
    "from": "faq-chto-takoe-prim-1",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-chto-takoe-prim-1",
-   "to": "law-пп-1465",
+   "to": "law-pp-1465",
    "rel": "REGULATED_BY"
   },
   {
@@ -38957,12 +38957,12 @@
   },
   {
    "from": "faq-vidy-tsen-goz",
-   "to": "law-пп-1465",
+   "to": "law-pp-1465",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-vidy-tsen-goz",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -38987,7 +38987,7 @@
   },
   {
    "from": "faq-pravilo-20-1",
-   "to": "law-пп-1465",
+   "to": "law-pp-1465",
    "rel": "REGULATED_BY"
   },
   {
@@ -39022,12 +39022,12 @@
   },
   {
    "from": "faq-obosnovanie-tseny-goz",
-   "to": "law-пп-1465",
+   "to": "law-pp-1465",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-obosnovanie-tseny-goz",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -39062,12 +39062,12 @@
   },
   {
    "from": "faq-perevod-tseny-v-fiksirovannuyu",
-   "to": "law-пп-1465",
+   "to": "law-pp-1465",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-perevod-tseny-v-fiksirovannuyu",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -39097,12 +39097,12 @@
   },
   {
    "from": "faq-chto-proveryaet-voenpred",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-chto-proveryaet-voenpred",
-   "to": "law-пп-1465",
+   "to": "law-pp-1465",
    "rel": "REGULATED_BY"
   },
   {
@@ -39127,12 +39127,12 @@
   },
   {
    "from": "faq-skolko-pribyli-goz",
-   "to": "law-пп-1465",
+   "to": "law-pp-1465",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-skolko-pribyli-goz",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -39167,7 +39167,7 @@
   },
   {
    "from": "faq-otchetnost-goz-girbo",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -39207,7 +39207,7 @@
   },
   {
    "from": "faq-vyvod-pribyli-goz",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -39242,7 +39242,7 @@
   },
   {
    "from": "faq-soprovozhdenie-goz-pod-klyuch",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -39277,12 +39277,12 @@
   },
   {
    "from": "faq-subsidiya-pod-ks",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-subsidiya-pod-ks",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
@@ -39327,7 +39327,7 @@
   },
   {
    "from": "faq-ks-subsidiy-vs-kontrakta",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -39387,7 +39387,7 @@
   },
   {
    "from": "faq-otkrytie-scheta-subsidiya",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
@@ -39422,7 +39422,7 @@
   },
   {
    "from": "faq-soglashenie-o-subsidii",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -39512,12 +39512,12 @@
   },
   {
    "from": "faq-raskhody-subsidii",
-   "to": "law-коап-рф-ст-1514",
+   "to": "law-koap-rf-st-1514",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-raskhody-subsidii",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -39567,7 +39567,7 @@
   },
   {
    "from": "faq-ufk-ne-soglasuet-subsidiyu",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -39607,7 +39607,7 @@
   },
   {
    "from": "faq-zarplata-iz-subsidii",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -39652,7 +39652,7 @@
   },
   {
    "from": "faq-oborudovanie-iz-subsidii",
-   "to": "law-коап-рф-ст-1514",
+   "to": "law-koap-rf-st-1514",
    "rel": "REGULATED_BY"
   },
   {
@@ -39687,7 +39687,7 @@
   },
   {
    "from": "faq-razdelenie-subsidii-i-svoih",
-   "to": "law-коап-рф-ст-1514",
+   "to": "law-koap-rf-st-1514",
    "rel": "REGULATED_BY"
   },
   {
@@ -39727,7 +39727,7 @@
   },
   {
    "from": "faq-svedeniya-po-subsidii",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -39822,7 +39822,7 @@
   },
   {
    "from": "faq-vozvrat-subsidii",
-   "to": "law-коап-рф-ст-1514",
+   "to": "law-koap-rf-st-1514",
    "rel": "REGULATED_BY"
   },
   {
@@ -39892,7 +39892,7 @@
   },
   {
    "from": "faq-grant-pod-ks",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
@@ -39927,7 +39927,7 @@
   },
   {
    "from": "faq-regionalnaya-subsidiya",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -39992,7 +39992,7 @@
   },
   {
    "from": "faq-neskolko-subsidiy-schet",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
@@ -40072,12 +40072,12 @@
   },
   {
    "from": "faq-otchetnost-pri-ks",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-otchetnost-pri-ks",
-   "to": "law-коап-рф-ст-1537",
+   "to": "law-koap-rf-st-1537",
    "rel": "REGULATED_BY"
   },
   {
@@ -40187,12 +40187,12 @@
   },
   {
    "from": "faq-podgotovka-k-proverke",
-   "to": "law-коап-рф-ст-1514",
+   "to": "law-koap-rf-st-1514",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-podgotovka-k-proverke",
-   "to": "law-коап-рф-ст-1537",
+   "to": "law-koap-rf-st-1537",
    "rel": "REGULATED_BY"
   },
   {
@@ -40242,7 +40242,7 @@
   },
   {
    "from": "faq-pamyatka-buhgalteru-ks",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -40277,12 +40277,12 @@
   },
   {
    "from": "faq-kakie-kontrakty-pod-ks",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-kakie-kontrakty-pod-ks",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -40312,7 +40312,7 @@
   },
   {
    "from": "faq-s-kakoy-summy-ks",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
@@ -40342,12 +40342,12 @@
   },
   {
    "from": "faq-kto-ustanavlivaet-sluchai-ks",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-kto-ustanavlivaet-sluchai-ks",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
@@ -40367,12 +40367,12 @@
   },
   {
    "from": "faq-ks-menyaetsya-kazhdyy-god",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-ks-menyaetsya-kazhdyy-god",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -40412,12 +40412,12 @@
   },
   {
    "from": "faq-kak-ponyat-est-li-ks",
-   "to": "law-44-фз",
+   "to": "law-44-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-kak-ponyat-est-li-ks",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
@@ -40452,12 +40452,12 @@
   },
   {
    "from": "faq-mozhno-li-izbezhat-ks",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-mozhno-li-izbezhat-ks",
-   "to": "law-коап-рф-ст-1514",
+   "to": "law-koap-rf-st-1514",
    "rel": "REGULATED_BY"
   },
   {
@@ -40487,12 +40487,12 @@
   },
   {
    "from": "faq-ks-po-223-fz",
-   "to": "law-223-фз",
+   "to": "law-223-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-ks-po-223-fz",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
@@ -40522,12 +40522,12 @@
   },
   {
    "from": "faq-ks-dlya-municipalnykh",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-ks-dlya-municipalnykh",
-   "to": "law-44-фз",
+   "to": "law-44-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -40557,7 +40557,7 @@
   },
   {
    "from": "faq-ks-bez-avansa",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
@@ -40587,12 +40587,12 @@
   },
   {
    "from": "faq-edinstvennyy-postavshchik-ks",
-   "to": "law-44-фз",
+   "to": "law-44-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-edinstvennyy-postavshchik-ks",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
@@ -40622,17 +40622,17 @@
   },
   {
    "from": "faq-kakoy-zakon-reguliruet-ks",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-kakoy-zakon-reguliruet-ks",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-kakoy-zakon-reguliruet-ks",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -40657,7 +40657,7 @@
   },
   {
    "from": "faq-bk-242",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -40692,7 +40692,7 @@
   },
   {
    "from": "faq-prikaz-214n",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -40737,12 +40737,12 @@
   },
   {
    "from": "faq-prikaz-44n",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-prikaz-44n",
-   "to": "law-приказ-фк-21н",
+   "to": "law-prikaz-fk-21n",
    "rel": "REGULATED_BY"
   },
   {
@@ -40782,7 +40782,7 @@
   },
   {
    "from": "faq-izmeneniya-sentyabr-2026",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -40812,7 +40812,7 @@
   },
   {
    "from": "faq-gde-sledit-za-izmeneniyami",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
@@ -40837,12 +40837,12 @@
   },
   {
    "from": "faq-ks-vs-bankovskoe",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-ks-vs-bankovskoe",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -40872,7 +40872,7 @@
   },
   {
    "from": "faq-obsluzhivanie-vs-soprovozhdenie",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -40912,12 +40912,12 @@
   },
   {
    "from": "faq-narushenie-ks",
-   "to": "law-коап-рф-ст-1514",
+   "to": "law-koap-rf-st-1514",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-narushenie-ks",
-   "to": "law-коап-рф-ст-1537",
+   "to": "law-koap-rf-st-1537",
    "rel": "REGULATED_BY"
   },
   {
@@ -40952,12 +40952,12 @@
   },
   {
    "from": "faq-ugolovnaya-otvetstvennost-ks",
-   "to": "law-коап-рф-ст-1514",
+   "to": "law-koap-rf-st-1514",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-ugolovnaya-otvetstvennost-ks",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -40997,12 +40997,12 @@
   },
   {
    "from": "faq-otvetstvennost-direktora-ks",
-   "to": "law-коап-рф-ст-1514",
+   "to": "law-koap-rf-st-1514",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-otvetstvennost-direktora-ks",
-   "to": "law-коап-рф-ст-1537",
+   "to": "law-koap-rf-st-1537",
    "rel": "REGULATED_BY"
   },
   {
@@ -41042,17 +41042,17 @@
   },
   {
    "from": "faq-proverki-fas-goz",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-proverki-fas-goz",
-   "to": "law-коап-рф-ст-1537",
+   "to": "law-koap-rf-st-1537",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-proverki-fas-goz",
-   "to": "law-пп-1465",
+   "to": "law-pp-1465",
    "rel": "REGULATED_BY"
   },
   {
@@ -41092,12 +41092,12 @@
   },
   {
    "from": "faq-srok-davnosti-ks",
-   "to": "law-коап-рф-ст-1514",
+   "to": "law-koap-rf-st-1514",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-srok-davnosti-ks",
-   "to": "law-коап-рф-ст-1537",
+   "to": "law-koap-rf-st-1537",
    "rel": "REGULATED_BY"
   },
   {
@@ -41122,12 +41122,12 @@
   },
   {
    "from": "faq-ks-eto-nadolgo",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-ks-eto-nadolgo",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
@@ -41157,7 +41157,7 @@
   },
   {
    "from": "faq-zachem-gosudarstvu-ks",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -41182,7 +41182,7 @@
   },
   {
    "from": "faq-plyusy-ks-dlya-podryadchika",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
@@ -41237,7 +41237,7 @@
   },
   {
    "from": "faq-sostav-uslugi-soprovozhdeniya",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -41282,7 +41282,7 @@
   },
   {
    "from": "faq-stoimost-otkrytiya-scheta",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
@@ -41312,7 +41312,7 @@
   },
   {
    "from": "faq-faktory-tseny-soprovozhdeniya",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -41427,12 +41427,12 @@
   },
   {
    "from": "faq-polnomochiya-dlya-raboty",
-   "to": "law-приказ-минцифры-1001",
+   "to": "law-prikaz-mintsifry-1001",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-polnomochiya-dlya-raboty",
-   "to": "law-гк-рф-ст-185189",
+   "to": "law-gk-rf-st-185189",
    "rel": "REGULATED_BY"
   },
   {
@@ -41597,7 +41597,7 @@
   },
   {
    "from": "faq-konfidentsialnost",
-   "to": "law-63-фз",
+   "to": "law-63-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -41627,7 +41627,7 @@
   },
   {
    "from": "faq-otraslevoy-opyt",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -41702,7 +41702,7 @@
   },
   {
    "from": "faq-tolko-otkrytie-scheta",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
@@ -41732,7 +41732,7 @@
   },
   {
    "from": "faq-ip-i-malyy-biznes",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
@@ -41762,12 +41762,12 @@
   },
   {
    "from": "faq-ks-prostymi-slovami",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-ks-prostymi-slovami",
-   "to": "law-44-фз",
+   "to": "law-44-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -41812,7 +41812,7 @@
   },
   {
    "from": "faq-start-novichka",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
@@ -41837,7 +41837,7 @@
   },
   {
    "from": "faq-vremya-na-protsedury",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -41877,12 +41877,12 @@
   },
   {
    "from": "faq-proverka-do-podpisaniya",
-   "to": "law-44-фз",
+   "to": "law-44-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "faq-proverka-do-podpisaniya",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
@@ -41907,22 +41907,22 @@
   },
   {
    "from": "faq-gde-uchitsya-ks",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "hub-ks",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "hub-ks",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
    "from": "hub-ks",
-   "to": "law-44-фз",
+   "to": "law-44-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -41962,12 +41962,12 @@
   },
   {
    "from": "hub-scheta",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
    "from": "hub-scheta",
-   "to": "law-приказ-фк-21н",
+   "to": "law-prikaz-fk-21n",
    "rel": "REGULATED_BY"
   },
   {
@@ -42002,12 +42002,12 @@
   },
   {
    "from": "hub-platezhi",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
    "from": "hub-platezhi",
-   "to": "law-пп-2053",
+   "to": "law-pp-2053",
    "rel": "REGULATED_BY"
   },
   {
@@ -42037,17 +42037,17 @@
   },
   {
    "from": "hub-sankts",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
    "from": "hub-sankts",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "hub-sankts",
-   "to": "law-коап-рф-ст-1514",
+   "to": "law-koap-rf-st-1514",
    "rel": "REGULATED_BY"
   },
   {
@@ -42072,17 +42072,17 @@
   },
   {
    "from": "hub-goz",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "hub-goz",
-   "to": "law-пп-1465",
+   "to": "law-pp-1465",
    "rel": "REGULATED_BY"
   },
   {
    "from": "hub-goz",
-   "to": "law-коап-рф-ст-1537",
+   "to": "law-koap-rf-st-1537",
    "rel": "REGULATED_BY"
   },
   {
@@ -42112,12 +42112,12 @@
   },
   {
    "from": "hub-ru",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "hub-ru",
-   "to": "law-коап-рф-ст-1537",
+   "to": "law-koap-rf-st-1537",
    "rel": "REGULATED_BY"
   },
   {
@@ -42147,12 +42147,12 @@
   },
   {
    "from": "hub-subsidii",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "hub-subsidii",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
@@ -42182,12 +42182,12 @@
   },
   {
    "from": "hub-giis",
-   "to": "law-63-фз",
+   "to": "law-63-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "hub-giis",
-   "to": "law-приказ-минцифры-1001",
+   "to": "law-prikaz-mintsifry-1001",
    "rel": "REGULATED_BY"
   },
   {
@@ -42207,27 +42207,27 @@
   },
   {
    "from": "hub-zakony",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "hub-zakony",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
    "from": "hub-zakony",
-   "to": "law-44-фз",
+   "to": "law-44-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "hub-zakony",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "hub-zakony",
-   "to": "law-223-фз",
+   "to": "law-223-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -42252,12 +42252,12 @@
   },
   {
    "from": "hub-otchetnost",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
    "from": "hub-otchetnost",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -42322,12 +42322,12 @@
   },
   {
    "from": "tool-diagnostika-kontrakta",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
    "from": "tool-diagnostika-kontrakta",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -42387,7 +42387,7 @@
   },
   {
    "from": "tool-diagnostika-kontrakta",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
@@ -42437,7 +42437,7 @@
   },
   {
    "from": "tool-diagnostika-kontrakta",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -42492,7 +42492,7 @@
   },
   {
    "from": "tool-diagnostika-kontrakta",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -42542,7 +42542,7 @@
   },
   {
    "from": "tool-diagnostika-kontrakta",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -42577,7 +42577,7 @@
   },
   {
    "from": "tool-diagnostika-kontrakta",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
@@ -42607,7 +42607,7 @@
   },
   {
    "from": "tool-diagnostika-kontrakta",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
@@ -42647,12 +42647,12 @@
   },
   {
    "from": "tool-proverka-ks",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
    "from": "tool-proverka-ks",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -42697,7 +42697,7 @@
   },
   {
    "from": "tool-proverka-ks",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
@@ -42732,7 +42732,7 @@
   },
   {
    "from": "tool-proverka-ks",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
@@ -42762,7 +42762,7 @@
   },
   {
    "from": "tool-proverka-ks",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -42807,12 +42807,12 @@
   },
   {
    "from": "tool-podbor-scheta",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
    "from": "tool-podbor-scheta",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -42872,7 +42872,7 @@
   },
   {
    "from": "tool-podbor-scheta",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
@@ -42912,7 +42912,7 @@
   },
   {
    "from": "tool-podbor-scheta",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
@@ -42957,7 +42957,7 @@
   },
   {
    "from": "tool-podbor-scheta",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -42987,7 +42987,7 @@
   },
   {
    "from": "tool-podbor-scheta",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -43022,12 +43022,12 @@
   },
   {
    "from": "tool-proverka-komplekta",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
    "from": "tool-proverka-komplekta",
-   "to": "law-приказ-фк-21н",
+   "to": "law-prikaz-fk-21n",
    "rel": "REGULATED_BY"
   },
   {
@@ -43072,7 +43072,7 @@
   },
   {
    "from": "tool-proverka-komplekta",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
@@ -43112,7 +43112,7 @@
   },
   {
    "from": "tool-proverka-komplekta",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
@@ -43162,7 +43162,7 @@
   },
   {
    "from": "tool-proverka-komplekta",
-   "to": "law-приказ-фк-21н",
+   "to": "law-prikaz-fk-21n",
    "rel": "REGULATED_BY"
   },
   {
@@ -43217,7 +43217,7 @@
   },
   {
    "from": "tool-proverka-komplekta",
-   "to": "law-63-фз",
+   "to": "law-63-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -43257,7 +43257,7 @@
   },
   {
    "from": "tool-diagnostika-platezha",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -43297,7 +43297,7 @@
   },
   {
    "from": "tool-diagnostika-platezha",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -43342,7 +43342,7 @@
   },
   {
    "from": "tool-diagnostika-platezha",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -43387,7 +43387,7 @@
   },
   {
    "from": "tool-diagnostika-platezha",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -43432,7 +43432,7 @@
   },
   {
    "from": "tool-diagnostika-platezha",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -43477,7 +43477,7 @@
   },
   {
    "from": "tool-diagnostika-platezha",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -43517,7 +43517,7 @@
   },
   {
    "from": "tool-diagnostika-platezha",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -43562,12 +43562,12 @@
   },
   {
    "from": "tool-proverka-goz",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "tool-proverka-goz",
-   "to": "law-коап-рф-ст-1537",
+   "to": "law-koap-rf-st-1537",
    "rel": "REGULATED_BY"
   },
   {
@@ -43617,7 +43617,7 @@
   },
   {
    "from": "tool-proverka-goz",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -43662,7 +43662,7 @@
   },
   {
    "from": "tool-proverka-goz",
-   "to": "law-коап-рф-ст-1537",
+   "to": "law-koap-rf-st-1537",
    "rel": "REGULATED_BY"
   },
   {
@@ -43697,7 +43697,7 @@
   },
   {
    "from": "tool-proverka-goz",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
@@ -43737,12 +43737,12 @@
   },
   {
    "from": "tool-proverka-subsidii",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "tool-proverka-subsidii",
-   "to": "law-ежегодный-закон-о-федеральном-бюджете",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
   },
   {
@@ -43792,7 +43792,7 @@
   },
   {
    "from": "tool-proverka-subsidii",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -43842,7 +43842,7 @@
   },
   {
    "from": "tool-proverka-subsidii",
-   "to": "law-коап-рф-ст-1514",
+   "to": "law-koap-rf-st-1514",
    "rel": "REGULATED_BY"
   },
   {
@@ -43887,7 +43887,7 @@
   },
   {
    "from": "tool-proverka-subsidii",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -43922,7 +43922,7 @@
   },
   {
    "from": "tool-marshrutizator",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -43977,7 +43977,7 @@
   },
   {
    "from": "tool-marshrutizator",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -44017,7 +44017,7 @@
   },
   {
    "from": "tool-marshrutizator",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -44062,7 +44062,7 @@
   },
   {
    "from": "tool-marshrutizator",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -44102,7 +44102,7 @@
   },
   {
    "from": "tool-marshrutizator",
-   "to": "law-пп-2053",
+   "to": "law-pp-2053",
    "rel": "REGULATED_BY"
   },
   {
@@ -44137,7 +44137,7 @@
   },
   {
    "from": "tool-proverka-sankts",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -44182,7 +44182,7 @@
   },
   {
    "from": "tool-proverka-sankts",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -44222,7 +44222,7 @@
   },
   {
    "from": "tool-proverka-sankts",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -44277,7 +44277,7 @@
   },
   {
    "from": "tool-proverka-sankts",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -44312,12 +44312,12 @@
   },
   {
    "from": "tool-generator-chek-lista",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
    "from": "tool-generator-chek-lista",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -44377,7 +44377,7 @@
   },
   {
    "from": "tool-generator-chek-lista",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
@@ -44427,12 +44427,12 @@
   },
   {
    "from": "tool-generator-chek-lista",
-   "to": "law-275-фз",
+   "to": "law-275-fz",
    "rel": "REGULATED_BY"
   },
   {
    "from": "tool-generator-chek-lista",
-   "to": "law-коап-рф-ст-1537",
+   "to": "law-koap-rf-st-1537",
    "rel": "REGULATED_BY"
   },
   {
@@ -44482,7 +44482,7 @@
   },
   {
    "from": "tool-generator-chek-lista",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -44567,12 +44567,12 @@
   },
   {
    "from": "service-open",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
    "from": "service-open",
-   "to": "law-приказ-фк-21н",
+   "to": "law-prikaz-fk-21n",
    "rel": "REGULATED_BY"
   },
   {
@@ -44677,12 +44677,12 @@
   },
   {
    "from": "service-conduct",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
    "from": "service-conduct",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
@@ -44762,7 +44762,7 @@
   },
   {
    "from": "service-reserve",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
@@ -44837,7 +44837,7 @@
   },
   {
    "from": "service-postpayment",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {
@@ -44927,12 +44927,12 @@
   },
   {
    "from": "service-start",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "service-start",
-   "to": "law-приказ-фк-44н",
+   "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
   {
@@ -45022,12 +45022,12 @@
   },
   {
    "from": "service-vosstanovlenie",
-   "to": "law-бк-рф-ст-2422224226",
+   "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
   {
    "from": "service-vosstanovlenie",
-   "to": "law-приказ-минфина-214н",
+   "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
   },
   {

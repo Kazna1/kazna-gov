@@ -63,21 +63,21 @@
    "url": "/glossary/sanktsionirovanie/"
   },
   {
-   "id": "law-приказ-минфина-214н",
+   "id": "law-prikaz-minfina-214n",
    "name": "Приказ Минфина № 214н",
    "type": [
     "law"
    ],
-   "api": "/entity/law-приказ-минфина-214н.json",
+   "api": "/entity/law-prikaz-minfina-214n.json",
    "url": "/zakonodatelstvo/"
   },
   {
-   "id": "law-бк-рф-ст-2422224226",
+   "id": "law-bk-rf-st-2422224226",
    "name": "БК РФ, ст. 242.22–242.26",
    "type": [
     "law"
    ],
-   "api": "/entity/law-бк-рф-ст-2422224226.json",
+   "api": "/entity/law-bk-rf-st-2422224226.json",
    "url": "/zakonodatelstvo/"
   },
   {
@@ -157,12 +157,12 @@
    "url": "/glossary/kaznacheyskoe-soprovozhdenie/"
   },
   {
-   "id": "law-275-фз",
+   "id": "law-275-fz",
    "name": "275-ФЗ",
    "type": [
     "law"
    ],
-   "api": "/entity/law-275-фз.json",
+   "api": "/entity/law-275-fz.json",
    "url": "/zakonodatelstvo/"
   },
   {
@@ -230,12 +230,12 @@
    "url": "/services/start"
   },
   {
-   "id": "law-приказ-фк-44н",
+   "id": "law-prikaz-fk-44n",
    "name": "Приказ ФК № 44н",
    "type": [
     "law"
    ],
-   "api": "/entity/law-приказ-фк-44н.json",
+   "api": "/entity/law-prikaz-fk-44n.json",
    "url": "/zakonodatelstvo/"
   },
   {
@@ -320,12 +320,12 @@
    "url": "/glossary/goskontrakt/"
   },
   {
-   "id": "law-ежегодный-закон-о-федеральном-бюджете",
+   "id": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "name": "Ежегодный закон о федеральном бюджете",
    "type": [
     "law"
    ],
-   "api": "/entity/law-ежегодный-закон-о-федеральном-бюджете.json",
+   "api": "/entity/law-ezhegodnyy-zakon-o-federalnom-byudzhete.json",
    "url": "/zakonodatelstvo/"
   },
   {
@@ -455,12 +455,12 @@
    "url": "/glossary/avans/"
   },
   {
-   "id": "law-44-фз",
+   "id": "law-44-fz",
    "name": "44-ФЗ",
    "type": [
     "law"
    ],
-   "api": "/entity/law-44-фз.json",
+   "api": "/entity/law-44-fz.json",
    "url": "/zakonodatelstvo/"
   },
   {
@@ -491,12 +491,12 @@
    "url": "/glossary/sroki-rassmotreniya-ufk/"
   },
   {
-   "id": "law-63-фз",
+   "id": "law-63-fz",
    "name": "63-ФЗ",
    "type": [
     "law"
    ],
-   "api": "/entity/law-63-фз.json",
+   "api": "/entity/law-63-fz.json",
    "url": "/zakonodatelstvo/"
   },
   {
@@ -518,12 +518,12 @@
    "url": "/glossary/naznachenie-platezha/"
   },
   {
-   "id": "law-коап-рф-ст-1514",
+   "id": "law-koap-rf-st-1514",
    "name": "КоАП РФ, ст. 15.14",
    "type": [
     "law"
    ],
-   "api": "/entity/law-коап-рф-ст-1514.json",
+   "api": "/entity/law-koap-rf-st-1514.json",
    "url": "/zakonodatelstvo/"
   },
   {
@@ -590,21 +590,21 @@
    "url": "/glossary/akt-sdachi-priyomki/"
   },
   {
-   "id": "law-приказ-фк-21н",
+   "id": "law-prikaz-fk-21n",
    "name": "Приказ ФК № 21н",
    "type": [
     "law"
    ],
-   "api": "/entity/law-приказ-фк-21н.json",
+   "api": "/entity/law-prikaz-fk-21n.json",
    "url": "/zakonodatelstvo/"
   },
   {
-   "id": "law-коап-рф-ст-1537",
+   "id": "law-koap-rf-st-1537",
    "name": "КоАП РФ, ст. 15.37",
    "type": [
     "law"
    ],
-   "api": "/entity/law-коап-рф-ст-1537.json",
+   "api": "/entity/law-koap-rf-st-1537.json",
    "url": "/zakonodatelstvo/"
   },
   {
@@ -662,12 +662,12 @@
    "url": "/glossary/raschetnyy-schet/"
   },
   {
-   "id": "law-пп-1465",
+   "id": "law-pp-1465",
    "name": "ПП № 1465",
    "type": [
     "law"
    ],
-   "api": "/entity/law-пп-1465.json",
+   "api": "/entity/law-pp-1465.json",
    "url": "/zakonodatelstvo/"
   },
   {
@@ -689,12 +689,12 @@
    "url": "/glossary/vypiska-iz-litsevogo-scheta/"
   },
   {
-   "id": "law-приказ-минцифры-1001",
+   "id": "law-prikaz-mintsifry-1001",
    "name": "Приказ Минцифры № 1001",
    "type": [
     "law"
    ],
-   "api": "/entity/law-приказ-минцифры-1001.json",
+   "api": "/entity/law-prikaz-mintsifry-1001.json",
    "url": "/zakonodatelstvo/"
   },
   {
@@ -906,12 +906,12 @@
    "url": "/platezhi/"
   },
   {
-   "id": "law-гк-рф-ст-185189",
+   "id": "law-gk-rf-st-185189",
    "name": "ГК РФ, ст. 185–189",
    "type": [
     "law"
    ],
-   "api": "/entity/law-гк-рф-ст-185189.json",
+   "api": "/entity/law-gk-rf-st-185189.json",
    "url": "/zakonodatelstvo/"
   },
   {
@@ -1302,12 +1302,12 @@
    "url": "/services/postpayment"
   },
   {
-   "id": "law-нк-рф-гл-21",
+   "id": "law-nk-rf-gl-21",
    "name": "НК РФ, гл. 21",
    "type": [
     "law"
    ],
-   "api": "/entity/law-нк-рф-гл-21.json",
+   "api": "/entity/law-nk-rf-gl-21.json",
    "url": "/zakonodatelstvo/"
   },
   {
@@ -1635,12 +1635,12 @@
    "url": "/instrumenty/proverka-sanktsionirovaniya/"
   },
   {
-   "id": "law-пп-2053",
+   "id": "law-pp-2053",
    "name": "ПП № 2053",
    "type": [
     "law"
    ],
-   "api": "/entity/law-пп-2053.json",
+   "api": "/entity/law-pp-2053.json",
    "url": "/zakonodatelstvo/"
   },
   {
@@ -2436,12 +2436,12 @@
    "url": "/instrumenty/generator-chek-lista/"
   },
   {
-   "id": "law-223-фз",
+   "id": "law-223-fz",
    "name": "223-ФЗ",
    "type": [
     "law"
    ],
-   "api": "/entity/law-223-фз.json",
+   "api": "/entity/law-223-fz.json",
    "url": "/zakonodatelstvo/"
   },
   {
