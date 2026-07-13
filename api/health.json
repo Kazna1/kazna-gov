@@ -1,10 +1,10 @@
 {
- "generated": "2026-07-10T07:57:02.702Z",
- "nodes": 485,
- "edges": 4025,
+ "generated": "2026-07-13T11:54:20.699Z",
+ "nodes": 486,
+ "edges": 4032,
  "byType": {
   "term": 120,
-  "faq": 300,
+  "faq": 301,
   "document": 19,
   "error": 13,
   "tool": 10,

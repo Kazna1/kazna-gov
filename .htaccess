@@ -16,6 +16,14 @@ AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application
 Header always set X-Content-Type-Options "nosniff"
 Header always set X-Frame-Options "SAMEORIGIN"
 Header always set Referrer-Policy "strict-origin-when-cross-origin"
+# HSTS: основной хост уже форсит HTTPS (см. RewriteCond ниже). max-age 1 год.
+# includeSubDomains и preload — включить ПОСЛЕ проверки, что api./cf. отдают HTTPS.
+Header always set Strict-Transport-Security "max-age=31536000"
+# Отключаем неиспользуемые браузерные фичи
+Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+# CSP пока в Report-Only: НЕ ломает сайт, только логирует нарушения в консоль.
+# После недели наблюдения без ложных срабатываний — сменить на Content-Security-Policy (enforce).
+Header always set Content-Security-Policy-Report-Only "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://mc.yandex.ru https://top-fwz1.mail.ru; connect-src 'self' https://api.kazna-gov.ru https://cf.kazna-gov.ru https://mc.yandex.ru https://forms.tildaapi.pro https://top-fwz1.mail.ru; frame-src 'self'"
 </IfModule>
 RewriteEngine On
 
