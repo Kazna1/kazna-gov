@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-13T19:30:17.159Z",
+ "generated": "2026-07-13T19:49:12.928Z",
  "nodes": 487,
  "edges": 4093,
  "byType": {
@@ -16,10 +16,10 @@
   "coverage": 85,
   "authority": 8,
   "connectivity": 44,
-  "citationDensity": 25,
+  "citationDensity": 89,
   "graphDensity": 8.4,
   "machineReadability": 100,
-  "aiReadiness": 74,
+  "aiReadiness": 100,
   "registryCompleteness": 100,
   "linkQuality": 100,
   "moneyQuality": 100,
@@ -29,6 +29,6 @@
   "glossaryCoverage": 96,
   "faqCoverage": 68,
   "hubQuality": 42,
-  "knowledgeScore": 62
+  "knowledgeScore": 74
  }
 }

@@ -252,11 +252,7 @@ code, pre, kbd, samp, .mono {
   "email": "manager@kazna-gov.ru",
   "priceRange": "19 000 ₽",
   "founder": {
-    "@type": "Person",
-    "name": "Ярослав Михайлов",
-    "jobTitle": "Руководитель практики",
-    "worksFor": "ИП Михайлов Я.А."
-  },
+    "@type": "Person", "@id": "https://kazna-gov.ru/#founder", "name": "Ярослав Михайлов", "jobTitle": "Руководитель практики", "worksFor": { "@id": "https://kazna-gov.ru/#organization" } },
   "areaServed": {
     "@type": "Country",
     "name": "Россия"
@@ -273,6 +269,8 @@ code, pre, kbd, samp, .mono {
     ]
   }
 }
+</script> <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AudioObject","name":"Голосовой отзыв клиента — вывод зависших средств с казначейского счёта","contentUrl":"https://api.kazna-gov.ru/audio/main-review.mp3","encodingFormat":"audio/mpeg","duration":"PT9S","inLanguage":"ru","transcript":"Добрый вечер! Мы танцуем, поём и пьём шампанское. Деньги поступили на наш расчётный счёт. Так что тема закрыта. Спасибо вам огромное!","publisher":{"@id":"https://kazna-gov.ru/#organization"}}
 </script> <!-- Schema.org: FAQPage --> <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -301,7 +299,7 @@ code, pre, kbd, samp, .mono {
   "worksFor": {
     "@type": "Organization",
     "@id": "https://kazna-gov.ru/#organization",
-    "name": "ИП Михайлов Я.А.",
+    "name": "ИП Михайлов Я.А.", "founder": { "@id": "https://kazna-gov.ru/#founder" }, "employee": { "@id": "https://kazna-gov.ru/expert/stella#person" },
     "alternateName": "Казна",
     "taxID": "781428314589",
     "url": "https://kazna-gov.ru/",

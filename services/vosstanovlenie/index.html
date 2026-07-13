@@ -28,7 +28,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Service",
+      "@type": "Service", "mainEntityOfPage": "https://kazna-gov.ru/services/vosstanovlenie",
       "@id": "https://kazna-gov.ru/services/vosstanovlenie#service",
       "name": "Восстановление казначейского сопровождения",
       "alternateName": "Тариф «Восстановление» (антикризисное казначейское сопровождение)",
@@ -36,10 +36,7 @@
       "description": "Восстановление казначейского сопровождения после неудачного подрядчика: аудит ошибок, разблокировка зависших платежей, снятие претензий УФК, восстановление отчётности — 99 000 ₽/мес, после выхода в штатный режим — 69 000 ₽/мес.",
       "url": "https://kazna-gov.ru/services/vosstanovlenie",
       "areaServed": {"@type": "Country", "name": "Россия"},
-      "provider": {
-        "@type": "Organization",
-        "name": "Казна",
-        "url": "https://kazna-gov.ru/",
+      "provider": { "@type": "Organization", "@id": "https://kazna-gov.ru/#organization", "name": "Казна", "url": "https://kazna-gov.ru/",
         "founder": {"@type": "Person", "name": "Ярослав Михайлов", "jobTitle": "Руководитель практики «Казна»"},
         "taxID": "781428314589"
       },

@@ -25,6 +25,11 @@ Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), 
 # После недели наблюдения без ложных срабатываний — сменить на Content-Security-Policy (enforce).
 Header always set Content-Security-Policy-Report-Only "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://mc.yandex.ru https://top-fwz1.mail.ru; connect-src 'self' https://api.kazna-gov.ru https://cf.kazna-gov.ru https://mc.yandex.ru https://forms.tildaapi.pro https://top-fwz1.mail.ru; frame-src 'self'"
 </IfModule>
+<IfModule mod_headers.c>
+<FilesMatch "\.(woff2)$">
+Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>
+</IfModule>
 RewriteEngine On
 
 
@@ -185,6 +190,8 @@ ExpiresByType image/webp "access plus 30 days"
 ExpiresByType image/png "access plus 30 days"
 ExpiresByType image/jpeg "access plus 30 days"
 ExpiresByType image/svg+xml "access plus 30 days"
+AddType font/woff2 .woff2
+ExpiresByType font/woff2 "access plus 1 year"
 </IfModule>
 Redirect 301 /uslugi/rezerv-kaznacheyskogo-scheta /services/reserve
 Redirect 301 /uslugi/otkrytie-kaznacheyskogo-scheta /services/open
