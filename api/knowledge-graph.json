@@ -241,7 +241,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-err-necelevoe",
    "scores": {
-    "authority": 62,
+    "authority": 61,
     "coverage": 67,
     "connectivity": 100,
     "citation": 100,
@@ -325,7 +325,7 @@
    "updated": "2026-07-08",
    "schema_id": "https://kazna-gov.ru/#e-err-zatyanulos-otkrytie",
    "scores": {
-    "authority": 62,
+    "authority": 64,
     "coverage": 50,
     "connectivity": 100,
     "citation": 50,
@@ -573,9 +573,9 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-err-svodnyy-reestr",
    "scores": {
-    "authority": 18,
+    "authority": 23,
     "coverage": 50,
-    "connectivity": 63,
+    "connectivity": 80,
     "citation": 50,
     "aiReadiness": 60,
     "density": 100
@@ -640,7 +640,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-zayavlenie-ls",
    "scores": {
-    "authority": 75,
+    "authority": 77,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -745,7 +745,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-kartochka-podpisey",
    "scores": {
-    "authority": 69,
+    "authority": 71,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -973,7 +973,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-doverennost-mchd",
    "scores": {
-    "authority": 95,
+    "authority": 94,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -1018,7 +1018,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-chek-list-otkrytie",
    "scores": {
-    "authority": 42,
+    "authority": 44,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -1720,7 +1720,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-tofk",
    "scores": {
-    "authority": 29,
+    "authority": 28,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -2432,7 +2432,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-ks",
    "scores": {
-    "authority": 57,
+    "authority": 59,
     "coverage": 50,
     "connectivity": 100,
     "citation": 100,
@@ -2712,7 +2712,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-ls-71",
    "scores": {
-    "authority": 80,
+    "authority": 85,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -3304,7 +3304,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-kontrakt-44",
    "scores": {
-    "authority": 35,
+    "authority": 37,
     "coverage": 67,
     "connectivity": 100,
     "citation": 100,
@@ -3355,7 +3355,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-igk",
    "scores": {
-    "authority": 51,
+    "authority": 50,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -4936,7 +4936,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-sanktsionirovanie",
    "scores": {
-    "authority": 87,
+    "authority": 91,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -5985,7 +5985,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-svodnyy-reestr",
    "scores": {
-    "authority": 25,
+    "authority": 27,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -6903,9 +6903,9 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-faq-kak-otkryt-schet",
    "scores": {
-    "authority": 7,
+    "authority": 8,
     "coverage": 100,
-    "connectivity": 60,
+    "connectivity": 63,
     "citation": 50,
     "aiReadiness": 60,
     "density": 100
@@ -7022,12 +7022,12 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-faq-srok-otkrytiya-scheta",
    "scores": {
-    "authority": 4,
+    "authority": 7,
     "coverage": 100,
-    "connectivity": 47,
+    "connectivity": 53,
     "citation": 50,
     "aiReadiness": 60,
-    "density": 93
+    "density": 100
    }
   },
   {
@@ -7086,9 +7086,9 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-faq-dokumenty-dlya-otkrytiya",
    "scores": {
-    "authority": 4,
+    "authority": 5,
     "coverage": 100,
-    "connectivity": 53,
+    "connectivity": 57,
     "citation": 50,
     "aiReadiness": 60,
     "density": 100
@@ -14149,12 +14149,12 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-faq-pochemu-vernuli-platezh",
    "scores": {
-    "authority": 2,
+    "authority": 4,
     "coverage": 100,
-    "connectivity": 43,
+    "connectivity": 50,
     "citation": 50,
     "aiReadiness": 60,
-    "density": 87
+    "density": 100
    }
   },
   {
@@ -14210,12 +14210,12 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-faq-deystviya-pri-vozvrate",
    "scores": {
-    "authority": 2,
+    "authority": 4,
     "coverage": 100,
-    "connectivity": 40,
+    "connectivity": 47,
     "citation": 50,
     "aiReadiness": 60,
-    "density": 80
+    "density": 93
    }
   },
   {
@@ -22906,12 +22906,12 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-faq-stoimost-soprovozhdeniya",
    "scores": {
-    "authority": 2,
+    "authority": 5,
     "coverage": 50,
-    "connectivity": 20,
+    "connectivity": 30,
     "citation": 50,
     "aiReadiness": 60,
-    "density": 40
+    "density": 60
    }
   },
   {
@@ -22964,12 +22964,12 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-faq-sostav-uslugi-soprovozhdeniya",
    "scores": {
-    "authority": 3,
+    "authority": 5,
     "coverage": 100,
-    "connectivity": 40,
+    "connectivity": 47,
     "citation": 50,
     "aiReadiness": 60,
-    "density": 80
+    "density": 93
    }
   },
   {
@@ -23076,12 +23076,12 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-faq-faktory-tseny-soprovozhdeniya",
    "scores": {
-    "authority": 1,
+    "authority": 3,
     "coverage": 67,
-    "connectivity": 23,
+    "connectivity": 30,
     "citation": 50,
     "aiReadiness": 60,
-    "density": 47
+    "density": 60
    }
   },
   {
@@ -24224,7 +24224,8 @@
     ],
     "DIAGNOSED_BY": [
      "tool-diagnostika-kontrakta",
-     "tool-generator-chek-lista"
+     "tool-generator-chek-lista",
+     "tool-podbor-formata-soprovozhdeniya"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/ks_2025/",
@@ -24246,9 +24247,9 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-hub-ks",
    "scores": {
-    "authority": 8,
+    "authority": 9,
     "coverage": 83,
-    "connectivity": 57,
+    "connectivity": 63,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -25523,6 +25524,81 @@
    }
   },
   {
+   "id": "tool-podbor-formata-soprovozhdeniya",
+   "type": [
+    "tool"
+   ],
+   "name": "Подбор формата сопровождения",
+   "aliases": [],
+   "summary": "Мастер за 3 вопроса подбирает формат казначейского сопровождения под этап вашего контракта: резерв счёта до тендера, открытие лицевого счёта, ведение контракта с авансом или постоплатой, антикризисное восстановление. На выходе — рекомендованный формат с чек-листом первых шагов, необходимыми документами и типичными ошибками этапа из базы знаний платформы.",
+   "citation": "Вход: этап контракта, объём помощи, схема оплаты. Выход: рекомендованный формат сопровождения + чек-лист старта.",
+   "pages": [
+    {
+     "layer": "tool",
+     "url": "/instrumenty/podbor-formata-soprovozhdeniya/",
+     "title": "Подбор формата сопровождения"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "ks",
+     "ls-71",
+     "sanktsionirovanie",
+     "kontrakt-44",
+     "svodnyy-reestr"
+    ],
+    "SEE_FAQ": [
+     "faq-stoimost-soprovozhdeniya",
+     "faq-sostav-uslugi-soprovozhdeniya",
+     "faq-faktory-tseny-soprovozhdeniya",
+     "faq-kak-otkryt-schet",
+     "faq-srok-otkrytiya-scheta",
+     "faq-dokumenty-dlya-otkrytiya",
+     "faq-pochemu-vernuli-platezh",
+     "faq-deystviya-pri-vozvrate"
+    ],
+    "PART_OF_TOPIC": [
+     "hub-ks"
+    ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226",
+     "law-prikaz-fk-44n"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/soprovozhdenie-goskontraktov-pod-kluch",
+     "/blog/how_to_open/"
+    ],
+    "REQUIRES_DOC": [
+     "zayavlenie-ls",
+     "kartochka-podpisey",
+     "chek-list-otkrytie",
+     "svedeniya-ssu"
+    ],
+    "PREVENTS": [
+     "err-svodnyy-reestr",
+     "err-zatyanulos-otkrytie"
+    ],
+    "RESOLVES_TO": [
+     "service-reserve",
+     "service-open",
+     "service-conduct",
+     "service-postpayment",
+     "service-vosstanovlenie",
+     "service-start"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-tool-podbor-formata-soprovozhdeniya",
+   "scores": {
+    "authority": 1,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
    "id": "service-open",
    "type": [
     "service"
@@ -25709,9 +25785,9 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-service-reserve",
    "scores": {
-    "authority": 9,
+    "authority": 10,
     "coverage": 100,
-    "connectivity": 73,
+    "connectivity": 77,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -25770,9 +25846,9 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-service-postpayment",
    "scores": {
-    "authority": 4,
+    "authority": 5,
     "coverage": 100,
-    "connectivity": 67,
+    "connectivity": 70,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -25835,7 +25911,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-service-start",
    "scores": {
-    "authority": 45,
+    "authority": 46,
     "coverage": 100,
     "connectivity": 100,
     "citation": 80,
@@ -25900,7 +25976,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-service-vosstanovlenie",
    "scores": {
-    "authority": 52,
+    "authority": 53,
     "coverage": 100,
     "connectivity": 100,
     "citation": 80,
@@ -26050,7 +26126,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-law-bk-rf-st-2422224226",
    "scores": {
-    "authority": 84,
+    "authority": 89,
     "coverage": 0,
     "connectivity": 100,
     "citation": 100,
@@ -26110,7 +26186,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-law-prikaz-minfina-214n",
    "scores": {
-    "authority": 85,
+    "authority": 84,
     "coverage": 0,
     "connectivity": 100,
     "citation": 100,
@@ -26140,7 +26216,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-law-prikaz-fk-44n",
    "scores": {
-    "authority": 45,
+    "authority": 47,
     "coverage": 0,
     "connectivity": 100,
     "citation": 100,
@@ -41942,6 +42018,11 @@
   },
   {
    "from": "hub-ks",
+   "to": "tool-podbor-formata-soprovozhdeniya",
+   "rel": "DIAGNOSED_BY"
+  },
+  {
+   "from": "hub-ks",
    "to": "hub-scheta",
    "rel": "RELATED_HUB"
   },
@@ -44482,6 +44563,306 @@
   },
   {
    "from": "tool-generator-chek-lista",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "ks",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "ls-71",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "sanktsionirovanie",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "kontrakt-44",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-stoimost-soprovozhdeniya",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-sostav-uslugi-soprovozhdeniya",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-faktory-tseny-soprovozhdeniya",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "hub-ks",
+   "rel": "PART_OF_TOPIC"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "zayavlenie-ls",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "kartochka-podpisey",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "err-svodnyy-reestr",
+   "rel": "PREVENTS"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-kak-otkryt-schet",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-srok-otkrytiya-scheta",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "ls-71",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "svodnyy-reestr",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "service-reserve",
+   "rel": "RESOLVES_TO"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "law-prikaz-fk-44n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "zayavlenie-ls",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "kartochka-podpisey",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "chek-list-otkrytie",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "err-zatyanulos-otkrytie",
+   "rel": "PREVENTS"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "err-svodnyy-reestr",
+   "rel": "PREVENTS"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-dokumenty-dlya-otkrytiya",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-srok-otkrytiya-scheta",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "ls-71",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "svodnyy-reestr",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "service-open",
+   "rel": "RESOLVES_TO"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "law-prikaz-fk-44n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "svedeniya-ssu",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "err-svodnyy-reestr",
+   "rel": "PREVENTS"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-pochemu-vernuli-platezh",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-sostav-uslugi-soprovozhdeniya",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "sanktsionirovanie",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "ls-71",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "service-conduct",
+   "rel": "RESOLVES_TO"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "svedeniya-ssu",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "err-svodnyy-reestr",
+   "rel": "PREVENTS"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-deystviya-pri-vozvrate",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-stoimost-soprovozhdeniya",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "sanktsionirovanie",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "ls-71",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "service-postpayment",
+   "rel": "RESOLVES_TO"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "svedeniya-ssu",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "err-zatyanulos-otkrytie",
+   "rel": "PREVENTS"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-pochemu-vernuli-platezh",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-deystviya-pri-vozvrate",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "sanktsionirovanie",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "service-vosstanovlenie",
+   "rel": "RESOLVES_TO"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "chek-list-otkrytie",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "err-svodnyy-reestr",
+   "rel": "PREVENTS"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-stoimost-soprovozhdeniya",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-faktory-tseny-soprovozhdeniya",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "ks",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "kontrakt-44",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "service-start",
+   "rel": "RESOLVES_TO"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
    "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },

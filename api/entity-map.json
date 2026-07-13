@@ -3261,6 +3261,13 @@
    ],
    "url": "/instrumenty/generator-chek-lista/"
   },
+  "tool-podbor-formata-soprovozhdeniya": {
+   "name": "Подбор формата сопровождения",
+   "type": [
+    "tool"
+   ],
+   "url": "/instrumenty/podbor-formata-soprovozhdeniya/"
+  },
   "service-open": {
    "name": "Открытие казначейского счёта под ключ",
    "type": [

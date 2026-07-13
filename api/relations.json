@@ -15556,6 +15556,11 @@
   },
   {
    "from": "hub-ks",
+   "to": "tool-podbor-formata-soprovozhdeniya",
+   "rel": "DIAGNOSED_BY"
+  },
+  {
+   "from": "hub-ks",
    "to": "hub-scheta",
    "rel": "RELATED_HUB"
   },
@@ -18096,6 +18101,306 @@
   },
   {
    "from": "tool-generator-chek-lista",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "ks",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "ls-71",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "sanktsionirovanie",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "kontrakt-44",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-stoimost-soprovozhdeniya",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-sostav-uslugi-soprovozhdeniya",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-faktory-tseny-soprovozhdeniya",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "hub-ks",
+   "rel": "PART_OF_TOPIC"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "zayavlenie-ls",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "kartochka-podpisey",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "err-svodnyy-reestr",
+   "rel": "PREVENTS"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-kak-otkryt-schet",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-srok-otkrytiya-scheta",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "ls-71",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "svodnyy-reestr",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "service-reserve",
+   "rel": "RESOLVES_TO"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "law-prikaz-fk-44n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "zayavlenie-ls",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "kartochka-podpisey",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "chek-list-otkrytie",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "err-zatyanulos-otkrytie",
+   "rel": "PREVENTS"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "err-svodnyy-reestr",
+   "rel": "PREVENTS"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-dokumenty-dlya-otkrytiya",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-srok-otkrytiya-scheta",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "ls-71",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "svodnyy-reestr",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "service-open",
+   "rel": "RESOLVES_TO"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "law-prikaz-fk-44n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "svedeniya-ssu",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "err-svodnyy-reestr",
+   "rel": "PREVENTS"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-pochemu-vernuli-platezh",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-sostav-uslugi-soprovozhdeniya",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "sanktsionirovanie",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "ls-71",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "service-conduct",
+   "rel": "RESOLVES_TO"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "svedeniya-ssu",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "err-svodnyy-reestr",
+   "rel": "PREVENTS"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-deystviya-pri-vozvrate",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-stoimost-soprovozhdeniya",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "sanktsionirovanie",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "ls-71",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "service-postpayment",
+   "rel": "RESOLVES_TO"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "svedeniya-ssu",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "err-zatyanulos-otkrytie",
+   "rel": "PREVENTS"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-pochemu-vernuli-platezh",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-deystviya-pri-vozvrate",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "sanktsionirovanie",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "service-vosstanovlenie",
+   "rel": "RESOLVES_TO"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "chek-list-otkrytie",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "err-svodnyy-reestr",
+   "rel": "PREVENTS"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-stoimost-soprovozhdeniya",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "faq-faktory-tseny-soprovozhdeniya",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "ks",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "kontrakt-44",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
+   "to": "service-start",
+   "rel": "RESOLVES_TO"
+  },
+  {
+   "from": "tool-podbor-formata-soprovozhdeniya",
    "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },

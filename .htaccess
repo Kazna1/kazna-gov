@@ -31,6 +31,9 @@ RewriteEngine On
 # --- /policy — дубль политики ПДн → 301 на канонический URL (R1.05) ---
 RewriteRule ^policy/?$ /personal_data_policy [R=301,L]
 
+# --- /stuff — дубль trust-интента (команда) → 301 на автор-страницу эксперта (консолидация, Конституция гл.7) ---
+RewriteRule ^stuff/?$ /expert/stella [R=301,L]
+
 # --- Force HTTPS (кроме ACME-challenge LetsEncrypt) ---
 RewriteCond %{HTTPS} off
 RewriteCond %{REQUEST_URI} !^/\.well-known/

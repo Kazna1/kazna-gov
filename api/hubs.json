@@ -119,6 +119,64 @@
    }
   },
   {
+   "id": "hub-ks",
+   "type": [
+    "hub"
+   ],
+   "name": "Казначейское сопровождение",
+   "aliases": [],
+   "summary": "Казначейское сопровождение — режим контроля целевых средств госконтрактов и субсидий: деньги живут на лицевом счёте в УФК, каждый платёж проходит санкционирование. Этот центр собирает всю базу платформы по теме: с чего начать, как устроен процесс, роли участников, термины, вопросы-ответы, чек-листы и услуги сопровождения под ключ.",
+   "citation": "Корневой раздел платформы: базовые понятия и процессы КС, участники и их роли, пороги применения, типы контрактов, чек-листы старта и коммерческие вопросы о работе с нами. Отсюда — переходы во все тематические центры: счета, платежи, санкционирование, ГОЗ, субсидии, документы.",
+   "pages": [
+    {
+     "layer": "hub",
+     "url": "/kaznacheyskoe-soprovozhdenie/",
+     "title": "Казначейское сопровождение"
+    }
+   ],
+   "relations": {
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+     "law-44-fz"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "DIAGNOSED_BY": [
+     "tool-diagnostika-kontrakta",
+     "tool-generator-chek-lista",
+     "tool-podbor-formata-soprovozhdeniya"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/ks_2025/",
+     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
+     "/blog/kaznacheyskoe-soprovozhdenie-44-fz-2026-polnyy-gid",
+     "/blog/kakie-kontrakty-popadayut-pod-kaznachejskoe-soprovozhdenie/",
+     "/blog/kaznacheyskoe-vs-bankovskoe-soprovozhdenie-otlichiya",
+     "/blog/tsepochka-kaznacheyskogo-soprovozhdeniya",
+     "/blog/podvodnye-kamni-kaznacheyskogo-soprovozhdeniya",
+     "/blog/kaznacheyskoe-soprovozhdenie-dlya-ip"
+    ],
+    "RELATED_HUB": [
+     "hub-scheta",
+     "hub-platezhi",
+     "hub-sankts",
+     "hub-zakony"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-hub-ks",
+   "scores": {
+    "authority": 9,
+    "coverage": 83,
+    "connectivity": 63,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
    "id": "hub-sankts",
    "type": [
     "hub"
@@ -164,63 +222,6 @@
     "authority": 9,
     "coverage": 83,
     "connectivity": 50,
-    "citation": 80,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "hub-ks",
-   "type": [
-    "hub"
-   ],
-   "name": "Казначейское сопровождение",
-   "aliases": [],
-   "summary": "Казначейское сопровождение — режим контроля целевых средств госконтрактов и субсидий: деньги живут на лицевом счёте в УФК, каждый платёж проходит санкционирование. Этот центр собирает всю базу платформы по теме: с чего начать, как устроен процесс, роли участников, термины, вопросы-ответы, чек-листы и услуги сопровождения под ключ.",
-   "citation": "Корневой раздел платформы: базовые понятия и процессы КС, участники и их роли, пороги применения, типы контрактов, чек-листы старта и коммерческие вопросы о работе с нами. Отсюда — переходы во все тематические центры: счета, платежи, санкционирование, ГОЗ, субсидии, документы.",
-   "pages": [
-    {
-     "layer": "hub",
-     "url": "/kaznacheyskoe-soprovozhdenie/",
-     "title": "Казначейское сопровождение"
-    }
-   ],
-   "relations": {
-    "REGULATED_BY": [
-     "law-bk-rf-st-2422224226",
-     "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
-     "law-44-fz"
-    ],
-    "MONETIZED_BY": [
-     "service-conduct"
-    ],
-    "DIAGNOSED_BY": [
-     "tool-diagnostika-kontrakta",
-     "tool-generator-chek-lista"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/ks_2025/",
-     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
-     "/blog/kaznacheyskoe-soprovozhdenie-44-fz-2026-polnyy-gid",
-     "/blog/kakie-kontrakty-popadayut-pod-kaznachejskoe-soprovozhdenie/",
-     "/blog/kaznacheyskoe-vs-bankovskoe-soprovozhdenie-otlichiya",
-     "/blog/tsepochka-kaznacheyskogo-soprovozhdeniya",
-     "/blog/podvodnye-kamni-kaznacheyskogo-soprovozhdeniya",
-     "/blog/kaznacheyskoe-soprovozhdenie-dlya-ip"
-    ],
-    "RELATED_HUB": [
-     "hub-scheta",
-     "hub-platezhi",
-     "hub-sankts",
-     "hub-zakony"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-hub-ks",
-   "scores": {
-    "authority": 8,
-    "coverage": 83,
-    "connectivity": 57,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100

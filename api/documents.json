@@ -135,7 +135,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-doverennost-mchd",
    "scores": {
-    "authority": 95,
+    "authority": 94,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -202,7 +202,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-zayavlenie-ls",
    "scores": {
-    "authority": 75,
+    "authority": 77,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -263,7 +263,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-kartochka-podpisey",
    "scores": {
-    "authority": 69,
+    "authority": 71,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -484,7 +484,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-chek-list-otkrytie",
    "scores": {
-    "authority": 42,
+    "authority": 44,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,

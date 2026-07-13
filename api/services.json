@@ -198,7 +198,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-service-vosstanovlenie",
    "scores": {
-    "authority": 52,
+    "authority": 53,
     "coverage": 100,
     "connectivity": 100,
     "citation": 80,
@@ -263,7 +263,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-service-start",
    "scores": {
-    "authority": 45,
+    "authority": 46,
     "coverage": 100,
     "connectivity": 100,
     "citation": 80,
@@ -322,9 +322,9 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-service-reserve",
    "scores": {
-    "authority": 9,
+    "authority": 10,
     "coverage": 100,
-    "connectivity": 73,
+    "connectivity": 77,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -383,9 +383,9 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-service-postpayment",
    "scores": {
-    "authority": 4,
+    "authority": 5,
     "coverage": 100,
-    "connectivity": 67,
+    "connectivity": 70,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100

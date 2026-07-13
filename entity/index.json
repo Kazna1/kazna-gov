@@ -3,7 +3,7 @@
  "version": "2026-07-09",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
- "count": 486,
+ "count": 487,
  "entities": [
   {
    "id": "service-conduct",
@@ -15,16 +15,6 @@
    "url": "/services/conduct"
   },
   {
-   "id": "err-otkaz-sanktsionirovaniya",
-   "name": "Отказ в санкционировании",
-   "type": [
-    "error",
-    "term"
-   ],
-   "api": "/entity/err-otkaz-sanktsionirovaniya.json",
-   "url": "/oshibki/ufk-otkazalo-v-sanktsionirovanii/"
-  },
-  {
    "id": "svedeniya-ssu",
    "name": "Сведения 0501213",
    "type": [
@@ -33,6 +23,16 @@
    ],
    "api": "/entity/svedeniya-ssu.json",
    "url": "/obraztsy/svedeniya-ob-operatsiyah-0501213/"
+  },
+  {
+   "id": "err-otkaz-sanktsionirovaniya",
+   "name": "Отказ в санкционировании",
+   "type": [
+    "error",
+    "term"
+   ],
+   "api": "/entity/err-otkaz-sanktsionirovaniya.json",
+   "url": "/oshibki/ufk-otkazalo-v-sanktsionirovanii/"
   },
   {
    "id": "service-open",
@@ -63,15 +63,6 @@
    "url": "/glossary/sanktsionirovanie/"
   },
   {
-   "id": "law-prikaz-minfina-214n",
-   "name": "Приказ Минфина № 214н",
-   "type": [
-    "law"
-   ],
-   "api": "/entity/law-prikaz-minfina-214n.json",
-   "url": "/zakonodatelstvo/"
-  },
-  {
    "id": "law-bk-rf-st-2422224226",
    "name": "БК РФ, ст. 242.22–242.26",
    "type": [
@@ -88,6 +79,15 @@
    ],
    "api": "/entity/ls-71.json",
    "url": "/glossary/ks-schet/"
+  },
+  {
+   "id": "law-prikaz-minfina-214n",
+   "name": "Приказ Минфина № 214н",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-prikaz-minfina-214n.json",
+   "url": "/zakonodatelstvo/"
   },
   {
    "id": "zayavlenie-ls",
@@ -120,6 +120,15 @@
    "url": "/obraztsy/platezhnoe-poruchenie-obrazec/"
   },
   {
+   "id": "err-zatyanulos-otkrytie",
+   "name": "Затянулось открытие счёта",
+   "type": [
+    "error"
+   ],
+   "api": "/entity/err-zatyanulos-otkrytie.json",
+   "url": "/oshibki/zatyanulos-otkrytie-scheta/"
+  },
+  {
    "id": "err-necelevoe",
    "name": "Нецелевое расходование",
    "type": [
@@ -128,15 +137,6 @@
    ],
    "api": "/entity/err-necelevoe.json",
    "url": "/oshibki/necelevoe-rashodovanie-sredstv/"
-  },
-  {
-   "id": "err-zatyanulos-otkrytie",
-   "name": "Затянулось открытие счёта",
-   "type": [
-    "error"
-   ],
-   "api": "/entity/err-zatyanulos-otkrytie.json",
-   "url": "/oshibki/zatyanulos-otkrytie-scheta/"
   },
   {
    "id": "giis-eb",
@@ -202,6 +202,15 @@
    "url": "/glossary/razdelnyy-uchet/"
   },
   {
+   "id": "law-prikaz-fk-44n",
+   "name": "Приказ ФК № 44н",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-prikaz-fk-44n.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
    "id": "reestr-dokumentov",
    "name": "Реестр документов",
    "type": [
@@ -210,15 +219,6 @@
    ],
    "api": "/entity/reestr-dokumentov.json",
    "url": "/obraztsy/reestr-dokumentov-po-kontraktu/"
-  },
-  {
-   "id": "tselevye-sredstva",
-   "name": "Целевые средства",
-   "type": [
-    "term"
-   ],
-   "api": "/entity/tselevye-sredstva.json",
-   "url": "/glossary/tselevye-sredstva/"
   },
   {
    "id": "service-start",
@@ -230,13 +230,13 @@
    "url": "/services/start"
   },
   {
-   "id": "law-prikaz-fk-44n",
-   "name": "Приказ ФК № 44н",
+   "id": "tselevye-sredstva",
+   "name": "Целевые средства",
    "type": [
-    "law"
+    "term"
    ],
-   "api": "/entity/law-prikaz-fk-44n.json",
-   "url": "/zakonodatelstvo/"
+   "api": "/entity/tselevye-sredstva.json",
+   "url": "/glossary/tselevye-sredstva/"
   },
   {
    "id": "err-kod-napravleniya",
@@ -257,6 +257,15 @@
    "url": "/obraztsy/poyasnenie-v-ufk/"
   },
   {
+   "id": "chek-list-otkrytie",
+   "name": "Чек-лист открытия счёта",
+   "type": [
+    "document"
+   ],
+   "api": "/entity/chek-list-otkrytie.json",
+   "url": "/obraztsy/chek-list-otkrytiya-scheta/"
+  },
+  {
    "id": "ecp",
    "name": "ЭЦП (УКЭП)",
    "type": [
@@ -275,15 +284,6 @@
    "url": "/oshibki/nevernoe-naznachenie-platezha/"
   },
   {
-   "id": "chek-list-otkrytie",
-   "name": "Чек-лист открытия счёта",
-   "type": [
-    "document"
-   ],
-   "api": "/entity/chek-list-otkrytie.json",
-   "url": "/obraztsy/chek-list-otkrytiya-scheta/"
-  },
-  {
    "id": "chek-list-dokumenty",
    "name": "Чек-лист проверки документов",
    "type": [
@@ -291,6 +291,15 @@
    ],
    "api": "/entity/chek-list-dokumenty.json",
    "url": "/obraztsy/chek-list-proverki-dokumentov/"
+  },
+  {
+   "id": "kontrakt-44",
+   "name": "Госконтракт",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/kontrakt-44.json",
+   "url": "/glossary/goskontrakt/"
   },
   {
    "id": "pismo-zapros",
@@ -309,15 +318,6 @@
    ],
    "api": "/entity/ufk.json",
    "url": "/glossary/ufk/"
-  },
-  {
-   "id": "kontrakt-44",
-   "name": "Госконтракт",
-   "type": [
-    "term"
-   ],
-   "api": "/entity/kontrakt-44.json",
-   "url": "/glossary/goskontrakt/"
   },
   {
    "id": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
@@ -446,6 +446,15 @@
    "url": "/oshibki/ecp-ne-podhodit-dlya-kaznacheystva/"
   },
   {
+   "id": "svodnyy-reestr",
+   "name": "Сводный реестр",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/svodnyy-reestr.json",
+   "url": "/glossary/svodnyy-reestr/"
+  },
+  {
    "id": "avans",
    "name": "Аванс по госконтракту",
    "type": [
@@ -462,15 +471,6 @@
    ],
    "api": "/entity/law-44-fz.json",
    "url": "/zakonodatelstvo/"
-  },
-  {
-   "id": "svodnyy-reestr",
-   "name": "Сводный реестр",
-   "type": [
-    "term"
-   ],
-   "api": "/entity/svodnyy-reestr.json",
-   "url": "/glossary/svodnyy-reestr/"
   },
   {
    "id": "pribyl-ks",
@@ -498,6 +498,15 @@
    ],
    "api": "/entity/law-63-fz.json",
    "url": "/zakonodatelstvo/"
+  },
+  {
+   "id": "err-svodnyy-reestr",
+   "name": "Нет в Сводном реестре",
+   "type": [
+    "error"
+   ],
+   "api": "/entity/err-svodnyy-reestr.json",
+   "url": "/oshibki/net-v-svodnom-reestre/"
   },
   {
    "id": "subsidiya",
@@ -642,15 +651,6 @@
    ],
    "api": "/entity/zakon-budget.json",
    "url": "/glossary/zakon-o-federalnom-byudzhete/"
-  },
-  {
-   "id": "err-svodnyy-reestr",
-   "name": "Нет в Сводном реестре",
-   "type": [
-    "error"
-   ],
-   "api": "/entity/err-svodnyy-reestr.json",
-   "url": "/oshibki/net-v-svodnom-reestre/"
   },
   {
    "id": "raschetnyy-schet",
@@ -951,6 +951,15 @@
    "url": "/glossary/shtrafy-koap/"
   },
   {
+   "id": "service-reserve",
+   "name": "Резервирование счёта для тендера",
+   "type": [
+    "service"
+   ],
+   "api": "/entity/service-reserve.json",
+   "url": "/services/reserve"
+  },
+  {
    "id": "fns",
    "name": "УЦ ФНС",
    "type": [
@@ -996,6 +1005,15 @@
    "url": "/glossary/priostanovlenie-operatsiy/"
   },
   {
+   "id": "hub-ks",
+   "name": "Казначейское сопровождение",
+   "type": [
+    "hub"
+   ],
+   "api": "/entity/hub-ks.json",
+   "url": "/kaznacheyskoe-soprovozhdenie/"
+  },
+  {
    "id": "hub-sankts",
    "name": "Санкционирование и контроль",
    "type": [
@@ -1003,15 +1021,6 @@
    ],
    "api": "/entity/hub-sankts.json",
    "url": "/sanktsionirovanie/"
-  },
-  {
-   "id": "service-reserve",
-   "name": "Резервирование счёта для тендера",
-   "type": [
-    "service"
-   ],
-   "api": "/entity/service-reserve.json",
-   "url": "/services/reserve"
   },
   {
    "id": "vp-mo",
@@ -1041,13 +1050,13 @@
    "url": "/glossary/kofk/"
   },
   {
-   "id": "hub-ks",
-   "name": "Казначейское сопровождение",
+   "id": "faq-kak-otkryt-schet",
+   "name": "Как открыть казначейский счёт?",
    "type": [
-    "hub"
+    "faq"
    ],
-   "api": "/entity/hub-ks.json",
-   "url": "/kaznacheyskoe-soprovozhdenie/"
+   "api": "/entity/faq-kak-otkryt-schet.json",
+   "url": "/voprosy/kak-otkryt-kaznacheyskiy-schet/"
   },
   {
    "id": "zayavlenie-zakrytie",
@@ -1131,13 +1140,13 @@
    "url": "/glossary/kod-tselevykh-sredstv/"
   },
   {
-   "id": "faq-kak-otkryt-schet",
-   "name": "Как открыть казначейский счёт?",
+   "id": "faq-srok-otkrytiya-scheta",
+   "name": "Сколько времени открывается казначейский счёт?",
    "type": [
     "faq"
    ],
-   "api": "/entity/faq-kak-otkryt-schet.json",
-   "url": "/voprosy/kak-otkryt-kaznacheyskiy-schet/"
+   "api": "/entity/faq-srok-otkrytiya-scheta.json",
+   "url": "/voprosy/skolko-otkryvaetsya-schet/"
   },
   {
    "id": "prikaz-214n",
@@ -1165,6 +1174,42 @@
    ],
    "api": "/entity/otchet-subsidii.json",
    "url": "/glossary/otchet-ob-ispolzovanii-subsidii/"
+  },
+  {
+   "id": "faq-dokumenty-dlya-otkrytiya",
+   "name": "Какие документы нужны для открытия лицевого счёта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-dokumenty-dlya-otkrytiya.json",
+   "url": "/voprosy/kakie-dokumenty-dlya-otkrytiya/"
+  },
+  {
+   "id": "faq-stoimost-soprovozhdeniya",
+   "name": "Сколько стоит казначейское сопровождение под ключ?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-stoimost-soprovozhdeniya.json",
+   "url": "/voprosy/skolko-stoit-soprovozhdenie/"
+  },
+  {
+   "id": "faq-sostav-uslugi-soprovozhdeniya",
+   "name": "Что входит в услугу сопровождения КС?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-sostav-uslugi-soprovozhdeniya.json",
+   "url": "/voprosy/chto-vhodit-v-soprovozhdenie/"
+  },
+  {
+   "id": "service-postpayment",
+   "name": "КС при постоплате",
+   "type": [
+    "service"
+   ],
+   "api": "/entity/service-postpayment.json",
+   "url": "/services/postpayment"
   },
   {
    "id": "minfin",
@@ -1239,24 +1284,6 @@
    "url": "/glossary/promezhutochnaya-otchetnost-goz/"
   },
   {
-   "id": "faq-srok-otkrytiya-scheta",
-   "name": "Сколько времени открывается казначейский счёт?",
-   "type": [
-    "faq"
-   ],
-   "api": "/entity/faq-srok-otkrytiya-scheta.json",
-   "url": "/voprosy/skolko-otkryvaetsya-schet/"
-  },
-  {
-   "id": "faq-dokumenty-dlya-otkrytiya",
-   "name": "Какие документы нужны для открытия лицевого счёта?",
-   "type": [
-    "faq"
-   ],
-   "api": "/entity/faq-dokumenty-dlya-otkrytiya.json",
-   "url": "/voprosy/kakie-dokumenty-dlya-otkrytiya/"
-  },
-  {
    "id": "faq-dokumenty-k-platezhu",
    "name": "Какие документы прикладывать к платежу?",
    "type": [
@@ -1264,6 +1291,24 @@
    ],
    "api": "/entity/faq-dokumenty-k-platezhu.json",
    "url": "/voprosy/kakie-dokumenty-prikladat-k-platezhu/"
+  },
+  {
+   "id": "faq-pochemu-vernuli-platezh",
+   "name": "Почему УФК вернуло платёж?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-pochemu-vernuli-platezh.json",
+   "url": "/voprosy/pochemu-ufk-vernulo-platezh/"
+  },
+  {
+   "id": "faq-deystviya-pri-vozvrate",
+   "name": "Казначейство вернуло платёж — что делать?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-deystviya-pri-vozvrate.json",
+   "url": "/voprosy/chto-delat-pri-vozvrate-platezha/"
   },
   {
    "id": "faq-start-novichka",
@@ -1291,15 +1336,6 @@
    ],
    "api": "/entity/hub-otchetnost.json",
    "url": "/otchetnost/"
-  },
-  {
-   "id": "service-postpayment",
-   "name": "КС при постоплате",
-   "type": [
-    "service"
-   ],
-   "api": "/entity/service-postpayment.json",
-   "url": "/services/postpayment"
   },
   {
    "id": "law-nk-rf-gl-21",
@@ -1572,13 +1608,13 @@
    "url": "/voprosy/ks-bez-avansa/"
   },
   {
-   "id": "faq-sostav-uslugi-soprovozhdeniya",
-   "name": "Что входит в услугу сопровождения КС?",
+   "id": "faq-faktory-tseny-soprovozhdeniya",
+   "name": "От чего зависит цена сопровождения?",
    "type": [
     "faq"
    ],
-   "api": "/entity/faq-sostav-uslugi-soprovozhdeniya.json",
-   "url": "/voprosy/chto-vhodit-v-soprovozhdenie/"
+   "api": "/entity/faq-faktory-tseny-soprovozhdeniya.json",
+   "url": "/voprosy/ot-chego-zavisit-tsena-uslug/"
   },
   {
    "id": "hub-subsidii",
@@ -2049,24 +2085,6 @@
    "url": "/voprosy/kak-izmenit-svedeniya/"
   },
   {
-   "id": "faq-pochemu-vernuli-platezh",
-   "name": "Почему УФК вернуло платёж?",
-   "type": [
-    "faq"
-   ],
-   "api": "/entity/faq-pochemu-vernuli-platezh.json",
-   "url": "/voprosy/pochemu-ufk-vernulo-platezh/"
-  },
-  {
-   "id": "faq-deystviya-pri-vozvrate",
-   "name": "Казначейство вернуло платёж — что делать?",
-   "type": [
-    "faq"
-   ],
-   "api": "/entity/faq-deystviya-pri-vozvrate.json",
-   "url": "/voprosy/chto-delat-pri-vozvrate-platezha/"
-  },
-  {
    "id": "faq-ispravit-igk",
    "name": "Ошибка в ИГК — как исправить платёж?",
    "type": [
@@ -2326,15 +2344,6 @@
    ],
    "api": "/entity/faq-ks-po-223-fz.json",
    "url": "/voprosy/ks-po-223-fz-kogda/"
-  },
-  {
-   "id": "faq-stoimost-soprovozhdeniya",
-   "name": "Сколько стоит казначейское сопровождение под ключ?",
-   "type": [
-    "faq"
-   ],
-   "api": "/entity/faq-stoimost-soprovozhdeniya.json",
-   "url": "/voprosy/skolko-stoit-soprovozhdenie/"
   },
   {
    "id": "faq-stoimost-otkrytiya-scheta",
@@ -4218,15 +4227,6 @@
    "url": "/voprosy/plyusy-ks-dlya-podryadchika/"
   },
   {
-   "id": "faq-faktory-tseny-soprovozhdeniya",
-   "name": "От чего зависит цена сопровождения?",
-   "type": [
-    "faq"
-   ],
-   "api": "/entity/faq-faktory-tseny-soprovozhdeniya.json",
-   "url": "/voprosy/ot-chego-zavisit-tsena-uslug/"
-  },
-  {
    "id": "faq-kak-zakazat-uslugu",
    "name": "Как заказать сопровождение контракта?",
    "type": [
@@ -4387,6 +4387,15 @@
    ],
    "api": "/entity/tool-proverka-subsidii.json",
    "url": "/instrumenty/proverka-subsidii/"
+  },
+  {
+   "id": "tool-podbor-formata-soprovozhdeniya",
+   "name": "Подбор формата сопровождения",
+   "type": [
+    "tool"
+   ],
+   "api": "/entity/tool-podbor-formata-soprovozhdeniya.json",
+   "url": "/instrumenty/podbor-formata-soprovozhdeniya/"
   }
  ]
 }

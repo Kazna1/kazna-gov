@@ -68,6 +68,48 @@
    }
   },
   {
+   "id": "err-zatyanulos-otkrytie",
+   "type": [
+    "error"
+   ],
+   "name": "Затянулось открытие счёта",
+   "aliases": [],
+   "summary": "",
+   "citation": "Штатно лицевой счёт участника казначейского сопровождения открывается за несколько рабочих дней после подачи корректного комплекта. Если срок вышел, процесс застрял на одном из этапов: включение в Сводный реестр, замечания к документам, доступ в ГИИС «Электронный бюджет» или очередь ТОФК. Найдите этап по статусам в ГИИС и запросам в УФК — и устраняйте точечно; общий «поторопите нас» не работает.",
+   "pages": [
+    {
+     "layer": "error",
+     "url": "/oshibki/zatyanulos-otkrytie-scheta/",
+     "title": "Затянулось открытие счёта"
+    }
+   ],
+   "relations": {
+    "SEE_ERROR": [
+     "err-kartochka",
+     "err-mchd",
+     "err-ecp"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/ne-otkryvaetsya-kaznacheyskiy-schet-prichiny-otkaza-2026",
+     "/blog/how_to_open/",
+     "/blog/sroki-rassmotreniya-dokumentov-v-ufk-tablitsa"
+    ]
+   },
+   "updated": "2026-07-08",
+   "schema_id": "https://kazna-gov.ru/#e-err-zatyanulos-otkrytie",
+   "scores": {
+    "authority": 64,
+    "coverage": 50,
+    "connectivity": 100,
+    "citation": 50,
+    "aiReadiness": 60,
+    "density": 100
+   }
+  },
+  {
    "id": "err-necelevoe",
    "type": [
     "error",
@@ -116,53 +158,11 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-err-necelevoe",
    "scores": {
-    "authority": 62,
+    "authority": 61,
     "coverage": 67,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "err-zatyanulos-otkrytie",
-   "type": [
-    "error"
-   ],
-   "name": "Затянулось открытие счёта",
-   "aliases": [],
-   "summary": "",
-   "citation": "Штатно лицевой счёт участника казначейского сопровождения открывается за несколько рабочих дней после подачи корректного комплекта. Если срок вышел, процесс застрял на одном из этапов: включение в Сводный реестр, замечания к документам, доступ в ГИИС «Электронный бюджет» или очередь ТОФК. Найдите этап по статусам в ГИИС и запросам в УФК — и устраняйте точечно; общий «поторопите нас» не работает.",
-   "pages": [
-    {
-     "layer": "error",
-     "url": "/oshibki/zatyanulos-otkrytie-scheta/",
-     "title": "Затянулось открытие счёта"
-    }
-   ],
-   "relations": {
-    "SEE_ERROR": [
-     "err-kartochka",
-     "err-mchd",
-     "err-ecp"
-    ],
-    "MONETIZED_BY": [
-     "service-open"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/ne-otkryvaetsya-kaznacheyskiy-schet-prichiny-otkaza-2026",
-     "/blog/how_to_open/",
-     "/blog/sroki-rassmotreniya-dokumentov-v-ufk-tablitsa"
-    ]
-   },
-   "updated": "2026-07-08",
-   "schema_id": "https://kazna-gov.ru/#e-err-zatyanulos-otkrytie",
-   "scores": {
-    "authority": 62,
-    "coverage": 50,
-    "connectivity": 100,
-    "citation": 50,
-    "aiReadiness": 60,
     "density": 100
    }
   },
@@ -500,6 +500,47 @@
    }
   },
   {
+   "id": "err-svodnyy-reestr",
+   "type": [
+    "error"
+   ],
+   "name": "Нет в Сводном реестре",
+   "aliases": [],
+   "summary": "",
+   "citation": "Лицевой счёт участника казначейского сопровождения открывается только организации, включённой в Сводный реестр (реестр участников и неучастников бюджетного процесса). Включение инициирует не сам исполнитель: сведения направляет заказчик (или распорядитель субсидии). Если записи нет — запросите включение у заказчика письменно и отслеживайте появление записи, затем подавайте заявление на счёт.",
+   "pages": [
+    {
+     "layer": "error",
+     "url": "/oshibki/net-v-svodnom-reestre/",
+     "title": "Нет в Сводном реестре"
+    }
+   ],
+   "relations": {
+    "SEE_ERROR": [
+     "err-zatyanulos-otkrytie",
+     "err-kartochka"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kak-otkryt-licevoy-schet-71",
+     "/blog/ne-otkryvaetsya-kaznacheyskiy-schet-prichiny-otkaza-2026",
+     "/blog/tsepochka-kaznacheyskogo-soprovozhdeniya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-err-svodnyy-reestr",
+   "scores": {
+    "authority": 23,
+    "coverage": 50,
+    "connectivity": 80,
+    "citation": 50,
+    "aiReadiness": 60,
+    "density": 100
+   }
+  },
+  {
    "id": "err-subsidiya-rashody",
    "type": [
     "error"
@@ -536,47 +577,6 @@
     "authority": 20,
     "coverage": 50,
     "connectivity": 73,
-    "citation": 50,
-    "aiReadiness": 60,
-    "density": 100
-   }
-  },
-  {
-   "id": "err-svodnyy-reestr",
-   "type": [
-    "error"
-   ],
-   "name": "Нет в Сводном реестре",
-   "aliases": [],
-   "summary": "",
-   "citation": "Лицевой счёт участника казначейского сопровождения открывается только организации, включённой в Сводный реестр (реестр участников и неучастников бюджетного процесса). Включение инициирует не сам исполнитель: сведения направляет заказчик (или распорядитель субсидии). Если записи нет — запросите включение у заказчика письменно и отслеживайте появление записи, затем подавайте заявление на счёт.",
-   "pages": [
-    {
-     "layer": "error",
-     "url": "/oshibki/net-v-svodnom-reestre/",
-     "title": "Нет в Сводном реестре"
-    }
-   ],
-   "relations": {
-    "SEE_ERROR": [
-     "err-zatyanulos-otkrytie",
-     "err-kartochka"
-    ],
-    "MONETIZED_BY": [
-     "service-open"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/kak-otkryt-licevoy-schet-71",
-     "/blog/ne-otkryvaetsya-kaznacheyskiy-schet-prichiny-otkaza-2026",
-     "/blog/tsepochka-kaznacheyskogo-soprovozhdeniya"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-err-svodnyy-reestr",
-   "scores": {
-    "authority": 18,
-    "coverage": 50,
-    "connectivity": 63,
     "citation": 50,
     "aiReadiness": 60,
     "density": 100

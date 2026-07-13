@@ -60,9 +60,9 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-faq-kak-otkryt-schet",
    "scores": {
-    "authority": 7,
+    "authority": 8,
     "coverage": 100,
-    "connectivity": 60,
+    "connectivity": 63,
     "citation": 50,
     "aiReadiness": 60,
     "density": 100
@@ -121,12 +121,12 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-faq-srok-otkrytiya-scheta",
    "scores": {
-    "authority": 4,
+    "authority": 7,
     "coverage": 100,
-    "connectivity": 47,
+    "connectivity": 53,
     "citation": 50,
     "aiReadiness": 60,
-    "density": 93
+    "density": 100
    }
   },
   {
@@ -185,12 +185,117 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-faq-dokumenty-dlya-otkrytiya",
    "scores": {
-    "authority": 4,
+    "authority": 5,
     "coverage": 100,
-    "connectivity": 53,
+    "connectivity": 57,
     "citation": 50,
     "aiReadiness": 60,
     "density": 100
+   }
+  },
+  {
+   "id": "faq-stoimost-soprovozhdeniya",
+   "type": [
+    "faq"
+   ],
+   "name": "Сколько стоит казначейское сопровождение под ключ?",
+   "aliases": [
+    "цена казначейского сопровождения под ключ",
+    "стоимость ведения кс счета",
+    "сколько берете за сопровождение госконтракта",
+    "тарифы на казначейское сопровождение",
+    "во сколько обойдется сопровождение контракта в казначействе"
+   ],
+   "summary": "",
+   "citation": "Фиксированной цены «для всех» нет: стоимость зависит от объёма операций по контракту. Мы считаем её на бесплатной диагностике, ориентиры — на /stoimost.",
+   "pages": [
+    {
+     "layer": "faq",
+     "url": "/voprosy/skolko-stoit-soprovozhdenie/",
+     "title": "Сколько стоит казначейское сопровождение под ключ?"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "ks",
+     "kontrakt-44",
+     "sanktsionirovanie"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/tseny-na-kaznacheyskoe-soprovozhdenie-2026",
+     "/blog/soprovozhdenie-goskontraktov-pod-kluch"
+    ],
+    "SAME_CLUSTER": [
+     "faq-sostav-uslugi-soprovozhdeniya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-faq-stoimost-soprovozhdeniya",
+   "scores": {
+    "authority": 5,
+    "coverage": 50,
+    "connectivity": 30,
+    "citation": 50,
+    "aiReadiness": 60,
+    "density": 60
+   }
+  },
+  {
+   "id": "faq-sostav-uslugi-soprovozhdeniya",
+   "type": [
+    "faq"
+   ],
+   "name": "Что входит в услугу сопровождения КС?",
+   "aliases": [
+    "что включает казначейское сопровождение под ключ",
+    "состав услуги ведения казначейского счета",
+    "какие работы входят в сопровождение кс",
+    "что делает подрядчик по сопровождению казначейства",
+    "перечень работ при сопровождении госконтракта в уфк"
+   ],
+   "summary": "",
+   "citation": "Полный цикл: открытие счёта, Сведения, платежи и санкционирование, переписка с УФК, отчётность. Вы подписываете документы — остальное делаем мы.",
+   "pages": [
+    {
+     "layer": "faq",
+     "url": "/voprosy/chto-vhodit-v-soprovozhdenie/",
+     "title": "Что входит в услугу сопровождения КС?"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "ks",
+     "svedeniya-ssu",
+     "rkp",
+     "sanktsionirovanie"
+    ],
+    "REQUIRES_DOC": [
+     "svedeniya-ssu",
+     "poyasnenie-ufk"
+    ],
+    "REGULATED_BY": [
+     "law-prikaz-minfina-214n"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/soprovozhdenie-goskontraktov-pod-kluch",
+     "/blog/kaznacheyskoe-soprovozhdenie-platezhey"
+    ],
+    "SAME_CLUSTER": [
+     "faq-stoimost-otkrytiya-scheta"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-faq-sostav-uslugi-soprovozhdeniya",
+   "scores": {
+    "authority": 5,
+    "coverage": 100,
+    "connectivity": 47,
+    "citation": 50,
+    "aiReadiness": 60,
+    "density": 93
    }
   },
   {
@@ -245,6 +350,129 @@
    },
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-faq-dokumenty-k-platezhu",
+   "scores": {
+    "authority": 4,
+    "coverage": 100,
+    "connectivity": 47,
+    "citation": 50,
+    "aiReadiness": 60,
+    "density": 93
+   }
+  },
+  {
+   "id": "faq-pochemu-vernuli-platezh",
+   "type": [
+    "faq"
+   ],
+   "name": "Почему УФК вернуло платёж?",
+   "aliases": [
+    "уфк вернуло платеж причины",
+    "почему казначейство возвращает платежи",
+    "причины возврата платежа в казначействе",
+    "за что уфк возвращает распоряжение",
+    "отклонили платеж в казначействе почему"
+   ],
+   "summary": "",
+   "citation": "Возврат — это отказ в санкционировании: УФК нашло несоответствие в ИГК, назначении платежа, коде расходования или документах-основаниях. Точная причина всегда указана в уведомлении о возврате.",
+   "pages": [
+    {
+     "layer": "faq",
+     "url": "/voprosy/pochemu-ufk-vernulo-platezh/",
+     "title": "Почему УФК вернуло платёж?"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "err-vozvrat-platezha",
+     "sanktsionirovanie",
+     "naznachenie",
+     "igk"
+    ],
+    "REQUIRES_DOC": [
+     "poyasnenie-vozvrat"
+    ],
+    "SEE_ERROR": [
+     "err-igk",
+     "err-naznachenie"
+    ],
+    "REGULATED_BY": [
+     "law-prikaz-minfina-214n",
+     "law-bk-rf-st-2422224226"
+    ],
+    "MONETIZED_BY": [
+     "service-vosstanovlenie"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/vozvrat-platezha-kaznachejstvo-chto-delat/",
+     "/blog/kaznacheyskoe-soprovozhdenie-platezhey"
+    ],
+    "SAME_CLUSTER": [
+     "faq-deystviya-pri-vozvrate"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-faq-pochemu-vernuli-platezh",
+   "scores": {
+    "authority": 4,
+    "coverage": 100,
+    "connectivity": 50,
+    "citation": 50,
+    "aiReadiness": 60,
+    "density": 100
+   }
+  },
+  {
+   "id": "faq-deystviya-pri-vozvrate",
+   "type": [
+    "faq"
+   ],
+   "name": "Казначейство вернуло платёж — что делать?",
+   "aliases": [
+    "казначейство вернуло деньги на счет что делать",
+    "вернули платеж с кс счета как действовать",
+    "алгоритм действий при возврате платежа уфк",
+    "платеж вернулся из казначейства порядок действий",
+    "что делать если уфк отклонило распоряжение"
+   ],
+   "summary": "",
+   "citation": "Прочитать основание возврата, исправить конкретную ошибку и переподать распоряжение. Средства никуда не ушли — они на лицевом счёте, теряется только время.",
+   "pages": [
+    {
+     "layer": "faq",
+     "url": "/voprosy/chto-delat-pri-vozvrate-platezha/",
+     "title": "Казначейство вернуло платёж — что делать?"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "err-vozvrat-platezha",
+     "rkp",
+     "sanktsionirovanie"
+    ],
+    "REQUIRES_DOC": [
+     "poyasnenie-vozvrat",
+     "otzyv-rasporyazheniya"
+    ],
+    "SEE_ERROR": [
+     "err-igk",
+     "err-kod-napravleniya"
+    ],
+    "REGULATED_BY": [
+     "law-prikaz-minfina-214n"
+    ],
+    "MONETIZED_BY": [
+     "service-vosstanovlenie"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/vozvrat-platezha-kaznachejstvo-chto-delat/",
+     "/blog/sanktsionirovanie-operatsiy-kaznacheystvom"
+    ],
+    "SAME_CLUSTER": [
+     "faq-prichina-vozvrata-gde"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-faq-deystviya-pri-vozvrate",
    "scores": {
     "authority": 4,
     "coverage": 100,
@@ -1420,61 +1648,54 @@
    }
   },
   {
-   "id": "faq-sostav-uslugi-soprovozhdeniya",
+   "id": "faq-faktory-tseny-soprovozhdeniya",
    "type": [
     "faq"
    ],
-   "name": "Что входит в услугу сопровождения КС?",
+   "name": "От чего зависит цена сопровождения?",
    "aliases": [
-    "что включает казначейское сопровождение под ключ",
-    "состав услуги ведения казначейского счета",
-    "какие работы входят в сопровождение кс",
-    "что делает подрядчик по сопровождению казначейства",
-    "перечень работ при сопровождении госконтракта в уфк"
+    "из чего складывается стоимость казначейского сопровождения",
+    "почему разная цена на сопровождение кс",
+    "факторы стоимости ведения лицевого счета",
+    "что влияет на тариф казначейского сопровождения",
+    "почему сопровождение гоз дороже обычного контракта"
    ],
    "summary": "",
-   "citation": "Полный цикл: открытие счёта, Сведения, платежи и санкционирование, переписка с УФК, отчётность. Вы подписываете документы — остальное делаем мы.",
+   "citation": "Основные факторы: число платежей и этапов, режим контракта (44-ФЗ/субсидия/ГОЗ), кооперация и объём отчётности. Точная цена — после бесплатной диагностики контракта.",
    "pages": [
     {
      "layer": "faq",
-     "url": "/voprosy/chto-vhodit-v-soprovozhdenie/",
-     "title": "Что входит в услугу сопровождения КС?"
+     "url": "/voprosy/ot-chego-zavisit-tsena-uslug/",
+     "title": "От чего зависит цена сопровождения?"
     }
    ],
    "relations": {
     "USES_TERM": [
      "ks",
-     "svedeniya-ssu",
-     "rkp",
-     "sanktsionirovanie"
-    ],
-    "REQUIRES_DOC": [
-     "svedeniya-ssu",
-     "poyasnenie-ufk"
+     "goz",
+     "tsepochka-ks",
+     "razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-prikaz-minfina-214n"
-    ],
-    "MONETIZED_BY": [
-     "service-conduct"
+     "law-275-fz"
     ],
     "EXPLAINED_BY_ARTICLE": [
-     "/blog/soprovozhdenie-goskontraktov-pod-kluch",
-     "/blog/kaznacheyskoe-soprovozhdenie-platezhey"
+     "/blog/tseny-na-kaznacheyskoe-soprovozhdenie-2026",
+     "/blog/autsorsing-kaznacheyskogo-soprovozhdeniya"
     ],
     "SAME_CLUSTER": [
-     "faq-stoimost-otkrytiya-scheta"
+     "faq-kalkulyator-stoimosti"
     ]
    },
    "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-faq-sostav-uslugi-soprovozhdeniya",
+   "schema_id": "https://kazna-gov.ru/#e-faq-faktory-tseny-soprovozhdeniya",
    "scores": {
     "authority": 3,
-    "coverage": 100,
-    "connectivity": 40,
+    "coverage": 67,
+    "connectivity": 30,
     "citation": 50,
     "aiReadiness": 60,
-    "density": 80
+    "density": 60
    }
   },
   {
@@ -2946,129 +3167,6 @@
     "citation": 50,
     "aiReadiness": 60,
     "density": 60
-   }
-  },
-  {
-   "id": "faq-pochemu-vernuli-platezh",
-   "type": [
-    "faq"
-   ],
-   "name": "Почему УФК вернуло платёж?",
-   "aliases": [
-    "уфк вернуло платеж причины",
-    "почему казначейство возвращает платежи",
-    "причины возврата платежа в казначействе",
-    "за что уфк возвращает распоряжение",
-    "отклонили платеж в казначействе почему"
-   ],
-   "summary": "",
-   "citation": "Возврат — это отказ в санкционировании: УФК нашло несоответствие в ИГК, назначении платежа, коде расходования или документах-основаниях. Точная причина всегда указана в уведомлении о возврате.",
-   "pages": [
-    {
-     "layer": "faq",
-     "url": "/voprosy/pochemu-ufk-vernulo-platezh/",
-     "title": "Почему УФК вернуло платёж?"
-    }
-   ],
-   "relations": {
-    "USES_TERM": [
-     "err-vozvrat-platezha",
-     "sanktsionirovanie",
-     "naznachenie",
-     "igk"
-    ],
-    "REQUIRES_DOC": [
-     "poyasnenie-vozvrat"
-    ],
-    "SEE_ERROR": [
-     "err-igk",
-     "err-naznachenie"
-    ],
-    "REGULATED_BY": [
-     "law-prikaz-minfina-214n",
-     "law-bk-rf-st-2422224226"
-    ],
-    "MONETIZED_BY": [
-     "service-vosstanovlenie"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/vozvrat-platezha-kaznachejstvo-chto-delat/",
-     "/blog/kaznacheyskoe-soprovozhdenie-platezhey"
-    ],
-    "SAME_CLUSTER": [
-     "faq-deystviya-pri-vozvrate"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-faq-pochemu-vernuli-platezh",
-   "scores": {
-    "authority": 2,
-    "coverage": 100,
-    "connectivity": 43,
-    "citation": 50,
-    "aiReadiness": 60,
-    "density": 87
-   }
-  },
-  {
-   "id": "faq-deystviya-pri-vozvrate",
-   "type": [
-    "faq"
-   ],
-   "name": "Казначейство вернуло платёж — что делать?",
-   "aliases": [
-    "казначейство вернуло деньги на счет что делать",
-    "вернули платеж с кс счета как действовать",
-    "алгоритм действий при возврате платежа уфк",
-    "платеж вернулся из казначейства порядок действий",
-    "что делать если уфк отклонило распоряжение"
-   ],
-   "summary": "",
-   "citation": "Прочитать основание возврата, исправить конкретную ошибку и переподать распоряжение. Средства никуда не ушли — они на лицевом счёте, теряется только время.",
-   "pages": [
-    {
-     "layer": "faq",
-     "url": "/voprosy/chto-delat-pri-vozvrate-platezha/",
-     "title": "Казначейство вернуло платёж — что делать?"
-    }
-   ],
-   "relations": {
-    "USES_TERM": [
-     "err-vozvrat-platezha",
-     "rkp",
-     "sanktsionirovanie"
-    ],
-    "REQUIRES_DOC": [
-     "poyasnenie-vozvrat",
-     "otzyv-rasporyazheniya"
-    ],
-    "SEE_ERROR": [
-     "err-igk",
-     "err-kod-napravleniya"
-    ],
-    "REGULATED_BY": [
-     "law-prikaz-minfina-214n"
-    ],
-    "MONETIZED_BY": [
-     "service-vosstanovlenie"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/vozvrat-platezha-kaznachejstvo-chto-delat/",
-     "/blog/sanktsionirovanie-operatsiy-kaznacheystvom"
-    ],
-    "SAME_CLUSTER": [
-     "faq-prichina-vozvrata-gde"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-faq-deystviya-pri-vozvrate",
-   "scores": {
-    "authority": 2,
-    "coverage": 100,
-    "connectivity": 40,
-    "citation": 50,
-    "aiReadiness": 60,
-    "density": 80
    }
   },
   {
@@ -4761,53 +4859,6 @@
     "citation": 50,
     "aiReadiness": 60,
     "density": 67
-   }
-  },
-  {
-   "id": "faq-stoimost-soprovozhdeniya",
-   "type": [
-    "faq"
-   ],
-   "name": "Сколько стоит казначейское сопровождение под ключ?",
-   "aliases": [
-    "цена казначейского сопровождения под ключ",
-    "стоимость ведения кс счета",
-    "сколько берете за сопровождение госконтракта",
-    "тарифы на казначейское сопровождение",
-    "во сколько обойдется сопровождение контракта в казначействе"
-   ],
-   "summary": "",
-   "citation": "Фиксированной цены «для всех» нет: стоимость зависит от объёма операций по контракту. Мы считаем её на бесплатной диагностике, ориентиры — на /stoimost.",
-   "pages": [
-    {
-     "layer": "faq",
-     "url": "/voprosy/skolko-stoit-soprovozhdenie/",
-     "title": "Сколько стоит казначейское сопровождение под ключ?"
-    }
-   ],
-   "relations": {
-    "USES_TERM": [
-     "ks",
-     "kontrakt-44",
-     "sanktsionirovanie"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/tseny-na-kaznacheyskoe-soprovozhdenie-2026",
-     "/blog/soprovozhdenie-goskontraktov-pod-kluch"
-    ],
-    "SAME_CLUSTER": [
-     "faq-sostav-uslugi-soprovozhdeniya"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-faq-stoimost-soprovozhdeniya",
-   "scores": {
-    "authority": 2,
-    "coverage": 50,
-    "connectivity": 20,
-    "citation": 50,
-    "aiReadiness": 60,
-    "density": 40
    }
   },
   {
@@ -16574,57 +16625,6 @@
     "citation": 50,
     "aiReadiness": 60,
     "density": 53
-   }
-  },
-  {
-   "id": "faq-faktory-tseny-soprovozhdeniya",
-   "type": [
-    "faq"
-   ],
-   "name": "От чего зависит цена сопровождения?",
-   "aliases": [
-    "из чего складывается стоимость казначейского сопровождения",
-    "почему разная цена на сопровождение кс",
-    "факторы стоимости ведения лицевого счета",
-    "что влияет на тариф казначейского сопровождения",
-    "почему сопровождение гоз дороже обычного контракта"
-   ],
-   "summary": "",
-   "citation": "Основные факторы: число платежей и этапов, режим контракта (44-ФЗ/субсидия/ГОЗ), кооперация и объём отчётности. Точная цена — после бесплатной диагностики контракта.",
-   "pages": [
-    {
-     "layer": "faq",
-     "url": "/voprosy/ot-chego-zavisit-tsena-uslug/",
-     "title": "От чего зависит цена сопровождения?"
-    }
-   ],
-   "relations": {
-    "USES_TERM": [
-     "ks",
-     "goz",
-     "tsepochka-ks",
-     "razdelnyy-uchet"
-    ],
-    "REGULATED_BY": [
-     "law-275-fz"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/tseny-na-kaznacheyskoe-soprovozhdenie-2026",
-     "/blog/autsorsing-kaznacheyskogo-soprovozhdeniya"
-    ],
-    "SAME_CLUSTER": [
-     "faq-kalkulyator-stoimosti"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-faq-faktory-tseny-soprovozhdeniya",
-   "scores": {
-    "authority": 1,
-    "coverage": 67,
-    "connectivity": 23,
-    "citation": 50,
-    "aiReadiness": 60,
-    "density": 47
    }
   },
   {

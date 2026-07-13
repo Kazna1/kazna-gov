@@ -2776,6 +2776,8 @@
   "проверка готовности к санкционированию": "tool-proverka-sankts",
   "tool-generator-chek-lista": "tool-generator-chek-lista",
   "генератор чек-листа": "tool-generator-chek-lista",
+  "tool-podbor-formata-soprovozhdeniya": "tool-podbor-formata-soprovozhdeniya",
+  "подбор формата сопровождения": "tool-podbor-formata-soprovozhdeniya",
   "service-open": "service-open",
   "открытие казначейского счёта под ключ": "service-open",
   "service-conduct": "service-conduct",

@@ -3,7 +3,7 @@
  "version": "2026-07-09",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
- "count": 486,
+ "count": 487,
  "entities": [
   {
    "id": "service-conduct",
@@ -75,68 +75,6 @@
    }
   },
   {
-   "id": "err-otkaz-sanktsionirovaniya",
-   "type": [
-    "error",
-    "term"
-   ],
-   "name": "Отказ в санкционировании",
-   "aliases": [
-    "уфк отказало в платеже",
-    "отказ уфк"
-   ],
-   "summary": "Отказ в санкционировании — решение УФК не исполнять расход: платёж не соответствует Сведениям, основаниям, кодам или режиму целевых средств. Формально фиксируется протоколом с причиной. Лечится по алгоритму: понять причину → устранить (документ, Сведения, код) → подать заново; при спорной причине — пояснение или официальный запрос.",
-   "citation": "Отказ в санкционировании — это результат непрохождения контроля УФК: расход не соответствует Сведениям, документам-основаниям или правилам заполнения распоряжения. Основание отказа всегда указывается. Алгоритм: прочитать основание в ГИИС «Электронный бюджет», устранить конкретную причину (Сведения, код, ИГК, документы) и подать новое распоряжение — средства остаются на лицевом счёте.",
-   "pages": [
-    {
-     "layer": "error",
-     "url": "/oshibki/ufk-otkazalo-v-sanktsionirovanii/",
-     "title": "Отказ в санкционировании"
-    },
-    {
-     "layer": "term",
-     "url": "/glossary/otkaz-v-sanktsionirovanii/",
-     "title": "Отказ в санкционировании"
-    }
-   ],
-   "relations": {
-    "SEE_ERROR": [
-     "err-igk",
-     "err-kod-napravleniya",
-     "err-necelevoe",
-     "err-svedeniya-otkaz"
-    ],
-    "MONETIZED_BY": [
-     "service-vosstanovlenie"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/sanktsionirovanie-operatsiy-kaznacheystvom",
-     "/blog/ufk-zaderzhivaet-platezh-chto-delat",
-     "/blog/sroki-rassmotreniya-dokumentov-v-ufk-tablitsa",
-     "/oshibki/ufk-otkazalo-v-sanktsionirovanii/"
-    ],
-    "RELATED_TERM": [
-     "sanktsionirovanie",
-     "err-vozvrat-platezha",
-     "svedeniya-ssu"
-    ],
-    "REQUIRES_DOC": [
-     "poyasnenie-ufk",
-     "pismo-zapros"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-err-otkaz-sanktsionirovaniya",
-   "scores": {
-    "authority": 100,
-    "coverage": 83,
-    "connectivity": 100,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
    "id": "svedeniya-ssu",
    "type": [
     "document",
@@ -192,6 +130,68 @@
    },
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-svedeniya-ssu",
+   "scores": {
+    "authority": 100,
+    "coverage": 83,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "err-otkaz-sanktsionirovaniya",
+   "type": [
+    "error",
+    "term"
+   ],
+   "name": "Отказ в санкционировании",
+   "aliases": [
+    "уфк отказало в платеже",
+    "отказ уфк"
+   ],
+   "summary": "Отказ в санкционировании — решение УФК не исполнять расход: платёж не соответствует Сведениям, основаниям, кодам или режиму целевых средств. Формально фиксируется протоколом с причиной. Лечится по алгоритму: понять причину → устранить (документ, Сведения, код) → подать заново; при спорной причине — пояснение или официальный запрос.",
+   "citation": "Отказ в санкционировании — это результат непрохождения контроля УФК: расход не соответствует Сведениям, документам-основаниям или правилам заполнения распоряжения. Основание отказа всегда указывается. Алгоритм: прочитать основание в ГИИС «Электронный бюджет», устранить конкретную причину (Сведения, код, ИГК, документы) и подать новое распоряжение — средства остаются на лицевом счёте.",
+   "pages": [
+    {
+     "layer": "error",
+     "url": "/oshibki/ufk-otkazalo-v-sanktsionirovanii/",
+     "title": "Отказ в санкционировании"
+    },
+    {
+     "layer": "term",
+     "url": "/glossary/otkaz-v-sanktsionirovanii/",
+     "title": "Отказ в санкционировании"
+    }
+   ],
+   "relations": {
+    "SEE_ERROR": [
+     "err-igk",
+     "err-kod-napravleniya",
+     "err-necelevoe",
+     "err-svedeniya-otkaz"
+    ],
+    "MONETIZED_BY": [
+     "service-vosstanovlenie"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/sanktsionirovanie-operatsiy-kaznacheystvom",
+     "/blog/ufk-zaderzhivaet-platezh-chto-delat",
+     "/blog/sroki-rassmotreniya-dokumentov-v-ufk-tablitsa",
+     "/oshibki/ufk-otkazalo-v-sanktsionirovanii/"
+    ],
+    "RELATED_TERM": [
+     "sanktsionirovanie",
+     "err-vozvrat-platezha",
+     "svedeniya-ssu"
+    ],
+    "REQUIRES_DOC": [
+     "poyasnenie-ufk",
+     "pismo-zapros"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-err-otkaz-sanktsionirovaniya",
    "scores": {
     "authority": 100,
     "coverage": 83,
@@ -333,7 +333,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-doverennost-mchd",
    "scores": {
-    "authority": 95,
+    "authority": 94,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -386,38 +386,8 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-sanktsionirovanie",
    "scores": {
-    "authority": 87,
+    "authority": 91,
     "coverage": 83,
-    "connectivity": 100,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "law-prikaz-minfina-214n",
-   "type": [
-    "law"
-   ],
-   "name": "Приказ Минфина № 214н",
-   "aliases": [
-    "Приказ Минфина № 214н — порядок санкционирования (с 01.09.2026 — новый порядок)"
-   ],
-   "summary": "Приказ Минфина № 214н — порядок санкционирования (с 01.09.2026 — новый порядок)",
-   "citation": "Приказ Минфина № 214н — порядок санкционирования (с 01.09.2026 — новый порядок)",
-   "pages": [
-    {
-     "layer": "law",
-     "url": "/zakonodatelstvo/",
-     "title": "Приказ Минфина № 214н — порядок санкционирования (с 01.09.2026 — новый порядок)"
-    }
-   ],
-   "relations": {},
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-prikaz-minfina-214n",
-   "scores": {
-    "authority": 85,
-    "coverage": 0,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -446,7 +416,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-law-bk-rf-st-2422224226",
    "scores": {
-    "authority": 84,
+    "authority": 89,
     "coverage": 0,
     "connectivity": 100,
     "citation": 100,
@@ -503,8 +473,38 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-ls-71",
    "scores": {
-    "authority": 80,
+    "authority": 85,
     "coverage": 83,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "law-prikaz-minfina-214n",
+   "type": [
+    "law"
+   ],
+   "name": "Приказ Минфина № 214н",
+   "aliases": [
+    "Приказ Минфина № 214н — порядок санкционирования (с 01.09.2026 — новый порядок)"
+   ],
+   "summary": "Приказ Минфина № 214н — порядок санкционирования (с 01.09.2026 — новый порядок)",
+   "citation": "Приказ Минфина № 214н — порядок санкционирования (с 01.09.2026 — новый порядок)",
+   "pages": [
+    {
+     "layer": "law",
+     "url": "/zakonodatelstvo/",
+     "title": "Приказ Минфина № 214н — порядок санкционирования (с 01.09.2026 — новый порядок)"
+    }
+   ],
+   "relations": {},
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-law-prikaz-minfina-214n",
+   "scores": {
+    "authority": 84,
+    "coverage": 0,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -570,7 +570,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-zayavlenie-ls",
    "scores": {
-    "authority": 75,
+    "authority": 77,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -631,7 +631,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-kartochka-podpisey",
    "scores": {
-    "authority": 69,
+    "authority": 71,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -708,6 +708,48 @@
    }
   },
   {
+   "id": "err-zatyanulos-otkrytie",
+   "type": [
+    "error"
+   ],
+   "name": "Затянулось открытие счёта",
+   "aliases": [],
+   "summary": "",
+   "citation": "Штатно лицевой счёт участника казначейского сопровождения открывается за несколько рабочих дней после подачи корректного комплекта. Если срок вышел, процесс застрял на одном из этапов: включение в Сводный реестр, замечания к документам, доступ в ГИИС «Электронный бюджет» или очередь ТОФК. Найдите этап по статусам в ГИИС и запросам в УФК — и устраняйте точечно; общий «поторопите нас» не работает.",
+   "pages": [
+    {
+     "layer": "error",
+     "url": "/oshibki/zatyanulos-otkrytie-scheta/",
+     "title": "Затянулось открытие счёта"
+    }
+   ],
+   "relations": {
+    "SEE_ERROR": [
+     "err-kartochka",
+     "err-mchd",
+     "err-ecp"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/ne-otkryvaetsya-kaznacheyskiy-schet-prichiny-otkaza-2026",
+     "/blog/how_to_open/",
+     "/blog/sroki-rassmotreniya-dokumentov-v-ufk-tablitsa"
+    ]
+   },
+   "updated": "2026-07-08",
+   "schema_id": "https://kazna-gov.ru/#e-err-zatyanulos-otkrytie",
+   "scores": {
+    "authority": 64,
+    "coverage": 50,
+    "connectivity": 100,
+    "citation": 50,
+    "aiReadiness": 60,
+    "density": 100
+   }
+  },
+  {
    "id": "err-necelevoe",
    "type": [
     "error",
@@ -756,53 +798,11 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-err-necelevoe",
    "scores": {
-    "authority": 62,
+    "authority": 61,
     "coverage": 67,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "err-zatyanulos-otkrytie",
-   "type": [
-    "error"
-   ],
-   "name": "Затянулось открытие счёта",
-   "aliases": [],
-   "summary": "",
-   "citation": "Штатно лицевой счёт участника казначейского сопровождения открывается за несколько рабочих дней после подачи корректного комплекта. Если срок вышел, процесс застрял на одном из этапов: включение в Сводный реестр, замечания к документам, доступ в ГИИС «Электронный бюджет» или очередь ТОФК. Найдите этап по статусам в ГИИС и запросам в УФК — и устраняйте точечно; общий «поторопите нас» не работает.",
-   "pages": [
-    {
-     "layer": "error",
-     "url": "/oshibki/zatyanulos-otkrytie-scheta/",
-     "title": "Затянулось открытие счёта"
-    }
-   ],
-   "relations": {
-    "SEE_ERROR": [
-     "err-kartochka",
-     "err-mchd",
-     "err-ecp"
-    ],
-    "MONETIZED_BY": [
-     "service-open"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/ne-otkryvaetsya-kaznacheyskiy-schet-prichiny-otkaza-2026",
-     "/blog/how_to_open/",
-     "/blog/sroki-rassmotreniya-dokumentov-v-ufk-tablitsa"
-    ]
-   },
-   "updated": "2026-07-08",
-   "schema_id": "https://kazna-gov.ru/#e-err-zatyanulos-otkrytie",
-   "scores": {
-    "authority": 62,
-    "coverage": 50,
-    "connectivity": 100,
-    "citation": 50,
-    "aiReadiness": 60,
     "density": 100
    }
   },
@@ -903,7 +903,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-ks",
    "scores": {
-    "authority": 57,
+    "authority": 59,
     "coverage": 50,
     "connectivity": 100,
     "citation": 100,
@@ -1049,7 +1049,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-service-vosstanovlenie",
    "scores": {
-    "authority": 52,
+    "authority": 53,
     "coverage": 100,
     "connectivity": 100,
     "citation": 80,
@@ -1100,7 +1100,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-igk",
    "scores": {
-    "authority": 51,
+    "authority": 50,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -1155,6 +1155,36 @@
    "scores": {
     "authority": 47,
     "coverage": 83,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "law-prikaz-fk-44n",
+   "type": [
+    "law"
+   ],
+   "name": "Приказ ФК № 44н",
+   "aliases": [
+    "Приказ ФК № 44н — лицевые счета при КС (форма 0531368)"
+   ],
+   "summary": "Приказ ФК № 44н — лицевые счета при КС (форма 0531368)",
+   "citation": "Приказ ФК № 44н — лицевые счета при КС (форма 0531368)",
+   "pages": [
+    {
+     "layer": "law",
+     "url": "/zakonodatelstvo/",
+     "title": "Приказ ФК № 44н — лицевые счета при КС (форма 0531368)"
+    }
+   ],
+   "relations": {},
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-law-prikaz-fk-44n",
+   "scores": {
+    "authority": 47,
+    "coverage": 0,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -1225,56 +1255,6 @@
    }
   },
   {
-   "id": "tselevye-sredstva",
-   "type": [
-    "term"
-   ],
-   "name": "Целевые средства",
-   "aliases": [
-    "целевые деньги",
-    "средства контракта"
-   ],
-   "summary": "Целевые средства — деньги, предоставленные из бюджета на конкретную цель: исполнение госконтракта, соглашения о субсидии, контракта кооперации. При казначейском сопровождении они зачисляются на лицевой счёт и могут расходоваться только на цели, ради которых выданы, — направление каждого списания подтверждается документами и кодом.",
-   "citation": "Бюджетные деньги с целевым назначением на лицевом счёте участника КС. Их трата на не предусмотренные контрактом цели — нецелевое расходование с ответственностью.",
-   "pages": [
-    {
-     "layer": "term",
-     "url": "/glossary/tselevye-sredstva/",
-     "title": "Целевые средства"
-    }
-   ],
-   "relations": {
-    "RELATED_TERM": [
-     "ls-71",
-     "err-necelevoe",
-     "kod-tselevyh",
-     "svedeniya-ssu"
-    ],
-    "REQUIRES_DOC": [
-     "svedeniya-ssu"
-    ],
-    "SEE_ERROR": [
-     "err-necelevoe"
-    ],
-    "MONETIZED_BY": [
-     "service-conduct"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-tselevye-sredstva",
-   "scores": {
-    "authority": 45,
-    "coverage": 83,
-    "connectivity": 100,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
    "id": "service-start",
    "type": [
     "service"
@@ -1331,7 +1311,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-service-start",
    "scores": {
-    "authority": 45,
+    "authority": 46,
     "coverage": 100,
     "connectivity": 100,
     "citation": 80,
@@ -1340,29 +1320,49 @@
    }
   },
   {
-   "id": "law-prikaz-fk-44n",
+   "id": "tselevye-sredstva",
    "type": [
-    "law"
+    "term"
    ],
-   "name": "Приказ ФК № 44н",
+   "name": "Целевые средства",
    "aliases": [
-    "Приказ ФК № 44н — лицевые счета при КС (форма 0531368)"
+    "целевые деньги",
+    "средства контракта"
    ],
-   "summary": "Приказ ФК № 44н — лицевые счета при КС (форма 0531368)",
-   "citation": "Приказ ФК № 44н — лицевые счета при КС (форма 0531368)",
+   "summary": "Целевые средства — деньги, предоставленные из бюджета на конкретную цель: исполнение госконтракта, соглашения о субсидии, контракта кооперации. При казначейском сопровождении они зачисляются на лицевой счёт и могут расходоваться только на цели, ради которых выданы, — направление каждого списания подтверждается документами и кодом.",
+   "citation": "Бюджетные деньги с целевым назначением на лицевом счёте участника КС. Их трата на не предусмотренные контрактом цели — нецелевое расходование с ответственностью.",
    "pages": [
     {
-     "layer": "law",
-     "url": "/zakonodatelstvo/",
-     "title": "Приказ ФК № 44н — лицевые счета при КС (форма 0531368)"
+     "layer": "term",
+     "url": "/glossary/tselevye-sredstva/",
+     "title": "Целевые средства"
     }
    ],
-   "relations": {},
+   "relations": {
+    "RELATED_TERM": [
+     "ls-71",
+     "err-necelevoe",
+     "kod-tselevyh",
+     "svedeniya-ssu"
+    ],
+    "REQUIRES_DOC": [
+     "svedeniya-ssu"
+    ],
+    "SEE_ERROR": [
+     "err-necelevoe"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta"
+    ]
+   },
    "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-prikaz-fk-44n",
+   "schema_id": "https://kazna-gov.ru/#e-tselevye-sredstva",
    "scores": {
     "authority": 45,
-    "coverage": 0,
+    "coverage": 83,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -1447,6 +1447,51 @@
    },
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-poyasnenie-ufk",
+   "scores": {
+    "authority": 44,
+    "coverage": 67,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "chek-list-otkrytie",
+   "type": [
+    "document"
+   ],
+   "name": "Чек-лист открытия счёта",
+   "aliases": [],
+   "summary": "Чек-лист открытия лицевого счёта сводит процесс к 14 проверяемым пунктам в четырёх блоках: готовность организации (Сводный реестр, ЕГРЮЛ), доступ (КЭП, МЧД, ГИИС, Континент TLS), комплект документов (заявление, карточка, контракт с ИГК) и подача с контролем сроков. Прохождение всех пунктов до подачи — то, что на практике даёт открытие за 2 рабочих дня.",
+   "citation": "Предполётная проверка: исключает типовые причины возвратов и затягивания до подачи комплекта.",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/chek-list-otkrytiya-scheta/",
+     "title": "Чек-лист открытия счёта"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "komplekt-otkrytie",
+     "zayavlenie-ls",
+     "chek-list-dokumenty"
+    ],
+    "SEE_ERROR": [
+     "err-zatyanulos-otkrytie",
+     "err-kartochka"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/how_to_open/",
+     "/blog/sroki-rassmotreniya-dokumentov-v-ufk-tablitsa"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-chek-list-otkrytie",
    "scores": {
     "authority": 44,
     "coverage": 67,
@@ -1553,51 +1598,6 @@
    }
   },
   {
-   "id": "chek-list-otkrytie",
-   "type": [
-    "document"
-   ],
-   "name": "Чек-лист открытия счёта",
-   "aliases": [],
-   "summary": "Чек-лист открытия лицевого счёта сводит процесс к 14 проверяемым пунктам в четырёх блоках: готовность организации (Сводный реестр, ЕГРЮЛ), доступ (КЭП, МЧД, ГИИС, Континент TLS), комплект документов (заявление, карточка, контракт с ИГК) и подача с контролем сроков. Прохождение всех пунктов до подачи — то, что на практике даёт открытие за 2 рабочих дня.",
-   "citation": "Предполётная проверка: исключает типовые причины возвратов и затягивания до подачи комплекта.",
-   "pages": [
-    {
-     "layer": "document",
-     "url": "/obraztsy/chek-list-otkrytiya-scheta/",
-     "title": "Чек-лист открытия счёта"
-    }
-   ],
-   "relations": {
-    "RELATED_DOC": [
-     "komplekt-otkrytie",
-     "zayavlenie-ls",
-     "chek-list-dokumenty"
-    ],
-    "SEE_ERROR": [
-     "err-zatyanulos-otkrytie",
-     "err-kartochka"
-    ],
-    "MONETIZED_BY": [
-     "service-open"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/how_to_open/",
-     "/blog/sroki-rassmotreniya-dokumentov-v-ufk-tablitsa"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-chek-list-otkrytie",
-   "scores": {
-    "authority": 42,
-    "coverage": 67,
-    "connectivity": 100,
-    "citation": 80,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
    "id": "chek-list-dokumenty",
    "type": [
     "document"
@@ -1639,6 +1639,56 @@
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "kontrakt-44",
+   "type": [
+    "term"
+   ],
+   "name": "Госконтракт",
+   "aliases": [
+    "государственный контракт",
+    "контракт по 44-фз",
+    "Государственный (муниципальный) контракт"
+   ],
+   "summary": "Госконтракт — договор поставки, работ или услуг для государственных (муниципальных) нужд, заключаемый по 44-ФЗ. Контракт попадает под казначейское сопровождение, если соответствует критериям ежегодного закона о бюджете (авансирование, сумма, источник средств). Сведения о контракте включаются в реестр контрактов ЕИС, где ему присваивается ИГК.",
+   "citation": "Договор с госзаказчиком по 44-ФЗ. Для КС важны его атрибуты: источник средств, аванс, сумма, ИГК и условие о сопровождении.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/goskontrakt/",
+     "title": "Госконтракт"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "igk",
+     "ks",
+     "eis",
+     "ed-postavshchik"
+    ],
+    "REQUIRES_DOC": [
+     "formulirovka-ks",
+     "reestr-dokumentov"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kakie-kontrakty-popadayut-pod-kaznachejskoe-soprovozhdenie/",
+     "/blog/kaznacheyskoe-soprovozhdenie-44-fz-2026-polnyy-gid"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-kontrakt-44",
+   "scores": {
+    "authority": 37,
+    "coverage": 67,
+    "connectivity": 100,
+    "citation": 100,
     "aiReadiness": 100,
     "density": 100
    }
@@ -1737,56 +1787,6 @@
    "scores": {
     "authority": 36,
     "coverage": 83,
-    "connectivity": 100,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "kontrakt-44",
-   "type": [
-    "term"
-   ],
-   "name": "Госконтракт",
-   "aliases": [
-    "государственный контракт",
-    "контракт по 44-фз",
-    "Государственный (муниципальный) контракт"
-   ],
-   "summary": "Госконтракт — договор поставки, работ или услуг для государственных (муниципальных) нужд, заключаемый по 44-ФЗ. Контракт попадает под казначейское сопровождение, если соответствует критериям ежегодного закона о бюджете (авансирование, сумма, источник средств). Сведения о контракте включаются в реестр контрактов ЕИС, где ему присваивается ИГК.",
-   "citation": "Договор с госзаказчиком по 44-ФЗ. Для КС важны его атрибуты: источник средств, аванс, сумма, ИГК и условие о сопровождении.",
-   "pages": [
-    {
-     "layer": "term",
-     "url": "/glossary/goskontrakt/",
-     "title": "Госконтракт"
-    }
-   ],
-   "relations": {
-    "RELATED_TERM": [
-     "igk",
-     "ks",
-     "eis",
-     "ed-postavshchik"
-    ],
-    "REQUIRES_DOC": [
-     "formulirovka-ks",
-     "reestr-dokumentov"
-    ],
-    "MONETIZED_BY": [
-     "service-conduct"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/kakie-kontrakty-popadayut-pod-kaznachejskoe-soprovozhdenie/",
-     "/blog/kaznacheyskoe-soprovozhdenie-44-fz-2026-polnyy-gid"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-kontrakt-44",
-   "scores": {
-    "authority": 35,
-    "coverage": 67,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -2285,7 +2285,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-tofk",
    "scores": {
-    "authority": 29,
+    "authority": 28,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -2418,6 +2418,59 @@
    }
   },
   {
+   "id": "svodnyy-reestr",
+   "type": [
+    "term"
+   ],
+   "name": "Сводный реестр",
+   "aliases": [
+    "код по сводному реестру",
+    "включение в сводный реестр",
+    "реестровый код",
+    "Реестр участников и неучастников бюджетного процесса"
+   ],
+   "summary": "Сводный реестр — реестр участников и неучастников бюджетного процесса, который ведёт казначейство. Организация-подрядчик включается в него перед открытием лицевого счёта и получает код по Сводному реестру — обязательный реквизит заявлений, карточки и Сведений. Нет включения в реестр — УФК не откроет счёт: это частая скрытая причина «зависшего» старта.",
+   "citation": "Единая регистрация организаций в системе казначейства: код реестровой записи идентифицирует участника КС во всех документах и системах.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/svodnyy-reestr/",
+     "title": "Сводный реестр"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "zayavlenie-ls",
+     "nubp",
+     "ls-71",
+     "okpo"
+    ],
+    "REQUIRES_DOC": [
+     "zayavlenie-ls",
+     "chek-list-otkrytie"
+    ],
+    "SEE_ERROR": [
+     "err-svodnyy-reestr"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/oshibki/net-v-svodnom-reestre/"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-svodnyy-reestr",
+   "scores": {
+    "authority": 27,
+    "coverage": 83,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
    "id": "avans",
    "type": [
     "term"
@@ -2487,59 +2540,6 @@
     "authority": 26,
     "coverage": 0,
     "connectivity": 80,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "svodnyy-reestr",
-   "type": [
-    "term"
-   ],
-   "name": "Сводный реестр",
-   "aliases": [
-    "код по сводному реестру",
-    "включение в сводный реестр",
-    "реестровый код",
-    "Реестр участников и неучастников бюджетного процесса"
-   ],
-   "summary": "Сводный реестр — реестр участников и неучастников бюджетного процесса, который ведёт казначейство. Организация-подрядчик включается в него перед открытием лицевого счёта и получает код по Сводному реестру — обязательный реквизит заявлений, карточки и Сведений. Нет включения в реестр — УФК не откроет счёт: это частая скрытая причина «зависшего» старта.",
-   "citation": "Единая регистрация организаций в системе казначейства: код реестровой записи идентифицирует участника КС во всех документах и системах.",
-   "pages": [
-    {
-     "layer": "term",
-     "url": "/glossary/svodnyy-reestr/",
-     "title": "Сводный реестр"
-    }
-   ],
-   "relations": {
-    "RELATED_TERM": [
-     "zayavlenie-ls",
-     "nubp",
-     "ls-71",
-     "okpo"
-    ],
-    "REQUIRES_DOC": [
-     "zayavlenie-ls",
-     "chek-list-otkrytie"
-    ],
-    "SEE_ERROR": [
-     "err-svodnyy-reestr"
-    ],
-    "MONETIZED_BY": [
-     "service-open"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/oshibki/net-v-svodnom-reestre/"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-svodnyy-reestr",
-   "scores": {
-    "authority": 25,
-    "coverage": 83,
-    "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -2666,6 +2666,47 @@
     "connectivity": 73,
     "citation": 100,
     "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "err-svodnyy-reestr",
+   "type": [
+    "error"
+   ],
+   "name": "Нет в Сводном реестре",
+   "aliases": [],
+   "summary": "",
+   "citation": "Лицевой счёт участника казначейского сопровождения открывается только организации, включённой в Сводный реестр (реестр участников и неучастников бюджетного процесса). Включение инициирует не сам исполнитель: сведения направляет заказчик (или распорядитель субсидии). Если записи нет — запросите включение у заказчика письменно и отслеживайте появление записи, затем подавайте заявление на счёт.",
+   "pages": [
+    {
+     "layer": "error",
+     "url": "/oshibki/net-v-svodnom-reestre/",
+     "title": "Нет в Сводном реестре"
+    }
+   ],
+   "relations": {
+    "SEE_ERROR": [
+     "err-zatyanulos-otkrytie",
+     "err-kartochka"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kak-otkryt-licevoy-schet-71",
+     "/blog/ne-otkryvaetsya-kaznacheyskiy-schet-prichiny-otkaza-2026",
+     "/blog/tsepochka-kaznacheyskogo-soprovozhdeniya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-err-svodnyy-reestr",
+   "scores": {
+    "authority": 23,
+    "coverage": 50,
+    "connectivity": 80,
+    "citation": 50,
+    "aiReadiness": 60,
     "density": 100
    }
   },
@@ -3355,47 +3396,6 @@
     "connectivity": 67,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "err-svodnyy-reestr",
-   "type": [
-    "error"
-   ],
-   "name": "Нет в Сводном реестре",
-   "aliases": [],
-   "summary": "",
-   "citation": "Лицевой счёт участника казначейского сопровождения открывается только организации, включённой в Сводный реестр (реестр участников и неучастников бюджетного процесса). Включение инициирует не сам исполнитель: сведения направляет заказчик (или распорядитель субсидии). Если записи нет — запросите включение у заказчика письменно и отслеживайте появление записи, затем подавайте заявление на счёт.",
-   "pages": [
-    {
-     "layer": "error",
-     "url": "/oshibki/net-v-svodnom-reestre/",
-     "title": "Нет в Сводном реестре"
-    }
-   ],
-   "relations": {
-    "SEE_ERROR": [
-     "err-zatyanulos-otkrytie",
-     "err-kartochka"
-    ],
-    "MONETIZED_BY": [
-     "service-open"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/kak-otkryt-licevoy-schet-71",
-     "/blog/ne-otkryvaetsya-kaznacheyskiy-schet-prichiny-otkaza-2026",
-     "/blog/tsepochka-kaznacheyskogo-soprovozhdeniya"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-err-svodnyy-reestr",
-   "scores": {
-    "authority": 18,
-    "coverage": 50,
-    "connectivity": 63,
-    "citation": 50,
-    "aiReadiness": 60,
     "density": 100
    }
   },
@@ -4943,6 +4943,65 @@
    }
   },
   {
+   "id": "service-reserve",
+   "type": [
+    "service"
+   ],
+   "name": "Резервирование счёта для тендера",
+   "aliases": [],
+   "summary": "Резервируем номер лицевого счёта до заключения контракта: подаём заявление 0531368 с отметкой «резервирование», получаем реквизиты для заявки или проекта контракта за 1–2 дня. Цена 19 000 ₽ без скрытых доплат; после победы завершаем открытие. Дистанционно по всей России.",
+   "citation": "Нужны реквизиты счёта до подписания? Резервирование даёт номер за 1–2 дня.",
+   "pages": [
+    {
+     "layer": "service",
+     "url": "/services/reserve",
+     "title": "Резервирование счёта для тендера"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "rezervirovanie-ls",
+     "ls-71",
+     "svodnyy-reestr"
+    ],
+    "SERVICE_REQUIRES": [
+     "zayavlenie-ls",
+     "chek-list-otkrytie"
+    ],
+    "SERVICE_SOLVES": [
+     "err-svodnyy-reestr",
+     "err-zatyanulos-otkrytie"
+    ],
+    "SEE_FAQ": [
+     "faq-kak-zarezervirovat-schet",
+     "faq-chto-takoe-rezervirovanie",
+     "faq-srok-rezerva-scheta"
+    ],
+    "PART_OF_TOPIC": [
+     "hub-scheta"
+    ],
+    "REGULATED_BY": [
+     "law-prikaz-fk-44n"
+    ],
+    "DIAGNOSED_BY": [
+     "tool-podbor-scheta"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/how_to_open/"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-service-reserve",
+   "scores": {
+    "authority": 10,
+    "coverage": 100,
+    "connectivity": 77,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
    "id": "fns",
    "type": [
     "term"
@@ -5174,6 +5233,64 @@
    }
   },
   {
+   "id": "hub-ks",
+   "type": [
+    "hub"
+   ],
+   "name": "Казначейское сопровождение",
+   "aliases": [],
+   "summary": "Казначейское сопровождение — режим контроля целевых средств госконтрактов и субсидий: деньги живут на лицевом счёте в УФК, каждый платёж проходит санкционирование. Этот центр собирает всю базу платформы по теме: с чего начать, как устроен процесс, роли участников, термины, вопросы-ответы, чек-листы и услуги сопровождения под ключ.",
+   "citation": "Корневой раздел платформы: базовые понятия и процессы КС, участники и их роли, пороги применения, типы контрактов, чек-листы старта и коммерческие вопросы о работе с нами. Отсюда — переходы во все тематические центры: счета, платежи, санкционирование, ГОЗ, субсидии, документы.",
+   "pages": [
+    {
+     "layer": "hub",
+     "url": "/kaznacheyskoe-soprovozhdenie/",
+     "title": "Казначейское сопровождение"
+    }
+   ],
+   "relations": {
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+     "law-44-fz"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "DIAGNOSED_BY": [
+     "tool-diagnostika-kontrakta",
+     "tool-generator-chek-lista",
+     "tool-podbor-formata-soprovozhdeniya"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/ks_2025/",
+     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
+     "/blog/kaznacheyskoe-soprovozhdenie-44-fz-2026-polnyy-gid",
+     "/blog/kakie-kontrakty-popadayut-pod-kaznachejskoe-soprovozhdenie/",
+     "/blog/kaznacheyskoe-vs-bankovskoe-soprovozhdenie-otlichiya",
+     "/blog/tsepochka-kaznacheyskogo-soprovozhdeniya",
+     "/blog/podvodnye-kamni-kaznacheyskogo-soprovozhdeniya",
+     "/blog/kaznacheyskoe-soprovozhdenie-dlya-ip"
+    ],
+    "RELATED_HUB": [
+     "hub-scheta",
+     "hub-platezhi",
+     "hub-sankts",
+     "hub-zakony"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-hub-ks",
+   "scores": {
+    "authority": 9,
+    "coverage": 83,
+    "connectivity": 63,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
    "id": "hub-sankts",
    "type": [
     "hub"
@@ -5219,65 +5336,6 @@
     "authority": 9,
     "coverage": 83,
     "connectivity": 50,
-    "citation": 80,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "service-reserve",
-   "type": [
-    "service"
-   ],
-   "name": "Резервирование счёта для тендера",
-   "aliases": [],
-   "summary": "Резервируем номер лицевого счёта до заключения контракта: подаём заявление 0531368 с отметкой «резервирование», получаем реквизиты для заявки или проекта контракта за 1–2 дня. Цена 19 000 ₽ без скрытых доплат; после победы завершаем открытие. Дистанционно по всей России.",
-   "citation": "Нужны реквизиты счёта до подписания? Резервирование даёт номер за 1–2 дня.",
-   "pages": [
-    {
-     "layer": "service",
-     "url": "/services/reserve",
-     "title": "Резервирование счёта для тендера"
-    }
-   ],
-   "relations": {
-    "USES_TERM": [
-     "rezervirovanie-ls",
-     "ls-71",
-     "svodnyy-reestr"
-    ],
-    "SERVICE_REQUIRES": [
-     "zayavlenie-ls",
-     "chek-list-otkrytie"
-    ],
-    "SERVICE_SOLVES": [
-     "err-svodnyy-reestr",
-     "err-zatyanulos-otkrytie"
-    ],
-    "SEE_FAQ": [
-     "faq-kak-zarezervirovat-schet",
-     "faq-chto-takoe-rezervirovanie",
-     "faq-srok-rezerva-scheta"
-    ],
-    "PART_OF_TOPIC": [
-     "hub-scheta"
-    ],
-    "REGULATED_BY": [
-     "law-prikaz-fk-44n"
-    ],
-    "DIAGNOSED_BY": [
-     "tool-podbor-scheta"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/how_to_open/"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-service-reserve",
-   "scores": {
-    "authority": 9,
-    "coverage": 100,
-    "connectivity": 73,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -5432,59 +5490,65 @@
    }
   },
   {
-   "id": "hub-ks",
+   "id": "faq-kak-otkryt-schet",
    "type": [
-    "hub"
+    "faq"
    ],
-   "name": "Казначейское сопровождение",
-   "aliases": [],
-   "summary": "Казначейское сопровождение — режим контроля целевых средств госконтрактов и субсидий: деньги живут на лицевом счёте в УФК, каждый платёж проходит санкционирование. Этот центр собирает всю базу платформы по теме: с чего начать, как устроен процесс, роли участников, термины, вопросы-ответы, чек-листы и услуги сопровождения под ключ.",
-   "citation": "Корневой раздел платформы: базовые понятия и процессы КС, участники и их роли, пороги применения, типы контрактов, чек-листы старта и коммерческие вопросы о работе с нами. Отсюда — переходы во все тематические центры: счета, платежи, санкционирование, ГОЗ, субсидии, документы.",
+   "name": "Как открыть казначейский счёт?",
+   "aliases": [
+    "как открыть лицевой счет в казначействе",
+    "открытие счета в уфк",
+    "как завести кс счет",
+    "порядок открытия казначейского счета",
+    "что нужно чтобы открыть счет в казначействе"
+   ],
+   "summary": "",
+   "citation": "Счёт открывает сам подрядчик в своём ТОФК: заявление по форме 0531368 плюс карточка образцов подписей, подача — через ГИИС «Электронный бюджет» или на бумаге.",
    "pages": [
     {
-     "layer": "hub",
-     "url": "/kaznacheyskoe-soprovozhdenie/",
-     "title": "Казначейское сопровождение"
+     "layer": "faq",
+     "url": "/voprosy/kak-otkryt-kaznacheyskiy-schet/",
+     "title": "Как открыть казначейский счёт?"
     }
    ],
    "relations": {
+    "USES_TERM": [
+     "ls-71",
+     "ufk",
+     "zayavlenie-ls",
+     "svodnyy-reestr"
+    ],
+    "REQUIRES_DOC": [
+     "zayavlenie-ls",
+     "kartochka-podpisey",
+     "chek-list-otkrytie"
+    ],
+    "SEE_ERROR": [
+     "err-zatyanulos-otkrytie"
+    ],
     "REGULATED_BY": [
-     "law-bk-rf-st-2422224226",
-     "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
-     "law-44-fz"
+     "law-prikaz-fk-44n",
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
-     "service-conduct"
-    ],
-    "DIAGNOSED_BY": [
-     "tool-diagnostika-kontrakta",
-     "tool-generator-chek-lista"
+     "service-open"
     ],
     "EXPLAINED_BY_ARTICLE": [
-     "/blog/ks_2025/",
-     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
-     "/blog/kaznacheyskoe-soprovozhdenie-44-fz-2026-polnyy-gid",
-     "/blog/kakie-kontrakty-popadayut-pod-kaznachejskoe-soprovozhdenie/",
-     "/blog/kaznacheyskoe-vs-bankovskoe-soprovozhdenie-otlichiya",
-     "/blog/tsepochka-kaznacheyskogo-soprovozhdeniya",
-     "/blog/podvodnye-kamni-kaznacheyskogo-soprovozhdeniya",
-     "/blog/kaznacheyskoe-soprovozhdenie-dlya-ip"
+     "/blog/how_to_open",
+     "/blog/kak-otkryt-licevoy-schet-71"
     ],
-    "RELATED_HUB": [
-     "hub-scheta",
-     "hub-platezhi",
-     "hub-sankts",
-     "hub-zakony"
+    "SAME_CLUSTER": [
+     "faq-kto-otkryvaet-schet"
     ]
    },
    "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-hub-ks",
+   "schema_id": "https://kazna-gov.ru/#e-faq-kak-otkryt-schet",
    "scores": {
     "authority": 8,
-    "coverage": 83,
-    "connectivity": 57,
-    "citation": 80,
-    "aiReadiness": 100,
+    "coverage": 100,
+    "connectivity": 63,
+    "citation": 50,
+    "aiReadiness": 60,
     "density": 100
    }
   },
@@ -5892,63 +5956,61 @@
    }
   },
   {
-   "id": "faq-kak-otkryt-schet",
+   "id": "faq-srok-otkrytiya-scheta",
    "type": [
     "faq"
    ],
-   "name": "Как открыть казначейский счёт?",
+   "name": "Сколько времени открывается казначейский счёт?",
    "aliases": [
-    "как открыть лицевой счет в казначействе",
-    "открытие счета в уфк",
-    "как завести кс счет",
-    "порядок открытия казначейского счета",
-    "что нужно чтобы открыть счет в казначействе"
+    "сколько дней открывают счет в казначействе",
+    "срок открытия лицевого счета в уфк",
+    "как долго открывается кс счет",
+    "за сколько уфк открывает счет",
+    "сроки открытия казначейского счета"
    ],
    "summary": "",
-   "citation": "Счёт открывает сам подрядчик в своём ТОФК: заявление по форме 0531368 плюс карточка образцов подписей, подача — через ГИИС «Электронный бюджет» или на бумаге.",
+   "citation": "Штатно — один-два рабочих дня после приёма корректного заявления. С учётом подготовки документов и включения в Сводный реестр закладывайте больше времени.",
    "pages": [
     {
      "layer": "faq",
-     "url": "/voprosy/kak-otkryt-kaznacheyskiy-schet/",
-     "title": "Как открыть казначейский счёт?"
+     "url": "/voprosy/skolko-otkryvaetsya-schet/",
+     "title": "Сколько времени открывается казначейский счёт?"
     }
    ],
    "relations": {
     "USES_TERM": [
-     "ls-71",
+     "sroki-ufk",
      "ufk",
-     "zayavlenie-ls",
-     "svodnyy-reestr"
+     "svodnyy-reestr",
+     "zayavlenie-ls"
     ],
     "REQUIRES_DOC": [
-     "zayavlenie-ls",
-     "kartochka-podpisey",
-     "chek-list-otkrytie"
+     "chek-list-otkrytie",
+     "komplekt-otkrytie"
     ],
     "SEE_ERROR": [
      "err-zatyanulos-otkrytie"
     ],
     "REGULATED_BY": [
-     "law-prikaz-fk-44n",
-     "law-bk-rf-st-2422224226"
+     "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
      "service-open"
     ],
     "EXPLAINED_BY_ARTICLE": [
-     "/blog/how_to_open",
-     "/blog/kak-otkryt-licevoy-schet-71"
+     "/blog/sroki-rassmotreniya-dokumentov-v-ufk-tablitsa",
+     "/blog/how_to_open"
     ],
     "SAME_CLUSTER": [
-     "faq-kto-otkryvaet-schet"
+     "faq-dokumenty-dlya-otkrytiya"
     ]
    },
    "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-faq-kak-otkryt-schet",
+   "schema_id": "https://kazna-gov.ru/#e-faq-srok-otkrytiya-scheta",
    "scores": {
     "authority": 7,
     "coverage": 100,
-    "connectivity": 60,
+    "connectivity": 53,
     "citation": 50,
     "aiReadiness": 60,
     "density": 100
@@ -6096,6 +6158,236 @@
     "citation": 100,
     "aiReadiness": 100,
     "density": 73
+   }
+  },
+  {
+   "id": "faq-dokumenty-dlya-otkrytiya",
+   "type": [
+    "faq"
+   ],
+   "name": "Какие документы нужны для открытия лицевого счёта?",
+   "aliases": [
+    "документы для открытия лицевого счета в уфк",
+    "что подавать на открытие кс счета",
+    "пакет документов для казначейского счета",
+    "перечень документов на открытие счета в казначействе",
+    "какие бумаги нужны для счета в казначействе"
+   ],
+   "summary": "",
+   "citation": "Базовый комплект: заявление 0531368, карточка образцов подписей, документы о полномочиях и сведения о контракте с ИГК.",
+   "pages": [
+    {
+     "layer": "faq",
+     "url": "/voprosy/kakie-dokumenty-dlya-otkrytiya/",
+     "title": "Какие документы нужны для открытия лицевого счёта?"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "zayavlenie-ls",
+     "kartochka-podpisey",
+     "doverennost-mchd",
+     "igk"
+    ],
+    "REQUIRES_DOC": [
+     "komplekt-otkrytie",
+     "zayavlenie-ls",
+     "kartochka-podpisey"
+    ],
+    "SEE_ERROR": [
+     "err-kartochka"
+    ],
+    "REGULATED_BY": [
+     "law-prikaz-fk-44n",
+     "law-prikaz-mintsifry-1001"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/dokumenty-dlya-kaznacheyskogo-soprovozhdeniya",
+     "/blog/zayavlenie-na-otkrytie-kaznacheyskogo-scheta",
+     "/blog/kartochka-obraztsov-podpisey-ufk"
+    ],
+    "SAME_CLUSTER": [
+     "faq-gde-otkryvaetsya-schet"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-faq-dokumenty-dlya-otkrytiya",
+   "scores": {
+    "authority": 5,
+    "coverage": 100,
+    "connectivity": 57,
+    "citation": 50,
+    "aiReadiness": 60,
+    "density": 100
+   }
+  },
+  {
+   "id": "faq-stoimost-soprovozhdeniya",
+   "type": [
+    "faq"
+   ],
+   "name": "Сколько стоит казначейское сопровождение под ключ?",
+   "aliases": [
+    "цена казначейского сопровождения под ключ",
+    "стоимость ведения кс счета",
+    "сколько берете за сопровождение госконтракта",
+    "тарифы на казначейское сопровождение",
+    "во сколько обойдется сопровождение контракта в казначействе"
+   ],
+   "summary": "",
+   "citation": "Фиксированной цены «для всех» нет: стоимость зависит от объёма операций по контракту. Мы считаем её на бесплатной диагностике, ориентиры — на /stoimost.",
+   "pages": [
+    {
+     "layer": "faq",
+     "url": "/voprosy/skolko-stoit-soprovozhdenie/",
+     "title": "Сколько стоит казначейское сопровождение под ключ?"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "ks",
+     "kontrakt-44",
+     "sanktsionirovanie"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/tseny-na-kaznacheyskoe-soprovozhdenie-2026",
+     "/blog/soprovozhdenie-goskontraktov-pod-kluch"
+    ],
+    "SAME_CLUSTER": [
+     "faq-sostav-uslugi-soprovozhdeniya"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-faq-stoimost-soprovozhdeniya",
+   "scores": {
+    "authority": 5,
+    "coverage": 50,
+    "connectivity": 30,
+    "citation": 50,
+    "aiReadiness": 60,
+    "density": 60
+   }
+  },
+  {
+   "id": "faq-sostav-uslugi-soprovozhdeniya",
+   "type": [
+    "faq"
+   ],
+   "name": "Что входит в услугу сопровождения КС?",
+   "aliases": [
+    "что включает казначейское сопровождение под ключ",
+    "состав услуги ведения казначейского счета",
+    "какие работы входят в сопровождение кс",
+    "что делает подрядчик по сопровождению казначейства",
+    "перечень работ при сопровождении госконтракта в уфк"
+   ],
+   "summary": "",
+   "citation": "Полный цикл: открытие счёта, Сведения, платежи и санкционирование, переписка с УФК, отчётность. Вы подписываете документы — остальное делаем мы.",
+   "pages": [
+    {
+     "layer": "faq",
+     "url": "/voprosy/chto-vhodit-v-soprovozhdenie/",
+     "title": "Что входит в услугу сопровождения КС?"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "ks",
+     "svedeniya-ssu",
+     "rkp",
+     "sanktsionirovanie"
+    ],
+    "REQUIRES_DOC": [
+     "svedeniya-ssu",
+     "poyasnenie-ufk"
+    ],
+    "REGULATED_BY": [
+     "law-prikaz-minfina-214n"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/soprovozhdenie-goskontraktov-pod-kluch",
+     "/blog/kaznacheyskoe-soprovozhdenie-platezhey"
+    ],
+    "SAME_CLUSTER": [
+     "faq-stoimost-otkrytiya-scheta"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-faq-sostav-uslugi-soprovozhdeniya",
+   "scores": {
+    "authority": 5,
+    "coverage": 100,
+    "connectivity": 47,
+    "citation": 50,
+    "aiReadiness": 60,
+    "density": 93
+   }
+  },
+  {
+   "id": "service-postpayment",
+   "type": [
+    "service"
+   ],
+   "name": "КС при постоплате",
+   "aliases": [],
+   "summary": "Разовый пакет для контрактов с постоплатой: открываем счёт, готовим Сведения и проводим финальные расчёты — приёмку, оплату, возмещение ваших затрат и вывод средств на расчётный счёт. 49 000 ₽ разово вместо месячной подписки: для контрактов, где движение денег происходит один раз в конце.",
+   "citation": "Контракт без аванса: платить за месяцы сопровождения незачем — берите разовый пакет финального расчёта.",
+   "pages": [
+    {
+     "layer": "service",
+     "url": "/services/postpayment",
+     "title": "КС при постоплате"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "vozmeshchenie",
+     "pribyl-ks",
+     "ls-71"
+    ],
+    "SERVICE_REQUIRES": [
+     "zayavlenie-ls",
+     "svedeniya-ssu",
+     "chek-list-dokumenty"
+    ],
+    "SERVICE_SOLVES": [
+     "err-zatyanulos-otkrytie",
+     "err-kod-napravleniya"
+    ],
+    "SEE_FAQ": [
+     "faq-ks-bez-avansa",
+     "faq-kak-vozmestit-rashody",
+     "faq-vyvod-na-raschetnyy"
+    ],
+    "PART_OF_TOPIC": [
+     "hub-platezhi"
+    ],
+    "REGULATED_BY": [
+     "law-prikaz-minfina-214n"
+    ],
+    "DIAGNOSED_BY": [
+     "tool-marshrutizator",
+     "tool-diagnostika-kontrakta"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/avans-vs-vozmeshchenie-vs-pryamoy-platezh-tri-tipa-operatsiy-ks"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-service-postpayment",
+   "scores": {
+    "authority": 5,
+    "coverage": 100,
+    "connectivity": 70,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
    }
   },
   {
@@ -6461,131 +6753,6 @@
    }
   },
   {
-   "id": "faq-srok-otkrytiya-scheta",
-   "type": [
-    "faq"
-   ],
-   "name": "Сколько времени открывается казначейский счёт?",
-   "aliases": [
-    "сколько дней открывают счет в казначействе",
-    "срок открытия лицевого счета в уфк",
-    "как долго открывается кс счет",
-    "за сколько уфк открывает счет",
-    "сроки открытия казначейского счета"
-   ],
-   "summary": "",
-   "citation": "Штатно — один-два рабочих дня после приёма корректного заявления. С учётом подготовки документов и включения в Сводный реестр закладывайте больше времени.",
-   "pages": [
-    {
-     "layer": "faq",
-     "url": "/voprosy/skolko-otkryvaetsya-schet/",
-     "title": "Сколько времени открывается казначейский счёт?"
-    }
-   ],
-   "relations": {
-    "USES_TERM": [
-     "sroki-ufk",
-     "ufk",
-     "svodnyy-reestr",
-     "zayavlenie-ls"
-    ],
-    "REQUIRES_DOC": [
-     "chek-list-otkrytie",
-     "komplekt-otkrytie"
-    ],
-    "SEE_ERROR": [
-     "err-zatyanulos-otkrytie"
-    ],
-    "REGULATED_BY": [
-     "law-prikaz-fk-44n"
-    ],
-    "MONETIZED_BY": [
-     "service-open"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/sroki-rassmotreniya-dokumentov-v-ufk-tablitsa",
-     "/blog/how_to_open"
-    ],
-    "SAME_CLUSTER": [
-     "faq-dokumenty-dlya-otkrytiya"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-faq-srok-otkrytiya-scheta",
-   "scores": {
-    "authority": 4,
-    "coverage": 100,
-    "connectivity": 47,
-    "citation": 50,
-    "aiReadiness": 60,
-    "density": 93
-   }
-  },
-  {
-   "id": "faq-dokumenty-dlya-otkrytiya",
-   "type": [
-    "faq"
-   ],
-   "name": "Какие документы нужны для открытия лицевого счёта?",
-   "aliases": [
-    "документы для открытия лицевого счета в уфк",
-    "что подавать на открытие кс счета",
-    "пакет документов для казначейского счета",
-    "перечень документов на открытие счета в казначействе",
-    "какие бумаги нужны для счета в казначействе"
-   ],
-   "summary": "",
-   "citation": "Базовый комплект: заявление 0531368, карточка образцов подписей, документы о полномочиях и сведения о контракте с ИГК.",
-   "pages": [
-    {
-     "layer": "faq",
-     "url": "/voprosy/kakie-dokumenty-dlya-otkrytiya/",
-     "title": "Какие документы нужны для открытия лицевого счёта?"
-    }
-   ],
-   "relations": {
-    "USES_TERM": [
-     "zayavlenie-ls",
-     "kartochka-podpisey",
-     "doverennost-mchd",
-     "igk"
-    ],
-    "REQUIRES_DOC": [
-     "komplekt-otkrytie",
-     "zayavlenie-ls",
-     "kartochka-podpisey"
-    ],
-    "SEE_ERROR": [
-     "err-kartochka"
-    ],
-    "REGULATED_BY": [
-     "law-prikaz-fk-44n",
-     "law-prikaz-mintsifry-1001"
-    ],
-    "MONETIZED_BY": [
-     "service-open"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/dokumenty-dlya-kaznacheyskogo-soprovozhdeniya",
-     "/blog/zayavlenie-na-otkrytie-kaznacheyskogo-scheta",
-     "/blog/kartochka-obraztsov-podpisey-ufk"
-    ],
-    "SAME_CLUSTER": [
-     "faq-gde-otkryvaetsya-schet"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-faq-dokumenty-dlya-otkrytiya",
-   "scores": {
-    "authority": 4,
-    "coverage": 100,
-    "connectivity": 53,
-    "citation": 50,
-    "aiReadiness": 60,
-    "density": 100
-   }
-  },
-  {
    "id": "faq-dokumenty-k-platezhu",
    "type": [
     "faq"
@@ -6637,6 +6804,129 @@
    },
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-faq-dokumenty-k-platezhu",
+   "scores": {
+    "authority": 4,
+    "coverage": 100,
+    "connectivity": 47,
+    "citation": 50,
+    "aiReadiness": 60,
+    "density": 93
+   }
+  },
+  {
+   "id": "faq-pochemu-vernuli-platezh",
+   "type": [
+    "faq"
+   ],
+   "name": "Почему УФК вернуло платёж?",
+   "aliases": [
+    "уфк вернуло платеж причины",
+    "почему казначейство возвращает платежи",
+    "причины возврата платежа в казначействе",
+    "за что уфк возвращает распоряжение",
+    "отклонили платеж в казначействе почему"
+   ],
+   "summary": "",
+   "citation": "Возврат — это отказ в санкционировании: УФК нашло несоответствие в ИГК, назначении платежа, коде расходования или документах-основаниях. Точная причина всегда указана в уведомлении о возврате.",
+   "pages": [
+    {
+     "layer": "faq",
+     "url": "/voprosy/pochemu-ufk-vernulo-platezh/",
+     "title": "Почему УФК вернуло платёж?"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "err-vozvrat-platezha",
+     "sanktsionirovanie",
+     "naznachenie",
+     "igk"
+    ],
+    "REQUIRES_DOC": [
+     "poyasnenie-vozvrat"
+    ],
+    "SEE_ERROR": [
+     "err-igk",
+     "err-naznachenie"
+    ],
+    "REGULATED_BY": [
+     "law-prikaz-minfina-214n",
+     "law-bk-rf-st-2422224226"
+    ],
+    "MONETIZED_BY": [
+     "service-vosstanovlenie"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/vozvrat-platezha-kaznachejstvo-chto-delat/",
+     "/blog/kaznacheyskoe-soprovozhdenie-platezhey"
+    ],
+    "SAME_CLUSTER": [
+     "faq-deystviya-pri-vozvrate"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-faq-pochemu-vernuli-platezh",
+   "scores": {
+    "authority": 4,
+    "coverage": 100,
+    "connectivity": 50,
+    "citation": 50,
+    "aiReadiness": 60,
+    "density": 100
+   }
+  },
+  {
+   "id": "faq-deystviya-pri-vozvrate",
+   "type": [
+    "faq"
+   ],
+   "name": "Казначейство вернуло платёж — что делать?",
+   "aliases": [
+    "казначейство вернуло деньги на счет что делать",
+    "вернули платеж с кс счета как действовать",
+    "алгоритм действий при возврате платежа уфк",
+    "платеж вернулся из казначейства порядок действий",
+    "что делать если уфк отклонило распоряжение"
+   ],
+   "summary": "",
+   "citation": "Прочитать основание возврата, исправить конкретную ошибку и переподать распоряжение. Средства никуда не ушли — они на лицевом счёте, теряется только время.",
+   "pages": [
+    {
+     "layer": "faq",
+     "url": "/voprosy/chto-delat-pri-vozvrate-platezha/",
+     "title": "Казначейство вернуло платёж — что делать?"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "err-vozvrat-platezha",
+     "rkp",
+     "sanktsionirovanie"
+    ],
+    "REQUIRES_DOC": [
+     "poyasnenie-vozvrat",
+     "otzyv-rasporyazheniya"
+    ],
+    "SEE_ERROR": [
+     "err-igk",
+     "err-kod-napravleniya"
+    ],
+    "REGULATED_BY": [
+     "law-prikaz-minfina-214n"
+    ],
+    "MONETIZED_BY": [
+     "service-vosstanovlenie"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/vozvrat-platezha-kaznachejstvo-chto-delat/",
+     "/blog/sanktsionirovanie-operatsiy-kaznacheystvom"
+    ],
+    "SAME_CLUSTER": [
+     "faq-prichina-vozvrata-gde"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-faq-deystviya-pri-vozvrate",
    "scores": {
     "authority": 4,
     "coverage": 100,
@@ -6805,67 +7095,6 @@
     "citation": 80,
     "aiReadiness": 100,
     "density": 67
-   }
-  },
-  {
-   "id": "service-postpayment",
-   "type": [
-    "service"
-   ],
-   "name": "КС при постоплате",
-   "aliases": [],
-   "summary": "Разовый пакет для контрактов с постоплатой: открываем счёт, готовим Сведения и проводим финальные расчёты — приёмку, оплату, возмещение ваших затрат и вывод средств на расчётный счёт. 49 000 ₽ разово вместо месячной подписки: для контрактов, где движение денег происходит один раз в конце.",
-   "citation": "Контракт без аванса: платить за месяцы сопровождения незачем — берите разовый пакет финального расчёта.",
-   "pages": [
-    {
-     "layer": "service",
-     "url": "/services/postpayment",
-     "title": "КС при постоплате"
-    }
-   ],
-   "relations": {
-    "USES_TERM": [
-     "vozmeshchenie",
-     "pribyl-ks",
-     "ls-71"
-    ],
-    "SERVICE_REQUIRES": [
-     "zayavlenie-ls",
-     "svedeniya-ssu",
-     "chek-list-dokumenty"
-    ],
-    "SERVICE_SOLVES": [
-     "err-zatyanulos-otkrytie",
-     "err-kod-napravleniya"
-    ],
-    "SEE_FAQ": [
-     "faq-ks-bez-avansa",
-     "faq-kak-vozmestit-rashody",
-     "faq-vyvod-na-raschetnyy"
-    ],
-    "PART_OF_TOPIC": [
-     "hub-platezhi"
-    ],
-    "REGULATED_BY": [
-     "law-prikaz-minfina-214n"
-    ],
-    "DIAGNOSED_BY": [
-     "tool-marshrutizator",
-     "tool-diagnostika-kontrakta"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/avans-vs-vozmeshchenie-vs-pryamoy-platezh-tri-tipa-operatsiy-ks"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-service-postpayment",
-   "scores": {
-    "authority": 4,
-    "coverage": 100,
-    "connectivity": 67,
-    "citation": 80,
-    "aiReadiness": 100,
-    "density": 100
    }
   },
   {
@@ -8466,61 +8695,54 @@
    }
   },
   {
-   "id": "faq-sostav-uslugi-soprovozhdeniya",
+   "id": "faq-faktory-tseny-soprovozhdeniya",
    "type": [
     "faq"
    ],
-   "name": "Что входит в услугу сопровождения КС?",
+   "name": "От чего зависит цена сопровождения?",
    "aliases": [
-    "что включает казначейское сопровождение под ключ",
-    "состав услуги ведения казначейского счета",
-    "какие работы входят в сопровождение кс",
-    "что делает подрядчик по сопровождению казначейства",
-    "перечень работ при сопровождении госконтракта в уфк"
+    "из чего складывается стоимость казначейского сопровождения",
+    "почему разная цена на сопровождение кс",
+    "факторы стоимости ведения лицевого счета",
+    "что влияет на тариф казначейского сопровождения",
+    "почему сопровождение гоз дороже обычного контракта"
    ],
    "summary": "",
-   "citation": "Полный цикл: открытие счёта, Сведения, платежи и санкционирование, переписка с УФК, отчётность. Вы подписываете документы — остальное делаем мы.",
+   "citation": "Основные факторы: число платежей и этапов, режим контракта (44-ФЗ/субсидия/ГОЗ), кооперация и объём отчётности. Точная цена — после бесплатной диагностики контракта.",
    "pages": [
     {
      "layer": "faq",
-     "url": "/voprosy/chto-vhodit-v-soprovozhdenie/",
-     "title": "Что входит в услугу сопровождения КС?"
+     "url": "/voprosy/ot-chego-zavisit-tsena-uslug/",
+     "title": "От чего зависит цена сопровождения?"
     }
    ],
    "relations": {
     "USES_TERM": [
      "ks",
-     "svedeniya-ssu",
-     "rkp",
-     "sanktsionirovanie"
-    ],
-    "REQUIRES_DOC": [
-     "svedeniya-ssu",
-     "poyasnenie-ufk"
+     "goz",
+     "tsepochka-ks",
+     "razdelnyy-uchet"
     ],
     "REGULATED_BY": [
-     "law-prikaz-minfina-214n"
-    ],
-    "MONETIZED_BY": [
-     "service-conduct"
+     "law-275-fz"
     ],
     "EXPLAINED_BY_ARTICLE": [
-     "/blog/soprovozhdenie-goskontraktov-pod-kluch",
-     "/blog/kaznacheyskoe-soprovozhdenie-platezhey"
+     "/blog/tseny-na-kaznacheyskoe-soprovozhdenie-2026",
+     "/blog/autsorsing-kaznacheyskogo-soprovozhdeniya"
     ],
     "SAME_CLUSTER": [
-     "faq-stoimost-otkrytiya-scheta"
+     "faq-kalkulyator-stoimosti"
     ]
    },
    "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-faq-sostav-uslugi-soprovozhdeniya",
+   "schema_id": "https://kazna-gov.ru/#e-faq-faktory-tseny-soprovozhdeniya",
    "scores": {
     "authority": 3,
-    "coverage": 100,
-    "connectivity": 40,
+    "coverage": 67,
+    "connectivity": 30,
     "citation": 50,
     "aiReadiness": 60,
-    "density": 80
+    "density": 60
    }
   },
   {
@@ -11419,129 +11641,6 @@
    }
   },
   {
-   "id": "faq-pochemu-vernuli-platezh",
-   "type": [
-    "faq"
-   ],
-   "name": "Почему УФК вернуло платёж?",
-   "aliases": [
-    "уфк вернуло платеж причины",
-    "почему казначейство возвращает платежи",
-    "причины возврата платежа в казначействе",
-    "за что уфк возвращает распоряжение",
-    "отклонили платеж в казначействе почему"
-   ],
-   "summary": "",
-   "citation": "Возврат — это отказ в санкционировании: УФК нашло несоответствие в ИГК, назначении платежа, коде расходования или документах-основаниях. Точная причина всегда указана в уведомлении о возврате.",
-   "pages": [
-    {
-     "layer": "faq",
-     "url": "/voprosy/pochemu-ufk-vernulo-platezh/",
-     "title": "Почему УФК вернуло платёж?"
-    }
-   ],
-   "relations": {
-    "USES_TERM": [
-     "err-vozvrat-platezha",
-     "sanktsionirovanie",
-     "naznachenie",
-     "igk"
-    ],
-    "REQUIRES_DOC": [
-     "poyasnenie-vozvrat"
-    ],
-    "SEE_ERROR": [
-     "err-igk",
-     "err-naznachenie"
-    ],
-    "REGULATED_BY": [
-     "law-prikaz-minfina-214n",
-     "law-bk-rf-st-2422224226"
-    ],
-    "MONETIZED_BY": [
-     "service-vosstanovlenie"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/vozvrat-platezha-kaznachejstvo-chto-delat/",
-     "/blog/kaznacheyskoe-soprovozhdenie-platezhey"
-    ],
-    "SAME_CLUSTER": [
-     "faq-deystviya-pri-vozvrate"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-faq-pochemu-vernuli-platezh",
-   "scores": {
-    "authority": 2,
-    "coverage": 100,
-    "connectivity": 43,
-    "citation": 50,
-    "aiReadiness": 60,
-    "density": 87
-   }
-  },
-  {
-   "id": "faq-deystviya-pri-vozvrate",
-   "type": [
-    "faq"
-   ],
-   "name": "Казначейство вернуло платёж — что делать?",
-   "aliases": [
-    "казначейство вернуло деньги на счет что делать",
-    "вернули платеж с кс счета как действовать",
-    "алгоритм действий при возврате платежа уфк",
-    "платеж вернулся из казначейства порядок действий",
-    "что делать если уфк отклонило распоряжение"
-   ],
-   "summary": "",
-   "citation": "Прочитать основание возврата, исправить конкретную ошибку и переподать распоряжение. Средства никуда не ушли — они на лицевом счёте, теряется только время.",
-   "pages": [
-    {
-     "layer": "faq",
-     "url": "/voprosy/chto-delat-pri-vozvrate-platezha/",
-     "title": "Казначейство вернуло платёж — что делать?"
-    }
-   ],
-   "relations": {
-    "USES_TERM": [
-     "err-vozvrat-platezha",
-     "rkp",
-     "sanktsionirovanie"
-    ],
-    "REQUIRES_DOC": [
-     "poyasnenie-vozvrat",
-     "otzyv-rasporyazheniya"
-    ],
-    "SEE_ERROR": [
-     "err-igk",
-     "err-kod-napravleniya"
-    ],
-    "REGULATED_BY": [
-     "law-prikaz-minfina-214n"
-    ],
-    "MONETIZED_BY": [
-     "service-vosstanovlenie"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/vozvrat-platezha-kaznachejstvo-chto-delat/",
-     "/blog/sanktsionirovanie-operatsiy-kaznacheystvom"
-    ],
-    "SAME_CLUSTER": [
-     "faq-prichina-vozvrata-gde"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-faq-deystviya-pri-vozvrate",
-   "scores": {
-    "authority": 2,
-    "coverage": 100,
-    "connectivity": 40,
-    "citation": 50,
-    "aiReadiness": 60,
-    "density": 80
-   }
-  },
-  {
    "id": "faq-ispravit-igk",
    "type": [
     "faq"
@@ -13231,53 +13330,6 @@
     "citation": 50,
     "aiReadiness": 60,
     "density": 67
-   }
-  },
-  {
-   "id": "faq-stoimost-soprovozhdeniya",
-   "type": [
-    "faq"
-   ],
-   "name": "Сколько стоит казначейское сопровождение под ключ?",
-   "aliases": [
-    "цена казначейского сопровождения под ключ",
-    "стоимость ведения кс счета",
-    "сколько берете за сопровождение госконтракта",
-    "тарифы на казначейское сопровождение",
-    "во сколько обойдется сопровождение контракта в казначействе"
-   ],
-   "summary": "",
-   "citation": "Фиксированной цены «для всех» нет: стоимость зависит от объёма операций по контракту. Мы считаем её на бесплатной диагностике, ориентиры — на /stoimost.",
-   "pages": [
-    {
-     "layer": "faq",
-     "url": "/voprosy/skolko-stoit-soprovozhdenie/",
-     "title": "Сколько стоит казначейское сопровождение под ключ?"
-    }
-   ],
-   "relations": {
-    "USES_TERM": [
-     "ks",
-     "kontrakt-44",
-     "sanktsionirovanie"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/tseny-na-kaznacheyskoe-soprovozhdenie-2026",
-     "/blog/soprovozhdenie-goskontraktov-pod-kluch"
-    ],
-    "SAME_CLUSTER": [
-     "faq-sostav-uslugi-soprovozhdeniya"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-faq-stoimost-soprovozhdeniya",
-   "scores": {
-    "authority": 2,
-    "coverage": 50,
-    "connectivity": 20,
-    "citation": 50,
-    "aiReadiness": 60,
-    "density": 40
    }
   },
   {
@@ -25368,57 +25420,6 @@
    }
   },
   {
-   "id": "faq-faktory-tseny-soprovozhdeniya",
-   "type": [
-    "faq"
-   ],
-   "name": "От чего зависит цена сопровождения?",
-   "aliases": [
-    "из чего складывается стоимость казначейского сопровождения",
-    "почему разная цена на сопровождение кс",
-    "факторы стоимости ведения лицевого счета",
-    "что влияет на тариф казначейского сопровождения",
-    "почему сопровождение гоз дороже обычного контракта"
-   ],
-   "summary": "",
-   "citation": "Основные факторы: число платежей и этапов, режим контракта (44-ФЗ/субсидия/ГОЗ), кооперация и объём отчётности. Точная цена — после бесплатной диагностики контракта.",
-   "pages": [
-    {
-     "layer": "faq",
-     "url": "/voprosy/ot-chego-zavisit-tsena-uslug/",
-     "title": "От чего зависит цена сопровождения?"
-    }
-   ],
-   "relations": {
-    "USES_TERM": [
-     "ks",
-     "goz",
-     "tsepochka-ks",
-     "razdelnyy-uchet"
-    ],
-    "REGULATED_BY": [
-     "law-275-fz"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/tseny-na-kaznacheyskoe-soprovozhdenie-2026",
-     "/blog/autsorsing-kaznacheyskogo-soprovozhdeniya"
-    ],
-    "SAME_CLUSTER": [
-     "faq-kalkulyator-stoimosti"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-faq-faktory-tseny-soprovozhdeniya",
-   "scores": {
-    "authority": 1,
-    "coverage": 67,
-    "connectivity": 23,
-    "citation": 50,
-    "aiReadiness": 60,
-    "density": 47
-   }
-  },
-  {
    "id": "faq-kak-zakazat-uslugu",
    "type": [
     "faq"
@@ -26380,6 +26381,81 @@
    },
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-tool-proverka-subsidii",
+   "scores": {
+    "authority": 1,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "tool-podbor-formata-soprovozhdeniya",
+   "type": [
+    "tool"
+   ],
+   "name": "Подбор формата сопровождения",
+   "aliases": [],
+   "summary": "Мастер за 3 вопроса подбирает формат казначейского сопровождения под этап вашего контракта: резерв счёта до тендера, открытие лицевого счёта, ведение контракта с авансом или постоплатой, антикризисное восстановление. На выходе — рекомендованный формат с чек-листом первых шагов, необходимыми документами и типичными ошибками этапа из базы знаний платформы.",
+   "citation": "Вход: этап контракта, объём помощи, схема оплаты. Выход: рекомендованный формат сопровождения + чек-лист старта.",
+   "pages": [
+    {
+     "layer": "tool",
+     "url": "/instrumenty/podbor-formata-soprovozhdeniya/",
+     "title": "Подбор формата сопровождения"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "ks",
+     "ls-71",
+     "sanktsionirovanie",
+     "kontrakt-44",
+     "svodnyy-reestr"
+    ],
+    "SEE_FAQ": [
+     "faq-stoimost-soprovozhdeniya",
+     "faq-sostav-uslugi-soprovozhdeniya",
+     "faq-faktory-tseny-soprovozhdeniya",
+     "faq-kak-otkryt-schet",
+     "faq-srok-otkrytiya-scheta",
+     "faq-dokumenty-dlya-otkrytiya",
+     "faq-pochemu-vernuli-platezh",
+     "faq-deystviya-pri-vozvrate"
+    ],
+    "PART_OF_TOPIC": [
+     "hub-ks"
+    ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226",
+     "law-prikaz-fk-44n"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/soprovozhdenie-goskontraktov-pod-kluch",
+     "/blog/how_to_open/"
+    ],
+    "REQUIRES_DOC": [
+     "zayavlenie-ls",
+     "kartochka-podpisey",
+     "chek-list-otkrytie",
+     "svedeniya-ssu"
+    ],
+    "PREVENTS": [
+     "err-svodnyy-reestr",
+     "err-zatyanulos-otkrytie"
+    ],
+    "RESOLVES_TO": [
+     "service-reserve",
+     "service-open",
+     "service-conduct",
+     "service-postpayment",
+     "service-vosstanovlenie",
+     "service-start"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-tool-podbor-formata-soprovozhdeniya",
    "scores": {
     "authority": 1,
     "coverage": 100,
