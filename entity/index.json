@@ -15,6 +15,15 @@
    "url": "/services/conduct"
   },
   {
+   "id": "law-bk-rf-st-2422224226",
+   "name": "БК РФ, ст. 242.22–242.26",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-bk-rf-st-2422224226.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
    "id": "svedeniya-ssu",
    "name": "Сведения 0501213",
    "type": [
@@ -25,12 +34,12 @@
    "url": "/obraztsy/svedeniya-ob-operatsiyah-0501213/"
   },
   {
-   "id": "law-bk-rf-st-2422224226",
-   "name": "БК РФ, ст. 242.22–242.26",
+   "id": "law-prikaz-minfina-214n",
+   "name": "Приказ Минфина № 214н",
    "type": [
     "law"
    ],
-   "api": "/entity/law-bk-rf-st-2422224226.json",
+   "api": "/entity/law-prikaz-minfina-214n.json",
    "url": "/zakonodatelstvo/"
   },
   {
@@ -63,15 +72,6 @@
    "url": "/obraztsy/doverennost-v-ufk/"
   },
   {
-   "id": "law-prikaz-minfina-214n",
-   "name": "Приказ Минфина № 214н",
-   "type": [
-    "law"
-   ],
-   "api": "/entity/law-prikaz-minfina-214n.json",
-   "url": "/zakonodatelstvo/"
-  },
-  {
    "id": "sanktsionirovanie",
    "name": "Санкционирование операций",
    "type": [
@@ -100,6 +100,15 @@
    "url": "/obraztsy/zayavlenie-na-otkrytie-litsevogo-scheta/"
   },
   {
+   "id": "law-275-fz",
+   "name": "275-ФЗ",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-275-fz.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
    "id": "kartochka-podpisey",
    "name": "Карточка образцов подписей",
    "type": [
@@ -108,15 +117,6 @@
    ],
    "api": "/entity/kartochka-podpisey.json",
    "url": "/obraztsy/kartochka-obraztsov-podpisey/"
-  },
-  {
-   "id": "law-275-fz",
-   "name": "275-ФЗ",
-   "type": [
-    "law"
-   ],
-   "api": "/entity/law-275-fz.json",
-   "url": "/zakonodatelstvo/"
   },
   {
    "id": "rkp",
@@ -157,6 +157,15 @@
    "url": "/glossary/giis-elektronnyy-byudzhet/"
   },
   {
+   "id": "law-prikaz-fk-44n",
+   "name": "Приказ ФК № 44н",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-prikaz-fk-44n.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
    "id": "ks",
    "name": "Казначейское сопровождение",
    "type": [
@@ -173,15 +182,6 @@
    ],
    "api": "/entity/service-start.json",
    "url": "/services/start"
-  },
-  {
-   "id": "law-prikaz-fk-44n",
-   "name": "Приказ ФК № 44н",
-   "type": [
-    "law"
-   ],
-   "api": "/entity/law-prikaz-fk-44n.json",
-   "url": "/zakonodatelstvo/"
   },
   {
    "id": "dokumenty-osnovaniya",
@@ -239,6 +239,15 @@
    "url": "/obraztsy/reestr-dokumentov-po-kontraktu/"
   },
   {
+   "id": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+   "name": "Ежегодный закон о федеральном бюджете",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-ezhegodnyy-zakon-o-federalnom-byudzhete.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
    "id": "chek-list-otkrytie",
    "name": "Чек-лист открытия счёта",
    "type": [
@@ -255,15 +264,6 @@
    ],
    "api": "/entity/tselevye-sredstva.json",
    "url": "/glossary/tselevye-sredstva/"
-  },
-  {
-   "id": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
-   "name": "Ежегодный закон о федеральном бюджете",
-   "type": [
-    "law"
-   ],
-   "api": "/entity/law-ezhegodnyy-zakon-o-federalnom-byudzhete.json",
-   "url": "/zakonodatelstvo/"
   },
   {
    "id": "err-kod-napravleniya",
@@ -293,6 +293,15 @@
    "url": "/oshibki/nevernoe-naznachenie-platezha/"
   },
   {
+   "id": "law-44-fz",
+   "name": "44-ФЗ",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-44-fz.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
    "id": "chek-list-dokumenty",
    "name": "Чек-лист проверки документов",
    "type": [
@@ -311,15 +320,6 @@
    "url": "/obraztsy/pismo-zapros-v-ufk/"
   },
   {
-   "id": "law-44-fz",
-   "name": "44-ФЗ",
-   "type": [
-    "law"
-   ],
-   "api": "/entity/law-44-fz.json",
-   "url": "/zakonodatelstvo/"
-  },
-  {
    "id": "kontrakt-44",
    "name": "Госконтракт",
    "type": [
@@ -336,6 +336,15 @@
    ],
    "api": "/entity/ufk.json",
    "url": "/glossary/ufk/"
+  },
+  {
+   "id": "law-prikaz-fk-21n",
+   "name": "Приказ ФК № 21н",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-prikaz-fk-21n.json",
+   "url": "/zakonodatelstvo/"
   },
   {
    "id": "goz",
@@ -365,6 +374,15 @@
    "url": "/oshibki/net-razdelnogo-ucheta-goz/"
   },
   {
+   "id": "law-63-fz",
+   "name": "63-ФЗ",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-63-fz.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
    "id": "prikaz-razdelnyy-uchet",
    "name": "Приказ о раздельном учёте",
    "type": [
@@ -381,15 +399,6 @@
    ],
    "api": "/entity/vozmeshchenie.json",
    "url": "/glossary/vozmeshchenie-rashodov/"
-  },
-  {
-   "id": "law-prikaz-fk-21n",
-   "name": "Приказ ФК № 21н",
-   "type": [
-    "law"
-   ],
-   "api": "/entity/law-prikaz-fk-21n.json",
-   "url": "/zakonodatelstvo/"
   },
   {
    "id": "err-igk",
@@ -482,12 +491,12 @@
    "url": "/glossary/avans/"
   },
   {
-   "id": "law-63-fz",
-   "name": "63-ФЗ",
+   "id": "law-koap-rf-st-1514",
+   "name": "КоАП РФ, ст. 15.14",
    "type": [
     "law"
    ],
-   "api": "/entity/law-63-fz.json",
+   "api": "/entity/law-koap-rf-st-1514.json",
    "url": "/zakonodatelstvo/"
   },
   {
@@ -507,15 +516,6 @@
    ],
    "api": "/entity/sroki-ufk.json",
    "url": "/glossary/sroki-rassmotreniya-ufk/"
-  },
-  {
-   "id": "law-koap-rf-st-1514",
-   "name": "КоАП РФ, ст. 15.14",
-   "type": [
-    "law"
-   ],
-   "api": "/entity/law-koap-rf-st-1514.json",
-   "url": "/zakonodatelstvo/"
   },
   {
    "id": "err-svodnyy-reestr",
@@ -545,6 +545,15 @@
    "url": "/glossary/naznachenie-platezha/"
   },
   {
+   "id": "law-koap-rf-st-1537",
+   "name": "КоАП РФ, ст. 15.37",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-koap-rf-st-1537.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
    "id": "komplekt-otkrytie",
    "name": "Комплект на открытие",
    "type": [
@@ -563,12 +572,12 @@
    "url": "/glossary/soglashenie-o-subsidii/"
   },
   {
-   "id": "law-koap-rf-st-1537",
-   "name": "КоАП РФ, ст. 15.37",
+   "id": "law-pp-1465",
+   "name": "ПП № 1465",
    "type": [
     "law"
    ],
-   "api": "/entity/law-koap-rf-st-1537.json",
+   "api": "/entity/law-pp-1465.json",
    "url": "/zakonodatelstvo/"
   },
   {
@@ -597,15 +606,6 @@
    ],
    "api": "/entity/kody-9xxx.json",
    "url": "/glossary/kody-9xxx/"
-  },
-  {
-   "id": "law-pp-1465",
-   "name": "ПП № 1465",
-   "type": [
-    "law"
-   ],
-   "api": "/entity/law-pp-1465.json",
-   "url": "/zakonodatelstvo/"
   },
   {
    "id": "err-subsidiya-rashody",
@@ -671,6 +671,15 @@
    "url": "/glossary/raschetnyy-schet/"
   },
   {
+   "id": "law-prikaz-mintsifry-1001",
+   "name": "Приказ Минцифры № 1001",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-prikaz-mintsifry-1001.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
    "id": "err-vozvrat-platezha",
    "name": "Возврат платежа УФК",
    "type": [
@@ -687,15 +696,6 @@
    ],
    "api": "/entity/vypiska-ls.json",
    "url": "/glossary/vypiska-iz-litsevogo-scheta/"
-  },
-  {
-   "id": "law-prikaz-mintsifry-1001",
-   "name": "Приказ Минцифры № 1001",
-   "type": [
-    "law"
-   ],
-   "api": "/entity/law-prikaz-mintsifry-1001.json",
-   "url": "/zakonodatelstvo/"
   },
   {
    "id": "poyasnenie-vozvrat",
@@ -769,6 +769,15 @@
    ],
    "api": "/entity/kriptopro.json",
    "url": "/glossary/kriptopro-csp/"
+  },
+  {
+   "id": "law-gk-rf-st-185189",
+   "name": "ГК РФ, ст. 185–189",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-gk-rf-st-185189.json",
+   "url": "/zakonodatelstvo/"
   },
   {
    "id": "fk",
@@ -904,15 +913,6 @@
    ],
    "api": "/entity/hub-platezhi.json",
    "url": "/platezhi/"
-  },
-  {
-   "id": "law-gk-rf-st-185189",
-   "name": "ГК РФ, ст. 185–189",
-   "type": [
-    "law"
-   ],
-   "api": "/entity/law-gk-rf-st-185189.json",
-   "url": "/zakonodatelstvo/"
   },
   {
    "id": "subpodryadchik",
@@ -1149,6 +1149,15 @@
    "url": "/voprosy/skolko-otkryvaetsya-schet/"
   },
   {
+   "id": "law-nk-rf-gl-21",
+   "name": "НК РФ, гл. 21",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-nk-rf-gl-21.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
    "id": "prikaz-214n",
    "name": "Приказ Минфина № 214н",
    "type": [
@@ -1338,12 +1347,21 @@
    "url": "/otchetnost/"
   },
   {
-   "id": "law-nk-rf-gl-21",
-   "name": "НК РФ, гл. 21",
+   "id": "law-223-fz",
+   "name": "223-ФЗ",
    "type": [
     "law"
    ],
-   "api": "/entity/law-nk-rf-gl-21.json",
+   "api": "/entity/law-223-fz.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
+   "id": "law-pp-2053",
+   "name": "ПП № 2053",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-pp-2053.json",
    "url": "/zakonodatelstvo/"
   },
   {
@@ -1669,24 +1687,6 @@
    ],
    "api": "/entity/tool-proverka-sankts.json",
    "url": "/instrumenty/proverka-sanktsionirovaniya/"
-  },
-  {
-   "id": "law-223-fz",
-   "name": "223-ФЗ",
-   "type": [
-    "law"
-   ],
-   "api": "/entity/law-223-fz.json",
-   "url": "/zakonodatelstvo/"
-  },
-  {
-   "id": "law-pp-2053",
-   "name": "ПП № 2053",
-   "type": [
-    "law"
-   ],
-   "api": "/entity/law-pp-2053.json",
-   "url": "/zakonodatelstvo/"
   },
   {
    "id": "grbs",

@@ -3261,6 +3261,16 @@
   },
   {
    "from": "vozvrat-avansa",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "vozvrat-avansa",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "vozvrat-avansa",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -3301,6 +3311,16 @@
   },
   {
    "from": "err-vozvrat-platezha",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "err-vozvrat-platezha",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "err-vozvrat-platezha",
    "to": "service-vosstanovlenie",
    "rel": "MONETIZED_BY"
   },
@@ -3323,6 +3343,11 @@
    "from": "platezhnoe-poruchenie",
    "to": "rkp",
    "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "platezhnoe-poruchenie",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "platezhnoe-poruchenie",
@@ -3376,6 +3401,16 @@
   },
   {
    "from": "nds-ks",
+   "to": "law-nk-rf-gl-21",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "nds-ks",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "nds-ks",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -3406,6 +3441,16 @@
   },
   {
    "from": "pribyl-ks",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "pribyl-ks",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "pribyl-ks",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -3433,6 +3478,16 @@
    "from": "priostanovlenie",
    "to": "err-otkaz-sanktsionirovaniya",
    "rel": "SEE_ERROR"
+  },
+  {
+   "from": "priostanovlenie",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "priostanovlenie",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "priostanovlenie",
@@ -3476,6 +3531,16 @@
   },
   {
    "from": "sanktsionirovanie",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "sanktsionirovanie",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "sanktsionirovanie",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -3516,6 +3581,16 @@
   },
   {
    "from": "dokumenty-osnovaniya",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "dokumenty-osnovaniya",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "dokumenty-osnovaniya",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -3538,6 +3613,21 @@
    "from": "sroki-ufk",
    "to": "err-zatyanulos-otkrytie",
    "rel": "SEE_ERROR"
+  },
+  {
+   "from": "sroki-ufk",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "sroki-ufk",
+   "to": "law-prikaz-fk-44n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "sroki-ufk",
+   "to": "law-prikaz-fk-21n",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "err-otkaz-sanktsionirovaniya",
@@ -3751,6 +3841,11 @@
   },
   {
    "from": "doverennost-ufk",
+   "to": "law-gk-rf-st-185189",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "doverennost-ufk",
    "to": "service-open",
    "rel": "MONETIZED_BY"
   },
@@ -3778,6 +3873,16 @@
    "from": "upd-akt",
    "to": "reestr-dokumentov",
    "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "upd-akt",
+   "to": "law-44-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "upd-akt",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "upd-akt",
@@ -3811,6 +3916,16 @@
   },
   {
    "from": "upd",
+   "to": "law-nk-rf-gl-21",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "upd",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "upd",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -3833,6 +3948,11 @@
    "from": "ks2-ks3",
    "to": "reestr-dokumentov",
    "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "ks2-ks3",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "ks2-ks3",
@@ -3876,6 +3996,16 @@
   },
   {
    "from": "vypiska-ls",
+   "to": "law-prikaz-fk-21n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "vypiska-ls",
+   "to": "law-prikaz-fk-44n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "vypiska-ls",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -3911,6 +4041,11 @@
   },
   {
    "from": "ecp",
+   "to": "law-63-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "ecp",
    "to": "service-open",
    "rel": "MONETIZED_BY"
   },
@@ -3933,6 +4068,11 @@
    "from": "kriptopro",
    "to": "err-ecp",
    "rel": "SEE_ERROR"
+  },
+  {
+   "from": "kriptopro",
+   "to": "law-63-fz",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "kriptopro",
@@ -3968,6 +4108,11 @@
    "from": "registratsiya-eb",
    "to": "err-zatyanulos-otkrytie",
    "rel": "SEE_ERROR"
+  },
+  {
+   "from": "registratsiya-eb",
+   "to": "law-63-fz",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "registratsiya-eb",
@@ -4011,6 +4156,21 @@
   },
   {
    "from": "upolnomochennye",
+   "to": "law-gk-rf-st-185189",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "upolnomochennye",
+   "to": "law-63-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "upolnomochennye",
+   "to": "law-prikaz-mintsifry-1001",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "upolnomochennye",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -4045,6 +4205,11 @@
    "rel": "SEE_ERROR"
   },
   {
+   "from": "kody-napravleniy",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
+  },
+  {
    "from": "kody-9xxx",
    "to": "vozmeshchenie",
    "rel": "RELATED_TERM"
@@ -4063,6 +4228,11 @@
    "from": "kody-9xxx",
    "to": "err-kod-napravleniya",
    "rel": "SEE_ERROR"
+  },
+  {
+   "from": "kody-9xxx",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "kody-9xxx",
@@ -4086,6 +4256,11 @@
   },
   {
    "from": "kody-71xx",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "kody-71xx",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -4103,6 +4278,11 @@
    "from": "kod-tselevyh",
    "to": "kody-napravleniy",
    "rel": "RELATED_TERM"
+  },
+  {
+   "from": "kod-tselevyh",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "kod-tselevyh",
@@ -4346,6 +4526,11 @@
   },
   {
    "from": "44-fz",
+   "to": "law-44-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "44-fz",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -4363,6 +4548,11 @@
    "from": "223-fz",
    "to": "subsidiya",
    "rel": "RELATED_TERM"
+  },
+  {
+   "from": "223-fz",
+   "to": "law-223-fz",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "223-fz",
@@ -4401,6 +4591,11 @@
   },
   {
    "from": "275-fz",
+   "to": "law-275-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "275-fz",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -4431,6 +4626,11 @@
   },
   {
    "from": "63-fz",
+   "to": "law-63-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "63-fz",
    "to": "service-open",
    "rel": "MONETIZED_BY"
   },
@@ -4456,6 +4656,11 @@
   },
   {
    "from": "bk-rf",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "bk-rf",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -4473,6 +4678,11 @@
    "from": "zakon-budget",
    "to": "avans",
    "rel": "RELATED_TERM"
+  },
+  {
+   "from": "zakon-budget",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "prikaz-214n",
@@ -4506,6 +4716,11 @@
   },
   {
    "from": "prikaz-214n",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "prikaz-214n",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -4533,6 +4748,11 @@
    "from": "prikaz-44n",
    "to": "err-zatyanulos-otkrytie",
    "rel": "SEE_ERROR"
+  },
+  {
+   "from": "prikaz-44n",
+   "to": "law-prikaz-fk-44n",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "prikaz-44n",
@@ -4566,6 +4786,11 @@
   },
   {
    "from": "prikaz-21n",
+   "to": "law-prikaz-fk-21n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "prikaz-21n",
    "to": "service-open",
    "rel": "MONETIZED_BY"
   },
@@ -4591,6 +4816,11 @@
   },
   {
    "from": "pp-1465",
+   "to": "law-pp-1465",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "pp-1465",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -4608,6 +4838,11 @@
    "from": "pp-2053",
    "to": "platezh",
    "rel": "RELATED_TERM"
+  },
+  {
+   "from": "pp-2053",
+   "to": "law-pp-2053",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "pp-2053",
@@ -4646,6 +4881,16 @@
   },
   {
    "from": "koap-15-49",
+   "to": "law-koap-rf-st-1514",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "koap-15-49",
+   "to": "law-koap-rf-st-1537",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "koap-15-49",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -4666,6 +4911,11 @@
   },
   {
    "from": "raskhodnaya-deklaratsiya",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "raskhodnaya-deklaratsiya",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -4683,6 +4933,11 @@
    "from": "prom-otchetnost-goz",
    "to": "opk",
    "rel": "RELATED_TERM"
+  },
+  {
+   "from": "prom-otchetnost-goz",
+   "to": "law-275-fz",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "prom-otchetnost-goz",
@@ -4746,6 +5001,21 @@
   },
   {
    "from": "ip",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "ip",
+   "to": "law-prikaz-fk-44n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "ip",
+   "to": "law-prikaz-fk-21n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "ip",
    "to": "service-open",
    "rel": "MONETIZED_BY"
   },
@@ -4778,6 +5048,16 @@
    "from": "ispolnitel",
    "to": "reestr-dokumentov",
    "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "ispolnitel",
+   "to": "law-44-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "ispolnitel",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "ispolnitel",

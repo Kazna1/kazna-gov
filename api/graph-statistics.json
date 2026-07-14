@@ -4,7 +4,7 @@
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "nodes": 487,
- "edges": 4241,
+ "edges": 4297,
  "byType": {
   "error": 13,
   "document": 19,
@@ -19,7 +19,7 @@
   "REQUIRES_DOC": 490,
   "SEE_ERROR": 377,
   "MONETIZED_BY": 456,
-  "REGULATED_BY": 533,
+  "REGULATED_BY": 589,
   "RELATED_DOC": 55,
   "RELATED_TERM": 401,
   "USES_TERM": 1285,
@@ -39,11 +39,15 @@
    "in": 284
   },
   {
+   "id": "law-bk-rf-st-2422224226",
+   "in": 116
+  },
+  {
    "id": "svedeniya-ssu",
    "in": 105
   },
   {
-   "id": "law-bk-rf-st-2422224226",
+   "id": "law-prikaz-minfina-214n",
    "in": 105
   },
   {
@@ -59,10 +63,6 @@
    "in": 90
   },
   {
-   "id": "law-prikaz-minfina-214n",
-   "in": 89
-  },
-  {
    "id": "sanktsionirovanie",
    "in": 83
   },
@@ -75,12 +75,12 @@
    "in": 71
   },
   {
-   "id": "kartochka-podpisey",
-   "in": 66
+   "id": "law-275-fz",
+   "in": 67
   },
   {
-   "id": "law-275-fz",
-   "in": 65
+   "id": "kartochka-podpisey",
+   "in": 66
   },
   {
    "id": "rkp",
