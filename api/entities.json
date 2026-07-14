@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-07-09",
+ "version": "2026-07-13",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "count": 487,
@@ -5541,7 +5541,7 @@
      "faq-kto-otkryvaet-schet"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-kak-otkryt-schet",
    "scores": {
     "authority": 8,
@@ -6005,7 +6005,7 @@
      "faq-dokumenty-dlya-otkrytiya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-srok-otkrytiya-scheta",
    "scores": {
     "authority": 7,
@@ -6213,7 +6213,7 @@
      "faq-gde-otkryvaetsya-schet"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-dokumenty-dlya-otkrytiya",
    "scores": {
     "authority": 5,
@@ -6260,7 +6260,7 @@
      "faq-sostav-uslugi-soprovozhdeniya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-stoimost-soprovozhdeniya",
    "scores": {
     "authority": 5,
@@ -6318,7 +6318,7 @@
      "faq-stoimost-otkrytiya-scheta"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-sostav-uslugi-soprovozhdeniya",
    "scores": {
     "authority": 5,
@@ -6864,7 +6864,7 @@
      "faq-deystviya-pri-vozvrate"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-pochemu-vernuli-platezh",
    "scores": {
     "authority": 4,
@@ -6925,7 +6925,7 @@
      "faq-prichina-vozvrata-gde"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-deystviya-pri-vozvrate",
    "scores": {
     "authority": 4,
@@ -7925,7 +7925,7 @@
      "faq-chto-takoe-svedeniya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-platezh-ne-sootvetstvuet-svedeniyam",
    "scores": {
     "authority": 3,
@@ -7988,7 +7988,7 @@
      "faq-subpodryad-v-goz"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-obyazannosti-ispolnitelya-goz",
    "scores": {
     "authority": 3,
@@ -8049,7 +8049,7 @@
      "faq-zaprety-otdelnyy-schet"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-subpodryad-v-goz",
    "scores": {
     "authority": 3,
@@ -8108,7 +8108,7 @@
      "faq-otchetnost-goz-girbo"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-zaprety-otdelnyy-schet",
    "scores": {
     "authority": 3,
@@ -8169,7 +8169,7 @@
      "faq-shtraf-net-razdelnogo-ucheta"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-postanovka-razdelnogo-ucheta",
    "scores": {
     "authority": 3,
@@ -8228,7 +8228,7 @@
      "faq-ru-po-44fz"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-shtraf-net-razdelnogo-ucheta",
    "scores": {
     "authority": 3,
@@ -8286,7 +8286,7 @@
      "faq-ks-subsidiy-vs-kontrakta"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-subsidiya-pod-ks",
    "scores": {
     "authority": 3,
@@ -8351,7 +8351,7 @@
      "faq-ufk-ne-soglasuet-subsidiyu"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-raskhody-subsidii",
    "scores": {
     "authority": 3,
@@ -8405,7 +8405,7 @@
      "faq-nedostizhenie-pokazateley"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-otchet-po-subsidii",
    "scores": {
     "authority": 3,
@@ -8734,7 +8734,7 @@
      "faq-kalkulyator-stoimosti"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-faktory-tseny-soprovozhdeniya",
    "scores": {
     "authority": 3,
@@ -10918,7 +10918,7 @@
      "faq-dokumenty-k-platezhu"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-srok-platezha",
    "scores": {
     "authority": 2,
@@ -11161,7 +11161,7 @@
      "faq-status-platezha"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-platezh-visit",
    "scores": {
     "authority": 2,
@@ -11453,7 +11453,7 @@
      "faq-chto-proveryaet-kaznacheystvo"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-skolko-dney-proveryaet-ufk",
    "scores": {
     "authority": 2,
@@ -11513,7 +11513,7 @@
      "faq-chto-takoe-dokumenty-osnovaniya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-chto-proveryaet-kaznacheystvo",
    "scores": {
     "authority": 2,
@@ -11573,7 +11573,7 @@
      "faq-osnovaniya-dlya-oplaty-uslug"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-chto-takoe-dokumenty-osnovaniya",
    "scores": {
     "authority": 2,
@@ -11629,7 +11629,7 @@
      "faq-zakazchik-ne-utverzhdaet-svedeniya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-kak-izmenit-svedeniya",
    "scores": {
     "authority": 2,
@@ -11690,7 +11690,7 @@
      "faq-ispravit-naznachenie"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-ispravit-igk",
    "scores": {
     "authority": 2,
@@ -12454,7 +12454,7 @@
      "faq-bank-dlya-goz"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-chto-takoe-otdelnyy-schet",
    "scores": {
     "authority": 2,
@@ -12627,7 +12627,7 @@
      "faq-postanovka-razdelnogo-ucheta"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-kto-vedet-razdelnyy-uchet",
    "scores": {
     "authority": 2,
@@ -12870,7 +12870,7 @@
      "faq-zarplata-iz-subsidii"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-ufk-ne-soglasuet-subsidiyu",
    "scores": {
     "authority": 2,
@@ -12927,7 +12927,7 @@
      "faq-svedeniya-po-subsidii"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-razdelenie-subsidii-i-svoih",
    "scores": {
     "authority": 2,
@@ -13153,7 +13153,7 @@
      "faq-prodlenie-sroka-subsidii"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-ostatok-subsidii",
    "scores": {
     "authority": 2,
@@ -13382,7 +13382,7 @@
      "faq-faktory-tseny-soprovozhdeniya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-stoimost-otkrytiya-scheta",
    "scores": {
     "authority": 2,
@@ -14085,7 +14085,7 @@
      "faq-srok-otkrytiya-scheta"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-kto-otkryvaet-schet",
    "scores": {
     "authority": 1,
@@ -14611,7 +14611,7 @@
      "faq-otkaz-v-otkrytii"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-dolgo-ne-otkryvayut",
    "scores": {
     "authority": 1,
@@ -14673,7 +14673,7 @@
      "faq-uskorit-otkrytie"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-otkaz-v-otkrytii",
    "scores": {
     "authority": 1,
@@ -14733,7 +14733,7 @@
      "faq-schet-otkryt-chto-dalshe"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-uskorit-otkrytie",
    "scores": {
     "authority": 1,
@@ -18127,7 +18127,7 @@
      "faq-skolko-dney-proveryaet-ufk"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-chto-takoe-sanktsionirovanie",
    "scores": {
     "authority": 1,
@@ -18181,7 +18181,7 @@
      "faq-novyy-poryadok-sanktsionirovaniya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-osnovaniya-dlya-oplaty-uslug",
    "scores": {
     "authority": 1,
@@ -18240,7 +18240,7 @@
      "faq-zachem-nuzhny-svedeniya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-chto-takoe-svedeniya",
    "scores": {
     "authority": 1,
@@ -18299,7 +18299,7 @@
      "faq-kak-zapolnit-svedeniya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-zachem-nuzhny-svedeniya",
    "scores": {
     "authority": 1,
@@ -18360,7 +18360,7 @@
      "faq-kto-utverzhdaet-svedeniya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-kak-zapolnit-svedeniya",
    "scores": {
     "authority": 1,
@@ -18479,7 +18479,7 @@
      "faq-platezh-ne-sootvetstvuet-svedeniyam"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-zakazchik-ne-utverzhdaet-svedeniya",
    "scores": {
     "authority": 1,
@@ -19151,7 +19151,7 @@
      "faq-otvetstvennost-za-oshibki-v-platezhkah"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-srochnyy-platezh-kak-uskorit",
    "scores": {
     "authority": 1,
@@ -19326,7 +19326,7 @@
      "faq-poteri-vremeni-vozvrat"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-povtornyy-vozvrat",
    "scores": {
     "authority": 1,
@@ -19382,7 +19382,7 @@
      "faq-pochemu-vernuli-platezh"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-poteri-vremeni-vozvrat",
    "scores": {
     "authority": 1,
@@ -22827,7 +22827,7 @@
      "faq-ks-goz-otlichiya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-chto-takoe-goz",
    "scores": {
     "authority": 1,
@@ -22890,7 +22890,7 @@
      "faq-kazna-ili-bank-goz"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-ks-goz-otlichiya",
    "scores": {
     "authority": 1,
@@ -22951,7 +22951,7 @@
      "faq-kto-vedet-razdelnyy-uchet"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-chto-takoe-razdelnyy-uchet",
    "scores": {
     "authority": 1,
@@ -23069,7 +23069,7 @@
      "faq-chto-takoe-prim-1"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-raspredelenie-nakladnykh",
    "scores": {
     "authority": 1,
@@ -23130,7 +23130,7 @@
      "faq-chto-takoe-razdelnyy-uchet"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-chto-takoe-prim-1",
    "scores": {
     "authority": 1,
@@ -26454,7 +26454,7 @@
      "service-start"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-tool-podbor-formata-soprovozhdeniya",
    "scores": {
     "authority": 1,
