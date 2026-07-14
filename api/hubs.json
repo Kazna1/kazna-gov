@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-07-13",
+ "version": "2026-07-14",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "count": 10,
@@ -168,7 +168,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-hub-ks",
    "scores": {
-    "authority": 9,
+    "authority": 8,
     "coverage": 83,
     "connectivity": 63,
     "citation": 80,
@@ -219,7 +219,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-hub-sankts",
    "scores": {
-    "authority": 9,
+    "authority": 8,
     "coverage": 83,
     "connectivity": 50,
     "citation": 80,

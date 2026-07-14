@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-07-13",
+ "version": "2026-07-14",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "count": 19,
@@ -57,13 +57,16 @@
      "kod-tselevyh",
      "zakazchik",
      "tselevye-sredstva"
+    ],
+    "REGULATED_BY": [
+     "law-prikaz-minfina-214n"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-svedeniya-ssu",
    "scores": {
     "authority": 100,
-    "coverage": 83,
+    "coverage": 100,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -135,7 +138,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-doverennost-mchd",
    "scores": {
-    "authority": 94,
+    "authority": 95,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -197,12 +200,15 @@
     ],
     "REQUIRES_DOC": [
      "chek-list-otkrytie"
+    ],
+    "REGULATED_BY": [
+     "law-prikaz-fk-44n"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-zayavlenie-ls",
    "scores": {
-    "authority": 77,
+    "authority": 75,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -258,13 +264,16 @@
      "upolnomochennye",
      "zayavlenie-ls",
      "prikaz-21n"
+    ],
+    "REGULATED_BY": [
+     "law-prikaz-fk-21n"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-kartochka-podpisey",
    "scores": {
-    "authority": 71,
-    "coverage": 83,
+    "authority": 70,
+    "coverage": 100,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -326,15 +335,63 @@
     ],
     "REQUIRES_DOC": [
      "otzyv-rasporyazheniya"
+    ],
+    "REGULATED_BY": [
+     "law-prikaz-minfina-214n"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-rkp",
    "scores": {
-    "authority": 67,
+    "authority": 68,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "poyasnenie-ufk",
+   "type": [
+    "document"
+   ],
+   "name": "Пояснение в УФК",
+   "aliases": [],
+   "summary": "Пояснение в УФК — сопроводительное обоснование нетиповой операции или ответ на замечание казначейства. Работающая структура: реквизиты контракта и счёта → суть операции → обоснование связи с исполнением контракта (со ссылкой на пункт контракта и Сведения) → перечень приложений. Подаётся через ГИИС «Электронный бюджет» вместе с документом, к которому относится.",
+   "citation": "Снимает вопросы УФК до отказа: объясняет целевой характер и основание операции, экономя цикл «отказ → исправление» (до 5 рабочих дней).",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/poyasnenie-v-ufk/",
+     "title": "Пояснение в УФК"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "poyasnenie-vozvrat",
+     "pismo-zapros",
+     "svedeniya-ssu"
+    ],
+    "SEE_ERROR": [
+     "err-otkaz-sanktsionirovaniya",
+     "err-necelevoe"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/sanktsionirovanie-operatsiy-kaznacheystvom",
+     "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-poyasnenie-ufk",
+   "scores": {
+    "authority": 45,
+    "coverage": 67,
+    "connectivity": 100,
+    "citation": 80,
     "aiReadiness": 100,
     "density": 100
    }
@@ -394,55 +451,10 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-reestr-dokumentov",
    "scores": {
-    "authority": 46,
+    "authority": 44,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "poyasnenie-ufk",
-   "type": [
-    "document"
-   ],
-   "name": "Пояснение в УФК",
-   "aliases": [],
-   "summary": "Пояснение в УФК — сопроводительное обоснование нетиповой операции или ответ на замечание казначейства. Работающая структура: реквизиты контракта и счёта → суть операции → обоснование связи с исполнением контракта (со ссылкой на пункт контракта и Сведения) → перечень приложений. Подаётся через ГИИС «Электронный бюджет» вместе с документом, к которому относится.",
-   "citation": "Снимает вопросы УФК до отказа: объясняет целевой характер и основание операции, экономя цикл «отказ → исправление» (до 5 рабочих дней).",
-   "pages": [
-    {
-     "layer": "document",
-     "url": "/obraztsy/poyasnenie-v-ufk/",
-     "title": "Пояснение в УФК"
-    }
-   ],
-   "relations": {
-    "RELATED_DOC": [
-     "poyasnenie-vozvrat",
-     "pismo-zapros",
-     "svedeniya-ssu"
-    ],
-    "SEE_ERROR": [
-     "err-otkaz-sanktsionirovaniya",
-     "err-necelevoe"
-    ],
-    "MONETIZED_BY": [
-     "service-conduct"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/sanktsionirovanie-operatsiy-kaznacheystvom",
-     "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-poyasnenie-ufk",
-   "scores": {
-    "authority": 44,
-    "coverage": 67,
-    "connectivity": 100,
-    "citation": 80,
     "aiReadiness": 100,
     "density": 100
    }
@@ -484,7 +496,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-chek-list-otkrytie",
    "scores": {
-    "authority": 44,
+    "authority": 43,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -573,7 +585,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-pismo-zapros",
    "scores": {
-    "authority": 36,
+    "authority": 37,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -663,7 +675,7 @@
    "scores": {
     "authority": 21,
     "coverage": 67,
-    "connectivity": 83,
+    "connectivity": 87,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -707,7 +719,7 @@
    "scores": {
     "authority": 19,
     "coverage": 67,
-    "connectivity": 77,
+    "connectivity": 80,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -748,9 +760,54 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-formulirovka-ks",
    "scores": {
-    "authority": 19,
+    "authority": 18,
     "coverage": 67,
     "connectivity": 70,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "poyasnenie-vozvrat",
+   "type": [
+    "document"
+   ],
+   "name": "Пояснение при возврате",
+   "aliases": [],
+   "summary": "После возврата платежа УФК повторную подачу ускоряет короткое пояснение: реквизиты отклонённого распоряжения, дословное основание отказа, что именно исправлено в новом распоряжении. Такой документ показывает специалисту казначейства, что замечание отработано, и снижает риск повторного отказа по тому же основанию.",
+   "citation": "Связывает отклонённый и новый платёж: фиксирует устранение конкретного замечания, ускоряя санкционирование повторной подачи.",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/poyasnenie-pri-vozvrate-platezha/",
+     "title": "Пояснение при возврате"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "poyasnenie-ufk",
+     "otzyv-rasporyazheniya"
+    ],
+    "SEE_ERROR": [
+     "err-otkaz-sanktsionirovaniya",
+     "err-igk",
+     "err-naznachenie"
+    ],
+    "MONETIZED_BY": [
+     "service-vosstanovlenie"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/vozvrat-platezha-kaznachejstvo-chto-delat/",
+     "/blog/naznachenie-platezha-kaznachejstvo/"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-poyasnenie-vozvrat",
+   "scores": {
+    "authority": 14,
+    "coverage": 67,
+    "connectivity": 63,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -794,9 +851,9 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-komplekt-goz",
    "scores": {
-    "authority": 13,
+    "authority": 14,
     "coverage": 67,
-    "connectivity": 60,
+    "connectivity": 63,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -856,57 +913,12 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-otzyv-rasporyazheniya",
    "scores": {
-    "authority": 13,
+    "authority": 14,
     "coverage": 83,
-    "connectivity": 73,
+    "connectivity": 77,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 73
-   }
-  },
-  {
-   "id": "poyasnenie-vozvrat",
-   "type": [
-    "document"
-   ],
-   "name": "Пояснение при возврате",
-   "aliases": [],
-   "summary": "После возврата платежа УФК повторную подачу ускоряет короткое пояснение: реквизиты отклонённого распоряжения, дословное основание отказа, что именно исправлено в новом распоряжении. Такой документ показывает специалисту казначейства, что замечание отработано, и снижает риск повторного отказа по тому же основанию.",
-   "citation": "Связывает отклонённый и новый платёж: фиксирует устранение конкретного замечания, ускоряя санкционирование повторной подачи.",
-   "pages": [
-    {
-     "layer": "document",
-     "url": "/obraztsy/poyasnenie-pri-vozvrate-platezha/",
-     "title": "Пояснение при возврате"
-    }
-   ],
-   "relations": {
-    "RELATED_DOC": [
-     "poyasnenie-ufk",
-     "otzyv-rasporyazheniya"
-    ],
-    "SEE_ERROR": [
-     "err-otkaz-sanktsionirovaniya",
-     "err-igk",
-     "err-naznachenie"
-    ],
-    "MONETIZED_BY": [
-     "service-vosstanovlenie"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/vozvrat-platezha-kaznachejstvo-chto-delat/",
-     "/blog/naznachenie-platezha-kaznachejstvo/"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-poyasnenie-vozvrat",
-   "scores": {
-    "authority": 12,
-    "coverage": 67,
-    "connectivity": 57,
-    "citation": 80,
-    "aiReadiness": 100,
-    "density": 100
+    "density": 77
    }
   },
   {
@@ -988,7 +1000,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-zayavlenie-zakrytie",
    "scores": {
-    "authority": 7,
+    "authority": 6,
     "coverage": 67,
     "connectivity": 37,
     "citation": 80,

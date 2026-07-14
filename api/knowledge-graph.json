@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-07-13",
+ "version": "2026-07-14",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "nodes": [
@@ -21,6 +21,10 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "rkp",
+     "poyasnenie-vozvrat"
+    ],
     "SEE_ERROR": [
      "err-otkaz-sanktsionirovaniya",
      "err-kod-napravleniya",
@@ -35,11 +39,11 @@
      "/blog/naznachenie-platezha-kaznachejstvo/"
     ]
    },
-   "updated": "2026-07-08",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-igk",
    "scores": {
-    "authority": 30,
-    "coverage": 50,
+    "authority": 29,
+    "coverage": 67,
     "connectivity": 100,
     "citation": 80,
     "aiReadiness": 100,
@@ -63,6 +67,11 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "rkp",
+     "otzyv-rasporyazheniya",
+     "poyasnenie-vozvrat"
+    ],
     "SEE_ERROR": [
      "err-igk",
      "err-kod-napravleniya",
@@ -77,11 +86,11 @@
      "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta"
     ]
    },
-   "updated": "2026-07-08",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-naznachenie",
    "scores": {
-    "authority": 43,
-    "coverage": 50,
+    "authority": 41,
+    "coverage": 67,
     "connectivity": 100,
     "citation": 80,
     "aiReadiness": 100,
@@ -105,6 +114,10 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "svedeniya-ssu",
+     "rkp"
+    ],
     "SEE_ERROR": [
      "err-naznachenie",
      "err-svedeniya-otkaz",
@@ -119,11 +132,11 @@
      "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta"
     ]
    },
-   "updated": "2026-07-08",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-kod-napravleniya",
    "scores": {
-    "authority": 44,
-    "coverage": 50,
+    "authority": 42,
+    "coverage": 67,
     "connectivity": 100,
     "citation": 80,
     "aiReadiness": 100,
@@ -162,6 +175,10 @@
      "err-necelevoe",
      "err-svedeniya-otkaz"
     ],
+    "REGULATED_BY": [
+     "law-prikaz-minfina-214n",
+     "law-bk-rf-st-2422224226"
+    ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
     ],
@@ -185,7 +202,7 @@
    "schema_id": "https://kazna-gov.ru/#e-err-otkaz-sanktsionirovaniya",
    "scores": {
     "authority": 100,
-    "coverage": 83,
+    "coverage": 100,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -218,10 +235,18 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "svedeniya-ssu",
+     "poyasnenie-ufk"
+    ],
     "SEE_ERROR": [
      "err-otkaz-sanktsionirovaniya",
      "err-kod-napravleniya",
      "err-razdelnyy-uchet"
+    ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226",
+     "law-koap-rf-st-1514"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -241,8 +266,8 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-err-necelevoe",
    "scores": {
-    "authority": 61,
-    "coverage": 67,
+    "authority": 59,
+    "coverage": 100,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -266,6 +291,10 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "svedeniya-ssu",
+     "poyasnenie-ufk"
+    ],
     "SEE_ERROR": [
      "err-otkaz-sanktsionirovaniya",
      "err-kod-napravleniya",
@@ -280,12 +309,12 @@
      "/blog/kalendar-otchetnosti-podryadchika-ks-2026"
     ]
    },
-   "updated": "2026-07-08",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-svedeniya-otkaz",
    "scores": {
-    "authority": 27,
-    "coverage": 50,
-    "connectivity": 97,
+    "authority": 26,
+    "coverage": 67,
+    "connectivity": 100,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -308,6 +337,11 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "zayavlenie-ls",
+     "komplekt-otkrytie",
+     "pismo-zapros"
+    ],
     "SEE_ERROR": [
      "err-kartochka",
      "err-mchd",
@@ -322,11 +356,11 @@
      "/blog/sroki-rassmotreniya-dokumentov-v-ufk-tablitsa"
     ]
    },
-   "updated": "2026-07-08",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-zatyanulos-otkrytie",
    "scores": {
-    "authority": 64,
-    "coverage": 50,
+    "authority": 61,
+    "coverage": 67,
     "connectivity": 100,
     "citation": 80,
     "aiReadiness": 100,
@@ -350,6 +384,10 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "kartochka-podpisey",
+     "chek-list-dokumenty"
+    ],
     "SEE_ERROR": [
      "err-zatyanulos-otkrytie",
      "err-mchd"
@@ -363,12 +401,12 @@
      "/blog/ne-otkryvaetsya-kaznacheyskiy-schet-prichiny-otkaza-2026"
     ]
    },
-   "updated": "2026-07-08",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-kartochka",
    "scores": {
-    "authority": 27,
-    "coverage": 50,
-    "connectivity": 93,
+    "authority": 26,
+    "coverage": 67,
+    "connectivity": 100,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -391,6 +429,9 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "doverennost-mchd"
+    ],
     "SEE_ERROR": [
      "err-mchd",
      "err-zatyanulos-otkrytie"
@@ -404,12 +445,12 @@
      "/blog/giis-elektronnyy-byudzhet-2026-polnaya-instruktsiya"
     ]
    },
-   "updated": "2026-07-08",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-ecp",
    "scores": {
-    "authority": 27,
-    "coverage": 50,
-    "connectivity": 93,
+    "authority": 26,
+    "coverage": 67,
+    "connectivity": 100,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -432,6 +473,9 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "doverennost-mchd"
+    ],
     "SEE_ERROR": [
      "err-ecp",
      "err-svedeniya-otkaz",
@@ -446,11 +490,11 @@
      "/blog/upolnomochennye-litsa-po-ks-schetu-kto-i-otvetstvennost"
     ]
    },
-   "updated": "2026-07-08",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-mchd",
    "scores": {
-    "authority": 30,
-    "coverage": 50,
+    "authority": 29,
+    "coverage": 67,
     "connectivity": 100,
     "citation": 80,
     "aiReadiness": 100,
@@ -474,6 +518,10 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "prikaz-razdelnyy-uchet",
+     "komplekt-goz"
+    ],
     "SEE_ERROR": [
      "err-necelevoe",
      "err-svedeniya-otkaz"
@@ -487,11 +535,11 @@
      "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid"
     ]
    },
-   "updated": "2026-07-08",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-razdelnyy-uchet",
    "scores": {
-    "authority": 33,
-    "coverage": 50,
+    "authority": 32,
+    "coverage": 67,
     "connectivity": 100,
     "citation": 80,
     "aiReadiness": 100,
@@ -515,6 +563,11 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "komplekt-subsidii",
+     "svedeniya-ssu",
+     "poyasnenie-ufk"
+    ],
     "SEE_ERROR": [
      "err-otkaz-sanktsionirovaniya",
      "err-kod-napravleniya",
@@ -529,12 +582,12 @@
      "/blog/sanktsionirovanie-operatsiy-kaznacheystvom"
     ]
    },
-   "updated": "2026-07-08",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-subsidiya-rashody",
    "scores": {
-    "authority": 20,
-    "coverage": 50,
-    "connectivity": 73,
+    "authority": 19,
+    "coverage": 67,
+    "connectivity": 83,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -557,6 +610,10 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "pismo-zapros",
+     "chek-list-otkrytie"
+    ],
     "SEE_ERROR": [
      "err-zatyanulos-otkrytie",
      "err-kartochka"
@@ -570,12 +627,12 @@
      "/blog/tsepochka-kaznacheyskogo-soprovozhdeniya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-svodnyy-reestr",
    "scores": {
-    "authority": 23,
-    "coverage": 50,
-    "connectivity": 80,
+    "authority": 22,
+    "coverage": 67,
+    "connectivity": 87,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -635,12 +692,15 @@
     ],
     "REQUIRES_DOC": [
      "chek-list-otkrytie"
+    ],
+    "REGULATED_BY": [
+     "law-prikaz-fk-44n"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-zayavlenie-ls",
    "scores": {
-    "authority": 77,
+    "authority": 75,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -684,7 +744,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-zayavlenie-zakrytie",
    "scores": {
-    "authority": 7,
+    "authority": 6,
     "coverage": 67,
     "connectivity": 37,
     "citation": 80,
@@ -740,13 +800,16 @@
      "upolnomochennye",
      "zayavlenie-ls",
      "prikaz-21n"
+    ],
+    "REGULATED_BY": [
+     "law-prikaz-fk-21n"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-kartochka-podpisey",
    "scores": {
-    "authority": 71,
-    "coverage": 83,
+    "authority": 70,
+    "coverage": 100,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -805,13 +868,16 @@
      "kod-tselevyh",
      "zakazchik",
      "tselevye-sredstva"
+    ],
+    "REGULATED_BY": [
+     "law-prikaz-minfina-214n"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-svedeniya-ssu",
    "scores": {
     "authority": 100,
-    "coverage": 83,
+    "coverage": 100,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -855,7 +921,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-poyasnenie-ufk",
    "scores": {
-    "authority": 44,
+    "authority": 45,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -900,9 +966,9 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-poyasnenie-vozvrat",
    "scores": {
-    "authority": 12,
+    "authority": 14,
     "coverage": 67,
-    "connectivity": 57,
+    "connectivity": 63,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -973,7 +1039,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-doverennost-mchd",
    "scores": {
-    "authority": 94,
+    "authority": 95,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -1018,7 +1084,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-chek-list-otkrytie",
    "scores": {
-    "authority": 44,
+    "authority": 43,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -1111,7 +1177,7 @@
    "scores": {
     "authority": 21,
     "coverage": 67,
-    "connectivity": 83,
+    "connectivity": 87,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -1155,9 +1221,9 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-komplekt-goz",
    "scores": {
-    "authority": 13,
+    "authority": 14,
     "coverage": 67,
-    "connectivity": 60,
+    "connectivity": 63,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -1201,7 +1267,7 @@
    "scores": {
     "authority": 19,
     "coverage": 67,
-    "connectivity": 77,
+    "connectivity": 80,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -1285,7 +1351,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-pismo-zapros",
    "scores": {
-    "authority": 36,
+    "authority": 37,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -1328,7 +1394,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-formulirovka-ks",
    "scores": {
-    "authority": 19,
+    "authority": 18,
     "coverage": 67,
     "connectivity": 70,
     "citation": 80,
@@ -1434,7 +1500,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-reestr-dokumentov",
    "scores": {
-    "authority": 46,
+    "authority": 44,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -1496,12 +1562,12 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-otzyv-rasporyazheniya",
    "scores": {
-    "authority": 13,
+    "authority": 14,
     "coverage": 83,
-    "connectivity": 73,
+    "connectivity": 77,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 73
+    "density": 77
    }
   },
   {
@@ -1559,12 +1625,15 @@
     ],
     "REQUIRES_DOC": [
      "otzyv-rasporyazheniya"
+    ],
+    "REGULATED_BY": [
+     "law-prikaz-minfina-214n"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-rkp",
    "scores": {
-    "authority": 67,
+    "authority": 68,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -1603,6 +1672,9 @@
     "REQUIRES_DOC": [
      "zayavlenie-ls"
     ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226"
+    ],
     "MONETIZED_BY": [
      "service-open"
     ],
@@ -1610,12 +1682,12 @@
      "/blog/ks_2025/"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-fk",
    "scores": {
     "authority": 12,
-    "coverage": 67,
-    "connectivity": 57,
+    "coverage": 83,
+    "connectivity": 60,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -1659,6 +1731,9 @@
      "err-zatyanulos-otkrytie",
      "err-otkaz-sanktsionirovaniya"
     ],
+    "REGULATED_BY": [
+     "law-prikaz-fk-21n"
+    ],
     "MONETIZED_BY": [
      "service-open"
     ],
@@ -1667,11 +1742,11 @@
      "/blog/tofk"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-ufk",
    "scores": {
-    "authority": 36,
-    "coverage": 83,
+    "authority": 35,
+    "coverage": 100,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -1710,6 +1785,9 @@
     "SEE_ERROR": [
      "err-zatyanulos-otkrytie"
     ],
+    "REGULATED_BY": [
+     "law-prikaz-fk-21n"
+    ],
     "MONETIZED_BY": [
      "service-open"
     ],
@@ -1717,11 +1795,11 @@
      "/blog/tofk"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-tofk",
    "scores": {
-    "authority": 28,
-    "coverage": 83,
+    "authority": 27,
+    "coverage": 100,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -1753,6 +1831,10 @@
      "giis-eb",
      "fk"
     ],
+    "REGULATED_BY": [
+     "law-prikaz-minfina-214n",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -1760,15 +1842,15 @@
      "/blog/novyy-poryadok-kaznacheyskogo-soprovozhdeniya-s-1-sentyabrya-2026"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-minfin",
    "scores": {
     "authority": 4,
-    "coverage": 50,
-    "connectivity": 27,
+    "coverage": 67,
+    "connectivity": 33,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 53
+    "density": 67
    }
   },
   {
@@ -1803,6 +1885,9 @@
     "SEE_ERROR": [
      "err-ecp"
     ],
+    "REGULATED_BY": [
+     "law-63-fz"
+    ],
     "MONETIZED_BY": [
      "service-open"
     ],
@@ -1810,15 +1895,15 @@
      "/blog/sertifikat-ecp-kaznacheystva"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-fns",
    "scores": {
-    "authority": 9,
-    "coverage": 83,
-    "connectivity": 47,
+    "authority": 8,
+    "coverage": 100,
+    "connectivity": 50,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 93
+    "density": 100
    }
   },
   {
@@ -1868,7 +1953,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-vp-mo",
    "scores": {
-    "authority": 8,
+    "authority": 7,
     "coverage": 100,
     "connectivity": 50,
     "citation": 100,
@@ -1902,6 +1987,9 @@
      "obs",
      "goz"
     ],
+    "REGULATED_BY": [
+     "law-275-fz"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -1910,15 +1998,15 @@
      "/blog/kaznacheyskoe-vs-bankovskoe-soprovozhdenie-otlichiya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-psb",
    "scores": {
-    "authority": 9,
-    "coverage": 50,
-    "connectivity": 40,
+    "authority": 8,
+    "coverage": 67,
+    "connectivity": 43,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 80
+    "density": 87
    }
   },
   {
@@ -1954,6 +2042,9 @@
     "SEE_ERROR": [
      "err-svedeniya-otkaz"
     ],
+    "REGULATED_BY": [
+     "law-44-fz"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -1961,12 +2052,12 @@
      "/blog/kaznacheyskoe-soprovozhdenie-44-fz-2026-polnyy-gid"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-zakazchik",
    "scores": {
     "authority": 11,
-    "coverage": 83,
-    "connectivity": 57,
+    "coverage": 100,
+    "connectivity": 60,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -2045,6 +2136,9 @@
      "subsidiya",
      "zakon-budget"
     ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -2052,15 +2146,15 @@
      "/blog/kaznacheyskoe-soprovozhdenie-munitsipalnyh-kontraktov"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-finorgan",
    "scores": {
     "authority": 4,
-    "coverage": 50,
-    "connectivity": 27,
+    "coverage": 67,
+    "connectivity": 30,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 53
+    "density": 60
    }
   },
   {
@@ -2101,6 +2195,9 @@
      "err-ecp",
      "err-mchd"
     ],
+    "REGULATED_BY": [
+     "law-prikaz-minfina-214n"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -2109,11 +2206,11 @@
      "/blog/giis-elektronnyy-byudzhet-2026-polnaya-instruktsiya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-giis-eb",
    "scores": {
-    "authority": 60,
-    "coverage": 83,
+    "authority": 58,
+    "coverage": 100,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -2151,6 +2248,10 @@
     "SEE_ERROR": [
      "err-igk"
     ],
+    "REGULATED_BY": [
+     "law-44-fz",
+     "law-223-fz"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -2158,15 +2259,15 @@
      "/blog/igk-v-platezhah-kaznacheystva"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-eis",
    "scores": {
-    "authority": 7,
-    "coverage": 67,
-    "connectivity": 40,
+    "authority": 6,
+    "coverage": 83,
+    "connectivity": 47,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 80
+    "density": 93
    }
   },
   {
@@ -2195,6 +2296,10 @@
      "igk",
      "obs"
     ],
+    "REGULATED_BY": [
+     "law-275-fz",
+     "law-44-fz"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -2202,15 +2307,15 @@
      "/blog/ast-goz-elektronnaya-torgovaya-ploshadka"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-ast-goz",
    "scores": {
     "authority": 2,
-    "coverage": 50,
-    "connectivity": 20,
+    "coverage": 67,
+    "connectivity": 27,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 40
+    "density": 53
    }
   },
   {
@@ -2239,6 +2344,9 @@
      "goz",
      "opk"
     ],
+    "REGULATED_BY": [
+     "law-275-fz"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -2246,15 +2354,15 @@
      "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-girbo",
    "scores": {
     "authority": 3,
-    "coverage": 50,
-    "connectivity": 23,
+    "coverage": 67,
+    "connectivity": 27,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 47
+    "density": 53
    }
   },
   {
@@ -2424,16 +2532,20 @@
      "chek-list-otkrytie",
      "formulirovka-ks"
     ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
      "/blog/ks_2025/"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-ks",
    "scores": {
-    "authority": 59,
-    "coverage": 50,
+    "authority": 57,
+    "coverage": 67,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -2470,6 +2582,9 @@
     "SEE_ERROR": [
      "err-otkaz-sanktsionirovaniya"
     ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226"
+    ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
     ],
@@ -2477,12 +2592,12 @@
      "/blog/podvodnye-kamni-kaznacheyskogo-soprovozhdeniya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-kazn-monitoring",
    "scores": {
-    "authority": 21,
-    "coverage": 83,
-    "connectivity": 83,
+    "authority": 20,
+    "coverage": 100,
+    "connectivity": 87,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -2514,6 +2629,9 @@
      "ks",
      "sanktsionirovanie"
     ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -2521,15 +2639,15 @@
      "/blog/kaznacheyskoe-soprovozhdenie-stroitelstvo"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-rasshirennoe-ks",
    "scores": {
-    "authority": 7,
-    "coverage": 50,
-    "connectivity": 33,
+    "authority": 6,
+    "coverage": 67,
+    "connectivity": 37,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 67
+    "density": 73
    }
   },
   {
@@ -2557,6 +2675,10 @@
      "obs",
      "ks"
     ],
+    "REGULATED_BY": [
+     "law-275-fz",
+     "law-44-fz"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -2564,15 +2686,15 @@
      "/blog/kaznacheyskoe-vs-bankovskoe-soprovozhdenie-otlichiya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-bank-soprovozhdenie",
    "scores": {
-    "authority": 7,
-    "coverage": 50,
-    "connectivity": 33,
+    "authority": 6,
+    "coverage": 67,
+    "connectivity": 40,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 67
+    "density": 80
    }
   },
   {
@@ -2601,6 +2723,9 @@
      "ks",
      "tsepochka-ks"
     ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -2608,15 +2733,15 @@
      "/blog/kaznacheyskoe-obespechenie-obyazatelstv"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-koo-obs",
    "scores": {
     "authority": 3,
-    "coverage": 50,
-    "connectivity": 23,
+    "coverage": 67,
+    "connectivity": 27,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 47
+    "density": 53
    }
   },
   {
@@ -2647,17 +2772,21 @@
      "avans",
      "223-fz"
     ],
+    "REGULATED_BY": [
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+     "law-bk-rf-st-2422224226"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-2026-opredeleniya",
      "/blog/kakie-kontrakty-popadayut-pod-kaznachejskoe-soprovozhdenie/"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-porog-ks",
    "scores": {
-    "authority": 19,
-    "coverage": 33,
-    "connectivity": 70,
+    "authority": 18,
+    "coverage": 50,
+    "connectivity": 77,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -2701,6 +2830,11 @@
      "err-zatyanulos-otkrytie",
      "err-svodnyy-reestr"
     ],
+    "REGULATED_BY": [
+     "law-prikaz-fk-21n",
+     "law-prikaz-fk-44n",
+     "law-bk-rf-st-2422224226"
+    ],
     "MONETIZED_BY": [
      "service-open"
     ],
@@ -2709,11 +2843,11 @@
      "/blog/how_to_open/"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-ls-71",
    "scores": {
-    "authority": 85,
-    "coverage": 83,
+    "authority": 82,
+    "coverage": 100,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -2755,7 +2889,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-eks",
    "scores": {
-    "authority": 9,
+    "authority": 8,
     "coverage": 50,
     "connectivity": 40,
     "citation": 100,
@@ -2876,6 +3010,9 @@
      "goz",
      "igk"
     ],
+    "REGULATED_BY": [
+     "law-275-fz"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -2883,12 +3020,12 @@
      "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-obs",
    "scores": {
-    "authority": 21,
-    "coverage": 50,
-    "connectivity": 80,
+    "authority": 20,
+    "coverage": 67,
+    "connectivity": 83,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -2926,6 +3063,9 @@
     "SEE_ERROR": [
      "err-necelevoe"
     ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -2933,11 +3073,11 @@
      "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-tselevye-sredstva",
    "scores": {
-    "authority": 45,
-    "coverage": 83,
+    "authority": 43,
+    "coverage": 100,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -2969,6 +3109,10 @@
      "vypiska-ls",
      "avans"
     ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226",
+     "law-prikaz-minfina-214n"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -2976,15 +3120,15 @@
      "/blog/limit-na-ks-schete-formirovanie-i-kontrol"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-limit-ks",
    "scores": {
-    "authority": 7,
-    "coverage": 50,
-    "connectivity": 33,
+    "authority": 6,
+    "coverage": 67,
+    "connectivity": 40,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 67
+    "density": 80
    }
   },
   {
@@ -3012,6 +3156,10 @@
      "ls-71",
      "rekvizity-ks"
     ],
+    "REGULATED_BY": [
+     "law-prikaz-fk-21n",
+     "law-prikaz-fk-44n"
+    ],
     "MONETIZED_BY": [
      "service-open"
     ],
@@ -3020,15 +3168,15 @@
      "/blog/kody-kaznacheyskogo-soprovozhdeniya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-kod-71",
    "scores": {
-    "authority": 9,
-    "coverage": 50,
-    "connectivity": 37,
+    "authority": 8,
+    "coverage": 67,
+    "connectivity": 43,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 73
+    "density": 87
    }
   },
   {
@@ -3061,6 +3209,10 @@
     "SEE_ERROR": [
      "err-zatyanulos-otkrytie"
     ],
+    "REGULATED_BY": [
+     "law-prikaz-fk-21n",
+     "law-prikaz-fk-44n"
+    ],
     "MONETIZED_BY": [
      "service-reserve"
     ],
@@ -3068,12 +3220,12 @@
      "/blog/how_to_open/"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-rezervirovanie-ls",
    "scores": {
     "authority": 12,
-    "coverage": 83,
-    "connectivity": 53,
+    "coverage": 100,
+    "connectivity": 60,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -3111,6 +3263,10 @@
     "SEE_ERROR": [
      "err-kartochka"
     ],
+    "REGULATED_BY": [
+     "law-prikaz-fk-21n",
+     "law-prikaz-fk-44n"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -3118,15 +3274,15 @@
      "/blog/smena-rukovoditelya-pri-deystvuyushchem-ks-schete"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-pereoformlenie-ls",
    "scores": {
     "authority": 3,
-    "coverage": 83,
-    "connectivity": 33,
+    "coverage": 100,
+    "connectivity": 40,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 67
+    "density": 80
    }
   },
   {
@@ -3304,7 +3460,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-kontrakt-44",
    "scores": {
-    "authority": 37,
+    "authority": 36,
     "coverage": 67,
     "connectivity": 100,
     "citation": 100,
@@ -3355,7 +3511,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-igk",
    "scores": {
-    "authority": 50,
+    "authority": 49,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -3446,7 +3602,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-tsepochka-ks",
    "scores": {
-    "authority": 30,
+    "authority": 29,
     "coverage": 67,
     "connectivity": 100,
     "citation": 100,
@@ -3630,7 +3786,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-reestr-kontraktov",
    "scores": {
-    "authority": 7,
+    "authority": 6,
     "coverage": 67,
     "connectivity": 40,
     "citation": 100,
@@ -3769,7 +3925,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-goz",
    "scores": {
-    "authority": 34,
+    "authority": 33,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -3822,7 +3978,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-razdelnyy-uchet",
    "scores": {
-    "authority": 47,
+    "authority": 45,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -4107,7 +4263,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-subsidiya",
    "scores": {
-    "authority": 23,
+    "authority": 22,
     "coverage": 83,
     "connectivity": 93,
     "citation": 100,
@@ -4206,7 +4362,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-soglashenie-subsidii",
    "scores": {
-    "authority": 22,
+    "authority": 21,
     "coverage": 83,
     "connectivity": 90,
     "citation": 100,
@@ -4346,7 +4502,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-nubp",
    "scores": {
-    "authority": 8,
+    "authority": 7,
     "coverage": 50,
     "connectivity": 37,
     "citation": 100,
@@ -4448,7 +4604,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-naznachenie",
    "scores": {
-    "authority": 23,
+    "authority": 22,
     "coverage": 83,
     "connectivity": 93,
     "citation": 100,
@@ -4493,7 +4649,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-avans",
    "scores": {
-    "authority": 26,
+    "authority": 25,
     "coverage": 50,
     "connectivity": 97,
     "citation": 100,
@@ -4544,7 +4700,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-vozmeshchenie",
    "scores": {
-    "authority": 31,
+    "authority": 30,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -4636,7 +4792,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-vozvrat-avansa",
    "scores": {
-    "authority": 7,
+    "authority": 6,
     "coverage": 50,
     "connectivity": 33,
     "citation": 100,
@@ -4834,7 +4990,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-pribyl-ks",
    "scores": {
-    "authority": 24,
+    "authority": 23,
     "coverage": 67,
     "connectivity": 93,
     "citation": 100,
@@ -4883,7 +5039,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-priostanovlenie",
    "scores": {
-    "authority": 9,
+    "authority": 8,
     "coverage": 83,
     "connectivity": 47,
     "citation": 100,
@@ -4936,7 +5092,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-sanktsionirovanie",
    "scores": {
-    "authority": 91,
+    "authority": 88,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -4987,7 +5143,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-dokumenty-osnovaniya",
    "scores": {
-    "authority": 54,
+    "authority": 52,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -5032,7 +5188,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-sroki-ufk",
    "scores": {
-    "authority": 24,
+    "authority": 23,
     "coverage": 50,
     "connectivity": 87,
     "citation": 100,
@@ -5078,7 +5234,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-doverennost-ufk",
    "scores": {
-    "authority": 7,
+    "authority": 6,
     "coverage": 67,
     "connectivity": 37,
     "citation": 100,
@@ -5125,7 +5281,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-upd-akt",
    "scores": {
-    "authority": 20,
+    "authority": 19,
     "coverage": 67,
     "connectivity": 80,
     "citation": 100,
@@ -5323,7 +5479,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-ecp",
    "scores": {
-    "authority": 44,
+    "authority": 42,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -5472,7 +5628,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-upolnomochennye",
    "scores": {
-    "authority": 30,
+    "authority": 29,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -5519,7 +5675,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-kody-napravleniy",
    "scores": {
-    "authority": 34,
+    "authority": 33,
     "coverage": 67,
     "connectivity": 100,
     "citation": 100,
@@ -5567,7 +5723,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-kody-9xxx",
    "scores": {
-    "authority": 21,
+    "authority": 20,
     "coverage": 67,
     "connectivity": 80,
     "citation": 100,
@@ -5655,7 +5811,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-kod-tselevyh",
    "scores": {
-    "authority": 7,
+    "authority": 6,
     "coverage": 50,
     "connectivity": 33,
     "citation": 100,
@@ -5932,7 +6088,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-kofk",
    "scores": {
-    "authority": 8,
+    "authority": 7,
     "coverage": 67,
     "connectivity": 43,
     "citation": 100,
@@ -5985,7 +6141,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-svodnyy-reestr",
    "scores": {
-    "authority": 27,
+    "authority": 26,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -6314,7 +6470,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-zakon-budget",
    "scores": {
-    "authority": 19,
+    "authority": 18,
     "coverage": 33,
     "connectivity": 67,
     "citation": 100,
@@ -6903,7 +7059,7 @@
    "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-kak-otkryt-schet",
    "scores": {
-    "authority": 8,
+    "authority": 7,
     "coverage": 100,
     "connectivity": 63,
     "citation": 100,
@@ -7022,7 +7178,7 @@
    "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-srok-otkrytiya-scheta",
    "scores": {
-    "authority": 7,
+    "authority": 6,
     "coverage": 100,
     "connectivity": 53,
     "citation": 100,
@@ -8406,6 +8562,9 @@
     "REGULATED_BY": [
      "law-prikaz-fk-21n"
     ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/zakrytie-kaznacheyskogo-scheta-posle-kontrakta"
     ],
@@ -8413,15 +8572,15 @@
      "faq-ostatok-pri-zakrytii"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-nuzhno-li-zakryvat-schet",
    "scores": {
     "authority": 1,
-    "coverage": 83,
-    "connectivity": 27,
+    "coverage": 100,
+    "connectivity": 30,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 53
+    "density": 60
    }
   },
   {
@@ -9034,6 +9193,9 @@
     "REGULATED_BY": [
      "law-prikaz-minfina-214n"
     ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/codes",
      "/blog/izmeneniya-platezhek-kaznachejstvo-2026/"
@@ -9042,15 +9204,15 @@
      "faq-kod-dlya-zarplaty"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-gde-vzyat-kody",
    "scores": {
     "authority": 1,
     "coverage": 100,
-    "connectivity": 30,
+    "connectivity": 33,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 60
+    "density": 67
    }
   },
   {
@@ -11877,6 +12039,9 @@
      "law-275-fz",
      "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
+    "MONETIZED_BY": [
+     "service-start"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kak-rasschitat-summu-avansa-po-goskontraktu",
      "/blog/kaznacheyskoe-soprovozhdenie-44-fz-2026-polnyy-gid"
@@ -11885,15 +12050,15 @@
      "faq-poluchit-avans"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-razmer-avansa",
    "scores": {
     "authority": 1,
-    "coverage": 67,
-    "connectivity": 30,
+    "coverage": 83,
+    "connectivity": 33,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 60
+    "density": 67
    }
   },
   {
@@ -19751,6 +19916,9 @@
      "law-pp-1465",
      "law-275-fz"
     ],
+    "MONETIZED_BY": [
+     "service-start"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/vidy-cen-goz",
      "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid"
@@ -19759,15 +19927,15 @@
      "faq-vyvod-pribyli-goz"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-skolko-pribyli-goz",
    "scores": {
     "authority": 1,
-    "coverage": 67,
-    "connectivity": 23,
+    "coverage": 83,
+    "connectivity": 27,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 47
+    "density": 53
    }
   },
   {
@@ -21090,6 +21258,9 @@
     "SEE_ERROR": [
      "err-subsidiya-rashody"
     ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/autsorsing-kaznacheyskogo-soprovozhdeniya",
      "/blog/soprovozhdenie-goskontraktov-pod-kluch",
@@ -21099,15 +21270,15 @@
      "faq-subsidiya-pod-ks"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-pomoshch-s-subsidiey",
    "scores": {
     "authority": 1,
-    "coverage": 83,
-    "connectivity": 27,
+    "coverage": 100,
+    "connectivity": 30,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 53
+    "density": 60
    }
   },
   {
@@ -21555,6 +21726,9 @@
      "law-bk-rf-st-2422224226",
      "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
+    "MONETIZED_BY": [
+     "service-start"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-2026-opredeleniya",
      "/blog/kakie-kontrakty-popadayut-pod-kaznachejskoe-soprovozhdenie"
@@ -21563,15 +21737,15 @@
      "faq-ks-menyaetsya-kazhdyy-god"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-kto-ustanavlivaet-sluchai-ks",
    "scores": {
     "authority": 3,
-    "coverage": 67,
-    "connectivity": 33,
+    "coverage": 83,
+    "connectivity": 37,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 67
+    "density": 73
    }
   },
   {
@@ -21998,6 +22172,9 @@
      "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
      "law-prikaz-minfina-214n"
     ],
+    "MONETIZED_BY": [
+     "service-start"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-2026-opredeleniya",
      "/blog/ks_2025"
@@ -22006,15 +22183,15 @@
      "faq-bk-242"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-kakoy-zakon-reguliruet-ks",
    "scores": {
     "authority": 1,
-    "coverage": 67,
-    "connectivity": 30,
+    "coverage": 83,
+    "connectivity": 33,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 60
+    "density": 67
    }
   },
   {
@@ -22049,6 +22226,9 @@
     "REGULATED_BY": [
      "law-bk-rf-st-2422224226"
     ],
+    "MONETIZED_BY": [
+     "service-start"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-2026-opredeleniya",
      "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov"
@@ -22057,15 +22237,15 @@
      "faq-prikaz-214n"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-bk-242",
    "scores": {
     "authority": 1,
-    "coverage": 67,
-    "connectivity": 23,
+    "coverage": 83,
+    "connectivity": 27,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 47
+    "density": 53
    }
   },
   {
@@ -22282,6 +22462,9 @@
     "REGULATED_BY": [
      "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/ks_2025",
      "/blog/novyy-poryadok-kaznacheyskogo-soprovozhdeniya-s-1-sentyabrya-2026"
@@ -22290,15 +22473,15 @@
      "faq-ks-vs-bankovskoe"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-gde-sledit-za-izmeneniyami",
    "scores": {
     "authority": 1,
-    "coverage": 67,
-    "connectivity": 23,
+    "coverage": 83,
+    "connectivity": 27,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 47
+    "density": 53
    }
   },
   {
@@ -22688,6 +22871,9 @@
      "law-koap-rf-st-1514",
      "law-koap-rf-st-1537"
     ],
+    "MONETIZED_BY": [
+     "service-vosstanovlenie"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/podvodnye-kamni-kaznacheyskogo-soprovozhdeniya",
      "/blog/kalendar-otchetnosti-podryadchika-ks-2026"
@@ -22696,15 +22882,15 @@
      "faq-narushenie-ks"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-srok-davnosti-ks",
    "scores": {
     "authority": 1,
     "coverage": 100,
-    "connectivity": 33,
+    "connectivity": 37,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 67
+    "density": 73
    }
   },
   {
@@ -22794,6 +22980,9 @@
     "REGULATED_BY": [
      "law-bk-rf-st-2422224226"
     ],
+    "MONETIZED_BY": [
+     "service-start"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
      "/blog/kaznacheyskoe-soprovozhdenie-2026-opredeleniya"
@@ -22802,15 +22991,15 @@
      "faq-plyusy-ks-dlya-podryadchika"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-zachem-gosudarstvu-ks",
    "scores": {
     "authority": 1,
-    "coverage": 67,
-    "connectivity": 23,
+    "coverage": 83,
+    "connectivity": 27,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 47
+    "density": 53
    }
   },
   {
@@ -22895,6 +23084,9 @@
      "kontrakt-44",
      "sanktsionirovanie"
     ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/tseny-na-kaznacheyskoe-soprovozhdenie-2026",
      "/blog/soprovozhdenie-goskontraktov-pod-kluch"
@@ -22903,15 +23095,15 @@
      "faq-sostav-uslugi-soprovozhdeniya"
     ]
    },
-   "updated": "2026-07-13",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-stoimost-soprovozhdeniya",
    "scores": {
     "authority": 5,
-    "coverage": 50,
-    "connectivity": 30,
+    "coverage": 67,
+    "connectivity": 33,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 60
+    "density": 67
    }
   },
   {
@@ -23065,6 +23257,9 @@
     "REGULATED_BY": [
      "law-275-fz"
     ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/tseny-na-kaznacheyskoe-soprovozhdenie-2026",
      "/blog/autsorsing-kaznacheyskogo-soprovozhdeniya"
@@ -23073,15 +23268,15 @@
      "faq-kalkulyator-stoimosti"
     ]
    },
-   "updated": "2026-07-13",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-faktory-tseny-soprovozhdeniya",
    "scores": {
     "authority": 3,
-    "coverage": 67,
-    "connectivity": 30,
+    "coverage": 83,
+    "connectivity": 33,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 60
+    "density": 67
    }
   },
   {
@@ -23115,6 +23310,9 @@
     "REQUIRES_DOC": [
      "doverennost-mchd"
     ],
+    "MONETIZED_BY": [
+     "service-start"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/soprovozhdenie-goskontraktov-pod-kluch"
     ],
@@ -23122,15 +23320,15 @@
      "faq-srok-podklyucheniya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-kak-zakazat-uslugu",
    "scores": {
     "authority": 1,
-    "coverage": 67,
-    "connectivity": 20,
+    "coverage": 83,
+    "connectivity": 23,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 40
+    "density": 47
    }
   },
   {
@@ -23384,6 +23582,9 @@
      "sanktsionirovanie",
      "sroki-ufk"
     ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/soprovozhdenie-goskontraktov-pod-kluch",
      "/blog/autsorsing-kaznacheyskogo-soprovozhdeniya"
@@ -23392,15 +23593,15 @@
      "faq-otraslevoy-opyt"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-garantii",
    "scores": {
     "authority": 1,
-    "coverage": 50,
-    "connectivity": 17,
+    "coverage": 67,
+    "connectivity": 20,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 33
+    "density": 40
    }
   },
   {
@@ -23649,6 +23850,9 @@
     "REGULATED_BY": [
      "law-275-fz"
     ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-stroitelstvo",
      "/blog/kaznacheyskoe-soprovozhdenie-it-goskontraktov",
@@ -23658,15 +23862,15 @@
      "faq-opyt-v-tsifrakh"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-otraslevoy-opyt",
    "scores": {
     "authority": 1,
-    "coverage": 67,
-    "connectivity": 23,
+    "coverage": 83,
+    "connectivity": 27,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 47
+    "density": 53
    }
   },
   {
@@ -23697,6 +23901,9 @@
      "ks",
      "tsepochka-ks"
     ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/keys-ks-restavratsiya-moskva",
      "/blog/soprovozhdenie-goskontraktov-pod-kluch"
@@ -23705,15 +23912,15 @@
      "faq-besplatnaya-diagnostika"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-opyt-v-tsifrakh",
    "scores": {
     "authority": 1,
-    "coverage": 50,
-    "connectivity": 17,
+    "coverage": 67,
+    "connectivity": 20,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 33
+    "density": 40
    }
   },
   {
@@ -23744,6 +23951,9 @@
      "porog-ks",
      "kontrakt-44"
     ],
+    "MONETIZED_BY": [
+     "service-start"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/soprovozhdenie-goskontraktov-pod-kluch",
      "/blog/podvodnye-kamni-kaznacheyskogo-soprovozhdeniya"
@@ -23752,15 +23962,15 @@
      "faq-ip-i-malyy-biznes"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-besplatnaya-diagnostika",
    "scores": {
     "authority": 1,
-    "coverage": 50,
-    "connectivity": 17,
+    "coverage": 67,
+    "connectivity": 20,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 33
+    "density": 40
    }
   },
   {
@@ -23791,6 +24001,9 @@
      "tsepochka-ks",
      "rkp"
     ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/tseny-na-kaznacheyskoe-soprovozhdenie-2026"
     ],
@@ -23798,15 +24011,15 @@
      "faq-tolko-otkrytie-scheta"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-kalkulyator-stoimosti",
    "scores": {
     "authority": 1,
-    "coverage": 50,
-    "connectivity": 17,
+    "coverage": 67,
+    "connectivity": 20,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 33
+    "density": 40
    }
   },
   {
@@ -23953,6 +24166,9 @@
      "law-bk-rf-st-2422224226",
      "law-44-fz"
     ],
+    "MONETIZED_BY": [
+     "service-start"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/ks_2025",
      "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
@@ -23962,15 +24178,15 @@
      "faq-start-novichka"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-ks-prostymi-slovami",
    "scores": {
     "authority": 1,
-    "coverage": 67,
-    "connectivity": 27,
+    "coverage": 83,
+    "connectivity": 30,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 53
+    "density": 60
    }
   },
   {
@@ -24125,6 +24341,9 @@
      "law-44-fz",
      "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
+    "MONETIZED_BY": [
+     "service-start"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-v-dogovore",
      "/blog/podvodnye-kamni-kaznacheyskogo-soprovozhdeniya"
@@ -24133,15 +24352,15 @@
      "faq-gde-uchitsya-ks"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-proverka-do-podpisaniya",
    "scores": {
     "authority": 2,
-    "coverage": 83,
-    "connectivity": 37,
+    "coverage": 100,
+    "connectivity": 40,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 73
+    "density": 80
    }
   },
   {
@@ -24178,6 +24397,9 @@
     "REGULATED_BY": [
      "law-bk-rf-st-2422224226"
     ],
+    "MONETIZED_BY": [
+     "service-start"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
      "/blog/glossariy-terminov-kaznacheyskogo-soprovozhdeniya"
@@ -24186,15 +24408,15 @@
      "faq-ks-prostymi-slovami"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-gde-uchitsya-ks",
    "scores": {
     "authority": 1,
-    "coverage": 83,
-    "connectivity": 23,
+    "coverage": 100,
+    "connectivity": 27,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 47
+    "density": 53
    }
   },
   {
@@ -24247,7 +24469,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-hub-ks",
    "scores": {
-    "authority": 9,
+    "authority": 8,
     "coverage": 83,
     "connectivity": 63,
     "citation": 80,
@@ -24411,7 +24633,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-hub-sankts",
    "scores": {
-    "authority": 9,
+    "authority": 8,
     "coverage": 83,
     "connectivity": 50,
     "citation": 80,
@@ -25911,7 +26133,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-service-start",
    "scores": {
-    "authority": 46,
+    "authority": 56,
     "coverage": 100,
     "connectivity": 100,
     "citation": 80,
@@ -25976,7 +26198,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-service-vosstanovlenie",
    "scores": {
-    "authority": 53,
+    "authority": 52,
     "coverage": 100,
     "connectivity": 100,
     "citation": 80,
@@ -26007,9 +26229,9 @@
    "schema_id": "https://kazna-gov.ru/#e-law-44-fz",
    "sourceUrl": "http://publication.pravo.gov.ru/Document/View/0001201304080023",
    "scores": {
-    "authority": 26,
+    "authority": 30,
     "coverage": 0,
-    "connectivity": 80,
+    "connectivity": 93,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -26038,12 +26260,12 @@
    "schema_id": "https://kazna-gov.ru/#e-law-223-fz",
    "sourceUrl": "https://www.consultant.ru/document/cons_doc_LAW_116964/",
    "scores": {
-    "authority": 2,
+    "authority": 3,
     "coverage": 0,
-    "connectivity": 7,
+    "connectivity": 10,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 13
+    "density": 20
    }
   },
   {
@@ -26069,7 +26291,7 @@
    "schema_id": "https://kazna-gov.ru/#e-law-275-fz",
    "sourceUrl": "https://www.consultant.ru/document/cons_doc_LAW_140175/",
    "scores": {
-    "authority": 55,
+    "authority": 58,
     "coverage": 0,
     "connectivity": 100,
     "citation": 100,
@@ -26102,7 +26324,7 @@
    "scores": {
     "authority": 24,
     "coverage": 0,
-    "connectivity": 73,
+    "connectivity": 77,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -26131,7 +26353,7 @@
    "schema_id": "https://kazna-gov.ru/#e-law-bk-rf-st-2422224226",
    "sourceUrl": "https://www.consultant.ru/document/cons_doc_LAW_19702/",
    "scores": {
-    "authority": 89,
+    "authority": 98,
     "coverage": 0,
     "connectivity": 100,
     "citation": 100,
@@ -26161,7 +26383,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "scores": {
-    "authority": 35,
+    "authority": 37,
     "coverage": 0,
     "connectivity": 100,
     "citation": 100,
@@ -26191,7 +26413,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-law-prikaz-minfina-214n",
    "scores": {
-    "authority": 84,
+    "authority": 88,
     "coverage": 0,
     "connectivity": 100,
     "citation": 100,
@@ -26221,7 +26443,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-law-prikaz-fk-44n",
    "scores": {
-    "authority": 47,
+    "authority": 51,
     "coverage": 0,
     "connectivity": 100,
     "citation": 100,
@@ -26251,9 +26473,9 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-law-prikaz-fk-21n",
    "scores": {
-    "authority": 20,
+    "authority": 26,
     "coverage": 0,
-    "connectivity": 60,
+    "connectivity": 83,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -26344,7 +26566,7 @@
    "scores": {
     "authority": 23,
     "coverage": 0,
-    "connectivity": 70,
+    "connectivity": 73,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -26373,7 +26595,7 @@
    "schema_id": "https://kazna-gov.ru/#e-law-koap-rf-st-1537",
    "sourceUrl": "https://www.consultant.ru/document/cons_doc_LAW_34661/",
    "scores": {
-    "authority": 20,
+    "authority": 19,
     "coverage": 0,
     "connectivity": 60,
     "citation": 100,
@@ -26477,6 +26699,16 @@
  "edges": [
   {
    "from": "err-igk",
+   "to": "rkp",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "err-igk",
+   "to": "poyasnenie-vozvrat",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "err-igk",
    "to": "err-otkaz-sanktsionirovaniya",
    "rel": "SEE_ERROR"
   },
@@ -26497,6 +26729,21 @@
   },
   {
    "from": "err-naznachenie",
+   "to": "rkp",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "err-naznachenie",
+   "to": "otzyv-rasporyazheniya",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "err-naznachenie",
+   "to": "poyasnenie-vozvrat",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "err-naznachenie",
    "to": "err-igk",
    "rel": "SEE_ERROR"
   },
@@ -26514,6 +26761,16 @@
    "from": "err-naznachenie",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
+  },
+  {
+   "from": "err-kod-napravleniya",
+   "to": "svedeniya-ssu",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "err-kod-napravleniya",
+   "to": "rkp",
+   "rel": "REQUIRES_DOC"
   },
   {
    "from": "err-kod-napravleniya",
@@ -26554,11 +26811,31 @@
    "from": "err-otkaz-sanktsionirovaniya",
    "to": "err-svedeniya-otkaz",
    "rel": "SEE_ERROR"
+  },
+  {
+   "from": "err-otkaz-sanktsionirovaniya",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "err-otkaz-sanktsionirovaniya",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "err-otkaz-sanktsionirovaniya",
    "to": "service-vosstanovlenie",
    "rel": "MONETIZED_BY"
+  },
+  {
+   "from": "err-necelevoe",
+   "to": "svedeniya-ssu",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "err-necelevoe",
+   "to": "poyasnenie-ufk",
+   "rel": "REQUIRES_DOC"
   },
   {
    "from": "err-necelevoe",
@@ -26577,8 +26854,28 @@
   },
   {
    "from": "err-necelevoe",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "err-necelevoe",
+   "to": "law-koap-rf-st-1514",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "err-necelevoe",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
+  },
+  {
+   "from": "err-svedeniya-otkaz",
+   "to": "svedeniya-ssu",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "err-svedeniya-otkaz",
+   "to": "poyasnenie-ufk",
+   "rel": "REQUIRES_DOC"
   },
   {
    "from": "err-svedeniya-otkaz",
@@ -26602,6 +26899,21 @@
   },
   {
    "from": "err-zatyanulos-otkrytie",
+   "to": "zayavlenie-ls",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "err-zatyanulos-otkrytie",
+   "to": "komplekt-otkrytie",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "err-zatyanulos-otkrytie",
+   "to": "pismo-zapros",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "err-zatyanulos-otkrytie",
    "to": "err-kartochka",
    "rel": "SEE_ERROR"
   },
@@ -26622,6 +26934,16 @@
   },
   {
    "from": "err-kartochka",
+   "to": "kartochka-podpisey",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "err-kartochka",
+   "to": "chek-list-dokumenty",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "err-kartochka",
    "to": "err-zatyanulos-otkrytie",
    "rel": "SEE_ERROR"
   },
@@ -26637,6 +26959,16 @@
   },
   {
    "from": "err-ecp",
+   "to": "doverennost-mchd",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "err-ecp",
+   "to": "doverennost-mchd",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "err-ecp",
    "to": "err-mchd",
    "rel": "SEE_ERROR"
   },
@@ -26649,6 +26981,16 @@
    "from": "err-ecp",
    "to": "service-open",
    "rel": "MONETIZED_BY"
+  },
+  {
+   "from": "err-mchd",
+   "to": "doverennost-mchd",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "err-mchd",
+   "to": "doverennost-mchd",
+   "rel": "REQUIRES_DOC"
   },
   {
    "from": "err-mchd",
@@ -26669,6 +27011,16 @@
    "from": "err-mchd",
    "to": "service-open",
    "rel": "MONETIZED_BY"
+  },
+  {
+   "from": "err-razdelnyy-uchet",
+   "to": "prikaz-razdelnyy-uchet",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "err-razdelnyy-uchet",
+   "to": "komplekt-goz",
+   "rel": "REQUIRES_DOC"
   },
   {
    "from": "err-razdelnyy-uchet",
@@ -26684,6 +27036,21 @@
    "from": "err-razdelnyy-uchet",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
+  },
+  {
+   "from": "err-subsidiya-rashody",
+   "to": "komplekt-subsidii",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "err-subsidiya-rashody",
+   "to": "svedeniya-ssu",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "err-subsidiya-rashody",
+   "to": "poyasnenie-ufk",
+   "rel": "REQUIRES_DOC"
   },
   {
    "from": "err-subsidiya-rashody",
@@ -26704,6 +27071,16 @@
    "from": "err-subsidiya-rashody",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
+  },
+  {
+   "from": "err-svodnyy-reestr",
+   "to": "pismo-zapros",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "err-svodnyy-reestr",
+   "to": "chek-list-otkrytie",
+   "rel": "REQUIRES_DOC"
   },
   {
    "from": "err-svodnyy-reestr",
@@ -27327,6 +27704,11 @@
   },
   {
    "from": "fk",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "fk",
    "to": "service-open",
    "rel": "MONETIZED_BY"
   },
@@ -27372,6 +27754,11 @@
   },
   {
    "from": "ufk",
+   "to": "law-prikaz-fk-21n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "ufk",
    "to": "service-open",
    "rel": "MONETIZED_BY"
   },
@@ -27407,6 +27794,11 @@
   },
   {
    "from": "tofk",
+   "to": "law-prikaz-fk-21n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "tofk",
    "to": "service-open",
    "rel": "MONETIZED_BY"
   },
@@ -27424,6 +27816,16 @@
    "from": "minfin",
    "to": "fk",
    "rel": "RELATED_TERM"
+  },
+  {
+   "from": "minfin",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "minfin",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "minfin",
@@ -27454,6 +27856,11 @@
    "from": "fns",
    "to": "err-ecp",
    "rel": "SEE_ERROR"
+  },
+  {
+   "from": "fns",
+   "to": "law-63-fz",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "fns",
@@ -27517,6 +27924,11 @@
   },
   {
    "from": "psb",
+   "to": "law-275-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "psb",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -27549,6 +27961,11 @@
    "from": "zakazchik",
    "to": "err-svedeniya-otkaz",
    "rel": "SEE_ERROR"
+  },
+  {
+   "from": "zakazchik",
+   "to": "law-44-fz",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "zakazchik",
@@ -27594,6 +28011,11 @@
    "from": "finorgan",
    "to": "zakon-budget",
    "rel": "RELATED_TERM"
+  },
+  {
+   "from": "finorgan",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "finorgan",
@@ -27647,6 +28069,11 @@
   },
   {
    "from": "giis-eb",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "giis-eb",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -27677,6 +28104,16 @@
   },
   {
    "from": "eis",
+   "to": "law-44-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "eis",
+   "to": "law-223-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "eis",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -27697,6 +28134,16 @@
   },
   {
    "from": "ast-goz",
+   "to": "law-275-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "ast-goz",
+   "to": "law-44-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "ast-goz",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -27714,6 +28161,11 @@
    "from": "girbo",
    "to": "opk",
    "rel": "RELATED_TERM"
+  },
+  {
+   "from": "girbo",
+   "to": "law-275-fz",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "girbo",
@@ -27816,6 +28268,16 @@
    "rel": "REQUIRES_DOC"
   },
   {
+   "from": "ks",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "ks",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+   "rel": "REGULATED_BY"
+  },
+  {
    "from": "kazn-monitoring",
    "to": "sanktsionirovanie",
    "rel": "RELATED_TERM"
@@ -27842,6 +28304,11 @@
   },
   {
    "from": "kazn-monitoring",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "kazn-monitoring",
    "to": "service-vosstanovlenie",
    "rel": "MONETIZED_BY"
   },
@@ -27859,6 +28326,11 @@
    "from": "rasshirennoe-ks",
    "to": "sanktsionirovanie",
    "rel": "RELATED_TERM"
+  },
+  {
+   "from": "rasshirennoe-ks",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "rasshirennoe-ks",
@@ -27882,6 +28354,16 @@
   },
   {
    "from": "bank-soprovozhdenie",
+   "to": "law-275-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "bank-soprovozhdenie",
+   "to": "law-44-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "bank-soprovozhdenie",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -27899,6 +28381,11 @@
    "from": "koo-obs",
    "to": "tsepochka-ks",
    "rel": "RELATED_TERM"
+  },
+  {
+   "from": "koo-obs",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "koo-obs",
@@ -27924,6 +28411,16 @@
    "from": "porog-ks",
    "to": "223-fz",
    "rel": "RELATED_TERM"
+  },
+  {
+   "from": "porog-ks",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "porog-ks",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "ls-71",
@@ -27964,6 +28461,21 @@
    "from": "ls-71",
    "to": "err-svodnyy-reestr",
    "rel": "SEE_ERROR"
+  },
+  {
+   "from": "ls-71",
+   "to": "law-prikaz-fk-21n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "ls-71",
+   "to": "law-prikaz-fk-44n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "ls-71",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "ls-71",
@@ -28047,6 +28559,11 @@
   },
   {
    "from": "obs",
+   "to": "law-275-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "obs",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -28082,6 +28599,11 @@
   },
   {
    "from": "tselevye-sredstva",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "tselevye-sredstva",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -28102,6 +28624,16 @@
   },
   {
    "from": "limit-ks",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "limit-ks",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "limit-ks",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -28114,6 +28646,16 @@
    "from": "kod-71",
    "to": "rekvizity-ks",
    "rel": "RELATED_TERM"
+  },
+  {
+   "from": "kod-71",
+   "to": "law-prikaz-fk-21n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "kod-71",
+   "to": "law-prikaz-fk-44n",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "kod-71",
@@ -28139,6 +28681,16 @@
    "from": "rezervirovanie-ls",
    "to": "err-zatyanulos-otkrytie",
    "rel": "SEE_ERROR"
+  },
+  {
+   "from": "rezervirovanie-ls",
+   "to": "law-prikaz-fk-21n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "rezervirovanie-ls",
+   "to": "law-prikaz-fk-44n",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "rezervirovanie-ls",
@@ -28174,6 +28726,16 @@
    "from": "pereoformlenie-ls",
    "to": "err-kartochka",
    "rel": "SEE_ERROR"
+  },
+  {
+   "from": "pereoformlenie-ls",
+   "to": "law-prikaz-fk-21n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "pereoformlenie-ls",
+   "to": "law-prikaz-fk-44n",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "pereoformlenie-ls",
@@ -28972,6 +29534,11 @@
   },
   {
    "from": "rkp",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "rkp",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -29482,6 +30049,11 @@
   },
   {
    "from": "zayavlenie-ls",
+   "to": "law-prikaz-fk-44n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "zayavlenie-ls",
    "to": "service-open",
    "rel": "MONETIZED_BY"
   },
@@ -29504,6 +30076,11 @@
    "from": "kartochka-podpisey",
    "to": "err-kartochka",
    "rel": "SEE_ERROR"
+  },
+  {
+   "from": "kartochka-podpisey",
+   "to": "law-prikaz-fk-21n",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "kartochka-podpisey",
@@ -29534,6 +30111,11 @@
    "from": "svedeniya-ssu",
    "to": "err-svedeniya-otkaz",
    "rel": "SEE_ERROR"
+  },
+  {
+   "from": "svedeniya-ssu",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "svedeniya-ssu",
@@ -31696,6 +32278,11 @@
    "rel": "REGULATED_BY"
   },
   {
+   "from": "faq-nuzhno-li-zakryvat-schet",
+   "to": "service-conduct",
+   "rel": "MONETIZED_BY"
+  },
+  {
    "from": "faq-ostatok-pri-zakrytii",
    "to": "neisp-ostatok",
    "rel": "USES_TERM"
@@ -32089,6 +32676,11 @@
    "from": "faq-gde-vzyat-kody",
    "to": "law-prikaz-minfina-214n",
    "rel": "REGULATED_BY"
+  },
+  {
+   "from": "faq-gde-vzyat-kody",
+   "to": "service-conduct",
+   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-kod-dlya-zarplaty",
@@ -33949,6 +34541,11 @@
    "from": "faq-razmer-avansa",
    "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
+  },
+  {
+   "from": "faq-razmer-avansa",
+   "to": "service-start",
+   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-poluchit-avans",
@@ -39221,6 +39818,11 @@
    "rel": "REGULATED_BY"
   },
   {
+   "from": "faq-skolko-pribyli-goz",
+   "to": "service-start",
+   "rel": "MONETIZED_BY"
+  },
+  {
    "from": "faq-otchetnost-goz-girbo",
    "to": "girbo",
    "rel": "USES_TERM"
@@ -40116,6 +40718,11 @@
    "rel": "SEE_ERROR"
   },
   {
+   "from": "faq-pomoshch-s-subsidiey",
+   "to": "service-conduct",
+   "rel": "MONETIZED_BY"
+  },
+  {
    "from": "faq-otchetnost-pri-ks",
    "to": "svedeniya-ssu",
    "rel": "USES_TERM"
@@ -40436,6 +41043,11 @@
    "rel": "REGULATED_BY"
   },
   {
+   "from": "faq-kto-ustanavlivaet-sluchai-ks",
+   "to": "service-start",
+   "rel": "MONETIZED_BY"
+  },
+  {
    "from": "faq-ks-menyaetsya-kazhdyy-god",
    "to": "zakon-budget",
    "rel": "USES_TERM"
@@ -40721,6 +41333,11 @@
    "rel": "REGULATED_BY"
   },
   {
+   "from": "faq-kakoy-zakon-reguliruet-ks",
+   "to": "service-start",
+   "rel": "MONETIZED_BY"
+  },
+  {
    "from": "faq-bk-242",
    "to": "bk-rf",
    "rel": "USES_TERM"
@@ -40744,6 +41361,11 @@
    "from": "faq-bk-242",
    "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
+  },
+  {
+   "from": "faq-bk-242",
+   "to": "service-start",
+   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-prikaz-214n",
@@ -40899,6 +41521,11 @@
    "from": "faq-gde-sledit-za-izmeneniyami",
    "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
+  },
+  {
+   "from": "faq-gde-sledit-za-izmeneniyami",
+   "to": "service-conduct",
+   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-ks-vs-bankovskoe",
@@ -41186,6 +41813,11 @@
    "rel": "REGULATED_BY"
   },
   {
+   "from": "faq-srok-davnosti-ks",
+   "to": "service-vosstanovlenie",
+   "rel": "MONETIZED_BY"
+  },
+  {
    "from": "faq-ks-eto-nadolgo",
    "to": "ks",
    "rel": "USES_TERM"
@@ -41246,6 +41878,11 @@
    "rel": "REGULATED_BY"
   },
   {
+   "from": "faq-zachem-gosudarstvu-ks",
+   "to": "service-start",
+   "rel": "MONETIZED_BY"
+  },
+  {
    "from": "faq-plyusy-ks-dlya-podryadchika",
    "to": "avans",
    "rel": "USES_TERM"
@@ -41289,6 +41926,11 @@
    "from": "faq-stoimost-soprovozhdeniya",
    "to": "sanktsionirovanie",
    "rel": "USES_TERM"
+  },
+  {
+   "from": "faq-stoimost-soprovozhdeniya",
+   "to": "service-conduct",
+   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-sostav-uslugi-soprovozhdeniya",
@@ -41401,6 +42043,11 @@
    "rel": "REGULATED_BY"
   },
   {
+   "from": "faq-faktory-tseny-soprovozhdeniya",
+   "to": "service-conduct",
+   "rel": "MONETIZED_BY"
+  },
+  {
    "from": "faq-kak-zakazat-uslugu",
    "to": "ks",
    "rel": "USES_TERM"
@@ -41419,6 +42066,11 @@
    "from": "faq-kak-zakazat-uslugu",
    "to": "doverennost-mchd",
    "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "faq-kak-zakazat-uslugu",
+   "to": "service-start",
+   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-srok-podklyucheniya",
@@ -41581,6 +42233,11 @@
    "rel": "USES_TERM"
   },
   {
+   "from": "faq-garantii",
+   "to": "service-conduct",
+   "rel": "MONETIZED_BY"
+  },
+  {
    "from": "faq-vygoda-autsorsinga",
    "to": "ks",
    "rel": "USES_TERM"
@@ -41716,6 +42373,11 @@
    "rel": "REGULATED_BY"
   },
   {
+   "from": "faq-otraslevoy-opyt",
+   "to": "service-conduct",
+   "rel": "MONETIZED_BY"
+  },
+  {
    "from": "faq-opyt-v-tsifrakh",
    "to": "kontrakt-44",
    "rel": "USES_TERM"
@@ -41729,6 +42391,11 @@
    "from": "faq-opyt-v-tsifrakh",
    "to": "tsepochka-ks",
    "rel": "USES_TERM"
+  },
+  {
+   "from": "faq-opyt-v-tsifrakh",
+   "to": "service-conduct",
+   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-besplatnaya-diagnostika",
@@ -41746,6 +42413,11 @@
    "rel": "USES_TERM"
   },
   {
+   "from": "faq-besplatnaya-diagnostika",
+   "to": "service-start",
+   "rel": "MONETIZED_BY"
+  },
+  {
    "from": "faq-kalkulyator-stoimosti",
    "to": "ks",
    "rel": "USES_TERM"
@@ -41759,6 +42431,11 @@
    "from": "faq-kalkulyator-stoimosti",
    "to": "rkp",
    "rel": "USES_TERM"
+  },
+  {
+   "from": "faq-kalkulyator-stoimosti",
+   "to": "service-conduct",
+   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-tolko-otkrytie-scheta",
@@ -41854,6 +42531,11 @@
    "from": "faq-ks-prostymi-slovami",
    "to": "law-44-fz",
    "rel": "REGULATED_BY"
+  },
+  {
+   "from": "faq-ks-prostymi-slovami",
+   "to": "service-start",
+   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-start-novichka",
@@ -41971,6 +42653,11 @@
    "rel": "REGULATED_BY"
   },
   {
+   "from": "faq-proverka-do-podpisaniya",
+   "to": "service-start",
+   "rel": "MONETIZED_BY"
+  },
+  {
    "from": "faq-gde-uchitsya-ks",
    "to": "ks",
    "rel": "USES_TERM"
@@ -41994,6 +42681,11 @@
    "from": "faq-gde-uchitsya-ks",
    "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
+  },
+  {
+   "from": "faq-gde-uchitsya-ks",
+   "to": "service-start",
+   "rel": "MONETIZED_BY"
   },
   {
    "from": "hub-ks",

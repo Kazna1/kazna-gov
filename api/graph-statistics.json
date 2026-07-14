@@ -1,10 +1,10 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-07-13",
+ "version": "2026-07-14",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "nodes": 487,
- "edges": 4093,
+ "edges": 4187,
  "byType": {
   "error": 13,
   "document": 19,
@@ -16,12 +16,12 @@
   "law": 16
  },
  "relTypes": {
+  "REQUIRES_DOC": 490,
   "SEE_ERROR": 377,
-  "MONETIZED_BY": 434,
+  "MONETIZED_BY": 456,
+  "REGULATED_BY": 479,
   "RELATED_DOC": 55,
   "RELATED_TERM": 401,
-  "REQUIRES_DOC": 463,
-  "REGULATED_BY": 434,
   "USES_TERM": 1285,
   "DIAGNOSED_BY": 24,
   "RELATED_HUB": 28,
@@ -36,11 +36,11 @@
  "topAuthority": [
   {
    "id": "service-conduct",
-   "in": 274
+   "in": 284
   },
   {
    "id": "svedeniya-ssu",
-   "in": 101
+   "in": 105
   },
   {
    "id": "err-otkaz-sanktsionirovaniya",
@@ -51,36 +51,36 @@
    "in": 95
   },
   {
+   "id": "law-bk-rf-st-2422224226",
+   "in": 93
+  },
+  {
    "id": "doverennost-mchd",
-   "in": 86
+   "in": 90
   },
   {
    "id": "sanktsionirovanie",
    "in": 83
   },
   {
-   "id": "law-bk-rf-st-2422224226",
-   "in": 81
+   "id": "law-prikaz-minfina-214n",
+   "in": 83
   },
   {
    "id": "ls-71",
    "in": 78
   },
   {
-   "id": "law-prikaz-minfina-214n",
-   "in": 77
-  },
-  {
    "id": "zayavlenie-ls",
-   "in": 70
+   "in": 71
   },
   {
    "id": "kartochka-podpisey",
-   "in": 65
+   "in": 66
   },
   {
    "id": "rkp",
-   "in": 61
+   "in": 64
   },
   {
    "id": "err-zatyanulos-otkrytie",

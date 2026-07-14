@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-07-13",
+ "version": "2026-07-14",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "count": 13,
@@ -37,6 +37,10 @@
      "err-necelevoe",
      "err-svedeniya-otkaz"
     ],
+    "REGULATED_BY": [
+     "law-prikaz-minfina-214n",
+     "law-bk-rf-st-2422224226"
+    ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
     ],
@@ -60,7 +64,7 @@
    "schema_id": "https://kazna-gov.ru/#e-err-otkaz-sanktsionirovaniya",
    "scores": {
     "authority": 100,
-    "coverage": 83,
+    "coverage": 100,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -84,6 +88,11 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "zayavlenie-ls",
+     "komplekt-otkrytie",
+     "pismo-zapros"
+    ],
     "SEE_ERROR": [
      "err-kartochka",
      "err-mchd",
@@ -98,11 +107,11 @@
      "/blog/sroki-rassmotreniya-dokumentov-v-ufk-tablitsa"
     ]
    },
-   "updated": "2026-07-08",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-zatyanulos-otkrytie",
    "scores": {
-    "authority": 64,
-    "coverage": 50,
+    "authority": 61,
+    "coverage": 67,
     "connectivity": 100,
     "citation": 80,
     "aiReadiness": 100,
@@ -135,10 +144,18 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "svedeniya-ssu",
+     "poyasnenie-ufk"
+    ],
     "SEE_ERROR": [
      "err-otkaz-sanktsionirovaniya",
      "err-kod-napravleniya",
      "err-razdelnyy-uchet"
+    ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226",
+     "law-koap-rf-st-1514"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -158,8 +175,8 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-err-necelevoe",
    "scores": {
-    "authority": 61,
-    "coverage": 67,
+    "authority": 59,
+    "coverage": 100,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -183,6 +200,10 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "svedeniya-ssu",
+     "rkp"
+    ],
     "SEE_ERROR": [
      "err-naznachenie",
      "err-svedeniya-otkaz",
@@ -197,11 +218,11 @@
      "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta"
     ]
    },
-   "updated": "2026-07-08",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-kod-napravleniya",
    "scores": {
-    "authority": 44,
-    "coverage": 50,
+    "authority": 42,
+    "coverage": 67,
     "connectivity": 100,
     "citation": 80,
     "aiReadiness": 100,
@@ -225,6 +246,11 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "rkp",
+     "otzyv-rasporyazheniya",
+     "poyasnenie-vozvrat"
+    ],
     "SEE_ERROR": [
      "err-igk",
      "err-kod-napravleniya",
@@ -239,11 +265,11 @@
      "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta"
     ]
    },
-   "updated": "2026-07-08",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-naznachenie",
    "scores": {
-    "authority": 43,
-    "coverage": 50,
+    "authority": 41,
+    "coverage": 67,
     "connectivity": 100,
     "citation": 80,
     "aiReadiness": 100,
@@ -267,6 +293,10 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "prikaz-razdelnyy-uchet",
+     "komplekt-goz"
+    ],
     "SEE_ERROR": [
      "err-necelevoe",
      "err-svedeniya-otkaz"
@@ -280,11 +310,11 @@
      "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid"
     ]
    },
-   "updated": "2026-07-08",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-razdelnyy-uchet",
    "scores": {
-    "authority": 33,
-    "coverage": 50,
+    "authority": 32,
+    "coverage": 67,
     "connectivity": 100,
     "citation": 80,
     "aiReadiness": 100,
@@ -308,6 +338,10 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "rkp",
+     "poyasnenie-vozvrat"
+    ],
     "SEE_ERROR": [
      "err-otkaz-sanktsionirovaniya",
      "err-kod-napravleniya",
@@ -322,11 +356,11 @@
      "/blog/naznachenie-platezha-kaznachejstvo/"
     ]
    },
-   "updated": "2026-07-08",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-igk",
    "scores": {
-    "authority": 30,
-    "coverage": 50,
+    "authority": 29,
+    "coverage": 67,
     "connectivity": 100,
     "citation": 80,
     "aiReadiness": 100,
@@ -350,6 +384,9 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "doverennost-mchd"
+    ],
     "SEE_ERROR": [
      "err-ecp",
      "err-svedeniya-otkaz",
@@ -364,11 +401,11 @@
      "/blog/upolnomochennye-litsa-po-ks-schetu-kto-i-otvetstvennost"
     ]
    },
-   "updated": "2026-07-08",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-mchd",
    "scores": {
-    "authority": 30,
-    "coverage": 50,
+    "authority": 29,
+    "coverage": 67,
     "connectivity": 100,
     "citation": 80,
     "aiReadiness": 100,
@@ -392,6 +429,10 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "svedeniya-ssu",
+     "poyasnenie-ufk"
+    ],
     "SEE_ERROR": [
      "err-otkaz-sanktsionirovaniya",
      "err-kod-napravleniya",
@@ -406,12 +447,12 @@
      "/blog/kalendar-otchetnosti-podryadchika-ks-2026"
     ]
    },
-   "updated": "2026-07-08",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-svedeniya-otkaz",
    "scores": {
-    "authority": 27,
-    "coverage": 50,
-    "connectivity": 97,
+    "authority": 26,
+    "coverage": 67,
+    "connectivity": 100,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -434,6 +475,10 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "kartochka-podpisey",
+     "chek-list-dokumenty"
+    ],
     "SEE_ERROR": [
      "err-zatyanulos-otkrytie",
      "err-mchd"
@@ -447,12 +492,12 @@
      "/blog/ne-otkryvaetsya-kaznacheyskiy-schet-prichiny-otkaza-2026"
     ]
    },
-   "updated": "2026-07-08",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-kartochka",
    "scores": {
-    "authority": 27,
-    "coverage": 50,
-    "connectivity": 93,
+    "authority": 26,
+    "coverage": 67,
+    "connectivity": 100,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -475,6 +520,9 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "doverennost-mchd"
+    ],
     "SEE_ERROR": [
      "err-mchd",
      "err-zatyanulos-otkrytie"
@@ -488,12 +536,12 @@
      "/blog/giis-elektronnyy-byudzhet-2026-polnaya-instruktsiya"
     ]
    },
-   "updated": "2026-07-08",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-ecp",
    "scores": {
-    "authority": 27,
-    "coverage": 50,
-    "connectivity": 93,
+    "authority": 26,
+    "coverage": 67,
+    "connectivity": 100,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -516,6 +564,10 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "pismo-zapros",
+     "chek-list-otkrytie"
+    ],
     "SEE_ERROR": [
      "err-zatyanulos-otkrytie",
      "err-kartochka"
@@ -529,12 +581,12 @@
      "/blog/tsepochka-kaznacheyskogo-soprovozhdeniya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-svodnyy-reestr",
    "scores": {
-    "authority": 23,
-    "coverage": 50,
-    "connectivity": 80,
+    "authority": 22,
+    "coverage": 67,
+    "connectivity": 87,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -557,6 +609,11 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "komplekt-subsidii",
+     "svedeniya-ssu",
+     "poyasnenie-ufk"
+    ],
     "SEE_ERROR": [
      "err-otkaz-sanktsionirovaniya",
      "err-kod-napravleniya",
@@ -571,12 +628,12 @@
      "/blog/sanktsionirovanie-operatsiy-kaznacheystvom"
     ]
    },
-   "updated": "2026-07-08",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-subsidiya-rashody",
    "scores": {
-    "authority": 20,
-    "coverage": 50,
-    "connectivity": 73,
+    "authority": 19,
+    "coverage": 67,
+    "connectivity": 83,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100

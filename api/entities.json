@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-07-13",
+ "version": "2026-07-14",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "count": 487,
@@ -126,13 +126,16 @@
      "kod-tselevyh",
      "zakazchik",
      "tselevye-sredstva"
+    ],
+    "REGULATED_BY": [
+     "law-prikaz-minfina-214n"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-svedeniya-ssu",
    "scores": {
     "authority": 100,
-    "coverage": 83,
+    "coverage": 100,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -171,6 +174,10 @@
      "err-necelevoe",
      "err-svedeniya-otkaz"
     ],
+    "REGULATED_BY": [
+     "law-prikaz-minfina-214n",
+     "law-bk-rf-st-2422224226"
+    ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
     ],
@@ -194,7 +201,7 @@
    "schema_id": "https://kazna-gov.ru/#e-err-otkaz-sanktsionirovaniya",
    "scores": {
     "authority": 100,
-    "coverage": 83,
+    "coverage": 100,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -269,6 +276,37 @@
    }
   },
   {
+   "id": "law-bk-rf-st-2422224226",
+   "type": [
+    "law"
+   ],
+   "name": "БК РФ, ст. 242.22–242.26",
+   "aliases": [
+    "БК РФ, ст. 242.22–242.26 — казначейское сопровождение"
+   ],
+   "summary": "БК РФ, ст. 242.22–242.26 — казначейское сопровождение",
+   "citation": "БК РФ, ст. 242.22–242.26 — казначейское сопровождение",
+   "pages": [
+    {
+     "layer": "law",
+     "url": "/zakonodatelstvo/",
+     "title": "БК РФ, ст. 242.22–242.26 — казначейское сопровождение"
+    }
+   ],
+   "relations": {},
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-law-bk-rf-st-2422224226",
+   "sourceUrl": "https://www.consultant.ru/document/cons_doc_LAW_19702/",
+   "scores": {
+    "authority": 98,
+    "coverage": 0,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
    "id": "doverennost-mchd",
    "type": [
     "document",
@@ -333,7 +371,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-doverennost-mchd",
    "scores": {
-    "authority": 94,
+    "authority": 95,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -386,7 +424,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-sanktsionirovanie",
    "scores": {
-    "authority": 91,
+    "authority": 88,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -395,29 +433,28 @@
    }
   },
   {
-   "id": "law-bk-rf-st-2422224226",
+   "id": "law-prikaz-minfina-214n",
    "type": [
     "law"
    ],
-   "name": "БК РФ, ст. 242.22–242.26",
+   "name": "Приказ Минфина № 214н",
    "aliases": [
-    "БК РФ, ст. 242.22–242.26 — казначейское сопровождение"
+    "Приказ Минфина № 214н — порядок санкционирования (с 01.09.2026 — новый порядок)"
    ],
-   "summary": "БК РФ, ст. 242.22–242.26 — казначейское сопровождение",
-   "citation": "БК РФ, ст. 242.22–242.26 — казначейское сопровождение",
+   "summary": "Приказ Минфина № 214н — порядок санкционирования (с 01.09.2026 — новый порядок)",
+   "citation": "Приказ Минфина № 214н — порядок санкционирования (с 01.09.2026 — новый порядок)",
    "pages": [
     {
      "layer": "law",
      "url": "/zakonodatelstvo/",
-     "title": "БК РФ, ст. 242.22–242.26 — казначейское сопровождение"
+     "title": "Приказ Минфина № 214н — порядок санкционирования (с 01.09.2026 — новый порядок)"
     }
    ],
    "relations": {},
    "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-bk-rf-st-2422224226",
-   "sourceUrl": "https://www.consultant.ru/document/cons_doc_LAW_19702/",
+   "schema_id": "https://kazna-gov.ru/#e-law-prikaz-minfina-214n",
    "scores": {
-    "authority": 89,
+    "authority": 88,
     "coverage": 0,
     "connectivity": 100,
     "citation": 100,
@@ -463,6 +500,11 @@
      "err-zatyanulos-otkrytie",
      "err-svodnyy-reestr"
     ],
+    "REGULATED_BY": [
+     "law-prikaz-fk-21n",
+     "law-prikaz-fk-44n",
+     "law-bk-rf-st-2422224226"
+    ],
     "MONETIZED_BY": [
      "service-open"
     ],
@@ -471,41 +513,11 @@
      "/blog/how_to_open/"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-ls-71",
    "scores": {
-    "authority": 85,
-    "coverage": 83,
-    "connectivity": 100,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "law-prikaz-minfina-214n",
-   "type": [
-    "law"
-   ],
-   "name": "Приказ Минфина № 214н",
-   "aliases": [
-    "Приказ Минфина № 214н — порядок санкционирования (с 01.09.2026 — новый порядок)"
-   ],
-   "summary": "Приказ Минфина № 214н — порядок санкционирования (с 01.09.2026 — новый порядок)",
-   "citation": "Приказ Минфина № 214н — порядок санкционирования (с 01.09.2026 — новый порядок)",
-   "pages": [
-    {
-     "layer": "law",
-     "url": "/zakonodatelstvo/",
-     "title": "Приказ Минфина № 214н — порядок санкционирования (с 01.09.2026 — новый порядок)"
-    }
-   ],
-   "relations": {},
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-prikaz-minfina-214n",
-   "scores": {
-    "authority": 84,
-    "coverage": 0,
+    "authority": 82,
+    "coverage": 100,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -566,12 +578,15 @@
     ],
     "REQUIRES_DOC": [
      "chek-list-otkrytie"
+    ],
+    "REGULATED_BY": [
+     "law-prikaz-fk-44n"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-zayavlenie-ls",
    "scores": {
-    "authority": 77,
+    "authority": 75,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -627,13 +642,16 @@
      "upolnomochennye",
      "zayavlenie-ls",
      "prikaz-21n"
+    ],
+    "REGULATED_BY": [
+     "law-prikaz-fk-21n"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-kartochka-podpisey",
    "scores": {
-    "authority": 71,
-    "coverage": 83,
+    "authority": 70,
+    "coverage": 100,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -695,12 +713,15 @@
     ],
     "REQUIRES_DOC": [
      "otzyv-rasporyazheniya"
+    ],
+    "REGULATED_BY": [
+     "law-prikaz-minfina-214n"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-rkp",
    "scores": {
-    "authority": 67,
+    "authority": 68,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -725,6 +746,11 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "zayavlenie-ls",
+     "komplekt-otkrytie",
+     "pismo-zapros"
+    ],
     "SEE_ERROR": [
      "err-kartochka",
      "err-mchd",
@@ -739,11 +765,11 @@
      "/blog/sroki-rassmotreniya-dokumentov-v-ufk-tablitsa"
     ]
    },
-   "updated": "2026-07-08",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-zatyanulos-otkrytie",
    "scores": {
-    "authority": 64,
-    "coverage": 50,
+    "authority": 61,
+    "coverage": 67,
     "connectivity": 100,
     "citation": 80,
     "aiReadiness": 100,
@@ -776,10 +802,18 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "svedeniya-ssu",
+     "poyasnenie-ufk"
+    ],
     "SEE_ERROR": [
      "err-otkaz-sanktsionirovaniya",
      "err-kod-napravleniya",
      "err-razdelnyy-uchet"
+    ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226",
+     "law-koap-rf-st-1514"
     ],
     "MONETIZED_BY": [
      "service-conduct"
@@ -799,8 +833,8 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-err-necelevoe",
    "scores": {
-    "authority": 61,
-    "coverage": 67,
+    "authority": 59,
+    "coverage": 100,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -845,6 +879,9 @@
      "err-ecp",
      "err-mchd"
     ],
+    "REGULATED_BY": [
+     "law-prikaz-minfina-214n"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -853,11 +890,42 @@
      "/blog/giis-elektronnyy-byudzhet-2026-polnaya-instruktsiya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-giis-eb",
    "scores": {
-    "authority": 60,
-    "coverage": 83,
+    "authority": 58,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "law-275-fz",
+   "type": [
+    "law"
+   ],
+   "name": "275-ФЗ",
+   "aliases": [
+    "275-ФЗ — гособоронзаказ"
+   ],
+   "summary": "275-ФЗ — гособоронзаказ",
+   "citation": "275-ФЗ — гособоронзаказ",
+   "pages": [
+    {
+     "layer": "law",
+     "url": "/zakonodatelstvo/",
+     "title": "275-ФЗ — гособоронзаказ"
+    }
+   ],
+   "relations": {},
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-law-275-fz",
+   "sourceUrl": "https://www.consultant.ru/document/cons_doc_LAW_140175/",
+   "scores": {
+    "authority": 58,
+    "coverage": 0,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -896,16 +964,20 @@
      "chek-list-otkrytie",
      "formulirovka-ks"
     ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
      "/blog/ks_2025/"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-ks",
    "scores": {
-    "authority": 59,
-    "coverage": 50,
+    "authority": 57,
+    "coverage": 67,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -913,32 +985,66 @@
    }
   },
   {
-   "id": "law-275-fz",
+   "id": "service-start",
    "type": [
-    "law"
+    "service"
    ],
-   "name": "275-ФЗ",
-   "aliases": [
-    "275-ФЗ — гособоронзаказ"
-   ],
-   "summary": "275-ФЗ — гособоронзаказ",
-   "citation": "275-ФЗ — гособоронзаказ",
+   "name": "Сопровождение с первого дня",
+   "aliases": [],
+   "summary": "Полный запуск казначейского сопровождения под ключ от 59 000 ₽: открываем счёт, настраиваем ГИИС и Сведения, ставим раздельный учёт, готовим шаблоны платёжных документов и обучаем вашу команду — либо продолжаем вести контракт сами. Для тех, кто выиграл первый контракт с КС и не хочет учиться на возвратах.",
+   "citation": "Первый контракт с КС: настроим весь контур за неделю и передадим команде — или останемся вести.",
    "pages": [
     {
-     "layer": "law",
-     "url": "/zakonodatelstvo/",
-     "title": "275-ФЗ — гособоронзаказ"
+     "layer": "service",
+     "url": "/services/start",
+     "title": "Сопровождение с первого дня"
     }
    ],
-   "relations": {},
+   "relations": {
+    "USES_TERM": [
+     "ks",
+     "ls-71",
+     "razdelnyy-uchet",
+     "svedeniya-ssu"
+    ],
+    "SERVICE_REQUIRES": [
+     "chek-list-otkrytie",
+     "komplekt-otkrytie",
+     "prikaz-razdelnyy-uchet"
+    ],
+    "SERVICE_SOLVES": [
+     "err-zatyanulos-otkrytie",
+     "err-naznachenie",
+     "err-razdelnyy-uchet"
+    ],
+    "SEE_FAQ": [
+     "faq-start-novichka",
+     "faq-srok-podklyucheniya",
+     "faq-zona-klienta-pri-autsorsinge"
+    ],
+    "PART_OF_TOPIC": [
+     "hub-ks"
+    ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226",
+     "law-prikaz-fk-44n"
+    ],
+    "DIAGNOSED_BY": [
+     "tool-generator-chek-lista",
+     "tool-diagnostika-kontrakta"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
+     "/blog/soprovozhdenie-goskontraktov-pod-kluch"
+    ]
+   },
    "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-275-fz",
-   "sourceUrl": "https://www.consultant.ru/document/cons_doc_LAW_140175/",
+   "schema_id": "https://kazna-gov.ru/#e-service-start",
    "scores": {
-    "authority": 55,
-    "coverage": 0,
+    "authority": 56,
+    "coverage": 100,
     "connectivity": 100,
-    "citation": 100,
+    "citation": 80,
     "aiReadiness": 100,
     "density": 100
    }
@@ -986,7 +1092,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-dokumenty-osnovaniya",
    "scores": {
-    "authority": 54,
+    "authority": 52,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -1051,10 +1157,40 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-service-vosstanovlenie",
    "scores": {
-    "authority": 53,
+    "authority": 52,
     "coverage": 100,
     "connectivity": 100,
     "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "law-prikaz-fk-44n",
+   "type": [
+    "law"
+   ],
+   "name": "Приказ ФК № 44н",
+   "aliases": [
+    "Приказ ФК № 44н — лицевые счета при КС (форма 0531368)"
+   ],
+   "summary": "Приказ ФК № 44н — лицевые счета при КС (форма 0531368)",
+   "citation": "Приказ ФК № 44н — лицевые счета при КС (форма 0531368)",
+   "pages": [
+    {
+     "layer": "law",
+     "url": "/zakonodatelstvo/",
+     "title": "Приказ ФК № 44н — лицевые счета при КС (форма 0531368)"
+    }
+   ],
+   "relations": {},
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-law-prikaz-fk-44n",
+   "scores": {
+    "authority": 51,
+    "coverage": 0,
+    "connectivity": 100,
+    "citation": 100,
     "aiReadiness": 100,
     "density": 100
    }
@@ -1102,10 +1238,55 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-igk",
    "scores": {
-    "authority": 50,
+    "authority": 49,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "poyasnenie-ufk",
+   "type": [
+    "document"
+   ],
+   "name": "Пояснение в УФК",
+   "aliases": [],
+   "summary": "Пояснение в УФК — сопроводительное обоснование нетиповой операции или ответ на замечание казначейства. Работающая структура: реквизиты контракта и счёта → суть операции → обоснование связи с исполнением контракта (со ссылкой на пункт контракта и Сведения) → перечень приложений. Подаётся через ГИИС «Электронный бюджет» вместе с документом, к которому относится.",
+   "citation": "Снимает вопросы УФК до отказа: объясняет целевой характер и основание операции, экономя цикл «отказ → исправление» (до 5 рабочих дней).",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/poyasnenie-v-ufk/",
+     "title": "Пояснение в УФК"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "poyasnenie-vozvrat",
+     "pismo-zapros",
+     "svedeniya-ssu"
+    ],
+    "SEE_ERROR": [
+     "err-otkaz-sanktsionirovaniya",
+     "err-necelevoe"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/sanktsionirovanie-operatsiy-kaznacheystvom",
+     "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-poyasnenie-ufk",
+   "scores": {
+    "authority": 45,
+    "coverage": 67,
+    "connectivity": 100,
+    "citation": 80,
     "aiReadiness": 100,
     "density": 100
    }
@@ -1155,38 +1336,8 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-razdelnyy-uchet",
    "scores": {
-    "authority": 47,
+    "authority": 45,
     "coverage": 83,
-    "connectivity": 100,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "law-prikaz-fk-44n",
-   "type": [
-    "law"
-   ],
-   "name": "Приказ ФК № 44н",
-   "aliases": [
-    "Приказ ФК № 44н — лицевые счета при КС (форма 0531368)"
-   ],
-   "summary": "Приказ ФК № 44н — лицевые счета при КС (форма 0531368)",
-   "citation": "Приказ ФК № 44н — лицевые счета при КС (форма 0531368)",
-   "pages": [
-    {
-     "layer": "law",
-     "url": "/zakonodatelstvo/",
-     "title": "Приказ ФК № 44н — лицевые счета при КС (форма 0531368)"
-    }
-   ],
-   "relations": {},
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-prikaz-fk-44n",
-   "scores": {
-    "authority": 47,
-    "coverage": 0,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -1248,212 +1399,10 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-reestr-dokumentov",
    "scores": {
-    "authority": 46,
+    "authority": 44,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "service-start",
-   "type": [
-    "service"
-   ],
-   "name": "Сопровождение с первого дня",
-   "aliases": [],
-   "summary": "Полный запуск казначейского сопровождения под ключ от 59 000 ₽: открываем счёт, настраиваем ГИИС и Сведения, ставим раздельный учёт, готовим шаблоны платёжных документов и обучаем вашу команду — либо продолжаем вести контракт сами. Для тех, кто выиграл первый контракт с КС и не хочет учиться на возвратах.",
-   "citation": "Первый контракт с КС: настроим весь контур за неделю и передадим команде — или останемся вести.",
-   "pages": [
-    {
-     "layer": "service",
-     "url": "/services/start",
-     "title": "Сопровождение с первого дня"
-    }
-   ],
-   "relations": {
-    "USES_TERM": [
-     "ks",
-     "ls-71",
-     "razdelnyy-uchet",
-     "svedeniya-ssu"
-    ],
-    "SERVICE_REQUIRES": [
-     "chek-list-otkrytie",
-     "komplekt-otkrytie",
-     "prikaz-razdelnyy-uchet"
-    ],
-    "SERVICE_SOLVES": [
-     "err-zatyanulos-otkrytie",
-     "err-naznachenie",
-     "err-razdelnyy-uchet"
-    ],
-    "SEE_FAQ": [
-     "faq-start-novichka",
-     "faq-srok-podklyucheniya",
-     "faq-zona-klienta-pri-autsorsinge"
-    ],
-    "PART_OF_TOPIC": [
-     "hub-ks"
-    ],
-    "REGULATED_BY": [
-     "law-bk-rf-st-2422224226",
-     "law-prikaz-fk-44n"
-    ],
-    "DIAGNOSED_BY": [
-     "tool-generator-chek-lista",
-     "tool-diagnostika-kontrakta"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
-     "/blog/soprovozhdenie-goskontraktov-pod-kluch"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-service-start",
-   "scores": {
-    "authority": 46,
-    "coverage": 100,
-    "connectivity": 100,
-    "citation": 80,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "tselevye-sredstva",
-   "type": [
-    "term"
-   ],
-   "name": "Целевые средства",
-   "aliases": [
-    "целевые деньги",
-    "средства контракта"
-   ],
-   "summary": "Целевые средства — деньги, предоставленные из бюджета на конкретную цель: исполнение госконтракта, соглашения о субсидии, контракта кооперации. При казначейском сопровождении они зачисляются на лицевой счёт и могут расходоваться только на цели, ради которых выданы, — направление каждого списания подтверждается документами и кодом.",
-   "citation": "Бюджетные деньги с целевым назначением на лицевом счёте участника КС. Их трата на не предусмотренные контрактом цели — нецелевое расходование с ответственностью.",
-   "pages": [
-    {
-     "layer": "term",
-     "url": "/glossary/tselevye-sredstva/",
-     "title": "Целевые средства"
-    }
-   ],
-   "relations": {
-    "RELATED_TERM": [
-     "ls-71",
-     "err-necelevoe",
-     "kod-tselevyh",
-     "svedeniya-ssu"
-    ],
-    "REQUIRES_DOC": [
-     "svedeniya-ssu"
-    ],
-    "SEE_ERROR": [
-     "err-necelevoe"
-    ],
-    "MONETIZED_BY": [
-     "service-conduct"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-tselevye-sredstva",
-   "scores": {
-    "authority": 45,
-    "coverage": 83,
-    "connectivity": 100,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "err-kod-napravleniya",
-   "type": [
-    "error"
-   ],
-   "name": "Неверный код направления",
-   "aliases": [],
-   "summary": "УФК отклонило платёж из-за кода направления расходования целевых средств: как выбрать правильный код по справочнику, сверить со Сведениями и провести платёж.",
-   "citation": "Код направления расходования в распоряжении должен соответствовать и фактическому назначению расхода, и укрупнённому коду в утверждённых Сведениях. Если код не совпадает или расход по нему не предусмотрен Сведениями — УФК отклоняет платёж. Решение: выбрать код по справочнику, при необходимости уточнить Сведения, затем подать новое распоряжение.",
-   "pages": [
-    {
-     "layer": "error",
-     "url": "/oshibki/nevernyy-kod-napravleniya-rashodov/",
-     "title": "Неверный код направления"
-    }
-   ],
-   "relations": {
-    "SEE_ERROR": [
-     "err-naznachenie",
-     "err-svedeniya-otkaz",
-     "err-necelevoe"
-    ],
-    "MONETIZED_BY": [
-     "service-conduct"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/codes",
-     "/blog/kody-vozmeshcheniya-rashodov",
-     "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta"
-    ]
-   },
-   "updated": "2026-07-08",
-   "schema_id": "https://kazna-gov.ru/#e-err-kod-napravleniya",
-   "scores": {
-    "authority": 44,
-    "coverage": 50,
-    "connectivity": 100,
-    "citation": 80,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "poyasnenie-ufk",
-   "type": [
-    "document"
-   ],
-   "name": "Пояснение в УФК",
-   "aliases": [],
-   "summary": "Пояснение в УФК — сопроводительное обоснование нетиповой операции или ответ на замечание казначейства. Работающая структура: реквизиты контракта и счёта → суть операции → обоснование связи с исполнением контракта (со ссылкой на пункт контракта и Сведения) → перечень приложений. Подаётся через ГИИС «Электронный бюджет» вместе с документом, к которому относится.",
-   "citation": "Снимает вопросы УФК до отказа: объясняет целевой характер и основание операции, экономя цикл «отказ → исправление» (до 5 рабочих дней).",
-   "pages": [
-    {
-     "layer": "document",
-     "url": "/obraztsy/poyasnenie-v-ufk/",
-     "title": "Пояснение в УФК"
-    }
-   ],
-   "relations": {
-    "RELATED_DOC": [
-     "poyasnenie-vozvrat",
-     "pismo-zapros",
-     "svedeniya-ssu"
-    ],
-    "SEE_ERROR": [
-     "err-otkaz-sanktsionirovaniya",
-     "err-necelevoe"
-    ],
-    "MONETIZED_BY": [
-     "service-conduct"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/sanktsionirovanie-operatsiy-kaznacheystvom",
-     "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-poyasnenie-ufk",
-   "scores": {
-    "authority": 44,
-    "coverage": 67,
-    "connectivity": 100,
-    "citation": 80,
     "aiReadiness": 100,
     "density": 100
    }
@@ -1495,7 +1444,106 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-chek-list-otkrytie",
    "scores": {
-    "authority": 44,
+    "authority": 43,
+    "coverage": 67,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "tselevye-sredstva",
+   "type": [
+    "term"
+   ],
+   "name": "Целевые средства",
+   "aliases": [
+    "целевые деньги",
+    "средства контракта"
+   ],
+   "summary": "Целевые средства — деньги, предоставленные из бюджета на конкретную цель: исполнение госконтракта, соглашения о субсидии, контракта кооперации. При казначейском сопровождении они зачисляются на лицевой счёт и могут расходоваться только на цели, ради которых выданы, — направление каждого списания подтверждается документами и кодом.",
+   "citation": "Бюджетные деньги с целевым назначением на лицевом счёте участника КС. Их трата на не предусмотренные контрактом цели — нецелевое расходование с ответственностью.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/tselevye-sredstva/",
+     "title": "Целевые средства"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ls-71",
+     "err-necelevoe",
+     "kod-tselevyh",
+     "svedeniya-ssu"
+    ],
+    "REQUIRES_DOC": [
+     "svedeniya-ssu"
+    ],
+    "SEE_ERROR": [
+     "err-necelevoe"
+    ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta"
+    ]
+   },
+   "updated": "2026-07-14",
+   "schema_id": "https://kazna-gov.ru/#e-tselevye-sredstva",
+   "scores": {
+    "authority": 43,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "err-kod-napravleniya",
+   "type": [
+    "error"
+   ],
+   "name": "Неверный код направления",
+   "aliases": [],
+   "summary": "УФК отклонило платёж из-за кода направления расходования целевых средств: как выбрать правильный код по справочнику, сверить со Сведениями и провести платёж.",
+   "citation": "Код направления расходования в распоряжении должен соответствовать и фактическому назначению расхода, и укрупнённому коду в утверждённых Сведениях. Если код не совпадает или расход по нему не предусмотрен Сведениями — УФК отклоняет платёж. Решение: выбрать код по справочнику, при необходимости уточнить Сведения, затем подать новое распоряжение.",
+   "pages": [
+    {
+     "layer": "error",
+     "url": "/oshibki/nevernyy-kod-napravleniya-rashodov/",
+     "title": "Неверный код направления"
+    }
+   ],
+   "relations": {
+    "REQUIRES_DOC": [
+     "svedeniya-ssu",
+     "rkp"
+    ],
+    "SEE_ERROR": [
+     "err-naznachenie",
+     "err-svedeniya-otkaz",
+     "err-necelevoe"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/codes",
+     "/blog/kody-vozmeshcheniya-rashodov",
+     "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta"
+    ]
+   },
+   "updated": "2026-07-14",
+   "schema_id": "https://kazna-gov.ru/#e-err-kod-napravleniya",
+   "scores": {
+    "authority": 42,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -1549,7 +1597,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-ecp",
    "scores": {
-    "authority": 44,
+    "authority": 42,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -1574,6 +1622,11 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "rkp",
+     "otzyv-rasporyazheniya",
+     "poyasnenie-vozvrat"
+    ],
     "SEE_ERROR": [
      "err-igk",
      "err-kod-napravleniya",
@@ -1588,11 +1641,11 @@
      "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta"
     ]
    },
-   "updated": "2026-07-08",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-naznachenie",
    "scores": {
-    "authority": 43,
-    "coverage": 50,
+    "authority": 41,
+    "coverage": 67,
     "connectivity": 100,
     "citation": 80,
     "aiReadiness": 100,
@@ -1646,6 +1699,79 @@
    }
   },
   {
+   "id": "pismo-zapros",
+   "type": [
+    "document"
+   ],
+   "name": "Письмо-запрос в УФК",
+   "aliases": [],
+   "summary": "Письмо-запрос в УФК применяется в трёх ситуациях: узнать статус рассмотрения документов, получить разъяснение основания отказа, зафиксировать нарушение регламентного срока (вежливая эскалация). Структура: реквизиты счёта и документа → вопрос по существу → ссылка на дату подачи и регламентный срок → просьба ответить с указанием контакта.",
+   "citation": "Переводит «висящие» вопросы в официальную плоскость с датами: после письменного запроса ответ обязаны дать в порядке работы с обращениями.",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/pismo-zapros-v-ufk/",
+     "title": "Письмо-запрос в УФК"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "soprovoditelnoe-pismo",
+     "poyasnenie-ufk"
+    ],
+    "SEE_ERROR": [
+     "err-zatyanulos-otkrytie",
+     "err-otkaz-sanktsionirovaniya"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/sroki-rassmotreniya-dokumentov-v-ufk-tablitsa"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-pismo-zapros",
+   "scores": {
+    "authority": 37,
+    "coverage": 67,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+   "type": [
+    "law"
+   ],
+   "name": "Ежегодный закон о федеральном бюджете",
+   "aliases": [
+    "Ежегодный закон о федеральном бюджете — случаи и пороги КС"
+   ],
+   "summary": "Ежегодный закон о федеральном бюджете — случаи и пороги КС",
+   "citation": "Ежегодный закон о федеральном бюджете — случаи и пороги КС",
+   "pages": [
+    {
+     "layer": "law",
+     "url": "/zakonodatelstvo/",
+     "title": "Ежегодный закон о федеральном бюджете — случаи и пороги КС"
+    }
+   ],
+   "relations": {},
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+   "scores": {
+    "authority": 37,
+    "coverage": 0,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
    "id": "kontrakt-44",
    "type": [
     "term"
@@ -1687,53 +1813,10 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-kontrakt-44",
    "scores": {
-    "authority": 37,
-    "coverage": 67,
-    "connectivity": 100,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "pismo-zapros",
-   "type": [
-    "document"
-   ],
-   "name": "Письмо-запрос в УФК",
-   "aliases": [],
-   "summary": "Письмо-запрос в УФК применяется в трёх ситуациях: узнать статус рассмотрения документов, получить разъяснение основания отказа, зафиксировать нарушение регламентного срока (вежливая эскалация). Структура: реквизиты счёта и документа → вопрос по существу → ссылка на дату подачи и регламентный срок → просьба ответить с указанием контакта.",
-   "citation": "Переводит «висящие» вопросы в официальную плоскость с датами: после письменного запроса ответ обязаны дать в порядке работы с обращениями.",
-   "pages": [
-    {
-     "layer": "document",
-     "url": "/obraztsy/pismo-zapros-v-ufk/",
-     "title": "Письмо-запрос в УФК"
-    }
-   ],
-   "relations": {
-    "RELATED_DOC": [
-     "soprovoditelnoe-pismo",
-     "poyasnenie-ufk"
-    ],
-    "SEE_ERROR": [
-     "err-zatyanulos-otkrytie",
-     "err-otkaz-sanktsionirovaniya"
-    ],
-    "MONETIZED_BY": [
-     "service-conduct"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/sroki-rassmotreniya-dokumentov-v-ufk-tablitsa"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-pismo-zapros",
-   "scores": {
     "authority": 36,
     "coverage": 67,
     "connectivity": 100,
-    "citation": 80,
+    "citation": 100,
     "aiReadiness": 100,
     "density": 100
    }
@@ -1776,6 +1859,9 @@
      "err-zatyanulos-otkrytie",
      "err-otkaz-sanktsionirovaniya"
     ],
+    "REGULATED_BY": [
+     "law-prikaz-fk-21n"
+    ],
     "MONETIZED_BY": [
      "service-open"
     ],
@@ -1784,41 +1870,11 @@
      "/blog/tofk"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-ufk",
    "scores": {
-    "authority": 36,
-    "coverage": 83,
-    "connectivity": 100,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
-   "type": [
-    "law"
-   ],
-   "name": "Ежегодный закон о федеральном бюджете",
-   "aliases": [
-    "Ежегодный закон о федеральном бюджете — случаи и пороги КС"
-   ],
-   "summary": "Ежегодный закон о федеральном бюджете — случаи и пороги КС",
-   "citation": "Ежегодный закон о федеральном бюджете — случаи и пороги КС",
-   "pages": [
-    {
-     "layer": "law",
-     "url": "/zakonodatelstvo/",
-     "title": "Ежегодный закон о федеральном бюджете — случаи и пороги КС"
-    }
-   ],
-   "relations": {},
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-ezhegodnyy-zakon-o-federalnom-byudzhete",
-   "scores": {
     "authority": 35,
-    "coverage": 0,
+    "coverage": 100,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -1871,7 +1927,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-goz",
    "scores": {
-    "authority": 34,
+    "authority": 33,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -1918,7 +1974,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-kody-napravleniy",
    "scores": {
-    "authority": 34,
+    "authority": 33,
     "coverage": 67,
     "connectivity": 100,
     "citation": 100,
@@ -1943,6 +1999,10 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "prikaz-razdelnyy-uchet",
+     "komplekt-goz"
+    ],
     "SEE_ERROR": [
      "err-necelevoe",
      "err-svedeniya-otkaz"
@@ -1956,146 +2016,11 @@
      "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid"
     ]
    },
-   "updated": "2026-07-08",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-razdelnyy-uchet",
    "scores": {
-    "authority": 33,
-    "coverage": 50,
-    "connectivity": 100,
-    "citation": 80,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "vozmeshchenie",
-   "type": [
-    "term"
-   ],
-   "name": "Возмещение расходов",
-   "aliases": [
-    "возмещение произведенных расходов",
-    "компенсация расходов"
-   ],
-   "summary": "Возмещение расходов — перевод средств с лицевого счёта на собственный расчётный счёт исполнителя в компенсацию затрат, которые он уже оплатил из своих денег на цели контракта. Ключевой инструмент вывода средств при КС: оформляется отдельными кодами направления (9XXX) и подтверждается документами о фактической оплате.",
-   "citation": "Санкционируемая операция «лицевой → расчётный счёт» в счёт уже понесённых собственных затрат на контракт: требует доказательств оплаты и целевого характера.",
-   "pages": [
-    {
-     "layer": "term",
-     "url": "/glossary/vozmeshchenie-rashodov/",
-     "title": "Возмещение расходов"
-    }
-   ],
-   "relations": {
-    "RELATED_TERM": [
-     "kody-9xxx",
-     "raschetnyy-schet",
-     "pryamoy-platezh",
-     "pribyl-ks"
-    ],
-    "REQUIRES_DOC": [
-     "chek-list-dokumenty"
-    ],
-    "SEE_ERROR": [
-     "err-kod-napravleniya"
-    ],
-    "MONETIZED_BY": [
-     "service-conduct"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/avans-vs-vozmeshchenie-vs-pryamoy-platezh-tri-tipa-operatsiy-ks",
-     "/blog/kody-vozmeshcheniya-rashodov"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-vozmeshchenie",
-   "scores": {
-    "authority": 31,
-    "coverage": 83,
-    "connectivity": 100,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "err-igk",
-   "type": [
-    "error"
-   ],
-   "name": "Ошибка в ИГК в платёжке",
-   "aliases": [],
-   "summary": "Что делать, если УФК отклоняет платёж из-за неверного ИГК: где взять правильный идентификатор госконтракта, как исправить распоряжение и провести платёж повторно.",
-   "citation": "Если УФК отклонило платёж из-за ИГК, идентификатор в распоряжении не совпадает с ИГК контракта в реестре. Возьмите точный ИГК из контракта или реестра контрактов ЕИС, исправьте его в распоряжении о казначейском платеже в ГИИС «Электронный бюджет» и отправьте платёж повторно — деньги при отклонении остаются на лицевом счёте.",
-   "pages": [
-    {
-     "layer": "error",
-     "url": "/oshibki/oshibka-v-igk-platezh-ne-prohodit/",
-     "title": "Ошибка в ИГК в платёжке"
-    }
-   ],
-   "relations": {
-    "SEE_ERROR": [
-     "err-otkaz-sanktsionirovaniya",
-     "err-kod-napravleniya",
-     "err-naznachenie"
-    ],
-    "MONETIZED_BY": [
-     "service-conduct"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/igk-v-platezhah-kaznacheystva",
-     "/blog/vozvrat-platezha-kaznachejstvo-chto-delat/",
-     "/blog/naznachenie-platezha-kaznachejstvo/"
-    ]
-   },
-   "updated": "2026-07-08",
-   "schema_id": "https://kazna-gov.ru/#e-err-igk",
-   "scores": {
-    "authority": 30,
-    "coverage": 50,
-    "connectivity": 100,
-    "citation": 80,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "err-mchd",
-   "type": [
-    "error"
-   ],
-   "name": "МЧД не проходит",
-   "aliases": [],
-   "summary": "Машиночитаемая доверенность отклоняется в ГИИС/УФК: не тот формат (003), нет обязательных реквизитов, неверное полномочие. Как перевыпустить МЧД правильно.",
-   "citation": "МЧД для казначейства — электронная доверенность формата 003, выпускаемая руководителем через сервисы ФНС/УЦ. С 01.02.2026 обязательны срок действия и точное наименование полномочия (приказ Минцифры № 1001). Если МЧД не проходит: проверьте формат, срок, полномочие и статус в реестре — и перевыпустите доверенность с корректными атрибутами.",
-   "pages": [
-    {
-     "layer": "error",
-     "url": "/oshibki/mchd-ne-prohodit-proverku/",
-     "title": "МЧД не проходит"
-    }
-   ],
-   "relations": {
-    "SEE_ERROR": [
-     "err-ecp",
-     "err-svedeniya-otkaz",
-     "err-kartochka"
-    ],
-    "MONETIZED_BY": [
-     "service-open"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/doverennost-dlya-ufk",
-     "/novosti/mchd-novye-trebovaniya-2026/",
-     "/blog/upolnomochennye-litsa-po-ks-schetu-kto-i-otvetstvennost"
-    ]
-   },
-   "updated": "2026-07-08",
-   "schema_id": "https://kazna-gov.ru/#e-err-mchd",
-   "scores": {
-    "authority": 30,
-    "coverage": 50,
+    "authority": 32,
+    "coverage": 67,
     "connectivity": 100,
     "citation": 80,
     "aiReadiness": 100,
@@ -2146,6 +2071,179 @@
    }
   },
   {
+   "id": "vozmeshchenie",
+   "type": [
+    "term"
+   ],
+   "name": "Возмещение расходов",
+   "aliases": [
+    "возмещение произведенных расходов",
+    "компенсация расходов"
+   ],
+   "summary": "Возмещение расходов — перевод средств с лицевого счёта на собственный расчётный счёт исполнителя в компенсацию затрат, которые он уже оплатил из своих денег на цели контракта. Ключевой инструмент вывода средств при КС: оформляется отдельными кодами направления (9XXX) и подтверждается документами о фактической оплате.",
+   "citation": "Санкционируемая операция «лицевой → расчётный счёт» в счёт уже понесённых собственных затрат на контракт: требует доказательств оплаты и целевого характера.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/vozmeshchenie-rashodov/",
+     "title": "Возмещение расходов"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "kody-9xxx",
+     "raschetnyy-schet",
+     "pryamoy-platezh",
+     "pribyl-ks"
+    ],
+    "REQUIRES_DOC": [
+     "chek-list-dokumenty"
+    ],
+    "SEE_ERROR": [
+     "err-kod-napravleniya"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/avans-vs-vozmeshchenie-vs-pryamoy-platezh-tri-tipa-operatsiy-ks",
+     "/blog/kody-vozmeshcheniya-rashodov"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-vozmeshchenie",
+   "scores": {
+    "authority": 30,
+    "coverage": 83,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "law-44-fz",
+   "type": [
+    "law"
+   ],
+   "name": "44-ФЗ",
+   "aliases": [
+    "44-ФЗ — контрактная система"
+   ],
+   "summary": "44-ФЗ — контрактная система",
+   "citation": "44-ФЗ — контрактная система",
+   "pages": [
+    {
+     "layer": "law",
+     "url": "/zakonodatelstvo/",
+     "title": "44-ФЗ — контрактная система"
+    }
+   ],
+   "relations": {},
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-law-44-fz",
+   "sourceUrl": "http://publication.pravo.gov.ru/Document/View/0001201304080023",
+   "scores": {
+    "authority": 30,
+    "coverage": 0,
+    "connectivity": 93,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "err-igk",
+   "type": [
+    "error"
+   ],
+   "name": "Ошибка в ИГК в платёжке",
+   "aliases": [],
+   "summary": "Что делать, если УФК отклоняет платёж из-за неверного ИГК: где взять правильный идентификатор госконтракта, как исправить распоряжение и провести платёж повторно.",
+   "citation": "Если УФК отклонило платёж из-за ИГК, идентификатор в распоряжении не совпадает с ИГК контракта в реестре. Возьмите точный ИГК из контракта или реестра контрактов ЕИС, исправьте его в распоряжении о казначейском платеже в ГИИС «Электронный бюджет» и отправьте платёж повторно — деньги при отклонении остаются на лицевом счёте.",
+   "pages": [
+    {
+     "layer": "error",
+     "url": "/oshibki/oshibka-v-igk-platezh-ne-prohodit/",
+     "title": "Ошибка в ИГК в платёжке"
+    }
+   ],
+   "relations": {
+    "REQUIRES_DOC": [
+     "rkp",
+     "poyasnenie-vozvrat"
+    ],
+    "SEE_ERROR": [
+     "err-otkaz-sanktsionirovaniya",
+     "err-kod-napravleniya",
+     "err-naznachenie"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/igk-v-platezhah-kaznacheystva",
+     "/blog/vozvrat-platezha-kaznachejstvo-chto-delat/",
+     "/blog/naznachenie-platezha-kaznachejstvo/"
+    ]
+   },
+   "updated": "2026-07-14",
+   "schema_id": "https://kazna-gov.ru/#e-err-igk",
+   "scores": {
+    "authority": 29,
+    "coverage": 67,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "err-mchd",
+   "type": [
+    "error"
+   ],
+   "name": "МЧД не проходит",
+   "aliases": [],
+   "summary": "Машиночитаемая доверенность отклоняется в ГИИС/УФК: не тот формат (003), нет обязательных реквизитов, неверное полномочие. Как перевыпустить МЧД правильно.",
+   "citation": "МЧД для казначейства — электронная доверенность формата 003, выпускаемая руководителем через сервисы ФНС/УЦ. С 01.02.2026 обязательны срок действия и точное наименование полномочия (приказ Минцифры № 1001). Если МЧД не проходит: проверьте формат, срок, полномочие и статус в реестре — и перевыпустите доверенность с корректными атрибутами.",
+   "pages": [
+    {
+     "layer": "error",
+     "url": "/oshibki/mchd-ne-prohodit-proverku/",
+     "title": "МЧД не проходит"
+    }
+   ],
+   "relations": {
+    "REQUIRES_DOC": [
+     "doverennost-mchd"
+    ],
+    "SEE_ERROR": [
+     "err-ecp",
+     "err-svedeniya-otkaz",
+     "err-kartochka"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/doverennost-dlya-ufk",
+     "/novosti/mchd-novye-trebovaniya-2026/",
+     "/blog/upolnomochennye-litsa-po-ks-schetu-kto-i-otvetstvennost"
+    ]
+   },
+   "updated": "2026-07-14",
+   "schema_id": "https://kazna-gov.ru/#e-err-mchd",
+   "scores": {
+    "authority": 29,
+    "coverage": 67,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
    "id": "tsepochka-ks",
    "type": [
     "term"
@@ -2185,7 +2283,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-tsepochka-ks",
    "scores": {
-    "authority": 30,
+    "authority": 29,
     "coverage": 67,
     "connectivity": 100,
     "citation": 100,
@@ -2237,7 +2335,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-upolnomochennye",
    "scores": {
-    "authority": 30,
+    "authority": 29,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -2277,6 +2375,9 @@
     "SEE_ERROR": [
      "err-zatyanulos-otkrytie"
     ],
+    "REGULATED_BY": [
+     "law-prikaz-fk-21n"
+    ],
     "MONETIZED_BY": [
      "service-open"
     ],
@@ -2284,11 +2385,11 @@
      "/blog/tofk"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-tofk",
    "scores": {
-    "authority": 28,
-    "coverage": 83,
+    "authority": 27,
+    "coverage": 100,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -2312,6 +2413,10 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "svedeniya-ssu",
+     "poyasnenie-ufk"
+    ],
     "SEE_ERROR": [
      "err-otkaz-sanktsionirovaniya",
      "err-kod-napravleniya",
@@ -2326,12 +2431,12 @@
      "/blog/kalendar-otchetnosti-podryadchika-ks-2026"
     ]
    },
-   "updated": "2026-07-08",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-svedeniya-otkaz",
    "scores": {
-    "authority": 27,
-    "coverage": 50,
-    "connectivity": 97,
+    "authority": 26,
+    "coverage": 67,
+    "connectivity": 100,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -2354,6 +2459,10 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "kartochka-podpisey",
+     "chek-list-dokumenty"
+    ],
     "SEE_ERROR": [
      "err-zatyanulos-otkrytie",
      "err-mchd"
@@ -2367,12 +2476,12 @@
      "/blog/ne-otkryvaetsya-kaznacheyskiy-schet-prichiny-otkaza-2026"
     ]
    },
-   "updated": "2026-07-08",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-kartochka",
    "scores": {
-    "authority": 27,
-    "coverage": 50,
-    "connectivity": 93,
+    "authority": 26,
+    "coverage": 67,
+    "connectivity": 100,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -2395,6 +2504,9 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "doverennost-mchd"
+    ],
     "SEE_ERROR": [
      "err-mchd",
      "err-zatyanulos-otkrytie"
@@ -2408,12 +2520,12 @@
      "/blog/giis-elektronnyy-byudzhet-2026-polnaya-instruktsiya"
     ]
    },
-   "updated": "2026-07-08",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-ecp",
    "scores": {
-    "authority": 27,
-    "coverage": 50,
-    "connectivity": 93,
+    "authority": 26,
+    "coverage": 67,
+    "connectivity": 100,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -2464,9 +2576,39 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-svodnyy-reestr",
    "scores": {
-    "authority": 27,
+    "authority": 26,
     "coverage": 83,
     "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "law-prikaz-fk-21n",
+   "type": [
+    "law"
+   ],
+   "name": "Приказ ФК № 21н",
+   "aliases": [
+    "Приказ ФК № 21н — порядок лицевых счетов ТОФК (форма 0531753)"
+   ],
+   "summary": "Приказ ФК № 21н — порядок лицевых счетов ТОФК (форма 0531753)",
+   "citation": "Приказ ФК № 21н — порядок лицевых счетов ТОФК (форма 0531753)",
+   "pages": [
+    {
+     "layer": "law",
+     "url": "/zakonodatelstvo/",
+     "title": "Приказ ФК № 21н — порядок лицевых счетов ТОФК (форма 0531753)"
+    }
+   ],
+   "relations": {},
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-law-prikaz-fk-21n",
+   "scores": {
+    "authority": 26,
+    "coverage": 0,
+    "connectivity": 83,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -2509,7 +2651,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-avans",
    "scores": {
-    "authority": 26,
+    "authority": 25,
     "coverage": 50,
     "connectivity": 97,
     "citation": 100,
@@ -2518,31 +2660,31 @@
    }
   },
   {
-   "id": "law-44-fz",
+   "id": "law-63-fz",
    "type": [
     "law"
    ],
-   "name": "44-ФЗ",
+   "name": "63-ФЗ",
    "aliases": [
-    "44-ФЗ — контрактная система"
+    "63-ФЗ — об электронной подписи"
    ],
-   "summary": "44-ФЗ — контрактная система",
-   "citation": "44-ФЗ — контрактная система",
+   "summary": "63-ФЗ — об электронной подписи",
+   "citation": "63-ФЗ — об электронной подписи",
    "pages": [
     {
      "layer": "law",
      "url": "/zakonodatelstvo/",
-     "title": "44-ФЗ — контрактная система"
+     "title": "63-ФЗ — об электронной подписи"
     }
    ],
    "relations": {},
    "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-44-fz",
-   "sourceUrl": "http://publication.pravo.gov.ru/Document/View/0001201304080023",
+   "schema_id": "https://kazna-gov.ru/#e-law-63-fz",
+   "sourceUrl": "https://www.consultant.ru/document/cons_doc_LAW_112701/",
    "scores": {
-    "authority": 26,
+    "authority": 24,
     "coverage": 0,
-    "connectivity": 80,
+    "connectivity": 77,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -2589,7 +2731,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-pribyl-ks",
    "scores": {
-    "authority": 24,
+    "authority": 23,
     "coverage": 67,
     "connectivity": 93,
     "citation": 100,
@@ -2634,7 +2776,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-sroki-ufk",
    "scores": {
-    "authority": 24,
+    "authority": 23,
     "coverage": 50,
     "connectivity": 87,
     "citation": 100,
@@ -2643,29 +2785,29 @@
    }
   },
   {
-   "id": "law-63-fz",
+   "id": "law-koap-rf-st-1514",
    "type": [
     "law"
    ],
-   "name": "63-ФЗ",
+   "name": "КоАП РФ, ст. 15.14",
    "aliases": [
-    "63-ФЗ — об электронной подписи"
+    "КоАП РФ, ст. 15.14 — нецелевое использование"
    ],
-   "summary": "63-ФЗ — об электронной подписи",
-   "citation": "63-ФЗ — об электронной подписи",
+   "summary": "КоАП РФ, ст. 15.14 — нецелевое использование",
+   "citation": "КоАП РФ, ст. 15.14 — нецелевое использование",
    "pages": [
     {
      "layer": "law",
      "url": "/zakonodatelstvo/",
-     "title": "63-ФЗ — об электронной подписи"
+     "title": "КоАП РФ, ст. 15.14 — нецелевое использование"
     }
    ],
    "relations": {},
    "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-63-fz",
-   "sourceUrl": "https://www.consultant.ru/document/cons_doc_LAW_112701/",
+   "schema_id": "https://kazna-gov.ru/#e-law-koap-rf-st-1514",
+   "sourceUrl": "https://www.consultant.ru/document/cons_doc_LAW_34661/",
    "scores": {
-    "authority": 24,
+    "authority": 23,
     "coverage": 0,
     "connectivity": 73,
     "citation": 100,
@@ -2690,6 +2832,10 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "pismo-zapros",
+     "chek-list-otkrytie"
+    ],
     "SEE_ERROR": [
      "err-zatyanulos-otkrytie",
      "err-kartochka"
@@ -2703,12 +2849,12 @@
      "/blog/tsepochka-kaznacheyskogo-soprovozhdeniya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-svodnyy-reestr",
    "scores": {
-    "authority": 23,
-    "coverage": 50,
-    "connectivity": 80,
+    "authority": 22,
+    "coverage": 67,
+    "connectivity": 87,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -2756,7 +2902,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-subsidiya",
    "scores": {
-    "authority": 23,
+    "authority": 22,
     "coverage": 83,
     "connectivity": 93,
     "citation": 100,
@@ -2806,7 +2952,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-naznachenie",
    "scores": {
-    "authority": 23,
+    "authority": 22,
     "coverage": 83,
     "connectivity": 93,
     "citation": 100,
@@ -2815,32 +2961,46 @@
    }
   },
   {
-   "id": "law-koap-rf-st-1514",
+   "id": "komplekt-otkrytie",
    "type": [
-    "law"
+    "document"
    ],
-   "name": "КоАП РФ, ст. 15.14",
-   "aliases": [
-    "КоАП РФ, ст. 15.14 — нецелевое использование"
-   ],
-   "summary": "КоАП РФ, ст. 15.14 — нецелевое использование",
-   "citation": "КоАП РФ, ст. 15.14 — нецелевое использование",
+   "name": "Комплект на открытие",
+   "aliases": [],
+   "summary": "Базовый комплект на открытие лицевого счёта: заявление, карточка образцов подписей с документами полномочий, копия контракта с ИГК, документы организации (по требованиям ТОФК). Опись фиксирует состав и количество листов — при возврате видно, что именно вернулось, а при затягивании — что и когда подано.",
+   "citation": "Дисциплинирует комплект и создаёт доказательную базу подачи (состав, дата).",
    "pages": [
     {
-     "layer": "law",
-     "url": "/zakonodatelstvo/",
-     "title": "КоАП РФ, ст. 15.14 — нецелевое использование"
+     "layer": "document",
+     "url": "/obraztsy/komplekt-dokumentov-otkrytie/",
+     "title": "Комплект на открытие"
     }
    ],
-   "relations": {},
+   "relations": {
+    "RELATED_DOC": [
+     "zayavlenie-ls",
+     "kartochka-podpisey",
+     "chek-list-otkrytie",
+     "soprovoditelnoe-pismo"
+    ],
+    "SEE_ERROR": [
+     "err-zatyanulos-otkrytie"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/dokumenty-dlya-kaznacheyskogo-soprovozhdeniya",
+     "/blog/how_to_open/"
+    ]
+   },
    "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-koap-rf-st-1514",
-   "sourceUrl": "https://www.consultant.ru/document/cons_doc_LAW_34661/",
+   "schema_id": "https://kazna-gov.ru/#e-komplekt-otkrytie",
    "scores": {
-    "authority": 23,
-    "coverage": 0,
-    "connectivity": 70,
-    "citation": 100,
+    "authority": 21,
+    "coverage": 67,
+    "connectivity": 87,
+    "citation": 80,
     "aiReadiness": 100,
     "density": 100
    }
@@ -2887,55 +3047,10 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-soglashenie-subsidii",
    "scores": {
-    "authority": 22,
+    "authority": 21,
     "coverage": 83,
     "connectivity": 90,
     "citation": 100,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "komplekt-otkrytie",
-   "type": [
-    "document"
-   ],
-   "name": "Комплект на открытие",
-   "aliases": [],
-   "summary": "Базовый комплект на открытие лицевого счёта: заявление, карточка образцов подписей с документами полномочий, копия контракта с ИГК, документы организации (по требованиям ТОФК). Опись фиксирует состав и количество листов — при возврате видно, что именно вернулось, а при затягивании — что и когда подано.",
-   "citation": "Дисциплинирует комплект и создаёт доказательную базу подачи (состав, дата).",
-   "pages": [
-    {
-     "layer": "document",
-     "url": "/obraztsy/komplekt-dokumentov-otkrytie/",
-     "title": "Комплект на открытие"
-    }
-   ],
-   "relations": {
-    "RELATED_DOC": [
-     "zayavlenie-ls",
-     "kartochka-podpisey",
-     "chek-list-otkrytie",
-     "soprovoditelnoe-pismo"
-    ],
-    "SEE_ERROR": [
-     "err-zatyanulos-otkrytie"
-    ],
-    "MONETIZED_BY": [
-     "service-open"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/dokumenty-dlya-kaznacheyskogo-soprovozhdeniya",
-     "/blog/how_to_open/"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-komplekt-otkrytie",
-   "scores": {
-    "authority": 21,
-    "coverage": 67,
-    "connectivity": 83,
-    "citation": 80,
     "aiReadiness": 100,
     "density": 100
    }
@@ -2970,6 +3085,9 @@
     "SEE_ERROR": [
      "err-otkaz-sanktsionirovaniya"
     ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226"
+    ],
     "MONETIZED_BY": [
      "service-vosstanovlenie"
     ],
@@ -2977,12 +3095,12 @@
      "/blog/podvodnye-kamni-kaznacheyskogo-soprovozhdeniya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-kazn-monitoring",
    "scores": {
-    "authority": 21,
-    "coverage": 83,
-    "connectivity": 83,
+    "authority": 20,
+    "coverage": 100,
+    "connectivity": 87,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -3016,6 +3134,9 @@
      "goz",
      "igk"
     ],
+    "REGULATED_BY": [
+     "law-275-fz"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -3023,12 +3144,12 @@
      "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-obs",
    "scores": {
-    "authority": 21,
-    "coverage": 50,
-    "connectivity": 80,
+    "authority": 20,
+    "coverage": 67,
+    "connectivity": 83,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -3074,7 +3195,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-kody-9xxx",
    "scores": {
-    "authority": 21,
+    "authority": 20,
     "coverage": 67,
     "connectivity": 80,
     "citation": 100,
@@ -3099,6 +3220,11 @@
     }
    ],
    "relations": {
+    "REQUIRES_DOC": [
+     "komplekt-subsidii",
+     "svedeniya-ssu",
+     "poyasnenie-ufk"
+    ],
     "SEE_ERROR": [
      "err-otkaz-sanktsionirovaniya",
      "err-kod-napravleniya",
@@ -3113,12 +3239,56 @@
      "/blog/sanktsionirovanie-operatsiy-kaznacheystvom"
     ]
    },
-   "updated": "2026-07-08",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-subsidiya-rashody",
    "scores": {
-    "authority": 20,
-    "coverage": 50,
-    "connectivity": 73,
+    "authority": 19,
+    "coverage": 67,
+    "connectivity": 83,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "komplekt-subsidii",
+   "type": [
+    "document"
+   ],
+   "name": "Комплект субсидий",
+   "aliases": [],
+   "summary": "Получателю субсидии на казначейском сопровождении нужно держать в порядке: соглашение о предоставлении субсидии со всеми изменениями, плановые документы (смета/план использования), Сведения, первичные документы по каждому платежу и отчётность об использовании. УФК сверяет каждый расход именно с соглашением, поэтому досье — рабочая необходимость.",
+   "citation": "Собирает «досье субсидии»: расходы защищаются соглашением и планом, отчётность собирается из готовых блоков.",
+   "pages": [
+    {
+     "layer": "document",
+     "url": "/obraztsy/komplekt-dokumentov-subsidii/",
+     "title": "Комплект субсидий"
+    }
+   ],
+   "relations": {
+    "RELATED_DOC": [
+     "svedeniya-ssu",
+     "poyasnenie-ufk",
+     "reestr-dokumentov"
+    ],
+    "SEE_ERROR": [
+     "err-subsidiya-rashody",
+     "err-kod-napravleniya"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-komplekt-subsidii",
+   "scores": {
+    "authority": 19,
+    "coverage": 67,
+    "connectivity": 80,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -3163,39 +3333,9 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-upd-akt",
    "scores": {
-    "authority": 20,
+    "authority": 19,
     "coverage": 67,
     "connectivity": 80,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "law-prikaz-fk-21n",
-   "type": [
-    "law"
-   ],
-   "name": "Приказ ФК № 21н",
-   "aliases": [
-    "Приказ ФК № 21н — порядок лицевых счетов ТОФК (форма 0531753)"
-   ],
-   "summary": "Приказ ФК № 21н — порядок лицевых счетов ТОФК (форма 0531753)",
-   "citation": "Приказ ФК № 21н — порядок лицевых счетов ТОФК (форма 0531753)",
-   "pages": [
-    {
-     "layer": "law",
-     "url": "/zakonodatelstvo/",
-     "title": "Приказ ФК № 21н — порядок лицевых счетов ТОФК (форма 0531753)"
-    }
-   ],
-   "relations": {},
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-prikaz-fk-21n",
-   "scores": {
-    "authority": 20,
-    "coverage": 0,
-    "connectivity": 60,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -3224,54 +3364,10 @@
    "schema_id": "https://kazna-gov.ru/#e-law-koap-rf-st-1537",
    "sourceUrl": "https://www.consultant.ru/document/cons_doc_LAW_34661/",
    "scores": {
-    "authority": 20,
+    "authority": 19,
     "coverage": 0,
     "connectivity": 60,
     "citation": 100,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "komplekt-subsidii",
-   "type": [
-    "document"
-   ],
-   "name": "Комплект субсидий",
-   "aliases": [],
-   "summary": "Получателю субсидии на казначейском сопровождении нужно держать в порядке: соглашение о предоставлении субсидии со всеми изменениями, плановые документы (смета/план использования), Сведения, первичные документы по каждому платежу и отчётность об использовании. УФК сверяет каждый расход именно с соглашением, поэтому досье — рабочая необходимость.",
-   "citation": "Собирает «досье субсидии»: расходы защищаются соглашением и планом, отчётность собирается из готовых блоков.",
-   "pages": [
-    {
-     "layer": "document",
-     "url": "/obraztsy/komplekt-dokumentov-subsidii/",
-     "title": "Комплект субсидий"
-    }
-   ],
-   "relations": {
-    "RELATED_DOC": [
-     "svedeniya-ssu",
-     "poyasnenie-ufk",
-     "reestr-dokumentov"
-    ],
-    "SEE_ERROR": [
-     "err-subsidiya-rashody",
-     "err-kod-napravleniya"
-    ],
-    "MONETIZED_BY": [
-     "service-conduct"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-komplekt-subsidii",
-   "scores": {
-    "authority": 19,
-    "coverage": 67,
-    "connectivity": 77,
-    "citation": 80,
     "aiReadiness": 100,
     "density": 100
    }
@@ -3311,7 +3407,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-formulirovka-ks",
    "scores": {
-    "authority": 19,
+    "authority": 18,
     "coverage": 67,
     "connectivity": 70,
     "citation": 80,
@@ -3347,17 +3443,21 @@
      "avans",
      "223-fz"
     ],
+    "REGULATED_BY": [
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+     "law-bk-rf-st-2422224226"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-2026-opredeleniya",
      "/blog/kakie-kontrakty-popadayut-pod-kaznachejskoe-soprovozhdenie/"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-porog-ks",
    "scores": {
-    "authority": 19,
-    "coverage": 33,
-    "connectivity": 70,
+    "authority": 18,
+    "coverage": 50,
+    "connectivity": 77,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -3397,7 +3497,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-zakon-budget",
    "scores": {
-    "authority": 19,
+    "authority": 18,
     "coverage": 33,
     "connectivity": 67,
     "citation": 100,
@@ -3604,51 +3704,46 @@
    }
   },
   {
-   "id": "registratsiya-eb",
+   "id": "poyasnenie-vozvrat",
    "type": [
-    "term"
+    "document"
    ],
-   "name": "Регистрация в «Электронном бюджете»",
-   "aliases": [
-    "регистрация в гиис",
-    "подключение к электронному бюджету"
-   ],
-   "summary": "Регистрация в «Электронном бюджете» — процедура подключения организации и её сотрудников к ГИИС ЭБ: заявка, регистрация уполномоченных лиц с сертификатами, назначение полномочий (ролей) в подсистемах. Обязательный шаг до открытия лицевого счёта и подачи любых документов КС; занимает от нескольких дней.",
-   "citation": "Вход организации в экосистему казначейского документооборота: учётные записи + сертификаты + роли = право подавать документы.",
+   "name": "Пояснение при возврате",
+   "aliases": [],
+   "summary": "После возврата платежа УФК повторную подачу ускоряет короткое пояснение: реквизиты отклонённого распоряжения, дословное основание отказа, что именно исправлено в новом распоряжении. Такой документ показывает специалисту казначейства, что замечание отработано, и снижает риск повторного отказа по тому же основанию.",
+   "citation": "Связывает отклонённый и новый платёж: фиксирует устранение конкретного замечания, ускоряя санкционирование повторной подачи.",
    "pages": [
     {
-     "layer": "term",
-     "url": "/glossary/registratsiya-v-eb/",
-     "title": "Регистрация в «Электронном бюджете»"
+     "layer": "document",
+     "url": "/obraztsy/poyasnenie-pri-vozvrate-platezha/",
+     "title": "Пояснение при возврате"
     }
    ],
    "relations": {
-    "RELATED_TERM": [
-     "giis-eb",
-     "ecp",
-     "doverennost-mchd",
-     "upolnomochennye"
-    ],
-    "REQUIRES_DOC": [
-     "chek-list-otkrytie"
+    "RELATED_DOC": [
+     "poyasnenie-ufk",
+     "otzyv-rasporyazheniya"
     ],
     "SEE_ERROR": [
-     "err-zatyanulos-otkrytie"
+     "err-otkaz-sanktsionirovaniya",
+     "err-igk",
+     "err-naznachenie"
     ],
     "MONETIZED_BY": [
-     "service-open"
+     "service-vosstanovlenie"
     ],
     "EXPLAINED_BY_ARTICLE": [
-     "/blog/registratsiya-v-giis-elektronnyy-byudzhet-podryadchika"
+     "/blog/vozvrat-platezha-kaznachejstvo-chto-delat/",
+     "/blog/naznachenie-platezha-kaznachejstvo/"
     ]
    },
    "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-registratsiya-eb",
+   "schema_id": "https://kazna-gov.ru/#e-poyasnenie-vozvrat",
    "scores": {
     "authority": 14,
-    "coverage": 83,
-    "connectivity": 67,
-    "citation": 100,
+    "coverage": 67,
+    "connectivity": 63,
+    "citation": 80,
     "aiReadiness": 100,
     "density": 100
    }
@@ -3691,9 +3786,9 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-komplekt-goz",
    "scores": {
-    "authority": 13,
+    "authority": 14,
     "coverage": 67,
-    "connectivity": 60,
+    "connectivity": 63,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -3753,12 +3848,62 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-otzyv-rasporyazheniya",
    "scores": {
-    "authority": 13,
+    "authority": 14,
     "coverage": 83,
-    "connectivity": 73,
+    "connectivity": 77,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 73
+    "density": 77
+   }
+  },
+  {
+   "id": "registratsiya-eb",
+   "type": [
+    "term"
+   ],
+   "name": "Регистрация в «Электронном бюджете»",
+   "aliases": [
+    "регистрация в гиис",
+    "подключение к электронному бюджету"
+   ],
+   "summary": "Регистрация в «Электронном бюджете» — процедура подключения организации и её сотрудников к ГИИС ЭБ: заявка, регистрация уполномоченных лиц с сертификатами, назначение полномочий (ролей) в подсистемах. Обязательный шаг до открытия лицевого счёта и подачи любых документов КС; занимает от нескольких дней.",
+   "citation": "Вход организации в экосистему казначейского документооборота: учётные записи + сертификаты + роли = право подавать документы.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/registratsiya-v-eb/",
+     "title": "Регистрация в «Электронном бюджете»"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "giis-eb",
+     "ecp",
+     "doverennost-mchd",
+     "upolnomochennye"
+    ],
+    "REQUIRES_DOC": [
+     "chek-list-otkrytie"
+    ],
+    "SEE_ERROR": [
+     "err-zatyanulos-otkrytie"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/registratsiya-v-giis-elektronnyy-byudzhet-podryadchika"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-registratsiya-eb",
+   "scores": {
+    "authority": 14,
+    "coverage": 83,
+    "connectivity": 67,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
    }
   },
   {
@@ -3945,51 +4090,6 @@
    }
   },
   {
-   "id": "poyasnenie-vozvrat",
-   "type": [
-    "document"
-   ],
-   "name": "Пояснение при возврате",
-   "aliases": [],
-   "summary": "После возврата платежа УФК повторную подачу ускоряет короткое пояснение: реквизиты отклонённого распоряжения, дословное основание отказа, что именно исправлено в новом распоряжении. Такой документ показывает специалисту казначейства, что замечание отработано, и снижает риск повторного отказа по тому же основанию.",
-   "citation": "Связывает отклонённый и новый платёж: фиксирует устранение конкретного замечания, ускоряя санкционирование повторной подачи.",
-   "pages": [
-    {
-     "layer": "document",
-     "url": "/obraztsy/poyasnenie-pri-vozvrate-platezha/",
-     "title": "Пояснение при возврате"
-    }
-   ],
-   "relations": {
-    "RELATED_DOC": [
-     "poyasnenie-ufk",
-     "otzyv-rasporyazheniya"
-    ],
-    "SEE_ERROR": [
-     "err-otkaz-sanktsionirovaniya",
-     "err-igk",
-     "err-naznachenie"
-    ],
-    "MONETIZED_BY": [
-     "service-vosstanovlenie"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/vozvrat-platezha-kaznachejstvo-chto-delat/",
-     "/blog/naznachenie-platezha-kaznachejstvo/"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-poyasnenie-vozvrat",
-   "scores": {
-    "authority": 12,
-    "coverage": 67,
-    "connectivity": 57,
-    "citation": 80,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
    "id": "fk",
    "type": [
     "term"
@@ -4020,6 +4120,9 @@
     "REQUIRES_DOC": [
      "zayavlenie-ls"
     ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226"
+    ],
     "MONETIZED_BY": [
      "service-open"
     ],
@@ -4027,12 +4130,12 @@
      "/blog/ks_2025/"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-fk",
    "scores": {
     "authority": 12,
-    "coverage": 67,
-    "connectivity": 57,
+    "coverage": 83,
+    "connectivity": 60,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -4068,6 +4171,10 @@
     "SEE_ERROR": [
      "err-zatyanulos-otkrytie"
     ],
+    "REGULATED_BY": [
+     "law-prikaz-fk-21n",
+     "law-prikaz-fk-44n"
+    ],
     "MONETIZED_BY": [
      "service-reserve"
     ],
@@ -4075,12 +4182,12 @@
      "/blog/how_to_open/"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-rezervirovanie-ls",
    "scores": {
     "authority": 12,
-    "coverage": 83,
-    "connectivity": 53,
+    "coverage": 100,
+    "connectivity": 60,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -4350,6 +4457,9 @@
     "SEE_ERROR": [
      "err-svedeniya-otkaz"
     ],
+    "REGULATED_BY": [
+     "law-44-fz"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -4357,12 +4467,12 @@
      "/blog/kaznacheyskoe-soprovozhdenie-44-fz-2026-polnyy-gid"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-zakazchik",
    "scores": {
     "authority": 11,
-    "coverage": 83,
-    "connectivity": 57,
+    "coverage": 100,
+    "connectivity": 60,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -5040,6 +5150,9 @@
     "SEE_ERROR": [
      "err-ecp"
     ],
+    "REGULATED_BY": [
+     "law-63-fz"
+    ],
     "MONETIZED_BY": [
      "service-open"
     ],
@@ -5047,15 +5160,15 @@
      "/blog/sertifikat-ecp-kaznacheystva"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-fns",
    "scores": {
-    "authority": 9,
-    "coverage": 83,
-    "connectivity": 47,
+    "authority": 8,
+    "coverage": 100,
+    "connectivity": 50,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 93
+    "density": 100
    }
   },
   {
@@ -5084,6 +5197,9 @@
      "obs",
      "goz"
     ],
+    "REGULATED_BY": [
+     "law-275-fz"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -5092,15 +5208,15 @@
      "/blog/kaznacheyskoe-vs-bankovskoe-soprovozhdenie-otlichiya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-psb",
    "scores": {
-    "authority": 9,
-    "coverage": 50,
-    "connectivity": 40,
+    "authority": 8,
+    "coverage": 67,
+    "connectivity": 43,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 80
+    "density": 87
    }
   },
   {
@@ -5138,7 +5254,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-eks",
    "scores": {
-    "authority": 9,
+    "authority": 8,
     "coverage": 50,
     "connectivity": 40,
     "citation": 100,
@@ -5171,6 +5287,10 @@
      "ls-71",
      "rekvizity-ks"
     ],
+    "REGULATED_BY": [
+     "law-prikaz-fk-21n",
+     "law-prikaz-fk-44n"
+    ],
     "MONETIZED_BY": [
      "service-open"
     ],
@@ -5179,15 +5299,15 @@
      "/blog/kody-kaznacheyskogo-soprovozhdeniya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-kod-71",
    "scores": {
-    "authority": 9,
-    "coverage": 50,
-    "connectivity": 37,
+    "authority": 8,
+    "coverage": 67,
+    "connectivity": 43,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 73
+    "density": 87
    }
   },
   {
@@ -5231,7 +5351,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-priostanovlenie",
    "scores": {
-    "authority": 9,
+    "authority": 8,
     "coverage": 83,
     "connectivity": 47,
     "citation": 100,
@@ -5289,7 +5409,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-hub-ks",
    "scores": {
-    "authority": 9,
+    "authority": 8,
     "coverage": 83,
     "connectivity": 63,
     "citation": 80,
@@ -5340,7 +5460,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-hub-sankts",
    "scores": {
-    "authority": 9,
+    "authority": 8,
     "coverage": 83,
     "connectivity": 50,
     "citation": 80,
@@ -5395,7 +5515,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-vp-mo",
    "scores": {
-    "authority": 8,
+    "authority": 7,
     "coverage": 100,
     "connectivity": 50,
     "citation": 100,
@@ -5439,7 +5559,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-nubp",
    "scores": {
-    "authority": 8,
+    "authority": 7,
     "coverage": 50,
     "connectivity": 37,
     "citation": 100,
@@ -5488,7 +5608,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-kofk",
    "scores": {
-    "authority": 8,
+    "authority": 7,
     "coverage": 67,
     "connectivity": 43,
     "citation": 100,
@@ -5551,7 +5671,7 @@
    "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-kak-otkryt-schet",
    "scores": {
-    "authority": 8,
+    "authority": 7,
     "coverage": 100,
     "connectivity": 63,
     "citation": 100,
@@ -5595,7 +5715,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-zayavlenie-zakrytie",
    "scores": {
-    "authority": 7,
+    "authority": 6,
     "coverage": 67,
     "connectivity": 37,
     "citation": 80,
@@ -5634,6 +5754,10 @@
     "SEE_ERROR": [
      "err-igk"
     ],
+    "REGULATED_BY": [
+     "law-44-fz",
+     "law-223-fz"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -5641,15 +5765,15 @@
      "/blog/igk-v-platezhah-kaznacheystva"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-eis",
    "scores": {
-    "authority": 7,
-    "coverage": 67,
-    "connectivity": 40,
+    "authority": 6,
+    "coverage": 83,
+    "connectivity": 47,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 80
+    "density": 93
    }
   },
   {
@@ -5678,6 +5802,9 @@
      "ks",
      "sanktsionirovanie"
     ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -5685,15 +5812,15 @@
      "/blog/kaznacheyskoe-soprovozhdenie-stroitelstvo"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-rasshirennoe-ks",
    "scores": {
-    "authority": 7,
-    "coverage": 50,
-    "connectivity": 33,
+    "authority": 6,
+    "coverage": 67,
+    "connectivity": 37,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 67
+    "density": 73
    }
   },
   {
@@ -5721,6 +5848,10 @@
      "obs",
      "ks"
     ],
+    "REGULATED_BY": [
+     "law-275-fz",
+     "law-44-fz"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -5728,15 +5859,15 @@
      "/blog/kaznacheyskoe-vs-bankovskoe-soprovozhdenie-otlichiya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-bank-soprovozhdenie",
    "scores": {
-    "authority": 7,
-    "coverage": 50,
-    "connectivity": 33,
+    "authority": 6,
+    "coverage": 67,
+    "connectivity": 40,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 67
+    "density": 80
    }
   },
   {
@@ -5764,6 +5895,10 @@
      "vypiska-ls",
      "avans"
     ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226",
+     "law-prikaz-minfina-214n"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -5771,15 +5906,15 @@
      "/blog/limit-na-ks-schete-formirovanie-i-kontrol"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-limit-ks",
    "scores": {
-    "authority": 7,
-    "coverage": 50,
-    "connectivity": 33,
+    "authority": 6,
+    "coverage": 67,
+    "connectivity": 40,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 67
+    "density": 80
    }
   },
   {
@@ -5822,7 +5957,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-reestr-kontraktov",
    "scores": {
-    "authority": 7,
+    "authority": 6,
     "coverage": 67,
     "connectivity": 40,
     "citation": 100,
@@ -5865,7 +6000,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-vozvrat-avansa",
    "scores": {
-    "authority": 7,
+    "authority": 6,
     "coverage": 50,
     "connectivity": 33,
     "citation": 100,
@@ -5911,7 +6046,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-doverennost-ufk",
    "scores": {
-    "authority": 7,
+    "authority": 6,
     "coverage": 67,
     "connectivity": 37,
     "citation": 100,
@@ -5954,7 +6089,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-kod-tselevyh",
    "scores": {
-    "authority": 7,
+    "authority": 6,
     "coverage": 50,
     "connectivity": 33,
     "citation": 100,
@@ -6015,7 +6150,7 @@
    "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-srok-otkrytiya-scheta",
    "scores": {
-    "authority": 7,
+    "authority": 6,
     "coverage": 100,
     "connectivity": 53,
     "citation": 100,
@@ -6259,6 +6394,9 @@
      "kontrakt-44",
      "sanktsionirovanie"
     ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/tseny-na-kaznacheyskoe-soprovozhdenie-2026",
      "/blog/soprovozhdenie-goskontraktov-pod-kluch"
@@ -6267,15 +6405,15 @@
      "faq-sostav-uslugi-soprovozhdeniya"
     ]
    },
-   "updated": "2026-07-13",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-stoimost-soprovozhdeniya",
    "scores": {
     "authority": 5,
-    "coverage": 50,
-    "connectivity": 30,
+    "coverage": 67,
+    "connectivity": 33,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 60
+    "density": 67
    }
   },
   {
@@ -6422,6 +6560,10 @@
      "giis-eb",
      "fk"
     ],
+    "REGULATED_BY": [
+     "law-prikaz-minfina-214n",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -6429,15 +6571,15 @@
      "/blog/novyy-poryadok-kaznacheyskogo-soprovozhdeniya-s-1-sentyabrya-2026"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-minfin",
    "scores": {
     "authority": 4,
-    "coverage": 50,
-    "connectivity": 27,
+    "coverage": 67,
+    "connectivity": 33,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 53
+    "density": 67
    }
   },
   {
@@ -6466,6 +6608,9 @@
      "subsidiya",
      "zakon-budget"
     ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -6473,15 +6618,15 @@
      "/blog/kaznacheyskoe-soprovozhdenie-munitsipalnyh-kontraktov"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-finorgan",
    "scores": {
     "authority": 4,
-    "coverage": 50,
-    "connectivity": 27,
+    "coverage": 67,
+    "connectivity": 30,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 53
+    "density": 60
    }
   },
   {
@@ -7161,6 +7306,9 @@
      "goz",
      "opk"
     ],
+    "REGULATED_BY": [
+     "law-275-fz"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -7168,15 +7316,15 @@
      "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-girbo",
    "scores": {
     "authority": 3,
-    "coverage": 50,
-    "connectivity": 23,
+    "coverage": 67,
+    "connectivity": 27,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 47
+    "density": 53
    }
   },
   {
@@ -7205,6 +7353,9 @@
      "ks",
      "tsepochka-ks"
     ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -7212,15 +7363,15 @@
      "/blog/kaznacheyskoe-obespechenie-obyazatelstv"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-koo-obs",
    "scores": {
     "authority": 3,
-    "coverage": 50,
-    "connectivity": 23,
+    "coverage": 67,
+    "connectivity": 27,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 47
+    "density": 53
    }
   },
   {
@@ -7297,6 +7448,10 @@
     "SEE_ERROR": [
      "err-kartochka"
     ],
+    "REGULATED_BY": [
+     "law-prikaz-fk-21n",
+     "law-prikaz-fk-44n"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -7304,15 +7459,15 @@
      "/blog/smena-rukovoditelya-pri-deystvuyushchem-ks-schete"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-pereoformlenie-ls",
    "scores": {
     "authority": 3,
-    "coverage": 83,
-    "connectivity": 33,
+    "coverage": 100,
+    "connectivity": 40,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 67
+    "density": 80
    }
   },
   {
@@ -8571,6 +8726,9 @@
      "law-bk-rf-st-2422224226",
      "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
+    "MONETIZED_BY": [
+     "service-start"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-2026-opredeleniya",
      "/blog/kakie-kontrakty-popadayut-pod-kaznachejskoe-soprovozhdenie"
@@ -8579,15 +8737,15 @@
      "faq-ks-menyaetsya-kazhdyy-god"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-kto-ustanavlivaet-sluchai-ks",
    "scores": {
     "authority": 3,
-    "coverage": 67,
-    "connectivity": 33,
+    "coverage": 83,
+    "connectivity": 37,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 67
+    "density": 73
    }
   },
   {
@@ -8734,6 +8892,9 @@
     "REGULATED_BY": [
      "law-275-fz"
     ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/tseny-na-kaznacheyskoe-soprovozhdenie-2026",
      "/blog/autsorsing-kaznacheyskogo-soprovozhdeniya"
@@ -8742,15 +8903,15 @@
      "faq-kalkulyator-stoimosti"
     ]
    },
-   "updated": "2026-07-13",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-faktory-tseny-soprovozhdeniya",
    "scores": {
     "authority": 3,
-    "coverage": 67,
-    "connectivity": 30,
+    "coverage": 83,
+    "connectivity": 33,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 60
+    "density": 67
    }
   },
   {
@@ -9224,6 +9385,37 @@
    }
   },
   {
+   "id": "law-223-fz",
+   "type": [
+    "law"
+   ],
+   "name": "223-ФЗ",
+   "aliases": [
+    "223-ФЗ — закупки госкомпаний"
+   ],
+   "summary": "223-ФЗ — закупки госкомпаний",
+   "citation": "223-ФЗ — закупки госкомпаний",
+   "pages": [
+    {
+     "layer": "law",
+     "url": "/zakonodatelstvo/",
+     "title": "223-ФЗ — закупки госкомпаний"
+    }
+   ],
+   "relations": {},
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-law-223-fz",
+   "sourceUrl": "https://www.consultant.ru/document/cons_doc_LAW_116964/",
+   "scores": {
+    "authority": 3,
+    "coverage": 0,
+    "connectivity": 10,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 20
+   }
+  },
+  {
    "id": "law-pp-2053",
    "type": [
     "law"
@@ -9326,6 +9518,10 @@
      "igk",
      "obs"
     ],
+    "REGULATED_BY": [
+     "law-275-fz",
+     "law-44-fz"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -9333,15 +9529,15 @@
      "/blog/ast-goz-elektronnaya-torgovaya-ploshadka"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-ast-goz",
    "scores": {
     "authority": 2,
-    "coverage": 50,
-    "connectivity": 20,
+    "coverage": 67,
+    "connectivity": 27,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 40
+    "density": 53
    }
   },
   {
@@ -13706,6 +13902,9 @@
      "law-44-fz",
      "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
+    "MONETIZED_BY": [
+     "service-start"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-v-dogovore",
      "/blog/podvodnye-kamni-kaznacheyskogo-soprovozhdeniya"
@@ -13714,15 +13913,15 @@
      "faq-gde-uchitsya-ks"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-proverka-do-podpisaniya",
    "scores": {
     "authority": 2,
-    "coverage": 83,
-    "connectivity": 37,
+    "coverage": 100,
+    "connectivity": 40,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 73
+    "density": 80
    }
   },
   {
@@ -14014,37 +14213,6 @@
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
-   }
-  },
-  {
-   "id": "law-223-fz",
-   "type": [
-    "law"
-   ],
-   "name": "223-ФЗ",
-   "aliases": [
-    "223-ФЗ — закупки госкомпаний"
-   ],
-   "summary": "223-ФЗ — закупки госкомпаний",
-   "citation": "223-ФЗ — закупки госкомпаний",
-   "pages": [
-    {
-     "layer": "law",
-     "url": "/zakonodatelstvo/",
-     "title": "223-ФЗ — закупки госкомпаний"
-    }
-   ],
-   "relations": {},
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-223-fz",
-   "sourceUrl": "https://www.consultant.ru/document/cons_doc_LAW_116964/",
-   "scores": {
-    "authority": 2,
-    "coverage": 0,
-    "connectivity": 7,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 13
    }
   },
   {
@@ -14900,6 +15068,9 @@
     "REGULATED_BY": [
      "law-prikaz-fk-21n"
     ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/zakrytie-kaznacheyskogo-scheta-posle-kontrakta"
     ],
@@ -14907,15 +15078,15 @@
      "faq-ostatok-pri-zakrytii"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-nuzhno-li-zakryvat-schet",
    "scores": {
     "authority": 1,
-    "coverage": 83,
-    "connectivity": 27,
+    "coverage": 100,
+    "connectivity": 30,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 53
+    "density": 60
    }
   },
   {
@@ -15354,6 +15525,9 @@
     "REGULATED_BY": [
      "law-prikaz-minfina-214n"
     ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/codes",
      "/blog/izmeneniya-platezhek-kaznachejstvo-2026/"
@@ -15362,15 +15536,15 @@
      "faq-kod-dlya-zarplaty"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-gde-vzyat-kody",
    "scores": {
     "authority": 1,
     "coverage": 100,
-    "connectivity": 30,
+    "connectivity": 33,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 60
+    "density": 67
    }
   },
   {
@@ -17301,6 +17475,9 @@
      "law-275-fz",
      "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
+    "MONETIZED_BY": [
+     "service-start"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kak-rasschitat-summu-avansa-po-goskontraktu",
      "/blog/kaznacheyskoe-soprovozhdenie-44-fz-2026-polnyy-gid"
@@ -17309,15 +17486,15 @@
      "faq-poluchit-avans"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-razmer-avansa",
    "scores": {
     "authority": 1,
-    "coverage": 67,
-    "connectivity": 30,
+    "coverage": 83,
+    "connectivity": 33,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 60
+    "density": 67
    }
   },
   {
@@ -23406,6 +23583,9 @@
      "law-pp-1465",
      "law-275-fz"
     ],
+    "MONETIZED_BY": [
+     "service-start"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/vidy-cen-goz",
      "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid"
@@ -23414,15 +23594,15 @@
      "faq-vyvod-pribyli-goz"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-skolko-pribyli-goz",
    "scores": {
     "authority": 1,
-    "coverage": 67,
-    "connectivity": 23,
+    "coverage": 83,
+    "connectivity": 27,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 47
+    "density": 53
    }
   },
   {
@@ -24097,6 +24277,9 @@
     "SEE_ERROR": [
      "err-subsidiya-rashody"
     ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/autsorsing-kaznacheyskogo-soprovozhdeniya",
      "/blog/soprovozhdenie-goskontraktov-pod-kluch",
@@ -24106,15 +24289,15 @@
      "faq-subsidiya-pod-ks"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-pomoshch-s-subsidiey",
    "scores": {
     "authority": 1,
-    "coverage": 83,
-    "connectivity": 27,
+    "coverage": 100,
+    "connectivity": 30,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 53
+    "density": 60
    }
   },
   {
@@ -24559,6 +24742,9 @@
      "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
      "law-prikaz-minfina-214n"
     ],
+    "MONETIZED_BY": [
+     "service-start"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-2026-opredeleniya",
      "/blog/ks_2025"
@@ -24567,15 +24753,15 @@
      "faq-bk-242"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-kakoy-zakon-reguliruet-ks",
    "scores": {
     "authority": 1,
-    "coverage": 67,
-    "connectivity": 30,
+    "coverage": 83,
+    "connectivity": 33,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 60
+    "density": 67
    }
   },
   {
@@ -24610,6 +24796,9 @@
     "REGULATED_BY": [
      "law-bk-rf-st-2422224226"
     ],
+    "MONETIZED_BY": [
+     "service-start"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-2026-opredeleniya",
      "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov"
@@ -24618,15 +24807,15 @@
      "faq-prikaz-214n"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-bk-242",
    "scores": {
     "authority": 1,
-    "coverage": 67,
-    "connectivity": 23,
+    "coverage": 83,
+    "connectivity": 27,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 47
+    "density": 53
    }
   },
   {
@@ -24843,6 +25032,9 @@
     "REGULATED_BY": [
      "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/ks_2025",
      "/blog/novyy-poryadok-kaznacheyskogo-soprovozhdeniya-s-1-sentyabrya-2026"
@@ -24851,15 +25043,15 @@
      "faq-ks-vs-bankovskoe"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-gde-sledit-za-izmeneniyami",
    "scores": {
     "authority": 1,
-    "coverage": 67,
-    "connectivity": 23,
+    "coverage": 83,
+    "connectivity": 27,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 47
+    "density": 53
    }
   },
   {
@@ -25249,6 +25441,9 @@
      "law-koap-rf-st-1514",
      "law-koap-rf-st-1537"
     ],
+    "MONETIZED_BY": [
+     "service-vosstanovlenie"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/podvodnye-kamni-kaznacheyskogo-soprovozhdeniya",
      "/blog/kalendar-otchetnosti-podryadchika-ks-2026"
@@ -25257,15 +25452,15 @@
      "faq-narushenie-ks"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-srok-davnosti-ks",
    "scores": {
     "authority": 1,
     "coverage": 100,
-    "connectivity": 33,
+    "connectivity": 37,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 67
+    "density": 73
    }
   },
   {
@@ -25355,6 +25550,9 @@
     "REGULATED_BY": [
      "law-bk-rf-st-2422224226"
     ],
+    "MONETIZED_BY": [
+     "service-start"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
      "/blog/kaznacheyskoe-soprovozhdenie-2026-opredeleniya"
@@ -25363,15 +25561,15 @@
      "faq-plyusy-ks-dlya-podryadchika"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-zachem-gosudarstvu-ks",
    "scores": {
     "authority": 1,
-    "coverage": 67,
-    "connectivity": 23,
+    "coverage": 83,
+    "connectivity": 27,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 47
+    "density": 53
    }
   },
   {
@@ -25459,6 +25657,9 @@
     "REQUIRES_DOC": [
      "doverennost-mchd"
     ],
+    "MONETIZED_BY": [
+     "service-start"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/soprovozhdenie-goskontraktov-pod-kluch"
     ],
@@ -25466,15 +25667,15 @@
      "faq-srok-podklyucheniya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-kak-zakazat-uslugu",
    "scores": {
     "authority": 1,
-    "coverage": 67,
-    "connectivity": 20,
+    "coverage": 83,
+    "connectivity": 23,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 40
+    "density": 47
    }
   },
   {
@@ -25617,6 +25818,9 @@
      "sanktsionirovanie",
      "sroki-ufk"
     ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/soprovozhdenie-goskontraktov-pod-kluch",
      "/blog/autsorsing-kaznacheyskogo-soprovozhdeniya"
@@ -25625,15 +25829,15 @@
      "faq-otraslevoy-opyt"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-garantii",
    "scores": {
     "authority": 1,
-    "coverage": 50,
-    "connectivity": 17,
+    "coverage": 67,
+    "connectivity": 20,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 33
+    "density": 40
    }
   },
   {
@@ -25725,6 +25929,9 @@
     "REGULATED_BY": [
      "law-275-fz"
     ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-stroitelstvo",
      "/blog/kaznacheyskoe-soprovozhdenie-it-goskontraktov",
@@ -25734,15 +25941,15 @@
      "faq-opyt-v-tsifrakh"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-otraslevoy-opyt",
    "scores": {
     "authority": 1,
-    "coverage": 67,
-    "connectivity": 23,
+    "coverage": 83,
+    "connectivity": 27,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 47
+    "density": 53
    }
   },
   {
@@ -25773,6 +25980,9 @@
      "ks",
      "tsepochka-ks"
     ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/keys-ks-restavratsiya-moskva",
      "/blog/soprovozhdenie-goskontraktov-pod-kluch"
@@ -25781,15 +25991,15 @@
      "faq-besplatnaya-diagnostika"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-opyt-v-tsifrakh",
    "scores": {
     "authority": 1,
-    "coverage": 50,
-    "connectivity": 17,
+    "coverage": 67,
+    "connectivity": 20,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 33
+    "density": 40
    }
   },
   {
@@ -25820,6 +26030,9 @@
      "porog-ks",
      "kontrakt-44"
     ],
+    "MONETIZED_BY": [
+     "service-start"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/soprovozhdenie-goskontraktov-pod-kluch",
      "/blog/podvodnye-kamni-kaznacheyskogo-soprovozhdeniya"
@@ -25828,15 +26041,15 @@
      "faq-ip-i-malyy-biznes"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-besplatnaya-diagnostika",
    "scores": {
     "authority": 1,
-    "coverage": 50,
-    "connectivity": 17,
+    "coverage": 67,
+    "connectivity": 20,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 33
+    "density": 40
    }
   },
   {
@@ -25867,6 +26080,9 @@
      "tsepochka-ks",
      "rkp"
     ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/tseny-na-kaznacheyskoe-soprovozhdenie-2026"
     ],
@@ -25874,15 +26090,15 @@
      "faq-tolko-otkrytie-scheta"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-kalkulyator-stoimosti",
    "scores": {
     "authority": 1,
-    "coverage": 50,
-    "connectivity": 17,
+    "coverage": 67,
+    "connectivity": 20,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 33
+    "density": 40
    }
   },
   {
@@ -26029,6 +26245,9 @@
      "law-bk-rf-st-2422224226",
      "law-44-fz"
     ],
+    "MONETIZED_BY": [
+     "service-start"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/ks_2025",
      "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
@@ -26038,15 +26257,15 @@
      "faq-start-novichka"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-ks-prostymi-slovami",
    "scores": {
     "authority": 1,
-    "coverage": 67,
-    "connectivity": 27,
+    "coverage": 83,
+    "connectivity": 30,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 53
+    "density": 60
    }
   },
   {
@@ -26136,6 +26355,9 @@
     "REGULATED_BY": [
      "law-bk-rf-st-2422224226"
     ],
+    "MONETIZED_BY": [
+     "service-start"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
      "/blog/glossariy-terminov-kaznacheyskogo-soprovozhdeniya"
@@ -26144,15 +26366,15 @@
      "faq-ks-prostymi-slovami"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-gde-uchitsya-ks",
    "scores": {
     "authority": 1,
-    "coverage": 83,
-    "connectivity": 23,
+    "coverage": 100,
+    "connectivity": 27,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 47
+    "density": 53
    }
   },
   {
