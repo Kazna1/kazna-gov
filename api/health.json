@@ -1,7 +1,7 @@
 {
- "generated": "2026-07-14T06:39:00.661Z",
+ "generated": "2026-07-14T07:00:17.884Z",
  "nodes": 487,
- "edges": 4093,
+ "edges": 4187,
  "byType": {
   "term": 120,
   "faq": 301,
@@ -13,20 +13,20 @@
   "law": 16
  },
  "scores": {
-  "coverage": 85,
+  "coverage": 87,
   "authority": 8,
-  "connectivity": 44,
+  "connectivity": 45,
   "citationDensity": 89,
-  "graphDensity": 8.4,
+  "graphDensity": 8.6,
   "machineReadability": 100,
   "aiReadiness": 100,
   "registryCompleteness": 100,
   "linkQuality": 100,
   "moneyQuality": 100,
   "toolCoverage": 3,
-  "documentCoverage": 67,
+  "documentCoverage": 69,
   "errorCoverage": 62,
-  "glossaryCoverage": 96,
+  "glossaryCoverage": 97,
   "faqCoverage": 68,
   "hubQuality": 42,
   "knowledgeScore": 74

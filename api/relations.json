@@ -2071,6 +2071,16 @@
   },
   {
    "from": "zakrytie-ls",
+   "to": "law-prikaz-fk-44n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "zakrytie-ls",
+   "to": "law-prikaz-fk-21n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "zakrytie-ls",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -2091,6 +2101,16 @@
   },
   {
    "from": "neisp-ostatok",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "neisp-ostatok",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "neisp-ostatok",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -2108,6 +2128,16 @@
    "from": "rekvizity-ks",
    "to": "eks",
    "rel": "RELATED_TERM"
+  },
+  {
+   "from": "rekvizity-ks",
+   "to": "law-prikaz-fk-44n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "rekvizity-ks",
+   "to": "law-prikaz-fk-21n",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "rekvizity-ks",
@@ -2146,6 +2176,16 @@
   },
   {
    "from": "kontrakt-44",
+   "to": "law-44-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "kontrakt-44",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "kontrakt-44",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -2181,6 +2221,16 @@
   },
   {
    "from": "igk",
+   "to": "law-44-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "igk",
+   "to": "law-275-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "igk",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -2198,6 +2248,16 @@
    "from": "municipalnyy",
    "to": "porog-ks",
    "rel": "RELATED_TERM"
+  },
+  {
+   "from": "municipalnyy",
+   "to": "law-44-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "municipalnyy",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "municipalnyy",
@@ -2231,6 +2291,21 @@
   },
   {
    "from": "tsepochka-ks",
+   "to": "law-275-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "tsepochka-ks",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "tsepochka-ks",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "tsepochka-ks",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -2248,6 +2323,11 @@
    "from": "golovnoy-ispolnitel",
    "to": "goz",
    "rel": "RELATED_TERM"
+  },
+  {
+   "from": "golovnoy-ispolnitel",
+   "to": "law-275-fz",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "golovnoy-ispolnitel",
@@ -2281,6 +2361,16 @@
   },
   {
    "from": "subpodryadchik",
+   "to": "law-275-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "subpodryadchik",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "subpodryadchik",
    "to": "service-open",
    "rel": "MONETIZED_BY"
   },
@@ -2298,6 +2388,11 @@
    "from": "etap-kontrakta",
    "to": "pribyl-ks",
    "rel": "RELATED_TERM"
+  },
+  {
+   "from": "etap-kontrakta",
+   "to": "law-44-fz",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "etap-kontrakta",
@@ -2331,6 +2426,11 @@
   },
   {
    "from": "reestr-kontraktov",
+   "to": "law-44-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "reestr-kontraktov",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -2351,6 +2451,16 @@
   },
   {
    "from": "tsifrovoy-kontrakt",
+   "to": "law-44-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "tsifrovoy-kontrakt",
+   "to": "law-63-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "tsifrovoy-kontrakt",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -2368,6 +2478,16 @@
    "from": "ed-postavshchik",
    "to": "zakon-budget",
    "rel": "RELATED_TERM"
+  },
+  {
+   "from": "ed-postavshchik",
+   "to": "law-44-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "ed-postavshchik",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "goz",
@@ -2411,6 +2531,21 @@
   },
   {
    "from": "goz",
+   "to": "law-275-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "goz",
+   "to": "law-pp-1465",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "goz",
+   "to": "law-koap-rf-st-1537",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "goz",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -2443,6 +2578,16 @@
    "from": "razdelnyy-uchet",
    "to": "err-razdelnyy-uchet",
    "rel": "SEE_ERROR"
+  },
+  {
+   "from": "razdelnyy-uchet",
+   "to": "law-275-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "razdelnyy-uchet",
+   "to": "law-koap-rf-st-1537",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "razdelnyy-uchet",
@@ -2481,6 +2626,16 @@
   },
   {
    "from": "prim-1",
+   "to": "law-275-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "prim-1",
+   "to": "law-pp-1465",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "prim-1",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -2511,6 +2666,11 @@
   },
   {
    "from": "opk",
+   "to": "law-275-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "opk",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -2533,6 +2693,16 @@
    "from": "vidy-tsen-goz",
    "to": "pp-1465",
    "rel": "RELATED_TERM"
+  },
+  {
+   "from": "vidy-tsen-goz",
+   "to": "law-pp-1465",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "vidy-tsen-goz",
+   "to": "law-275-fz",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "vidy-tsen-goz",
@@ -2561,6 +2731,11 @@
   },
   {
    "from": "norma-pribyli",
+   "to": "law-pp-1465",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "norma-pribyli",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -2578,6 +2753,11 @@
    "from": "opornyy-bank",
    "to": "bank-soprovozhdenie",
    "rel": "RELATED_TERM"
+  },
+  {
+   "from": "opornyy-bank",
+   "to": "law-275-fz",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "opornyy-bank",
@@ -2616,6 +2796,16 @@
   },
   {
    "from": "subsidiya",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "subsidiya",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "subsidiya",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -2643,6 +2833,16 @@
    "from": "grant",
    "to": "err-subsidiya-rashody",
    "rel": "SEE_ERROR"
+  },
+  {
+   "from": "grant",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "grant",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "grant",
@@ -2681,6 +2881,11 @@
   },
   {
    "from": "soglashenie-subsidii",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "soglashenie-subsidii",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -2703,6 +2908,16 @@
    "from": "id-soglasheniya",
    "to": "err-subsidiya-rashody",
    "rel": "SEE_ERROR"
+  },
+  {
+   "from": "id-soglasheniya",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "id-soglasheniya",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "id-soglasheniya",
@@ -2736,6 +2951,11 @@
   },
   {
    "from": "poluchatel-subsidii",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "poluchatel-subsidii",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -2753,6 +2973,21 @@
    "from": "nubp",
    "to": "poluchatel-subsidii",
    "rel": "RELATED_TERM"
+  },
+  {
+   "from": "nubp",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "nubp",
+   "to": "law-prikaz-fk-44n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "nubp",
+   "to": "law-prikaz-fk-21n",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "nubp",
@@ -2798,6 +3033,16 @@
    "from": "platezh",
    "to": "err-naznachenie",
    "rel": "SEE_ERROR"
+  },
+  {
+   "from": "platezh",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "platezh",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "platezh",
@@ -2881,6 +3126,11 @@
   },
   {
    "from": "naznachenie",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "naznachenie",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -2908,6 +3158,16 @@
    "from": "avans",
    "to": "err-necelevoe",
    "rel": "SEE_ERROR"
+  },
+  {
+   "from": "avans",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "avans",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "vozmeshchenie",
@@ -2941,6 +3201,11 @@
   },
   {
    "from": "vozmeshchenie",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "vozmeshchenie",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -2968,6 +3233,11 @@
    "from": "pryamoy-platezh",
    "to": "err-otkaz-sanktsionirovaniya",
    "rel": "SEE_ERROR"
+  },
+  {
+   "from": "pryamoy-platezh",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "pryamoy-platezh",

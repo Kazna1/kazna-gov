@@ -3313,6 +3313,10 @@
     "REQUIRES_DOC": [
      "zayavlenie-zakrytie"
     ],
+    "REGULATED_BY": [
+     "law-prikaz-fk-44n",
+     "law-prikaz-fk-21n"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -3320,12 +3324,12 @@
      "/blog/zakrytie-kaznacheyskogo-scheta-posle-kontrakta"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-zakrytie-ls",
    "scores": {
     "authority": 12,
-    "coverage": 67,
-    "connectivity": 53,
+    "coverage": 83,
+    "connectivity": 60,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -3357,6 +3361,10 @@
      "vozvrat-avansa",
      "tselevye-sredstva"
     ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226",
+     "law-prikaz-minfina-214n"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -3364,12 +3372,12 @@
      "/blog/vozvrat-avansa-po-goskontraktu-kaznacheystvo"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-neisp-ostatok",
    "scores": {
     "authority": 12,
-    "coverage": 50,
-    "connectivity": 50,
+    "coverage": 67,
+    "connectivity": 57,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -3400,6 +3408,10 @@
      "kod-71",
      "eks"
     ],
+    "REGULATED_BY": [
+     "law-prikaz-fk-44n",
+     "law-prikaz-fk-21n"
+    ],
     "MONETIZED_BY": [
      "service-open"
     ],
@@ -3407,12 +3419,12 @@
      "/blog/rekvizity-kaznacheyskogo-scheta"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-rekvizity-ks",
    "scores": {
     "authority": 13,
-    "coverage": 50,
-    "connectivity": 53,
+    "coverage": 67,
+    "connectivity": 60,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -3449,6 +3461,10 @@
      "formulirovka-ks",
      "reestr-dokumentov"
     ],
+    "REGULATED_BY": [
+     "law-44-fz",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -3457,11 +3473,11 @@
      "/blog/kaznacheyskoe-soprovozhdenie-44-fz-2026-polnyy-gid"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-kontrakt-44",
    "scores": {
     "authority": 36,
-    "coverage": 67,
+    "coverage": 83,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -3501,6 +3517,10 @@
     "SEE_ERROR": [
      "err-igk"
     ],
+    "REGULATED_BY": [
+     "law-44-fz",
+     "law-275-fz"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -3508,11 +3528,11 @@
      "/blog/igk-v-platezhah-kaznacheystva"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-igk",
    "scores": {
     "authority": 49,
-    "coverage": 83,
+    "coverage": 100,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -3544,6 +3564,10 @@
      "finorgan",
      "porog-ks"
     ],
+    "REGULATED_BY": [
+     "law-44-fz",
+     "law-bk-rf-st-2422224226"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -3551,15 +3575,15 @@
      "/blog/kaznacheyskoe-soprovozhdenie-munitsipalnyh-kontraktov"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-municipalnyy",
    "scores": {
     "authority": 2,
-    "coverage": 50,
-    "connectivity": 20,
+    "coverage": 67,
+    "connectivity": 27,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 40
+    "density": 53
    }
   },
   {
@@ -3592,6 +3616,11 @@
     "REQUIRES_DOC": [
      "formulirovka-ks"
     ],
+    "REGULATED_BY": [
+     "law-275-fz",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+     "law-bk-rf-st-2422224226"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -3599,11 +3628,11 @@
      "/blog/tsepochka-kaznacheyskogo-soprovozhdeniya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-tsepochka-ks",
    "scores": {
     "authority": 29,
-    "coverage": 67,
+    "coverage": 83,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -3635,6 +3664,9 @@
      "subpodryadchik",
      "goz"
     ],
+    "REGULATED_BY": [
+     "law-275-fz"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -3642,15 +3674,15 @@
      "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-golovnoy-ispolnitel",
    "scores": {
     "authority": 11,
-    "coverage": 50,
-    "connectivity": 47,
+    "coverage": 67,
+    "connectivity": 50,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 93
+    "density": 100
    }
   },
   {
@@ -3685,6 +3717,10 @@
     "SEE_ERROR": [
      "err-zatyanulos-otkrytie"
     ],
+    "REGULATED_BY": [
+     "law-275-fz",
+     "law-bk-rf-st-2422224226"
+    ],
     "MONETIZED_BY": [
      "service-open"
     ],
@@ -3692,12 +3728,12 @@
      "/blog/tsepochka-kaznacheyskogo-soprovozhdeniya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-subpodryadchik",
    "scores": {
     "authority": 10,
-    "coverage": 83,
-    "connectivity": 50,
+    "coverage": 100,
+    "connectivity": 57,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -3728,6 +3764,9 @@
      "upd-akt",
      "pribyl-ks"
     ],
+    "REGULATED_BY": [
+     "law-44-fz"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -3735,15 +3774,15 @@
      "/blog/kaznacheyskoe-soprovozhdenie-platezhey"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-etap-kontrakta",
    "scores": {
     "authority": 10,
-    "coverage": 50,
-    "connectivity": 43,
+    "coverage": 67,
+    "connectivity": 47,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 87
+    "density": 93
    }
   },
   {
@@ -3776,6 +3815,9 @@
     "SEE_ERROR": [
      "err-igk"
     ],
+    "REGULATED_BY": [
+     "law-44-fz"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -3783,15 +3825,15 @@
      "/blog/igk-v-platezhah-kaznacheystva"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-reestr-kontraktov",
    "scores": {
     "authority": 6,
-    "coverage": 67,
-    "connectivity": 40,
+    "coverage": 83,
+    "connectivity": 43,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 80
+    "density": 87
    }
   },
   {
@@ -3820,6 +3862,10 @@
      "reestr-kontraktov",
      "kontrakt-44"
     ],
+    "REGULATED_BY": [
+     "law-44-fz",
+     "law-63-fz"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -3827,15 +3873,15 @@
      "/blog/kaznacheyskoe-soprovozhdenie-44-fz-2026-polnyy-gid"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-tsifrovoy-kontrakt",
    "scores": {
     "authority": 2,
-    "coverage": 50,
-    "connectivity": 20,
+    "coverage": 67,
+    "connectivity": 27,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 40
+    "density": 53
    }
   },
   {
@@ -3864,19 +3910,23 @@
      "porog-ks",
      "zakon-budget"
     ],
+    "REGULATED_BY": [
+     "law-44-fz",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kakie-kontrakty-popadayut-pod-kaznachejskoe-soprovozhdenie/"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-ed-postavshchik",
    "scores": {
     "authority": 2,
-    "coverage": 33,
-    "connectivity": 17,
+    "coverage": 50,
+    "connectivity": 23,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 33
+    "density": 47
    }
   },
   {
@@ -3914,6 +3964,11 @@
     "SEE_ERROR": [
      "err-razdelnyy-uchet"
     ],
+    "REGULATED_BY": [
+     "law-275-fz",
+     "law-pp-1465",
+     "law-koap-rf-st-1537"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -3922,11 +3977,11 @@
      "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-goz",
    "scores": {
     "authority": 33,
-    "coverage": 83,
+    "coverage": 100,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -3967,6 +4022,10 @@
     "SEE_ERROR": [
      "err-razdelnyy-uchet"
     ],
+    "REGULATED_BY": [
+     "law-275-fz",
+     "law-koap-rf-st-1537"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -3975,11 +4034,11 @@
      "/blog/razdelnyj-uchet-goz-polnyy-guide-2026"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-razdelnyy-uchet",
    "scores": {
     "authority": 45,
-    "coverage": 83,
+    "coverage": 100,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -4021,6 +4080,10 @@
     "SEE_ERROR": [
      "err-razdelnyy-uchet"
     ],
+    "REGULATED_BY": [
+     "law-275-fz",
+     "law-pp-1465"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -4028,12 +4091,12 @@
      "/blog/razdelnyj-uchet-goz-polnyy-guide-2026"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-prim-1",
    "scores": {
     "authority": 11,
-    "coverage": 83,
-    "connectivity": 57,
+    "coverage": 100,
+    "connectivity": 63,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -4067,6 +4130,9 @@
      "psb",
      "ast-goz"
     ],
+    "REGULATED_BY": [
+     "law-275-fz"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -4074,15 +4140,15 @@
      "/blog/kaznacheyskoe-soprovozhdenie-predpriyatiy-opk"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-opk",
    "scores": {
     "authority": 4,
-    "coverage": 50,
-    "connectivity": 33,
+    "coverage": 67,
+    "connectivity": 37,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 67
+    "density": 73
    }
   },
   {
@@ -4113,6 +4179,10 @@
      "razdelnyy-uchet",
      "pp-1465"
     ],
+    "REGULATED_BY": [
+     "law-pp-1465",
+     "law-275-fz"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -4120,12 +4190,12 @@
      "/blog/vidy-cen-goz"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-vidy-tsen-goz",
    "scores": {
     "authority": 13,
-    "coverage": 50,
-    "connectivity": 57,
+    "coverage": 67,
+    "connectivity": 63,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -4159,6 +4229,9 @@
      "goz",
      "pp-1465"
     ],
+    "REGULATED_BY": [
+     "law-pp-1465"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -4166,12 +4239,12 @@
      "/blog/vidy-cen-goz"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-norma-pribyli",
    "scores": {
     "authority": 12,
-    "coverage": 50,
-    "connectivity": 53,
+    "coverage": 67,
+    "connectivity": 57,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -4203,6 +4276,9 @@
      "obs",
      "bank-soprovozhdenie"
     ],
+    "REGULATED_BY": [
+     "law-275-fz"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -4210,15 +4286,15 @@
      "/blog/kaznacheyskoe-vs-bankovskoe-soprovozhdenie-otlichiya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-opornyy-bank",
    "scores": {
     "authority": 4,
-    "coverage": 50,
-    "connectivity": 27,
+    "coverage": 67,
+    "connectivity": 30,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 53
+    "density": 60
    }
   },
   {
@@ -4253,6 +4329,10 @@
     "SEE_ERROR": [
      "err-subsidiya-rashody"
     ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -4260,12 +4340,12 @@
      "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-subsidiya",
    "scores": {
     "authority": 22,
-    "coverage": 83,
-    "connectivity": 93,
+    "coverage": 100,
+    "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -4302,6 +4382,10 @@
     "SEE_ERROR": [
      "err-subsidiya-rashody"
     ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -4309,15 +4393,15 @@
      "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-grant",
    "scores": {
     "authority": 2,
-    "coverage": 83,
-    "connectivity": 27,
+    "coverage": 100,
+    "connectivity": 33,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 53
+    "density": 67
    }
   },
   {
@@ -4352,6 +4436,9 @@
     "SEE_ERROR": [
      "err-subsidiya-rashody"
     ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -4359,12 +4446,12 @@
      "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-soglashenie-subsidii",
    "scores": {
     "authority": 21,
-    "coverage": 83,
-    "connectivity": 90,
+    "coverage": 100,
+    "connectivity": 93,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -4399,6 +4486,10 @@
     "SEE_ERROR": [
      "err-subsidiya-rashody"
     ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226",
+     "law-prikaz-minfina-214n"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -4406,12 +4497,12 @@
      "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-id-soglasheniya",
    "scores": {
     "authority": 11,
-    "coverage": 67,
-    "connectivity": 50,
+    "coverage": 83,
+    "connectivity": 57,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -4448,6 +4539,9 @@
     "SEE_ERROR": [
      "err-subsidiya-rashody"
     ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -4455,12 +4549,12 @@
      "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-poluchatel-subsidii",
    "scores": {
     "authority": 11,
-    "coverage": 83,
-    "connectivity": 53,
+    "coverage": 100,
+    "connectivity": 57,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -4492,6 +4586,11 @@
      "ks",
      "poluchatel-subsidii"
     ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226",
+     "law-prikaz-fk-44n",
+     "law-prikaz-fk-21n"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -4499,15 +4598,15 @@
      "/blog/glossariy-terminov-kaznacheyskogo-soprovozhdeniya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-nubp",
    "scores": {
     "authority": 7,
-    "coverage": 50,
-    "connectivity": 37,
+    "coverage": 67,
+    "connectivity": 47,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 73
+    "density": 93
    }
   },
   {
@@ -4544,6 +4643,10 @@
      "err-otkaz-sanktsionirovaniya",
      "err-naznachenie"
     ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226",
+     "law-prikaz-minfina-214n"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -4551,12 +4654,12 @@
      "/blog/kaznacheyskoe-soprovozhdenie-platezhey"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-platezh",
    "scores": {
     "authority": 12,
-    "coverage": 83,
-    "connectivity": 67,
+    "coverage": 100,
+    "connectivity": 73,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -4594,6 +4697,9 @@
     "SEE_ERROR": [
      "err-naznachenie"
     ],
+    "REGULATED_BY": [
+     "law-prikaz-minfina-214n"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -4601,12 +4707,12 @@
      "/blog/naznachenie-platezha-kaznachejstvo/"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-naznachenie",
    "scores": {
     "authority": 22,
-    "coverage": 83,
-    "connectivity": 93,
+    "coverage": 100,
+    "connectivity": 97,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -4641,17 +4747,21 @@
     "SEE_ERROR": [
      "err-necelevoe"
     ],
+    "REGULATED_BY": [
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+     "law-bk-rf-st-2422224226"
+    ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/avans-vs-vozmeshchenie-vs-pryamoy-platezh-tri-tipa-operatsiy-ks",
      "/blog/kak-rasschitat-summu-avansa-po-goskontraktu"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-avans",
    "scores": {
     "authority": 25,
-    "coverage": 50,
-    "connectivity": 97,
+    "coverage": 67,
+    "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -4689,6 +4799,9 @@
     "SEE_ERROR": [
      "err-kod-napravleniya"
     ],
+    "REGULATED_BY": [
+     "law-prikaz-minfina-214n"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -4697,11 +4810,11 @@
      "/blog/kody-vozmeshcheniya-rashodov"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-vozmeshchenie",
    "scores": {
     "authority": 30,
-    "coverage": 83,
+    "coverage": 100,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -4739,6 +4852,9 @@
     "SEE_ERROR": [
      "err-otkaz-sanktsionirovaniya"
     ],
+    "REGULATED_BY": [
+     "law-prikaz-minfina-214n"
+    ],
     "MONETIZED_BY": [
      "service-conduct"
     ],
@@ -4746,15 +4862,15 @@
      "/blog/avans-vs-vozmeshchenie-vs-pryamoy-platezh-tri-tipa-operatsiy-ks"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-pryamoy-platezh",
    "scores": {
     "authority": 4,
-    "coverage": 83,
-    "connectivity": 33,
+    "coverage": 100,
+    "connectivity": 37,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 67
+    "density": 73
    }
   },
   {
@@ -26229,9 +26345,9 @@
    "schema_id": "https://kazna-gov.ru/#e-law-44-fz",
    "sourceUrl": "http://publication.pravo.gov.ru/Document/View/0001201304080023",
    "scores": {
-    "authority": 30,
+    "authority": 37,
     "coverage": 0,
-    "connectivity": 93,
+    "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -26291,7 +26407,7 @@
    "schema_id": "https://kazna-gov.ru/#e-law-275-fz",
    "sourceUrl": "https://www.consultant.ru/document/cons_doc_LAW_140175/",
    "scores": {
-    "authority": 58,
+    "authority": 69,
     "coverage": 0,
     "connectivity": 100,
     "citation": 100,
@@ -26322,9 +26438,9 @@
    "schema_id": "https://kazna-gov.ru/#e-law-63-fz",
    "sourceUrl": "https://www.consultant.ru/document/cons_doc_LAW_112701/",
    "scores": {
-    "authority": 24,
+    "authority": 25,
     "coverage": 0,
-    "connectivity": 77,
+    "connectivity": 80,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -26353,7 +26469,7 @@
    "schema_id": "https://kazna-gov.ru/#e-law-bk-rf-st-2422224226",
    "sourceUrl": "https://www.consultant.ru/document/cons_doc_LAW_19702/",
    "scores": {
-    "authority": 98,
+    "authority": 100,
     "coverage": 0,
     "connectivity": 100,
     "citation": 100,
@@ -26383,7 +26499,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "scores": {
-    "authority": 37,
+    "authority": 43,
     "coverage": 0,
     "connectivity": 100,
     "citation": 100,
@@ -26413,7 +26529,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-law-prikaz-minfina-214n",
    "scores": {
-    "authority": 88,
+    "authority": 94,
     "coverage": 0,
     "connectivity": 100,
     "citation": 100,
@@ -26443,7 +26559,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-law-prikaz-fk-44n",
    "scores": {
-    "authority": 51,
+    "authority": 54,
     "coverage": 0,
     "connectivity": 100,
     "citation": 100,
@@ -26473,9 +26589,9 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-law-prikaz-fk-21n",
    "scores": {
-    "authority": 26,
+    "authority": 30,
     "coverage": 0,
-    "connectivity": 83,
+    "connectivity": 93,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -26503,9 +26619,9 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-law-pp-1465",
    "scores": {
-    "authority": 16,
+    "authority": 20,
     "coverage": 0,
-    "connectivity": 50,
+    "connectivity": 63,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -26595,9 +26711,9 @@
    "schema_id": "https://kazna-gov.ru/#e-law-koap-rf-st-1537",
    "sourceUrl": "https://www.consultant.ru/document/cons_doc_LAW_34661/",
    "scores": {
-    "authority": 19,
+    "authority": 21,
     "coverage": 0,
-    "connectivity": 60,
+    "connectivity": 67,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -28764,6 +28880,16 @@
   },
   {
    "from": "zakrytie-ls",
+   "to": "law-prikaz-fk-44n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "zakrytie-ls",
+   "to": "law-prikaz-fk-21n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "zakrytie-ls",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -28784,6 +28910,16 @@
   },
   {
    "from": "neisp-ostatok",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "neisp-ostatok",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "neisp-ostatok",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -28801,6 +28937,16 @@
    "from": "rekvizity-ks",
    "to": "eks",
    "rel": "RELATED_TERM"
+  },
+  {
+   "from": "rekvizity-ks",
+   "to": "law-prikaz-fk-44n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "rekvizity-ks",
+   "to": "law-prikaz-fk-21n",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "rekvizity-ks",
@@ -28839,6 +28985,16 @@
   },
   {
    "from": "kontrakt-44",
+   "to": "law-44-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "kontrakt-44",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "kontrakt-44",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -28874,6 +29030,16 @@
   },
   {
    "from": "igk",
+   "to": "law-44-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "igk",
+   "to": "law-275-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "igk",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -28891,6 +29057,16 @@
    "from": "municipalnyy",
    "to": "porog-ks",
    "rel": "RELATED_TERM"
+  },
+  {
+   "from": "municipalnyy",
+   "to": "law-44-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "municipalnyy",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "municipalnyy",
@@ -28924,6 +29100,21 @@
   },
   {
    "from": "tsepochka-ks",
+   "to": "law-275-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "tsepochka-ks",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "tsepochka-ks",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "tsepochka-ks",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -28941,6 +29132,11 @@
    "from": "golovnoy-ispolnitel",
    "to": "goz",
    "rel": "RELATED_TERM"
+  },
+  {
+   "from": "golovnoy-ispolnitel",
+   "to": "law-275-fz",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "golovnoy-ispolnitel",
@@ -28974,6 +29170,16 @@
   },
   {
    "from": "subpodryadchik",
+   "to": "law-275-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "subpodryadchik",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "subpodryadchik",
    "to": "service-open",
    "rel": "MONETIZED_BY"
   },
@@ -28991,6 +29197,11 @@
    "from": "etap-kontrakta",
    "to": "pribyl-ks",
    "rel": "RELATED_TERM"
+  },
+  {
+   "from": "etap-kontrakta",
+   "to": "law-44-fz",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "etap-kontrakta",
@@ -29024,6 +29235,11 @@
   },
   {
    "from": "reestr-kontraktov",
+   "to": "law-44-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "reestr-kontraktov",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -29044,6 +29260,16 @@
   },
   {
    "from": "tsifrovoy-kontrakt",
+   "to": "law-44-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "tsifrovoy-kontrakt",
+   "to": "law-63-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "tsifrovoy-kontrakt",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -29061,6 +29287,16 @@
    "from": "ed-postavshchik",
    "to": "zakon-budget",
    "rel": "RELATED_TERM"
+  },
+  {
+   "from": "ed-postavshchik",
+   "to": "law-44-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "ed-postavshchik",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "goz",
@@ -29104,6 +29340,21 @@
   },
   {
    "from": "goz",
+   "to": "law-275-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "goz",
+   "to": "law-pp-1465",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "goz",
+   "to": "law-koap-rf-st-1537",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "goz",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -29136,6 +29387,16 @@
    "from": "razdelnyy-uchet",
    "to": "err-razdelnyy-uchet",
    "rel": "SEE_ERROR"
+  },
+  {
+   "from": "razdelnyy-uchet",
+   "to": "law-275-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "razdelnyy-uchet",
+   "to": "law-koap-rf-st-1537",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "razdelnyy-uchet",
@@ -29174,6 +29435,16 @@
   },
   {
    "from": "prim-1",
+   "to": "law-275-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "prim-1",
+   "to": "law-pp-1465",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "prim-1",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -29204,6 +29475,11 @@
   },
   {
    "from": "opk",
+   "to": "law-275-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "opk",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -29226,6 +29502,16 @@
    "from": "vidy-tsen-goz",
    "to": "pp-1465",
    "rel": "RELATED_TERM"
+  },
+  {
+   "from": "vidy-tsen-goz",
+   "to": "law-pp-1465",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "vidy-tsen-goz",
+   "to": "law-275-fz",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "vidy-tsen-goz",
@@ -29254,6 +29540,11 @@
   },
   {
    "from": "norma-pribyli",
+   "to": "law-pp-1465",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "norma-pribyli",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -29271,6 +29562,11 @@
    "from": "opornyy-bank",
    "to": "bank-soprovozhdenie",
    "rel": "RELATED_TERM"
+  },
+  {
+   "from": "opornyy-bank",
+   "to": "law-275-fz",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "opornyy-bank",
@@ -29309,6 +29605,16 @@
   },
   {
    "from": "subsidiya",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "subsidiya",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "subsidiya",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -29336,6 +29642,16 @@
    "from": "grant",
    "to": "err-subsidiya-rashody",
    "rel": "SEE_ERROR"
+  },
+  {
+   "from": "grant",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "grant",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "grant",
@@ -29374,6 +29690,11 @@
   },
   {
    "from": "soglashenie-subsidii",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "soglashenie-subsidii",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -29396,6 +29717,16 @@
    "from": "id-soglasheniya",
    "to": "err-subsidiya-rashody",
    "rel": "SEE_ERROR"
+  },
+  {
+   "from": "id-soglasheniya",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "id-soglasheniya",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "id-soglasheniya",
@@ -29429,6 +29760,11 @@
   },
   {
    "from": "poluchatel-subsidii",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "poluchatel-subsidii",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -29446,6 +29782,21 @@
    "from": "nubp",
    "to": "poluchatel-subsidii",
    "rel": "RELATED_TERM"
+  },
+  {
+   "from": "nubp",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "nubp",
+   "to": "law-prikaz-fk-44n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "nubp",
+   "to": "law-prikaz-fk-21n",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "nubp",
@@ -29491,6 +29842,16 @@
    "from": "platezh",
    "to": "err-naznachenie",
    "rel": "SEE_ERROR"
+  },
+  {
+   "from": "platezh",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "platezh",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "platezh",
@@ -29574,6 +29935,11 @@
   },
   {
    "from": "naznachenie",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "naznachenie",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -29601,6 +29967,16 @@
    "from": "avans",
    "to": "err-necelevoe",
    "rel": "SEE_ERROR"
+  },
+  {
+   "from": "avans",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "avans",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "vozmeshchenie",
@@ -29634,6 +30010,11 @@
   },
   {
    "from": "vozmeshchenie",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "vozmeshchenie",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -29661,6 +30042,11 @@
    "from": "pryamoy-platezh",
    "to": "err-otkaz-sanktsionirovaniya",
    "rel": "SEE_ERROR"
+  },
+  {
+   "from": "pryamoy-platezh",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
   },
   {
    "from": "pryamoy-platezh",

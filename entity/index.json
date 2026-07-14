@@ -25,6 +25,15 @@
    "url": "/obraztsy/svedeniya-ob-operatsiyah-0501213/"
   },
   {
+   "id": "law-bk-rf-st-2422224226",
+   "name": "БК РФ, ст. 242.22–242.26",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-bk-rf-st-2422224226.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
    "id": "err-otkaz-sanktsionirovaniya",
    "name": "Отказ в санкционировании",
    "type": [
@@ -44,15 +53,6 @@
    "url": "/services/open"
   },
   {
-   "id": "law-bk-rf-st-2422224226",
-   "name": "БК РФ, ст. 242.22–242.26",
-   "type": [
-    "law"
-   ],
-   "api": "/entity/law-bk-rf-st-2422224226.json",
-   "url": "/zakonodatelstvo/"
-  },
-  {
    "id": "doverennost-mchd",
    "name": "Доверенность в УФК",
    "type": [
@@ -63,15 +63,6 @@
    "url": "/obraztsy/doverennost-v-ufk/"
   },
   {
-   "id": "sanktsionirovanie",
-   "name": "Санкционирование операций",
-   "type": [
-    "term"
-   ],
-   "api": "/entity/sanktsionirovanie.json",
-   "url": "/glossary/sanktsionirovanie/"
-  },
-  {
    "id": "law-prikaz-minfina-214n",
    "name": "Приказ Минфина № 214н",
    "type": [
@@ -79,6 +70,15 @@
    ],
    "api": "/entity/law-prikaz-minfina-214n.json",
    "url": "/zakonodatelstvo/"
+  },
+  {
+   "id": "sanktsionirovanie",
+   "name": "Санкционирование операций",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/sanktsionirovanie.json",
+   "url": "/glossary/sanktsionirovanie/"
   },
   {
    "id": "ls-71",
@@ -108,6 +108,15 @@
    ],
    "api": "/entity/kartochka-podpisey.json",
    "url": "/obraztsy/kartochka-obraztsov-podpisey/"
+  },
+  {
+   "id": "law-275-fz",
+   "name": "275-ФЗ",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-275-fz.json",
+   "url": "/zakonodatelstvo/"
   },
   {
    "id": "rkp",
@@ -148,15 +157,6 @@
    "url": "/glossary/giis-elektronnyy-byudzhet/"
   },
   {
-   "id": "law-275-fz",
-   "name": "275-ФЗ",
-   "type": [
-    "law"
-   ],
-   "api": "/entity/law-275-fz.json",
-   "url": "/zakonodatelstvo/"
-  },
-  {
    "id": "ks",
    "name": "Казначейское сопровождение",
    "type": [
@@ -175,6 +175,15 @@
    "url": "/services/start"
   },
   {
+   "id": "law-prikaz-fk-44n",
+   "name": "Приказ ФК № 44н",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-prikaz-fk-44n.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
    "id": "dokumenty-osnovaniya",
    "name": "Документы-основания",
    "type": [
@@ -191,15 +200,6 @@
    ],
    "api": "/entity/service-vosstanovlenie.json",
    "url": "/services/vosstanovlenie"
-  },
-  {
-   "id": "law-prikaz-fk-44n",
-   "name": "Приказ ФК № 44н",
-   "type": [
-    "law"
-   ],
-   "api": "/entity/law-prikaz-fk-44n.json",
-   "url": "/zakonodatelstvo/"
   },
   {
    "id": "igk",
@@ -257,6 +257,15 @@
    "url": "/glossary/tselevye-sredstva/"
   },
   {
+   "id": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+   "name": "Ежегодный закон о федеральном бюджете",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-ezhegodnyy-zakon-o-federalnom-byudzhete.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
    "id": "err-kod-napravleniya",
    "name": "Неверный код направления",
    "type": [
@@ -302,12 +311,12 @@
    "url": "/obraztsy/pismo-zapros-v-ufk/"
   },
   {
-   "id": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
-   "name": "Ежегодный закон о федеральном бюджете",
+   "id": "law-44-fz",
+   "name": "44-ФЗ",
    "type": [
     "law"
    ],
-   "api": "/entity/law-ezhegodnyy-zakon-o-federalnom-byudzhete.json",
+   "api": "/entity/law-44-fz.json",
    "url": "/zakonodatelstvo/"
   },
   {
@@ -374,12 +383,12 @@
    "url": "/glossary/vozmeshchenie-rashodov/"
   },
   {
-   "id": "law-44-fz",
-   "name": "44-ФЗ",
+   "id": "law-prikaz-fk-21n",
+   "name": "Приказ ФК № 21н",
    "type": [
     "law"
    ],
-   "api": "/entity/law-44-fz.json",
+   "api": "/entity/law-prikaz-fk-21n.json",
    "url": "/zakonodatelstvo/"
   },
   {
@@ -462,15 +471,6 @@
    ],
    "api": "/entity/svodnyy-reestr.json",
    "url": "/glossary/svodnyy-reestr/"
-  },
-  {
-   "id": "law-prikaz-fk-21n",
-   "name": "Приказ ФК № 21н",
-   "type": [
-    "law"
-   ],
-   "api": "/entity/law-prikaz-fk-21n.json",
-   "url": "/zakonodatelstvo/"
   },
   {
    "id": "avans",
@@ -563,6 +563,15 @@
    "url": "/glossary/soglashenie-o-subsidii/"
   },
   {
+   "id": "law-koap-rf-st-1537",
+   "name": "КоАП РФ, ст. 15.37",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-koap-rf-st-1537.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
    "id": "kazn-monitoring",
    "name": "Казначейский мониторинг",
    "type": [
@@ -590,6 +599,15 @@
    "url": "/glossary/kody-9xxx/"
   },
   {
+   "id": "law-pp-1465",
+   "name": "ПП № 1465",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-pp-1465.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
    "id": "err-subsidiya-rashody",
    "name": "Не согласуют расходы субсидии",
    "type": [
@@ -615,15 +633,6 @@
    ],
    "api": "/entity/upd-akt.json",
    "url": "/glossary/akt-sdachi-priyomki/"
-  },
-  {
-   "id": "law-koap-rf-st-1537",
-   "name": "КоАП РФ, ст. 15.37",
-   "type": [
-    "law"
-   ],
-   "api": "/entity/law-koap-rf-st-1537.json",
-   "url": "/zakonodatelstvo/"
   },
   {
    "id": "formulirovka-ks",
@@ -660,15 +669,6 @@
    ],
    "api": "/entity/raschetnyy-schet.json",
    "url": "/glossary/raschetnyy-schet/"
-  },
-  {
-   "id": "law-pp-1465",
-   "name": "ПП № 1465",
-   "type": [
-    "law"
-   ],
-   "api": "/entity/law-pp-1465.json",
-   "url": "/zakonodatelstvo/"
   },
   {
    "id": "err-vozvrat-platezha",

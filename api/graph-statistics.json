@@ -4,7 +4,7 @@
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "nodes": 487,
- "edges": 4187,
+ "edges": 4241,
  "byType": {
   "error": 13,
   "document": 19,
@@ -19,7 +19,7 @@
   "REQUIRES_DOC": 490,
   "SEE_ERROR": 377,
   "MONETIZED_BY": 456,
-  "REGULATED_BY": 479,
+  "REGULATED_BY": 533,
   "RELATED_DOC": 55,
   "RELATED_TERM": 401,
   "USES_TERM": 1285,
@@ -43,6 +43,10 @@
    "in": 105
   },
   {
+   "id": "law-bk-rf-st-2422224226",
+   "in": 105
+  },
+  {
    "id": "err-otkaz-sanktsionirovaniya",
    "in": 98
   },
@@ -51,19 +55,15 @@
    "in": 95
   },
   {
-   "id": "law-bk-rf-st-2422224226",
-   "in": 93
-  },
-  {
    "id": "doverennost-mchd",
    "in": 90
   },
   {
-   "id": "sanktsionirovanie",
-   "in": 83
+   "id": "law-prikaz-minfina-214n",
+   "in": 89
   },
   {
-   "id": "law-prikaz-minfina-214n",
+   "id": "sanktsionirovanie",
    "in": 83
   },
   {
@@ -79,6 +79,10 @@
    "in": 66
   },
   {
+   "id": "law-275-fz",
+   "in": 65
+  },
+  {
    "id": "rkp",
    "in": 64
   },
@@ -89,10 +93,6 @@
   {
    "id": "err-necelevoe",
    "in": 56
-  },
-  {
-   "id": "giis-eb",
-   "in": 55
   }
  ],
  "multiLayerConcepts": [
