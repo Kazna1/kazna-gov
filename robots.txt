@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /api/
+Allow: /api/$
 Sitemap: https://kazna-gov.ru/sitemap.xml
 Sitemap: https://kazna-gov.ru/news-sitemap.xml
 
@@ -8,6 +9,7 @@ Sitemap: https://kazna-gov.ru/news-sitemap.xml
 User-agent: Yandex
 Allow: /
 Disallow: /api/
+Allow: /api/$
 Clean-param: etext&utm_source&utm_medium&utm_campaign&utm_campaign_name&utm_term&utm_content&utm_device&utm_referrer&yclid&_openstat
 
 # AI-поисковики / LLM-краулеры — явно разрешены (AI-выдача, цитируемость)

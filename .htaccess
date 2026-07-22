@@ -42,6 +42,9 @@ RewriteRule ^stuff/?$ /expert/stella [R=301,L]
 # --- /services/start — услуга выведена из линейки → 301 на сопровождение платежей ---
 RewriteRule ^services/start/?$ /services/conduct [R=301,L]
 
+# --- /review — легаси-дубль интента «отзывы» → 301 на канонический /otzyvy/ (аудит 2026-07-22) ---
+RewriteRule ^review/?$ /otzyvy/ [R=301,L]
+
 # --- Force HTTPS (кроме ACME-challenge LetsEncrypt) ---
 RewriteCond %{HTTPS} off
 RewriteCond %{REQUEST_URI} !^/\.well-known/
