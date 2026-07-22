@@ -175,15 +175,6 @@
    "url": "/glossary/kaznacheyskoe-soprovozhdenie/"
   },
   {
-   "id": "service-start",
-   "name": "Сопровождение с первого дня",
-   "type": [
-    "service"
-   ],
-   "api": "/entity/service-start.json",
-   "url": "/services/start"
-  },
-  {
    "id": "dokumenty-osnovaniya",
    "name": "Документы-основания",
    "type": [
@@ -248,13 +239,13 @@
    "url": "/zakonodatelstvo/"
   },
   {
-   "id": "chek-list-otkrytie",
-   "name": "Чек-лист открытия счёта",
+   "id": "err-kod-napravleniya",
+   "name": "Неверный код направления",
    "type": [
-    "document"
+    "error"
    ],
-   "api": "/entity/chek-list-otkrytie.json",
-   "url": "/obraztsy/chek-list-otkrytiya-scheta/"
+   "api": "/entity/err-kod-napravleniya.json",
+   "url": "/oshibki/nevernyy-kod-napravleniya-rashodov/"
   },
   {
    "id": "tselevye-sredstva",
@@ -266,13 +257,13 @@
    "url": "/glossary/tselevye-sredstva/"
   },
   {
-   "id": "err-kod-napravleniya",
-   "name": "Неверный код направления",
+   "id": "chek-list-otkrytie",
+   "name": "Чек-лист открытия счёта",
    "type": [
-    "error"
+    "document"
    ],
-   "api": "/entity/err-kod-napravleniya.json",
-   "url": "/oshibki/nevernyy-kod-napravleniya-rashodov/"
+   "api": "/entity/chek-list-otkrytie.json",
+   "url": "/obraztsy/chek-list-otkrytiya-scheta/"
   },
   {
    "id": "ecp",
@@ -383,15 +374,6 @@
    "url": "/zakonodatelstvo/"
   },
   {
-   "id": "prikaz-razdelnyy-uchet",
-   "name": "Приказ о раздельном учёте",
-   "type": [
-    "document"
-   ],
-   "api": "/entity/prikaz-razdelnyy-uchet.json",
-   "url": "/obraztsy/prikaz-o-razdelnom-uchete-goz/"
-  },
-  {
    "id": "vozmeshchenie",
    "name": "Возмещение расходов",
    "type": [
@@ -417,6 +399,15 @@
    ],
    "api": "/entity/err-mchd.json",
    "url": "/oshibki/mchd-ne-prohodit-proverku/"
+  },
+  {
+   "id": "prikaz-razdelnyy-uchet",
+   "name": "Приказ о раздельном учёте",
+   "type": [
+    "document"
+   ],
+   "api": "/entity/prikaz-razdelnyy-uchet.json",
+   "url": "/obraztsy/prikaz-o-razdelnom-uchete-goz/"
   },
   {
    "id": "tsepochka-ks",
@@ -554,15 +545,6 @@
    "url": "/zakonodatelstvo/"
   },
   {
-   "id": "komplekt-otkrytie",
-   "name": "Комплект на открытие",
-   "type": [
-    "document"
-   ],
-   "api": "/entity/komplekt-otkrytie.json",
-   "url": "/obraztsy/komplekt-dokumentov-otkrytie/"
-  },
-  {
    "id": "soglashenie-subsidii",
    "name": "Соглашение о предоставлении субсидии",
    "type": [
@@ -579,6 +561,15 @@
    ],
    "api": "/entity/law-pp-1465.json",
    "url": "/zakonodatelstvo/"
+  },
+  {
+   "id": "komplekt-otkrytie",
+   "name": "Комплект на открытие",
+   "type": [
+    "document"
+   ],
+   "api": "/entity/komplekt-otkrytie.json",
+   "url": "/obraztsy/komplekt-dokumentov-otkrytie/"
   },
   {
    "id": "kazn-monitoring",
@@ -771,6 +762,15 @@
    "url": "/glossary/kriptopro-csp/"
   },
   {
+   "id": "hub-platezhi",
+   "name": "Платежи и вывод средств",
+   "type": [
+    "hub"
+   ],
+   "api": "/entity/hub-platezhi.json",
+   "url": "/platezhi/"
+  },
+  {
    "id": "law-gk-rf-st-185189",
    "name": "ГК РФ, ст. 185–189",
    "type": [
@@ -906,15 +906,6 @@
    "url": "/scheta/"
   },
   {
-   "id": "hub-platezhi",
-   "name": "Платежи и вывод средств",
-   "type": [
-    "hub"
-   ],
-   "api": "/entity/hub-platezhi.json",
-   "url": "/platezhi/"
-  },
-  {
    "id": "subpodryadchik",
    "name": "Субподрядчик (соисполнитель)",
    "type": [
@@ -1003,15 +994,6 @@
    ],
    "api": "/entity/priostanovlenie.json",
    "url": "/glossary/priostanovlenie-operatsiy/"
-  },
-  {
-   "id": "hub-ks",
-   "name": "Казначейское сопровождение",
-   "type": [
-    "hub"
-   ],
-   "api": "/entity/hub-ks.json",
-   "url": "/kaznacheyskoe-soprovozhdenie/"
   },
   {
    "id": "hub-sankts",
@@ -1147,6 +1129,15 @@
    ],
    "api": "/entity/faq-srok-otkrytiya-scheta.json",
    "url": "/voprosy/skolko-otkryvaetsya-schet/"
+  },
+  {
+   "id": "hub-ks",
+   "name": "Казначейское сопровождение",
+   "type": [
+    "hub"
+   ],
+   "api": "/entity/hub-ks.json",
+   "url": "/kaznacheyskoe-soprovozhdenie/"
   },
   {
    "id": "law-nk-rf-gl-21",
@@ -1320,15 +1311,6 @@
    "url": "/voprosy/chto-delat-pri-vozvrate-platezha/"
   },
   {
-   "id": "faq-start-novichka",
-   "name": "Контракт под КС — с чего начать новичку?",
-   "type": [
-    "faq"
-   ],
-   "api": "/entity/faq-start-novichka.json",
-   "url": "/voprosy/s-chego-nachat-novichku/"
-  },
-  {
    "id": "hub-goz",
    "name": "ГОЗ",
    "type": [
@@ -1471,6 +1453,15 @@
    ],
    "api": "/entity/faq-srok-rezerva-scheta.json",
    "url": "/voprosy/rezervnyy-schet-deystvuet-skolko/"
+  },
+  {
+   "id": "faq-provesti-platezh",
+   "name": "Как провести платёж с казначейского счёта?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-provesti-platezh.json",
+   "url": "/voprosy/kak-provesti-platezh/"
   },
   {
    "id": "faq-naznachenie-platezha",
@@ -1633,6 +1624,15 @@
    ],
    "api": "/entity/faq-faktory-tseny-soprovozhdeniya.json",
    "url": "/voprosy/ot-chego-zavisit-tsena-uslug/"
+  },
+  {
+   "id": "faq-start-novichka",
+   "name": "Контракт под КС — с чего начать новичку?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-start-novichka.json",
+   "url": "/voprosy/s-chego-nachat-novichku/"
   },
   {
    "id": "hub-subsidii",
@@ -1968,15 +1968,6 @@
    "url": "/voprosy/kakoy-kod-dlya-zarplaty/"
   },
   {
-   "id": "faq-provesti-platezh",
-   "name": "Как провести платёж с казначейского счёта?",
-   "type": [
-    "faq"
-   ],
-   "api": "/entity/faq-provesti-platezh.json",
-   "url": "/voprosy/kak-provesti-platezh/"
-  },
-  {
    "id": "faq-srok-platezha",
    "name": "Сколько идёт платёж с казначейского счёта?",
    "type": [
@@ -2083,6 +2074,15 @@
    ],
    "api": "/entity/faq-chto-takoe-dokumenty-osnovaniya.json",
    "url": "/voprosy/chto-takoe-dokumenty-osnovaniya-vopros/"
+  },
+  {
+   "id": "faq-kak-zapolnit-svedeniya",
+   "name": "Как заполнить Сведения (форма 0501213)?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-kak-zapolnit-svedeniya.json",
+   "url": "/voprosy/kak-zapolnit-svedeniya/"
   },
   {
    "id": "faq-kak-izmenit-svedeniya",
@@ -2364,15 +2364,6 @@
    "url": "/voprosy/skolko-stoit-otkrytie-pod-klyuch/"
   },
   {
-   "id": "faq-srok-podklyucheniya",
-   "name": "Как быстро вы подключаетесь к проекту?",
-   "type": [
-    "faq"
-   ],
-   "api": "/entity/faq-srok-podklyucheniya.json",
-   "url": "/voprosy/kak-bystro-podklyuchaetes/"
-  },
-  {
    "id": "faq-srochnye-sluchai",
    "name": "Берёте ли срочные случаи — заблокированные платежи?",
    "type": [
@@ -2400,15 +2391,6 @@
    "url": "/voprosy/svoy-bukhgalter-ili-autsorsing/"
   },
   {
-   "id": "faq-zona-klienta-pri-autsorsinge",
-   "name": "Что при аутсорсинге остаётся на стороне клиента?",
-   "type": [
-    "faq"
-   ],
-   "api": "/entity/faq-zona-klienta-pri-autsorsinge.json",
-   "url": "/voprosy/chto-ostaetsya-na-nashey-storone/"
-  },
-  {
    "id": "faq-proverka-do-podpisaniya",
    "name": "Что проверить до подписания контракта с КС?",
    "type": [
@@ -2416,6 +2398,15 @@
    ],
    "api": "/entity/faq-proverka-do-podpisaniya.json",
    "url": "/voprosy/chek-list-pered-kontraktom/"
+  },
+  {
+   "id": "faq-gde-uchitsya-ks",
+   "name": "Где научиться работать с казначейским сопровождением?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-gde-uchitsya-ks.json",
+   "url": "/voprosy/gde-uchitsya-rabote-s-ks/"
   },
   {
    "id": "hub-zakony",
@@ -2445,13 +2436,13 @@
    "url": "/instrumenty/proverka-goz/"
   },
   {
-   "id": "tool-generator-chek-lista",
-   "name": "Генератор чек-листа",
+   "id": "tool-podbor-formata-soprovozhdeniya",
+   "name": "Подбор формата сопровождения",
    "type": [
     "tool"
    ],
-   "api": "/entity/tool-generator-chek-lista.json",
-   "url": "/instrumenty/generator-chek-lista/"
+   "api": "/entity/tool-podbor-formata-soprovozhdeniya.json",
+   "url": "/instrumenty/podbor-formata-soprovozhdeniya/"
   },
   {
    "id": "faq-kto-otkryvaet-schet",
@@ -3118,15 +3109,6 @@
    ],
    "api": "/entity/faq-zachem-nuzhny-svedeniya.json",
    "url": "/voprosy/zachem-nuzhny-svedeniya/"
-  },
-  {
-   "id": "faq-kak-zapolnit-svedeniya",
-   "name": "Как заполнить Сведения (форма 0501213)?",
-   "type": [
-    "faq"
-   ],
-   "api": "/entity/faq-kak-zapolnit-svedeniya.json",
-   "url": "/voprosy/kak-zapolnit-svedeniya/"
   },
   {
    "id": "faq-kto-utverzhdaet-svedeniya",
@@ -4236,6 +4218,15 @@
    "url": "/voprosy/kak-zakazat-soprovozhdenie/"
   },
   {
+   "id": "faq-srok-podklyucheniya",
+   "name": "Как быстро вы подключаетесь к проекту?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-srok-podklyucheniya.json",
+   "url": "/voprosy/kak-bystro-podklyuchaetes/"
+  },
+  {
    "id": "faq-geografiya-raboty",
    "name": "Работаете ли вы по всей России?",
    "type": [
@@ -4261,6 +4252,15 @@
    ],
    "api": "/entity/faq-garantii.json",
    "url": "/voprosy/garantii-rezultata/"
+  },
+  {
+   "id": "faq-zona-klienta-pri-autsorsinge",
+   "name": "Что при аутсорсинге остаётся на стороне клиента?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-zona-klienta-pri-autsorsinge.json",
+   "url": "/voprosy/chto-ostaetsya-na-nashey-storone/"
   },
   {
    "id": "faq-konfidentsialnost",
@@ -4344,15 +4344,6 @@
    "url": "/voprosy/skolko-vremeni-zanimaet-ks/"
   },
   {
-   "id": "faq-gde-uchitsya-ks",
-   "name": "Где научиться работать с казначейским сопровождением?",
-   "type": [
-    "faq"
-   ],
-   "api": "/entity/faq-gde-uchitsya-ks.json",
-   "url": "/voprosy/gde-uchitsya-rabote-s-ks/"
-  },
-  {
    "id": "hub-ru",
    "name": "Раздельный учёт",
    "type": [
@@ -4389,13 +4380,22 @@
    "url": "/instrumenty/proverka-subsidii/"
   },
   {
-   "id": "tool-podbor-formata-soprovozhdeniya",
-   "name": "Подбор формата сопровождения",
+   "id": "tool-generator-chek-lista",
+   "name": "Генератор чек-листа",
    "type": [
     "tool"
    ],
-   "api": "/entity/tool-podbor-formata-soprovozhdeniya.json",
-   "url": "/instrumenty/podbor-formata-soprovozhdeniya/"
+   "api": "/entity/tool-generator-chek-lista.json",
+   "url": "/instrumenty/generator-chek-lista/"
+  },
+  {
+   "id": "service-training",
+   "name": "Обучение казначейским платежам",
+   "type": [
+    "service"
+   ],
+   "api": "/entity/service-training.json",
+   "url": "/services/training"
   }
  ]
 }

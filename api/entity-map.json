@@ -3296,19 +3296,19 @@
    ],
    "url": "/services/postpayment"
   },
-  "service-start": {
-   "name": "Сопровождение с первого дня",
-   "type": [
-    "service"
-   ],
-   "url": "/services/start"
-  },
   "service-vosstanovlenie": {
    "name": "Восстановление КС (антикризис)",
    "type": [
     "service"
    ],
    "url": "/services/vosstanovlenie"
+  },
+  "service-training": {
+   "name": "Обучение казначейским платежам",
+   "type": [
+    "service"
+   ],
+   "url": "/services/training"
   },
   "law-44-fz": {
    "name": "44-ФЗ",

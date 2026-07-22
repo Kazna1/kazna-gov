@@ -343,7 +343,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-rkp",
    "scores": {
-    "authority": 68,
+    "authority": 69,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -496,7 +496,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-chek-list-otkrytie",
    "scores": {
-    "authority": 43,
+    "authority": 42,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -542,7 +542,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-chek-list-dokumenty",
    "scores": {
-    "authority": 37,
+    "authority": 38,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -628,7 +628,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-prikaz-razdelnyy-uchet",
    "scores": {
-    "authority": 30,
+    "authority": 29,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -673,9 +673,9 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-komplekt-otkrytie",
    "scores": {
-    "authority": 21,
+    "authority": 20,
     "coverage": 67,
-    "connectivity": 87,
+    "connectivity": 83,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100

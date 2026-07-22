@@ -580,81 +580,70 @@
    }
   },
   {
-   "id": "tool-generator-chek-lista",
+   "id": "tool-podbor-formata-soprovozhdeniya",
    "type": [
     "tool"
    ],
-   "name": "Генератор чек-листа",
+   "name": "Подбор формата сопровождения",
    "aliases": [],
-   "summary": "Мастер собирает персональный чек-лист старта казначейского сопровождения под ваш случай: тип контракта или субсидии, наличие опыта работы с казначейством и текущая стадия подготовки. На выходе — последовательный план запуска с официальными формами, регламентными сроками, типичными ошибками каждого шага и точками, где разумно подключить специалиста.",
-   "citation": "Вход: тип средств и стадия. Выход: пошаговый чек-лист старта с формами и сроками.",
+   "summary": "Мастер за 3 вопроса подбирает формат казначейского сопровождения под этап вашего контракта: резерв счёта до тендера, открытие лицевого счёта, ведение контракта с авансом или постоплатой, антикризисное восстановление. На выходе — рекомендованный формат с чек-листом первых шагов, необходимыми документами и типичными ошибками этапа из базы знаний платформы.",
+   "citation": "Вход: этап контракта, объём помощи, схема оплаты. Выход: рекомендованный формат сопровождения + чек-лист старта.",
    "pages": [
     {
      "layer": "tool",
-     "url": "/instrumenty/generator-chek-lista/",
-     "title": "Генератор чек-листа"
+     "url": "/instrumenty/podbor-formata-soprovozhdeniya/",
+     "title": "Подбор формата сопровождения"
     }
    ],
    "relations": {
     "USES_TERM": [
      "ks",
      "ls-71",
-     "registratsiya-eb",
-     "svodnyy-reestr",
-     "giis-eb",
-     "svedeniya-ssu",
-     "goz",
-     "razdelnyy-uchet",
-     "obs",
-     "subsidiya",
-     "id-soglasheniya",
-     "otchet-subsidii"
+     "sanktsionirovanie",
+     "kontrakt-44",
+     "svodnyy-reestr"
     ],
     "SEE_FAQ": [
-     "faq-start-novichka",
-     "faq-proverka-do-podpisaniya",
+     "faq-stoimost-soprovozhdeniya",
+     "faq-sostav-uslugi-soprovozhdeniya",
+     "faq-faktory-tseny-soprovozhdeniya",
      "faq-kak-otkryt-schet",
+     "faq-srok-otkrytiya-scheta",
      "faq-dokumenty-dlya-otkrytiya",
-     "faq-obyazannosti-ispolnitelya-goz",
-     "faq-postanovka-razdelnogo-ucheta",
-     "faq-otkrytie-scheta-subsidiya",
-     "faq-otchet-po-subsidii"
+     "faq-pochemu-vernuli-platezh",
+     "faq-deystviya-pri-vozvrate"
     ],
     "PART_OF_TOPIC": [
      "hub-ks"
     ],
     "REGULATED_BY": [
-     "law-prikaz-fk-44n",
      "law-bk-rf-st-2422224226",
-     "law-275-fz",
-     "law-koap-rf-st-1537"
+     "law-prikaz-fk-44n"
     ],
     "EXPLAINED_BY_ARTICLE": [
-     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
+     "/blog/soprovozhdenie-goskontraktov-pod-kluch",
      "/blog/how_to_open/"
     ],
     "REQUIRES_DOC": [
-     "chek-list-otkrytie",
      "zayavlenie-ls",
      "kartochka-podpisey",
-     "komplekt-goz",
-     "prikaz-razdelnyy-uchet",
-     "komplekt-subsidii",
+     "chek-list-otkrytie",
      "svedeniya-ssu"
     ],
     "PREVENTS": [
-     "err-zatyanulos-otkrytie",
      "err-svodnyy-reestr",
-     "err-razdelnyy-uchet",
-     "err-subsidiya-rashody"
+     "err-zatyanulos-otkrytie"
     ],
     "RESOLVES_TO": [
-     "service-start",
-     "service-conduct"
+     "service-reserve",
+     "service-open",
+     "service-conduct",
+     "service-postpayment",
+     "service-vosstanovlenie"
     ]
    },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-tool-generator-chek-lista",
+   "updated": "2026-07-13",
+   "schema_id": "https://kazna-gov.ru/#e-tool-podbor-formata-soprovozhdeniya",
    "scores": {
     "authority": 2,
     "coverage": 100,
@@ -718,9 +707,6 @@
     ],
     "PREVENTS": [
      "err-zatyanulos-otkrytie"
-    ],
-    "RESOLVES_TO": [
-     "service-start"
     ]
    },
    "updated": "2026-07-09",
@@ -811,71 +797,80 @@
    }
   },
   {
-   "id": "tool-podbor-formata-soprovozhdeniya",
+   "id": "tool-generator-chek-lista",
    "type": [
     "tool"
    ],
-   "name": "Подбор формата сопровождения",
+   "name": "Генератор чек-листа",
    "aliases": [],
-   "summary": "Мастер за 3 вопроса подбирает формат казначейского сопровождения под этап вашего контракта: резерв счёта до тендера, открытие лицевого счёта, ведение контракта с авансом или постоплатой, антикризисное восстановление. На выходе — рекомендованный формат с чек-листом первых шагов, необходимыми документами и типичными ошибками этапа из базы знаний платформы.",
-   "citation": "Вход: этап контракта, объём помощи, схема оплаты. Выход: рекомендованный формат сопровождения + чек-лист старта.",
+   "summary": "Мастер собирает персональный чек-лист старта казначейского сопровождения под ваш случай: тип контракта или субсидии, наличие опыта работы с казначейством и текущая стадия подготовки. На выходе — последовательный план запуска с официальными формами, регламентными сроками, типичными ошибками каждого шага и точками, где разумно подключить специалиста.",
+   "citation": "Вход: тип средств и стадия. Выход: пошаговый чек-лист старта с формами и сроками.",
    "pages": [
     {
      "layer": "tool",
-     "url": "/instrumenty/podbor-formata-soprovozhdeniya/",
-     "title": "Подбор формата сопровождения"
+     "url": "/instrumenty/generator-chek-lista/",
+     "title": "Генератор чек-листа"
     }
    ],
    "relations": {
     "USES_TERM": [
      "ks",
      "ls-71",
-     "sanktsionirovanie",
-     "kontrakt-44",
-     "svodnyy-reestr"
+     "registratsiya-eb",
+     "svodnyy-reestr",
+     "giis-eb",
+     "svedeniya-ssu",
+     "goz",
+     "razdelnyy-uchet",
+     "obs",
+     "subsidiya",
+     "id-soglasheniya",
+     "otchet-subsidii"
     ],
     "SEE_FAQ": [
-     "faq-stoimost-soprovozhdeniya",
-     "faq-sostav-uslugi-soprovozhdeniya",
-     "faq-faktory-tseny-soprovozhdeniya",
+     "faq-start-novichka",
+     "faq-proverka-do-podpisaniya",
      "faq-kak-otkryt-schet",
-     "faq-srok-otkrytiya-scheta",
      "faq-dokumenty-dlya-otkrytiya",
-     "faq-pochemu-vernuli-platezh",
-     "faq-deystviya-pri-vozvrate"
+     "faq-obyazannosti-ispolnitelya-goz",
+     "faq-postanovka-razdelnogo-ucheta",
+     "faq-otkrytie-scheta-subsidiya",
+     "faq-otchet-po-subsidii"
     ],
     "PART_OF_TOPIC": [
      "hub-ks"
     ],
     "REGULATED_BY": [
+     "law-prikaz-fk-44n",
      "law-bk-rf-st-2422224226",
-     "law-prikaz-fk-44n"
+     "law-275-fz",
+     "law-koap-rf-st-1537"
     ],
     "EXPLAINED_BY_ARTICLE": [
-     "/blog/soprovozhdenie-goskontraktov-pod-kluch",
+     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
      "/blog/how_to_open/"
     ],
     "REQUIRES_DOC": [
+     "chek-list-otkrytie",
      "zayavlenie-ls",
      "kartochka-podpisey",
-     "chek-list-otkrytie",
+     "komplekt-goz",
+     "prikaz-razdelnyy-uchet",
+     "komplekt-subsidii",
      "svedeniya-ssu"
     ],
     "PREVENTS": [
+     "err-zatyanulos-otkrytie",
      "err-svodnyy-reestr",
-     "err-zatyanulos-otkrytie"
+     "err-razdelnyy-uchet",
+     "err-subsidiya-rashody"
     ],
     "RESOLVES_TO": [
-     "service-reserve",
-     "service-open",
-     "service-conduct",
-     "service-postpayment",
-     "service-vosstanovlenie",
-     "service-start"
+     "service-conduct"
     ]
    },
-   "updated": "2026-07-13",
-   "schema_id": "https://kazna-gov.ru/#e-tool-podbor-formata-soprovozhdeniya",
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-tool-generator-chek-lista",
    "scores": {
     "authority": 1,
     "coverage": 100,

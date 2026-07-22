@@ -1,2 +1,7 @@
 .DS_Store
 _shared/
+# iCloud-дубликаты — не пускать в репо
+* [0-9].html
+* [0-9].txt
+* [0-9].json
+* [0-9].xml

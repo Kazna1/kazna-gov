@@ -6030,11 +6030,6 @@
    "rel": "REGULATED_BY"
   },
   {
-   "from": "faq-schet-otkryt-chto-dalshe",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
-  },
-  {
    "from": "faq-rekvizity-scheta",
    "to": "rekvizity-ks",
    "rel": "USES_TERM"
@@ -8360,11 +8355,6 @@
    "rel": "REGULATED_BY"
   },
   {
-   "from": "faq-avans-pri-ks",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
-  },
-  {
    "from": "faq-razmer-avansa",
    "to": "avans",
    "rel": "USES_TERM"
@@ -8398,11 +8388,6 @@
    "from": "faq-razmer-avansa",
    "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
-  },
-  {
-   "from": "faq-razmer-avansa",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-poluchit-avans",
@@ -8663,11 +8648,6 @@
    "from": "faq-chto-takoe-koo",
    "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
-  },
-  {
-   "from": "faq-chto-takoe-koo",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-uproshchennoe-perechislenie",
@@ -10735,11 +10715,6 @@
    "rel": "REGULATED_BY"
   },
   {
-   "from": "faq-sryv-srokov",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
-  },
-  {
    "from": "faq-shtrafy-ks",
    "to": "err-necelevoe",
    "rel": "USES_TERM"
@@ -10903,11 +10878,6 @@
    "from": "faq-dokumenty-ks-spisok",
    "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
-  },
-  {
-   "from": "faq-dokumenty-ks-spisok",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-gde-skachat-formy",
@@ -11915,11 +11885,6 @@
    "rel": "REGULATED_BY"
   },
   {
-   "from": "faq-chto-takoe-giis-eb",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
-  },
-  {
    "from": "faq-registratsiya-v-eb",
    "to": "registratsiya-eb",
    "rel": "USES_TERM"
@@ -12185,11 +12150,6 @@
    "rel": "USES_TERM"
   },
   {
-   "from": "faq-kontinent-tls",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
-  },
-  {
    "from": "faq-nuzhen-li-kriptopro",
    "to": "kriptopro",
    "rel": "USES_TERM"
@@ -12215,11 +12175,6 @@
    "rel": "REGULATED_BY"
   },
   {
-   "from": "faq-nuzhen-li-kriptopro",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
-  },
-  {
    "from": "faq-brauzer-dlya-eb",
    "to": "giis-eb",
    "rel": "USES_TERM"
@@ -12238,11 +12193,6 @@
    "from": "faq-brauzer-dlya-eb",
    "to": "err-ecp",
    "rel": "SEE_ERROR"
-  },
-  {
-   "from": "faq-brauzer-dlya-eb",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-eb-ne-vidit-sertifikat",
@@ -12670,11 +12620,6 @@
    "rel": "REQUIRES_DOC"
   },
   {
-   "from": "faq-chto-takoe-sufd",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
-  },
-  {
    "from": "faq-eb-ne-rabotaet",
    "to": "giis-eb",
    "rel": "USES_TERM"
@@ -12820,11 +12765,6 @@
    "rel": "REGULATED_BY"
   },
   {
-   "from": "faq-chto-takoe-goz",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
-  },
-  {
    "from": "faq-ks-goz-otlichiya",
    "to": "ks",
    "rel": "USES_TERM"
@@ -12873,11 +12813,6 @@
    "from": "faq-ks-goz-otlichiya",
    "to": "law-koap-rf-st-1537",
    "rel": "REGULATED_BY"
-  },
-  {
-   "from": "faq-ks-goz-otlichiya",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-kazna-ili-bank-goz",
@@ -12943,11 +12878,6 @@
    "from": "faq-chto-takoe-otdelnyy-schet",
    "to": "law-275-fz",
    "rel": "REGULATED_BY"
-  },
-  {
-   "from": "faq-chto-takoe-otdelnyy-schet",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-bank-dlya-goz",
@@ -13070,11 +13000,6 @@
    "rel": "REGULATED_BY"
   },
   {
-   "from": "faq-obyazannosti-ispolnitelya-goz",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
-  },
-  {
    "from": "faq-subpodryad-v-goz",
    "to": "subpodryadchik",
    "rel": "USES_TERM"
@@ -13113,11 +13038,6 @@
    "from": "faq-subpodryad-v-goz",
    "to": "law-275-fz",
    "rel": "REGULATED_BY"
-  },
-  {
-   "from": "faq-subpodryad-v-goz",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-zaprety-otdelnyy-schet",
@@ -13205,11 +13125,6 @@
    "rel": "REGULATED_BY"
   },
   {
-   "from": "faq-chto-takoe-razdelnyy-uchet",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
-  },
-  {
    "from": "faq-kto-vedet-razdelnyy-uchet",
    "to": "golovnoy-ispolnitel",
    "rel": "USES_TERM"
@@ -13248,11 +13163,6 @@
    "from": "faq-kto-vedet-razdelnyy-uchet",
    "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
-  },
-  {
-   "from": "faq-kto-vedet-razdelnyy-uchet",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-postanovka-razdelnogo-ucheta",
@@ -13298,11 +13208,6 @@
    "from": "faq-postanovka-razdelnogo-ucheta",
    "to": "law-koap-rf-st-1537",
    "rel": "REGULATED_BY"
-  },
-  {
-   "from": "faq-postanovka-razdelnogo-ucheta",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-shtraf-net-razdelnogo-ucheta",
@@ -13425,11 +13330,6 @@
    "rel": "REGULATED_BY"
   },
   {
-   "from": "faq-raspredelenie-nakladnykh",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
-  },
-  {
    "from": "faq-chto-takoe-prim-1",
    "to": "prim-1",
    "rel": "USES_TERM"
@@ -13470,11 +13370,6 @@
    "rel": "REGULATED_BY"
   },
   {
-   "from": "faq-chto-takoe-prim-1",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
-  },
-  {
    "from": "faq-vidy-tsen-goz",
    "to": "vidy-tsen-goz",
    "rel": "USES_TERM"
@@ -13505,11 +13400,6 @@
    "rel": "REGULATED_BY"
   },
   {
-   "from": "faq-vidy-tsen-goz",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
-  },
-  {
    "from": "faq-pravilo-20-1",
    "to": "norma-pribyli",
    "rel": "USES_TERM"
@@ -13528,11 +13418,6 @@
    "from": "faq-pravilo-20-1",
    "to": "law-pp-1465",
    "rel": "REGULATED_BY"
-  },
-  {
-   "from": "faq-pravilo-20-1",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-obosnovanie-tseny-goz",
@@ -13568,11 +13453,6 @@
    "from": "faq-obosnovanie-tseny-goz",
    "to": "law-275-fz",
    "rel": "REGULATED_BY"
-  },
-  {
-   "from": "faq-obosnovanie-tseny-goz",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-perevod-tseny-v-fiksirovannuyu",
@@ -13610,11 +13490,6 @@
    "rel": "REGULATED_BY"
   },
   {
-   "from": "faq-perevod-tseny-v-fiksirovannuyu",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
-  },
-  {
    "from": "faq-chto-proveryaet-voenpred",
    "to": "vp-mo",
    "rel": "USES_TERM"
@@ -13645,11 +13520,6 @@
    "rel": "REGULATED_BY"
   },
   {
-   "from": "faq-chto-proveryaet-voenpred",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
-  },
-  {
    "from": "faq-skolko-pribyli-goz",
    "to": "norma-pribyli",
    "rel": "USES_TERM"
@@ -13673,11 +13543,6 @@
    "from": "faq-skolko-pribyli-goz",
    "to": "law-275-fz",
    "rel": "REGULATED_BY"
-  },
-  {
-   "from": "faq-skolko-pribyli-goz",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-otchetnost-goz-girbo",
@@ -13790,11 +13655,6 @@
    "rel": "REGULATED_BY"
   },
   {
-   "from": "faq-soprovozhdenie-goz-pod-klyuch",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
-  },
-  {
    "from": "faq-subsidiya-pod-ks",
    "to": "subsidiya",
    "rel": "USES_TERM"
@@ -13828,11 +13688,6 @@
    "from": "faq-subsidiya-pod-ks",
    "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
-  },
-  {
-   "from": "faq-subsidiya-pod-ks",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-ks-subsidiy-vs-kontrakta",
@@ -13968,11 +13823,6 @@
    "from": "faq-soglashenie-o-subsidii",
    "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
-  },
-  {
-   "from": "faq-soglashenie-o-subsidii",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-identifikator-soglasheniya",
@@ -14475,11 +14325,6 @@
    "rel": "REGULATED_BY"
   },
   {
-   "from": "faq-regionalnaya-subsidiya",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
-  },
-  {
    "from": "faq-prodlenie-sroka-subsidii",
    "to": "soglashenie-subsidii",
    "rel": "USES_TERM"
@@ -14835,11 +14680,6 @@
    "rel": "REGULATED_BY"
   },
   {
-   "from": "faq-kakie-kontrakty-pod-ks",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
-  },
-  {
    "from": "faq-s-kakoy-summy-ks",
    "to": "porog-ks",
    "rel": "USES_TERM"
@@ -14863,11 +14703,6 @@
    "from": "faq-s-kakoy-summy-ks",
    "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
-  },
-  {
-   "from": "faq-s-kakoy-summy-ks",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-kto-ustanavlivaet-sluchai-ks",
@@ -14898,11 +14733,6 @@
    "from": "faq-kto-ustanavlivaet-sluchai-ks",
    "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
-  },
-  {
-   "from": "faq-kto-ustanavlivaet-sluchai-ks",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-ks-menyaetsya-kazhdyy-god",
@@ -15013,11 +14843,6 @@
    "from": "faq-mozhno-li-izbezhat-ks",
    "to": "law-koap-rf-st-1514",
    "rel": "REGULATED_BY"
-  },
-  {
-   "from": "faq-mozhno-li-izbezhat-ks",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-ks-po-223-fz",
@@ -15150,11 +14975,6 @@
    "rel": "REGULATED_BY"
   },
   {
-   "from": "faq-edinstvennyy-postavshchik-ks",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
-  },
-  {
    "from": "faq-kakoy-zakon-reguliruet-ks",
    "to": "bk-rf",
    "rel": "USES_TERM"
@@ -15190,11 +15010,6 @@
    "rel": "REGULATED_BY"
   },
   {
-   "from": "faq-kakoy-zakon-reguliruet-ks",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
-  },
-  {
    "from": "faq-bk-242",
    "to": "bk-rf",
    "rel": "USES_TERM"
@@ -15218,11 +15033,6 @@
    "from": "faq-bk-242",
    "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
-  },
-  {
-   "from": "faq-bk-242",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-prikaz-214n",
@@ -15415,11 +15225,6 @@
    "rel": "REGULATED_BY"
   },
   {
-   "from": "faq-ks-vs-bankovskoe",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
-  },
-  {
    "from": "faq-obsluzhivanie-vs-soprovozhdenie",
    "to": "ks",
    "rel": "USES_TERM"
@@ -15443,11 +15248,6 @@
    "from": "faq-obsluzhivanie-vs-soprovozhdenie",
    "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
-  },
-  {
-   "from": "faq-obsluzhivanie-vs-soprovozhdenie",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-narushenie-ks",
@@ -15705,11 +15505,6 @@
    "rel": "REGULATED_BY"
   },
   {
-   "from": "faq-ks-eto-nadolgo",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
-  },
-  {
    "from": "faq-zachem-gosudarstvu-ks",
    "to": "tselevye-sredstva",
    "rel": "USES_TERM"
@@ -15735,11 +15530,6 @@
    "rel": "REGULATED_BY"
   },
   {
-   "from": "faq-zachem-gosudarstvu-ks",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
-  },
-  {
    "from": "faq-plyusy-ks-dlya-podryadchika",
    "to": "avans",
    "rel": "USES_TERM"
@@ -15763,11 +15553,6 @@
    "from": "faq-plyusy-ks-dlya-podryadchika",
    "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "rel": "REGULATED_BY"
-  },
-  {
-   "from": "faq-plyusy-ks-dlya-podryadchika",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-stoimost-soprovozhdeniya",
@@ -15925,11 +15710,6 @@
    "rel": "REQUIRES_DOC"
   },
   {
-   "from": "faq-kak-zakazat-uslugu",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
-  },
-  {
    "from": "faq-srok-podklyucheniya",
    "to": "doverennost-mchd",
    "rel": "USES_TERM"
@@ -15953,11 +15733,6 @@
    "from": "faq-srok-podklyucheniya",
    "to": "doverennost-mchd",
    "rel": "REQUIRES_DOC"
-  },
-  {
-   "from": "faq-srok-podklyucheniya",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-geografiya-raboty",
@@ -16270,11 +16045,6 @@
    "rel": "USES_TERM"
   },
   {
-   "from": "faq-besplatnaya-diagnostika",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
-  },
-  {
    "from": "faq-kalkulyator-stoimosti",
    "to": "ks",
    "rel": "USES_TERM"
@@ -16390,11 +16160,6 @@
    "rel": "REGULATED_BY"
   },
   {
-   "from": "faq-ks-prostymi-slovami",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
-  },
-  {
    "from": "faq-start-novichka",
    "to": "ls-71",
    "rel": "USES_TERM"
@@ -16438,11 +16203,6 @@
    "from": "faq-start-novichka",
    "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
-  },
-  {
-   "from": "faq-start-novichka",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
   },
   {
    "from": "faq-vremya-na-protsedury",
@@ -16510,11 +16270,6 @@
    "rel": "REGULATED_BY"
   },
   {
-   "from": "faq-proverka-do-podpisaniya",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
-  },
-  {
    "from": "faq-gde-uchitsya-ks",
    "to": "ks",
    "rel": "USES_TERM"
@@ -16538,11 +16293,6 @@
    "from": "faq-gde-uchitsya-ks",
    "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
-  },
-  {
-   "from": "faq-gde-uchitsya-ks",
-   "to": "service-start",
-   "rel": "MONETIZED_BY"
   },
   {
    "from": "hub-ks",
@@ -17328,11 +17078,6 @@
    "from": "tool-proverka-ks",
    "to": "sanktsionirovanie",
    "rel": "USES_TERM"
-  },
-  {
-   "from": "tool-proverka-ks",
-   "to": "service-start",
-   "rel": "RESOLVES_TO"
   },
   {
    "from": "tool-proverka-ks",
@@ -19011,11 +18756,6 @@
   },
   {
    "from": "tool-generator-chek-lista",
-   "to": "service-start",
-   "rel": "RESOLVES_TO"
-  },
-  {
-   "from": "tool-generator-chek-lista",
    "to": "law-prikaz-fk-44n",
    "rel": "REGULATED_BY"
   },
@@ -19416,11 +19156,6 @@
   },
   {
    "from": "tool-podbor-formata-soprovozhdeniya",
-   "to": "service-start",
-   "rel": "RESOLVES_TO"
-  },
-  {
-   "from": "tool-podbor-formata-soprovozhdeniya",
    "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
   },
@@ -19795,101 +19530,6 @@
    "rel": "PART_OF_TOPIC"
   },
   {
-   "from": "service-start",
-   "to": "ks",
-   "rel": "USES_TERM"
-  },
-  {
-   "from": "service-start",
-   "to": "ls-71",
-   "rel": "USES_TERM"
-  },
-  {
-   "from": "service-start",
-   "to": "razdelnyy-uchet",
-   "rel": "USES_TERM"
-  },
-  {
-   "from": "service-start",
-   "to": "svedeniya-ssu",
-   "rel": "USES_TERM"
-  },
-  {
-   "from": "service-start",
-   "to": "chek-list-otkrytie",
-   "rel": "SERVICE_REQUIRES"
-  },
-  {
-   "from": "service-start",
-   "to": "komplekt-otkrytie",
-   "rel": "SERVICE_REQUIRES"
-  },
-  {
-   "from": "service-start",
-   "to": "prikaz-razdelnyy-uchet",
-   "rel": "SERVICE_REQUIRES"
-  },
-  {
-   "from": "service-start",
-   "to": "err-zatyanulos-otkrytie",
-   "rel": "SERVICE_SOLVES"
-  },
-  {
-   "from": "service-start",
-   "to": "err-naznachenie",
-   "rel": "SERVICE_SOLVES"
-  },
-  {
-   "from": "service-start",
-   "to": "err-razdelnyy-uchet",
-   "rel": "SERVICE_SOLVES"
-  },
-  {
-   "from": "service-start",
-   "to": "faq-start-novichka",
-   "rel": "SEE_FAQ"
-  },
-  {
-   "from": "service-start",
-   "to": "faq-srok-podklyucheniya",
-   "rel": "SEE_FAQ"
-  },
-  {
-   "from": "service-start",
-   "to": "faq-zona-klienta-pri-autsorsinge",
-   "rel": "SEE_FAQ"
-  },
-  {
-   "from": "service-start",
-   "to": "hub-ks",
-   "rel": "PART_OF_TOPIC"
-  },
-  {
-   "from": "service-start",
-   "to": "law-bk-rf-st-2422224226",
-   "rel": "REGULATED_BY"
-  },
-  {
-   "from": "service-start",
-   "to": "law-prikaz-fk-44n",
-   "rel": "REGULATED_BY"
-  },
-  {
-   "from": "service-start",
-   "to": "tool-generator-chek-lista",
-   "rel": "DIAGNOSED_BY"
-  },
-  {
-   "from": "service-start",
-   "to": "tool-diagnostika-kontrakta",
-   "rel": "DIAGNOSED_BY"
-  },
-  {
-   "from": "service-start",
-   "to": "hub-ks",
-   "rel": "PART_OF_TOPIC"
-  },
-  {
    "from": "service-vosstanovlenie",
    "to": "priostanovlenie",
    "rel": "USES_TERM"
@@ -19982,6 +19622,101 @@
   {
    "from": "service-vosstanovlenie",
    "to": "hub-sankts",
+   "rel": "PART_OF_TOPIC"
+  },
+  {
+   "from": "service-training",
+   "to": "giis-eb",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "service-training",
+   "to": "svedeniya-ssu",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "service-training",
+   "to": "sanktsionirovanie",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "service-training",
+   "to": "razdelnyy-uchet",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "service-training",
+   "to": "svedeniya-ssu",
+   "rel": "SERVICE_REQUIRES"
+  },
+  {
+   "from": "service-training",
+   "to": "rkp",
+   "rel": "SERVICE_REQUIRES"
+  },
+  {
+   "from": "service-training",
+   "to": "chek-list-dokumenty",
+   "rel": "SERVICE_REQUIRES"
+  },
+  {
+   "from": "service-training",
+   "to": "err-naznachenie",
+   "rel": "SERVICE_SOLVES"
+  },
+  {
+   "from": "service-training",
+   "to": "err-kod-napravleniya",
+   "rel": "SERVICE_SOLVES"
+  },
+  {
+   "from": "service-training",
+   "to": "err-razdelnyy-uchet",
+   "rel": "SERVICE_SOLVES"
+  },
+  {
+   "from": "service-training",
+   "to": "faq-gde-uchitsya-ks",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "service-training",
+   "to": "faq-kak-zapolnit-svedeniya",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "service-training",
+   "to": "faq-provesti-platezh",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "service-training",
+   "to": "hub-platezhi",
+   "rel": "PART_OF_TOPIC"
+  },
+  {
+   "from": "service-training",
+   "to": "law-prikaz-minfina-214n",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "service-training",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "service-training",
+   "to": "tool-podbor-formata-soprovozhdeniya",
+   "rel": "DIAGNOSED_BY"
+  },
+  {
+   "from": "service-training",
+   "to": "tool-diagnostika-kontrakta",
+   "rel": "DIAGNOSED_BY"
+  },
+  {
+   "from": "service-training",
+   "to": "hub-platezhi",
    "rel": "PART_OF_TOPIC"
   },
   {

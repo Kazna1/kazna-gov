@@ -39,6 +39,9 @@ RewriteRule ^policy/?$ /personal_data_policy [R=301,L]
 # --- /stuff — дубль trust-интента (команда) → 301 на автор-страницу эксперта (консолидация, Конституция гл.7) ---
 RewriteRule ^stuff/?$ /expert/stella [R=301,L]
 
+# --- /services/start — услуга выведена из линейки → 301 на сопровождение платежей ---
+RewriteRule ^services/start/?$ /services/conduct [R=301,L]
+
 # --- Force HTTPS (кроме ACME-challenge LetsEncrypt) ---
 RewriteCond %{HTTPS} off
 RewriteCond %{REQUEST_URI} !^/\.well-known/

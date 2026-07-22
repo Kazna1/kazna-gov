@@ -110,7 +110,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-zatyanulos-otkrytie",
    "scores": {
-    "authority": 61,
+    "authority": 60,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -221,7 +221,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-kod-napravleniya",
    "scores": {
-    "authority": 42,
+    "authority": 43,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,

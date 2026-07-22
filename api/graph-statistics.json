@@ -4,7 +4,7 @@
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "nodes": 487,
- "edges": 4297,
+ "edges": 4244,
  "byType": {
   "error": 13,
   "document": 19,
@@ -18,7 +18,7 @@
  "relTypes": {
   "REQUIRES_DOC": 490,
   "SEE_ERROR": 377,
-  "MONETIZED_BY": 456,
+  "MONETIZED_BY": 406,
   "REGULATED_BY": 589,
   "RELATED_DOC": 55,
   "RELATED_TERM": 401,
@@ -28,7 +28,7 @@
   "SEE_FAQ": 136,
   "PART_OF_TOPIC": 23,
   "PREVENTS": 56,
-  "RESOLVES_TO": 39,
+  "RESOLVES_TO": 36,
   "SERVICE_REQUIRES": 19,
   "SERVICE_SOLVES": 18,
   "SAME_CLUSTER": 301
@@ -44,11 +44,11 @@
   },
   {
    "id": "svedeniya-ssu",
-   "in": 105
+   "in": 106
   },
   {
    "id": "law-prikaz-minfina-214n",
-   "in": 105
+   "in": 106
   },
   {
    "id": "err-otkaz-sanktsionirovaniya",
@@ -64,11 +64,11 @@
   },
   {
    "id": "sanktsionirovanie",
-   "in": 83
+   "in": 84
   },
   {
    "id": "ls-71",
-   "in": 78
+   "in": 77
   },
   {
    "id": "zayavlenie-ls",
@@ -84,11 +84,11 @@
   },
   {
    "id": "rkp",
-   "in": 64
+   "in": 65
   },
   {
    "id": "err-zatyanulos-otkrytie",
-   "in": 58
+   "in": 57
   },
   {
    "id": "err-necelevoe",

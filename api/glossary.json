@@ -261,7 +261,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-sanktsionirovanie",
    "scores": {
-    "authority": 88,
+    "authority": 89,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -323,7 +323,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-ls-71",
    "scores": {
-    "authority": 82,
+    "authority": 81,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -528,7 +528,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-rkp",
    "scores": {
-    "authority": 68,
+    "authority": 69,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -653,7 +653,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-giis-eb",
    "scores": {
-    "authority": 58,
+    "authority": 59,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -705,7 +705,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-ks",
    "scores": {
-    "authority": 57,
+    "authority": 56,
     "coverage": 67,
     "connectivity": 100,
     "citation": 100,
