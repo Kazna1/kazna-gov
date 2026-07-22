@@ -1,7 +1,7 @@
 {
- "generated": "2026-07-14T08:23:57.205Z",
+ "generated": "2026-07-22T14:34:50.049Z",
  "nodes": 487,
- "edges": 4297,
+ "edges": 4244,
  "byType": {
   "term": 120,
   "faq": 301,
@@ -13,11 +13,11 @@
   "law": 16
  },
  "scores": {
-  "coverage": 90,
+  "coverage": 88,
   "authority": 8,
   "connectivity": 45,
   "citationDensity": 89,
-  "graphDensity": 8.82,
+  "graphDensity": 8.71,
   "machineReadability": 100,
   "aiReadiness": 100,
   "registryCompleteness": 100,
