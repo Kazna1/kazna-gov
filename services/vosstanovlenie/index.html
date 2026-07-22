@@ -24,7 +24,58 @@
 <link rel="dns-prefetch" href="https://mc.yandex.ru">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lora:wght@500;600;700&family=JetBrains+Mono:wght@500&display=swap&subset=cyrillic" rel="stylesheet">
  <noscript><div><img src="https://mc.yandex.ru/watch/86763493" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://kazna-gov.ru/"}, {"@type": "ListItem", "position": 2, "name": "Услуги", "item": "https://kazna-gov.ru/uslugi"}, {"@type": "ListItem", "position": 3, "name": "Восстановление казначейского сопровождения", "item": "https://kazna-gov.ru/services/vosstanovlenie"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Что такое восстановление казначейского сопровождения?", "acceptedAnswer": {"@type": "Answer", "text": "Это антикризисная услуга для компаний, у которых работа с казначейством нарушена: возвраты платежей, зависшие заявки, претензии УФК, незакрытая отчётность после предыдущего подрядчика или штатного специалиста. Мы проводим аудит, находим причину каждой проблемы, разблокируем платежи и переводим контракт в штатный режим."}}, {"@type": "Question", "name": "Сколько стоит тариф «Восстановление»?", "acceptedAnswer": {"@type": "Answer", "text": "99 000 ₽ в месяц. Цена выше обычного тарифа, потому что разгребать чужие ошибки сложнее, чем вести контракт с нуля: нужно найти причину каждого возврата, согласовать исправления с УФК и закрыть хвосты по отчётности. После выхода в штатный режим переводим на обычный тариф 89 000 ₽ в месяц."}}, {"@type": "Question", "name": "Можно потом перейти на обычный тариф?", "acceptedAnswer": {"@type": "Answer", "text": "Да. 99 000 ₽ в месяц действует, пока разбираем ошибки предыдущего подрядчика. Как только контракт выходит в штатный режим — платежи проходят, отчётность закрыта, претензий УФК нет — переводим на полное сопровождение за 89 000 ₽ в месяц."}}, {"@type": "Question", "name": "Как быстро вы разблокируете зависшие платежи?", "acceptedAnswer": {"@type": "Answer", "text": "Срок зависит от причины: ошибка в документах-основаниях исправляется за несколько рабочих дней, снятие претензий УФК и восстановление отчётности за прошлые периоды занимает больше. На аудите (первый этап) даём план с конкретными сроками по каждой проблеме."}}, {"@type": "Question", "name": "Предыдущий подрядчик не передаёт документы. Это блокирует восстановление?", "acceptedAnswer": {"@type": "Answer", "text": "Нет. Вся история операций по казначейскому счёту хранится в ГИИС «Электронный бюджет» и в УФК. Восстанавливаем картину по данным системы и реестрам казначейства, недостающие документы-основания готовим заново."}}, {"@type": "Question", "name": "Работаете с контрактами по 275-ФЗ (гособоронзаказ)?", "acceptedAnswer": {"@type": "Answer", "text": "Да. Восстанавливаем и контракты по 44-ФЗ, и контракты гособоронзаказа по 275-ФЗ, включая раздельный учёт и отчётность. По запросу подписываем NDA до начала работы."}}]}]}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service", "mainEntityOfPage": "https://kazna-gov.ru/services/vosstanovlenie",
+      "@id": "https://kazna-gov.ru/services/vosstanovlenie#service",
+      "name": "Восстановление казначейского сопровождения",
+      "alternateName": "Тариф «Восстановление» (антикризисное казначейское сопровождение)",
+      "serviceType": "Восстановление казначейского сопровождения госконтракта",
+      "description": "Восстановление казначейского сопровождения после неудачного подрядчика: аудит ошибок, разблокировка зависших платежей, снятие претензий УФК, восстановление отчётности — 99 000 ₽/мес, после выхода в штатный режим — 89 000 ₽/мес.",
+      "url": "https://kazna-gov.ru/services/vosstanovlenie",
+      "areaServed": {"@type": "Country", "name": "Россия"},
+      "provider": { "@type": "Organization", "@id": "https://kazna-gov.ru/#organization", "name": "Казна", "url": "https://kazna-gov.ru/",
+        "founder": {"@type": "Person", "name": "Ярослав Михайлов", "jobTitle": "Руководитель практики «Казна»"},
+        "taxID": "781428314589"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "99000",
+        "priceCurrency": "RUB",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "99000",
+          "priceCurrency": "RUB",
+          "unitText": "месяц"
+        },
+        "description": "99 000 ₽ в месяц до выхода контракта в штатный режим, далее — полное сопровождение 89 000 ₽ в месяц.",
+        "availability": "https://schema.org/InStock",
+        "url": "https://kazna-gov.ru/services/vosstanovlenie"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://kazna-gov.ru/"},
+        {"@type": "ListItem", "position": 2, "name": "Услуги", "item": "https://kazna-gov.ru/uslugi"},
+        {"@type": "ListItem", "position": 3, "name": "Восстановление казначейского сопровождения", "item": "https://kazna-gov.ru/services/vosstanovlenie"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+    {"@type": "Question", "name": "Что такое восстановление казначейского сопровождения?", "acceptedAnswer": {"@type": "Answer", "text": "Это антикризисная услуга для компаний, у которых работа с казначейством нарушена: возвраты платежей, зависшие заявки, претензии УФК, незакрытая отчётность после предыдущего подрядчика или штатного специалиста. Мы проводим аудит, находим причину каждой проблемы, разблокируем платежи и переводим контракт в штатный режим."}},
+    {"@type": "Question", "name": "Сколько стоит тариф «Восстановление»?", "acceptedAnswer": {"@type": "Answer", "text": "99 000 ₽ в месяц. Цена выше обычного тарифа, потому что разгребать чужие ошибки сложнее, чем вести контракт с нуля: нужно найти причину каждого возврата, согласовать исправления с УФК и закрыть хвосты по отчётности. После выхода в штатный режим переводим на обычный тариф 89 000 ₽ в месяц."}},
+    {"@type": "Question", "name": "Можно потом перейти на обычный тариф?", "acceptedAnswer": {"@type": "Answer", "text": "Да. 99 000 ₽ в месяц действует, пока разбираем ошибки предыдущего подрядчика. Как только контракт выходит в штатный режим — платежи проходят, отчётность закрыта, претензий УФК нет — переводим на полное сопровождение за 89 000 ₽ в месяц."}},
+    {"@type": "Question", "name": "Как быстро вы разблокируете зависшие платежи?", "acceptedAnswer": {"@type": "Answer", "text": "Срок зависит от причины: ошибка в документах-основаниях исправляется за несколько рабочих дней, снятие претензий УФК и восстановление отчётности за прошлые периоды занимает больше. На аудите (первый этап) даём план с конкретными сроками по каждой проблеме."}},
+    {"@type": "Question", "name": "Предыдущий подрядчик не передаёт документы. Это блокирует восстановление?", "acceptedAnswer": {"@type": "Answer", "text": "Нет. Вся история операций по казначейскому счёту хранится в ГИИС «Электронный бюджет» и в УФК. Восстанавливаем картину по данным системы и реестрам казначейства, недостающие документы-основания готовим заново."}},
+    {"@type": "Question", "name": "Работаете с контрактами по 275-ФЗ (гособоронзаказ)?", "acceptedAnswer": {"@type": "Answer", "text": "Да. Восстанавливаем и контракты по 44-ФЗ, и контракты гособоронзаказа по 275-ФЗ, включая раздельный учёт и отчётность. По запросу подписываем NDA до начала работы."}}
+      ]
+    }
+  ]
+}</script>
 
 
 
@@ -111,7 +162,7 @@ details[open] .kv-faq__icon::after{opacity:0}
 @media(max-width:560px){.kv-steps{grid-template-columns:1fr}.kv-panel{padding:22px 20px}.kv-form-card{padding:26px 20px}}
 </style>
 <!-- @service-ld:start -->
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["Service","ProfessionalService"],"@id":"https://kazna-gov.ru/#e-service-vosstanovlenie","name":"Восстановление КС (антикризис)","description":"Антикризисное восстановление казначейского сопровождения: разблокируем зависшие платежи, снимаем приостановления, разбираем завалы возвратов и запросов УФК, восстанавливаем Сведения и учёт. Антикризисный тариф 99 000 ₽ — берём контракт в любом состоянии; после стабилизации — 89 000 ₽/мес обычного ведения.","url":"https://kazna-gov.ru/services/vosstanovlenie","inLanguage":"ru","provider":{"@id":"https://kazna-gov.ru/#organization"},"areaServed":"RU","serviceType":"Казначейское сопровождение госконтрактов","offers":{"@type":"Offer","price":"99000","priceCurrency":"RUB","description":"Антикризисный тариф 99 000 ₽ (первый месяц, любое состояние контракта); после стабилизации — 89 000 ₽/мес до закрытия контракта."}},{"@type":"HowTo","@id":"https://kazna-gov.ru/services/vosstanovlenie#stages","name":"Этапы: Восстановление КС (антикризис)","step":[{"@type":"HowToStep","position":1,"name":"Срочный аудит (24 часа)"},{"@type":"HowToStep","position":2,"name":"Карта проблем и план стабилизации"},{"@type":"HowToStep","position":3,"name":"Разбор возвратов/запросов/блокировок"},{"@type":"HowToStep","position":4,"name":"Восстановление Сведений и учёта"},{"@type":"HowToStep","position":5,"name":"Стабильный платёжный конвейер"}],"inLanguage":"ru"},{"@type":"WebPage","@id":"https://kazna-gov.ru/services/vosstanovlenie#page","name":"Восстановление КС (антикризис)","url":"https://kazna-gov.ru/services/vosstanovlenie","inLanguage":"ru","speakable":{"@type":"SpeakableSpecification","cssSelector":[".sv-ai"]},"publisher":{"@id":"https://kazna-gov.ru/#organization"}},{"@type":"Organization","@id":"https://kazna-gov.ru/#organization","name":"Казна","alternateName":"ИП Михайлов Я.А.","taxID":"781428314589","url":"https://kazna-gov.ru/","telephone":"+74951084232"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["Service","ProfessionalService"],"@id":"https://kazna-gov.ru/#e-service-vosstanovlenie","name":"Восстановление КС (антикризис)","description":"Антикризисное восстановление казначейского сопровождения: разблокируем зависшие платежи, снимаем приостановления, разбираем завалы возвратов и запросов УФК, восстанавливаем Сведения и учёт. Антикризисный тариф 99 000 ₽ — берём контракт в любом состоянии; после стабилизации — 89 000 ₽/мес обычного ведения.","url":"https://kazna-gov.ru/services/vosstanovlenie","inLanguage":"ru","provider":{"@id":"https://kazna-gov.ru/#organization"},"areaServed":"RU","serviceType":"Казначейское сопровождение госконтрактов","offers":{"@type":"Offer","price":"99000","priceCurrency":"RUB","description":"Антикризисный тариф 99 000 ₽ (первый месяц, любое состояние контракта); после стабилизации — 89 000 ₽/мес до закрытия контракта."}},{"@type":"HowTo","@id":"https://kazna-gov.ru/services/vosstanovlenie#stages","name":"Этапы: Восстановление КС (антикризис)","step":[{"@type":"HowToStep","position":1,"name":"Срочный аудит (24 часа)"},{"@type":"HowToStep","position":2,"name":"Карта проблем и план стабилизации"},{"@type":"HowToStep","position":3,"name":"Разбор возвратов/запросов/блокировок"},{"@type":"HowToStep","position":4,"name":"Восстановление Сведений и учёта"},{"@type":"HowToStep","position":5,"name":"Стабильный платёжный конвейер"}],"inLanguage":"ru"},{"@type":"FAQPage","@id":"https://kazna-gov.ru/services/vosstanovlenie#pricing-faq","mainEntity":[{"@type":"Question","name":"Почему дороже обычного ведения?","acceptedAnswer":{"@type":"Answer","text":"Первый месяц — это форсированный разбор завалов и переписка по каждой зависшей операции; после стабилизации тариф снижается до обычного."}}],"inLanguage":"ru"},{"@type":"WebPage","@id":"https://kazna-gov.ru/services/vosstanovlenie#page","name":"Восстановление КС (антикризис)","url":"https://kazna-gov.ru/services/vosstanovlenie","inLanguage":"ru","speakable":{"@type":"SpeakableSpecification","cssSelector":[".sv-ai"]},"publisher":{"@id":"https://kazna-gov.ru/#organization"}},{"@type":"Organization","@id":"https://kazna-gov.ru/#organization","name":"Казна","alternateName":"ИП Михайлов Я.А.","taxID":"781428314589","url":"https://kazna-gov.ru/","telephone":"+74951084232"}]}</script>
 <link rel="stylesheet" href="/assets/oshibki.css?v=173350b3"><link rel="stylesheet" href="/assets/glossary.css?v=e6491eaf"><link rel="stylesheet" href="/assets/dokumenty.css?v=eb2b6d97"><link rel="stylesheet" href="/assets/services.css?v=cca507cf"><script defer src="/assets/services.js?v=c3c20514"></script>
 <!-- @service-ld:end -->
 <!-- kz:head:start -->

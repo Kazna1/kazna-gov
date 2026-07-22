@@ -2494,7 +2494,22 @@ fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Ty
     }
   ]
 }
-</script>  <!-- Floating social proof --> <div id="kzop2-sp" role="status" aria-live="polite"> <div class="kzop2-sp-av">М</div> <div class="kzop2-sp-body"> <span class="kzop2-sp-name">Михаил К., Новосибирск</span> <span class="kzop2-sp-act">зарезервировал казначейский счёт</span> <span class="kzop2-sp-time">сегодня</span> </div> </div> <!-- ═══ SUCCESS MODAL ═══ --> <style>
+</script> <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Резервирование казначейского счёта",
+  "provider": { "@type": "Organization", "@id": "https://kazna-gov.ru/#organization", "name": "Казна", "url": "https://kazna-gov.ru", "telephone": "+74951084232" }, "mainEntityOfPage": "https://kazna-gov.ru/services/reserve",
+  "description": "Профессиональное резервирование казначейского счёта до заключения госконтракта. Сбор документов, установка ГИИС Электронный бюджет, запрос в казначейство. Закрытие счёта при проигрыше тендера включено.",
+  "offers": {
+    "@type": "Offer",
+    "price": "19000",
+    "priceCurrency": "RUB",
+    "availability": "https://schema.org/InStock"
+  },
+  "areaServed": "RU"
+}
+</script> <!-- Floating social proof --> <div id="kzop2-sp" role="status" aria-live="polite"> <div class="kzop2-sp-av">М</div> <div class="kzop2-sp-body"> <span class="kzop2-sp-name">Михаил К., Новосибирск</span> <span class="kzop2-sp-act">зарезервировал казначейский счёт</span> <span class="kzop2-sp-time">сегодня</span> </div> </div> <!-- ═══ SUCCESS MODAL ═══ --> <style>
 .kzop2 .kzop2__hp{position:absolute!important;left:-9999px!important;top:auto!important;width:1px;height:1px;opacity:0;pointer-events:none}
 .kzop2__err-msg{font-size:13px;color:#dc2626;margin-top:10px;line-height:1.45;text-align:center;font-weight:500}
 .kzop2__success{
@@ -2972,7 +2987,7 @@ fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Ty
         ok = false;
       } else if (consent) consent.style.outline = '';
       if (!ok) return;
-      ymGoal('full_form_submit', Object.assign({ service: 'reserve', price: 15000 }, window._kzUtm || {}));
+      ymGoal('full_form_submit', Object.assign({ service: 'reserve', price: 19000 }, window._kzUtm || {}));
       kzSendLead({
         btn: finalSubmit,
         source: 'final-form',
