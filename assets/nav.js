@@ -188,7 +188,7 @@
 (function(){
   var fab=document.querySelector('.kg-tg-fab');
   if(!fab||!('IntersectionObserver' in window))return;
-  var targets=['#form','#contacts','#audit','.kzfoot','footer']
+  var targets=['#form','#form-top','#contacts','#audit','.kzfoot','footer']
     .map(function(s){return document.querySelector(s)}).filter(Boolean);
   if(!targets.length)return;
   var states=new Map();
