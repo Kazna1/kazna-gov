@@ -40,7 +40,9 @@ RewriteRule ^policy/?$ /personal_data_policy [R=301,L]
 RewriteRule ^stuff/?$ /expert/stella [R=301,L]
 
 # --- /services/start — услуга выведена из линейки → 301 на сопровождение платежей ---
-RewriteRule ^services/start/?$ /services/conduct [R=301,L]
+# Ловим и сам URL, и прямой доступ к файлу, и любые подпути: иначе
+# /services/start/index.html открывается в обход редиректа и остаётся дублем.
+RewriteRule ^services/start(/.*)?$ /services/conduct [R=301,L]
 
 # --- /review — легаси-дубль интента «отзывы» → 301 на канонический /otzyvy/ (аудит 2026-07-22) ---
 RewriteRule ^review/?$ /otzyvy/ [R=301,L]
