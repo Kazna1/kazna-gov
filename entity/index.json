@@ -1,9 +1,9 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-07-14",
+ "version": "2026-08-11",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
- "count": 487,
+ "count": 488,
  "entities": [
   {
    "id": "service-conduct",
@@ -138,6 +138,15 @@
    "url": "/oshibki/zatyanulos-otkrytie-scheta/"
   },
   {
+   "id": "giis-eb",
+   "name": "ГИИС «Электронный бюджет»",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/giis-eb.json",
+   "url": "/glossary/giis-elektronnyy-byudzhet/"
+  },
+  {
    "id": "err-necelevoe",
    "name": "Нецелевое расходование",
    "type": [
@@ -146,15 +155,6 @@
    ],
    "api": "/entity/err-necelevoe.json",
    "url": "/oshibki/necelevoe-rashodovanie-sredstv/"
-  },
-  {
-   "id": "giis-eb",
-   "name": "ГИИС «Электронный бюджет»",
-   "type": [
-    "term"
-   ],
-   "api": "/entity/giis-eb.json",
-   "url": "/glossary/giis-elektronnyy-byudzhet/"
   },
   {
    "id": "law-prikaz-fk-44n",
@@ -374,6 +374,15 @@
    "url": "/zakonodatelstvo/"
   },
   {
+   "id": "err-mchd",
+   "name": "МЧД не проходит",
+   "type": [
+    "error"
+   ],
+   "api": "/entity/err-mchd.json",
+   "url": "/oshibki/mchd-ne-prohodit-proverku/"
+  },
+  {
    "id": "vozmeshchenie",
    "name": "Возмещение расходов",
    "type": [
@@ -390,15 +399,6 @@
    ],
    "api": "/entity/err-igk.json",
    "url": "/oshibki/oshibka-v-igk-platezh-ne-prohodit/"
-  },
-  {
-   "id": "err-mchd",
-   "name": "МЧД не проходит",
-   "type": [
-    "error"
-   ],
-   "api": "/entity/err-mchd.json",
-   "url": "/oshibki/mchd-ne-prohodit-proverku/"
   },
   {
    "id": "prikaz-razdelnyy-uchet",
@@ -1329,6 +1329,15 @@
    "url": "/otchetnost/"
   },
   {
+   "id": "tool-podbor-scheta",
+   "name": "Подбор счёта",
+   "type": [
+    "tool"
+   ],
+   "api": "/entity/tool-podbor-scheta.json",
+   "url": "/instrumenty/podbor-litsevogo-scheta/"
+  },
+  {
    "id": "law-223-fz",
    "name": "223-ФЗ",
    "type": [
@@ -1644,6 +1653,15 @@
    "url": "/subsidii/"
   },
   {
+   "id": "hub-giis",
+   "name": "ГИИС ЭБ и доступ",
+   "type": [
+    "hub"
+   ],
+   "api": "/entity/hub-giis.json",
+   "url": "/giis/"
+  },
+  {
    "id": "tool-diagnostika-kontrakta",
    "name": "Диагностика контракта",
    "type": [
@@ -1651,15 +1669,6 @@
    ],
    "api": "/entity/tool-diagnostika-kontrakta.json",
    "url": "/instrumenty/diagnostika-kontrakta/"
-  },
-  {
-   "id": "tool-podbor-scheta",
-   "name": "Подбор счёта",
-   "type": [
-    "tool"
-   ],
-   "api": "/entity/tool-podbor-scheta.json",
-   "url": "/instrumenty/podbor-litsevogo-scheta/"
   },
   {
    "id": "tool-diagnostika-platezha",
@@ -2175,6 +2184,15 @@
    "url": "/voprosy/kak-zapolnit-kartochku-0531753/"
   },
   {
+   "id": "faq-mchd-vypusk",
+   "name": "Как выпустить МЧД для казначейства?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-mchd-vypusk.json",
+   "url": "/voprosy/kak-vypustit-mchd/"
+  },
+  {
    "id": "faq-proverka-pered-podachey",
    "name": "Как проверить документы перед подачей в УФК?",
    "type": [
@@ -2182,6 +2200,15 @@
    ],
    "api": "/entity/faq-proverka-pered-podachey.json",
    "url": "/voprosy/proverka-dokumentov-pered-podachey/"
+  },
+  {
+   "id": "faq-chto-takoe-giis-eb",
+   "name": "Что такое ГИИС «Электронный бюджет»?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-chto-takoe-giis-eb.json",
+   "url": "/voprosy/chto-takoe-giis-eb-vopros/"
   },
   {
    "id": "faq-registratsiya-v-eb",
@@ -2200,6 +2227,15 @@
    ],
    "api": "/entity/faq-rabochee-mesto-eb.json",
    "url": "/voprosy/chto-nuzhno-dlya-rabochego-mesta/"
+  },
+  {
+   "id": "faq-eb-ne-vidit-sertifikat",
+   "name": "«Электронный бюджет» не видит сертификат — что делать?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-eb-ne-vidit-sertifikat.json",
+   "url": "/voprosy/eb-ne-vidit-sertifikat/"
   },
   {
    "id": "faq-kazna-ili-bank-goz",
@@ -3462,15 +3498,6 @@
    "url": "/voprosy/chto-takoe-mchd-vopros/"
   },
   {
-   "id": "faq-mchd-vypusk",
-   "name": "Как выпустить МЧД для казначейства?",
-   "type": [
-    "faq"
-   ],
-   "api": "/entity/faq-mchd-vypusk.json",
-   "url": "/voprosy/kak-vypustit-mchd/"
-  },
-  {
    "id": "faq-mchd-format",
    "name": "Какой формат МЧД нужен для «Электронного бюджета»?",
    "type": [
@@ -3588,15 +3615,6 @@
    "url": "/voprosy/elektronnye-ili-bumazhnye/"
   },
   {
-   "id": "faq-chto-takoe-giis-eb",
-   "name": "Что такое ГИИС «Электронный бюджет»?",
-   "type": [
-    "faq"
-   ],
-   "api": "/entity/faq-chto-takoe-giis-eb.json",
-   "url": "/voprosy/chto-takoe-giis-eb-vopros/"
-  },
-  {
    "id": "faq-srok-registratsii-v-eb",
    "name": "Сколько занимает регистрация в ГИИС?",
    "type": [
@@ -3667,15 +3685,6 @@
    ],
    "api": "/entity/faq-brauzer-dlya-eb.json",
    "url": "/voprosy/brauzer-dlya-eb/"
-  },
-  {
-   "id": "faq-eb-ne-vidit-sertifikat",
-   "name": "«Электронный бюджет» не видит сертификат — что делать?",
-   "type": [
-    "faq"
-   ],
-   "api": "/entity/faq-eb-ne-vidit-sertifikat.json",
-   "url": "/voprosy/eb-ne-vidit-sertifikat/"
   },
   {
    "id": "faq-oshibka-vkhoda-v-eb",
@@ -4353,15 +4362,6 @@
    "url": "/razdelnyj-uchet/"
   },
   {
-   "id": "hub-giis",
-   "name": "ГИИС ЭБ и доступ",
-   "type": [
-    "hub"
-   ],
-   "api": "/entity/hub-giis.json",
-   "url": "/giis/"
-  },
-  {
    "id": "tool-proverka-ks",
    "name": "Проверка необходимости КС",
    "type": [
@@ -4387,6 +4387,15 @@
    ],
    "api": "/entity/tool-generator-chek-lista.json",
    "url": "/instrumenty/generator-chek-lista/"
+  },
+  {
+   "id": "service-giis-eb",
+   "name": "Регистрация и настройка ГИИС «Электронный бюджет» под ключ",
+   "type": [
+    "service"
+   ],
+   "api": "/entity/service-giis-eb.json",
+   "url": "/services/giis-eb"
   },
   {
    "id": "service-training",

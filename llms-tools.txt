@@ -1,8 +1,8 @@
 # Мастера-диагностики (Decision Engines) — kazna-gov.ru (machine readable, 11 entities)
 # Knowledge API: https://kazna-gov.ru/api/ · Graph: https://kazna-gov.ru/api/knowledge-graph.json
 
-- Диагностика контракта [tool-diagnostika-kontrakta]: Вход: источник средств, тип контракта, аванс. Выход: режим исполнения (КС / банковское / свободный) + план подготовки. URL: https://kazna-gov.ru/instrumenty/diagnostika-kontrakta/ API: https://kazna-gov.ru/entity/tool-diagnostika-kontrakta.json
 - Подбор счёта [tool-podbor-scheta]: Вход: тип контракта и режим сопровождения. Выход: тип счёта + где открывать + формы. URL: https://kazna-gov.ru/instrumenty/podbor-litsevogo-scheta/ API: https://kazna-gov.ru/entity/tool-podbor-scheta.json
+- Диагностика контракта [tool-diagnostika-kontrakta]: Вход: источник средств, тип контракта, аванс. Выход: режим исполнения (КС / банковское / свободный) + план подготовки. URL: https://kazna-gov.ru/instrumenty/diagnostika-kontrakta/ API: https://kazna-gov.ru/entity/tool-diagnostika-kontrakta.json
 - Диагностика платежа [tool-diagnostika-platezha]: Вход: симптом и формулировка УФК. Выход: причина + пошаговое исправление. URL: https://kazna-gov.ru/instrumenty/diagnostika-platezha/ API: https://kazna-gov.ru/entity/tool-diagnostika-platezha.json
 - Маршрутизатор платежа [tool-marshrutizator]: Вход: кому и за что платите. Выход: тип операции + код + документы + шаблон назначения. URL: https://kazna-gov.ru/instrumenty/marshrutizator-platezha/ API: https://kazna-gov.ru/entity/tool-marshrutizator.json
 - Проверка готовности к санкционированию [tool-proverka-sankts]: Вход: состояние платежа по 4 контрольным точкам. Выход: готов / что чинить до подачи. URL: https://kazna-gov.ru/instrumenty/proverka-sanktsionirovaniya/ API: https://kazna-gov.ru/entity/tool-proverka-sankts.json
