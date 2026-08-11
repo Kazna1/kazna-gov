@@ -1,10 +1,10 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-07-14",
+ "version": "2026-08-11",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
- "nodes": 487,
- "edges": 4244,
+ "nodes": 488,
+ "edges": 4256,
  "byType": {
   "error": 13,
   "document": 19,
@@ -12,7 +12,7 @@
   "faq": 301,
   "hub": 10,
   "tool": 11,
-  "service": 6,
+  "service": 7,
   "law": 16
  },
  "relTypes": {
@@ -22,15 +22,15 @@
   "REGULATED_BY": 589,
   "RELATED_DOC": 55,
   "RELATED_TERM": 401,
-  "USES_TERM": 1285,
-  "DIAGNOSED_BY": 24,
+  "USES_TERM": 1288,
+  "DIAGNOSED_BY": 25,
   "RELATED_HUB": 28,
-  "SEE_FAQ": 136,
-  "PART_OF_TOPIC": 23,
+  "SEE_FAQ": 139,
+  "PART_OF_TOPIC": 25,
   "PREVENTS": 56,
   "RESOLVES_TO": 36,
-  "SERVICE_REQUIRES": 19,
-  "SERVICE_SOLVES": 18,
+  "SERVICE_REQUIRES": 21,
+  "SERVICE_SOLVES": 19,
   "SAME_CLUSTER": 301
  },
  "topAuthority": [
@@ -56,19 +56,19 @@
   },
   {
    "id": "service-open",
-   "in": 95
+   "in": 94
   },
   {
    "id": "doverennost-mchd",
-   "in": 90
+   "in": 92
   },
   {
    "id": "sanktsionirovanie",
-   "in": 84
+   "in": 85
   },
   {
    "id": "ls-71",
-   "in": 77
+   "in": 78
   },
   {
    "id": "zayavlenie-ls",
@@ -91,8 +91,8 @@
    "in": 57
   },
   {
-   "id": "err-necelevoe",
-   "in": 56
+   "id": "giis-eb",
+   "in": 57
   }
  ],
  "multiLayerConcepts": [

@@ -1,9 +1,9 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-07-14",
+ "version": "2026-08-11",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
- "count": 487,
+ "count": 488,
  "entities": [
   {
    "id": "service-conduct",
@@ -328,7 +328,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-service-open",
    "scores": {
-    "authority": 100,
+    "authority": 99,
     "coverage": 100,
     "connectivity": 100,
     "citation": 80,
@@ -401,7 +401,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-doverennost-mchd",
    "scores": {
-    "authority": 95,
+    "authority": 97,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -458,7 +458,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-sanktsionirovanie",
    "scores": {
-    "authority": 89,
+    "authority": 90,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -520,7 +520,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-ls-71",
    "scores": {
-    "authority": 81,
+    "authority": 82,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -812,6 +812,66 @@
    }
   },
   {
+   "id": "giis-eb",
+   "type": [
+    "term"
+   ],
+   "name": "ГИИС «Электронный бюджет»",
+   "aliases": [
+    "гиис эб",
+    "электронный бюджет",
+    "эб",
+    "ссылка budget.gov.ru",
+    "Государственная интегрированная информационная система управления общественными финансами"
+   ],
+   "summary": "ГИИС «Электронный бюджет» — государственная информационная система Минфина, через которую идёт весь электронный документооборот казначейского сопровождения: подача заявления на счёт, Сведения об операциях, распоряжения о платежах, переписка с УФК. Вход — по квалифицированной ЭЦП через защищённое соединение (Континент TLS); полномочия сотрудников подтверждаются МЧД.",
+   "citation": "Основной онлайн-канал работы подрядчика с казначейством: личный кабинет, где формируются и подписываются все документы КС.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/giis-elektronnyy-byudzhet/",
+     "title": "ГИИС «Электронный бюджет»"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ecp",
+     "doverennost-mchd",
+     "kontinent-tls",
+     "registratsiya-eb",
+     "epbs"
+    ],
+    "REQUIRES_DOC": [
+     "doverennost-mchd",
+     "svedeniya-ssu"
+    ],
+    "SEE_ERROR": [
+     "err-ecp",
+     "err-mchd"
+    ],
+    "REGULATED_BY": [
+     "law-prikaz-minfina-214n"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/vhod-v-elektronnyy-byudzhet-po-sertifikatu",
+     "/blog/giis-elektronnyy-byudzhet-2026-polnaya-instruktsiya"
+    ]
+   },
+   "updated": "2026-07-14",
+   "schema_id": "https://kazna-gov.ru/#e-giis-eb",
+   "scores": {
+    "authority": 60,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
    "id": "err-necelevoe",
    "type": [
     "error",
@@ -867,66 +927,6 @@
    },
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-err-necelevoe",
-   "scores": {
-    "authority": 59,
-    "coverage": 100,
-    "connectivity": 100,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "giis-eb",
-   "type": [
-    "term"
-   ],
-   "name": "ГИИС «Электронный бюджет»",
-   "aliases": [
-    "гиис эб",
-    "электронный бюджет",
-    "эб",
-    "ссылка budget.gov.ru",
-    "Государственная интегрированная информационная система управления общественными финансами"
-   ],
-   "summary": "ГИИС «Электронный бюджет» — государственная информационная система Минфина, через которую идёт весь электронный документооборот казначейского сопровождения: подача заявления на счёт, Сведения об операциях, распоряжения о платежах, переписка с УФК. Вход — по квалифицированной ЭЦП через защищённое соединение (Континент TLS); полномочия сотрудников подтверждаются МЧД.",
-   "citation": "Основной онлайн-канал работы подрядчика с казначейством: личный кабинет, где формируются и подписываются все документы КС.",
-   "pages": [
-    {
-     "layer": "term",
-     "url": "/glossary/giis-elektronnyy-byudzhet/",
-     "title": "ГИИС «Электронный бюджет»"
-    }
-   ],
-   "relations": {
-    "RELATED_TERM": [
-     "ecp",
-     "doverennost-mchd",
-     "kontinent-tls",
-     "registratsiya-eb",
-     "epbs"
-    ],
-    "REQUIRES_DOC": [
-     "doverennost-mchd",
-     "svedeniya-ssu"
-    ],
-    "SEE_ERROR": [
-     "err-ecp",
-     "err-mchd"
-    ],
-    "REGULATED_BY": [
-     "law-prikaz-minfina-214n"
-    ],
-    "MONETIZED_BY": [
-     "service-conduct"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/vhod-v-elektronnyy-byudzhet-po-sertifikatu",
-     "/blog/giis-elektronnyy-byudzhet-2026-polnaya-instruktsiya"
-    ]
-   },
-   "updated": "2026-07-14",
-   "schema_id": "https://kazna-gov.ru/#e-giis-eb",
    "scores": {
     "authority": 59,
     "coverage": 100,
@@ -2086,6 +2086,51 @@
    }
   },
   {
+   "id": "err-mchd",
+   "type": [
+    "error"
+   ],
+   "name": "МЧД не проходит",
+   "aliases": [],
+   "summary": "Машиночитаемая доверенность отклоняется в ГИИС/УФК: не тот формат (003), нет обязательных реквизитов, неверное полномочие. Как перевыпустить МЧД правильно.",
+   "citation": "МЧД для казначейства — электронная доверенность формата 003, выпускаемая руководителем через сервисы ФНС/УЦ. С 01.02.2026 обязательны срок действия и точное наименование полномочия (приказ Минцифры № 1001). Если МЧД не проходит: проверьте формат, срок, полномочие и статус в реестре — и перевыпустите доверенность с корректными атрибутами.",
+   "pages": [
+    {
+     "layer": "error",
+     "url": "/oshibki/mchd-ne-prohodit-proverku/",
+     "title": "МЧД не проходит"
+    }
+   ],
+   "relations": {
+    "REQUIRES_DOC": [
+     "doverennost-mchd"
+    ],
+    "SEE_ERROR": [
+     "err-ecp",
+     "err-svedeniya-otkaz",
+     "err-kartochka"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/doverennost-dlya-ufk",
+     "/novosti/mchd-novye-trebovaniya-2026/",
+     "/blog/upolnomochennye-litsa-po-ks-schetu-kto-i-otvetstvennost"
+    ]
+   },
+   "updated": "2026-07-14",
+   "schema_id": "https://kazna-gov.ru/#e-err-mchd",
+   "scores": {
+    "authority": 30,
+    "coverage": 67,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
    "id": "vozmeshchenie",
    "type": [
     "term"
@@ -2176,51 +2221,6 @@
    },
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-igk",
-   "scores": {
-    "authority": 29,
-    "coverage": 67,
-    "connectivity": 100,
-    "citation": 80,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "err-mchd",
-   "type": [
-    "error"
-   ],
-   "name": "МЧД не проходит",
-   "aliases": [],
-   "summary": "Машиночитаемая доверенность отклоняется в ГИИС/УФК: не тот формат (003), нет обязательных реквизитов, неверное полномочие. Как перевыпустить МЧД правильно.",
-   "citation": "МЧД для казначейства — электронная доверенность формата 003, выпускаемая руководителем через сервисы ФНС/УЦ. С 01.02.2026 обязательны срок действия и точное наименование полномочия (приказ Минцифры № 1001). Если МЧД не проходит: проверьте формат, срок, полномочие и статус в реестре — и перевыпустите доверенность с корректными атрибутами.",
-   "pages": [
-    {
-     "layer": "error",
-     "url": "/oshibki/mchd-ne-prohodit-proverku/",
-     "title": "МЧД не проходит"
-    }
-   ],
-   "relations": {
-    "REQUIRES_DOC": [
-     "doverennost-mchd"
-    ],
-    "SEE_ERROR": [
-     "err-ecp",
-     "err-svedeniya-otkaz",
-     "err-kartochka"
-    ],
-    "MONETIZED_BY": [
-     "service-open"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/doverennost-dlya-ufk",
-     "/novosti/mchd-novye-trebovaniya-2026/",
-     "/blog/upolnomochennye-litsa-po-ks-schetu-kto-i-otvetstvennost"
-    ]
-   },
-   "updated": "2026-07-14",
-   "schema_id": "https://kazna-gov.ru/#e-err-mchd",
    "scores": {
     "authority": 29,
     "coverage": 67,
@@ -2581,10 +2581,11 @@
     "код по сводному реестру",
     "включение в сводный реестр",
     "реестровый код",
+    "уникальный номер реестровой записи",
     "Реестр участников и неучастников бюджетного процесса"
    ],
    "summary": "Сводный реестр — реестр участников и неучастников бюджетного процесса, который ведёт казначейство. Организация-подрядчик включается в него перед открытием лицевого счёта и получает код по Сводному реестру — обязательный реквизит заявлений, карточки и Сведений. Нет включения в реестр — УФК не откроет счёт: это частая скрытая причина «зависшего» старта.",
-   "citation": "Единая регистрация организаций в системе казначейства: код реестровой записи идентифицирует участника КС во всех документах и системах.",
+   "citation": "Единая регистрация организаций в системе казначейства. Каждой записи присваивается уникальный номер реестровой записи, а код по Сводному реестру идентифицирует организацию во всех документах и системах КС.",
    "pages": [
     {
      "layer": "term",
@@ -2613,7 +2614,7 @@
      "/oshibki/net-v-svodnom-reestre/"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-08-11",
    "schema_id": "https://kazna-gov.ru/#e-svodnyy-reestr",
    "scores": {
     "authority": 26,
@@ -7344,6 +7345,88 @@
    }
   },
   {
+   "id": "tool-podbor-scheta",
+   "type": [
+    "tool"
+   ],
+   "name": "Подбор счёта",
+   "aliases": [],
+   "summary": "Мастер подбирает правильный тип счёта под ваш контракт: лицевой счёт участника КС в УФК (тип 71), отдельный банковский счёт по 275-ФЗ или обычный расчётный. Ошибка в типе счёта — потерянные недели: заявление уйдёт не туда или заказчик не сможет заплатить. Результат — тип счёта, куда подавать, формы и чек-лист открытия.",
+   "citation": "Вход: тип контракта и режим сопровождения. Выход: тип счёта + где открывать + формы.",
+   "pages": [
+    {
+     "layer": "tool",
+     "url": "/instrumenty/podbor-litsevogo-scheta/",
+     "title": "Подбор счёта"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "ls-71",
+     "obs",
+     "raschetnyy-schet",
+     "kod-71",
+     "svodnyy-reestr",
+     "kofk",
+     "rezervirovanie-ls",
+     "psb",
+     "igk"
+    ],
+    "SEE_FAQ": [
+     "faq-gde-otkryvaetsya-schet",
+     "faq-schet-na-kazhdyy-kontrakt",
+     "faq-chto-takoe-otdelnyy-schet",
+     "faq-kak-otkryt-schet",
+     "faq-srok-otkrytiya-scheta",
+     "faq-kak-zarezervirovat-schet",
+     "faq-srok-rezerva-scheta",
+     "faq-bank-dlya-goz",
+     "faq-zaprety-otdelnyy-schet",
+     "faq-otlichie-ot-raschetnogo"
+    ],
+    "PART_OF_TOPIC": [
+     "hub-scheta"
+    ],
+    "REGULATED_BY": [
+     "law-prikaz-fk-44n",
+     "law-275-fz",
+     "law-bk-rf-st-2422224226"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/how_to_open/",
+     "/blog/kaznacheyskiy-schet-i-raschetnyy-raznitsa"
+    ],
+    "REQUIRES_DOC": [
+     "zayavlenie-ls",
+     "kartochka-podpisey",
+     "komplekt-otkrytie",
+     "komplekt-goz",
+     "chek-list-otkrytie"
+    ],
+    "PREVENTS": [
+     "err-zatyanulos-otkrytie",
+     "err-kartochka",
+     "err-svodnyy-reestr",
+     "err-razdelnyy-uchet"
+    ],
+    "RESOLVES_TO": [
+     "service-open",
+     "service-reserve",
+     "service-conduct"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-tool-podbor-scheta",
+   "scores": {
+    "authority": 4,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
    "id": "law-223-fz",
    "type": [
     "law"
@@ -9205,6 +9288,54 @@
    }
   },
   {
+   "id": "hub-giis",
+   "type": [
+    "hub"
+   ],
+   "name": "ГИИС ЭБ и доступ",
+   "aliases": [],
+   "summary": "ГИИС «Электронный бюджет» — рабочая система участника КС: здесь подаются заявления, Сведения и распоряжения о платежах. Вход требует настроенного рабочего места: квалифицированная подпись, КриптоПро CSP, Континент TLS, МЧД для сотрудников. Центр собирает настройку доступа, решение ошибок входа, полномочия и услугу подключения под ключ.",
+   "citation": "Всё про цифровой контур КС: регистрация организации и сотрудников, сертификаты и их перевыпуск, машиночитаемые доверенности формата 003, настройка рабочего места, типовые ошибки доступа и их решения.",
+   "pages": [
+    {
+     "layer": "hub",
+     "url": "/giis/",
+     "title": "ГИИС ЭБ и доступ"
+    }
+   ],
+   "relations": {
+    "REGULATED_BY": [
+     "law-63-fz",
+     "law-prikaz-mintsifry-1001"
+    ],
+    "MONETIZED_BY": [
+     "service-giis-eb"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/giis-elektronnyy-byudzhet-2026-polnaya-instruktsiya",
+     "/blog/registratsiya-v-giis-elektronnyy-byudzhet-podryadchika",
+     "/blog/vhod-v-elektronnyy-byudzhet-po-sertifikatu",
+     "/blog/sertifikat-ecp-kaznacheystva",
+     "/blog/doverennost-dlya-ufk",
+     "/blog/dokumenty-dlya-kaznacheyskogo-soprovozhdeniya"
+    ],
+    "RELATED_HUB": [
+     "hub-scheta",
+     "hub-platezhi"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-hub-giis",
+   "scores": {
+    "authority": 3,
+    "coverage": 67,
+    "connectivity": 27,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 53
+   }
+  },
+  {
    "id": "tool-diagnostika-kontrakta",
    "type": [
     "tool"
@@ -9293,88 +9424,6 @@
    },
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-tool-diagnostika-kontrakta",
-   "scores": {
-    "authority": 3,
-    "coverage": 100,
-    "connectivity": 100,
-    "citation": 80,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "tool-podbor-scheta",
-   "type": [
-    "tool"
-   ],
-   "name": "Подбор счёта",
-   "aliases": [],
-   "summary": "Мастер подбирает правильный тип счёта под ваш контракт: лицевой счёт участника КС в УФК (тип 71), отдельный банковский счёт по 275-ФЗ или обычный расчётный. Ошибка в типе счёта — потерянные недели: заявление уйдёт не туда или заказчик не сможет заплатить. Результат — тип счёта, куда подавать, формы и чек-лист открытия.",
-   "citation": "Вход: тип контракта и режим сопровождения. Выход: тип счёта + где открывать + формы.",
-   "pages": [
-    {
-     "layer": "tool",
-     "url": "/instrumenty/podbor-litsevogo-scheta/",
-     "title": "Подбор счёта"
-    }
-   ],
-   "relations": {
-    "USES_TERM": [
-     "ls-71",
-     "obs",
-     "raschetnyy-schet",
-     "kod-71",
-     "svodnyy-reestr",
-     "kofk",
-     "rezervirovanie-ls",
-     "psb",
-     "igk"
-    ],
-    "SEE_FAQ": [
-     "faq-gde-otkryvaetsya-schet",
-     "faq-schet-na-kazhdyy-kontrakt",
-     "faq-chto-takoe-otdelnyy-schet",
-     "faq-kak-otkryt-schet",
-     "faq-srok-otkrytiya-scheta",
-     "faq-kak-zarezervirovat-schet",
-     "faq-srok-rezerva-scheta",
-     "faq-bank-dlya-goz",
-     "faq-zaprety-otdelnyy-schet",
-     "faq-otlichie-ot-raschetnogo"
-    ],
-    "PART_OF_TOPIC": [
-     "hub-scheta"
-    ],
-    "REGULATED_BY": [
-     "law-prikaz-fk-44n",
-     "law-275-fz",
-     "law-bk-rf-st-2422224226"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/how_to_open/",
-     "/blog/kaznacheyskiy-schet-i-raschetnyy-raznitsa"
-    ],
-    "REQUIRES_DOC": [
-     "zayavlenie-ls",
-     "kartochka-podpisey",
-     "komplekt-otkrytie",
-     "komplekt-goz",
-     "chek-list-otkrytie"
-    ],
-    "PREVENTS": [
-     "err-zatyanulos-otkrytie",
-     "err-kartochka",
-     "err-svodnyy-reestr",
-     "err-razdelnyy-uchet"
-    ],
-    "RESOLVES_TO": [
-     "service-open",
-     "service-reserve",
-     "service-conduct"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-tool-podbor-scheta",
    "scores": {
     "authority": 3,
     "coverage": 100,
@@ -12595,6 +12644,67 @@
    }
   },
   {
+   "id": "faq-mchd-vypusk",
+   "type": [
+    "faq"
+   ],
+   "name": "Как выпустить МЧД для казначейства?",
+   "aliases": [
+    "оформление мчд для работы с казначейством пошагово",
+    "где выпустить машиночитаемую доверенность бесплатно",
+    "создать мчд через фнс для электронного бюджета",
+    "как сделать мчд на бухгалтера для уфк",
+    "выпуск мчд инструкция для подрядчика"
+   ],
+   "summary": "МЧД выпускает руководитель организации бесплатно: доверенность формируется в сервисе ФНС, на Госуслугах или в системе оператора ЭДО, заполняются данные организации, доверенного лица и полномочия, затем файл подписывается УКЭП руководителя и регистрируется в реестре. После регистрации сотрудник подписывает документы в «Электронном бюджете» своей УКЭП физлица со ссылкой на МЧД.",
+   "citation": "Руководитель формирует доверенность в сервисе ФНС или на Госуслугах, указывает полномочия сотрудника, подписывает своей УКЭП и регистрирует. Выпуск бесплатный, участие нотариуса не требуется.",
+   "pages": [
+    {
+     "layer": "faq",
+     "url": "/voprosy/kak-vypustit-mchd/",
+     "title": "Как выпустить МЧД для казначейства?"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "doverennost-mchd",
+     "fns",
+     "ecp",
+     "upolnomochennye"
+    ],
+    "REQUIRES_DOC": [
+     "doverennost-mchd"
+    ],
+    "SEE_ERROR": [
+     "err-mchd"
+    ],
+    "REGULATED_BY": [
+     "law-prikaz-mintsifry-1001",
+     "law-63-fz"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/doverennost-dlya-ufk",
+     "/blog/registratsiya-v-giis-elektronnyy-byudzhet-podryadchika"
+    ],
+    "SAME_CLUSTER": [
+     "faq-mchd-format"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-faq-mchd-vypusk",
+   "scores": {
+    "authority": 2,
+    "coverage": 100,
+    "connectivity": 40,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 80
+   }
+  },
+  {
    "id": "faq-proverka-pered-podachey",
    "type": [
     "faq"
@@ -12654,6 +12764,57 @@
     "citation": 100,
     "aiReadiness": 100,
     "density": 87
+   }
+  },
+  {
+   "id": "faq-chto-takoe-giis-eb",
+   "type": [
+    "faq"
+   ],
+   "name": "Что такое ГИИС «Электронный бюджет»?",
+   "aliases": [
+    "что такое электронный бюджет",
+    "гиис эб что это",
+    "электронный бюджет минфина что это такое",
+    "что за система электронный бюджет",
+    "гиис электронный бюджет расшифровка"
+   ],
+   "summary": "ГИИС «Электронный бюджет» — государственная информационная система Минфина России для управления общественными финансами. Для подрядчика с казначейским сопровождением это рабочая среда: здесь подают Сведения об операциях, формируют распоряжения о платежах, подписывают документы УКЭП и получают протоколы УФК. Доступ — через личный кабинет по сертификату электронной подписи.",
+   "citation": "Это государственная информационная система Минфина, через которую подрядчик при казначейском сопровождении ведёт весь документооборот с УФК: Сведения, распоряжения о платежах, протоколы.",
+   "pages": [
+    {
+     "layer": "faq",
+     "url": "/voprosy/chto-takoe-giis-eb-vopros/",
+     "title": "Что такое ГИИС «Электронный бюджет»?"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "giis-eb",
+     "ks",
+     "ufk",
+     "eis"
+    ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/giis-elektronnyy-byudzhet-2026-polnaya-instruktsiya",
+     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov"
+    ],
+    "SAME_CLUSTER": [
+     "faq-registratsiya-v-eb"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-faq-chto-takoe-giis-eb",
+   "scores": {
+    "authority": 2,
+    "coverage": 67,
+    "connectivity": 27,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 53
    }
   },
   {
@@ -12762,6 +12923,60 @@
    },
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-faq-rabochee-mesto-eb",
+   "scores": {
+    "authority": 2,
+    "coverage": 83,
+    "connectivity": 30,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 60
+   }
+  },
+  {
+   "id": "faq-eb-ne-vidit-sertifikat",
+   "type": [
+    "faq"
+   ],
+   "name": "«Электронный бюджет» не видит сертификат — что делать?",
+   "aliases": [
+    "эб не видит эцп при входе",
+    "не отображается сертификат в электронном бюджете",
+    "гиис не находит подпись что делать",
+    "сертификат не появляется в списке при входе в эб",
+    "электронный бюджет не предлагает выбрать сертификат"
+   ],
+   "summary": "Если «Электронный бюджет» не видит сертификат, проверьте цепочку: установлен ли КриптоПро CSP и действует ли лицензия, вставлен ли токен, установлен ли личный сертификат в хранилище, работает ли плагин подписи в браузере, не истёк ли срок сертификата. Чаще всего причина — не установленный личный сертификат или просроченная лицензия криптопровайдера.",
+   "citation": "Проверьте по цепочке: токен — КриптоПро и его лицензия — личный сертификат в хранилище — плагин браузера — срок действия сертификата.",
+   "pages": [
+    {
+     "layer": "faq",
+     "url": "/voprosy/eb-ne-vidit-sertifikat/",
+     "title": "«Электронный бюджет» не видит сертификат — что делать?"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "kriptopro",
+     "ecp",
+     "giis-eb",
+     "kontinent-tls"
+    ],
+    "SEE_ERROR": [
+     "err-ecp"
+    ],
+    "MONETIZED_BY": [
+     "service-vosstanovlenie"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/vhod-v-elektronnyy-byudzhet-po-sertifikatu",
+     "/blog/sertifikat-ecp-kaznacheystva"
+    ],
+    "SAME_CLUSTER": [
+     "faq-oshibka-vkhoda-v-eb"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-faq-eb-ne-vidit-sertifikat",
    "scores": {
     "authority": 2,
     "coverage": 83,
@@ -20909,67 +21124,6 @@
    }
   },
   {
-   "id": "faq-mchd-vypusk",
-   "type": [
-    "faq"
-   ],
-   "name": "Как выпустить МЧД для казначейства?",
-   "aliases": [
-    "оформление мчд для работы с казначейством пошагово",
-    "где выпустить машиночитаемую доверенность бесплатно",
-    "создать мчд через фнс для электронного бюджета",
-    "как сделать мчд на бухгалтера для уфк",
-    "выпуск мчд инструкция для подрядчика"
-   ],
-   "summary": "МЧД выпускает руководитель организации бесплатно: доверенность формируется в сервисе ФНС, на Госуслугах или в системе оператора ЭДО, заполняются данные организации, доверенного лица и полномочия, затем файл подписывается УКЭП руководителя и регистрируется в реестре. После регистрации сотрудник подписывает документы в «Электронном бюджете» своей УКЭП физлица со ссылкой на МЧД.",
-   "citation": "Руководитель формирует доверенность в сервисе ФНС или на Госуслугах, указывает полномочия сотрудника, подписывает своей УКЭП и регистрирует. Выпуск бесплатный, участие нотариуса не требуется.",
-   "pages": [
-    {
-     "layer": "faq",
-     "url": "/voprosy/kak-vypustit-mchd/",
-     "title": "Как выпустить МЧД для казначейства?"
-    }
-   ],
-   "relations": {
-    "USES_TERM": [
-     "doverennost-mchd",
-     "fns",
-     "ecp",
-     "upolnomochennye"
-    ],
-    "REQUIRES_DOC": [
-     "doverennost-mchd"
-    ],
-    "SEE_ERROR": [
-     "err-mchd"
-    ],
-    "REGULATED_BY": [
-     "law-prikaz-mintsifry-1001",
-     "law-63-fz"
-    ],
-    "MONETIZED_BY": [
-     "service-open"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/doverennost-dlya-ufk",
-     "/blog/registratsiya-v-giis-elektronnyy-byudzhet-podryadchika"
-    ],
-    "SAME_CLUSTER": [
-     "faq-mchd-format"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-faq-mchd-vypusk",
-   "scores": {
-    "authority": 1,
-    "coverage": 100,
-    "connectivity": 37,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 73
-   }
-  },
-  {
    "id": "faq-mchd-format",
    "type": [
     "faq"
@@ -21716,57 +21870,6 @@
    }
   },
   {
-   "id": "faq-chto-takoe-giis-eb",
-   "type": [
-    "faq"
-   ],
-   "name": "Что такое ГИИС «Электронный бюджет»?",
-   "aliases": [
-    "что такое электронный бюджет",
-    "гиис эб что это",
-    "электронный бюджет минфина что это такое",
-    "что за система электронный бюджет",
-    "гиис электронный бюджет расшифровка"
-   ],
-   "summary": "ГИИС «Электронный бюджет» — государственная информационная система Минфина России для управления общественными финансами. Для подрядчика с казначейским сопровождением это рабочая среда: здесь подают Сведения об операциях, формируют распоряжения о платежах, подписывают документы УКЭП и получают протоколы УФК. Доступ — через личный кабинет по сертификату электронной подписи.",
-   "citation": "Это государственная информационная система Минфина, через которую подрядчик при казначейском сопровождении ведёт весь документооборот с УФК: Сведения, распоряжения о платежах, протоколы.",
-   "pages": [
-    {
-     "layer": "faq",
-     "url": "/voprosy/chto-takoe-giis-eb-vopros/",
-     "title": "Что такое ГИИС «Электронный бюджет»?"
-    }
-   ],
-   "relations": {
-    "USES_TERM": [
-     "giis-eb",
-     "ks",
-     "ufk",
-     "eis"
-    ],
-    "REGULATED_BY": [
-     "law-bk-rf-st-2422224226"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/giis-elektronnyy-byudzhet-2026-polnaya-instruktsiya",
-     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov"
-    ],
-    "SAME_CLUSTER": [
-     "faq-registratsiya-v-eb"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-faq-chto-takoe-giis-eb",
-   "scores": {
-    "authority": 1,
-    "coverage": 67,
-    "connectivity": 23,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 47
-   }
-  },
-  {
    "id": "faq-srok-registratsii-v-eb",
    "type": [
     "faq"
@@ -22200,60 +22303,6 @@
     "citation": 100,
     "aiReadiness": 100,
     "density": 40
-   }
-  },
-  {
-   "id": "faq-eb-ne-vidit-sertifikat",
-   "type": [
-    "faq"
-   ],
-   "name": "«Электронный бюджет» не видит сертификат — что делать?",
-   "aliases": [
-    "эб не видит эцп при входе",
-    "не отображается сертификат в электронном бюджете",
-    "гиис не находит подпись что делать",
-    "сертификат не появляется в списке при входе в эб",
-    "электронный бюджет не предлагает выбрать сертификат"
-   ],
-   "summary": "Если «Электронный бюджет» не видит сертификат, проверьте цепочку: установлен ли КриптоПро CSP и действует ли лицензия, вставлен ли токен, установлен ли личный сертификат в хранилище, работает ли плагин подписи в браузере, не истёк ли срок сертификата. Чаще всего причина — не установленный личный сертификат или просроченная лицензия криптопровайдера.",
-   "citation": "Проверьте по цепочке: токен — КриптоПро и его лицензия — личный сертификат в хранилище — плагин браузера — срок действия сертификата.",
-   "pages": [
-    {
-     "layer": "faq",
-     "url": "/voprosy/eb-ne-vidit-sertifikat/",
-     "title": "«Электронный бюджет» не видит сертификат — что делать?"
-    }
-   ],
-   "relations": {
-    "USES_TERM": [
-     "kriptopro",
-     "ecp",
-     "giis-eb",
-     "kontinent-tls"
-    ],
-    "SEE_ERROR": [
-     "err-ecp"
-    ],
-    "MONETIZED_BY": [
-     "service-vosstanovlenie"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/vhod-v-elektronnyy-byudzhet-po-sertifikatu",
-     "/blog/sertifikat-ecp-kaznacheystva"
-    ],
-    "SAME_CLUSTER": [
-     "faq-oshibka-vkhoda-v-eb"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-faq-eb-ne-vidit-sertifikat",
-   "scores": {
-    "authority": 1,
-    "coverage": 83,
-    "connectivity": 27,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 53
    }
   },
   {
@@ -26450,54 +26499,6 @@
    }
   },
   {
-   "id": "hub-giis",
-   "type": [
-    "hub"
-   ],
-   "name": "ГИИС ЭБ и доступ",
-   "aliases": [],
-   "summary": "ГИИС «Электронный бюджет» — рабочая система участника КС: здесь подаются заявления, Сведения и распоряжения о платежах. Вход требует настроенного рабочего места: квалифицированная подпись, КриптоПро CSP, Континент TLS, МЧД для сотрудников. Центр собирает настройку доступа, решение ошибок входа, полномочия и услугу подключения под ключ.",
-   "citation": "Всё про цифровой контур КС: регистрация организации и сотрудников, сертификаты и их перевыпуск, машиночитаемые доверенности формата 003, настройка рабочего места, типовые ошибки доступа и их решения.",
-   "pages": [
-    {
-     "layer": "hub",
-     "url": "/giis/",
-     "title": "ГИИС ЭБ и доступ"
-    }
-   ],
-   "relations": {
-    "REGULATED_BY": [
-     "law-63-fz",
-     "law-prikaz-mintsifry-1001"
-    ],
-    "MONETIZED_BY": [
-     "service-open"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/giis-elektronnyy-byudzhet-2026-polnaya-instruktsiya",
-     "/blog/registratsiya-v-giis-elektronnyy-byudzhet-podryadchika",
-     "/blog/vhod-v-elektronnyy-byudzhet-po-sertifikatu",
-     "/blog/sertifikat-ecp-kaznacheystva",
-     "/blog/doverennost-dlya-ufk",
-     "/blog/dokumenty-dlya-kaznacheyskogo-soprovozhdeniya"
-    ],
-    "RELATED_HUB": [
-     "hub-scheta",
-     "hub-platezhi"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-hub-giis",
-   "scores": {
-    "authority": 1,
-    "coverage": 67,
-    "connectivity": 20,
-    "citation": 80,
-    "aiReadiness": 100,
-    "density": 40
-   }
-  },
-  {
    "id": "tool-proverka-ks",
    "type": [
     "tool"
@@ -26722,6 +26723,62 @@
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
+   }
+  },
+  {
+   "id": "service-giis-eb",
+   "type": [
+    "service"
+   ],
+   "name": "Регистрация и настройка ГИИС «Электронный бюджет» под ключ",
+   "aliases": [],
+   "summary": "Регистрируем организацию в ГИИС «Электронный бюджет», настраиваем рабочее место — квалифицированная ЭЦП, ПОИБ/СОБИ, МЧД, полномочия сотрудников — и сопровождаем первые операции. Регистрация и настройка занимают 1–2 часа, стоимость — 15 000 ₽ по договору, без доплат. Работаем дистанционно по всей России; подходит исполнителям госконтрактов на казначейском сопровождении и организациям, переходящим с СУФД. Старт — в день обращения.",
+   "citation": "Самостоятельно: дни на разбор сертификатов и полномочий с риском застрять. С нами: рабочее место в ЭБ за 1–2 часа, фикс-цена 15 000 ₽.",
+   "pages": [
+    {
+     "layer": "service",
+     "url": "/services/giis-eb",
+     "title": "Регистрация и настройка ГИИС «Электронный бюджет» под ключ"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "giis-eb",
+     "ls-71",
+     "sanktsionirovanie"
+    ],
+    "SERVICE_REQUIRES": [
+     "doverennost-mchd"
+    ],
+    "SERVICE_SOLVES": [
+     "err-mchd"
+    ],
+    "SEE_FAQ": [
+     "faq-chto-takoe-giis-eb",
+     "faq-eb-ne-vidit-sertifikat",
+     "faq-mchd-vypusk"
+    ],
+    "PART_OF_TOPIC": [
+     "hub-giis"
+    ],
+    "DIAGNOSED_BY": [
+     "tool-podbor-scheta"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/giis-elektronnyy-byudzhet-2026-polnaya-instruktsiya",
+     "/blog/vhod-v-elektronnyy-byudzhet-po-sertifikatu",
+     "/blog/sufd-i-elektronnyy-byudzhet"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-service-giis-eb",
+   "scores": {
+    "authority": 1,
+    "coverage": 100,
+    "connectivity": 43,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 87
    }
   },
   {

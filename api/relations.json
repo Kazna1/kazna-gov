@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-07-14",
+ "version": "2026-08-11",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "edges": [
@@ -16581,7 +16581,7 @@
   },
   {
    "from": "hub-giis",
-   "to": "service-open",
+   "to": "service-giis-eb",
    "rel": "MONETIZED_BY"
   },
   {
@@ -19717,6 +19717,66 @@
   {
    "from": "service-training",
    "to": "hub-platezhi",
+   "rel": "PART_OF_TOPIC"
+  },
+  {
+   "from": "service-giis-eb",
+   "to": "giis-eb",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "service-giis-eb",
+   "to": "ls-71",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "service-giis-eb",
+   "to": "sanktsionirovanie",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "service-giis-eb",
+   "to": "doverennost-mchd",
+   "rel": "SERVICE_REQUIRES"
+  },
+  {
+   "from": "service-giis-eb",
+   "to": "doverennost-mchd",
+   "rel": "SERVICE_REQUIRES"
+  },
+  {
+   "from": "service-giis-eb",
+   "to": "err-mchd",
+   "rel": "SERVICE_SOLVES"
+  },
+  {
+   "from": "service-giis-eb",
+   "to": "faq-chto-takoe-giis-eb",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "service-giis-eb",
+   "to": "faq-eb-ne-vidit-sertifikat",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "service-giis-eb",
+   "to": "faq-mchd-vypusk",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "service-giis-eb",
+   "to": "hub-giis",
+   "rel": "PART_OF_TOPIC"
+  },
+  {
+   "from": "service-giis-eb",
+   "to": "tool-podbor-scheta",
+   "rel": "DIAGNOSED_BY"
+  },
+  {
+   "from": "service-giis-eb",
+   "to": "hub-giis",
    "rel": "PART_OF_TOPIC"
   },
   {

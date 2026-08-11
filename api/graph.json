@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-07-14",
+ "version": "2026-08-11",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "nodes": [
@@ -493,7 +493,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-mchd",
    "scores": {
-    "authority": 29,
+    "authority": 30,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -1039,7 +1039,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-doverennost-mchd",
    "scores": {
-    "authority": 95,
+    "authority": 97,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -2209,7 +2209,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-giis-eb",
    "scores": {
-    "authority": 59,
+    "authority": 60,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -2846,7 +2846,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-ls-71",
    "scores": {
-    "authority": 81,
+    "authority": 82,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -5235,7 +5235,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-sanktsionirovanie",
    "scores": {
-    "authority": 89,
+    "authority": 90,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -6302,10 +6302,11 @@
     "код по сводному реестру",
     "включение в сводный реестр",
     "реестровый код",
+    "уникальный номер реестровой записи",
     "Реестр участников и неучастников бюджетного процесса"
    ],
    "summary": "Сводный реестр — реестр участников и неучастников бюджетного процесса, который ведёт казначейство. Организация-подрядчик включается в него перед открытием лицевого счёта и получает код по Сводному реестру — обязательный реквизит заявлений, карточки и Сведений. Нет включения в реестр — УФК не откроет счёт: это частая скрытая причина «зависшего» старта.",
-   "citation": "Единая регистрация организаций в системе казначейства: код реестровой записи идентифицирует участника КС во всех документах и системах.",
+   "citation": "Единая регистрация организаций в системе казначейства. Каждой записи присваивается уникальный номер реестровой записи, а код по Сводному реестру идентифицирует организацию во всех документах и системах КС.",
    "pages": [
     {
      "layer": "term",
@@ -6334,7 +6335,7 @@
      "/oshibki/net-v-svodnom-reestre/"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-08-11",
    "schema_id": "https://kazna-gov.ru/#e-svodnyy-reestr",
    "scores": {
     "authority": 26,
@@ -16642,12 +16643,12 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-faq-mchd-vypusk",
    "scores": {
-    "authority": 1,
+    "authority": 2,
     "coverage": 100,
-    "connectivity": 37,
+    "connectivity": 40,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 73
+    "density": 80
    }
   },
   {
@@ -17501,12 +17502,12 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-faq-chto-takoe-giis-eb",
    "scores": {
-    "authority": 1,
+    "authority": 2,
     "coverage": 67,
-    "connectivity": 23,
+    "connectivity": 27,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 47
+    "density": 53
    }
   },
   {
@@ -18106,12 +18107,12 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-faq-eb-ne-vidit-sertifikat",
    "scores": {
-    "authority": 1,
+    "authority": 2,
     "coverage": 83,
-    "connectivity": 27,
+    "connectivity": 30,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 53
+    "density": 60
    }
   },
   {
@@ -24913,7 +24914,7 @@
      "law-prikaz-mintsifry-1001"
     ],
     "MONETIZED_BY": [
-     "service-open"
+     "service-giis-eb"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/giis-elektronnyy-byudzhet-2026-polnaya-instruktsiya",
@@ -24931,12 +24932,12 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-hub-giis",
    "scores": {
-    "authority": 1,
+    "authority": 3,
     "coverage": 67,
-    "connectivity": 20,
+    "connectivity": 27,
     "citation": 80,
     "aiReadiness": 100,
-    "density": 40
+    "density": 53
    }
   },
   {
@@ -25277,7 +25278,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-tool-podbor-scheta",
    "scores": {
-    "authority": 3,
+    "authority": 4,
     "coverage": 100,
     "connectivity": 100,
     "citation": 80,
@@ -25972,7 +25973,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-service-open",
    "scores": {
-    "authority": 100,
+    "authority": 99,
     "coverage": 100,
     "connectivity": 100,
     "citation": 80,
@@ -26298,6 +26299,62 @@
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
+   }
+  },
+  {
+   "id": "service-giis-eb",
+   "type": [
+    "service"
+   ],
+   "name": "Регистрация и настройка ГИИС «Электронный бюджет» под ключ",
+   "aliases": [],
+   "summary": "Регистрируем организацию в ГИИС «Электронный бюджет», настраиваем рабочее место — квалифицированная ЭЦП, ПОИБ/СОБИ, МЧД, полномочия сотрудников — и сопровождаем первые операции. Регистрация и настройка занимают 1–2 часа, стоимость — 15 000 ₽ по договору, без доплат. Работаем дистанционно по всей России; подходит исполнителям госконтрактов на казначейском сопровождении и организациям, переходящим с СУФД. Старт — в день обращения.",
+   "citation": "Самостоятельно: дни на разбор сертификатов и полномочий с риском застрять. С нами: рабочее место в ЭБ за 1–2 часа, фикс-цена 15 000 ₽.",
+   "pages": [
+    {
+     "layer": "service",
+     "url": "/services/giis-eb",
+     "title": "Регистрация и настройка ГИИС «Электронный бюджет» под ключ"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "giis-eb",
+     "ls-71",
+     "sanktsionirovanie"
+    ],
+    "SERVICE_REQUIRES": [
+     "doverennost-mchd"
+    ],
+    "SERVICE_SOLVES": [
+     "err-mchd"
+    ],
+    "SEE_FAQ": [
+     "faq-chto-takoe-giis-eb",
+     "faq-eb-ne-vidit-sertifikat",
+     "faq-mchd-vypusk"
+    ],
+    "PART_OF_TOPIC": [
+     "hub-giis"
+    ],
+    "DIAGNOSED_BY": [
+     "tool-podbor-scheta"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/giis-elektronnyy-byudzhet-2026-polnaya-instruktsiya",
+     "/blog/vhod-v-elektronnyy-byudzhet-po-sertifikatu",
+     "/blog/sufd-i-elektronnyy-byudzhet"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-service-giis-eb",
+   "scores": {
+    "authority": 1,
+    "coverage": 100,
+    "connectivity": 43,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 87
    }
   },
   {
@@ -43368,7 +43425,7 @@
   },
   {
    "from": "hub-giis",
-   "to": "service-open",
+   "to": "service-giis-eb",
    "rel": "MONETIZED_BY"
   },
   {
@@ -46504,6 +46561,66 @@
   {
    "from": "service-training",
    "to": "hub-platezhi",
+   "rel": "PART_OF_TOPIC"
+  },
+  {
+   "from": "service-giis-eb",
+   "to": "giis-eb",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "service-giis-eb",
+   "to": "ls-71",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "service-giis-eb",
+   "to": "sanktsionirovanie",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "service-giis-eb",
+   "to": "doverennost-mchd",
+   "rel": "SERVICE_REQUIRES"
+  },
+  {
+   "from": "service-giis-eb",
+   "to": "doverennost-mchd",
+   "rel": "SERVICE_REQUIRES"
+  },
+  {
+   "from": "service-giis-eb",
+   "to": "err-mchd",
+   "rel": "SERVICE_SOLVES"
+  },
+  {
+   "from": "service-giis-eb",
+   "to": "faq-chto-takoe-giis-eb",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "service-giis-eb",
+   "to": "faq-eb-ne-vidit-sertifikat",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "service-giis-eb",
+   "to": "faq-mchd-vypusk",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "service-giis-eb",
+   "to": "hub-giis",
+   "rel": "PART_OF_TOPIC"
+  },
+  {
+   "from": "service-giis-eb",
+   "to": "tool-podbor-scheta",
+   "rel": "DIAGNOSED_BY"
+  },
+  {
+   "from": "service-giis-eb",
+   "to": "hub-giis",
    "rel": "PART_OF_TOPIC"
   },
   {
