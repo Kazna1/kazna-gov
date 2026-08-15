@@ -542,7 +542,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-chek-list-dokumenty",
    "scores": {
-    "authority": 41,
+    "authority": 42,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -956,7 +956,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-soprovoditelnoe-pismo",
    "scores": {
-    "authority": 11,
+    "authority": 12,
     "coverage": 67,
     "connectivity": 50,
     "citation": 80,

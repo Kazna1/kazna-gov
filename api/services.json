@@ -198,7 +198,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-service-vosstanovlenie",
    "scores": {
-    "authority": 56,
+    "authority": 57,
     "coverage": 100,
     "connectivity": 100,
     "citation": 80,
@@ -263,7 +263,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-service-subsidii",
    "scores": {
-    "authority": 26,
+    "authority": 28,
     "coverage": 100,
     "connectivity": 100,
     "citation": 80,

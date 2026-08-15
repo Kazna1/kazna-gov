@@ -1003,8 +1003,7 @@
      "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "EXPLAINED_BY_ARTICLE": [
-     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
-     "/blog/ks_2025/"
+     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov"
     ]
    },
    "updated": "2026-07-14",
@@ -1065,7 +1064,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-dokumenty-osnovaniya",
    "scores": {
-    "authority": 56,
+    "authority": 57,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -1130,7 +1129,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-service-vosstanovlenie",
    "scores": {
-    "authority": 56,
+    "authority": 57,
     "coverage": 100,
     "connectivity": 100,
     "citation": 80,
@@ -1287,7 +1286,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-razdelnyy-uchet",
    "scores": {
-    "authority": 49,
+    "authority": 50,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -1317,7 +1316,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "scores": {
-    "authority": 49,
+    "authority": 50,
     "coverage": 0,
     "connectivity": 100,
     "citation": 100,
@@ -1705,7 +1704,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-chek-list-dokumenty",
    "scores": {
-    "authority": 41,
+    "authority": 42,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -2046,7 +2045,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-razdelnyy-uchet",
    "scores": {
-    "authority": 34,
+    "authority": 35,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -2731,7 +2730,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-service-subsidii",
    "scores": {
-    "authority": 26,
+    "authority": 28,
     "coverage": 100,
     "connectivity": 100,
     "citation": 80,
@@ -2762,7 +2761,7 @@
    "schema_id": "https://kazna-gov.ru/#e-law-koap-rf-st-1514",
    "sourceUrl": "https://www.consultant.ru/document/cons_doc_LAW_34661/",
    "scores": {
-    "authority": 26,
+    "authority": 27,
     "coverage": 0,
     "connectivity": 77,
     "citation": 100,
@@ -4315,7 +4314,7 @@
      "service-open"
     ],
     "EXPLAINED_BY_ARTICLE": [
-     "/blog/ks_2025/"
+     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov"
     ]
    },
    "updated": "2026-07-14",
@@ -4671,7 +4670,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-soprovoditelnoe-pismo",
    "scores": {
-    "authority": 11,
+    "authority": 12,
     "coverage": 67,
     "connectivity": 50,
     "citation": 80,
@@ -4725,7 +4724,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-zakazchik",
    "scores": {
-    "authority": 11,
+    "authority": 12,
     "coverage": 100,
     "connectivity": 60,
     "citation": 100,
@@ -4771,7 +4770,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-golovnoy-ispolnitel",
    "scores": {
-    "authority": 11,
+    "authority": 12,
     "coverage": 67,
     "connectivity": 50,
     "citation": 100,
@@ -4828,7 +4827,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-prim-1",
    "scores": {
-    "authority": 11,
+    "authority": 12,
     "coverage": 100,
     "connectivity": 63,
     "citation": 100,
@@ -4879,7 +4878,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-id-soglasheniya",
    "scores": {
-    "authority": 11,
+    "authority": 12,
     "coverage": 83,
     "connectivity": 57,
     "citation": 100,
@@ -4934,7 +4933,7 @@
    "updated": "2026-08-11",
    "schema_id": "https://kazna-gov.ru/#e-upd",
    "scores": {
-    "authority": 11,
+    "authority": 12,
     "coverage": 100,
     "connectivity": 60,
     "citation": 100,
@@ -4972,6 +4971,7 @@
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/how_to_open/",
+     "/blog/vklyuchenie-v-svodnyy-reestr/",
      "/blog/litsevoy-schet-71",
      "/blog/kak-otkryt-licevoy-schet-71",
      "/blog/rekvizity-kaznacheyskogo-scheta",
@@ -4990,7 +4990,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-hub-scheta",
    "scores": {
-    "authority": 11,
+    "authority": 12,
     "coverage": 83,
     "connectivity": 60,
     "citation": 80,
@@ -6350,7 +6350,6 @@
      "tool-podbor-formata-soprovozhdeniya"
     ],
     "EXPLAINED_BY_ARTICLE": [
-     "/blog/ks_2025/",
      "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
      "/blog/kaznacheyskoe-soprovozhdenie-44-fz-2026-polnyy-gid",
      "/blog/kakie-kontrakty-popadayut-pod-kaznachejskoe-soprovozhdenie/",
@@ -6703,7 +6702,7 @@
      "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
-     "service-conduct"
+     "service-subsidii"
     ],
     "DIAGNOSED_BY": [
      "tool-proverka-subsidii"
@@ -7115,7 +7114,7 @@
      "service-conduct"
     ],
     "EXPLAINED_BY_ARTICLE": [
-     "/blog/ks_2025/"
+     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov"
     ]
    },
    "updated": "2026-07-14",
@@ -9179,7 +9178,7 @@
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kakie-kontrakty-popadayut-pod-kaznachejskoe-soprovozhdenie",
-     "/blog/ks_2025"
+     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov"
     ],
     "SAME_CLUSTER": [
      "faq-kto-ustanavlivaet-sluchai-ks"
@@ -13947,7 +13946,7 @@
      "service-conduct"
     ],
     "EXPLAINED_BY_ARTICLE": [
-     "/blog/ks_2025",
+     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
      "/blog/novyy-poryadok-kaznacheyskogo-soprovozhdeniya-s-1-sentyabrya-2026"
     ],
     "SAME_CLUSTER": [
@@ -19194,7 +19193,7 @@
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/podvodnye-kamni-kaznacheyskogo-soprovozhdeniya",
-     "/blog/ks_2025"
+     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov"
     ],
     "SAME_CLUSTER": [
      "faq-pochemu-zaprosili-poyasneniya"
@@ -24939,7 +24938,7 @@
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-2026-opredeleniya",
-     "/blog/ks_2025"
+     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov"
     ],
     "SAME_CLUSTER": [
      "faq-bk-242"
@@ -25225,7 +25224,7 @@
      "service-conduct"
     ],
     "EXPLAINED_BY_ARTICLE": [
-     "/blog/ks_2025",
+     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
      "/blog/novyy-poryadok-kaznacheyskogo-soprovozhdeniya-s-1-sentyabrya-2026"
     ],
     "SAME_CLUSTER": [
@@ -25328,7 +25327,7 @@
      "law-bk-rf-st-2422224226"
     ],
     "EXPLAINED_BY_ARTICLE": [
-     "/blog/ks_2025"
+     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov"
     ],
     "SAME_CLUSTER": [
      "faq-ks-eto-nadolgo"
@@ -25680,7 +25679,7 @@
      "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "EXPLAINED_BY_ARTICLE": [
-     "/blog/ks_2025",
+     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
      "/blog/novyy-poryadok-kaznacheyskogo-soprovozhdeniya-s-1-sentyabrya-2026"
     ],
     "SAME_CLUSTER": [
@@ -26517,7 +26516,6 @@
      "law-44-fz"
     ],
     "EXPLAINED_BY_ARTICLE": [
-     "/blog/ks_2025",
      "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
      "/blog/kaznacheyskoe-vs-bankovskoe-soprovozhdenie-otlichiya"
     ],

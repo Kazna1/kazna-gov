@@ -313,7 +313,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-razdelnyy-uchet",
    "scores": {
-    "authority": 34,
+    "authority": 35,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,

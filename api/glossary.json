@@ -698,8 +698,7 @@
      "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "EXPLAINED_BY_ARTICLE": [
-     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov",
-     "/blog/ks_2025/"
+     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov"
     ]
    },
    "updated": "2026-07-14",
@@ -760,7 +759,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-dokumenty-osnovaniya",
    "scores": {
-    "authority": 56,
+    "authority": 57,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -872,7 +871,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-razdelnyy-uchet",
    "scores": {
-    "authority": 49,
+    "authority": 50,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -2647,7 +2646,7 @@
      "service-open"
     ],
     "EXPLAINED_BY_ARTICLE": [
-     "/blog/ks_2025/"
+     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov"
     ]
    },
    "updated": "2026-07-14",
@@ -3014,7 +3013,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-zakazchik",
    "scores": {
-    "authority": 11,
+    "authority": 12,
     "coverage": 100,
     "connectivity": 60,
     "citation": 100,
@@ -3060,7 +3059,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-golovnoy-ispolnitel",
    "scores": {
-    "authority": 11,
+    "authority": 12,
     "coverage": 67,
     "connectivity": 50,
     "citation": 100,
@@ -3117,7 +3116,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-prim-1",
    "scores": {
-    "authority": 11,
+    "authority": 12,
     "coverage": 100,
     "connectivity": 63,
     "citation": 100,
@@ -3168,7 +3167,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-id-soglasheniya",
    "scores": {
-    "authority": 11,
+    "authority": 12,
     "coverage": 83,
     "connectivity": 57,
     "citation": 100,
@@ -3223,7 +3222,7 @@
    "updated": "2026-08-11",
    "schema_id": "https://kazna-gov.ru/#e-upd",
    "scores": {
-    "authority": 11,
+    "authority": 12,
     "coverage": 100,
     "connectivity": 60,
     "citation": 100,
@@ -4699,7 +4698,7 @@
      "service-conduct"
     ],
     "EXPLAINED_BY_ARTICLE": [
-     "/blog/ks_2025/"
+     "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov"
     ]
    },
    "updated": "2026-07-14",
