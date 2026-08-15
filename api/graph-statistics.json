@@ -3,8 +3,8 @@
  "version": "2026-08-11",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
- "nodes": 488,
- "edges": 4256,
+ "nodes": 489,
+ "edges": 4276,
  "byType": {
   "error": 13,
   "document": 19,
@@ -12,39 +12,39 @@
   "faq": 301,
   "hub": 10,
   "tool": 11,
-  "service": 7,
+  "service": 8,
   "law": 16
  },
  "relTypes": {
   "REQUIRES_DOC": 490,
   "SEE_ERROR": 377,
   "MONETIZED_BY": 406,
-  "REGULATED_BY": 589,
+  "REGULATED_BY": 591,
   "RELATED_DOC": 55,
   "RELATED_TERM": 401,
-  "USES_TERM": 1288,
-  "DIAGNOSED_BY": 25,
+  "USES_TERM": 1292,
+  "DIAGNOSED_BY": 26,
   "RELATED_HUB": 28,
-  "SEE_FAQ": 139,
-  "PART_OF_TOPIC": 25,
+  "SEE_FAQ": 144,
+  "PART_OF_TOPIC": 27,
   "PREVENTS": 56,
   "RESOLVES_TO": 36,
-  "SERVICE_REQUIRES": 21,
-  "SERVICE_SOLVES": 19,
+  "SERVICE_REQUIRES": 24,
+  "SERVICE_SOLVES": 22,
   "SAME_CLUSTER": 301
  },
  "topAuthority": [
   {
    "id": "service-conduct",
-   "in": 284
+   "in": 261
   },
   {
    "id": "law-bk-rf-st-2422224226",
-   "in": 116
+   "in": 117
   },
   {
    "id": "svedeniya-ssu",
-   "in": 106
+   "in": 107
   },
   {
    "id": "law-prikaz-minfina-214n",
@@ -87,11 +87,11 @@
    "in": 65
   },
   {
-   "id": "err-zatyanulos-otkrytie",
+   "id": "err-necelevoe",
    "in": 57
   },
   {
-   "id": "giis-eb",
+   "id": "err-zatyanulos-otkrytie",
    "in": 57
   }
  ],

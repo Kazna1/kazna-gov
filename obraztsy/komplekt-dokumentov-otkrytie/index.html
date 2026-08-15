@@ -25,8 +25,8 @@
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/x-icon" sizes="32x32" href="/favicon.ico">
 <link rel="apple-touch-icon" type="image/png" href="/img/t/tild3236-3965-4939-a136-303435336461.png">
-<link rel="stylesheet" href="/assets/nav.css?v=21a27757">
-<script defer src="/assets/nav.js?v=d23aa54b"></script>
+<link rel="stylesheet" href="/assets/nav.css?v=a5bfbc06">
+<script defer src="/assets/nav.js?v=8b3f93fd"></script>
 <!-- kz:head:end --><!-- kz:scripts:start -->
 <!-- scripts-common · R1.05: единые счётчики аналитики для всех страниц (кроме /404.html).
      Метрика 86763493: вебвизор отключён на тач-устройствах (перф-решение с главной).
@@ -261,7 +261,9 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
     </dl>
 
     <div class="dd-downloads" data-place="top">
-      <a class="dd-btn dd-btn--pdf" href="/files/komplekt-dokumentov-otkrytie.v1-0.pdf" download data-doc-download="pdf" data-doc-slug="komplekt-dokumentov-otkrytie">Скачать DOCX v1.0 · PDF <span>официальный бланк</span></a></div>
+      <a class="dd-btn dd-btn--docx" href="/files/komplekt-dokumentov-otkrytie.v1-0.docx" download data-doc-download="docx" data-doc-slug="komplekt-dokumentov-otkrytie">Скачать DOCX <span>v1.0</span></a>
+      <a class="dd-btn dd-btn--pdf" href="/files/komplekt-dokumentov-otkrytie.v1-0.pdf" download data-doc-download="pdf" data-doc-slug="komplekt-dokumentov-otkrytie">Скачать PDF <span>v1.0</span></a>
+    </div>
 
     <nav class="oe-toc" aria-label="Содержание"><strong>Содержание:</strong><ul><li><a href="#naznachenie">Назначение</a></li><li><a href="#kogda">Когда используется</a></li><li><a href="#kto">Кто подписывает</a></li><li><a href="#podacha">Когда подавать</a></li><li><a href="#zapolnenie">Как заполнить</a></li><li><a href="#oshibki-zapolneniya">Типичные ошибки</a></li><li><a href="#svyazannye-oshibki">Связанные ошибки</a></li><li><a href="#svyazannye-dokumenty">Связанные документы</a></li><li><a href="#materialy">Статьи</a></li><li><a href="#terminy">Термины</a></li><li><a href="#normativka">Нормативная база</a></li><li><a href="#versii">История изменений</a></li><li><a href="#skachat">Скачать</a></li><li><a href="#faq">FAQ</a></li></ul></nav>
 
@@ -313,7 +315,9 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 
     <section id="skachat"><h2>Скачать документ</h2>
       <div class="dd-downloads" data-place="bottom">
-      <a class="dd-btn dd-btn--pdf" href="/files/komplekt-dokumentov-otkrytie.v1-0.pdf" download data-doc-download="pdf" data-doc-slug="komplekt-dokumentov-otkrytie">Скачать DOCX v1.0 · PDF <span>официальный бланк</span></a></div><p class="dd-after">После скачивания: сверьте документ со <a href="/obraztsy/">связанными документами</a> и разделом <a href="/oshibki/">ошибок</a> — большинство возвратов ловится до подачи.</p>
+      <a class="dd-btn dd-btn--docx" href="/files/komplekt-dokumentov-otkrytie.v1-0.docx" download data-doc-download="docx" data-doc-slug="komplekt-dokumentov-otkrytie">Скачать DOCX <span>v1.0</span></a>
+      <a class="dd-btn dd-btn--pdf" href="/files/komplekt-dokumentov-otkrytie.v1-0.pdf" download data-doc-download="pdf" data-doc-slug="komplekt-dokumentov-otkrytie">Скачать PDF <span>v1.0</span></a>
+    </div><p class="dd-after">После скачивания: сверьте документ со <a href="/obraztsy/">связанными документами</a> и разделом <a href="/oshibki/">ошибок</a> — большинство возвратов ловится до подачи.</p>
     </section>
 
     <section id="faq"><h2>Частые вопросы</h2>
@@ -409,6 +413,18 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
     <span>Казначейское сопровождение госконтрактов под ключ · kazna-gov.ru</span>
   </div>
 </footer>
+<!-- kg-stickybar: мобильные контакты на контентных страницах (B02).
+     На страницах услуг скрыт: там свой .kzop2__sticky. Логика показа — nav.js. -->
+<div class="kg-stickybar" id="kgStickybar">
+  <a href="tel:+74951084232" class="kg-stickybar__btn kg-stickybar__btn--call" data-nav-click data-nav-location="stickybar" data-nav-label="phone" data-nav-intent="call" aria-label="Позвонить +7 (495) 108-42-32">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="18" height="18"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.25c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 3.5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+    Позвонить
+  </a>
+  <a href="https://t.me/kaznagovru" target="_blank" rel="noopener" class="kg-stickybar__btn kg-stickybar__btn--tg" data-nav-click data-nav-location="stickybar" data-nav-label="telegram" data-nav-intent="messenger">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="18" height="18"><path d="M9.04 15.31l-.37 5.25c.53 0 .76-.23 1.04-.5l2.5-2.39 5.18 3.79c.95.52 1.62.25 1.88-.88l3.4-15.95c.3-1.4-.51-1.95-1.43-1.6L1.4 10.59c-1.36.53-1.34 1.29-.23 1.63l5.1 1.59L18.1 6.36c.56-.37 1.07-.17.65.2L9.04 15.31z"/></svg>
+    Telegram
+  </a>
+</div>
 <!-- kz:footer:end -->
 </body>
 </html>

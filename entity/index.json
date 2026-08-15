@@ -3,7 +3,7 @@
  "version": "2026-08-11",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
- "count": 488,
+ "count": 489,
  "entities": [
   {
    "id": "service-conduct",
@@ -129,6 +129,16 @@
    "url": "/obraztsy/platezhnoe-poruchenie-obrazec/"
   },
   {
+   "id": "err-necelevoe",
+   "name": "Нецелевое расходование",
+   "type": [
+    "error",
+    "term"
+   ],
+   "api": "/entity/err-necelevoe.json",
+   "url": "/oshibki/necelevoe-rashodovanie-sredstv/"
+  },
+  {
    "id": "err-zatyanulos-otkrytie",
    "name": "Затянулось открытие счёта",
    "type": [
@@ -145,16 +155,6 @@
    ],
    "api": "/entity/giis-eb.json",
    "url": "/glossary/giis-elektronnyy-byudzhet/"
-  },
-  {
-   "id": "err-necelevoe",
-   "name": "Нецелевое расходование",
-   "type": [
-    "error",
-    "term"
-   ],
-   "api": "/entity/err-necelevoe.json",
-   "url": "/oshibki/necelevoe-rashodovanie-sredstv/"
   },
   {
    "id": "law-prikaz-fk-44n",
@@ -220,6 +220,15 @@
    "url": "/glossary/razdelnyy-uchet/"
   },
   {
+   "id": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+   "name": "Ежегодный закон о федеральном бюджете",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-ezhegodnyy-zakon-o-federalnom-byudzhete.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
    "id": "reestr-dokumentov",
    "name": "Реестр документов",
    "type": [
@@ -228,15 +237,6 @@
    ],
    "api": "/entity/reestr-dokumentov.json",
    "url": "/obraztsy/reestr-dokumentov-po-kontraktu/"
-  },
-  {
-   "id": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
-   "name": "Ежегодный закон о федеральном бюджете",
-   "type": [
-    "law"
-   ],
-   "api": "/entity/law-ezhegodnyy-zakon-o-federalnom-byudzhete.json",
-   "url": "/zakonodatelstvo/"
   },
   {
    "id": "err-kod-napravleniya",
@@ -428,15 +428,6 @@
    "url": "/glossary/upolnomochennoe-litso/"
   },
   {
-   "id": "tofk",
-   "name": "ТОФК",
-   "type": [
-    "term"
-   ],
-   "api": "/entity/tofk.json",
-   "url": "/glossary/tofk/"
-  },
-  {
    "id": "err-svedeniya-otkaz",
    "name": "Не утверждают Сведения",
    "type": [
@@ -444,6 +435,15 @@
    ],
    "api": "/entity/err-svedeniya-otkaz.json",
    "url": "/oshibki/ufk-ne-utverzhdaet-svedeniya/"
+  },
+  {
+   "id": "tofk",
+   "name": "ТОФК",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/tofk.json",
+   "url": "/glossary/tofk/"
   },
   {
    "id": "err-kartochka",
@@ -482,6 +482,15 @@
    "url": "/glossary/avans/"
   },
   {
+   "id": "service-subsidii",
+   "name": "Казначейское сопровождение субсидий",
+   "type": [
+    "service"
+   ],
+   "api": "/entity/service-subsidii.json",
+   "url": "/services/subsidii"
+  },
+  {
    "id": "law-koap-rf-st-1514",
    "name": "КоАП РФ, ст. 15.14",
    "type": [
@@ -489,6 +498,15 @@
    ],
    "api": "/entity/law-koap-rf-st-1514.json",
    "url": "/zakonodatelstvo/"
+  },
+  {
+   "id": "subsidiya",
+   "name": "Субсидия",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/subsidiya.json",
+   "url": "/glossary/subsidiya/"
   },
   {
    "id": "pribyl-ks",
@@ -518,13 +536,13 @@
    "url": "/oshibki/net-v-svodnom-reestre/"
   },
   {
-   "id": "subsidiya",
-   "name": "Субсидия",
+   "id": "soglashenie-subsidii",
+   "name": "Соглашение о предоставлении субсидии",
    "type": [
     "term"
    ],
-   "api": "/entity/subsidiya.json",
-   "url": "/glossary/subsidiya/"
+   "api": "/entity/soglashenie-subsidii.json",
+   "url": "/glossary/soglashenie-o-subsidii/"
   },
   {
    "id": "naznachenie",
@@ -545,15 +563,6 @@
    "url": "/zakonodatelstvo/"
   },
   {
-   "id": "soglashenie-subsidii",
-   "name": "Соглашение о предоставлении субсидии",
-   "type": [
-    "term"
-   ],
-   "api": "/entity/soglashenie-subsidii.json",
-   "url": "/glossary/soglashenie-o-subsidii/"
-  },
-  {
    "id": "law-pp-1465",
    "name": "ПП № 1465",
    "type": [
@@ -563,6 +572,15 @@
    "url": "/zakonodatelstvo/"
   },
   {
+   "id": "err-subsidiya-rashody",
+   "name": "Не согласуют расходы субсидии",
+   "type": [
+    "error"
+   ],
+   "api": "/entity/err-subsidiya-rashody.json",
+   "url": "/oshibki/ufk-ne-soglasuet-rashody-po-subsidii/"
+  },
+  {
    "id": "komplekt-otkrytie",
    "name": "Комплект на открытие",
    "type": [
@@ -570,6 +588,15 @@
    ],
    "api": "/entity/komplekt-otkrytie.json",
    "url": "/obraztsy/komplekt-dokumentov-otkrytie/"
+  },
+  {
+   "id": "komplekt-subsidii",
+   "name": "Комплект субсидий",
+   "type": [
+    "document"
+   ],
+   "api": "/entity/komplekt-subsidii.json",
+   "url": "/obraztsy/komplekt-dokumentov-subsidii/"
   },
   {
    "id": "kazn-monitoring",
@@ -597,24 +624,6 @@
    ],
    "api": "/entity/kody-9xxx.json",
    "url": "/glossary/kody-9xxx/"
-  },
-  {
-   "id": "err-subsidiya-rashody",
-   "name": "Не согласуют расходы субсидии",
-   "type": [
-    "error"
-   ],
-   "api": "/entity/err-subsidiya-rashody.json",
-   "url": "/oshibki/ufk-ne-soglasuet-rashody-po-subsidii/"
-  },
-  {
-   "id": "komplekt-subsidii",
-   "name": "Комплект субсидий",
-   "type": [
-    "document"
-   ],
-   "api": "/entity/komplekt-subsidii.json",
-   "url": "/obraztsy/komplekt-dokumentov-subsidii/"
   },
   {
    "id": "upd-akt",
@@ -825,6 +834,15 @@
    "url": "/glossary/norma-pribyli-goz/"
   },
   {
+   "id": "poluchatel-subsidii",
+   "name": "Получатель субсидии",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/poluchatel-subsidii.json",
+   "url": "/glossary/poluchatel-subsidii/"
+  },
+  {
    "id": "platezh",
    "name": "Казначейский платёж",
    "type": [
@@ -877,15 +895,6 @@
    ],
    "api": "/entity/id-soglasheniya.json",
    "url": "/glossary/identifikator-soglasheniya/"
-  },
-  {
-   "id": "poluchatel-subsidii",
-   "name": "Получатель субсидии",
-   "type": [
-    "term"
-   ],
-   "api": "/entity/poluchatel-subsidii.json",
-   "url": "/glossary/poluchatel-subsidii/"
   },
   {
    "id": "upd",
@@ -1122,6 +1131,15 @@
    "url": "/glossary/kod-tselevykh-sredstv/"
   },
   {
+   "id": "otchet-subsidii",
+   "name": "Отчёт об использовании субсидии",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/otchet-subsidii.json",
+   "url": "/glossary/otchet-ob-ispolzovanii-subsidii/"
+  },
+  {
    "id": "faq-srok-otkrytiya-scheta",
    "name": "Сколько времени открывается казначейский счёт?",
    "type": [
@@ -1167,15 +1185,6 @@
    "url": "/glossary/raskhodnaya-deklaratsiya/"
   },
   {
-   "id": "otchet-subsidii",
-   "name": "Отчёт об использовании субсидии",
-   "type": [
-    "term"
-   ],
-   "api": "/entity/otchet-subsidii.json",
-   "url": "/glossary/otchet-ob-ispolzovanii-subsidii/"
-  },
-  {
    "id": "faq-dokumenty-dlya-otkrytiya",
    "name": "Какие документы нужны для открытия лицевого счёта?",
    "type": [
@@ -1201,6 +1210,15 @@
    ],
    "api": "/entity/faq-sostav-uslugi-soprovozhdeniya.json",
    "url": "/voprosy/chto-vhodit-v-soprovozhdenie/"
+  },
+  {
+   "id": "hub-subsidii",
+   "name": "Субсидии и гранты",
+   "type": [
+    "hub"
+   ],
+   "api": "/entity/hub-subsidii.json",
+   "url": "/subsidii/"
   },
   {
    "id": "service-postpayment",
@@ -1309,6 +1327,24 @@
    ],
    "api": "/entity/faq-deystviya-pri-vozvrate.json",
    "url": "/voprosy/chto-delat-pri-vozvrate-platezha/"
+  },
+  {
+   "id": "faq-raskhody-subsidii",
+   "name": "На что можно тратить субсидию?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-raskhody-subsidii.json",
+   "url": "/voprosy/na-chto-mozhno-tratit-subsidiyu/"
+  },
+  {
+   "id": "faq-otchet-po-subsidii",
+   "name": "Как отчитаться об использовании субсидии?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-otchet-po-subsidii.json",
+   "url": "/voprosy/otchet-po-subsidii-kak-sdat/"
   },
   {
    "id": "hub-goz",
@@ -1563,22 +1599,22 @@
    "url": "/voprosy/kogda-subsidiya-pod-ks/"
   },
   {
-   "id": "faq-raskhody-subsidii",
-   "name": "На что можно тратить субсидию?",
+   "id": "faq-ufk-ne-soglasuet-subsidiyu",
+   "name": "Почему УФК не согласует расходы по субсидии?",
    "type": [
     "faq"
    ],
-   "api": "/entity/faq-raskhody-subsidii.json",
-   "url": "/voprosy/na-chto-mozhno-tratit-subsidiyu/"
+   "api": "/entity/faq-ufk-ne-soglasuet-subsidiyu.json",
+   "url": "/voprosy/soglasovanie-raskhodov-po-subsidii/"
   },
   {
-   "id": "faq-otchet-po-subsidii",
-   "name": "Как отчитаться об использовании субсидии?",
+   "id": "faq-ostatok-subsidii",
+   "name": "Что делать с неиспользованным остатком субсидии?",
    "type": [
     "faq"
    ],
-   "api": "/entity/faq-otchet-po-subsidii.json",
-   "url": "/voprosy/otchet-po-subsidii-kak-sdat/"
+   "api": "/entity/faq-ostatok-subsidii.json",
+   "url": "/voprosy/ostatok-subsidii-chto-delat/"
   },
   {
    "id": "faq-kakie-kontrakty-pod-ks",
@@ -1642,15 +1678,6 @@
    ],
    "api": "/entity/faq-start-novichka.json",
    "url": "/voprosy/s-chego-nachat-novichku/"
-  },
-  {
-   "id": "hub-subsidii",
-   "name": "Субсидии и гранты",
-   "type": [
-    "hub"
-   ],
-   "api": "/entity/hub-subsidii.json",
-   "url": "/subsidii/"
   },
   {
    "id": "hub-giis",
@@ -2310,15 +2337,6 @@
    "url": "/voprosy/kak-otkryt-schet-dlya-subsidii/"
   },
   {
-   "id": "faq-ufk-ne-soglasuet-subsidiyu",
-   "name": "Почему УФК не согласует расходы по субсидии?",
-   "type": [
-    "faq"
-   ],
-   "api": "/entity/faq-ufk-ne-soglasuet-subsidiyu.json",
-   "url": "/voprosy/soglasovanie-raskhodov-po-subsidii/"
-  },
-  {
    "id": "faq-razdelenie-subsidii-i-svoih",
    "name": "Как разделять субсидию и собственные средства?",
    "type": [
@@ -2355,13 +2373,13 @@
    "url": "/voprosy/vozvrat-subsidii-kogda/"
   },
   {
-   "id": "faq-ostatok-subsidii",
-   "name": "Что делать с неиспользованным остатком субсидии?",
+   "id": "faq-pomoshch-s-subsidiey",
+   "name": "Кто поможет вести субсидию под казначейским сопровождением?",
    "type": [
     "faq"
    ],
-   "api": "/entity/faq-ostatok-subsidii.json",
-   "url": "/voprosy/ostatok-subsidii-chto-delat/"
+   "api": "/entity/faq-pomoshch-s-subsidiey.json",
+   "url": "/voprosy/pomoshch-s-subsidiey/"
   },
   {
    "id": "faq-ks-menyaetsya-kazhdyy-god",
@@ -2470,6 +2488,15 @@
    ],
    "api": "/entity/tool-proverka-goz.json",
    "url": "/instrumenty/proverka-goz/"
+  },
+  {
+   "id": "tool-proverka-subsidii",
+   "name": "Проверка субсидии",
+   "type": [
+    "tool"
+   ],
+   "api": "/entity/tool-proverka-subsidii.json",
+   "url": "/instrumenty/proverka-subsidii/"
   },
   {
    "id": "tool-podbor-formata-soprovozhdeniya",
@@ -4002,15 +4029,6 @@
    "url": "/voprosy/neskolko-subsidiy-odin-schet/"
   },
   {
-   "id": "faq-pomoshch-s-subsidiey",
-   "name": "Кто поможет вести субсидию под казначейским сопровождением?",
-   "type": [
-    "faq"
-   ],
-   "api": "/entity/faq-pomoshch-s-subsidiey.json",
-   "url": "/voprosy/pomoshch-s-subsidiey/"
-  },
-  {
    "id": "faq-otchetnost-pri-ks",
    "name": "Какая отчётность появляется при казначейском сопровождении?",
    "type": [
@@ -4369,15 +4387,6 @@
    ],
    "api": "/entity/tool-proverka-ks.json",
    "url": "/instrumenty/proverka-neobhodimosti-ks/"
-  },
-  {
-   "id": "tool-proverka-subsidii",
-   "name": "Проверка субсидии",
-   "type": [
-    "tool"
-   ],
-   "api": "/entity/tool-proverka-subsidii.json",
-   "url": "/instrumenty/proverka-subsidii/"
   },
   {
    "id": "tool-generator-chek-lista",

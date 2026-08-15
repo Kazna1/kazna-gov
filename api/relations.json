@@ -376,7 +376,7 @@
   },
   {
    "from": "err-subsidiya-rashody",
-   "to": "service-conduct",
+   "to": "service-subsidii",
    "rel": "MONETIZED_BY"
   },
   {
@@ -796,7 +796,7 @@
   },
   {
    "from": "komplekt-subsidii",
-   "to": "service-conduct",
+   "to": "service-subsidii",
    "rel": "MONETIZED_BY"
   },
   {
@@ -2806,7 +2806,7 @@
   },
   {
    "from": "subsidiya",
-   "to": "service-conduct",
+   "to": "service-subsidii",
    "rel": "MONETIZED_BY"
   },
   {
@@ -2846,7 +2846,7 @@
   },
   {
    "from": "grant",
-   "to": "service-conduct",
+   "to": "service-subsidii",
    "rel": "MONETIZED_BY"
   },
   {
@@ -2886,7 +2886,7 @@
   },
   {
    "from": "soglashenie-subsidii",
-   "to": "service-conduct",
+   "to": "service-subsidii",
    "rel": "MONETIZED_BY"
   },
   {
@@ -2921,7 +2921,7 @@
   },
   {
    "from": "id-soglasheniya",
-   "to": "service-conduct",
+   "to": "service-subsidii",
    "rel": "MONETIZED_BY"
   },
   {
@@ -2956,7 +2956,7 @@
   },
   {
    "from": "poluchatel-subsidii",
-   "to": "service-conduct",
+   "to": "service-subsidii",
    "rel": "MONETIZED_BY"
   },
   {
@@ -4971,7 +4971,7 @@
   },
   {
    "from": "otchet-subsidii",
-   "to": "service-conduct",
+   "to": "service-subsidii",
    "rel": "MONETIZED_BY"
   },
   {
@@ -13731,7 +13731,7 @@
   },
   {
    "from": "faq-ks-subsidiy-vs-kontrakta",
-   "to": "service-conduct",
+   "to": "service-subsidii",
    "rel": "MONETIZED_BY"
   },
   {
@@ -13856,7 +13856,7 @@
   },
   {
    "from": "faq-identifikator-soglasheniya",
-   "to": "service-conduct",
+   "to": "service-subsidii",
    "rel": "MONETIZED_BY"
   },
   {
@@ -13916,7 +13916,7 @@
   },
   {
    "from": "faq-raskhody-subsidii",
-   "to": "service-conduct",
+   "to": "service-subsidii",
    "rel": "MONETIZED_BY"
   },
   {
@@ -14006,7 +14006,7 @@
   },
   {
    "from": "faq-zarplata-iz-subsidii",
-   "to": "service-conduct",
+   "to": "service-subsidii",
    "rel": "MONETIZED_BY"
   },
   {
@@ -14051,7 +14051,7 @@
   },
   {
    "from": "faq-oborudovanie-iz-subsidii",
-   "to": "service-conduct",
+   "to": "service-subsidii",
    "rel": "MONETIZED_BY"
   },
   {
@@ -14086,7 +14086,7 @@
   },
   {
    "from": "faq-razdelenie-subsidii-i-svoih",
-   "to": "service-conduct",
+   "to": "service-subsidii",
    "rel": "MONETIZED_BY"
   },
   {
@@ -14126,7 +14126,7 @@
   },
   {
    "from": "faq-svedeniya-po-subsidii",
-   "to": "service-conduct",
+   "to": "service-subsidii",
    "rel": "MONETIZED_BY"
   },
   {
@@ -14156,7 +14156,7 @@
   },
   {
    "from": "faq-otchet-po-subsidii",
-   "to": "service-conduct",
+   "to": "service-subsidii",
    "rel": "MONETIZED_BY"
   },
   {
@@ -14221,7 +14221,7 @@
   },
   {
    "from": "faq-vozvrat-subsidii",
-   "to": "service-conduct",
+   "to": "service-subsidii",
    "rel": "MONETIZED_BY"
   },
   {
@@ -14256,7 +14256,7 @@
   },
   {
    "from": "faq-ostatok-subsidii",
-   "to": "service-conduct",
+   "to": "service-subsidii",
    "rel": "MONETIZED_BY"
   },
   {
@@ -14351,7 +14351,7 @@
   },
   {
    "from": "faq-prodlenie-sroka-subsidii",
-   "to": "service-conduct",
+   "to": "service-subsidii",
    "rel": "MONETIZED_BY"
   },
   {
@@ -14386,7 +14386,7 @@
   },
   {
    "from": "faq-neskolko-subsidiy-schet",
-   "to": "service-conduct",
+   "to": "service-subsidii",
    "rel": "MONETIZED_BY"
   },
   {
@@ -14421,7 +14421,7 @@
   },
   {
    "from": "faq-pomoshch-s-subsidiey",
-   "to": "service-conduct",
+   "to": "service-subsidii",
    "rel": "MONETIZED_BY"
   },
   {
@@ -18171,7 +18171,7 @@
   },
   {
    "from": "tool-proverka-subsidii",
-   "to": "service-conduct",
+   "to": "service-subsidii",
    "rel": "RESOLVES_TO"
   },
   {
@@ -18266,7 +18266,7 @@
   },
   {
    "from": "tool-proverka-subsidii",
-   "to": "service-conduct",
+   "to": "service-subsidii",
    "rel": "RESOLVES_TO"
   },
   {
@@ -19777,6 +19777,106 @@
   {
    "from": "service-giis-eb",
    "to": "hub-giis",
+   "rel": "PART_OF_TOPIC"
+  },
+  {
+   "from": "service-subsidii",
+   "to": "subsidiya",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "service-subsidii",
+   "to": "soglashenie-subsidii",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "service-subsidii",
+   "to": "poluchatel-subsidii",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "service-subsidii",
+   "to": "otchet-subsidii",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "service-subsidii",
+   "to": "komplekt-subsidii",
+   "rel": "SERVICE_REQUIRES"
+  },
+  {
+   "from": "service-subsidii",
+   "to": "svedeniya-ssu",
+   "rel": "SERVICE_REQUIRES"
+  },
+  {
+   "from": "service-subsidii",
+   "to": "poyasnenie-ufk",
+   "rel": "SERVICE_REQUIRES"
+  },
+  {
+   "from": "service-subsidii",
+   "to": "err-subsidiya-rashody",
+   "rel": "SERVICE_SOLVES"
+  },
+  {
+   "from": "service-subsidii",
+   "to": "err-necelevoe",
+   "rel": "SERVICE_SOLVES"
+  },
+  {
+   "from": "service-subsidii",
+   "to": "err-svedeniya-otkaz",
+   "rel": "SERVICE_SOLVES"
+  },
+  {
+   "from": "service-subsidii",
+   "to": "faq-pomoshch-s-subsidiey",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "service-subsidii",
+   "to": "faq-ufk-ne-soglasuet-subsidiyu",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "service-subsidii",
+   "to": "faq-raskhody-subsidii",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "service-subsidii",
+   "to": "faq-otchet-po-subsidii",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "service-subsidii",
+   "to": "faq-ostatok-subsidii",
+   "rel": "SEE_FAQ"
+  },
+  {
+   "from": "service-subsidii",
+   "to": "hub-subsidii",
+   "rel": "PART_OF_TOPIC"
+  },
+  {
+   "from": "service-subsidii",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "service-subsidii",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "service-subsidii",
+   "to": "tool-proverka-subsidii",
+   "rel": "DIAGNOSED_BY"
+  },
+  {
+   "from": "service-subsidii",
+   "to": "hub-subsidii",
    "rel": "PART_OF_TOPIC"
   },
   {

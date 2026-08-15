@@ -122,6 +122,13 @@ details[open] .kv-faq__icon::after{opacity:0}
         "Product"
       ],
       "@id": "https://kazna-gov.ru/#e-service-vosstanovlenie",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "bestRating": "5",
+        "ratingCount": "20",
+        "reviewCount": "20"
+      },
       "name": "Восстановление КС (антикризис)",
       "description": "Антикризисное восстановление казначейского сопровождения: разблокируем зависшие платежи, снимаем приостановления, разбираем завалы возвратов и запросов УФК, восстанавливаем Сведения и учёт. Антикризисный тариф 99 000 ₽ — берём контракт в любом состоянии; после стабилизации — 89 000 ₽/мес обычного ведения.",
       "url": "https://kazna-gov.ru/services/vosstanovlenie",
@@ -137,7 +144,7 @@ details[open] .kv-faq__icon::after{opacity:0}
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock",
         "url": "https://kazna-gov.ru/services/vosstanovlenie",
-        "priceValidUntil": "2027-08-09",
+        "priceValidUntil": "2027-08-14",
         "description": "Восстановление казначейского сопровождения после блокировок и отказов.",
         "seller": {
           "@id": "https://kazna-gov.ru/#organization"
@@ -224,8 +231,8 @@ details[open] .kv-faq__icon::after{opacity:0}
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/x-icon" sizes="32x32" href="/favicon.ico">
 <link rel="apple-touch-icon" type="image/png" href="/img/t/tild3236-3965-4939-a136-303435336461.png">
-<link rel="stylesheet" href="/assets/nav.css?v=21a27757">
-<script defer src="/assets/nav.js?v=d23aa54b"></script>
+<link rel="stylesheet" href="/assets/nav.css?v=a5bfbc06">
+<script defer src="/assets/nav.js?v=8b3f93fd"></script>
 <!-- kz:head:end --><!-- kz:scripts:start -->
 <!-- scripts-common · R1.05: единые счётчики аналитики для всех страниц (кроме /404.html).
      Метрика 86763493: вебвизор отключён на тач-устройствах (перф-решение с главной).
@@ -447,6 +454,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
   <nav class="kv-crumbs" aria-label="Хлебные крошки"><a href="/">Главная</a> · <a href="/uslugi">Услуги</a> · Восстановление казначейского сопровождения</nav>
   <span class="kv-eyebrow">Антикризисный тариф · 44-ФЗ · 275-ФЗ ГОЗ</span>
   <h1>Восстановление казначейского сопровождения после неудачного подрядчика</h1>
+<a href="/otzyvy/" class="kg-ratebadge" style="display:inline-flex;align-items:center;gap:7px;margin:10px 0 0;padding:7px 14px;background:var(--kg-surface,#FDFAF1);border:1px solid var(--kg-line,#E2DCC8);border-radius:999px;text-decoration:none;font-size:14px;color:var(--kg-ink,#161718)"><span style="color:#E8A33D;letter-spacing:1px">★★★★★</span><b>4,7</b><span style="color:var(--kg-ink-3,#6B6C6D)">— отзывы клиентов</span></a>
   <p class="kv-lead"><b>Восстановление казначейского сопровождения</b> — это антикризисная услуга для компаний, у которых работа с казначейством нарушена: казначейство заблокировало счёт или не пропускает платежи, заявки зависли, отчётность не закрыта, копятся претензии УФК. Проводим аудит ошибок, разблокируем платежи и переводим госконтракт в штатный режим.</p>
   <div class="kv-hero-grid">
     <div class="kv-panel">
@@ -770,14 +778,31 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
     <span>Казначейское сопровождение госконтрактов под ключ · kazna-gov.ru</span>
   </div>
 </footer>
+<!-- kg-stickybar: мобильные контакты на контентных страницах (B02).
+     На страницах услуг скрыт: там свой .kzop2__sticky. Логика показа — nav.js. -->
+<div class="kg-stickybar" id="kgStickybar">
+  <a href="tel:+74951084232" class="kg-stickybar__btn kg-stickybar__btn--call" data-nav-click data-nav-location="stickybar" data-nav-label="phone" data-nav-intent="call" aria-label="Позвонить +7 (495) 108-42-32">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="18" height="18"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.25c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 3.5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+    Позвонить
+  </a>
+  <a href="https://t.me/kaznagovru" target="_blank" rel="noopener" class="kg-stickybar__btn kg-stickybar__btn--tg" data-nav-click data-nav-location="stickybar" data-nav-label="telegram" data-nav-intent="messenger">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="18" height="18"><path d="M9.04 15.31l-.37 5.25c.53 0 .76-.23 1.04-.5l2.5-2.39 5.18 3.79c.95.52 1.62.25 1.88-.88l3.4-15.95c.3-1.4-.51-1.95-1.43-1.6L1.4 10.59c-1.36.53-1.34 1.29-.23 1.63l5.1 1.59L18.1 6.36c.56-.37 1.07-.17.65.2L9.04 15.31z"/></svg>
+    Telegram
+  </a>
+</div>
 <!-- kz:footer:end -->
 
 <script>
 (function(){
   var f=document.getElementById('kvLeadForm'); if(!f) return;
+  var YM_ID=window.KAZNA_METRIKA_ID||86763493;
   var msg=document.getElementById('kvMsg'), ok=document.getElementById('kvOk'),
       fields=f.querySelector('.kv-form-fields'), btn=document.getElementById('kvSubmit');
+  var __ts=Date.now();
   function err(t){ msg.textContent=t; msg.style.display='block'; }
+  function getCookie(n){ var m=document.cookie.match(new RegExp('(?:^|; )'+n+'=([^;]*)')); return m?decodeURIComponent(m[1]):''; }
+  function gaCid(){ var m=(getCookie('_ga')||'').match(/(\d+\.\d+)$/); return m?m[1]:''; }
+  function mskTime(){ try{ return new Intl.DateTimeFormat('ru-RU',{timeZone:'Europe/Moscow',dateStyle:'short',timeStyle:'medium'}).format(new Date()); }catch(e){ return ''; } }
   f.addEventListener('submit', function(e){
     e.preventDefault(); msg.style.display='none';
     var name=f.name.value.trim(), d=(f.phone.value||'').replace(/\D/g,'');
@@ -786,14 +811,51 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
     if(d.length!==11||d.charAt(0)!=='7'){ err('Проверьте номер телефона — нужен российский номер.'); return; }
     if(!document.getElementById('kv-consent').checked){ err('Нужно согласие на обработку персональных данных.'); return; }
     btn.disabled=true; btn.textContent='Отправляем…';
-    fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({name:name,contact:'+'+d,message:'Источник: страница «Восстановление казначейского сопровождения» (тариф 99 000 ₽/мес)',consent_pd:true,consent_at:new Date().toISOString(),hp:f.hp.value})})
+    var attr=(window.kaznaAttribution?window.kaznaAttribution():{})||{};
+    var qs=new URLSearchParams(location.search);
+    var utm={};
+    ['utm_source','utm_medium','utm_campaign','utm_term','utm_content'].forEach(function(k){ utm[k]=qs.get(k)||attr[k]||''; });
+    var payload={
+      name:name, contact:'+'+d,
+      message:'Заявка: восстановление казначейского сопровождения — антикризисный тариф 99 000 ₽/мес',
+      hp:f.hp.value,
+      consent_pd:true,
+      consent_pd_text:'Согласие с политикой обработки ПДн (https://kazna-gov.ru/personal_data_policy) и пользовательским соглашением (https://kazna-gov.ru/agreement)',
+      consent_at:new Date().toISOString(),
+      source:'vosstanovlenie-form', page:'vosstanovlenie',
+      utm:utm,
+      yclid:qs.get('yclid')||attr.yclid||'',
+      gclid:qs.get('gclid')||attr.gclid||'',
+      first_utm_source:attr.first_utm_source||'',
+      first_landing:attr.first_landing||'',
+      attribution_ts:attr.attribution_ts||'',
+      ym_uid:getCookie('_ym_uid'), ga_cid:gaCid(),
+      referrer:document.referrer||'',
+      search_query:'',
+      page_url:location.href, page_title:document.title,
+      ts_iso:new Date().toISOString(), ts_msk:mskTime(),
+      tz:(function(){ try{ return Intl.DateTimeFormat().resolvedOptions().timeZone; }catch(e){ return ''; } })(),
+      lang:navigator.language||'',
+      screen:(screen.width||0)+'x'+(screen.height||0),
+      viewport:(window.innerWidth||0)+'x'+(window.innerHeight||0),
+      device:navigator.userAgent||'',
+      time_on_page_sec:Math.round((Date.now()-__ts)/1000)
+    };
+    function done(){ btn.disabled=false; btn.textContent='Получить план восстановления'; }
+    function success(){ fields.style.display='none'; ok.style.display='block'; if(window.ym) ym(YM_ID,'reachGoal','lead_submitted_final',{service:'vosstanovlenie',price:99000}); }
+    function fallbackContact(){
+      var src=[]; if(utm.utm_source) src.push('utm_source='+utm.utm_source); if(utm.utm_campaign) src.push('utm_campaign='+utm.utm_campaign); if(attr.first_utm_source) src.push('первый источник: '+attr.first_utm_source);
+      fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({name:name,contact:'+'+d,message:'Заявка: восстановление казначейского сопровождения — антикризисный тариф 99 000 ₽/мес. Страница: /services/vosstanovlenie'+(src.length?' · '+src.join(', '):''),consent_pd:true,consent_at:new Date().toISOString(),hp:f.hp.value})})
+      .then(function(r){return r.json()}).then(function(res){ done(); if(res.success){ success(); } else err('Ошибка: '+(res.error||'не удалось отправить. Позвоните +7 (495) 108-42-32.')); })
+      .catch(function(){ done(); err('Сеть недоступна. Позвоните +7 (495) 108-42-32.'); });
+    }
+    fetch('https://api.kazna-gov.ru/api/lead/vosstanovlenie',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)})
     .then(function(r){return r.json()}).then(function(res){
-      btn.disabled=false; btn.textContent='Получить план восстановления';
-      if(res.success){ fields.style.display='none'; ok.style.display='block';
-        if(window.ym) ym(86763493,'reachGoal','lead_submitted_final');
-      } else err('Ошибка: '+(res.error||'не удалось отправить. Позвоните +7 (495) 108-42-32.'));
-    }).catch(function(){ btn.disabled=false; btn.textContent='Получить план восстановления'; err('Сеть недоступна. Позвоните +7 (495) 108-42-32.'); });
+      if(res.success){ done(); success(); }
+      else if(res.error==='unknown page'){ fallbackContact(); }
+      else { done(); err('Ошибка: '+(res.error||'не удалось отправить. Позвоните +7 (495) 108-42-32.')); }
+    }).catch(function(){ fallbackContact(); });
   });
 })();
 </script>

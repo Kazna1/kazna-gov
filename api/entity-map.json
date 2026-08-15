@@ -3317,6 +3317,13 @@
    ],
    "url": "/services/giis-eb"
   },
+  "service-subsidii": {
+   "name": "Казначейское сопровождение субсидий",
+   "type": [
+    "service"
+   ],
+   "url": "/services/subsidii"
+  },
   "law-44-fz": {
    "name": "44-ФЗ",
    "type": [

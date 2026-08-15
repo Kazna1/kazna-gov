@@ -3,7 +3,7 @@
  "version": "2026-08-11",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
- "count": 7,
+ "count": 8,
  "entities": [
   {
    "id": "service-conduct",
@@ -133,7 +133,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-service-open",
    "scores": {
-    "authority": 99,
+    "authority": 100,
     "coverage": 100,
     "connectivity": 100,
     "citation": 80,
@@ -198,7 +198,72 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-service-vosstanovlenie",
    "scores": {
-    "authority": 52,
+    "authority": 56,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 80,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "service-subsidii",
+   "type": [
+    "service"
+   ],
+   "name": "Казначейское сопровождение субсидий",
+   "aliases": [],
+   "summary": "Ведём казначейское сопровождение субсидии под ключ: лицевой счёт получателя субсидии в УФК, санкционирование расходов, платежи и распоряжения в ГИИС «Электронный бюджет», Сведения об операциях с целевыми средствами, отчёт об использовании субсидии и возврат остатка, переписка с УФК. Безлимит операций, фиксированная цена 89 000 ₽/мес за соглашение. Дистанционно по всей России, старт — в день обращения.",
+   "citation": "Самостоятельно: бухгалтер учится на возвратах и рискует нецелевым. С нами: расходы согласуются с первого раза, отчёт сдан в срок.",
+   "pages": [
+    {
+     "layer": "service",
+     "url": "/services/subsidii",
+     "title": "Казначейское сопровождение субсидий"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "subsidiya",
+     "soglashenie-subsidii",
+     "poluchatel-subsidii",
+     "otchet-subsidii"
+    ],
+    "SERVICE_REQUIRES": [
+     "komplekt-subsidii",
+     "svedeniya-ssu",
+     "poyasnenie-ufk"
+    ],
+    "SERVICE_SOLVES": [
+     "err-subsidiya-rashody",
+     "err-necelevoe",
+     "err-svedeniya-otkaz"
+    ],
+    "SEE_FAQ": [
+     "faq-pomoshch-s-subsidiey",
+     "faq-ufk-ne-soglasuet-subsidiyu",
+     "faq-raskhody-subsidii",
+     "faq-otchet-po-subsidii",
+     "faq-ostatok-subsidii"
+    ],
+    "PART_OF_TOPIC": [
+     "hub-subsidii"
+    ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
+    ],
+    "DIAGNOSED_BY": [
+     "tool-proverka-subsidii"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-service-subsidii",
+   "scores": {
+    "authority": 26,
     "coverage": 100,
     "connectivity": 100,
     "citation": 80,
@@ -318,7 +383,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-service-postpayment",
    "scores": {
-    "authority": 5,
+    "authority": 6,
     "coverage": 100,
     "connectivity": 70,
     "citation": 80,

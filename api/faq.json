@@ -60,7 +60,7 @@
    "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-kak-otkryt-schet",
    "scores": {
-    "authority": 7,
+    "authority": 8,
     "coverage": 100,
     "connectivity": 63,
     "citation": 100,
@@ -121,7 +121,7 @@
    "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-srok-otkrytiya-scheta",
    "scores": {
-    "authority": 6,
+    "authority": 7,
     "coverage": 100,
     "connectivity": 53,
     "citation": 100,
@@ -185,7 +185,7 @@
    "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-dokumenty-dlya-otkrytiya",
    "scores": {
-    "authority": 5,
+    "authority": 6,
     "coverage": 100,
     "connectivity": 57,
     "citation": 100,
@@ -235,7 +235,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-faq-stoimost-soprovozhdeniya",
    "scores": {
-    "authority": 5,
+    "authority": 6,
     "coverage": 67,
     "connectivity": 33,
     "citation": 100,
@@ -293,7 +293,7 @@
    "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-sostav-uslugi-soprovozhdeniya",
    "scores": {
-    "authority": 5,
+    "authority": 6,
     "coverage": 100,
     "connectivity": 47,
     "citation": 100,
@@ -354,7 +354,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-faq-dokumenty-k-platezhu",
    "scores": {
-    "authority": 4,
+    "authority": 5,
     "coverage": 100,
     "connectivity": 47,
     "citation": 100,
@@ -416,7 +416,7 @@
    "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-pochemu-vernuli-platezh",
    "scores": {
-    "authority": 4,
+    "authority": 5,
     "coverage": 100,
     "connectivity": 50,
     "citation": 100,
@@ -477,12 +477,131 @@
    "updated": "2026-07-13",
    "schema_id": "https://kazna-gov.ru/#e-faq-deystviya-pri-vozvrate",
    "scores": {
-    "authority": 4,
+    "authority": 5,
     "coverage": 100,
     "connectivity": 47,
     "citation": 100,
     "aiReadiness": 100,
     "density": 93
+   }
+  },
+  {
+   "id": "faq-raskhody-subsidii",
+   "type": [
+    "faq"
+   ],
+   "name": "На что можно тратить субсидию?",
+   "aliases": [
+    "разрешенные расходы по субсидии",
+    "что можно оплачивать с лицевого счета субсидии",
+    "куда разрешено направлять средства субсидии",
+    "какие траты согласует уфк по субсидии",
+    "ограничения по расходованию субсидии"
+   ],
+   "summary": "Субсидию можно тратить только на цели и направления расходов, прямо предусмотренные соглашением о её предоставлении. Типичная ошибка, которую мы видим, — оплата общехозяйственных расходов, не относящихся к проекту субсидии. УФК сверяет каждый платёж с соглашением и Сведениями: расход вне направлений — отказ, а фактически произведённый — нецелевое использование со штрафом и возвратом.",
+   "citation": "Только на направления расходов из соглашения. Каждый платёж проходит санкционирование УФК; траты «мимо» соглашения — это нецелевое использование.",
+   "pages": [
+    {
+     "layer": "faq",
+     "url": "/voprosy/na-chto-mozhno-tratit-subsidiyu/",
+     "title": "На что можно тратить субсидию?"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "tselevye-sredstva",
+     "sanktsionirovanie",
+     "kody-napravleniy",
+     "err-necelevoe",
+     "soglashenie-subsidii"
+    ],
+    "REQUIRES_DOC": [
+     "svedeniya-ssu",
+     "poyasnenie-ufk"
+    ],
+    "SEE_ERROR": [
+     "err-subsidiya-rashody",
+     "err-kod-napravleniya"
+    ],
+    "REGULATED_BY": [
+     "law-koap-rf-st-1514",
+     "law-prikaz-minfina-214n"
+    ],
+    "MONETIZED_BY": [
+     "service-subsidii"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta",
+     "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026",
+     "/blog/kody-kaznacheyskogo-soprovozhdeniya"
+    ],
+    "SAME_CLUSTER": [
+     "faq-ufk-ne-soglasuet-subsidiyu"
+    ]
+   },
+   "updated": "2026-07-13",
+   "schema_id": "https://kazna-gov.ru/#e-faq-raskhody-subsidii",
+   "scores": {
+    "authority": 5,
+    "coverage": 100,
+    "connectivity": 57,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "faq-otchet-po-subsidii",
+   "type": [
+    "faq"
+   ],
+   "name": "Как отчитаться об использовании субсидии?",
+   "aliases": [
+    "отчет об использовании субсидии порядок сдачи",
+    "какие отчеты сдает получатель субсидии",
+    "отчетность по субсидии в электронном бюджете",
+    "сроки отчета по соглашению о субсидии",
+    "что приложить к отчету по субсидии"
+   ],
+   "summary": "Отчёт об использовании субсидии сдаётся в орган, предоставивший средства, по формам и в сроки, установленные соглашением, — как правило, через ГИИС «Электронный бюджет». По нашему опыту, чаще всего отчёт возвращают из-за расхождений между отчётом, выпиской из лицевого счёта и первичкой. Обычно сдаются два блока: отчёт о расходах с документами и отчёт о достижении показателей.",
+   "citation": "Формы и сроки — в соглашении: отчёт о расходах и отчёт о достижении показателей подаются предоставившему органу, обычно через «Электронный бюджет».",
+   "pages": [
+    {
+     "layer": "faq",
+     "url": "/voprosy/otchet-po-subsidii-kak-sdat/",
+     "title": "Как отчитаться об использовании субсидии?"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "otchet-subsidii",
+     "vypiska-ls",
+     "poluchatel-subsidii",
+     "dokumenty-osnovaniya"
+    ],
+    "REQUIRES_DOC": [
+     "reestr-dokumentov"
+    ],
+    "MONETIZED_BY": [
+     "service-subsidii"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kalendar-otchetnosti-podryadchika-ks-2026",
+     "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
+    ],
+    "SAME_CLUSTER": [
+     "faq-nedostizhenie-pokazateley"
+    ]
+   },
+   "updated": "2026-07-13",
+   "schema_id": "https://kazna-gov.ru/#e-faq-otchet-po-subsidii",
+   "scores": {
+    "authority": 5,
+    "coverage": 83,
+    "connectivity": 37,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 73
    }
   },
   {
@@ -1244,122 +1363,121 @@
    }
   },
   {
-   "id": "faq-raskhody-subsidii",
+   "id": "faq-ufk-ne-soglasuet-subsidiyu",
    "type": [
     "faq"
    ],
-   "name": "На что можно тратить субсидию?",
+   "name": "Почему УФК не согласует расходы по субсидии?",
    "aliases": [
-    "разрешенные расходы по субсидии",
-    "что можно оплачивать с лицевого счета субсидии",
-    "куда разрешено направлять средства субсидии",
-    "какие траты согласует уфк по субсидии",
-    "ограничения по расходованию субсидии"
+    "уфк отказывает в платеже по субсидии причины",
+    "казначейство не пропускает расход по субсидии",
+    "отказ в санкционировании по субсидии что делать",
+    "платеж с субсидийного счета завис в уфк",
+    "почему возвращают платежки по субсидии"
    ],
-   "summary": "Субсидию можно тратить только на цели и направления расходов, прямо предусмотренные соглашением о её предоставлении. Типичная ошибка, которую мы видим, — оплата общехозяйственных расходов, не относящихся к проекту субсидии. УФК сверяет каждый платёж с соглашением и Сведениями: расход вне направлений — отказ, а фактически произведённый — нецелевое использование со штрафом и возвратом.",
-   "citation": "Только на направления расходов из соглашения. Каждый платёж проходит санкционирование УФК; траты «мимо» соглашения — это нецелевое использование.",
+   "summary": "УФК отказывает, когда расход не соответствует соглашению о субсидии: назначение платежа не бьётся с направлениями расходов, неверен код направления расходования, не хватает документов-оснований или Сведения не утверждены. Типичная ошибка, которую мы видим, — повторная отправка той же платёжки без исправлений: запросите точную причину отказа, устраните расхождение и подайте распоряжение заново.",
+   "citation": "Причина всегда в расхождении платежа с соглашением или Сведениями: не тот код, не то назначение, нет документов. Устраните конкретное замечание и подайте платёж повторно.",
    "pages": [
     {
      "layer": "faq",
-     "url": "/voprosy/na-chto-mozhno-tratit-subsidiyu/",
-     "title": "На что можно тратить субсидию?"
+     "url": "/voprosy/soglasovanie-raskhodov-po-subsidii/",
+     "title": "Почему УФК не согласует расходы по субсидии?"
     }
    ],
    "relations": {
     "USES_TERM": [
-     "tselevye-sredstva",
+     "err-otkaz-sanktsionirovaniya",
      "sanktsionirovanie",
-     "kody-napravleniy",
-     "err-necelevoe",
-     "soglashenie-subsidii"
+     "dokumenty-osnovaniya",
+     "kody-napravleniy"
     ],
     "REQUIRES_DOC": [
-     "svedeniya-ssu",
-     "poyasnenie-ufk"
+     "poyasnenie-ufk",
+     "svedeniya-ssu"
     ],
     "SEE_ERROR": [
      "err-subsidiya-rashody",
-     "err-kod-napravleniya"
+     "err-otkaz-sanktsionirovaniya"
     ],
     "REGULATED_BY": [
-     "law-koap-rf-st-1514",
      "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
-     "service-conduct"
+     "service-vosstanovlenie"
     ],
     "EXPLAINED_BY_ARTICLE": [
-     "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta",
+     "/blog/sanktsionirovanie-operatsiy-kaznacheystvom",
      "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026",
-     "/blog/kody-kaznacheyskogo-soprovozhdeniya"
+     "/blog/ufk-zaderzhivaet-platezh-chto-delat"
     ],
     "SAME_CLUSTER": [
-     "faq-ufk-ne-soglasuet-subsidiyu"
+     "faq-zarplata-iz-subsidii"
     ]
    },
    "updated": "2026-07-13",
-   "schema_id": "https://kazna-gov.ru/#e-faq-raskhody-subsidii",
+   "schema_id": "https://kazna-gov.ru/#e-faq-ufk-ne-soglasuet-subsidiyu",
    "scores": {
     "authority": 3,
     "coverage": 100,
-    "connectivity": 53,
+    "connectivity": 47,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 100
+    "density": 93
    }
   },
   {
-   "id": "faq-otchet-po-subsidii",
+   "id": "faq-ostatok-subsidii",
    "type": [
     "faq"
    ],
-   "name": "Как отчитаться об использовании субсидии?",
+   "name": "Что делать с неиспользованным остатком субсидии?",
    "aliases": [
-    "отчет об использовании субсидии порядок сдачи",
-    "какие отчеты сдает получатель субсидии",
-    "отчетность по субсидии в электронном бюджете",
-    "сроки отчета по соглашению о субсидии",
-    "что приложить к отчету по субсидии"
+    "остаток субсидии на конец года куда девать",
+    "не потратили всю субсидию что дальше",
+    "подтверждение потребности в остатке субсидии",
+    "перенос остатка субсидии на следующий год",
+    "возврат остатка целевых средств в бюджет"
    ],
-   "summary": "Отчёт об использовании субсидии сдаётся в орган, предоставивший средства, по формам и в сроки, установленные соглашением, — как правило, через ГИИС «Электронный бюджет». По нашему опыту, чаще всего отчёт возвращают из-за расхождений между отчётом, выпиской из лицевого счёта и первичкой. Обычно сдаются два блока: отчёт о расходах с документами и отчёт о достижении показателей.",
-   "citation": "Формы и сроки — в соглашении: отчёт о расходах и отчёт о достижении показателей подаются предоставившему органу, обычно через «Электронный бюджет».",
+   "summary": "У неиспользованного остатка субсидии два пути: вернуть его в бюджет или сохранить для завершения проекта, если предоставивший орган примет решение о подтверждении потребности в остатке. Типичная ошибка, которую мы видим, — вспоминать об остатке после наступления срока возврата: направляйте обоснование заблаговременно, с привязкой к незавершённым договорам и мероприятиям соглашения.",
+   "citation": "Либо возврат в бюджет, либо использование в следующем периоде — если предоставивший орган подтвердил потребность в остатке по вашему обоснованию.",
    "pages": [
     {
      "layer": "faq",
-     "url": "/voprosy/otchet-po-subsidii-kak-sdat/",
-     "title": "Как отчитаться об использовании субсидии?"
+     "url": "/voprosy/ostatok-subsidii-chto-delat/",
+     "title": "Что делать с неиспользованным остатком субсидии?"
     }
    ],
    "relations": {
     "USES_TERM": [
-     "otchet-subsidii",
+     "neisp-ostatok",
+     "subsidiya",
      "vypiska-ls",
-     "poluchatel-subsidii",
-     "dokumenty-osnovaniya"
+     "svedeniya-ssu"
     ],
     "REQUIRES_DOC": [
-     "reestr-dokumentov"
+     "pismo-zapros",
+     "svedeniya-ssu"
     ],
     "MONETIZED_BY": [
-     "service-conduct"
+     "service-subsidii"
     ],
     "EXPLAINED_BY_ARTICLE": [
-     "/blog/kalendar-otchetnosti-podryadchika-ks-2026",
-     "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
+     "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026",
+     "/blog/zakrytie-kaznacheyskogo-scheta-posle-kontrakta"
     ],
     "SAME_CLUSTER": [
-     "faq-nedostizhenie-pokazateley"
+     "faq-prodlenie-sroka-subsidii"
     ]
    },
    "updated": "2026-07-13",
-   "schema_id": "https://kazna-gov.ru/#e-faq-otchet-po-subsidii",
+   "schema_id": "https://kazna-gov.ru/#e-faq-ostatok-subsidii",
    "scores": {
     "authority": 3,
     "coverage": 83,
-    "connectivity": 33,
+    "connectivity": 37,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 67
+    "density": 73
    }
   },
   {
@@ -4545,69 +4663,6 @@
    }
   },
   {
-   "id": "faq-ufk-ne-soglasuet-subsidiyu",
-   "type": [
-    "faq"
-   ],
-   "name": "Почему УФК не согласует расходы по субсидии?",
-   "aliases": [
-    "уфк отказывает в платеже по субсидии причины",
-    "казначейство не пропускает расход по субсидии",
-    "отказ в санкционировании по субсидии что делать",
-    "платеж с субсидийного счета завис в уфк",
-    "почему возвращают платежки по субсидии"
-   ],
-   "summary": "УФК отказывает, когда расход не соответствует соглашению о субсидии: назначение платежа не бьётся с направлениями расходов, неверен код направления расходования, не хватает документов-оснований или Сведения не утверждены. Типичная ошибка, которую мы видим, — повторная отправка той же платёжки без исправлений: запросите точную причину отказа, устраните расхождение и подайте распоряжение заново.",
-   "citation": "Причина всегда в расхождении платежа с соглашением или Сведениями: не тот код, не то назначение, нет документов. Устраните конкретное замечание и подайте платёж повторно.",
-   "pages": [
-    {
-     "layer": "faq",
-     "url": "/voprosy/soglasovanie-raskhodov-po-subsidii/",
-     "title": "Почему УФК не согласует расходы по субсидии?"
-    }
-   ],
-   "relations": {
-    "USES_TERM": [
-     "err-otkaz-sanktsionirovaniya",
-     "sanktsionirovanie",
-     "dokumenty-osnovaniya",
-     "kody-napravleniy"
-    ],
-    "REQUIRES_DOC": [
-     "poyasnenie-ufk",
-     "svedeniya-ssu"
-    ],
-    "SEE_ERROR": [
-     "err-subsidiya-rashody",
-     "err-otkaz-sanktsionirovaniya"
-    ],
-    "REGULATED_BY": [
-     "law-prikaz-minfina-214n"
-    ],
-    "MONETIZED_BY": [
-     "service-vosstanovlenie"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/sanktsionirovanie-operatsiy-kaznacheystvom",
-     "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026",
-     "/blog/ufk-zaderzhivaet-platezh-chto-delat"
-    ],
-    "SAME_CLUSTER": [
-     "faq-zarplata-iz-subsidii"
-    ]
-   },
-   "updated": "2026-07-13",
-   "schema_id": "https://kazna-gov.ru/#e-faq-ufk-ne-soglasuet-subsidiyu",
-   "scores": {
-    "authority": 2,
-    "coverage": 100,
-    "connectivity": 43,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 87
-   }
-  },
-  {
    "id": "faq-razdelenie-subsidii-i-svoih",
    "type": [
     "faq"
@@ -4643,7 +4698,7 @@
      "law-koap-rf-st-1514"
     ],
     "MONETIZED_BY": [
-     "service-conduct"
+     "service-subsidii"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026",
@@ -4703,7 +4758,7 @@
      "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
-     "service-conduct"
+     "service-subsidii"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/svedeniya-ob-operatsiyah-s-tselevymi-sredstvami",
@@ -4814,7 +4869,7 @@
      "law-koap-rf-st-1514"
     ],
     "MONETIZED_BY": [
-     "service-conduct"
+     "service-subsidii"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026",
@@ -4836,54 +4891,57 @@
    }
   },
   {
-   "id": "faq-ostatok-subsidii",
+   "id": "faq-pomoshch-s-subsidiey",
    "type": [
     "faq"
    ],
-   "name": "Что делать с неиспользованным остатком субсидии?",
+   "name": "Кто поможет вести субсидию под казначейским сопровождением?",
    "aliases": [
-    "остаток субсидии на конец года куда девать",
-    "не потратили всю субсидию что дальше",
-    "подтверждение потребности в остатке субсидии",
-    "перенос остатка субсидии на следующий год",
-    "возврат остатка целевых средств в бюджет"
+    "аутсорсинг сопровождения субсидии кто делает",
+    "помощь получателю субсидии с казначейством",
+    "консультант по кс субсидий услуги",
+    "ведение субсидии под ключ сколько стоит",
+    "кому доверить платежи и отчетность по субсидии"
    ],
-   "summary": "У неиспользованного остатка субсидии два пути: вернуть его в бюджет или сохранить для завершения проекта, если предоставивший орган примет решение о подтверждении потребности в остатке. Типичная ошибка, которую мы видим, — вспоминать об остатке после наступления срока возврата: направляйте обоснование заблаговременно, с привязкой к незавершённым договорам и мероприятиям соглашения.",
-   "citation": "Либо возврат в бюджет, либо использование в следующем периоде — если предоставивший орган подтвердил потребность в остатке по вашему обоснованию.",
+   "summary": "Ведение субсидии под КС можно передать профильному консультанту по казначейскому сопровождению: он откроет лицевой счёт, подготовит и утвердит Сведения, будет проводить платежи через санкционирование, вести переписку с УФК и собирать отчётность по соглашению. Это дешевле штатного специалиста и снимает риски отказов, возвратов и претензий о нецелевом использовании.",
+   "citation": "Профильный консультант по КС берёт на себя счёт, Сведения, платежи и отчётность по соглашению. Наша команда сопровождает субсидии под ключ.",
    "pages": [
     {
      "layer": "faq",
-     "url": "/voprosy/ostatok-subsidii-chto-delat/",
-     "title": "Что делать с неиспользованным остатком субсидии?"
+     "url": "/voprosy/pomoshch-s-subsidiey/",
+     "title": "Кто поможет вести субсидию под казначейским сопровождением?"
     }
    ],
    "relations": {
     "USES_TERM": [
-     "neisp-ostatok",
+     "ks",
      "subsidiya",
-     "vypiska-ls",
-     "svedeniya-ssu"
+     "poluchatel-subsidii",
+     "sanktsionirovanie"
     ],
     "REQUIRES_DOC": [
-     "pismo-zapros",
-     "svedeniya-ssu"
+     "komplekt-subsidii"
+    ],
+    "SEE_ERROR": [
+     "err-subsidiya-rashody"
     ],
     "MONETIZED_BY": [
-     "service-conduct"
+     "service-subsidii"
     ],
     "EXPLAINED_BY_ARTICLE": [
-     "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026",
-     "/blog/zakrytie-kaznacheyskogo-scheta-posle-kontrakta"
+     "/blog/autsorsing-kaznacheyskogo-soprovozhdeniya",
+     "/blog/soprovozhdenie-goskontraktov-pod-kluch",
+     "/blog/tseny-na-kaznacheyskoe-soprovozhdenie-2026"
     ],
     "SAME_CLUSTER": [
-     "faq-prodlenie-sroka-subsidii"
+     "faq-subsidiya-pod-ks"
     ]
    },
-   "updated": "2026-07-13",
-   "schema_id": "https://kazna-gov.ru/#e-faq-ostatok-subsidii",
+   "updated": "2026-07-14",
+   "schema_id": "https://kazna-gov.ru/#e-faq-pomoshch-s-subsidiey",
    "scores": {
     "authority": 2,
-    "coverage": 83,
+    "coverage": 100,
     "connectivity": 33,
     "citation": 100,
     "aiReadiness": 100,
@@ -14648,7 +14706,7 @@
      "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
-     "service-conduct"
+     "service-subsidii"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026",
@@ -14758,7 +14816,7 @@
      "err-igk"
     ],
     "MONETIZED_BY": [
-     "service-conduct"
+     "service-subsidii"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/igk-v-platezhah-kaznacheystva",
@@ -14818,7 +14876,7 @@
      "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
-     "service-conduct"
+     "service-subsidii"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta",
@@ -14879,7 +14937,7 @@
      "law-koap-rf-st-1514"
     ],
     "MONETIZED_BY": [
-     "service-conduct"
+     "service-subsidii"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta",
@@ -15044,7 +15102,7 @@
      "pismo-zapros"
     ],
     "MONETIZED_BY": [
-     "service-conduct"
+     "service-subsidii"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
@@ -15100,7 +15158,7 @@
      "law-prikaz-fk-44n"
     ],
     "MONETIZED_BY": [
-     "service-conduct"
+     "service-subsidii"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/litsevoy-schet-71",
@@ -15112,64 +15170,6 @@
    },
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-faq-neskolko-subsidiy-schet",
-   "scores": {
-    "authority": 1,
-    "coverage": 100,
-    "connectivity": 30,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 60
-   }
-  },
-  {
-   "id": "faq-pomoshch-s-subsidiey",
-   "type": [
-    "faq"
-   ],
-   "name": "Кто поможет вести субсидию под казначейским сопровождением?",
-   "aliases": [
-    "аутсорсинг сопровождения субсидии кто делает",
-    "помощь получателю субсидии с казначейством",
-    "консультант по кс субсидий услуги",
-    "ведение субсидии под ключ сколько стоит",
-    "кому доверить платежи и отчетность по субсидии"
-   ],
-   "summary": "Ведение субсидии под КС можно передать профильному консультанту по казначейскому сопровождению: он откроет лицевой счёт, подготовит и утвердит Сведения, будет проводить платежи через санкционирование, вести переписку с УФК и собирать отчётность по соглашению. Это дешевле штатного специалиста и снимает риски отказов, возвратов и претензий о нецелевом использовании.",
-   "citation": "Профильный консультант по КС берёт на себя счёт, Сведения, платежи и отчётность по соглашению. Наша команда сопровождает субсидии под ключ.",
-   "pages": [
-    {
-     "layer": "faq",
-     "url": "/voprosy/pomoshch-s-subsidiey/",
-     "title": "Кто поможет вести субсидию под казначейским сопровождением?"
-    }
-   ],
-   "relations": {
-    "USES_TERM": [
-     "ks",
-     "subsidiya",
-     "poluchatel-subsidii",
-     "sanktsionirovanie"
-    ],
-    "REQUIRES_DOC": [
-     "komplekt-subsidii"
-    ],
-    "SEE_ERROR": [
-     "err-subsidiya-rashody"
-    ],
-    "MONETIZED_BY": [
-     "service-conduct"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/autsorsing-kaznacheyskogo-soprovozhdeniya",
-     "/blog/soprovozhdenie-goskontraktov-pod-kluch",
-     "/blog/tseny-na-kaznacheyskoe-soprovozhdenie-2026"
-    ],
-    "SAME_CLUSTER": [
-     "faq-subsidiya-pod-ks"
-    ]
-   },
-   "updated": "2026-07-14",
-   "schema_id": "https://kazna-gov.ru/#e-faq-pomoshch-s-subsidiey",
    "scores": {
     "authority": 1,
     "coverage": 100,

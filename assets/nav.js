@@ -199,3 +199,34 @@
   },{rootMargin:'0px 0px -8% 0px'});
   targets.forEach(function(t){io.observe(t)});
 })();
+
+/* kg-stickybar (B02): мобильный бар контактов на контентных страницах.
+   Появляется после 500px скролла; прячется, когда в вьюпорте форма/контакты/футер
+   (та же логика, что у TG-FAB). На страницах с .kzop2__sticky не активируется. */
+(function () {
+  var bar = document.getElementById('kgStickybar');
+  if (!bar || document.querySelector('.kzop2__sticky')) return;
+  var nearConv = false;
+  function update() {
+    bar.classList.toggle('is-on', window.scrollY > 500 && !nearConv);
+  }
+  if ('IntersectionObserver' in window) {
+    var targets = ['#form', '#form-top', '#contacts', '#audit', '.kzfoot', 'footer']
+      .map(function (s) { return document.querySelector(s); }).filter(Boolean);
+    if (targets.length) {
+      var states = new Map();
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { states.set(e.target, e.isIntersecting); });
+        nearConv = false; states.forEach(function (v) { if (v) nearConv = true; });
+        update();
+      }, { rootMargin: '0px 0px -6% 0px' });
+      targets.forEach(function (t) { io.observe(t); });
+    }
+  }
+  var raf = null;
+  window.addEventListener('scroll', function () {
+    if (raf) return;
+    raf = requestAnimationFrame(function () { update(); raf = null; });
+  }, { passive: true });
+  update();
+})();

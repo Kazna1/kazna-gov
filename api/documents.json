@@ -135,10 +135,10 @@
      "law-prikaz-mintsifry-1001"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-08-11",
    "schema_id": "https://kazna-gov.ru/#e-doverennost-mchd",
    "scores": {
-    "authority": 97,
+    "authority": 100,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -208,7 +208,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-zayavlenie-ls",
    "scores": {
-    "authority": 75,
+    "authority": 82,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -272,7 +272,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-kartochka-podpisey",
    "scores": {
-    "authority": 70,
+    "authority": 76,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -343,7 +343,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-rkp",
    "scores": {
-    "authority": 69,
+    "authority": 75,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -388,7 +388,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-poyasnenie-ufk",
    "scores": {
-    "authority": 45,
+    "authority": 51,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -451,7 +451,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-reestr-dokumentov",
    "scores": {
-    "authority": 44,
+    "authority": 48,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -496,7 +496,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-chek-list-otkrytie",
    "scores": {
-    "authority": 42,
+    "authority": 46,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -542,7 +542,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-chek-list-dokumenty",
    "scores": {
-    "authority": 38,
+    "authority": 41,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -585,7 +585,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-pismo-zapros",
    "scores": {
-    "authority": 37,
+    "authority": 40,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -628,7 +628,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-prikaz-razdelnyy-uchet",
    "scores": {
-    "authority": 29,
+    "authority": 31,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -673,7 +673,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-komplekt-otkrytie",
    "scores": {
-    "authority": 20,
+    "authority": 22,
     "coverage": 67,
     "connectivity": 83,
     "citation": 80,
@@ -708,7 +708,7 @@
      "err-kod-napravleniya"
     ],
     "MONETIZED_BY": [
-     "service-conduct"
+     "service-subsidii"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
@@ -717,9 +717,9 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-komplekt-subsidii",
    "scores": {
-    "authority": 19,
+    "authority": 22,
     "coverage": 67,
-    "connectivity": 80,
+    "connectivity": 83,
     "citation": 80,
     "aiReadiness": 100,
     "density": 100
@@ -760,7 +760,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-formulirovka-ks",
    "scores": {
-    "authority": 18,
+    "authority": 20,
     "coverage": 67,
     "connectivity": 70,
     "citation": 80,
@@ -805,7 +805,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-poyasnenie-vozvrat",
    "scores": {
-    "authority": 14,
+    "authority": 15,
     "coverage": 67,
     "connectivity": 63,
     "citation": 80,
@@ -851,7 +851,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-komplekt-goz",
    "scores": {
-    "authority": 14,
+    "authority": 15,
     "coverage": 67,
     "connectivity": 63,
     "citation": 80,
@@ -913,7 +913,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-otzyv-rasporyazheniya",
    "scores": {
-    "authority": 14,
+    "authority": 15,
     "coverage": 83,
     "connectivity": 77,
     "citation": 100,
@@ -1000,7 +1000,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-zayavlenie-zakrytie",
    "scores": {
-    "authority": 6,
+    "authority": 7,
     "coverage": 67,
     "connectivity": 37,
     "citation": 80,

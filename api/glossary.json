@@ -201,10 +201,10 @@
      "law-prikaz-mintsifry-1001"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-08-11",
    "schema_id": "https://kazna-gov.ru/#e-doverennost-mchd",
    "scores": {
-    "authority": 97,
+    "authority": 100,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -261,7 +261,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-sanktsionirovanie",
    "scores": {
-    "authority": 90,
+    "authority": 98,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -323,7 +323,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-ls-71",
    "scores": {
-    "authority": 82,
+    "authority": 90,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -393,7 +393,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-zayavlenie-ls",
    "scores": {
-    "authority": 75,
+    "authority": 82,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -457,7 +457,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-kartochka-podpisey",
    "scores": {
-    "authority": 70,
+    "authority": 76,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -528,67 +528,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-rkp",
    "scores": {
-    "authority": 69,
-    "coverage": 100,
-    "connectivity": 100,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "giis-eb",
-   "type": [
-    "term"
-   ],
-   "name": "ГИИС «Электронный бюджет»",
-   "aliases": [
-    "гиис эб",
-    "электронный бюджет",
-    "эб",
-    "ссылка budget.gov.ru",
-    "Государственная интегрированная информационная система управления общественными финансами"
-   ],
-   "summary": "ГИИС «Электронный бюджет» — государственная информационная система Минфина, через которую идёт весь электронный документооборот казначейского сопровождения: подача заявления на счёт, Сведения об операциях, распоряжения о платежах, переписка с УФК. Вход — по квалифицированной ЭЦП через защищённое соединение (Континент TLS); полномочия сотрудников подтверждаются МЧД.",
-   "citation": "Основной онлайн-канал работы подрядчика с казначейством: личный кабинет, где формируются и подписываются все документы КС.",
-   "pages": [
-    {
-     "layer": "term",
-     "url": "/glossary/giis-elektronnyy-byudzhet/",
-     "title": "ГИИС «Электронный бюджет»"
-    }
-   ],
-   "relations": {
-    "RELATED_TERM": [
-     "ecp",
-     "doverennost-mchd",
-     "kontinent-tls",
-     "registratsiya-eb",
-     "epbs"
-    ],
-    "REQUIRES_DOC": [
-     "doverennost-mchd",
-     "svedeniya-ssu"
-    ],
-    "SEE_ERROR": [
-     "err-ecp",
-     "err-mchd"
-    ],
-    "REGULATED_BY": [
-     "law-prikaz-minfina-214n"
-    ],
-    "MONETIZED_BY": [
-     "service-conduct"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/vhod-v-elektronnyy-byudzhet-po-sertifikatu",
-     "/blog/giis-elektronnyy-byudzhet-2026-polnaya-instruktsiya"
-    ]
-   },
-   "updated": "2026-07-14",
-   "schema_id": "https://kazna-gov.ru/#e-giis-eb",
-   "scores": {
-    "authority": 60,
+    "authority": 75,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -653,7 +593,67 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-err-necelevoe",
    "scores": {
-    "authority": 59,
+    "authority": 66,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "giis-eb",
+   "type": [
+    "term"
+   ],
+   "name": "ГИИС «Электронный бюджет»",
+   "aliases": [
+    "гиис эб",
+    "электронный бюджет",
+    "эб",
+    "ссылка budget.gov.ru",
+    "Государственная интегрированная информационная система управления общественными финансами"
+   ],
+   "summary": "ГИИС «Электронный бюджет» — государственная информационная система Минфина, через которую идёт весь электронный документооборот казначейского сопровождения: подача заявления на счёт, Сведения об операциях, распоряжения о платежах, переписка с УФК. Вход — по квалифицированной ЭЦП через защищённое соединение (Континент TLS); полномочия сотрудников подтверждаются МЧД.",
+   "citation": "Основной онлайн-канал работы подрядчика с казначейством: личный кабинет, где формируются и подписываются все документы КС.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/giis-elektronnyy-byudzhet/",
+     "title": "ГИИС «Электронный бюджет»"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ecp",
+     "doverennost-mchd",
+     "kontinent-tls",
+     "registratsiya-eb",
+     "epbs"
+    ],
+    "REQUIRES_DOC": [
+     "doverennost-mchd",
+     "svedeniya-ssu"
+    ],
+    "SEE_ERROR": [
+     "err-ecp",
+     "err-mchd"
+    ],
+    "REGULATED_BY": [
+     "law-prikaz-minfina-214n"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/vhod-v-elektronnyy-byudzhet-po-sertifikatu",
+     "/blog/giis-elektronnyy-byudzhet-2026-polnaya-instruktsiya"
+    ]
+   },
+   "updated": "2026-07-14",
+   "schema_id": "https://kazna-gov.ru/#e-giis-eb",
+   "scores": {
+    "authority": 66,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -705,7 +705,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-ks",
    "scores": {
-    "authority": 56,
+    "authority": 61,
     "coverage": 67,
     "connectivity": 100,
     "citation": 100,
@@ -760,7 +760,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-dokumenty-osnovaniya",
    "scores": {
-    "authority": 52,
+    "authority": 56,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -815,7 +815,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-igk",
    "scores": {
-    "authority": 49,
+    "authority": 53,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -872,7 +872,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-razdelnyy-uchet",
    "scores": {
-    "authority": 45,
+    "authority": 49,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -935,7 +935,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-reestr-dokumentov",
    "scores": {
-    "authority": 44,
+    "authority": 48,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -988,7 +988,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-tselevye-sredstva",
    "scores": {
-    "authority": 43,
+    "authority": 47,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -1045,7 +1045,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-ecp",
    "scores": {
-    "authority": 42,
+    "authority": 46,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -1099,7 +1099,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-kontrakt-44",
    "scores": {
-    "authority": 36,
+    "authority": 39,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -1159,7 +1159,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-ufk",
    "scores": {
-    "authority": 35,
+    "authority": 38,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -1218,7 +1218,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-goz",
    "scores": {
-    "authority": 33,
+    "authority": 36,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -1268,7 +1268,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-kody-napravleniy",
    "scores": {
-    "authority": 33,
+    "authority": 36,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -1322,7 +1322,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-vozmeshchenie",
    "scores": {
-    "authority": 30,
+    "authority": 32,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -1375,7 +1375,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-tsepochka-ks",
    "scores": {
-    "authority": 29,
+    "authority": 31,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -1432,7 +1432,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-upolnomochennye",
    "scores": {
-    "authority": 29,
+    "authority": 31,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -1485,7 +1485,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-tofk",
    "scores": {
-    "authority": 27,
+    "authority": 30,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -1539,7 +1539,7 @@
    "updated": "2026-08-11",
    "schema_id": "https://kazna-gov.ru/#e-svodnyy-reestr",
    "scores": {
-    "authority": 26,
+    "authority": 29,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -1588,8 +1588,62 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-avans",
    "scores": {
-    "authority": 25,
+    "authority": 28,
     "coverage": 67,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "subsidiya",
+   "type": [
+    "term"
+   ],
+   "name": "Субсидия",
+   "aliases": [
+    "субсидия юрлицу",
+    "целевая субсидия"
+   ],
+   "summary": "Субсидия — целевые бюджетные средства, предоставляемые организации на определённые цели по соглашению (гранты, поддержка производств, НИОКР, инвестпроекты). Субсидии юридическим лицам — один из основных случаев казначейского сопровождения: средства зачисляются на лицевой счёт, расходуются по Сведениям и под санкционирование УФК.",
+   "citation": "Безвозмездные целевые средства бюджета по соглашению. При КС управляются как средства контракта: лицевой счёт, Сведения, санкционирование, отчёт о использовании.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/subsidiya/",
+     "title": "Субсидия"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "soglashenie-subsidii",
+     "id-soglasheniya",
+     "grant",
+     "poluchatel-subsidii"
+    ],
+    "REQUIRES_DOC": [
+     "komplekt-subsidii"
+    ],
+    "SEE_ERROR": [
+     "err-subsidiya-rashody"
+    ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
+    ],
+    "MONETIZED_BY": [
+     "service-subsidii"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
+    ]
+   },
+   "updated": "2026-07-14",
+   "schema_id": "https://kazna-gov.ru/#e-subsidiya",
+   "scores": {
+    "authority": 25,
+    "coverage": 100,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -1641,7 +1695,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-pribyl-ks",
    "scores": {
-    "authority": 23,
+    "authority": 25,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -1691,7 +1745,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-sroki-ufk",
    "scores": {
-    "authority": 23,
+    "authority": 25,
     "coverage": 67,
     "connectivity": 97,
     "citation": 100,
@@ -1700,54 +1754,53 @@
    }
   },
   {
-   "id": "subsidiya",
+   "id": "soglashenie-subsidii",
    "type": [
     "term"
    ],
-   "name": "Субсидия",
+   "name": "Соглашение о предоставлении субсидии",
    "aliases": [
-    "субсидия юрлицу",
-    "целевая субсидия"
+    "соглашение о субсидии",
+    "договор субсидии"
    ],
-   "summary": "Субсидия — целевые бюджетные средства, предоставляемые организации на определённые цели по соглашению (гранты, поддержка производств, НИОКР, инвестпроекты). Субсидии юридическим лицам — один из основных случаев казначейского сопровождения: средства зачисляются на лицевой счёт, расходуются по Сведениям и под санкционирование УФК.",
-   "citation": "Безвозмездные целевые средства бюджета по соглашению. При КС управляются как средства контракта: лицевой счёт, Сведения, санкционирование, отчёт о использовании.",
+   "summary": "Соглашение о предоставлении субсидии — договор между распорядителем бюджетных средств и получателем: цели, условия, план расходов, показатели результата, порядок отчётности и возврата. Аналог госконтракта для субсидий: именно из соглашения берутся идентификатор, коды целевых средств и правила, по которым УФК будет санкционировать расходы.",
+   "citation": "Правоустанавливающий документ субсидии. Для КС — источник целей, структуры расходов и идентификатора соглашения, с которыми сверяется каждый платёж.",
    "pages": [
     {
      "layer": "term",
-     "url": "/glossary/subsidiya/",
-     "title": "Субсидия"
+     "url": "/glossary/soglashenie-o-subsidii/",
+     "title": "Соглашение о предоставлении субсидии"
     }
    ],
    "relations": {
     "RELATED_TERM": [
-     "soglashenie-subsidii",
+     "subsidiya",
      "id-soglasheniya",
-     "grant",
-     "poluchatel-subsidii"
+     "svedeniya-ssu"
     ],
     "REQUIRES_DOC": [
-     "komplekt-subsidii"
+     "komplekt-subsidii",
+     "svedeniya-ssu"
     ],
     "SEE_ERROR": [
      "err-subsidiya-rashody"
     ],
     "REGULATED_BY": [
-     "law-bk-rf-st-2422224226",
-     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
+     "law-bk-rf-st-2422224226"
     ],
     "MONETIZED_BY": [
-     "service-conduct"
+     "service-subsidii"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
     ]
    },
    "updated": "2026-07-14",
-   "schema_id": "https://kazna-gov.ru/#e-subsidiya",
+   "schema_id": "https://kazna-gov.ru/#e-soglashenie-subsidii",
    "scores": {
-    "authority": 22,
+    "authority": 24,
     "coverage": 100,
-    "connectivity": 100,
+    "connectivity": 97,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -1798,62 +1851,9 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-naznachenie",
    "scores": {
-    "authority": 22,
+    "authority": 24,
     "coverage": 100,
     "connectivity": 97,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "soglashenie-subsidii",
-   "type": [
-    "term"
-   ],
-   "name": "Соглашение о предоставлении субсидии",
-   "aliases": [
-    "соглашение о субсидии",
-    "договор субсидии"
-   ],
-   "summary": "Соглашение о предоставлении субсидии — договор между распорядителем бюджетных средств и получателем: цели, условия, план расходов, показатели результата, порядок отчётности и возврата. Аналог госконтракта для субсидий: именно из соглашения берутся идентификатор, коды целевых средств и правила, по которым УФК будет санкционировать расходы.",
-   "citation": "Правоустанавливающий документ субсидии. Для КС — источник целей, структуры расходов и идентификатора соглашения, с которыми сверяется каждый платёж.",
-   "pages": [
-    {
-     "layer": "term",
-     "url": "/glossary/soglashenie-o-subsidii/",
-     "title": "Соглашение о предоставлении субсидии"
-    }
-   ],
-   "relations": {
-    "RELATED_TERM": [
-     "subsidiya",
-     "id-soglasheniya",
-     "svedeniya-ssu"
-    ],
-    "REQUIRES_DOC": [
-     "komplekt-subsidii",
-     "svedeniya-ssu"
-    ],
-    "SEE_ERROR": [
-     "err-subsidiya-rashody"
-    ],
-    "REGULATED_BY": [
-     "law-bk-rf-st-2422224226"
-    ],
-    "MONETIZED_BY": [
-     "service-conduct"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
-    ]
-   },
-   "updated": "2026-07-14",
-   "schema_id": "https://kazna-gov.ru/#e-soglashenie-subsidii",
-   "scores": {
-    "authority": 21,
-    "coverage": 100,
-    "connectivity": 93,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -1902,7 +1902,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-kazn-monitoring",
    "scores": {
-    "authority": 20,
+    "authority": 22,
     "coverage": 100,
     "connectivity": 87,
     "citation": 100,
@@ -1951,7 +1951,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-obs",
    "scores": {
-    "authority": 20,
+    "authority": 22,
     "coverage": 67,
     "connectivity": 83,
     "citation": 100,
@@ -2002,7 +2002,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-kody-9xxx",
    "scores": {
-    "authority": 20,
+    "authority": 22,
     "coverage": 83,
     "connectivity": 83,
     "citation": 100,
@@ -2053,7 +2053,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-upd-akt",
    "scores": {
-    "authority": 19,
+    "authority": 21,
     "coverage": 83,
     "connectivity": 87,
     "citation": 100,
@@ -2101,7 +2101,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-porog-ks",
    "scores": {
-    "authority": 18,
+    "authority": 20,
     "coverage": 50,
     "connectivity": 77,
     "citation": 100,
@@ -2146,7 +2146,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-zakon-budget",
    "scores": {
-    "authority": 18,
+    "authority": 20,
     "coverage": 50,
     "connectivity": 70,
     "citation": 100,
@@ -2189,7 +2189,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-raschetnyy-schet",
    "scores": {
-    "authority": 16,
+    "authority": 17,
     "coverage": 50,
     "connectivity": 63,
     "citation": 100,
@@ -2245,7 +2245,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-vozvrat-platezha",
    "scores": {
-    "authority": 15,
+    "authority": 16,
     "coverage": 100,
     "connectivity": 80,
     "citation": 100,
@@ -2292,7 +2292,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-vypiska-ls",
    "scores": {
-    "authority": 15,
+    "authority": 16,
     "coverage": 67,
     "connectivity": 67,
     "citation": 100,
@@ -2354,7 +2354,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-otzyv-rasporyazheniya",
    "scores": {
-    "authority": 14,
+    "authority": 15,
     "coverage": 83,
     "connectivity": 77,
     "citation": 100,
@@ -2407,7 +2407,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-registratsiya-eb",
    "scores": {
-    "authority": 14,
+    "authority": 15,
     "coverage": 100,
     "connectivity": 70,
     "citation": 100,
@@ -2454,7 +2454,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-kontinent-tls",
    "scores": {
-    "authority": 13,
+    "authority": 14,
     "coverage": 67,
     "connectivity": 57,
     "citation": 100,
@@ -2501,7 +2501,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-rekvizity-ks",
    "scores": {
-    "authority": 13,
+    "authority": 14,
     "coverage": 67,
     "connectivity": 60,
     "citation": 100,
@@ -2551,7 +2551,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-vidy-tsen-goz",
    "scores": {
-    "authority": 13,
+    "authority": 14,
     "coverage": 67,
     "connectivity": 63,
     "citation": 100,
@@ -2601,7 +2601,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-kriptopro",
    "scores": {
-    "authority": 13,
+    "authority": 14,
     "coverage": 83,
     "connectivity": 60,
     "citation": 100,
@@ -2653,7 +2653,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-fk",
    "scores": {
-    "authority": 12,
+    "authority": 13,
     "coverage": 83,
     "connectivity": 60,
     "citation": 100,
@@ -2705,7 +2705,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-rezervirovanie-ls",
    "scores": {
-    "authority": 12,
+    "authority": 13,
     "coverage": 100,
     "connectivity": 60,
     "citation": 100,
@@ -2755,7 +2755,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-zakrytie-ls",
    "scores": {
-    "authority": 12,
+    "authority": 13,
     "coverage": 83,
     "connectivity": 60,
     "citation": 100,
@@ -2803,7 +2803,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-neisp-ostatok",
    "scores": {
-    "authority": 12,
+    "authority": 13,
     "coverage": 67,
     "connectivity": 57,
     "citation": 100,
@@ -2852,9 +2852,61 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-norma-pribyli",
    "scores": {
-    "authority": 12,
+    "authority": 13,
     "coverage": 67,
     "connectivity": 57,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "poluchatel-subsidii",
+   "type": [
+    "term"
+   ],
+   "name": "Получатель субсидии",
+   "aliases": [
+    "получатель гранта",
+    "получатель целевых средств"
+   ],
+   "summary": "Получатель субсидии — организация или ИП, заключившие соглашение о предоставлении субсидии. При казначейском сопровождении получатель несёт полный набор обязанностей участника КС: лицевой счёт, Сведения, санкционируемые платежи, отчёт о достижении результатов — плюс риск возврата субсидии при нарушениях.",
+   "citation": "Сторона соглашения о субсидии, распоряжающаяся целевыми средствами под контролем казначейства и распорядителя.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/poluchatel-subsidii/",
+     "title": "Получатель субсидии"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "subsidiya",
+     "soglashenie-subsidii",
+     "nubp"
+    ],
+    "REQUIRES_DOC": [
+     "komplekt-subsidii"
+    ],
+    "SEE_ERROR": [
+     "err-subsidiya-rashody"
+    ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226"
+    ],
+    "MONETIZED_BY": [
+     "service-subsidii"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
+    ]
+   },
+   "updated": "2026-07-14",
+   "schema_id": "https://kazna-gov.ru/#e-poluchatel-subsidii",
+   "scores": {
+    "authority": 13,
+    "coverage": 100,
+    "connectivity": 60,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -2908,7 +2960,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-platezh",
    "scores": {
-    "authority": 12,
+    "authority": 13,
     "coverage": 100,
     "connectivity": 73,
     "citation": 100,
@@ -3107,7 +3159,7 @@
      "law-prikaz-minfina-214n"
     ],
     "MONETIZED_BY": [
-     "service-conduct"
+     "service-subsidii"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
@@ -3118,58 +3170,6 @@
    "scores": {
     "authority": 11,
     "coverage": 83,
-    "connectivity": 57,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "poluchatel-subsidii",
-   "type": [
-    "term"
-   ],
-   "name": "Получатель субсидии",
-   "aliases": [
-    "получатель гранта",
-    "получатель целевых средств"
-   ],
-   "summary": "Получатель субсидии — организация или ИП, заключившие соглашение о предоставлении субсидии. При казначейском сопровождении получатель несёт полный набор обязанностей участника КС: лицевой счёт, Сведения, санкционируемые платежи, отчёт о достижении результатов — плюс риск возврата субсидии при нарушениях.",
-   "citation": "Сторона соглашения о субсидии, распоряжающаяся целевыми средствами под контролем казначейства и распорядителя.",
-   "pages": [
-    {
-     "layer": "term",
-     "url": "/glossary/poluchatel-subsidii/",
-     "title": "Получатель субсидии"
-    }
-   ],
-   "relations": {
-    "RELATED_TERM": [
-     "subsidiya",
-     "soglashenie-subsidii",
-     "nubp"
-    ],
-    "REQUIRES_DOC": [
-     "komplekt-subsidii"
-    ],
-    "SEE_ERROR": [
-     "err-subsidiya-rashody"
-    ],
-    "REGULATED_BY": [
-     "law-bk-rf-st-2422224226"
-    ],
-    "MONETIZED_BY": [
-     "service-conduct"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
-    ]
-   },
-   "updated": "2026-07-14",
-   "schema_id": "https://kazna-gov.ru/#e-poluchatel-subsidii",
-   "scores": {
-    "authority": 11,
-    "coverage": 100,
     "connectivity": 57,
     "citation": 100,
     "aiReadiness": 100,
@@ -3220,7 +3220,7 @@
      "/blog/akt-schet-upd-pri-kaznachejskom-soprovozhdenii/"
     ]
    },
-   "updated": "2026-07-14",
+   "updated": "2026-08-11",
    "schema_id": "https://kazna-gov.ru/#e-upd",
    "scores": {
     "authority": 11,
@@ -3485,7 +3485,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-fns",
    "scores": {
-    "authority": 8,
+    "authority": 9,
     "coverage": 100,
     "connectivity": 50,
     "citation": 100,
@@ -3533,7 +3533,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-psb",
    "scores": {
-    "authority": 8,
+    "authority": 9,
     "coverage": 67,
     "connectivity": 43,
     "citation": 100,
@@ -3576,7 +3576,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-eks",
    "scores": {
-    "authority": 8,
+    "authority": 9,
     "coverage": 50,
     "connectivity": 40,
     "citation": 100,
@@ -3624,7 +3624,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-kod-71",
    "scores": {
-    "authority": 8,
+    "authority": 9,
     "coverage": 67,
     "connectivity": 43,
     "citation": 100,
@@ -3677,7 +3677,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-priostanovlenie",
    "scores": {
-    "authority": 8,
+    "authority": 9,
     "coverage": 100,
     "connectivity": 53,
     "citation": 100,
@@ -3732,7 +3732,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-vp-mo",
    "scores": {
-    "authority": 7,
+    "authority": 8,
     "coverage": 100,
     "connectivity": 50,
     "citation": 100,
@@ -3781,7 +3781,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-nubp",
    "scores": {
-    "authority": 7,
+    "authority": 8,
     "coverage": 67,
     "connectivity": 47,
     "citation": 100,
@@ -3830,7 +3830,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-kofk",
    "scores": {
-    "authority": 7,
+    "authority": 8,
     "coverage": 67,
     "connectivity": 43,
     "citation": 100,
@@ -3883,7 +3883,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-eis",
    "scores": {
-    "authority": 6,
+    "authority": 7,
     "coverage": 83,
     "connectivity": 47,
     "citation": 100,
@@ -3930,7 +3930,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-rasshirennoe-ks",
    "scores": {
-    "authority": 6,
+    "authority": 7,
     "coverage": 67,
     "connectivity": 37,
     "citation": 100,
@@ -3977,7 +3977,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-bank-soprovozhdenie",
    "scores": {
-    "authority": 6,
+    "authority": 7,
     "coverage": 67,
     "connectivity": 40,
     "citation": 100,
@@ -4024,7 +4024,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-limit-ks",
    "scores": {
-    "authority": 6,
+    "authority": 7,
     "coverage": 67,
     "connectivity": 40,
     "citation": 100,
@@ -4075,7 +4075,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-reestr-kontraktov",
    "scores": {
-    "authority": 6,
+    "authority": 7,
     "coverage": 83,
     "connectivity": 43,
     "citation": 100,
@@ -4122,7 +4122,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-vozvrat-avansa",
    "scores": {
-    "authority": 6,
+    "authority": 7,
     "coverage": 67,
     "connectivity": 40,
     "citation": 100,
@@ -4171,7 +4171,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-doverennost-ufk",
    "scores": {
-    "authority": 6,
+    "authority": 7,
     "coverage": 83,
     "connectivity": 40,
     "citation": 100,
@@ -4217,12 +4217,61 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-kod-tselevyh",
    "scores": {
-    "authority": 6,
+    "authority": 7,
     "coverage": 67,
     "connectivity": 37,
     "citation": 100,
     "aiReadiness": 100,
     "density": 73
+   }
+  },
+  {
+   "id": "otchet-subsidii",
+   "type": [
+    "term"
+   ],
+   "name": "Отчёт об использовании субсидии",
+   "aliases": [
+    "отчет по субсидии",
+    "отчет о достижении результатов"
+   ],
+   "summary": "Отчёт об использовании субсидии — периодическая отчётность получателя перед распорядителем: о расходах (использовании средств) и о достижении результатов (показателей) по соглашению. Формы и сроки задаёт соглашение; подача обычно через ГИИС «Электронный бюджет». Нарушение отчётности — основание требовать возврат субсидии.",
+   "citation": "Двухслойная отчётность по субсидии: деньги (куда потрачены) + результат (что достигнуто). Ключевой инструмент контроля соглашения.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/otchet-ob-ispolzovanii-subsidii/",
+     "title": "Отчёт об использовании субсидии"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "subsidiya",
+     "soglashenie-subsidii",
+     "svedeniya-ssu"
+    ],
+    "REQUIRES_DOC": [
+     "komplekt-subsidii"
+    ],
+    "SEE_ERROR": [
+     "err-subsidiya-rashody"
+    ],
+    "MONETIZED_BY": [
+     "service-subsidii"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
+    ]
+   },
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-otchet-subsidii",
+   "scores": {
+    "authority": 7,
+    "coverage": 83,
+    "connectivity": 40,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 80
    }
   },
   {
@@ -4272,7 +4321,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-prikaz-214n",
    "scores": {
-    "authority": 5,
+    "authority": 6,
     "coverage": 100,
     "connectivity": 43,
     "citation": 100,
@@ -4318,61 +4367,12 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-raskhodnaya-deklaratsiya",
    "scores": {
-    "authority": 5,
+    "authority": 6,
     "coverage": 67,
     "connectivity": 33,
     "citation": 100,
     "aiReadiness": 100,
     "density": 67
-   }
-  },
-  {
-   "id": "otchet-subsidii",
-   "type": [
-    "term"
-   ],
-   "name": "Отчёт об использовании субсидии",
-   "aliases": [
-    "отчет по субсидии",
-    "отчет о достижении результатов"
-   ],
-   "summary": "Отчёт об использовании субсидии — периодическая отчётность получателя перед распорядителем: о расходах (использовании средств) и о достижении результатов (показателей) по соглашению. Формы и сроки задаёт соглашение; подача обычно через ГИИС «Электронный бюджет». Нарушение отчётности — основание требовать возврат субсидии.",
-   "citation": "Двухслойная отчётность по субсидии: деньги (куда потрачены) + результат (что достигнуто). Ключевой инструмент контроля соглашения.",
-   "pages": [
-    {
-     "layer": "term",
-     "url": "/glossary/otchet-ob-ispolzovanii-subsidii/",
-     "title": "Отчёт об использовании субсидии"
-    }
-   ],
-   "relations": {
-    "RELATED_TERM": [
-     "subsidiya",
-     "soglashenie-subsidii",
-     "svedeniya-ssu"
-    ],
-    "REQUIRES_DOC": [
-     "komplekt-subsidii"
-    ],
-    "SEE_ERROR": [
-     "err-subsidiya-rashody"
-    ],
-    "MONETIZED_BY": [
-     "service-conduct"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
-    ]
-   },
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-otchet-subsidii",
-   "scores": {
-    "authority": 5,
-    "coverage": 83,
-    "connectivity": 37,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 73
    }
   },
   {
@@ -4414,7 +4414,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-minfin",
    "scores": {
-    "authority": 4,
+    "authority": 5,
     "coverage": 67,
     "connectivity": 33,
     "citation": 100,
@@ -4461,7 +4461,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-finorgan",
    "scores": {
-    "authority": 4,
+    "authority": 5,
     "coverage": 67,
     "connectivity": 30,
     "citation": 100,
@@ -4506,7 +4506,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-sufd",
    "scores": {
-    "authority": 4,
+    "authority": 5,
     "coverage": 50,
     "connectivity": 30,
     "citation": 100,
@@ -4555,7 +4555,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-opk",
    "scores": {
-    "authority": 4,
+    "authority": 5,
     "coverage": 67,
     "connectivity": 37,
     "citation": 100,
@@ -4602,7 +4602,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-opornyy-bank",
    "scores": {
-    "authority": 4,
+    "authority": 5,
     "coverage": 67,
     "connectivity": 30,
     "citation": 100,
@@ -4654,7 +4654,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-pryamoy-platezh",
    "scores": {
-    "authority": 4,
+    "authority": 5,
     "coverage": 100,
     "connectivity": 37,
     "citation": 100,
@@ -4705,7 +4705,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-bk-rf",
    "scores": {
-    "authority": 4,
+    "authority": 5,
     "coverage": 83,
     "connectivity": 33,
     "citation": 100,
@@ -4751,7 +4751,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-prom-otchetnost-goz",
    "scores": {
-    "authority": 4,
+    "authority": 5,
     "coverage": 67,
     "connectivity": 30,
     "citation": 100,
@@ -5565,7 +5565,7 @@
      "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
     ],
     "MONETIZED_BY": [
-     "service-conduct"
+     "service-subsidii"
     ],
     "EXPLAINED_BY_ARTICLE": [
      "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
