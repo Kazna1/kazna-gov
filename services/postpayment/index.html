@@ -3264,4 +3264,18 @@ fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Ty
 <a class="kg-tg-fab" href="https://t.me/kaznagovru" rel="noopener" aria-label="Написать в Telegram" title="Написать в Telegram"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71l-4.14-3.05-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></a>
 
 <style id="kg-oxguard">@media(max-width:768px){html,body{overflow-x:hidden;max-width:100%}}</style>
+<!-- CRO item4: сквозной CTA на страницах услуг ведёт на заявку услуги, а не на платный аудит -->
+<script>
+(function(){
+  var t=document.getElementById('form')||document.querySelector('form[novalidate]')||document.querySelector('form');
+  if(!t) return;
+  if(!t.id) t.id='svc-lead-form';
+  var href='#'+t.id;
+  document.querySelectorAll('.kznav__cta,.kzdrawer__cta,.kzfoot__cta-btn').forEach(function(a){
+    a.setAttribute('href',href);
+    a.setAttribute('data-cta-intent','service_conversion');
+    for(var i=0;i<a.childNodes.length;i++){var n=a.childNodes[i];if(n.nodeType===3&&n.textContent.trim()){n.textContent='Оставить заявку';break;}}
+  });
+})();
+</script>
 </body> </html>

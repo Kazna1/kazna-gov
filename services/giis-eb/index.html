@@ -846,5 +846,19 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
   });
 })();
 </script>
+<!-- CRO item4: сквозной CTA на страницах услуг ведёт на заявку услуги, а не на платный аудит -->
+<script>
+(function(){
+  var t=document.getElementById('form')||document.querySelector('form[novalidate]')||document.querySelector('form');
+  if(!t) return;
+  if(!t.id) t.id='svc-lead-form';
+  var href='#'+t.id;
+  document.querySelectorAll('.kznav__cta,.kzdrawer__cta,.kzfoot__cta-btn').forEach(function(a){
+    a.setAttribute('href',href);
+    a.setAttribute('data-cta-intent','service_conversion');
+    for(var i=0;i<a.childNodes.length;i++){var n=a.childNodes[i];if(n.nodeType===3&&n.textContent.trim()){n.textContent='Оставить заявку';break;}}
+  });
+})();
+</script>
 </body>
 </html>
