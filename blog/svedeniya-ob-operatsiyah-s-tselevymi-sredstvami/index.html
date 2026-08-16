@@ -17,7 +17,7 @@ _tmr.push({id: "3423058", type: "pageView", start: (new Date()).getTime()});
   var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
   ts.src = "https://top-fwz1.mail.ru/js/code.js";
   var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
-  if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+  var idle=w.requestIdleCallback||function(c){setTimeout(c,4000)}; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", function(){idle(f)}, false); } else { idle(f); }
 })(document, window, "tmr-code");
 </script>
 <noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3423058;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript>
@@ -492,7 +492,7 @@ _tmr.push({id: "3423058", type: "pageView", start: (new Date()).getTime()});
 .kg-h .kgh__sub{ display:flex !important; align-items:center; gap:6px; font-family:'JetBrains Mono',ui-monospace,monospace; font-size:9.5px; font-weight:500; letter-spacing:.12em; color:var(--hd-ink-2); text-transform:uppercase; }
 .kg-h .kgh__dot{ width:5px; height:5px; border-radius:50%; background:var(--hd-mint); animation:kgh-pulse 2.2s ease-out infinite !important; }
 </style>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&subset=latin,cyrillic&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&subset=latin,cyrillic&display=swap" rel="stylesheet"><style id="kgFontFallback">@font-face{font-family:"Lora Fb";src:local("Georgia");size-adjust:102.9%;ascent-override:98%;descent-override:27%;line-gap-override:0%}@font-face{font-family:"Inter Fb";src:local("Arial");size-adjust:107.06%;ascent-override:90.49%;descent-override:22.56%;line-gap-override:0%}</style>
 <style id="kzlogo-css">/* Единый анимированный логотип «Казна» (канон с главной, R1.07) */
 .kzlogo{position:relative;isolation:isolate;padding:4px 12px 4px 8px;border-radius:10px;transition:background .25s;text-decoration:none}
 .kzlogo:hover{background:rgba(10,22,18,.04)}
@@ -1011,7 +1011,7 @@ html body #kghdr4 .kghdr4__phone:visited {
 #kgHeader, #kgHeader *, #kgHeader *::before, #kgHeader *::after,
 #kgSkipLink {
   box-sizing: border-box; margin: 0; padding: 0;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: 'Inter','Inter Fb',-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
 }
 
@@ -1126,7 +1126,7 @@ html body #kgSkipLink{ color: #FAF6EC !important; }
   background: var(--kgh-mint);
 }
 #kgHeader .kg-h__logo-tag{
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter','Inter Fb',Arial,sans-serif;
   font-size: 10px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase;
   color: var(--kgh-ink-3) !important;
 }
@@ -1270,7 +1270,7 @@ html[data-theme="dark"] #kgHeader .kg-h__phone:hover{ background: rgba(31,168,13
   background: rgba(233,75,60,0.10); color: var(--kgh-max) !important; border-color: var(--kgh-max);
 }
 #kgHeader .kg-h__soc--max .kg-h__max-text{
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter','Inter Fb',Arial,sans-serif;
   font-size: 11px; font-weight: 800; letter-spacing: 0.02em;
 }
 
@@ -1590,7 +1590,7 @@ html[data-theme="dark"] #kgHeader .kg-h__sun{ display: block; }
   --kg-r-lg: 22px;
   --kg-r-xl: 28px;
 
-  --kg-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --kg-sans: 'Inter','Inter Fb',-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   --kg-serif: 'Lora', 'PT Serif', Georgia, 'Times New Roman', serif;
   --kg-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
 
@@ -5196,7 +5196,7 @@ html[data-theme="dark"] #kgHeader .kg-h__sun{ display: block; }
     font-size: 11pt !important;
     line-height: 1.55 !important;
     color: #000 !important;
-    font-family: 'Lora', Georgia, serif !important;
+    font-family: 'Lora','Lora Fb',Georgia, serif !important;
   }
   .kg-hero{
     margin: 0 0 18pt 0 !important;
@@ -5290,7 +5290,7 @@ html[data-theme="dark"] #kgHeader .kg-h__sun{ display: block; }
     margin-top: 24pt;
     padding-top: 8pt;
     border-top: 0.5pt solid #000;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter','Inter Fb',Arial,sans-serif;
     font-size: 8pt;
     color: #555;
   }
