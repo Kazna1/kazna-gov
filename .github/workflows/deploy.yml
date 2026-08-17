@@ -18,11 +18,12 @@ jobs:
           username: ${{ secrets.FORNEX_USER }}
           key: ${{ secrets.FORNEX_SSH_KEY }}
           port: ${{ secrets.FORNEX_PORT }}
+          command_timeout: 20m
           script: |
             set -e
             cd ~
             rm -rf kazna_src
-            git clone -q https://github.com/Kazna1/kazna-gov.git kazna_src
+            git clone -q --depth 1 --single-branch --branch main https://github.com/Kazna1/kazna-gov.git kazna_src
             rsync -a --delete --exclude='.git' kazna_src/ ${{ secrets.FORNEX_PATH }}/
             echo "deployed: $(cd kazna_src && git rev-parse --short HEAD)"
 
