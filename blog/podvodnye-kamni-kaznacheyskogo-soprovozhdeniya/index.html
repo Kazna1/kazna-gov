@@ -1009,16 +1009,9 @@ html body #kghdr4 .kghdr4__phone:visited {
   });
   document.addEventListener('keydown',function(e){if(e.key==='Escape')toggle(true)});
 
-  /* ── Goal tracking ── */
-  document.querySelectorAll('[data-goal]').forEach(function(el){
-    el.addEventListener('click',function(){
-      var p={};
-      if(el.dataset.service)p.service=el.dataset.service;
-      if(el.dataset.nav)p.nav=el.dataset.nav;
-      if(el.dataset.social)p.social=el.dataset.social;
-      goal(el.dataset.goal,p);
-    });
-  });
+  /* ── Goal tracking ── перенесено в универсальный делегированный трекер
+     ниже по странице (document click → closest('[data-goal]')).
+     Локальный цикл удалён: дублировал отправку цели. ── */
 
 })();
 </script>
