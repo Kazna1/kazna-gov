@@ -175,13 +175,52 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Article",
-      "@id": "https://kazna-gov.ru/uslugi#article",
-      "headline": "Услуги казначейского сопровождения — что входит, цены, сроки",
+      "@type": "Service",
+      "@id": "https://kazna-gov.ru/uslugi#service",
+      "name": "Услуги казначейского сопровождения госконтрактов",
+      "serviceType": "Казначейское сопровождение",
+      "areaServed": {"@type": "Country", "name": "Россия"},
+      "provider": {
+        "@type": "Organization",
+        "name": "Казна",
+        "url": "https://kazna-gov.ru/",
+        "telephone": "+7 495 128-32-46"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "RUB",
+        "lowPrice": "9900",
+        "highPrice": "99000",
+        "offerCount": "6",
+        "url": "https://kazna-gov.ru/stoimost",
+        "availability": "https://schema.org/InStock"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Услуги казначейского сопровождения 2026",
+        "itemListElement": [
+          {"@type": "Offer", "name": "Разбор контракта", "price": "9900", "priceCurrency": "RUB", "url": "https://kazna-gov.ru/stoimost", "availability": "https://schema.org/InStock", "itemOffered": {"@type": "Service", "name": "Разбор контракта на риски казначейского сопровождения"}},
+          {"@type": "Offer", "name": "Резерв счёта на тендер", "price": "19000", "priceCurrency": "RUB", "url": "https://kazna-gov.ru/services/reserve", "availability": "https://schema.org/InStock", "itemOffered": {"@type": "Service", "name": "Резервирование лицевого счёта в казначействе"}},
+          {"@type": "Offer", "name": "Открытие лицевого счёта под ключ", "price": "29000", "priceCurrency": "RUB", "url": "https://kazna-gov.ru/services/open", "availability": "https://schema.org/InStock", "itemOffered": {"@type": "Service", "name": "Открытие лицевого счёта в территориальном органе казначейства"}},
+          {"@type": "Offer", "name": "Разовое сопровождение контракта с постоплатой", "price": "55000", "priceCurrency": "RUB", "url": "https://kazna-gov.ru/services/postpayment", "availability": "https://schema.org/InStock", "itemOffered": {"@type": "Service", "name": "Сопровождение контракта с постоплатой"}},
+          {"@type": "Offer", "name": "Казначейское сопровождение под ключ", "price": "89000", "priceCurrency": "RUB", "url": "https://kazna-gov.ru/services/conduct", "availability": "https://schema.org/InStock", "itemOffered": {"@type": "Service", "name": "Полное казначейское сопровождение контракта"}},
+          {"@type": "Offer", "name": "Восстановление сопровождения", "price": "99000", "priceCurrency": "RUB", "url": "https://kazna-gov.ru/services/vosstanovlenie", "availability": "https://schema.org/InStock", "itemOffered": {"@type": "Service", "name": "Восстановление заблокированного лицевого счёта"}}
+        ]
+      },
       "description": "Все услуги казначейского сопровождения под ключ — 19 000–89 000 ₽. Открытие счёта в УФК за 2 дня, документы, платежи, отчётность. Через нас — 40+ млрд ₽ контрактов.",
       "image": "https://api.kazna-gov.ru/og/uslugi.jpg",
+      "url": "https://kazna-gov.ru/uslugi",
+      "mainEntityOfPage": "https://kazna-gov.ru/uslugi"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://kazna-gov.ru/uslugi#webpage",
+      "url": "https://kazna-gov.ru/uslugi",
+      "name": "Услуги казначейского сопровождения — что входит, цены, сроки",
+      "description": "Все услуги казначейского сопровождения под ключ — 19 000–89 000 ₽. Открытие счёта в УФК за 2 дня, документы, платежи, отчётность.",
+      "primaryImageOfPage": "https://api.kazna-gov.ru/og/uslugi.jpg",
       "datePublished": "2026-05-07T09:00:00+03:00",
-      "dateModified": "2026-07-04T10:00:00+03:00",
+      "dateModified": "2026-08-19T10:00:00+03:00",
       "author": {
         "@id": "https://kazna-gov.ru/expert/stella#person"
       },
@@ -194,11 +233,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
           "url": "https://api.kazna-gov.ru/logo.png"
         }
       },
-      "mainEntityOfPage": "https://kazna-gov.ru/uslugi",
-      "articleSection": "Услуги казначейского сопровождения",
-      "keywords": "услуги казначейского сопровождения, казначейское сопровождение услуги, цены казначейское сопровождение, открытие казначейского счёта, сопровождение под ключ, 44-ФЗ, ГОЗ",
-      "wordCount": 3200,
-      "timeRequired": "PT22M",
+      "mainEntity": {"@id": "https://kazna-gov.ru/uslugi#service"},
       "inLanguage": "ru-RU",
       "isAccessibleForFree": true,
       "speakable": {

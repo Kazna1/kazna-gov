@@ -33,6 +33,11 @@ Header set Cache-Control "public, max-age=31536000, immutable"
 RewriteEngine On
 
 
+# --- /services/<услуга>/ со слэшем — дубль каноничного URL без слэша → 301 ---
+# Обе версии были в индексе Яндекса (напр. /services/postpayment и /services/postpayment/).
+# Правило точечное: разделы, каноничные СО слэшем (/glossary/, /voprosy/, /otzyvy/), не затрагиваются.
+RewriteRule ^services/([a-z0-9-]+)/$ /services/$1 [R=301,L]
+
 # --- /policy — дубль политики ПДн → 301 на канонический URL (R1.05) ---
 RewriteRule ^policy/?$ /personal_data_policy [R=301,L]
 
