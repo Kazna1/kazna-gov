@@ -47,7 +47,7 @@ _tmr.push({id: "3423058", type: "pageView", start: (new Date()).getTime()});
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="ИГК в казначейских платежах — Казна">
 <meta property="article:published_time" content="2026-05-28T09:00:00+03:00">
-<meta property="article:modified_time" content="2026-07-06T10:00:00+03:00">
+<meta property="article:modified_time" content="2026-08-20T12:00:00+03:00">
 <meta property="article:author" content="https://kazna-gov.ru/expert/stella">
 <meta property="article:section" content="Блог">
 <meta property="article:tag" content="ИГК">
@@ -74,7 +74,7 @@ _tmr.push({id: "3423058", type: "pageView", start: (new Date()).getTime()});
       "description": "Где указывается ИГК в платёжках при КС, какие ошибки блокируют платёж, как исправить ИГК в ЕИС и казначействе, сменить ИГК при изменении контракта.",
       "image": "https://api.kazna-gov.ru/og/igk-v-platezhah.jpg",
       "datePublished": "2026-05-28T09:00:00+03:00",
-      "dateModified": "2026-08-11T12:00:00+03:00",
+      "dateModified": "2026-08-20T12:00:00+03:00",
       "author": {
         "@id": "https://kazna-gov.ru/expert/stella#person"
       },
@@ -245,7 +245,7 @@ _tmr.push({id: "3423058", type: "pageView", start: (new Date()).getTime()});
           "@type": "Question",
           "name": "Как формируется ИГК?",
           "acceptedAnswer": { "@type": "Answer", "text": "Если контракт включён в реестр контрактов — ИГК формируется автоматически в ЕИС после регистрации реестровой записи; при наличии гостайны его формирует государственный заказчик; для бюджетных и автономных учреждений — сам заказчик. ИГК сохраняется на весь срок контракта, корректировка не предусмотрена. Посмотреть код можно в карточке контракта в ЕИС или в условиях договора." }
-        }, {"@type":"Question","name":"Что такое ИГК (идентификатор государственного контракта)?","acceptedAnswer":{"@type":"Answer","text":"ИГК — идентификатор государственного контракта, уникальный код, который присваивается контракту с казначейским сопровождением и указывается в каждом платёжном документе, чтобы казначейство связывало операцию с конкретным контрактом. Порядок формирования установлен приказом Минфина России № 205н от 02.12.2021. ИГК проставляют в назначении платежа вместе с кодом направления расходования средств; ошибка или отсутствие ИГК — частая причина возврата платежа."}}
+        }, {"@type":"Question","name":"Что такое ИГК (идентификатор государственного контракта)?","acceptedAnswer":{"@type":"Answer","text":"ИГК — идентификатор государственного контракта, уникальный код, который присваивается контракту с казначейским сопровождением и указывается в каждом платёжном документе, чтобы казначейство связывало операцию с конкретным контрактом. Порядок формирования установлен приказом Минфина России № 205н от 02.12.2021. ИГК проставляют в назначении платежа вместе с кодом направления расходования средств; ошибка или отсутствие ИГК — частая причина возврата платежа."}}, {"@type":"Question","name":"Где найти ИГК контракта?","acceptedAnswer":{"@type":"Answer","text":"ИГК указан в самом государственном контракте (обычно в преамбуле или разделе с реквизитами), в реестре контрактов ЕИС в карточке контракта, а для гособоронзаказа — в договоре с головным исполнителем: по 275-ФЗ ИГК обязателен в каждом договоре кооперации. Если контракт на казначейском сопровождении, ИГК также виден в ГИИС «Электронный бюджет» в Сведениях об операциях с целевыми средствами и в каждом платёжном поручении по контракту."}}
       ]
     },
     {
@@ -5664,7 +5664,7 @@ body .kg-content{
       <div class="kg-hero__label">
         <span>Инструкция</span>
         <span class="kg-hero__label-line"></span>
-        <span>обновлено 19.06.2026</span>
+        <span>обновлено 20.08.2026</span>
       </div>
 
       <div class="kg-hero__meta">
@@ -5719,9 +5719,13 @@ body .kg-content{
           <summary class="kg-changelog__summary">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
             История обновлений
-            <em>обновлено 19.06.2026</em>
+            <em>обновлено 20.08.2026</em>
           </summary>
           <ul class="kg-changelog__list">
+            <li class="kg-changelog__item">
+              <span class="kg-changelog__date">20.08.2026</span>
+              <span class="kg-changelog__what"><b>FAQ «Где найти ИГК»</b>Добавлен прямой ответ, где искать ИГК: контракт, реестр ЕИС, договор кооперации ГОЗ, «Электронный бюджет»; контент показывается без ожидания анимаций.</span>
+            </li>
             <li class="kg-changelog__item">
               <span class="kg-changelog__date">28.05.2026</span>
               <span class="kg-changelog__what"><b>Переработка статьи</b>Материал перенесён на обновлённый шаблон со схемой структуры ИГК, таблицей топ-ошибок и пошаговым алгоритмом исправления. Актуализировано на 2026 год.</span>
@@ -6234,6 +6238,7 @@ body .kg-content{
           </div>
         </details>
 <details class="kg-faq__item kg-reveal" id="faq-neuro-def"><summary class="kg-faq__q">Что такое ИГК (идентификатор государственного контракта)?<span class="kg-faq__icon" aria-hidden="true"></span></summary><div class="kg-faq__a"><p>ИГК — идентификатор государственного контракта, уникальный код, который присваивается контракту с казначейским сопровождением и указывается в каждом платёжном документе, чтобы казначейство связывало операцию с конкретным контрактом. Порядок формирования установлен приказом Минфина России № 205н от 02.12.2021. ИГК проставляют в назначении платежа вместе с кодом направления расходования средств; ошибка или отсутствие ИГК — частая причина возврата платежа.</p></div></details>
+        <details class="kg-faq__item kg-reveal" id="faq-gde-nayti-igk"><summary class="kg-faq__q">Где найти ИГК контракта?<span class="kg-faq__icon" aria-hidden="true"></span></summary><div class="kg-faq__a"><p>ИГК указан в самом государственном контракте (обычно в преамбуле или разделе с реквизитами), в реестре контрактов ЕИС в карточке контракта, а для гособоронзаказа — в договоре с головным исполнителем: по 275-ФЗ ИГК обязателен в каждом договоре кооперации. Если контракт на казначейском сопровождении, ИГК также виден в ГИИС «Электронный бюджет» в Сведениях об операциях с целевыми средствами и в каждом платёжном поручении по контракту.</p></div></details>
 
       </div>
     </section>
@@ -8905,5 +8910,17 @@ window.kgRequestPush = function(){
 })();
 </script>
 <style id="kg-dock-guard">@media (max-width:880px){.kg-dock{max-width:calc(100vw - 16px);box-sizing:border-box;flex-wrap:wrap;justify-content:center;}}</style>
+<noscript><style>.kg-reveal,.kg-ornament{opacity:1!important;transform:none!important}</style></noscript>
+<script>
+(function(){
+  'use strict';
+  function showAll(){
+    document.querySelectorAll('.kg-reveal:not(.is-visible), .kg-ornament:not(.is-visible)')
+      .forEach(function(el){ el.classList.add('is-visible'); });
+  }
+  if (document.readyState === 'complete') { setTimeout(showAll, 2500); }
+  else { window.addEventListener('load', function(){ setTimeout(showAll, 2500); }); }
+})();
+</script>
 </body>
 </html>
