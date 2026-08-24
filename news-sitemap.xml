@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://kazna-gov.ru/novosti/pp-941-kaznacheyskiy-monitoring-s-01-09-2026/</loc>
+    <news:news>
+      <news:publication><news:name>Казна</news:name><news:language>ru</news:language></news:publication>
+      <news:publication_date>2026-08-24</news:publication_date>
+      <news:title>Казначейский мониторинг по новым правилам с 1 сентября 2026 года</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://kazna-gov.ru/novosti/chto-menyaetsya-v-kaznacheyskom-soprovozhdenii-s-01-09-2026/</loc>
     <news:news>
       <news:publication><news:name>Казна</news:name><news:language>ru</news:language></news:publication>
