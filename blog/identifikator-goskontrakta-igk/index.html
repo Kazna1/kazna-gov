@@ -28,8 +28,8 @@ _tmr.push({id: "3423058", type: "pageView", start: (new Date()).getTime()});
 <!-- HEAD-блок (Page Settings → код в HEAD) -->
 <!-- ============================================== -->
 
-<title>ИГК в казначейских платежах 2026 — где указать и как исправить</title>
-<meta name="description" content="Где указывается ИГК в платёжках при КС, какие ошибки блокируют платёж, как исправить ИГК в ЕИС и казначействе, сменить ИГК при изменении контракта.">
+<title>ИГК — идентификатор государственного контракта: что это, структура и где найти</title>
+<meta name="description" content="ИГК — уникальный код государственного контракта: 20 знаков по 44-ФЗ при казначейском сопровождении и 25 знаков по 275-ФЗ ГОЗ. Из чего состоит, где найти в ЕИС и контракте, как указывать в платёжках и что будет при ошибке.">
 <meta name="author" content="Стелла Иванова">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -37,55 +37,52 @@ _tmr.push({id: "3423058", type: "pageView", start: (new Date()).getTime()});
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ru_RU">
 <meta property="og:site_name" content="Казна">
-<meta property="og:title" content="ИГК в казначейских платежах — где указать и как исправить">
-<meta property="og:description" content="Где указывается ИГК в платёжке при КС, частые ошибки в ИГК, как исправить в ЕИС и казначействе, как сменить ИГК при изменении контракта. Пошаговый алгоритм.">
-<meta property="og:url" content="https://kazna-gov.ru/blog/igk-v-platezhah-kaznacheystva">
-<meta property="og:image" content="https://api.kazna-gov.ru/og/igk-v-platezhah.jpg">
-<meta property="og:image:secure_url" content="https://api.kazna-gov.ru/og/igk-v-platezhah.jpg">
+<meta property="og:title" content="ИГК — идентификатор государственного контракта: что это, структура и где найти">
+<meta property="og:description" content="ИГК — уникальный код государственного контракта: 20 знаков по 44-ФЗ при казначейском сопровождении и 25 знаков по 275-ФЗ ГОЗ. Из чего состоит, где найти в ЕИС и контракте, как указывать в платёжках и что будет при ошибке.">
+<meta property="og:url" content="https://kazna-gov.ru/blog/identifikator-goskontrakta-igk">
+<meta property="og:image" content="https://kazna-gov.ru/assets/og-identifikator-igk.jpg">
+<meta property="og:image:secure_url" content="https://kazna-gov.ru/assets/og-identifikator-igk.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="ИГК в казначейских платежах — Казна">
-<meta property="article:published_time" content="2026-05-28T09:00:00+03:00">
-<meta property="article:modified_time" content="2026-08-20T12:00:00+03:00">
+<meta property="og:image:alt" content="Казначейский счёт в 1С — как отразить, вести и сверять, Казна">
+<meta property="article:published_time" content="2026-08-03T09:00:00+03:00">
+<meta property="article:modified_time" content="2026-08-03T09:00:00+03:00">
 <meta property="article:author" content="https://kazna-gov.ru/expert/stella">
-<meta property="article:section" content="Блог">
-<meta property="article:tag" content="ИГК">
-<meta property="article:tag" content="идентификатор государственного контракта">
-<meta property="article:tag" content="казначейские платежи">
-<meta property="article:tag" content="реквизиты">
-<meta property="article:tag" content="ЕИС">
-<meta property="article:tag" content="исправление ИГК">
-<meta property="article:tag" content="казначейское сопровождение">
+<meta property="article:section" content="Платежи и расходы">
+<meta property="article:tag" content="казначейский счёт в 1С">
+<meta property="article:tag" content="бухгалтерский учёт">
+<meta property="article:tag" content="Электронный бюджет">
+<meta property="article:tag" content="лицевой счёт">
+<meta property="article:tag" content="документы">
 <meta property="telegram:channel" content="@kaznagovru">
-<link rel="canonical" href="https://kazna-gov.ru/blog/igk-v-platezhah-kaznacheystva">
-<link rel="alternate" hreflang="ru-RU" href="https://kazna-gov.ru/blog/igk-v-platezhah-kaznacheystva">
-<link rel="alternate" hreflang="x-default" href="https://kazna-gov.ru/blog/igk-v-platezhah-kaznacheystva">
+<link rel="canonical" href="https://kazna-gov.ru/blog/identifikator-goskontrakta-igk">
+<link rel="alternate" hreflang="ru-RU" href="https://kazna-gov.ru/blog/identifikator-goskontrakta-igk">
+<link rel="alternate" hreflang="x-default" href="https://kazna-gov.ru/blog/identifikator-goskontrakta-igk">
 
 <!-- Schema.org -->
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Article",
-      "@id": "https://kazna-gov.ru/blog/igk-v-platezhah-kaznacheystva#article",
-      "headline": "ИГК в казначейских платежах в 2026 году — где указать, какие ошибки блокируют платёж и как их исправить",
-      "description": "Где указывается ИГК в платёжках при КС, какие ошибки блокируют платёж, как исправить ИГК в ЕИС и казначействе, сменить ИГК при изменении контракта.",
-      "image": "https://api.kazna-gov.ru/og/igk-v-platezhah.jpg",
-      "datePublished": "2026-05-28T09:00:00+03:00",
-      "dateModified": "2026-08-25T10:00:00+03:00",
+      "@id": "https://kazna-gov.ru/blog/identifikator-goskontrakta-igk#article",
+      "headline": "ИГК — идентификатор государственного контракта: что это, из чего состоит и где его найти",
+      "description": "ИГК — уникальный код государственного контракта: 20 знаков по 44-ФЗ при казначейском сопровождении и 25 знаков по 275-ФЗ ГОЗ. Из чего состоит, где найти в ЕИС и контракте, как указывать в платёжках и что будет при ошибке.",
+      "image": "https://kazna-gov.ru/assets/og-identifikator-igk.jpg",
+      "datePublished": "2026-08-31",
+      "dateModified": "2026-08-31",
       "author": {
         "@id": "https://kazna-gov.ru/expert/stella#person"
       },
       "publisher": {
         "@id": "https://kazna-gov.ru/#organization"
       },
-      "mainEntityOfPage": "https://kazna-gov.ru/blog/igk-v-platezhah-kaznacheystva",
-      "articleSection": "Блог",
-      "keywords": "ИГК казначейство, ИГК в платёжке, ИГК как исправить, ИГК в ЕИС, смена ИГК при изменении контракта, идентификатор государственного контракта",
-      "wordCount": 2400,
-      "timeRequired": "PT15M",
+      "mainEntityOfPage": "https://kazna-gov.ru/blog/identifikator-goskontrakta-igk",
+      "articleSection": "Платежи и расходы",
+      "keywords": "казначейский счёт в 1с, лицевой счёт казначейства в 1с, казначейский счёт 51 или 55, учёт казначейского счёта в 1с, настройка казначейского счёта 1с бухгалтерия 8.3, сверка с выпиской казначейства, аналитика по контракту игк",
+      "wordCount": 1200,
+      "timeRequired": "PT8M",
       "inLanguage": "ru-RU",
       "isAccessibleForFree": true,
       "speakable": {
@@ -98,7 +95,7 @@ _tmr.push({id: "3423058", type: "pageView", start: (new Date()).getTime()});
       },
       "potentialAction": {
         "@type": "ReadAction",
-        "target": "https://kazna-gov.ru/blog/igk-v-platezhah-kaznacheystva"
+        "target": "https://kazna-gov.ru/blog/identifikator-goskontrakta-igk"
       }
     },
     {
@@ -112,10 +109,9 @@ _tmr.push({id: "3423058", type: "pageView", start: (new Date()).getTime()});
         "44-ФЗ",
         "223-ФЗ",
         "275-ФЗ",
-        "Государственный оборонный заказ",
         "Казначейское сопровождение",
-        "Идентификатор государственного контракта (ИГК) и его использование в казначейских платежах",
-        "Исправление и смена ИГК в ЕИС и казначействе"
+        "Оплата труда за счёт целевых средств",
+        "Санкционирование расходов"
       ],
       "sameAs": [
         "https://t.me/kaznagovru"
@@ -160,7 +156,8 @@ _tmr.push({id: "3423058", type: "pageView", start: (new Date()).getTime()});
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "ИГК в казначейских платежах"
+          "name": "ИГК — идентификатор государственного контракта",
+          "item": "https://kazna-gov.ru/blog/identifikator-goskontrakta-igk"
         }
       ]
     },
@@ -169,359 +166,61 @@ _tmr.push({id: "3423058", type: "pageView", start: (new Date()).getTime()});
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Что такое ИГК и почему казначейство возвращает платёж при ошибке?",
+          "name": "Как расшифровать ИГК?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ИГК — идентификатор государственного контракта, уникальный код, по которому казначейство связывает платёж с конкретным контрактом. При ошибке в ИГК казначейство не может подтвердить связь платежа с обязательством и возвращает распоряжение. Это не «формальность»: для системы ошибочный ИГК означает либо несуществующий контракт, либо другое обязательство."
+            "text": "Идентификатор читается по блокам: в 25-значном ИГК по государственному оборонному заказу первые разряды кодируют годы заключения и окончания контракта, далее идут код государственного заказчика, способ определения поставщика и порядковый номер контракта. В 20-значном идентификаторе при казначейском сопровождении по 44-ФЗ основа — идентификационный код закупки из ЕИС. Точное значение каждого разряда закреплено порядком формирования идентификатора для соответствующего режима."
           }
-        },
-        {
-          "@type": "Question",
-          "name": "Что делать, если у госконтракта поменялся ИГК — как внести изменение в казначействе?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Получить от заказчика письменное уведомление о новом ИГК, сверить с карточкой контракта в ЕИС, обновить ИГК в шаблонах платёжных поручений и распоряжениях в ГИИС ЭБ, согласовать с заказчиком обновлённые сведения об операциях. При необходимости направить в УФК уведомление о смене ИГК с приложением допсоглашения и нового идентификатора."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Как исправить ИГК в ЕИС?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Корректировка ИГК в ЕИС — функция заказчика. Подрядчик направляет заказчику письменный запрос с обоснованием (выписка из контракта, допсоглашение), заказчик вносит корректировку в карточку контракта или информацию об исполнении контракта. После этого подрядчик обновляет ИГК в своих документах и распоряжениях. Самостоятельно править ИГК в ЕИС подрядчик не может."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Что делать, если указанный ИГК в ДО не соответствует условиям исполняемого контракта?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Это расхождение между ДО (документом об обязательстве) и действующим контрактом. Решается на стороне заказчика: подаётся корректировка ДО с правильным ИГК. До устранения расхождения казначейство возвращает любые платежи по этому контракту. Подрядчику нужно направить заказчику запрос на корректировку с приложением действующего контракта и допсоглашений."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Если в договоре указан казначейский счёт, а ИГК не указан — что делать поставщику?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Запросить у заказчика письменное уведомление с актуальным ИГК (берётся из карточки контракта в реестре в ЕИС), при необходимости подписать допсоглашение, в котором ИГК указан явно в реквизитах контракта. Отправлять платёж по этому контракту до получения ИГК нельзя — распоряжение вернётся с замечанием об отсутствии идентификатора."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Что делать, если в информации об исполнении контракта неправильные реквизиты?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Корректировку информации об исполнении контракта в ЕИС вносит заказчик. Подрядчик направляет заказчику письменное обращение с указанием конкретных неверных реквизитов, прикладывает документы-основания и контролирует, чтобы карточка в ЕИС была приведена в соответствие с действующим контрактом до следующего платежа."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "В платёжном поручении на обеспечение исполнения контракта допущена ошибка, признали уклонистами — что делать?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Срочно собрать доказательства фактической оплаты обеспечения (банковская выписка, платёжное поручение), обратиться к заказчику с письменным разъяснением, что ошибка техническая и обеспечение внесено в установленный срок, просить не признавать уклонившимся или отозвать решение. При несогласии заказчика — направить жалобу в ФАС. Параллельно перевыпустить платёжку с корректным ИГК."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Что делать, если поле «сумма в строке 1 таблицы ИГК» в ЕИС не заполняется?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Чаще всего это технический сбой формы ЕИС или несинхронность данных карточки контракта. Решения: подать обращение в техподдержку оператора ЕИС с описанием ошибки и скриншотами, попробовать перевыпуск карточки на стороне заказчика, при срочности — связаться с поддержкой ЕИС по телефону. Самостоятельная правка структуры таблицы ИГК не предусмотрена."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Что такое ИГК?",
-          "acceptedAnswer": { "@type": "Answer", "text": "ИГК (идентификатор государственного контракта) — уникальный аналитический код, который присваивается контракту для идентификации, учёта и контроля. Он позволяет однозначно определить контракт в системе госзакупок и проконтролировать все связанные с ним финансовые операции. Применяется в госконтрактах за счёт бюджета, в договорах по ГОЗ и в соглашениях с казначейским сопровождением." }
         },
         {
           "@type": "Question",
           "name": "Сколько знаков в ИГК?",
-          "acceptedAnswer": { "@type": "Answer", "text": "20 знаков — для контрактов из федерального бюджета и при казначейском сопровождении (приказ Минфина № 205н); 25 знаков — для контрактов из регионального бюджета и по гособоронзаказу (приказ Минобороны и казначейства № 475/13н). В коде зашифрованы данные о заказчике, способе определения поставщика, годах заключения и окончания, порядковом номере." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "По 275-ФЗ (государственный оборонный заказ) идентификатор государственного контракта состоит из 25 разрядов, при казначейском сопровождении по 44-ФЗ — из 20 разрядов. Количество знаков — быстрый способ понять, по какому режиму сопровождается контракт."
+          }
         },
         {
           "@type": "Question",
-          "name": "Как формируется ИГК?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Если контракт включён в реестр контрактов — ИГК формируется автоматически в ЕИС после регистрации реестровой записи; при наличии гостайны его формирует государственный заказчик; для бюджетных и автономных учреждений — сам заказчик. ИГК сохраняется на весь срок контракта, корректировка не предусмотрена. Посмотреть код можно в карточке контракта в ЕИС или в условиях договора." }
-        }, {"@type":"Question","name":"Что такое ИГК (идентификатор государственного контракта)?","acceptedAnswer":{"@type":"Answer","text":"ИГК — идентификатор государственного контракта, уникальный код, который присваивается контракту с казначейским сопровождением и указывается в каждом платёжном документе, чтобы казначейство связывало операцию с конкретным контрактом. Порядок формирования установлен приказом Минфина России № 205н от 02.12.2021. ИГК проставляют в назначении платежа вместе с кодом направления расходования средств; ошибка или отсутствие ИГК — частая причина возврата платежа."}}, {"@type":"Question","name":"Где найти ИГК контракта?","acceptedAnswer":{"@type":"Answer","text":"ИГК указан в самом государственном контракте (обычно в преамбуле или разделе с реквизитами), в реестре контрактов ЕИС в карточке контракта, а для гособоронзаказа — в договоре с головным исполнителем: по 275-ФЗ ИГК обязателен в каждом договоре кооперации. Если контракт на казначейском сопровождении, ИГК также виден в ГИИС «Электронный бюджет» в Сведениях об операциях с целевыми средствами и в каждом платёжном поручении по контракту."}}
-      ]
-    },
-    {
-      "@type": "HowTo",
-      "@id": "https://kazna-gov.ru/blog/igk-v-platezhah-kaznacheystva#howto",
-      "name": "Как исправить ошибочный ИГК в платежах казначейства",
-      "description": "Алгоритм исправления ошибочного ИГК: обнаружить ошибку и определить тип, подготовить документы-основания, внести изменение в ЕИС и в контракт, уведомить казначейство и провести платёж заново.",
-      "totalTime": "P3D",
-      "estimatedCost": {
-        "@type": "MonetaryAmount",
-        "currency": "RUB",
-        "value": "0"
-      },
-      "supply": [
-        {
-          "@type": "HowToSupply",
-          "name": "Уведомление казначейства о возврате или замечание по ИГК"
+          "name": "Кто присваивает ИГК?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Идентификатор формирует государственный заказчик при заключении контракта. Головной исполнитель по гособоронзаказу передаёт ИГК всем соисполнителям по цепочке кооперации — свой идентификатор соисполнители не придумывают, а получают от головного."
+          }
         },
         {
-          "@type": "HowToSupply",
-          "name": "Контракт и действующие допсоглашения"
+          "@type": "Question",
+          "name": "Где взять ИГК для счёта?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ИГК берётся из текста государственного контракта — обычно он указан в преамбуле или реквизитах. Если вы соисполнитель, идентификатор должен быть в вашем контракте с головным исполнителем; если его там нет — запросите у контрагента до выставления счёта, потому что по гособоронзаказу счёт без ИГК не оплатят."
+          }
         },
         {
-          "@type": "HowToSupply",
-          "name": "Документы по проблемному платежу и выгрузка из ЕИС"
-        }
-      ],
-      "tool": [
-        {
-          "@type": "HowToTool",
-          "name": "ЕИС (Единая информационная система в сфере закупок)"
+          "@type": "Question",
+          "name": "ИГК и идентификатор соглашения — одно и то же?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. ИГК присваивается государственному контракту, а идентификатор соглашения — соглашению о предоставлении субсидии; это разные коды с разной структурой, хотя функция похожа: связать платежи с конкретным основанием."
+          }
         },
         {
-          "@type": "HowToTool",
-          "name": "ГИИС «Электронный бюджет» с настроенным рабочим местом"
-        },
-        {
-          "@type": "HowToTool",
-          "name": "Квалифицированная ЭЦП ответственного лица"
-        }
-      ],
-      "step": [
-        {
-          "@type": "HowToStep",
-          "position": 1,
-          "name": "Обнаружить ошибку в ИГК и определить тип",
-          "text": "Сверить ИГК в платёжке, в контракте, в карточке заказчика в ЕИС и в ДО. Определить тип ошибки: опечатка, использован старый ИГК, ИГК не соответствует контракту, ИГК не сформирован вовсе.",
-          "url": "https://kazna-gov.ru/blog/igk-v-platezhah-kaznacheystva#section-3"
-        },
-        {
-          "@type": "HowToStep",
-          "position": 2,
-          "name": "Подготовить документы-основания для исправления",
-          "text": "Собрать пакет: действующий контракт, ДО, переписка с заказчиком, выгрузка из ЕИС. Документы должны подтверждать правильный ИГК и расхождение с тем, что попало в платёжку.",
-          "url": "https://kazna-gov.ru/blog/igk-v-platezhah-kaznacheystva#section-3"
-        },
-        {
-          "@type": "HowToStep",
-          "position": 3,
-          "name": "Внести изменение в ЕИС и в контракт",
-          "text": "Если корень ошибки на стороне заказчика — потребовать корректировку ИГК в ЕИС и в карточке контракта. При необходимости подписать допсоглашение с правильным ИГК.",
-          "url": "https://kazna-gov.ru/blog/igk-v-platezhah-kaznacheystva#section-3"
-        },
-        {
-          "@type": "HowToStep",
-          "position": 4,
-          "name": "Уведомить казначейство и подать корректировку",
-          "text": "Направить в УФК письмо с разъяснением и приложить документы. На основании этого казначейство принимает корректировку платежа или возвращает средства для повторной отправки.",
-          "url": "https://kazna-gov.ru/blog/igk-v-platezhah-kaznacheystva#section-3"
-        },
-        {
-          "@type": "HowToStep",
-          "position": 5,
-          "name": "Провести платёж заново с корректным ИГК",
-          "text": "После корректировки в ЕИС и подтверждения от казначейства сформировать новое распоряжение с правильным ИГК и провести платёж до фактического прохождения.",
-          "url": "https://kazna-gov.ru/blog/igk-v-platezhah-kaznacheystva#section-3"
+          "@type": "Question",
+          "name": "Нужен ли ИГК при субподряде?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. При казначейском сопровождении и по гособоронзаказу идентификатор контракта сквозной: он указывается в контрактах всей кооперации и в каждом платеже по ним, независимо от уровня субподряда."
+          }
         }
       ]
     }
   ]
-}
-</script>
-<style id="kgh-cipher-kf">
-
-/* ====== CIPHER LOGO (как в hero «без возвратов») ====== */
-.kgh__logo {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  text-decoration: none !important;
-  color: var(--hd-ink) !important;
-  flex-shrink: 0;
-  cursor: pointer;
-  padding: 6px 14px 6px 6px;
-  border-radius: 10px;
-  transition: background .25s;
-  isolation: isolate;
-}
-
-.kgh__logo:hover { background: rgba(10, 22, 18, 0.04); }
-
-
-/* Сканнер */
-.kgh__logo::before {
-  content: '';
-  position: absolute;
-  left: 6px; right: 6px;
-  top: 8px;
-  height: 1px;
-  background: linear-gradient(90deg, transparent 0%, rgba(43, 200, 154, 0.55) 50%, transparent 100%);
-  mix-blend-mode: multiply;
-  animation: kgh-scan 4.6s linear infinite;
-  pointer-events: none;
-  z-index: 3;
-}
-
-.kgh__logo:hover .kgh__mark { transform: rotate(-7deg) scale(1.1); box-shadow: 0 10px 32px -10px rgba(43, 200, 154, 0.55); }
-
-.kgh__logo:hover .kgh__mark::before { opacity: 1; }
-
-.kgh__logo:hover .kgh__mark svg { transform: rotate(7deg) scale(1.05); }
-
-
-/* CIPHER WORDMARK */
-.kgh__word-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  line-height: 1;
-}
-
-.kgh__word {
-  position: relative;
-  font-family: 'Inter Tight', system-ui, sans-serif;
-  font-size: 30px;
-  font-weight: 800;
-  letter-spacing: -0.045em;
-  line-height: 0.9;
-  white-space: nowrap;
-  color: var(--hd-ink) !important;
-  transition: font-size .35s;
-}
-
-.kgh.is-scrolled .kgh__word { font-size: 25px; }
-
-
-.kgh__word .b { position: relative; z-index: 1; display: block; color: var(--hd-ink) !important; }
-
-.kgh__word .l, .kgh__word .r {
-  position: absolute; inset: 0;
-  pointer-events: none;
-  font: inherit; letter-spacing: inherit; line-height: inherit;
-  display: block;
-  mix-blend-mode: multiply;
-}
-
-.kgh__word .l { color: var(--hd-mint) !important; animation: kgh-cipher-l 3.4s steps(1) infinite; }
-
-.kgh__word .r { color: var(--hd-warm) !important; opacity: 0.7; animation: kgh-cipher-r 3.4s steps(1) infinite; }
-
-
-/* На hover — постоянный glitch */
-.kgh__logo:hover .kgh__word .l { animation: kgh-cipher-l-fast 0.6s steps(1) infinite; }
-
-.kgh__logo:hover .kgh__word .r { animation: kgh-cipher-r-fast 0.6s steps(1) infinite; }
-
-
-.kgh__sub {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
-  font-size: 9.5px;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  color: var(--hd-ink-2);
-  text-transform: uppercase;
-}
-
-.kgh__dot {
-  width: 5px; height: 5px;
-  border-radius: 50%;
-  background: var(--hd-mint);
-  box-shadow: 0 0 0 0 rgba(43, 200, 154, 0.5);
-  animation: kgh-pulse 2.2s ease-out infinite;
-}
-
-  .kgh__sub { display: none; }
-
-
-  /* Лого крупное, мощное */
-  .kgh__word { font-size: 28px !important; letter-spacing: -0.045em !important; font-weight: 800 !important; }
-
-  .kgh.is-scrolled .kgh__word { font-size: 24px !important; }
-
-  .kgh__sub { display: none !important; }
-
-  .kgh__word { font-size: 26px !important; }
-
-  .kgh.is-scrolled .kgh__word { font-size: 22px !important; }
-
-  .kgh__logo::before,
-  .kgh__word .l, .kgh__word .r,
-  .kgh__dot, .kgh__phone-meta::before { animation: none !important; }
-@keyframes kgh-scan {
-  0% { top: -1px; opacity: 0; }
-  10%, 90% { opacity: 1; }
-  100% { top: calc(100% + 1px); opacity: 0; }
-}
-@keyframes kgh-cipher-l {
-  0%, 88%, 100% { transform: translate(0, 0); }
-  90% { transform: translate(-3px, 1px); }
-  93% { transform: translate(2px, -1px); }
-  96% { transform: translate(-2px, 0); }
-}
-@keyframes kgh-cipher-r {
-  0%, 88%, 100% { transform: translate(0, 0); }
-  90% { transform: translate(3px, -1px); }
-  93% { transform: translate(-2px, 1px); }
-  96% { transform: translate(2px, 0); }
-}
-@keyframes kgh-cipher-l-fast {
-  0%, 100% { transform: translate(0, 0); }
-  20% { transform: translate(-2.5px, 1px); }
-  60% { transform: translate(1.5px, -0.5px); }
-  80% { transform: translate(-1px, 0); }
-}
-@keyframes kgh-cipher-r-fast {
-  0%, 100% { transform: translate(0, 0); }
-  20% { transform: translate(2.5px, -1px); }
-  60% { transform: translate(-1.5px, 0.5px); }
-  80% { transform: translate(1px, 0); }
-}
-@keyframes kgh-pulse {
-  0% { box-shadow: 0 0 0 0 rgba(43, 200, 154, 0.6), 0 0 6px var(--hd-mint); transform: scale(1); }
-  70% { box-shadow: 0 0 0 8px rgba(43, 200, 154, 0), 0 0 6px var(--hd-mint); transform: scale(1); }
-  100% { box-shadow: 0 0 0 0 rgba(43, 200, 154, 0), 0 0 6px var(--hd-mint); transform: scale(1); }
-}</style>
-<style id="kgh-cipher-logo">
-.kg-h{ --hd-ink:#0a1612; --hd-ink-2:rgba(10,22,18,0.62); --hd-mint:#2bc89a; --hd-warm:#ff5a5a; }
-[data-theme="dark"] .kg-h, .kg-h[data-theme="dark"]{ --hd-ink:#e8f0ec; --hd-ink-2:rgba(232,240,236,0.60); --hd-mint:#5af0c0; --hd-warm:#ff7a7a; }
-.kg-h .kgh__word-wrap{ display:flex; flex-direction:column; gap:3px; }
-.kg-h .kgh__word{ position:relative; font-family:'Inter',-apple-system,sans-serif; font-weight:800; font-size:24px; letter-spacing:-.02em; line-height:1; color:var(--hd-ink); }
-.kg-h .kgh__word .b{ position:relative; z-index:1; }
-.kg-h .kgh__word .l{ position:absolute; inset:0; color:var(--hd-mint); animation:kgh-cipher-l 3.4s steps(1) infinite !important; pointer-events:none; }
-.kg-h .kgh__word .r{ position:absolute; inset:0; color:var(--hd-warm); opacity:.7; animation:kgh-cipher-r 3.4s steps(1) infinite !important; pointer-events:none; }
-.kg-h .kgh__sub{ display:flex !important; align-items:center; gap:6px; font-family:'JetBrains Mono',ui-monospace,monospace; font-size:9.5px; font-weight:500; letter-spacing:.12em; color:var(--hd-ink-2); text-transform:uppercase; }
-.kg-h .kgh__dot{ width:5px; height:5px; border-radius:50%; background:var(--hd-mint); animation:kgh-pulse 2.2s ease-out infinite !important; }
-</style>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&subset=latin,cyrillic&display=swap" rel="stylesheet"><style id="kgFontFallback">@font-face{font-family:"Lora Fb";src:local("Georgia");size-adjust:102.9%;ascent-override:98%;descent-override:27%;line-gap-override:0%}@font-face{font-family:"Inter Fb";src:local("Arial");size-adjust:107.06%;ascent-override:90.49%;descent-override:22.56%;line-gap-override:0%}</style>
-<style id="kzlogo-css">/* Единый анимированный логотип «Казна» (канон с главной, R1.07) */
-.kzlogo{position:relative;isolation:isolate;padding:4px 12px 4px 8px;border-radius:10px;transition:background .25s;text-decoration:none}
-.kzlogo:hover{background:rgba(10,22,18,.04)}
-.kzlogo::before{content:'';position:absolute;left:6px;right:6px;top:8px;height:1px;background:linear-gradient(90deg,transparent 0%,rgba(43,200,154,.55) 50%,transparent 100%);mix-blend-mode:multiply;animation:kz-scan 4.6s linear infinite;pointer-events:none;z-index:3}
-@keyframes kz-scan{0%{top:-1px;opacity:0}10%,90%{opacity:1}100%{top:calc(100% + 1px);opacity:0}}
-.kzlogo__word-wrap{display:flex;flex-direction:column;gap:3px;line-height:1}
-.kzlogo__word{position:relative;font-family:'Manrope',-apple-system,system-ui,sans-serif;font-size:22px;font-weight:800;letter-spacing:-.045em;line-height:.9;white-space:nowrap;color:#161718}
-.kzlogo__word .b{position:relative;z-index:1;display:block;color:#161718}
-.kzlogo__word .l,.kzlogo__word .r{position:absolute;inset:0;pointer-events:none;font:inherit;letter-spacing:inherit;line-height:inherit;display:block;mix-blend-mode:multiply}
-.kzlogo__word .l{color:#2bc89a;animation:kz-cipher-l 3.4s steps(1) infinite}
-.kzlogo__word .r{color:#ff5a5a;opacity:.7;animation:kz-cipher-r 3.4s steps(1) infinite}
-.kzlogo:hover .kzlogo__word .l{animation:kz-cipher-l-fast .6s steps(1) infinite}
-.kzlogo:hover .kzlogo__word .r{animation:kz-cipher-r-fast .6s steps(1) infinite}
-@keyframes kz-cipher-l{0%,88%,100%{transform:translate(0,0)}90%{transform:translate(-3px,1px)}93%{transform:translate(2px,-1px)}96%{transform:translate(-2px,0)}}
-@keyframes kz-cipher-r{0%,88%,100%{transform:translate(0,0)}90%{transform:translate(3px,-1px)}93%{transform:translate(-2px,1px)}96%{transform:translate(2px,0)}}
-@keyframes kz-cipher-l-fast{0%,100%{transform:translate(0,0)}20%{transform:translate(-2.5px,1px)}60%{transform:translate(1.5px,-.5px)}80%{transform:translate(-1px,0)}}
-@keyframes kz-cipher-r-fast{0%,100%{transform:translate(0,0)}20%{transform:translate(2.5px,-1px)}60%{transform:translate(-1.5px,.5px)}80%{transform:translate(1px,0)}}
-.kzlogo__sub{display:flex;align-items:center;gap:6px;font-family:ui-monospace,'JetBrains Mono',SFMono-Regular,Menlo,monospace;font-size:8.5px;font-weight:500;letter-spacing:.12em;color:#6b7178;text-transform:uppercase}
-.kzlogo__dot{width:5px;height:5px;border-radius:50%;background:#2bc89a;box-shadow:0 0 0 0 rgba(43,200,154,.5);animation:kz-pulse 2.2s ease-out infinite;flex-shrink:0}
-@keyframes kz-pulse{0%{box-shadow:0 0 0 0 rgba(43,200,154,.6),0 0 6px #2bc89a}70%{box-shadow:0 0 0 8px rgba(43,200,154,0),0 0 6px #2bc89a}100%{box-shadow:0 0 0 0 rgba(43,200,154,0),0 0 6px #2bc89a}}
-@media(prefers-reduced-motion:reduce){.kzlogo::before,.kzlogo__word .l,.kzlogo__word .r,.kzlogo__dot{animation:none!important}}
-</style><script src="/assets/attribution.js?v=20260811" defer></script>
+}</script>
+<script src="/assets/attribution.js?v=20260811" defer></script>
 </head>
 <body>
 <style id="kg-dblheader-fix">#kghdr4{display:none!important}</style>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style id="kgFontFallback">@font-face{font-family:"Lora Fb";src:local("Georgia");size-adjust:102.9%;ascent-override:98%;descent-override:27%;line-gap-override:0%}@font-face{font-family:"Inter Fb";src:local("Arial");size-adjust:107.06%;ascent-override:90.49%;descent-override:22.56%;line-gap-override:0%}</style>
 <style>
 /* ── RESET ── */
 .kghdr4,.kghdr4 *,.kghdr4 *::before,.kghdr4 *::after,
@@ -884,10 +583,25 @@ html body #kghdr4 .kghdr4__phone:visited {
     box-shadow:0 1px 0 rgba(0,0,0,0.05),0 8px 24px rgba(0,0,0,0.07);
   }
 }
+
+.kzlogo{position:relative;isolation:isolate;padding:4px 12px 4px 8px;border-radius:10px;transition:background .25s;text-decoration:none}
+.kzlogo:hover{background:rgba(10,22,18,.04)}
+.kzlogo::before{content:'';position:absolute;left:6px;right:6px;top:8px;height:1px;background:linear-gradient(90deg,transparent 0%,rgba(43,200,154,.55) 50%,transparent 100%);mix-blend-mode:multiply;animation:kz-scan 4.6s linear infinite;pointer-events:none;z-index:3}
+.kzlogo__word-wrap{display:flex;flex-direction:column;gap:3px;line-height:1}
+.kzlogo__word{position:relative;font-family:'Manrope',-apple-system,system-ui,sans-serif;font-size:22px;font-weight:800;letter-spacing:-.045em;line-height:.9;white-space:nowrap;color:#161718}
+.kzlogo__word .b{position:relative;z-index:1;display:block;color:#161718}
+.kzlogo__word .l,.kzlogo__word .r{position:absolute;inset:0;pointer-events:none;font:inherit;letter-spacing:inherit;line-height:inherit;display:block;mix-blend-mode:multiply}
+.kzlogo__word .l{color:#2bc89a;animation:kz-cipher-l 3.4s steps(1) infinite}
+.kzlogo__word .r{color:#ff5a5a;opacity:.7;animation:kz-cipher-r 3.4s steps(1) infinite}
+.kzlogo:hover .kzlogo__word .l{animation:kz-cipher-l-fast .6s steps(1) infinite}
+.kzlogo:hover .kzlogo__word .r{animation:kz-cipher-r-fast .6s steps(1) infinite}
+.kzlogo__sub{display:flex;align-items:center;gap:6px;font-family:ui-monospace,'JetBrains Mono',SFMono-Regular,Menlo,monospace;font-size:8.5px;font-weight:500;letter-spacing:.12em;color:#6b7178;text-transform:uppercase}
+.kzlogo__dot{width:5px;height:5px;border-radius:50%;background:#2bc89a;box-shadow:0 0 0 0 rgba(43,200,154,.5);animation:kz-pulse 2.2s ease-out infinite;flex-shrink:0}
+.kzlogo::before,.kzlogo__word .l,.kzlogo__word .r,.kzlogo__dot{animation:none!important}
 </style>
 <header class="kghdr4" id="kghdr4"> <div class="kghdr4__inner"> <!-- LOGO --> <a href="/" class="kghdr4__logo kzlogo" data-goal="header_logo_click"> <span class="kzlogo__word-wrap"> <span class="kzlogo__word"><span class="b">Казна</span><span class="l" aria-hidden="true">Казна</span><span class="r" aria-hidden="true">Казна</span></span> <span class="kzlogo__sub"><span class="kzlogo__dot" aria-hidden="true"></span>Казначейское сопровождение</span> </span> </a> <!-- DESKTOP NAV --> <ul class="kghdr4__nav"> <!-- Услуги --> <li class="kghdr4__nav-item"> <button class="kghdr4__nav-link" type="button" aria-haspopup="true" aria-expanded="false">
           Услуги
-          <svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4"/></svg> </button> <div class="kghdr4__dropdown" role="menu"> <a href="/services/open" class="kghdr4__dd-row" data-goal="nav_click" data-service="open" role="menuitem"> <div class="kghdr4__dd-icon" style="background:rgba(26,79,214,0.08);color:#1A4FD6"> <svg viewBox="0 0 20 20"><rect x="3" y="5" width="14" height="11" rx="2.5"/><path d="M7 5V4a3 3 0 016 0v1"/><circle cx="10" cy="10.5" r="1.5" fill="currentColor" stroke="none"/></svg> </div> <div class="kghdr4__dd-body"> <span class="kghdr4__dd-name">Открытие счёта</span> <span class="kghdr4__dd-desc">Под ключ за 2 рабочих дня</span> </div> <span class="kghdr4__dd-price">29 000 ₽</span> </a> <a href="/services/conduct" class="kghdr4__dd-row" data-goal="nav_click" data-service="conduct" role="menuitem"> <div class="kghdr4__dd-icon" style="background:rgba(5,150,106,0.08);color:#05966A"> <svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"/><path d="M7 10l2 2 4-4"/></svg> </div> <div class="kghdr4__dd-body"> <span class="kghdr4__dd-name">Казначейское сопровождение</span> <span class="kghdr4__dd-desc">Ведение счёта, платежи, контроль</span> </div> <span class="kghdr4__dd-price">89 000 ₽/мес</span> </a> <div class="kghdr4__dd-divider"></div> <a href="/services/reserve" class="kghdr4__dd-row" data-goal="nav_click" data-service="reserve" role="menuitem"> <div class="kghdr4__dd-icon" style="background:rgba(180,83,9,0.08);color:#B45309"> <svg viewBox="0 0 20 20"><rect x="4" y="8" width="12" height="9" rx="2.5"/><path d="M7 8V6a3 3 0 016 0v2"/></svg> </div> <div class="kghdr4__dd-body"> <span class="kghdr4__dd-name">Резервный счёт</span> <span class="kghdr4__dd-desc">Резервирование под госконтракт</span> </div> <span class="kghdr4__dd-price">от 19 000 ₽</span> </a> <a href="/services/postpayment" class="kghdr4__dd-row" data-goal="nav_click" data-service="postpayment" role="menuitem"> <div class="kghdr4__dd-icon" style="background:rgba(109,40,217,0.08);color:#7C3AED"> <svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"/><path d="M10 6v4l2.5 2.5"/></svg> </div> <div class="kghdr4__dd-body"> <span class="kghdr4__dd-name">Постоплата по контракту</span> <span class="kghdr4__dd-desc">Платите после получения результата</span> </div> <span class="kghdr4__dd-price">55 000 ₽</span> </a> </div> </li> <li><a href="/#about"     class="kghdr4__nav-link" data-goal="nav_click" data-nav="about">О компании</a></li> <li><a href="/#guarantee" class="kghdr4__nav-link" data-goal="nav_click" data-nav="guarantee">Гарантия</a></li> <li><a href="/blog"       class="kghdr4__nav-link" data-goal="nav_click" data-nav="blog">Блог</a></li> <li><a href="/#contacts"  class="kghdr4__nav-link" data-goal="nav_click" data-nav="contacts">Контакты</a></li> </ul> <!-- RIGHT --> <div class="kghdr4__right"> <a href="https://t.me/kaznagovru" class="kghdr4__social kghdr4__social--tg"
+          <svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4"/></svg> </button> <div class="kghdr4__dropdown" role="menu"> <a href="/services/open" class="kghdr4__dd-row" data-goal="nav_click" data-service="open" role="menuitem"> <div class="kghdr4__dd-icon" style="background:rgba(26,79,214,0.08);color:#1A4FD6"> <svg viewBox="0 0 20 20"><rect x="3" y="5" width="14" height="11" rx="2.5"/><path d="M7 5V4a3 3 0 016 0v1"/><circle cx="10" cy="10.5" r="1.5" fill="currentColor" stroke="none"/></svg> </div> <div class="kghdr4__dd-body"> <span class="kghdr4__dd-name">Открытие счёта</span> <span class="kghdr4__dd-desc">Под ключ за 2 рабочих дня</span> </div> <span class="kghdr4__dd-price">29 000 ₽</span> </a> <a href="/services/conduct" class="kghdr4__dd-row" data-goal="nav_click" data-service="conduct" role="menuitem"> <div class="kghdr4__dd-icon" style="background:rgba(5,150,106,0.08);color:#05966A"> <svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"/><path d="M7 10l2 2 4-4"/></svg> </div> <div class="kghdr4__dd-body"> <span class="kghdr4__dd-name">Казначейское сопровождение</span> <span class="kghdr4__dd-desc">Ведение счёта, платежи, контроль</span> </div> <span class="kghdr4__dd-price">89 000 ₽/мес</span> </a> <div class="kghdr4__dd-divider"></div> <a href="/services/reserve" class="kghdr4__dd-row" data-goal="nav_click" data-service="reserve" role="menuitem"> <div class="kghdr4__dd-icon" style="background:rgba(180,83,9,0.08);color:#B45309"> <svg viewBox="0 0 20 20"><rect x="4" y="8" width="12" height="9" rx="2.5"/><path d="M7 8V6a3 3 0 016 0v2"/></svg> </div> <div class="kghdr4__dd-body"> <span class="kghdr4__dd-name">Резервный счёт</span> <span class="kghdr4__dd-desc">Резервирование под госконтракт</span> </div> <span class="kghdr4__dd-price">от 15 000 ₽</span> </a> <a href="/services/postpayment" class="kghdr4__dd-row" data-goal="nav_click" data-service="postpayment" role="menuitem"> <div class="kghdr4__dd-icon" style="background:rgba(109,40,217,0.08);color:#7C3AED"> <svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"/><path d="M10 6v4l2.5 2.5"/></svg> </div> <div class="kghdr4__dd-body"> <span class="kghdr4__dd-name">Постоплата по контракту</span> <span class="kghdr4__dd-desc">Платите после получения результата</span> </div> <span class="kghdr4__dd-price">55 000 ₽</span> </a> </div> </li> <li><a href="/#about"     class="kghdr4__nav-link" data-goal="nav_click" data-nav="about">О компании</a></li> <li><a href="/#guarantee" class="kghdr4__nav-link" data-goal="nav_click" data-nav="guarantee">Гарантия</a></li> <li><a href="/blog"       class="kghdr4__nav-link" data-goal="nav_click" data-nav="blog">Блог</a></li> <li><a href="/#contacts"  class="kghdr4__nav-link" data-goal="nav_click" data-nav="contacts">Контакты</a></li> </ul> <!-- RIGHT --> <div class="kghdr4__right"> <a href="https://t.me/kaznagovru" class="kghdr4__social kghdr4__social--tg"
          target="_blank" rel="noopener" aria-label="Telegram" data-goal="social_click" data-social="telegram"> <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-2.018 9.505c-.148.658-.537.818-1.088.508l-3-2.21-1.447 1.393c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.16 14.608l-2.948-.92c-.64-.203-.654-.64.136-.948l11.498-4.43c.535-.194 1.003.13.716.938z"/></svg> </a> <a href="https://max.ru/u/f9LHodD0cOK_dA0cxMm6m3-UJ1xRsy79eO5fE11eYanlBeYUtgEpWuyk5m8"
          class="kghdr4__social kghdr4__social--max"
          target="_blank" rel="noopener" aria-label="MAX" data-goal="social_click" data-social="max"> <svg viewBox="0 0 24 24"> <rect width="24" height="24" rx="6" fill="currentColor" opacity="0.1"/> <text x="12" y="16.5" font-family="'Manrope',Arial,sans-serif" font-size="9.5" font-weight="800"
@@ -1370,11 +1084,10 @@ html[data-theme="dark"] #kgHeader .kg-h__sun{ display: block; }
   <div class="kg-h__inner">
 
     <!-- BRAND -->
-    <a href="/" class="kg-h__brand kzlogo" aria-label="Казна — главная">
+    <a href="/" class="kg-h__brand" aria-label="Казна — главная">
       <span class="kg-h__logo">
-        <span class="kzlogo__word-wrap"> <span class="kzlogo__word"> <span class="b">Казна</span> <span class="l" aria-hidden="true">Казна</span> <span class="r" aria-hidden="true">Казна</span> </span> <span class="kzlogo__sub"> <span class="kzlogo__dot" aria-hidden="true"></span>
-        Казначейское сопровождение
-      </span> </span> 
+        <span class="kg-h__logo-name">Казна</span>
+        <span class="kg-h__logo-tag">Казначейское сопровождение</span>
       </span>
       <span class="kg-h__live" aria-label="онлайн">
         <span class="kg-h__live-dot" aria-hidden="true"></span>
@@ -1396,7 +1109,7 @@ html[data-theme="dark"] #kgHeader .kg-h__sun{ display: block; }
         <div class="kg-h__sub" role="menu" aria-labelledby="kgHeaderMenuBtn">
           <a class="kg-h__sub-link" href="/services/reserve" role="menuitem">
             <span class="kg-h__sub-title">Резерв счёта на тендер</span>
-            <span class="kg-h__sub-price">от 19 000 ₽</span>
+            <span class="kg-h__sub-price">от 15 000 ₽</span>
             <span class="kg-h__sub-desc">1–2 дня · реквизит для подачи · возврат при проигрыше</span>
           </a>
           <a class="kg-h__sub-link" href="/services/open" role="menuitem">
@@ -5376,7 +5089,7 @@ body .t-rec .kg-article{ width: 100%; max-width: 100%; }
 
 /* 26.1 — Tablet portrait: статья → 1 колонка + горизонт. отступы */
 @media (max-width: 768px){
-  html, body, body .t-rec{ overflow-x: hidden; max-width: 100%; }
+  body, body .t-rec{ overflow-x: hidden; }
   body .kg-content{ padding-left: 16px !important; padding-right: 16px !important; }
   body .kg-hero, body .kg-final, body .kg-faq,
   body .kg-discuss, body .kg-related{
@@ -5633,8 +5346,8 @@ body .kg-content{
 
   <!-- mobile chapter pill (TOC trigger) -->
   <button class="kg-mtoc-pill" id="kgMtocPill" type="button" aria-haspopup="dialog" aria-expanded="false">
-    <span class="kg-mtoc-pill__num" id="kgMtocPillNum">1 / 5</span>
-    <span id="kgMtocPillTitle">Что такое ИГК и где указывается</span>
+    <span class="kg-mtoc-pill__num" id="kgMtocPillNum">1 / 6</span>
+    <span id="kgMtocPillTitle">Учёт и сверка</span>
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
   </button>
 
@@ -5642,59 +5355,64 @@ body .kg-content{
   <div class="kg-mtoc-sheet" id="kgMtocSheet" role="dialog" aria-modal="true" aria-labelledby="kgMtocSheetTitle">
     <div class="kg-mtoc-sheet__panel">
       <div class="kg-mtoc-sheet__handle" aria-hidden="true"></div>
-      <div class="kg-mtoc-sheet__title" id="kgMtocSheetTitle">Содержание статьи</div>
-      <div class="kg-mtoc-sheet__sub">15 мин чтения · 5 разделов</div>
+      <div class="kg-mtoc-sheet__title" id="kgMtocSheetTitle">Казначейский счёт в 1С</div>
+      <div class="kg-mtoc-sheet__sub">8 мин чтения · 6 разделов</div>
       <ul class="kg-toc__list" id="kgMtocList"></ul>
     </div>
   </div>
 
   <!-- breadcrumbs -->
   <nav class="kg-crumbs" aria-label="Хлебные крошки">
-    <a href="/">Главная</a><span class="kg-crumbs__sep">›</span><a href="/blog">Блог</a><span class="kg-crumbs__sep">›</span><span class="kg-crumbs__current">ИГК в казначейских платежах</span>
+    <a href="/">Главная</a><span class="kg-crumbs__sep">›</span><a href="/blog">Блог</a><span class="kg-crumbs__sep">›</span><span class="kg-crumbs__current">Лицевой счёт 41</span>
   </nav>
 
   <main class="kg-page" id="kgMainContent" role="main" aria-labelledby="kgHeroTitle">
 
-    <!-- ============== HERO (RB-режим: без номера выпуска, с не-числовым tag-бейджем) ============== -->
+    <!-- ============== HERO ============== -->
     <header class="kg-hero" id="kgHero">
-      <div class="kg-hero__tag-wrap" aria-hidden="true">
-        <span class="kg-hero__tag">ИГК · УФК</span>
+      <div class="kg-hero__numeral-wrap" aria-hidden="true">
+        <span class="kg-rgb is-glitching" data-text="079">079</span>
       </div>
 
       <div class="kg-hero__label">
-        <span>Инструкция</span>
+        <span>Выпуск 079</span>
         <span class="kg-hero__label-line"></span>
-        <span>обновлено 25.08.2026</span>
+        <span>обновлено 31.08.2026</span>
       </div>
 
       <div class="kg-hero__meta">
-        <span class="kg-hero__category">Казначейское сопровождение · ИГК</span>
+        <span class="kg-hero__category">Платежи и расходы</span>
         <span class="kg-hero__dot">·</span>
-        <span>28 мая 2026</span>
+        <span>3 августа 2026</span>
         <span class="kg-hero__dot">·</span>
-        <span class="kg-hero__time">15 мин чтения</span>
+        <span class="kg-hero__time">8 мин чтения</span>
         <span class="kg-hero__dot">·</span>
-        <span class="kg-hero__diff" title="Уровень сложности: эксперт">
-          <span>Эксперт</span>
+        <span class="kg-hero__diff" title="Уровень сложности: практика">
+          <span>Практика</span>
           <span class="kg-hero__diff-dots">
             <span class="kg-hero__diff-dot is-on"></span>
             <span class="kg-hero__diff-dot is-on"></span>
-            <span class="kg-hero__diff-dot is-on"></span>
+            <span class="kg-hero__diff-dot"></span>
           </span>
         </span>
       </div>
 
-      <h1 class="kg-hero__title" id="kgHeroTitle">ИГК в казначейских платежах в 2026 году — где указать, какие ошибки блокируют платёж и как их исправить</h1>
+      <h1 class="kg-hero__title" id="kgHeroTitle">ИГК — идентификатор государственного контракта: что это, из чего состоит и где его найти</h1>
 
-      <p class="kg-hero__lead"><b>ИГК — идентификатор государственного контракта — это ключевой реквизит казначейского платежа: по нему казначейство связывает деньги с конкретным обязательством по контракту. Идентификатор состоит из 20 знаков для контрактов из федерального бюджета и при казначейском сопровождении (приказ Минфина № 205н) и из 25 знаков — для контрактов регионального бюджета и по гособоронзаказу (приказ Минобороны).</b> Ошибка в одной цифре, использование старого ИГК, несоответствие ИГК в платёжке и в контракте — типовая причина возврата распоряжения и блокировки оплаты. В этом материале — где ИГК указывается в платёжке, в ДО и в карточке контракта в ЕИС, топ-ошибок и почему они блокируют платёж, пошаговый алгоритм исправления ИГК в ЕИС и в казначействе, что делать при смене ИГК из-за изменения контракта, и отдельно — что делать с ошибкой ИГК в платёжке на обеспечение исполнения контракта. Что такое ИГК и как он расшифровывается — в глоссарии: <a href="/glossary/igk">ИГК</a>.</p>
+      <p class="kg-hero__lead"><b>ИГК — это идентификатор государственного контракта, уникальный цифровой код, который присваивается контракту при заключении и сопровождает все расчёты по нему.</b> По 275-ФЗ (государственный оборонный заказ) используется 25-значный идентификатор, при казначейском сопровождении по 44-ФЗ — 20-значный. ИГК указывается в самом контракте, в контрактах с соисполнителями, в счетах, актах и в каждом платёжном поручении; ошибка в идентификаторе — это возврат платежа. Здесь — структура идентификатора по блокам, где его искать, как указывать в документах и чем отличаются ИГК по гособоронзаказу и по 44-ФЗ.</p>
 
-      <!-- SOCIAL-PROOF (cnt подтягивается из бэка / counter API) -->
-      <div class="kg-hero__proof" id="kgProof" data-slug="igk-v-platezhah-kaznacheystva" data-api="https://api.kazna-gov.ru/api" aria-label="Социальные показатели">
-        <span><b id="kgProofReads">2 173</b> прочитали</span>
+      <aside class="kg-callout kg-callout--insight kg-reveal">
+        <div class="kg-callout__label">Обновление · ЕБП 3.2 (18.07.2026)</div>
+        <p>С 18 июля 2026 года в ГИИС «Электронный бюджет» действует версия 3.2: получатели средств по лицевым счетам 41 формируют РСКП-перечисление в 1С и загружают в «Электронный бюджет». Работает альбом форматов 2.1, с 1 июля 2026 года приём распоряжений по старому формату отключён — нужна актуальная версия 1С. Загруженное из 1С распоряжение в системе не редактируется: документ удаляют и создают заново. Подробнее — в новости <a href="/novosti/ebp-3-2-elektronnyy-byudzhet-s-18-07-2026">«Электронный бюджет 3.2: что изменилось»</a>.</p>
+      </aside>
+
+      <!-- SOCIAL-PROOF -->
+      <div class="kg-hero__proof" id="kgProof" data-slug="identifikator-goskontrakta-igk" data-api="https://api.kazna-gov.ru/api" aria-label="Социальные показатели">
+        <span><b id="kgProofReads">128</b> прочитали</span>
         <span class="kg-hero__proof-dot"></span>
-        <span><b id="kgProofSaves">358</b> сохранили</span>
+        <span><b id="kgProofSaves">34</b> сохранили</span>
         <span class="kg-hero__proof-dot"></span>
-        <span class="kg-hero__proof-live"><span id="kgProofLive">11</span> читают сейчас</span>
+        <span class="kg-hero__proof-live"><span id="kgProofLive">3</span> читают сейчас</span>
       </div>
 
       <div class="kg-hero__author">
@@ -5713,26 +5431,18 @@ body .kg-content{
         </a>
       </div>
 
-      <!-- CHANGELOG (E-E-A-T trust signal) -->
+      <!-- CHANGELOG -->
       <div class="kg-changelog">
         <details class="kg-changelog__details">
           <summary class="kg-changelog__summary">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
             История обновлений
-            <em>обновлено 25.08.2026</em>
+            <em>обновлено 31.08.2026</em>
           </summary>
           <ul class="kg-changelog__list">
             <li class="kg-changelog__item">
-              <span class="kg-changelog__date">25.08.2026</span>
-              <span class="kg-changelog__what"><b>Разведение с глоссарием ИГК</b>Определение «что такое ИГК» закреплено за /glossary/igk; страница нацелена на «где указать и как исправить» (H2).</span>
-            </li>
-            <li class="kg-changelog__item">
-              <span class="kg-changelog__date">20.08.2026</span>
-              <span class="kg-changelog__what"><b>FAQ «Где найти ИГК»</b>Добавлен прямой ответ, где искать ИГК: контракт, реестр ЕИС, договор кооперации ГОЗ, «Электронный бюджет»; контент показывается без ожидания анимаций.</span>
-            </li>
-            <li class="kg-changelog__item">
-              <span class="kg-changelog__date">28.05.2026</span>
-              <span class="kg-changelog__what"><b>Переработка статьи</b>Материал перенесён на обновлённый шаблон со схемой структуры ИГК, таблицей топ-ошибок и пошаговым алгоритмом исправления. Актуализировано на 2026 год.</span>
+              <span class="kg-changelog__date">31.08.2026</span>
+              <span class="kg-changelog__what"><b>Первая публикация</b>Структура идентификатора государственного контракта по блокам (25 знаков ГОЗ / 20 знаков при казначейском сопровождении), где найти, правила указания в платёжных поручениях и документах, отличия режимов и частые вопросы.</span>
             </li>
           </ul>
         </details>
@@ -5741,7 +5451,7 @@ body .kg-content{
       <!-- AUDIO PLAYER -->
       <div class="kg-hero__audio kg-audio" id="kgAudio" aria-label="Аудио-версия статьи">
         <audio id="kgAudioEl" preload="metadata">
-          <source src="https://api.kazna-gov.ru/audio/igk-v-platezhah.mp3" type="audio/mpeg">
+          <source src="https://api.kazna-gov.ru/audio/kaznacheyskiy-schet-v-1s.mp3" type="audio/mpeg">
         </audio>
         <button class="kg-audio__play" id="kgAudioPlay" type="button" aria-label="Воспроизвести">
           <svg class="kg-audio__play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7L8 5z"/></svg>
@@ -5753,7 +5463,7 @@ body .kg-content{
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M3 12c0-4.97 4.03-9 9-9s9 4.03 9 9-4.03 9-9 9-9-4.03-9-9z M9 9l6 3-6 3V9z"/></svg>
               Аудио-версия
             </span>
-            <span class="kg-audio__time" id="kgAudioTime">00:00 / 15:00</span>
+            <span class="kg-audio__time" id="kgAudioTime">00:00 / 08:00</span>
           </div>
           <div class="kg-audio__bar" id="kgAudioBar" role="slider" aria-label="Позиция воспроизведения" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
             <div class="kg-audio__bar-fill" id="kgAudioFill"></div>
@@ -5765,24 +5475,22 @@ body .kg-content{
       </div>
     </header>
 
-    <!-- ============== TLDR / KEY TAKEAWAYS (AEO + быстрый ответ) ============== -->
+    <!-- ============== TLDR ============== -->
     <aside class="kg-tldr kg-reveal" aria-labelledby="kgTldrCap">
       <div class="kg-tldr__cap" id="kgTldrCap">
         <span class="kg-tldr__cap-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 8v4l3 2"/></svg>
         </span>
-        Главное в одном абзаце
+        Главное за минуту
       </div>
-      <p class="kg-tldr__lead"><b>ИГК (идентификатор государственного контракта)</b> — это уникальный код, который государственный заказчик присваивает контракту; он однозначно идентифицирует контракт во всей цепочке кооперации и указывается в платёжных документах, договорах с соисполнителями и отчётности. Для гособоронзаказа ИГК — 25-значный код. Без корректного ИГК платёж по контракту с казначейским сопровождением не проходит. Если казначейство <a href="/blog/vozvrat-platezha-kaznachejstvo-chto-delat/">вернуло платёж</a> из-за ИГК, не переотправляйте «как было» — следующий тоже вернётся. Алгоритм исправления: <b>(1)</b> открыть мотивированный комментарий инспектора и точно определить тип ошибки (опечатка, старый ИГК, ИГК не соответствует контракту, ИГК не сформирован, расхождение ИГК в платёжке и ДО); <b>(2)</b> сверить ИГК по актуальному первоисточнику — действующая редакция контракта, карточка контракта в ЕИС, согласованные сведения; не из прошлой платёжки и не из шаблона; <b>(3)</b> если расхождение на стороне заказчика — потребовать корректировку ИГК в ЕИС и в карточке контракта, при необходимости подписать допсоглашение с правильным идентификатором; <b>(4)</b> уведомить УФК письмом с приложением документов-оснований; <b>(5)</b> провести платёж заново с корректным ИГК. Для смены ИГК при изменении контракта — внести новый ИГК в ЕИС, синхронизировать в карточке заказчика, в сведениях и в шаблонах распоряжений; до этого казначейство будет возвращать любые платежи с устаревшим идентификатором.</p>
+      <p class="kg-tldr__lead">ИГК — идентификатор государственного контракта: <b>25 разрядов</b> по 275-ФЗ (гособоронзаказ) и <b>20 разрядов</b> при казначейском сопровождении по 44-ФЗ. Присваивает его государственный заказчик при заключении контракта, головной исполнитель передаёт код всем соисполнителям кооперации. ИГК обязателен в контракте, счетах, актах и каждом платёжном поручении — указывается первым в назначении платежа. Ошибка или отсутствие идентификатора — возврат платежа казначейством или банком. Найти ИГК можно в тексте контракта, реестре контрактов ЕИС и документах от головного исполнителя.</p>
       <ul class="kg-tldr__list">
-        <li><b>ИГК — ключевой реквизит</b> платежа в казначействе, не «один из»</li>
-        <li><b>Где указывается:</b> в платёжном поручении, в ДО, в назначении, в карточке контракта в ЕИС</li>
-        <li><b>Главная причина возвратов:</b> копирование ИГК из старой платёжки или шаблона</li>
-        <li><b>Где брать правильный ИГК:</b> актуальная редакция контракта + ЕИС</li>
-        <li><b>При смене ИГК:</b> обновить в ЕИС → в карточке заказчика → в шаблонах</li>
-        <li><b>ИГК в платёжке на обеспечение:</b> ошибка может привести к признанию уклонистом</li>
-        <li><b>Срок исправления:</b> 1–3 рабочих дня при корректном пакете</li>
-        <li><b>Главное правило:</b> не переотправлять без устранения точной причины</li>
+        <li><b>Что это:</b> уникальный код контракта для связи всех платежей с ним</li>
+        <li><b>Длина:</b> 25 знаков — ГОЗ (275-ФЗ), 20 знаков — казначейское сопровождение 44-ФЗ</li>
+        <li><b>Кто присваивает:</b> государственный заказчик при заключении контракта</li>
+        <li><b>Где указывать:</b> контракт, счета, акты, каждое платёжное поручение</li>
+        <li><b>Где найти:</b> текст контракта, реестр контрактов ЕИС, документы головного исполнителя</li>
+        <li><b>Цена ошибки:</b> возврат платежа и сорванный срок расчёта</li>
       </ul>
     </aside>
 
@@ -5793,11 +5501,11 @@ body .kg-content{
       <aside class="kg-toc" aria-label="Содержание">
         <div class="kg-toc__label">Содержание</div>
         <ul class="kg-toc__list" id="kgToc">
-          <li class="kg-toc__item"><a class="kg-toc__link" href="#section-1"><span class="kg-toc__link-text">1. Что такое ИГК и где указывается</span><span class="kg-toc__link-time">3м</span></a></li>
-          <li class="kg-toc__item"><a class="kg-toc__link" href="#section-2"><span class="kg-toc__link-text">2. Топ-ошибок ИГК и блокировки</span><span class="kg-toc__link-time">3м</span></a></li>
-          <li class="kg-toc__item"><a class="kg-toc__link" href="#section-3"><span class="kg-toc__link-text">3. Как исправить ИГК — алгоритм</span><span class="kg-toc__link-time">3м</span></a></li>
-          <li class="kg-toc__item"><a class="kg-toc__link" href="#section-4"><span class="kg-toc__link-text">4. Смена ИГК при изменении контракта</span><span class="kg-toc__link-time">3м</span></a></li>
-          <li class="kg-toc__item"><a class="kg-toc__link" href="#section-5"><span class="kg-toc__link-text">5. ИГК и обеспечение контракта</span><span class="kg-toc__link-time">3м</span></a></li>
+          <li class="kg-toc__item"><a class="kg-toc__link" href="#section-1"><span class="kg-toc__link-text">1. Что такое ИГК</span><span class="kg-toc__link-time">2м</span></a></li>
+          <li class="kg-toc__item"><a class="kg-toc__link" href="#section-2"><span class="kg-toc__link-text">2. Структура по разрядам</span><span class="kg-toc__link-time">3м</span></a></li>
+          <li class="kg-toc__item"><a class="kg-toc__link" href="#section-3"><span class="kg-toc__link-text">3. Где найти ИГК</span><span class="kg-toc__link-time">2м</span></a></li>
+          <li class="kg-toc__item"><a class="kg-toc__link" href="#section-4"><span class="kg-toc__link-text">4. ИГК в платёжке и документах</span><span class="kg-toc__link-time">3м</span></a></li>
+          <li class="kg-toc__item"><a class="kg-toc__link" href="#section-5"><span class="kg-toc__link-text">5. ГОЗ vs 44-ФЗ и частные случаи</span><span class="kg-toc__link-time">2м</span></a></li>
         </ul>
       </aside>
 
@@ -5806,457 +5514,109 @@ body .kg-content{
 
         <!-- ====== SECTION 1 ====== -->
         <section class="kg-section" id="section-1">
-          <h2>Где указывается ИГК в казначейских платёжках</h2>
-          <p class="kg-reveal">Полный разбор идентификатора — структура по разрядам, где найти код и отличия по 44-ФЗ и гособоронзаказу — в пилларе <a href="/blog/identifikator-goskontrakta-igk">ИГК: что это и где его найти</a>. Здесь — операционная часть: поля, ошибки, исправление.</p>
-          <p class="kg-lead kg-reveal">ИГК — идентификатор государственного контракта — это уникальный цифровой код, который присваивается контракту при включении его в реестр государственных контрактов.</p>
-          <p class="kg-reveal kg-dropcap">Для казначейства ИГК — это «адрес» контракта в системе: по нему каждый платёж однозначно привязывается к конкретному обязательству, к его договору, сведениям, графику оплат и условиям расчётов.</p>
-
-          <figure class="kg-figure kg-figure--wide kg-reveal" style="--kg-fig-ratio: 16/9">
-            <div class="kg-figure__frame">
-              <span class="kg-figure__badge">Схема · 2026</span>
-              <img class="kg-figure__img" src="https://api.kazna-gov.ru/schemes/igk-v-platezhah-scheme-1.webp"
-                   width="1200" height="675" loading="lazy" decoding="async"
-                   alt="Схема: структура идентификатора государственного контракта (ИГК) — разряды кода и где он указывается в платёжном поручении, ДО и реквизитах">
-            </div>
-            <figcaption class="kg-figure__caption"><span><b>Схема:</b> структура идентификатора государственного контракта (ИГК) — разряды кода и где он указывается в платёжном поручении, ДО и реквизитах.</span></figcaption>
-          </figure>
-
-          <div class="kg-stats kg-reveal" data-stats>
-            <div class="kg-stat"><div class="kg-stat__num"><span data-count="20" data-suffix="/25">20</span></div><div class="kg-stat__bar"></div><div class="kg-stat__label">знаков ИГК (44-ФЗ / ГОЗ)</div></div>
-            <div class="kg-stat"><div class="kg-stat__num"><span data-count="5" data-suffix="">5</span></div><div class="kg-stat__bar"></div><div class="kg-stat__label">точек размещения ИГК</div></div>
-            <div class="kg-stat"><div class="kg-stat__num"><span data-count="5" data-suffix=" шагов">5</span></div><div class="kg-stat__bar"></div><div class="kg-stat__label">алгоритм исправления</div></div>
-            <div class="kg-stat"><div class="kg-stat__num"><span data-count="3" data-suffix=" дн.">3</span></div><div class="kg-stat__bar"></div><div class="kg-stat__label">цикл при оперативном заказчике (1–3)</div></div>
-          </div>
-
-          <h3 class="kg-reveal">Структура ИГК</h3>
-          <p class="kg-reveal">Идентификатор имеет фиксированную структуру разрядов: формат 20 знаков для контракта по 44-ФЗ (по приказу Минфина России от 02.12.2021 № 205н) или 25 знаков для контракта гособоронзаказа (по приказу Минобороны России и Казначейства России от 11.08.2015 № 475/13н). Разряды кодируют год, заказчика, порядковый номер и контрольный знак. Подбирать «похожий» ИГК или удалять/добавлять цифры нельзя — структура жёсткая, и казначейство сверяет код с реестром.</p>
-          <p class="kg-reveal">ИГК для контрактов гособоронзаказа — отдельная тема со своей спецификой получения и применения. Полный разбор — в материале про <a href="/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid">ИГК в контрактах по ГОЗ — получение, особенности</a>. А весь порядок работы оборонного предприятия с казначейством — в гиде «<a href="/blog/kaznacheyskoe-soprovozhdenie-predpriyatiy-opk">КС для предприятий ОПК</a>».</p>
-          <p class="kg-reveal">Сам контракт ГОЗ, под который заказчик присваивает ИГК, заключается по итогам торгов на <a href="/blog/ast-goz-elektronnaya-torgovaya-ploshadka">площадке АСТ ГОЗ</a> — там же подрядчик регистрируется и подаёт заявку на оборонный тендер.</p>
-
-          <h3 class="kg-reveal">Где ИГК указывается в платёжке и в платёжных документах</h3>
-          <p class="kg-reveal">ИГК должен присутствовать в нескольких местах одновременно — и эти места должны давать одинаковое значение:</p>
-          <ul class="kg-reveal">
-            <li><b>Платёжное поручение / распоряжение о казначейском платеже</b> — в полях кода цели и/или в назначении платежа<sup><a href="/blog/glossariy-terminov-kaznacheyskogo-soprovozhdeniya#naznachenie-platezha" title="Определение в глоссарии">↗</a></sup>.</li>
-            <li><b>Назначение платежа</b> — в текстовой части, как «...ИГК [код]».</li>
-            <li><b>ДО (документ-обязательство)</b> — в карточке принятых бюджетных и денежных обязательств.</li>
-            <li><b>Карточка контракта в ЕИС</b> — в реестре государственных контрактов.</li>
-            <li><b>Согласованные сведения</b> — в сведениях об операциях с целевыми средствами, передаваемых в УФК.</li>
-            <li><b>Шапка контракта и приложения</b> — в реквизитах сторон или в специальном поле.</li>
-          </ul>
-          <p class="kg-reveal">Если ИГК в одном из этих мест отличается от значения в других — казначейство квалифицирует это как несоответствие основания платежа.</p>
-
-          <h3 class="kg-reveal">Связь ИГК с другими реквизитами</h3>
-          <p class="kg-reveal">ИГК работает не сам по себе, а в связке с кодом цели, кодом направления расходования и назначением платежа. Подробный разбор обязательных элементов назначения — в материале про <a href="/blog/naznachenie-platezha-kaznachejstvo/">обязательные элементы назначения платежа в казначействе</a>. Если ИГК верный, но назначение или код расходования с ним не вяжутся — платёж тоже возвращается.</p>
-
-          <h3 class="kg-reveal">Зачем казначейству ИГК</h3>
-          <p class="kg-reveal">Когда инспектор УФК<sup><a href="/blog/glossariy-terminov-kaznacheyskogo-soprovozhdeniya#ufk" title="Определение в глоссарии">↗</a></sup> открывает распоряжение, он сверяет ИГК с реестром государственных контрактов и с действующей редакцией контракта в карточке заказчика. Цель проверки — убедиться, что платёж идёт по реально существующему обязательству, в рамках условий контракта и согласованных сведений. Если ИГК в платёжке не находится в реестре, не соответствует действующей редакции контракта или расходится с ДО — операция не подтверждается, и казначейство возвращает распоряжение. Маршрут платежа и где он чаще всего застревает — в материале про то, <a href="/blog/kaznacheyskoe-soprovozhdenie-platezhey">как проходит казначейский платёж и почему задерживают</a>.</p>
-        </section>
-
-        <!-- ====== SECTION 1b: назначение, структура, формирование ИГК ====== -->
-        <section class="kg-section" id="section-spravka">
-          <h2 class="kg-reveal">ИГК: назначение, структура и формирование</h2>
-
-          <h3 class="kg-reveal">Что такое ИГК</h3>
-          <p class="kg-reveal">ИГК (идентификатор государственного контракта) — это уникальный аналитический код, который присваивается контракту для его идентификации, учёта и контроля. Он позволяет однозначно определить контракт в системе госзакупок, отследить исполнение и проконтролировать все связанные с ним финансовые операции. ИГК используется в государственных и муниципальных контрактах за счёт бюджетных средств, в договорах по гособоронзаказу (ГОЗ) и в соглашениях с казначейским сопровождением.</p>
-
-          <h3 class="kg-reveal">Назначение ИГК</h3>
-          <ul class="kg-reveal">
-            <li>контроль за расходованием бюджетных средств — отслеживание этапов исполнения обязательств;</li>
-            <li>прозрачность госзакупок — контролирующие органы видят, куда идут средства;</li>
-            <li>упрощение проверки соответствия выполненных работ и услуг условиям контракта;</li>
-            <li>анализ данных и оптимизация расходов по закупкам.</li>
-          </ul>
-
-          <h3 class="kg-reveal">Структура ИГК</h3>
-          <p class="kg-reveal">Длина кода зависит от источника финансирования и типа контракта:</p>
-          <ul class="kg-reveal">
-            <li><b>20 знаков</b> — для контрактов из федерального бюджета и при казначейском сопровождении;</li>
-            <li><b>25 знаков</b> — для контрактов из регионального бюджета и в рамках гособоронзаказа.</li>
-          </ul>
-          <p class="kg-reveal">В ИГК зашифрованы данные о заказчике, способе определения поставщика, годах заключения и окончания контракта, порядковом номере документа и других параметрах. Структура устанавливается приказами: приказ Минфина России от 02.12.2021 № 205н — для контрактов с казначейским сопровождением; совместный приказ Минобороны России и Федерального казначейства от 11.08.2015 № 475/13н — для контрактов по ГОЗ.</p>
-
-          <h3 class="kg-reveal">Как формируется ИГК</h3>
-          <ul class="kg-reveal">
-            <li>если контракт включён в <a href="/blog/unikalnyy-nomer-reestrovoy-zapisi">реестр контрактов</a> — ИГК формируется автоматически в ЕИС после регистрации реестровой записи;</li>
-            <li>если контракт содержит сведения государственной тайны — ИГК формирует государственный заказчик после создания реестровой записи;</li>
-            <li>для контрактов бюджетных и автономных учреждений ИГК формирует сам заказчик.</li>
-          </ul>
-          <p class="kg-reveal">Присвоенный ИГК сохраняется на весь период действия контракта; корректировка кода, сформированного при заключении, не предусмотрена. Найти ИГК можно в карточке контракта в ЕИС, а если контракт не размещается в ЕИС — в условиях договора с заказчиком.</p>
+          <h2>Что такое ИГК и зачем он нужен</h2>
+          <p class="kg-lead kg-reveal">ИГК (идентификатор государственного контракта) — уникальный цифровой код, который связывает все расчёты, документы и отчётность с конкретным государственным контрактом.</p>
+          <p class="kg-reveal kg-dropcap">Задача идентификатора — сквозная прослеживаемость денег. Когда контракт попадает под казначейское сопровождение по 44-ФЗ или исполняется в рамках государственного оборонного заказа по 275-ФЗ, каждый платёж проверяется на связь с контрактом: казначейство или уполномоченный банк сверяет идентификатор в платёжном поручении с идентификатором контракта. Совпадает — платёж идёт дальше по проверкам; не совпадает или отсутствует — возврат без исполнения.</p>
+          <p class="kg-reveal">ИГК присваивается один раз при заключении контракта и не меняется до полного исполнения — даже если к контракту подписываются дополнительные соглашения. По гособоронзаказу код сквозной для всей кооперации: головной исполнитель передаёт его каждому соисполнителю, а те — своим субподрядчикам, поэтому у контрактов всей цепочки один и тот же идентификатор. Как устроено само <a href="/blog/kaznacheyskoe-soprovozhdenie-44-fz-2026-polnyy-gid">казначейское сопровождение по 44-ФЗ</a> и <a href="/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid">сопровождение государственного оборонного заказа</a> — в отдельных гидах.</p>
         </section>
 
         <!-- ====== SECTION 2 ====== -->
         <section class="kg-section" id="section-2">
-          <h2 class="kg-reveal">Топ-ошибок ИГК и почему платёж блокируется</h2>
-          <p class="kg-reveal">Ниже — таблица: симптом блокировки → причина → как исправить. Все случаи — из реальной практики, без выдуманных кодов казначейских ошибок (комментарий инспектора пишется индивидуально, но строится по этим типам). Опечатка в ИГК — лишь одна из причин зависших платежей: полный алгоритм диагностики — в гиде <a href="/blog/ufk-zaderzhivaet-platezh-chto-delat">«УФК задерживает платёж»</a>.</p>
-
-          <h3 class="kg-reveal">Таблица: топ-ошибок с ИГК</h3>
+          <h2 class="kg-reveal">Структура ИГК: из чего состоит идентификатор</h2>
+          <p class="kg-reveal">Длина идентификатора сразу говорит о режиме: <b>25 разрядов — государственный оборонный заказ</b> (275-ФЗ), <b>20 разрядов — казначейское сопровождение по 44-ФЗ</b>. Внутри код собирается из смысловых блоков.</p>
           <div class="kg-table-wrap kg-reveal">
             <table class="kg-table">
-              <thead><tr><th>Симптом</th><th>Причина</th><th>Как исправить</th></tr></thead>
+              <thead><tr><th>Блок</th><th>ИГК по ГОЗ (25 знаков)</th><th>ИГК при казначейском сопровождении (20 знаков)</th></tr></thead>
               <tbody>
-                <tr><td>Возврат «ИГК не соответствует контракту»</td><td>В платёжке использован старый ИГК из прошлой редакции, при обновлении контракта идентификатор не пересмотрели</td><td>Сверить ИГК с актуальной редакцией контракта и карточкой в ЕИС, исправить и подать заново</td></tr>
-                <tr><td>Замечание «ИГК не найден в реестре»</td><td>Опечатка: лишняя цифра, перепутана позиция, добавлен символ</td><td>Сверить ИГК по тексту контракта посимвольно, исправить в распоряжении</td></tr>
-                <tr><td>ИГК в ДО не соответствует условиям контракта</td><td>Расхождение между ИГК в ДО (документе об обязательстве) и в действующем контракте</td><td>Скорректировать ДО на стороне заказчика, привести к единой версии, после этого — платёж</td></tr>
-                <tr><td>Платёж не идентифицируется как связанный с госконтрактом</td><td>ИГК не указан вообще — пропустили поле или забыли в назначении</td><td>Дозаполнить поле ИГК в распоряжении, проверить назначение, подать заново</td></tr>
-                <tr><td>Возврат «недостоверный ИГК»</td><td>Скопировали ИГК из чужой платёжки или другой сделки</td><td>Сверить с первоисточником — контрактом по этому платежу, исправить</td></tr>
-                <tr><td>В платёжке актуальный ИГК, в сведениях — старый</td><td>Заказчик не обновил согласованные сведения после изменения контракта</td><td>Потребовать переоформление сведений с актуальным ИГК; только после этого — платёж</td></tr>
-                <tr><td>Поле «сумма в строке 1 таблицы ИГК» не заполняется в ЕИС</td><td>Технический сбой формы или несинхронность данных карточки</td><td>Подать обращение оператору ЕИС / попробовать перевыпуск; при срочности — поддержка ЕИС</td></tr>
-                <tr><td>В договоре указан казначейский счёт, но ИГК не указан</td><td>Заказчик пропустил поле ИГК в реквизитах контракта</td><td>Запросить у заказчика дополнение контракта или допсоглашение с указанием ИГК</td></tr>
+                <tr><td><b>Годы контракта</b></td><td>Последние цифры года заключения и года окончания действия</td><td>Кодируются в составе идентификационного кода закупки</td></tr>
+                <tr><td><b>Заказчик</b></td><td>Код государственного заказчика гособоронзаказа</td><td>Идентификационный код заказчика из ЕИС</td></tr>
+                <tr><td><b>Способ закупки</b></td><td>Код способа определения поставщика</td><td>В составе идентификационного кода закупки</td></tr>
+                <tr><td><b>Номер контракта</b></td><td>Порядковый номер, присвоенный заказчиком</td><td>Порядковый номер закупки и контракта</td></tr>
+                <tr><td><b>Основа формирования</b></td><td>Правила 275-ФЗ и порядка для гособоронзаказа</td><td>Идентификационный код закупки (ИКЗ) из ЕИС</td></tr>
               </tbody>
             </table>
           </div>
-
-          <h3 class="kg-reveal">Почему даже одна цифра — это блокировка</h3>
-          <p class="kg-reveal">Для обычного банка ошибка в одной цифре — техническая помарка, которую может «понять» комплаенс. Для казначейства это другой идентификатор — то есть либо несуществующий контракт, либо другое обязательство. Никакие «понимания» здесь не работают: ИГК либо точно соответствует записи в реестре, либо нет.</p>
-
-          <h3 class="kg-reveal">Как ошибки тянутся каскадом</h3>
-          <p class="kg-reveal">Самый частый сценарий: один раз ввели некорректный ИГК в шаблон → шаблон используется в нескольких платёжках → возвраты пошли подряд → бухгалтер правит распоряжение, но шаблон не трогает → следующий платёж снова с тем же ошибочным ИГК. Лечится одним движением — почистить шаблоны и пересобрать справочник ИГК по актуальным контрактам; чтобы такие возвраты не повторялись, многие передают <a href="/uslugi">ведение казначейского сопровождения под ключ</a>.</p>
+          <p class="kg-reveal">Практический смысл структуры простой: разряды не случайны, и по идентификатору контролёр видит год, заказчика и номер контракта ещё до открытия документов. Точное назначение каждого разряда закреплено порядком формирования идентификатора для соответствующего режима — при заполнении документов сверяйтесь с кодом из контракта посимвольно, а не собирайте его вручную по правилам: единственный верный источник ИГК — сам контракт.</p>
+          <aside class="kg-callout kg-callout--warning kg-reveal">
+            <div class="kg-callout__label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0zM12 9v4M12 17h.01"/></svg>
+              ИГК не «вычисляют» — его копируют из контракта
+            </div>
+            <p>Попытка собрать идентификатор самостоятельно по описанию разрядов — типовой источник ошибок: один неверный символ, и платёж вернётся. Код всегда берётся из текста контракта или документов заказчика и копируется без изменений.</p>
+          </aside>
         </section>
 
         <!-- ====== SECTION 3 ====== -->
         <section class="kg-section" id="section-3">
-          <h2 class="kg-reveal">Как исправить ИГК в ЕИС и казначействе — алгоритм</h2>
-          <p class="kg-reveal">Когда ошибка обнаружена, действовать нужно по алгоритму. Каждый шаг даёт промежуточный результат; полный цикл — обычно 1–3 рабочих дня при корректной работе с заказчиком.</p>
-
-          <h3 class="kg-reveal">Что понадобится</h3>
-          <ul class="kg-checklist kg-reveal">
-            <li>Уведомление казначейства о возврате или замечание по ИГК.</li>
-            <li>Действующий контракт и допсоглашения.</li>
-            <li>Документы по проблемному платежу: распоряжение, документы-основания, выгрузка из ЕИС.</li>
-            <li>ЕИС, ГИИС «Электронный бюджет», КЭП ответственного лица.</li>
-          </ul>
-
+          <h2 class="kg-reveal">Где найти ИГК</h2>
+          <p class="kg-reveal">Идентификатор всегда есть у заказчика и в публичных источниках. Искать по порядку:</p>
           <ol class="kg-steps kg-reveal">
-            <li><b>Обнаружить ошибку в ИГК и определить тип.</b> Сверить ИГК в платёжке, в контракте, в карточке заказчика в ЕИС и в ДО. Определить тип ошибки: опечатка, использован старый ИГК, ИГК не соответствует контракту, ИГК не сформирован вовсе или нет в реестре. Без точной квалификации ошибки последующая «правка» будет наугад и приведёт к новому возврату.</li>
-            <li><b>Подготовить документы-основания для исправления.</b> Собрать пакет: действующий контракт, ДО, переписка с заказчиком, выгрузка из ЕИС, документы по проблемному платежу. Документы должны подтверждать, какой ИГК является правильным и в чём расхождение с тем, что попало в платёжку. Это основа последующего обращения.</li>
-            <li><b>Внести изменение в ЕИС и в контракт.</b> Если корень ошибки на стороне заказчика — потребовать корректировку ИГК в ЕИС и в карточке контракта. Запрос направляется заказчику в письменной форме с приложением документов из шага 2. При необходимости подписывается допсоглашение к контракту с правильным ИГК. На стороне подрядчика — обновление шаблонов и справочника ИГК.</li>
-            <li><b>Уведомить казначейство и подать корректировку.</b> Направить в УФК письмо с разъяснением и приложить документы. Подача — через ГИИС «Электронный бюджет», раздел «Обращения». На основании этого казначейство принимает корректировку или возвращает средства для повторной отправки с правильным ИГК. Срок ответа — типично 1–5 рабочих дней.</li>
-            <li><b>Провести платёж заново с корректным ИГК.</b> После корректировки в ЕИС и подтверждения от казначейства сформировать новое распоряжение с правильным ИГК, прикрепить документы-основания, подписать КЭП и направить в УФК. Проконтролировать прохождение до фактического списания и зачисления.</li>
+            <li><b>Текст государственного контракта</b>Первое место поиска: ИГК указывается в преамбуле или разделе реквизитов контракта. У соисполнителя по гособоронзаказу код должен стоять в контракте с головным исполнителем.</li>
+            <li><b>Реестр контрактов в ЕИС</b>Для контрактов по 44-ФЗ идентификатор виден в реестровой записи контракта на zakupki.gov.ru — ищите по номеру контракта или ИНН заказчика.</li>
+            <li><b>Извещение и документация закупки</b>Код закупки, на основе которого формируется идентификатор при казначейском сопровождении, публикуется в извещении.</li>
+            <li><b>Документы от головного исполнителя</b>По гособоронзаказу соисполнитель получает ИГК от головного вместе с контрактом — если кода нет, его запрашивают до выставления первого счёта.</li>
+            <li><b>Ранее оплаченные документы</b>Если расчёты по контракту уже шли, идентификатор есть в назначении платежа прошлых платёжных поручений и в выставленных счетах.</li>
           </ol>
-
-          <h3 class="kg-reveal">Сроки по этапам</h3>
-          <div class="kg-table-wrap kg-reveal">
-            <table class="kg-table">
-              <thead><tr><th>Шаг</th><th>Длительность</th></tr></thead>
-              <tbody>
-                <tr><td>1. Определение типа ошибки</td><td>15–30 мин</td></tr>
-                <tr><td>2. Сбор документов-оснований</td><td>1 рабочий день</td></tr>
-                <tr><td>3. Корректировка в ЕИС и контракте</td><td>1–3 рабочих дня (зависит от заказчика)</td></tr>
-                <tr><td>4. Письмо в УФК</td><td>1–5 рабочих дней на ответ</td></tr>
-                <tr><td>5. Повторный платёж</td><td>1 рабочий день на санкционирование</td></tr>
-              </tbody>
-            </table>
-          </div>
-          <p class="kg-reveal">В типовом случае при оперативном заказчике — 1–3 рабочих дня. При затянутом согласовании на стороне заказчика — до недели.</p>
+          <p class="kg-reveal">Если код не находится ни в одном из источников — это сигнал остановиться: выставлять счета и проводить платежи без идентификатора по сопровождаемому контракту нельзя, документы вернутся.</p>
         </section>
-
-        <!-- INLINE CTA -->
-        <aside class="kg-cta-inline kg-reveal">
-          <div class="kg-cta-inline__tag">Услуга · Возврат по ИГК</div>
-          <h3 class="kg-cta-inline__title">Возврат по ИГК — разберём за день и доведём платёж</h3>
-          <p class="kg-cta-inline__text">Сверим ИГК по контракту, ЕИС, ДО и сведениям, подготовим обращение в УФК и проведём платёж заново — обычно в течение 1 рабочего дня. От 55 000 ₽/мес в рамках сопровождения.</p>
-          <div class="kg-cta-inline__row">
-            <a href="#form" class="kg-btn kg-btn--primary kg-btn--shine" data-magnetic>Оставить заявку →</a>
-            <span class="kg-cta-inline__trust">15+ лет в практике казначейского сопровождения · 800+ открытых счетов · 0% возвратов в 2025 году</span>
-          </div>
-        </aside>
 
         <!-- ====== SECTION 4 ====== -->
         <section class="kg-section" id="section-4">
-          <h2 class="kg-reveal">Смена ИГК при изменении контракта или допсоглашении</h2>
-          <p class="kg-reveal">Запрос «у госконтракта поменялся ИГК как внести изменение в казначействе» возникает в трёх типовых ситуациях: контракт перерегистрировали в реестре с новым идентификатором; подписано допсоглашение, повлекшее переоформление контракта; заказчик ошибочно присвоил новый ИГК и теперь параллельно работает старый и новый.</p>
-
-          <h3 class="kg-reveal">Когда ИГК меняется</h3>
-          <ul class="kg-reveal">
-            <li><b>Контракт расторгнут и переоформлен</b> с новым ИГК.</li>
-            <li><b>Существенное изменение условий контракта</b> через допсоглашение, повлекшее переоформление в реестре.</li>
-            <li><b>Технический перевыпуск карточки контракта</b> заказчиком в ЕИС.</li>
-            <li><b>Замена сторон</b> или иные действия, требующие нового идентификатора.</li>
-          </ul>
-
-          <h3 class="kg-reveal">Порядок смены ИГК на стороне подрядчика</h3>
-          <ol class="kg-steps kg-reveal">
-            <li><b>Получить от заказчика письменное уведомление</b> о новом ИГК с указанием основания (допсоглашение, переоформление в реестре).</li>
-            <li><b>Сверить новый ИГК с карточкой контракта в ЕИС</b> — убедиться, что он действительно присвоен и активен.</li>
-            <li><b>Обновить ИГК в шаблонах платёжных поручений</b> и в справочнике ИГК на стороне подрядчика.</li>
-            <li><b>Обновить ИГК в распоряжениях о казначейских платежах</b> в ГИИС «Электронный бюджет».</li>
-            <li><b>Согласовать с заказчиком обновлённые сведения</b> об операциях — в них также должен быть новый ИГК.</li>
-            <li><b>При необходимости — направить в УФК уведомление</b> о смене ИГК с приложением допсоглашения и нового ИГК.</li>
-          </ol>
-          <p class="kg-reveal">После всех этих действий любые новые платежи проходят с актуальным ИГК. Старые платежи, исполненные по предыдущему ИГК, остаются за прошлой записью в учёте.</p>
-
-          <h3 class="kg-reveal">Информация об исполнении контракта при неверных реквизитах</h3>
-          <p class="kg-reveal">Если в карточке исполнения контракта в ЕИС зафиксированы неверные реквизиты (ИГК, реквизиты сторон, сумма этапа), заказчик корректирует записи на своей стороне через ЕИС — функция корректировки информации об исполнении предусмотрена. Подрядчик в этом случае направляет заказчику письмо с просьбой о корректировке, прикладывает основания и контролирует, чтобы карточка в ЕИС была приведена в соответствие с действующим контрактом до следующего платежа.</p>
-
-          <h3 class="kg-reveal">Если в договоре указан казначейский счёт, а ИГК не указан</h3>
-          <p class="kg-reveal">Бывает, что в самом контракте поле ИГК просто пропущено: есть норма о казначейском сопровождении и нужно <a href="/blog/how_to_open">открыть казначейский счёт</a><sup><a href="/blog/glossariy-terminov-kaznacheyskogo-soprovozhdeniya#ks-schet" title="Определение в глоссарии">↗</a></sup>, но идентификатор не вписан. В этом случае поставщику нужно: запросить у заказчика письменное уведомление с актуальным ИГК (заказчик берёт его из карточки контракта в реестре в ЕИС); при необходимости подписать допсоглашение, в котором ИГК указан явно в реквизитах контракта; до получения ИГК — не отправлять платёж по этому контракту, иначе он вернётся.</p>
-
-          <h3 class="kg-reveal">Контракты на постоплате с ИГК</h3>
-          <p class="kg-reveal">При контракте с постоплатой ИГК работает по тем же правилам: указывается в платёжке, в назначении, в сведениях и в ДО. Дополнительная особенность — момент проведения первого платежа: при постоплате расходы накапливаются до этапа приёмки, поэтому к моменту первой казначейской оплаты пакет документов и ИГК уже должны быть полностью согласованы и устойчивы. Несогласованности, оставленные «на потом», на этапе оплаты постоплатного контракта блокируют операции массово.</p>
+          <h2 class="kg-reveal">ИГК в платёжном поручении, счетах и актах</h2>
+          <p class="kg-reveal">В платёжном поручении идентификатор указывается в назначении платежа — первым элементом, до текстового описания операции. При казначейском сопровождении код также попадает в реквизиты распоряжения о совершении казначейского платежа, и казначейство сверяет его с контрактом при санкционировании. По гособоронзаказу ИГК обязателен не только в платёжках, но и в счетах, счетах-фактурах и актах — документ без идентификатора не считается оформленным по правилам 275-ФЗ.</p>
+          <p class="kg-reveal">Ошибка в идентификаторе — самая дорогая мелочь расчётов: платёж возвращается, срок оплаты срывается, а по цепочке кооперации задержка каскадом доходит до субподрядчиков. Почему платёж не проходит и как быстро локализовать причину — в разборе <a href="/oshibki/oshibka-v-igk-platezh-ne-prohodit">ошибки «платёж не проходит из-за ИГК»</a>; пошаговый алгоритм исправления — в ответе <a href="/voprosy/oshibka-v-igk-kak-ispravit">как исправить ошибку в ИГК</a>. Операционная сторона — в какое поле ставить код, какие ошибки блокируют платёж и как их чинить — детально разобрана в статье про <a href="/blog/igk-v-platezhah-kaznacheystva">ИГК в казначейских платежах</a>.</p>
         </section>
 
         <!-- ====== SECTION 5 ====== -->
         <section class="kg-section" id="section-5">
-          <h2 class="kg-reveal">ИГК и обеспечение исполнения контракта</h2>
-          <p class="kg-reveal">Отдельная зона риска — обеспечение исполнения контракта. Если в платёжном поручении на перечисление обеспечения допущена ошибка в ИГК, последствия могут быть тяжелее обычного возврата: заказчик вправе квалифицировать неисполнение обязательства по обеспечению и признать участника уклонившимся от заключения контракта.</p>
-
-          <h3 class="kg-reveal">Что происходит при ошибке в платёжке на обеспечение</h3>
-          <ul class="kg-reveal">
-            <li>Платёж по обеспечению не зачисляется на нужный лицевой счёт заказчика (или зачисляется не на тот контракт).</li>
-            <li>Заказчик в установленный срок не видит подтверждённого внесения обеспечения.</li>
-            <li>При истечении срока на внесение обеспечения участник может быть признан уклонившимся с занесением в реестр недобросовестных поставщиков.</li>
-          </ul>
-
-          <h3 class="kg-reveal">Что делать, если уже признали уклонистом</h3>
-          <ol class="kg-steps kg-reveal">
-            <li><b>Срочно собрать доказательства</b> оплаты обеспечения: банковская выписка, платёжное поручение, подтверждение списания со счёта.</li>
-            <li><b>Доказать, что ошибка техническая</b> и обеспечение фактически внесено — пусть с неверным ИГК, но в установленный срок.</li>
-            <li><b>Направить заказчику письменное обращение</b> с приложением доказательств и просьбой не признавать уклонившимся / отозвать соответствующее решение.</li>
-            <li><b>При несогласии заказчика — обращаться в ФАС</b> с жалобой на необоснованное признание уклонистом.</li>
-            <li><b>Параллельно</b> — устранить причину: перевыпустить платёжку с корректным ИГК и обеспечить зачисление средств туда, куда нужно.</li>
-          </ol>
-
-          <h3 class="kg-reveal">Профилактика</h3>
-          <ul class="kg-reveal">
-            <li><b>Сверить ИГК</b> в платёжке на обеспечение посимвольно с действующей карточкой контракта в ЕИС перед отправкой.</li>
-            <li><b>Использовать выгрузку из ЕИС</b>, не шаблон.</li>
-            <li><b>Проводить платёж заранее</b>, не в последний день срока — это создаёт запас на исправление при ошибке.</li>
-            <li><b>После платежа</b> — получить от заказчика подтверждение поступления обеспечения и приложить его к делу контракта.</li>
-          </ul>
+          <h2 class="kg-reveal">ИГК по ГОЗ и по 44-ФЗ: отличия и частные случаи</h2>
+          <p class="kg-reveal">Различий три. Первое — длина и правила формирования: 25 разрядов по гособоронзаказу против 20 при казначейском сопровождении, и собираются они по разным порядкам. Второе — охват документов: по 275-ФЗ идентификатор обязателен во всех документах расчётов, включая счета и акты, по 44-ФЗ ключевая точка — платёжные документы и распоряжения. Третье — источник кода для исполнителя: по гособоронзаказу соисполнитель получает ИГК от головного исполнителя по цепочке, по 44-ФЗ код берётся из контракта с заказчиком. Подробная развёртка — в ответе <a href="/voprosy/igk-po-goz-otlichiya">чем ИГК по ГОЗ отличается от обычного</a>.</p>
+          <h3 class="kg-reveal">Нужен ли ИГК в каждом платеже</h3>
+          <p class="kg-reveal">По сопровождаемому контракту — да: каждый платёж за счёт средств контракта идёт с идентификатором, включая авансы соисполнителям, оплату материалов и перечисление прибыли. Исключения касаются платежей, которые проводятся вне сопровождаемых средств. Короткий разбор с примерами — в ответе <a href="/voprosy/nuzhen-li-igk-v-kazhdom-platezhe">нужен ли ИГК в каждом платеже</a>.</p>
         </section>
-      </article>
 
-      <!-- RIGHT RAIL -->
-      <aside class="kg-rail" aria-label="Помощник чтения">
+        <p class="kg-reveal kg-ctx"><a href="/services/conduct">Ведём казначейские платежи под ключ</a> — каждый ИГК сверяется до подачи, платежи проходят без возвратов, от 89 000 ₽/мес.</p>
 
-        <div class="kg-rail__card">
-          <div class="kg-rail__label">Прогресс</div>
-          <div class="kg-rail__ring-wrap">
-            <div class="kg-rail__ring" aria-hidden="true">
-              <svg viewBox="0 0 64 64">
-                <defs>
-                  <linearGradient id="kgRingGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stop-color="#15846B"/>
-                    <stop offset="100%" stop-color="#1FA887"/>
-                  </linearGradient>
-                </defs>
-                <circle class="kg-rail__ring-track" cx="32" cy="32" r="28"/>
-                <circle class="kg-rail__ring-fill" id="kgRingFill" cx="32" cy="32" r="28"/>
-              </svg>
-              <span class="kg-rail__ring-pct" id="kgRailPct">0%</span>
-            </div>
-            <div class="kg-rail__ring-meta">
-              <b id="kgRailLeft">15 мин</b>
-              осталось до конца
-            </div>
-          </div>
-        </div>
-
-        <div class="kg-rail__card">
-          <div class="kg-rail__label">Поделиться</div>
-          <div class="kg-rail__share">
-            <a href="#" class="kg-rail__share-btn" aria-label="Telegram" data-share="tg">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 7.13l-1.55 7.32c-.12.52-.42.65-.85.4l-2.35-1.73-1.13 1.09c-.13.13-.24.24-.48.24l.17-2.43 4.42-3.99c.19-.17-.04-.27-.3-.1l-5.47 3.44-2.35-.74c-.51-.16-.52-.51.11-.76l9.18-3.54c.42-.15.79.1.65.84z"/></svg>
-            </a>
-            <a href="#" class="kg-rail__share-btn" aria-label="WhatsApp" data-share="wa">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.74-.86-2.01-.95-.27-.1-.46-.15-.66.15-.2.3-.76.95-.93 1.15-.17.2-.34.22-.64.07-.3-.15-1.25-.46-2.38-1.46-.88-.78-1.47-1.74-1.64-2.04-.17-.3-.02-.46.13-.61.13-.13.3-.34.45-.51.15-.17.2-.29.3-.49.1-.2.05-.37-.02-.52-.07-.15-.66-1.59-.91-2.18-.24-.57-.48-.49-.66-.5-.17-.01-.37-.01-.56-.01-.2 0-.51.07-.78.37-.27.3-1.02 1-1.02 2.43s1.05 2.82 1.2 3.02c.15.2 2.07 3.16 5.02 4.43.7.3 1.25.48 1.68.62.7.22 1.34.19 1.84.12.56-.08 1.74-.71 1.98-1.39.24-.69.24-1.27.17-1.39-.07-.12-.27-.2-.56-.34zM12 2C6.48 2 2 6.48 2 12c0 1.84.5 3.56 1.36 5.04L2 22l5.1-1.34A9.96 9.96 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
-            </a>
-            <a href="#" class="kg-rail__share-btn" aria-label="VK" data-share="vk">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.78 17.6h1.06s.32-.04.49-.21c.15-.16.15-.46.15-.46s-.02-1.42.65-1.63c.65-.21 1.5 1.39 2.4 2 .68.46 1.2.36 1.2.36l2.4-.04s1.25-.08.66-1.06c-.05-.08-.35-.72-1.78-2.05-1.5-1.4-1.3-1.17.5-3.57 1.1-1.46 1.55-2.36 1.4-2.74-.13-.36-.93-.27-.93-.27h-2.7s-.2-.03-.35.06c-.15.09-.24.3-.24.3s-.43 1.16-1 2.14c-1.2 2.07-1.69 2.18-1.88 2.05-.45-.29-.34-1.18-.34-1.82 0-1.99.3-2.82-.59-3.04-.3-.07-.51-.12-1.27-.13-.97-.01-1.79.01-2.26.24-.31.15-.55.49-.4.51.18.03.6.12.81.42.28.39.27 1.27.27 1.27s.16 2.34-.38 2.63c-.37.2-.88-.21-1.95-2.06-.55-.95-.96-2-.96-2s-.08-.2-.23-.3c-.18-.13-.43-.17-.43-.17h-2.56s-.39.01-.53.18c-.12.15-.01.46-.01.46s2 4.7 4.27 7.06c2.08 2.17 4.45 2.03 4.45 2.03z"/></svg>
-            </a>
-            <a href="#" class="kg-rail__share-btn" aria-label="Скопировать ссылку" data-share="copy">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
-            </a>
-          </div>
-        </div>
-
-        <div class="kg-rail__card">
-          <div class="kg-rail__label">Совет</div>
-          <p class="kg-rail__hint">Регулируйте размер шрифта в правой панели снизу — <kbd>A−</kbd>/<kbd>A+</kbd>. Тёмная тема — <kbd>D</kbd>.</p>
-        </div>
-
-      </aside>
-    </div>
-
-
-    <!-- ============== AUTHOR Q&A ============== -->
-    <aside style="margin:28px 0 8px;padding:15px 18px;background:#E6F2EE;border-left:3px solid #15846B;border-radius:10px;font-size:15px;line-height:1.6;color:#1C1E20"><b>Полезное на сайте:</b> <a href="/instrumenty/" style="color:#15846B;font-weight:600">калькуляторы и справочник кодов</a>, <a href="/obraztsy/" style="color:#15846B;font-weight:600">образцы документов</a> и <a href="/otzyvy/" style="color:#15846B;font-weight:600">отзывы клиентов</a>.</aside>
-
-    <aside class="kg-qa" aria-labelledby="kgQaTitle">
-      <img class="kg-qa__img"
-           src="https://api.kazna-gov.ru/images/experts/expert-stella-128.webp"
-           srcset="https://api.kazna-gov.ru/images/experts/expert-stella-128.webp 1x, https://api.kazna-gov.ru/images/experts/expert-stella-256.webp 2x"
-           width="64" height="64"
-           loading="lazy" decoding="async"
-           alt="Стелла Иванова — отвечает на вопросы лично">
-      <div class="kg-qa__body">
-        <div class="kg-qa__cap">Спросить эксперта</div>
-        <div class="kg-qa__title" id="kgQaTitle">Не нашли ответа в статье?</div>
-        <p class="kg-qa__text">Разберём вашу ситуацию по контракту лично — на консультации или в Telegram. Ответ в течение рабочего дня.</p>
-        <div class="kg-qa__form">
-          <a href="https://kazna-gov.ru/#contacts" class="kg-qa__btn" data-qa-cta="consult" target="_blank" rel="noopener" style="text-decoration:none;display:inline-flex;align-items:center;">Разобрать мою ситуацию →</a>
-          <a href="https://t.me/kaznagovru" data-qa-cta="telegram" target="_blank" rel="noopener" style="align-self:center;color:var(--kg-coral);font-weight:600;text-decoration:none;padding:12px 6px;">Спросить в Telegram</a>
-        </div>
-      </div>
-    </aside>
-
-    <!-- ============== AUTHOR BIO ============== -->
-    <section class="kg-bio">
-      <img class="kg-bio__img"
-           src="https://api.kazna-gov.ru/images/experts/expert-stella-192.webp"
-           srcset="https://api.kazna-gov.ru/images/experts/expert-stella-192.webp 1x, https://api.kazna-gov.ru/images/experts/expert-stella-384.webp 2x"
-           width="96" height="96"
-           loading="lazy" decoding="async"
-           alt="Стелла Иванова — партнёр практики казначейского сопровождения, 15+ лет опыта">
-      <div class="kg-bio__body">
-        <div class="kg-bio__cap">Об авторе</div>
-        <h3 class="kg-bio__name">Стелла Иванова</h3>
-        <div class="kg-bio__role">Партнёр практики казначейского сопровождения · 15+ лет в ГОЗ и 44-ФЗ</div>
-        <p class="kg-bio__text">Сопровождала контракты на сумму более 40 млрд руб. Эксперт по 44-ФЗ, 223-ФЗ и 275-ФЗ. Преподаватель программы повышения квалификации для казначеев.</p>
-        <div class="kg-bio__links">
-          <a href="/expert/stella" class="kg-bio__link">Все статьи автора</a>
-          <a href="https://t.me/kaznagovru" class="kg-bio__link" target="_blank" rel="noopener">Telegram</a>
-          <a href="mailto:manager@kazna-gov.ru" class="kg-bio__link">Написать письмо</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============== FAQ (в T123-4) ============== -->
-  </main>
-</div>
-<!-- ARTICLE 2/2 -->
-<div class="kg-article kg-article--cont" id="kgArticleCont">
-  <main class="kg-page kg-page--cont">
-
-    <!-- ============== FAQ ============== -->
-    <section class="kg-faq" id="kgFaq" aria-labelledby="kgFaqTitle">
+<section class="kg-faq" id="kgFaq" aria-labelledby="kgFaqTitle">
       <h2 class="kg-faq__title kg-reveal" id="kgFaqTitle">Частые вопросы</h2>
       <div class="kg-faq__list">
-
-        <details class="kg-faq__item kg-reveal" id="faq-chto-igk">
-          <summary class="kg-faq__q">
-            Что такое ИГК?
-            <span class="kg-faq__icon" aria-hidden="true"></span>
-          </summary>
-          <div class="kg-faq__a">
-            <p>ИГК (идентификатор государственного контракта) — уникальный аналитический код, который присваивается контракту для его идентификации, учёта и контроля. Он позволяет однозначно определить контракт в системе госзакупок и проконтролировать все связанные с ним финансовые операции. Применяется в госконтрактах за счёт бюджета, в договорах по ГОЗ и в соглашениях с казначейским сопровождением.</p>
-          </div>
-        </details>
-
-        <details class="kg-faq__item kg-reveal" id="faq-skolko-znakov">
-          <summary class="kg-faq__q">
-            Сколько знаков в ИГК?
-            <span class="kg-faq__icon" aria-hidden="true"></span>
-          </summary>
-          <div class="kg-faq__a">
-            <p>20 знаков — для контрактов из федерального бюджета и при казначейском сопровождении (приказ Минфина № 205н); 25 знаков — для контрактов из регионального бюджета и по гособоронзаказу (приказ Минобороны и казначейства № 475/13н). В коде зашифрованы заказчик, способ определения поставщика, годы заключения и окончания, порядковый номер.</p>
-          </div>
-        </details>
-
-        <details class="kg-faq__item kg-reveal" id="faq-kak-formiruetsya-igk">
-          <summary class="kg-faq__q">
-            Как формируется ИГК?
-            <span class="kg-faq__icon" aria-hidden="true"></span>
-          </summary>
-          <div class="kg-faq__a">
-            <p>Если контракт включён в реестр контрактов — ИГК формируется автоматически в ЕИС после регистрации реестровой записи; при гостайне его формирует госзаказчик; для бюджетных и автономных учреждений — сам заказчик. ИГК сохраняется на весь срок контракта, корректировка не предусмотрена. Посмотреть код можно в карточке контракта в ЕИС или в условиях договора.</p>
-          </div>
-        </details>
-
         <details class="kg-faq__item kg-reveal" id="faq-1">
-          <summary class="kg-faq__q">
-            Что такое ИГК и почему казначейство возвращает платёж при ошибке?
-            <span class="kg-faq__icon" aria-hidden="true"></span>
-          </summary>
-          <div class="kg-faq__a">
-            <p>ИГК — идентификатор государственного контракта, уникальный код, по которому казначейство связывает платёж с конкретным контрактом. При ошибке в ИГК казначейство не может подтвердить связь платежа с обязательством и возвращает распоряжение. Это не «формальность»: для системы ошибочный ИГК означает либо несуществующий контракт, либо другое обязательство.</p>
-          </div>
+          <summary class="kg-faq__q">Как расшифровать ИГК?<span class="kg-faq__icon" aria-hidden="true"></span></summary>
+          <div class="kg-faq__a"><p>Идентификатор читается по блокам: в 25-значном ИГК по государственному оборонному заказу первые разряды кодируют годы заключения и окончания контракта, далее идут код государственного заказчика, способ определения поставщика и порядковый номер контракта. В 20-значном идентификаторе при казначейском сопровождении по 44-ФЗ основа — идентификационный код закупки из ЕИС. Точное значение каждого разряда закреплено порядком формирования идентификатора для соответствующего режима.</p></div>
         </details>
-
         <details class="kg-faq__item kg-reveal" id="faq-2">
-          <summary class="kg-faq__q">
-            Что делать, если у госконтракта поменялся ИГК — как внести изменение в казначействе?
-            <span class="kg-faq__icon" aria-hidden="true"></span>
-          </summary>
-          <div class="kg-faq__a">
-            <p>Получить от заказчика письменное уведомление о новом ИГК, сверить с карточкой контракта в ЕИС, обновить ИГК в шаблонах платёжных поручений и распоряжениях в ГИИС ЭБ, согласовать с заказчиком обновлённые сведения об операциях. При необходимости направить в УФК уведомление о смене ИГК с приложением допсоглашения и нового идентификатора.</p>
-          </div>
+          <summary class="kg-faq__q">Сколько знаков в ИГК?<span class="kg-faq__icon" aria-hidden="true"></span></summary>
+          <div class="kg-faq__a"><p>По 275-ФЗ (государственный оборонный заказ) идентификатор государственного контракта состоит из 25 разрядов, при казначейском сопровождении по 44-ФЗ — из 20 разрядов. Количество знаков — быстрый способ понять, по какому режиму сопровождается контракт.</p></div>
         </details>
-
         <details class="kg-faq__item kg-reveal" id="faq-3">
-          <summary class="kg-faq__q">
-            Как исправить ИГК в ЕИС?
-            <span class="kg-faq__icon" aria-hidden="true"></span>
-          </summary>
-          <div class="kg-faq__a">
-            <p>Корректировка ИГК в ЕИС — функция заказчика. Подрядчик направляет заказчику письменный запрос с обоснованием (выписка из контракта, допсоглашение), заказчик вносит корректировку в карточку контракта или информацию об исполнении контракта. После этого подрядчик обновляет ИГК в своих документах и распоряжениях. Самостоятельно править ИГК в ЕИС подрядчик не может.</p>
-          </div>
+          <summary class="kg-faq__q">Кто присваивает ИГК?<span class="kg-faq__icon" aria-hidden="true"></span></summary>
+          <div class="kg-faq__a"><p>Идентификатор формирует государственный заказчик при заключении контракта. Головной исполнитель по гособоронзаказу передаёт ИГК всем соисполнителям по цепочке кооперации — свой идентификатор соисполнители не придумывают, а получают от головного.</p></div>
         </details>
-
         <details class="kg-faq__item kg-reveal" id="faq-4">
-          <summary class="kg-faq__q">
-            Что делать, если указанный ИГК в ДО не соответствует условиям исполняемого контракта?
-            <span class="kg-faq__icon" aria-hidden="true"></span>
-          </summary>
-          <div class="kg-faq__a">
-            <p>Это расхождение между ДО (документом об обязательстве) и действующим контрактом. Решается на стороне заказчика: подаётся корректировка ДО с правильным ИГК. До устранения расхождения казначейство возвращает любые платежи по этому контракту. Подрядчику нужно направить заказчику запрос на корректировку с приложением действующего контракта и допсоглашений.</p>
-          </div>
+          <summary class="kg-faq__q">Где взять ИГК для счёта?<span class="kg-faq__icon" aria-hidden="true"></span></summary>
+          <div class="kg-faq__a"><p>ИГК берётся из текста государственного контракта — обычно он указан в преамбуле или реквизитах. Если вы соисполнитель, идентификатор должен быть в вашем контракте с головным исполнителем; если его там нет — запросите у контрагента до выставления счёта, потому что по гособоронзаказу счёт без ИГК не оплатят.</p></div>
         </details>
-
         <details class="kg-faq__item kg-reveal" id="faq-5">
-          <summary class="kg-faq__q">
-            Если в договоре указан казначейский счёт, а ИГК не указан — что делать поставщику?
-            <span class="kg-faq__icon" aria-hidden="true"></span>
-          </summary>
-          <div class="kg-faq__a">
-            <p>Запросить у заказчика письменное уведомление с актуальным ИГК (берётся из карточки контракта в реестре в ЕИС), при необходимости подписать допсоглашение, в котором ИГК указан явно в реквизитах контракта. Отправлять платёж по этому контракту до получения ИГК нельзя — распоряжение вернётся с замечанием об отсутствии идентификатора.</p>
-          </div>
+          <summary class="kg-faq__q">ИГК и идентификатор соглашения — одно и то же?<span class="kg-faq__icon" aria-hidden="true"></span></summary>
+          <div class="kg-faq__a"><p>Нет. ИГК присваивается государственному контракту, а идентификатор соглашения — соглашению о предоставлении субсидии; это разные коды с разной структурой, хотя функция похожа: связать платежи с конкретным основанием. Подробнее — в глоссарии: <a href="/glossary/identifikator-soglasheniya">идентификатор соглашения</a>.</p></div>
         </details>
-
         <details class="kg-faq__item kg-reveal" id="faq-6">
-          <summary class="kg-faq__q">
-            Что делать, если в информации об исполнении контракта неправильные реквизиты?
-            <span class="kg-faq__icon" aria-hidden="true"></span>
-          </summary>
-          <div class="kg-faq__a">
-            <p>Корректировку информации об исполнении контракта в ЕИС вносит заказчик. Подрядчик направляет заказчику письменное обращение с указанием конкретных неверных реквизитов, прикладывает документы-основания и контролирует, чтобы карточка в ЕИС была приведена в соответствие с действующим контрактом до следующего платежа.</p>
-          </div>
+          <summary class="kg-faq__q">Нужен ли ИГК при субподряде?<span class="kg-faq__icon" aria-hidden="true"></span></summary>
+          <div class="kg-faq__a"><p>Да. При казначейском сопровождении и по гособоронзаказу идентификатор контракта сквозной: он указывается в контрактах всей кооперации и в каждом платеже по ним, независимо от уровня субподряда.</p></div>
         </details>
-
-        <details class="kg-faq__item kg-reveal" id="faq-7">
-          <summary class="kg-faq__q">
-            В платёжном поручении на обеспечение исполнения контракта допущена ошибка, признали уклонистами — что делать?
-            <span class="kg-faq__icon" aria-hidden="true"></span>
-          </summary>
-          <div class="kg-faq__a">
-            <p>Срочно собрать доказательства фактической оплаты обеспечения (банковская выписка, платёжное поручение), обратиться к заказчику с письменным разъяснением, что ошибка техническая и обеспечение внесено в установленный срок, просить не признавать уклонившимся или отозвать решение. При несогласии заказчика — направить жалобу в ФАС. Параллельно перевыпустить платёжку с корректным ИГК.</p>
-          </div>
-        </details>
-
-        <details class="kg-faq__item kg-reveal" id="faq-8">
-          <summary class="kg-faq__q">
-            Что делать, если поле «сумма в строке 1 таблицы ИГК» в ЕИС не заполняется?
-            <span class="kg-faq__icon" aria-hidden="true"></span>
-          </summary>
-          <div class="kg-faq__a">
-            <p>Чаще всего это технический сбой формы ЕИС или несинхронность данных карточки контракта. Решения: подать обращение в техподдержку оператора ЕИС с описанием ошибки и скриншотами, попробовать перевыпуск карточки на стороне заказчика, при срочности — связаться с поддержкой ЕИС по телефону. Самостоятельная правка структуры таблицы ИГК не предусмотрена.</p>
-          </div>
-        </details>
-<details class="kg-faq__item kg-reveal" id="faq-neuro-def"><summary class="kg-faq__q">Что такое ИГК (идентификатор государственного контракта)?<span class="kg-faq__icon" aria-hidden="true"></span></summary><div class="kg-faq__a"><p>ИГК — идентификатор государственного контракта, уникальный код, который присваивается контракту с казначейским сопровождением и указывается в каждом платёжном документе, чтобы казначейство связывало операцию с конкретным контрактом. Порядок формирования установлен приказом Минфина России № 205н от 02.12.2021. ИГК проставляют в назначении платежа вместе с кодом направления расходования средств; ошибка или отсутствие ИГК — частая причина возврата платежа.</p></div></details>
-        <details class="kg-faq__item kg-reveal" id="faq-gde-nayti-igk"><summary class="kg-faq__q">Где найти ИГК контракта?<span class="kg-faq__icon" aria-hidden="true"></span></summary><div class="kg-faq__a"><p>ИГК указан в самом государственном контракте (обычно в преамбуле или разделе с реквизитами), в реестре контрактов ЕИС в карточке контракта, а для гособоронзаказа — в договоре с головным исполнителем: по 275-ФЗ ИГК обязателен в каждом договоре кооперации. Если контракт на казначейском сопровождении, ИГК также виден в ГИИС «Электронный бюджет» в Сведениях об операциях с целевыми средствами и в каждом платёжном поручении по контракту.</p></div></details>
 
       </div>
     </section>
 
-    <!-- ============== DISCUSSION (multi-channel: Comments / Telegram / Email) ============== -->
+    <!-- ============== DISCUSSION (multi-channel: Comments / Telegram / MAX / Email) ============== -->
     <section class="kg-discuss" id="kgDiscuss" aria-labelledby="kgDiscussTitle"
-             data-slug="igk-v-platezhah-kaznacheystva" data-api="https://api.kazna-gov.ru/api">
+             data-slug="identifikator-goskontrakta-igk" data-api="https://api.kazna-gov.ru/api">
       <div class="kg-discuss__head">
         <h2 class="kg-discuss__title kg-reveal" id="kgDiscussTitle">Обсуждение</h2>
-        <p class="kg-discuss__hint">Если казначейство вернуло платёж по ИГК или у вас сменился идентификатор — опишите ситуацию или задайте вопрос. Эксперт ответит лично.</p>
+        <p class="kg-discuss__hint">Работаете с ИГК — спросите про структуру, указание в платёжках или исправление ошибки. Эксперт ответит лично.</p>
       </div>
 
-      <!-- TABS (3 канала с защитой от блокировок) -->
+      <!-- TABS (4 канала с защитой от блокировок) -->
       <div class="kg-discuss__tabs" role="tablist" aria-label="Каналы связи">
         <button class="kg-discuss__tab is-active" role="tab" data-tab="comments" type="button" aria-selected="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
@@ -6280,7 +5640,7 @@ body .kg-content{
         </button>
       </div>
 
-      <!-- ===== TAB 1: Комментарии (свой бэкенд через CF Worker) ===== -->
+      <!-- ===== TAB 1: Комментарии (свой бэкенд через API) ===== -->
       <div class="kg-discuss__panel is-active" data-panel="comments" role="tabpanel">
         <!-- Список комментариев -->
         <div class="kg-discuss__list" id="kgDiscussList">
@@ -6352,11 +5712,11 @@ body .kg-content{
           </div>
           <div class="kg-discuss__channel-body">
             <h3>Задать вопрос напрямую</h3>
-            <p>Заполните форму — ответ придёт на ваш email или Telegram в течение рабочего дня. Подходит, когда нужна приватная консультация по ИГК.</p>
+            <p>Заполните форму — ответ придёт на ваш email или Telegram в течение рабочего дня. Подходит, когда нужна приватная консультация по казначейским платежам.</p>
             <form class="kg-discuss__contact" id="kgContactForm" novalidate>
               <input class="kg-discuss__input" name="name" placeholder="Имя" required minlength="2" maxlength="80" autocomplete="name">
               <input class="kg-discuss__input" name="contact" placeholder="Email или @telegram" required minlength="5" maxlength="120">
-              <textarea class="kg-discuss__textarea" name="message" placeholder="Опишите вашу ситуацию по ИГК: что вернуло казначейство, какой контракт" required minlength="5" maxlength="3000" rows="5"></textarea>
+              <textarea class="kg-discuss__textarea" name="message" placeholder="Опишите дату смены и какие платежи висят" required minlength="5" maxlength="3000" rows="5"></textarea>
               <input class="kg-discuss__hp" name="hp" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
           <label class="kg-discuss__consent" style="display:flex;gap:8px;align-items:flex-start;font-size:13px;line-height:1.45;color:var(--kg-ink-3);margin:8px 0 2px;cursor:pointer"><input type="checkbox" name="consent" required style="margin-top:2px;flex:0 0 auto;accent-color:var(--kg-mint)"><span>Отправляя, я соглашаюсь на <a href="/personal_data_policy" target="_blank" rel="noopener" style="color:var(--kg-ink-2);text-decoration:underline">обработку персональных данных</a></span></label>
               <button class="kg-btn kg-btn--primary kg-btn--shine" type="submit">Отправить вопрос →</button>
@@ -6367,97 +5727,36 @@ body .kg-content{
       </div>
     </section>
 
-    <!-- ============== RELATED ARTICLES ============== -->
-    <aside style="max-width:760px;margin:28px auto;padding:18px 22px;border:1px solid #d8e6e0;border-left:4px solid #15846B;border-radius:12px;background:#f7fbf9;font-size:16px;line-height:1.55;color:#0E0F0E"><b>Заметка практика.</b> ИГК меняется при заключении допсоглашения об изменении цены контракта. Платёж со старым ИГК после смены = отказ казначейства. Перед подачей РКП всегда сверяйте текущий ИГК в карточке контракта в ЕИС — он должен совпадать до символа. <span style="display:block;margin-top:8px;color:#4a5a55;font-size:14px">— Стелла Иванова, практика казначейского сопровождения, 15+ лет</span></aside> <div class="kg-forkcta kg-reveal" style="margin:38px 0;padding:26px 28px;background:var(--kg-surface,#FDFAF1);border:1px solid var(--kg-line,#E2DCC8);border-radius:16px"><div style="font:700 12px/1 var(--kg-mono,ui-monospace,monospace);letter-spacing:.14em;text-transform:uppercase;color:var(--kg-mint,#15846B);margin-bottom:6px">Выбор формата</div><div style="font-size:21px;font-weight:800;line-height:1.3;color:var(--kg-ink,#161718);margin-bottom:18px">Дальше — вести самим или отдать под ключ?</div><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px"><a href="/services/conduct" data-goal="fork_cta_click" style="display:block;padding:18px 20px;background:var(--kg-bg,#FAF6EC);border:1px solid var(--kg-line,#E2DCC8);border-radius:12px;text-decoration:none"><div style="font:700 11px/1 var(--kg-mono,ui-monospace,monospace);letter-spacing:.08em;text-transform:uppercase;color:var(--kg-coral,#D9603A);margin-bottom:8px">Ежемесячно · от 89 000 ₽</div><div style="font-size:17px;font-weight:700;color:var(--kg-ink,#161718);margin-bottom:6px">Сопровождение — сделаем под ключ</div><div style="font-size:13.5px;line-height:1.55;color:var(--kg-ink-3,#6B6C6D);margin-bottom:12px">Берём платежи, Сведения, отчётность и переписку с УФК на себя. Безлимит операций.</div><div style="font-size:13px;font-weight:700;color:var(--kg-coral,#D9603A)">Сопровождение под ключ →</div></a><a href="/services/training" data-goal="fork_cta_click" style="display:block;padding:18px 20px;background:var(--kg-bg,#FAF6EC);border:1px solid var(--kg-line,#E2DCC8);border-radius:12px;text-decoration:none"><div style="font:700 11px/1 var(--kg-mono,ui-monospace,monospace);letter-spacing:.08em;text-transform:uppercase;color:var(--kg-mint,#15846B);margin-bottom:8px">Разово · 120 000 ₽</div><div style="font-size:17px;font-weight:700;color:var(--kg-ink,#161718);margin-bottom:6px">Обучение — научим вести самим</div><div style="font-size:13.5px;line-height:1.55;color:var(--kg-ink-3,#6B6C6D);margin-bottom:12px">Курс 9 академических часов с практикой в ГИИС: ваш бухгалтер ведёт счёт без возвратов, с сертификатом.</div><div style="font-size:13px;font-weight:700;color:var(--kg-mint,#15846B)">Программа курса →</div></a></div><p style="margin:16px 0 0;font-size:14px;line-height:1.6;color:var(--kg-ink-3,#6B6C6D)">Курс окупается примерно за <b>1,5 месяца</b> сопровождения — а знания остаются навсегда. Не уверены в формате — <a href="/instrumenty/podbor-formata-soprovozhdeniya/" style="color:var(--kg-mint,#15846B);font-weight:600">подберём за минуту</a>.</p></div><section class="kg-related" aria-labelledby="kgRelatedTitle">
-      <div class="kg-related__head">
-        <h2 class="kg-related__title kg-reveal" id="kgRelatedTitle">Что почитать ещё</h2>
-        <a href="/blog" class="kg-related__more">Весь блог →</a>
-      </div>
-      <div class="kg-related__grid">
-
-        <a href="/blog/naznachenie-platezha-kaznachejstvo/" class="kg-card kg-reveal" data-tilt style="--kg-vtn: kg-card-np">
-          <div class="kg-card__cover">
-            <span class="kg-card__cover-num">RB</span>
-          </div>
-          <div class="kg-card__body">
-            <span class="kg-card__cat">Платежи</span>
-            <h3 class="kg-card__title">Назначение платежа в казначействе — обязательные элементы</h3>
-            <div class="kg-card__meta">
-              <span>27 мая 2026</span>
-              <span class="kg-card__meta-dot">·</span>
-              <span>17 мин</span>
-            </div>
-          </div>
-        </a>
-
-        <a href="/blog/kaznacheyskoe-soprovozhdenie-platezhey" class="kg-card kg-reveal" data-tilt style="--kg-vtn: kg-card-pl">
-          <div class="kg-card__cover">
-            <span class="kg-card__cover-num">RB</span>
-          </div>
-          <div class="kg-card__body">
-            <span class="kg-card__cat">Платежи</span>
-            <h3 class="kg-card__title">Казначейское сопровождение платежей — почему не проходят</h3>
-            <div class="kg-card__meta">
-              <span>26 мая 2026</span>
-              <span class="kg-card__meta-dot">·</span>
-              <span>22 мин</span>
-            </div>
-          </div>
-        </a>
-
-        <a href="/blog/svedeniya-ob-operatsiyah-s-tselevymi-sredstvami" class="kg-card kg-reveal" data-tilt style="--kg-vtn: kg-card-rb18">
-          <div class="kg-card__cover">
-            <span class="kg-card__cover-num">RB</span>
-          </div>
-          <div class="kg-card__body">
-            <span class="kg-card__cat">Платежи</span>
-            <h3 class="kg-card__title">Сведения об операциях с целевыми средствами 2026 — как заполнить</h3>
-            <div class="kg-card__meta">
-              <span>29 мая 2026</span>
-              <span class="kg-card__meta-dot">·</span>
-              <span>15 мин</span>
-            </div>
-          </div>
-        </a>
-
-        <a href="/blog/razdelnyy-uchet-po-44-fz-vs-275-fz-otlichiya" class="kg-card kg-reveal" data-tilt style="--kg-vtn: kg-card-051">
-          <div class="kg-card__cover"><span class="kg-card__cover-num">051</span></div>
-          <div class="kg-card__body">
-            <span class="kg-card__cat">Казначейское сопровождение</span>
-            <h3 class="kg-card__title">Раздельный учёт 44-ФЗ vs 275-ФЗ 2026</h3>
-            <div class="kg-card__meta"><span>2026</span><span class="kg-card__meta-dot">·</span><span>16 мин</span></div>
-          </div>
-        </a>
-      </div>
-    </section>
+    <!-- ============== RELATED ARTICLES (6 карточек) ============== -->
+    <div class="kg-forkcta kg-reveal" style="margin:38px 0;padding:26px 28px;background:var(--kg-surface,#FDFAF1);border:1px solid var(--kg-line,#E2DCC8);border-radius:16px"><div style="font:700 12px/1 var(--kg-mono,ui-monospace,monospace);letter-spacing:.14em;text-transform:uppercase;color:var(--kg-mint,#15846B);margin-bottom:6px">Выбор формата</div><div style="font-size:21px;font-weight:800;line-height:1.3;color:var(--kg-ink,#161718);margin-bottom:18px">Дальше — вести самим или отдать под ключ?</div><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px"><a href="/services/conduct" data-goal="fork_cta_click" style="display:block;padding:18px 20px;background:var(--kg-bg,#FAF6EC);border:1px solid var(--kg-line,#E2DCC8);border-radius:12px;text-decoration:none"><div style="font:700 11px/1 var(--kg-mono,ui-monospace,monospace);letter-spacing:.08em;text-transform:uppercase;color:var(--kg-coral,#D9603A);margin-bottom:8px">Ежемесячно · от 89 000 ₽</div><div style="font-size:17px;font-weight:700;color:var(--kg-ink,#161718);margin-bottom:6px">Сопровождение — сделаем под ключ</div><div style="font-size:13.5px;line-height:1.55;color:var(--kg-ink-3,#6B6C6D);margin-bottom:12px">Берём платежи, Сведения, отчётность и переписку с УФК на себя. Безлимит операций.</div><div style="font-size:13px;font-weight:700;color:var(--kg-coral,#D9603A)">Сопровождение под ключ →</div></a><a href="/services/training" data-goal="fork_cta_click" style="display:block;padding:18px 20px;background:var(--kg-bg,#FAF6EC);border:1px solid var(--kg-line,#E2DCC8);border-radius:12px;text-decoration:none"><div style="font:700 11px/1 var(--kg-mono,ui-monospace,monospace);letter-spacing:.08em;text-transform:uppercase;color:var(--kg-mint,#15846B);margin-bottom:8px">Разово · 120 000 ₽</div><div style="font-size:17px;font-weight:700;color:var(--kg-ink,#161718);margin-bottom:6px">Обучение — научим вести самим</div><div style="font-size:13.5px;line-height:1.55;color:var(--kg-ink-3,#6B6C6D);margin-bottom:12px">Курс 9 академических часов с практикой в ГИИС: ваш бухгалтер ведёт счёт без возвратов, с сертификатом.</div><div style="font-size:13px;font-weight:700;color:var(--kg-mint,#15846B)">Программа курса →</div></a></div><p style="margin:16px 0 0;font-size:14px;line-height:1.6;color:var(--kg-ink-3,#6B6C6D)">Курс окупается примерно за <b>1,5 месяца</b> сопровождения — а знания остаются навсегда. Не уверены в формате — <a href="/instrumenty/podbor-formata-soprovozhdeniya/" style="color:var(--kg-mint,#15846B);font-weight:600">подберём за минуту</a>.</p></div><section class="kg-related" aria-labelledby="kgRelatedTitle"><div class="kg-related__head"><h2 class="kg-related__title kg-reveal" id="kgRelatedTitle">Что почитать ещё</h2><a href="/blog" class="kg-related__more">Весь блог →</a></div><div class="kg-related__grid"><a href="/blog/kak-otkryt-licevoy-schet-71" class="kg-card kg-reveal" data-tilt style="--kg-vtn: kg-card-071"><div class="kg-card__cover"><span class="kg-card__cover-num">071</span></div><div class="kg-card__body"><span class="kg-card__cat">Счета · Открытие</span><h3 class="kg-card__title">Как открыть лицевой счёт 71</h3><div class="kg-card__meta"><span>Читать</span><span class="kg-card__meta-dot">·</span><span>2026</span></div></div></a><a href="/blog/kaznacheyskiy-schet-i-raschetnyy-raznitsa" class="kg-card kg-reveal" data-tilt style="--kg-vtn: kg-card-016"><div class="kg-card__cover"><span class="kg-card__cover-num">016</span></div><div class="kg-card__body"><span class="kg-card__cat">Счета · Разница</span><h3 class="kg-card__title">Казначейский и расчётный счёт — отличия</h3><div class="kg-card__meta"><span>Читать</span><span class="kg-card__meta-dot">·</span><span>2026</span></div></div></a><a href="/blog/svedeniya-ob-operatsiyah-s-tselevymi-sredstvami" class="kg-card kg-reveal" data-tilt style="--kg-vtn: kg-card-021"><div class="kg-card__cover"><span class="kg-card__cover-num">021</span></div><div class="kg-card__body"><span class="kg-card__cat">Отчётность · Сведения</span><h3 class="kg-card__title">Сведения об операциях с целевыми средствами</h3><div class="kg-card__meta"><span>Читать</span><span class="kg-card__meta-dot">·</span><span>2026</span></div></div></a><a href="/blog/igk-v-platezhah-kaznacheystva" class="kg-card kg-reveal" data-tilt style="--kg-vtn: kg-card-022"><div class="kg-card__cover"><span class="kg-card__cover-num">022</span></div><div class="kg-card__body"><span class="kg-card__cat">Реквизиты · ИГК</span><h3 class="kg-card__title">ИГК в казначейских платежах</h3><div class="kg-card__meta"><span>Читать</span><span class="kg-card__meta-dot">·</span><span>2026</span></div></div></a><a href="/blog/razdelnyj-uchet-goz-polnyy-guide-2026" class="kg-card kg-reveal" data-tilt style="--kg-vtn: kg-card-028"><div class="kg-card__cover"><span class="kg-card__cover-num">028</span></div><div class="kg-card__body"><span class="kg-card__cat">Учёт · ГОЗ</span><h3 class="kg-card__title">Раздельный учёт по ГОЗ</h3><div class="kg-card__meta"><span>Читать</span><span class="kg-card__meta-dot">·</span><span>2026</span></div></div></a><a href="/blog/kody-kaznacheyskogo-soprovozhdeniya" class="kg-card kg-reveal" data-tilt style="--kg-vtn: kg-card-006"><div class="kg-card__cover"><span class="kg-card__cover-num">006</span></div><div class="kg-card__body"><span class="kg-card__cat">Коды · Расходование</span><h3 class="kg-card__title">Коды казначейского сопровождения</h3><div class="kg-card__meta"><span>Читать</span><span class="kg-card__meta-dot">·</span><span>2026</span></div></div></a></div></section>
 
     <!-- ============== MARQUEE TICKER ============== -->
     <div class="kg-ticker" aria-hidden="true">
       <div class="kg-ticker__track">
-        <span class="kg-ticker__item"><b>800+</b> открытых счетов</span>
+        <span class="kg-ticker__item"><b>казначейский счёт в 1С</b></span>
         <span class="kg-ticker__item-sep"></span>
-        <span class="kg-ticker__item"><b>15+ лет</b> в практике КС</span>
+        <span class="kg-ticker__item"><b>счёт 51 или 55</b></span>
         <span class="kg-ticker__item-sep"></span>
-        <span class="kg-ticker__item"><b>0%</b> возвратов в 2025</span>
+        <span class="kg-ticker__item"><b>счёт учёта 51 или 55</b></span>
         <span class="kg-ticker__item-sep"></span>
-        <span class="kg-ticker__item"><b>8 топ-ошибок</b> ИГК</span>
+        <span class="kg-ticker__item"><b>аналитика по контракту и ИГК</b></span>
         <span class="kg-ticker__item-sep"></span>
-        <span class="kg-ticker__item"><b>5 шагов</b> исправления ИГК</span>
+        <span class="kg-ticker__item">свести <b>обороты с выпиской казначейства</b></span>
         <span class="kg-ticker__item-sep"></span>
-        <span class="kg-ticker__item"><b>1 час</b> до ответа в рабочее время</span>
+        <span class="kg-ticker__item">без <b>отказа казначейства</b></span>
         <span class="kg-ticker__item-sep"></span>
         <!-- duplicate for seamless loop -->
-        <span class="kg-ticker__item"><b>800+</b> открытых счетов</span>
+        <span class="kg-ticker__item"><b>казначейский счёт в 1С</b></span>
         <span class="kg-ticker__item-sep"></span>
-        <span class="kg-ticker__item"><b>15+ лет</b> в практике КС</span>
+        <span class="kg-ticker__item"><b>счёт 51 или 55</b></span>
         <span class="kg-ticker__item-sep"></span>
-        <span class="kg-ticker__item"><b>0%</b> возвратов в 2025</span>
+        <span class="kg-ticker__item"><b>счёт учёта 51 или 55</b></span>
         <span class="kg-ticker__item-sep"></span>
-        <span class="kg-ticker__item"><b>8 топ-ошибок</b> ИГК</span>
+        <span class="kg-ticker__item"><b>аналитика по контракту и ИГК</b></span>
         <span class="kg-ticker__item-sep"></span>
-        <span class="kg-ticker__item"><b>5 шагов</b> исправления ИГК</span>
+        <span class="kg-ticker__item">свести <b>обороты с выпиской казначейства</b></span>
         <span class="kg-ticker__item-sep"></span>
-        <span class="kg-ticker__item"><b>1 час</b> до ответа в рабочее время</span>
+        <span class="kg-ticker__item">без <b>отказа казначейства</b></span>
         <span class="kg-ticker__item-sep"></span>
       </div>
     </div>
@@ -6702,35 +6001,35 @@ body .kg-content{
       <div class="kg-final__inner">
         <div class="kg-final__grid">
           <div class="kg-final__copy">
-            <div class="kg-final__tag">Возврат по ИГК</div>
-            <h2 class="kg-final__title" id="kgFinalTitle">Возврат по ИГК — разберём за день</h2>
-            <p class="kg-final__text">Сверим ИГК по контракту, ЕИС, ДО и согласованным сведениям, направим обращение в ТОФК на корректировку и проведём платёж заново. Параллельно вычистим шаблоны и справочник ИГК у подрядчика, чтобы ошибка не повторилась.</p>
+            <div class="kg-final__tag">Казначейские платежи под ключ</div>
+            <h2 class="kg-final__title" id="kgFinalTitle">Платежи без возвратов по ИГК</h2>
+            <p class="kg-final__text">Настроим учёт казначейского счёта в 1С, аналитику по контракту, подачу платежей в Электронном бюджете и сверку с выпиской казначейства. <a href="/services/conduct">Казначейское сопровождение платежей под ключ</a> — заявку обработаем за час.</p>
 
             <div class="kg-final__row">
-              <a href="tel:+74951084232" class="kg-btn kg-btn--ghost">+7 (495) 108-42-32</a>
+              <a href="tel:+79818331010" class="kg-btn kg-btn--ghost">+7 (981) 833-10-10</a>
               <a href="https://t.me/kaznagovru" target="_blank" rel="noopener" class="kg-btn kg-btn--ghost">Написать в Telegram</a>
             </div>
 
             <div class="kg-final__trust">
               <span class="kg-final__trust-item"><span class="kg-final__trust-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="12" height="12"><polyline points="20 6 9 17 4 12"/></svg></span><b>15+ лет</b> практики КС</span>
-              <span class="kg-final__trust-item"><span class="kg-final__trust-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="12" height="12"><polyline points="20 6 9 17 4 12"/></svg></span><b>800+</b> открытых счетов</span>
-              <span class="kg-final__trust-item"><span class="kg-final__trust-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="12" height="12"><polyline points="20 6 9 17 4 12"/></svg></span><b>0%</b> возвратов в 2025</span>
+              <span class="kg-final__trust-item"><span class="kg-final__trust-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="12" height="12"><polyline points="20 6 9 17 4 12"/></svg></span><b>800+</b> контрактов под сопровождением</span>
+              <span class="kg-final__trust-item"><span class="kg-final__trust-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="12" height="12"><polyline points="20 6 9 17 4 12"/></svg></span>в режиме <b>срочности</b></span>
               <span class="kg-final__trust-item"><span class="kg-final__trust-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="12" height="12"><polyline points="20 6 9 17 4 12"/></svg></span>Ответ за <b>1 час</b></span>
             </div>
           </div>
 
-          <form class="kg-final__form-card" id="kgFinalForm" novalidate data-source="article-igk">
-            <div class="kg-final__form-head">Заявка с фиксированной ценой</div>
-            <h3 class="kg-final__form-title">Расчёт за 5 минут</h3>
+          <form class="kg-final__form-card" id="kgFinalForm" novalidate data-source="article-zarplata-s-kaznacheyskogo-scheta">
+            <div class="kg-final__form-head">Казначейские платежи под ключ</div>
+            <h3 class="kg-final__form-title">Проведём платежи через счёт</h3>
             <input class="kg-final__form-input" name="name" placeholder="Имя" required minlength="2" maxlength="80" autocomplete="name">
             <input class="kg-final__form-input" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required autocomplete="tel" inputmode="tel" data-mask="phone-ru">
-            <input class="kg-final__form-input" name="comment" placeholder="Кратко об ошибке по ИГК (необязательно)" maxlength="500" autocomplete="off">
+            <input class="kg-final__form-input" name="comment" value="Нужно наладить учёт казначейского счёта в 1С — помогите с настройкой и сверкой" maxlength="500" autocomplete="off">
             <input class="kg-final__form-hp" name="hp" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
             <label class="kg-final__form-policy">
               <input type="checkbox" name="consent" required>
               <span>Согласен с <a href="/personal_data_policy" target="_blank" rel="noopener">политикой обработки персональных данных</a>. Данные используются только для связи с вами. Не передаём третьим лицам.</span>
             </label>
-            <button class="kg-final__form-submit" type="submit">Перезвоните мне →</button>
+            <button class="kg-final__form-submit" type="submit">Отправить заявку →</button>
             <div class="kg-final__form-msg" id="kgFinalFormMsg" hidden></div>
 
             <!-- SUCCESS STATE — показывается после успешной отправки -->
@@ -6744,7 +6043,7 @@ body .kg-content{
               <h3 class="kg-final__success-title">Заявка принята</h3>
               <p class="kg-final__success-text">
                 Эксперт перезвонит <b>в течение 1 часа</b> в рабочее время.<br>
-                Расскажет про услугу, рассчитает фиксированную цену и предложит ближайшее время для старта.
+                Уточнит, каким счётом закрывать и как настроить аналитику, поможет свести обороты.
               </p>
               <div class="kg-final__success-meta">
                 <span>Часы работы: <b>9:00–21:00 МСК</b></span>
@@ -6760,12 +6059,12 @@ body .kg-content{
                   </svg>
                   Написать в Telegram
                 </a>
-                <a href="tel:+74951084232" class="kg-final__success-contact" data-goal="success_phone">
+                <a href="tel:+79818331010" class="kg-final__success-contact" data-goal="success_phone">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/>
                   </svg>
-                  +7 (495) 108-42-32
+                  +7 (981) 833-10-10
                 </a>
               </div>
               <button type="button" class="kg-final__success-again" id="kgFinalSuccessAgain">
@@ -6784,8 +6083,6 @@ body .kg-content{
         var phoneInput = form.phone;
 
         // ===== Маска RU-телефона =====
-        // Префилл "+7 " на фокусе. Срезаем ведущую 7 (от префилла) и 8 (RU country code).
-        // Остаток — 10 цифр body. Канон: 7XXXXXXXXXX. Вывод: +7 (XXX) XXX-XX-XX.
         function digitsOnly(s){ return (s || '').replace(/\D+/g, ''); }
         function normalize(d){
           if (!d) return '';
@@ -6812,11 +6109,10 @@ body .kg-content{
           if (!phoneInput.value) phoneInput.value = '+7 ';
         });
         phoneInput.addEventListener('input', applyMask);
-        // Backspace/Delete: пропускаем скобки/пробелы/дефисы и удаляем ближайшую цифру
         phoneInput.addEventListener('keydown', function(e){
           if (e.key !== 'Backspace' && e.key !== 'Delete') return;
           var pos = phoneInput.selectionStart;
-          if (pos !== phoneInput.selectionEnd) return; // выделение — оставляем дефолт
+          if (pos !== phoneInput.selectionEnd) return;
           var val = phoneInput.value;
           var isBack = e.key === 'Backspace';
           var i = isBack ? pos - 1 : pos;
@@ -6848,13 +6144,9 @@ body .kg-content{
           msg.classList.add(ok ? 'is-success' : 'is-error');
         }
         function showSuccess(){
-          // Полноценный success-state: скрываем форму, показываем плашку.
           form.classList.add('is-sent');
           msg.hidden = true;
-          // Скроллим карточку в видимую область, чтобы пользователь увидел
-          // подтверждение даже если форма была за нижней границей экрана.
           try { form.scrollIntoView({ behavior: 'smooth', block: 'center' }); } catch(e){}
-          // Перевод фокуса на live-region — screen reader озвучит подтверждение.
           var live = document.getElementById('kgFinalSuccess');
           if (live){
             live.setAttribute('tabindex', '-1');
@@ -6866,7 +6158,7 @@ body .kg-content{
           form.reset();
           msg.hidden = true;
           var btn = form.querySelector('button[type="submit"]');
-          if (btn){ btn.disabled = false; btn.textContent = 'Перезвоните мне →'; }
+          if (btn){ btn.disabled = false; btn.textContent = 'Отправить заявку →'; }
           var firstField = form.querySelector('input[name="name"]');
           if (firstField){ try { firstField.focus(); } catch(e){} }
         }
@@ -6899,7 +6191,7 @@ body .kg-content{
           })
           .then(function(r){ return r.json(); })
           .then(function(res){
-            btn.disabled = false; btn.textContent = 'Перезвоните мне →';
+            btn.disabled = false; btn.textContent = 'Отправить заявку →';
             if (res.success){
               showSuccess();
               if (window.kgTrack) window.kgTrack('lead_submitted', { source: form.dataset.source });
@@ -6908,8 +6200,8 @@ body .kg-content{
             }
           })
           .catch(function(){
-            btn.disabled = false; btn.textContent = 'Перезвоните мне →';
-            show('Сеть недоступна. Позвоните +7 (495) 108-42-32 или напишите в Telegram.', false);
+            btn.disabled = false; btn.textContent = 'Отправить заявку →';
+            show('Сеть недоступна. Позвоните +7 (981) 833-10-10 или напишите в Telegram.', false);
           });
         });
       })();
@@ -6919,8 +6211,8 @@ body .kg-content{
   </main>
 
   <!-- footer виден только при печати -->
-  <div class="kg-print-footer" aria-hidden="true" data-nosnippet>
-    Источник: kazna-gov.ru/blog/igk-v-platezhah-kaznacheystva · © Казна 2026 · Распечатано для рабочего использования
+  <div class="kg-print-footer" aria-hidden="true">
+    Источник: kazna-gov.ru/blog/zarplata-s-kaznacheyskogo-scheta · © Казна 2026 · Распечатано для рабочего использования
   </div>
 
   <!-- ============== SEARCH MODAL (Cmd+K / Ctrl+K) ============== -->
@@ -6976,10 +6268,10 @@ body .kg-content{
   </div>
 
   <!-- ============== STICKY MOBILE CTA BAR ============== -->
-  <div class="kg-mobile-cta" id="kgMobileCta" aria-hidden="true" data-nosnippet>
+  <div class="kg-mobile-cta" id="kgMobileCta" aria-hidden="true">
     <div class="kg-mobile-cta__text">
-      <b>Возврат по ИГК?</b>
-      <span>Разберём за день · 800+ кейсов</span>
+      <b>Как отразить казначейский счёт в 1С?</b>
+      <span>Проведём казначейские платежи под ключ</span>
     </div>
     <a href="#form" class="kg-mobile-cta__btn">Заявка →</a>
   </div>
@@ -8912,19 +8204,6 @@ window.kgRequestPush = function(){
   if(stored==='necessary'){publishConsent('necessary');disableAnalytics();}
   else if(stored==='all'){publishConsent('all');}
   else{publishConsent('pending');setTimeout(show,800);}
-})();
-</script>
-<style id="kg-dock-guard">@media (max-width:880px){.kg-dock{max-width:calc(100vw - 16px);box-sizing:border-box;flex-wrap:wrap;justify-content:center;}}</style>
-<noscript><style>.kg-reveal,.kg-ornament{opacity:1!important;transform:none!important}</style></noscript>
-<script>
-(function(){
-  'use strict';
-  function showAll(){
-    document.querySelectorAll('.kg-reveal:not(.is-visible), .kg-ornament:not(.is-visible)')
-      .forEach(function(el){ el.classList.add('is-visible'); });
-  }
-  if (document.readyState === 'complete') { setTimeout(showAll, 2500); }
-  else { window.addEventListener('load', function(){ setTimeout(showAll, 2500); }); }
 })();
 </script>
 </body>
