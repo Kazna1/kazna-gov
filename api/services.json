@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-08-31",
+ "version": "2026-09-01",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "count": 8,
@@ -439,12 +439,12 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-service-giis-eb",
    "scores": {
-    "authority": 1,
+    "authority": 3,
     "coverage": 100,
-    "connectivity": 43,
+    "connectivity": 50,
     "citation": 80,
     "aiReadiness": 100,
-    "density": 87
+    "density": 100
    }
   },
   {

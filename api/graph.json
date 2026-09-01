@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-08-31",
+ "version": "2026-09-01",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "nodes": [
@@ -359,7 +359,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-zatyanulos-otkrytie",
    "scores": {
-    "authority": 65,
+    "authority": 66,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -700,7 +700,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-zayavlenie-ls",
    "scores": {
-    "authority": 81,
+    "authority": 82,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -1765,6 +1765,8 @@
    "name": "ТОФК",
    "aliases": [
     "территориальный орган казначейства",
+    "банк тофк",
+    "тофк россии",
     "Территориальный орган Федерального казначейства"
    ],
    "summary": "ТОФК — территориальный орган Федерального казначейства: обобщающее название УФК по субъектам РФ и их отделов. В документах КС «ТОФК» встречается как реквизит: каждый орган имеет код (КОФК), который указывается в заявлениях, карточке подписей и платёжных документах. Свой ТОФК определяется правилами порядка лицевых счетов.",
@@ -1799,7 +1801,7 @@
      "/blog/tofk"
     ]
    },
-   "updated": "2026-07-14",
+   "updated": "2026-09-01",
    "schema_id": "https://kazna-gov.ru/#e-tofk",
    "scores": {
     "authority": 30,
@@ -2189,7 +2191,9 @@
      "doverennost-mchd",
      "kontinent-tls",
      "registratsiya-eb",
-     "epbs"
+     "epbs",
+     "ebp",
+     "nsi-eb"
     ],
     "REQUIRES_DOC": [
      "doverennost-mchd",
@@ -2213,12 +2217,107 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-giis-eb",
    "scores": {
-    "authority": 65,
+    "authority": 68,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
+   }
+  },
+  {
+   "id": "ebp",
+   "type": [
+    "term"
+   ],
+   "name": "ЕБП",
+   "aliases": [
+    "ебп",
+    "ебп гиис электронный бюджет",
+    "ебп финансы",
+    "единая бюджетная платформа",
+    "Единая бюджетная платформа"
+   ],
+   "summary": "ЕБП — единая бюджетная платформа ГИИС «Электронный бюджет»: учётно-платёжная среда, в которой исполнитель госконтракта ведёт лицевой счёт и проводит казначейские платежи. С 18 июля 2026 года работает версия 3.2: карточки образцов подписей заменены машиночитаемой доверенностью, вместо 16 форм распоряжений — конструктор, операции по счёту отражаются в режиме реального времени.",
+   "citation": "Платёжно-учётное ядро «Электронного бюджета», встроенное в систему казначейских платежей: не отдельная система вместо ЭБ, а новая модель работы внутри него.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/ebp/",
+     "title": "ЕБП"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "giis-eb",
+     "registratsiya-eb",
+     "doverennost-mchd"
+    ],
+    "REQUIRES_DOC": [
+     "doverennost-mchd"
+    ],
+    "MONETIZED_BY": [
+     "service-giis-eb"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/novosti/ebp-3-2-elektronnyy-byudzhet-s-18-07-2026",
+     "/blog/giis-elektronnyy-byudzhet-2026-polnaya-instruktsiya"
+    ]
+   },
+   "updated": "2026-09-01",
+   "schema_id": "https://kazna-gov.ru/#e-ebp",
+   "scores": {
+    "authority": 2,
+    "coverage": 67,
+    "connectivity": 23,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 47
+   }
+  },
+  {
+   "id": "nsi-eb",
+   "type": [
+    "term"
+   ],
+   "name": "НСИ",
+   "aliases": [
+    "нси",
+    "нси гиис электронный бюджет",
+    "нси электронный бюджет",
+    "Нормативно-справочная информация «Электронного бюджета»"
+   ],
+   "summary": "НСИ — подсистема ведения нормативно-справочной информации ГИИС «Электронный бюджет»: централизованные справочники, из которых система берёт значения для форм — перечни организаций, коды бюджетной классификации, реквизиты органов казначейства. Подрядчику отдельная работа в НСИ обычно не нужна: справочники подставляются в документы автоматически, а доступ к самой подсистеме выдаётся по отдельному регламенту.",
+   "citation": "Справочный слой «Электронного бюджета»: единые классификаторы и реестры, на которые опираются все остальные подсистемы.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/nsi-eb/",
+     "title": "НСИ"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "giis-eb",
+     "svodnyy-reestr",
+     "registratsiya-eb"
+    ],
+    "MONETIZED_BY": [
+     "service-giis-eb"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/giis-elektronnyy-byudzhet-2026-polnaya-instruktsiya"
+    ]
+   },
+   "updated": "2026-09-01",
+   "schema_id": "https://kazna-gov.ru/#e-nsi-eb",
+   "scores": {
+    "authority": 2,
+    "coverage": 50,
+    "connectivity": 20,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 40
    }
   },
   {
@@ -2514,6 +2613,7 @@
     "кс",
     "казначейское сопровождение контракта",
     "сопровождение казначейством",
+    "сопровождение казначейских операций",
     "КС"
    ],
    "summary": "Казначейское сопровождение (КС) — режим контроля целевых средств госконтракта или субсидии: деньги зачисляются не на расчётный счёт исполнителя, а на лицевой счёт в УФК, и каждое списание проходит проверку казначейством (санкционирование). Случаи применения КС ежегодно задаёт закон о федеральном бюджете; правовая база — ст. 242.23–242.26 БК РФ.",
@@ -2544,7 +2644,7 @@
      "/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov"
     ]
    },
-   "updated": "2026-07-14",
+   "updated": "2026-09-01",
    "schema_id": "https://kazna-gov.ru/#e-ks",
    "scores": {
     "authority": 61,
@@ -2851,7 +2951,7 @@
    "updated": "2026-08-16",
    "schema_id": "https://kazna-gov.ru/#e-ls-71",
    "scores": {
-    "authority": 90,
+    "authority": 92,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -3091,7 +3191,8 @@
    "name": "Целевые средства",
    "aliases": [
     "целевые деньги",
-    "средства контракта"
+    "средства контракта",
+    "средства казначейского сопровождения"
    ],
    "summary": "Целевые средства — деньги, предоставленные из бюджета на конкретную цель: исполнение госконтракта, соглашения о субсидии, контракта кооперации. При казначейском сопровождении они зачисляются на лицевой счёт и могут расходоваться только на цели, ради которых выданы, — направление каждого списания подтверждается документами и кодом.",
    "citation": "Бюджетные деньги с целевым назначением на лицевом счёте участника КС. Их трата на не предусмотренные контрактом цели — нецелевое расходование с ответственностью.",
@@ -3126,7 +3227,7 @@
      "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta"
     ]
    },
-   "updated": "2026-07-14",
+   "updated": "2026-09-01",
    "schema_id": "https://kazna-gov.ru/#e-tselevye-sredstva",
    "scores": {
     "authority": 48,
@@ -3224,12 +3325,70 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-kod-71",
    "scores": {
-    "authority": 9,
+    "authority": 10,
     "coverage": 67,
-    "connectivity": 43,
+    "connectivity": 47,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 87
+    "density": 93
+   }
+  },
+  {
+   "id": "uchastnik-ks",
+   "type": [
+    "term"
+   ],
+   "name": "Участник казначейского сопровождения",
+   "aliases": [
+    "участники казначейского сопровождения",
+    "участник кс",
+    "лицевой счет участника казначейского сопровождения",
+    "кто является участником казначейского сопровождения"
+   ],
+   "summary": "Участник казначейского сопровождения — исполнитель или соисполнитель контракта, которому территориальный орган казначейства открывает лицевой счёт с кодом 71 для целевых средств. Участник — это не заказчик, а коммерческая организация в цепочке кооперации: она подаёт Сведения об операциях, проводит каждый платёж через санкционирование и ведёт раздельный учёт по своему контракту.",
+   "citation": "Сторона сопровождаемого контракта, получающая целевые средства на лицевой счёт в казначействе: головной исполнитель, подрядчик или любой соисполнитель по цепочке кооперации.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/uchastnik-kaznacheyskogo-soprovozhdeniya/",
+     "title": "Участник казначейского сопровождения"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "kod-71",
+     "ls-71",
+     "ispolnitel",
+     "subpodryadchik",
+     "golovnoy-ispolnitel"
+    ],
+    "REQUIRES_DOC": [
+     "zayavlenie-ls"
+    ],
+    "SEE_ERROR": [
+     "err-zatyanulos-otkrytie"
+    ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kak-otkryt-licevoy-schet-71",
+     "/blog/licevoy-schet-41",
+     "/blog/litsevoy-schet-71"
+    ]
+   },
+   "updated": "2026-09-01",
+   "schema_id": "https://kazna-gov.ru/#e-uchastnik-ks",
+   "scores": {
+    "authority": 0,
+    "coverage": 100,
+    "connectivity": 30,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 60
    }
   },
   {
@@ -3730,9 +3889,9 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-golovnoy-ispolnitel",
    "scores": {
-    "authority": 11,
+    "authority": 13,
     "coverage": 67,
-    "connectivity": 50,
+    "connectivity": 53,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -3784,9 +3943,9 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-subpodryadchik",
    "scores": {
-    "authority": 10,
+    "authority": 11,
     "coverage": 100,
-    "connectivity": 57,
+    "connectivity": 60,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -5788,7 +5947,9 @@
      "giis-eb",
      "ecp",
      "doverennost-mchd",
-     "upolnomochennye"
+     "upolnomochennye",
+     "ebp",
+     "nsi-eb"
     ],
     "REQUIRES_DOC": [
      "chek-list-otkrytie"
@@ -5809,9 +5970,9 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-registratsiya-eb",
    "scores": {
-    "authority": 15,
+    "authority": 17,
     "coverage": 100,
-    "connectivity": 70,
+    "connectivity": 83,
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
@@ -6392,7 +6553,7 @@
    "updated": "2026-08-11",
    "schema_id": "https://kazna-gov.ru/#e-svodnyy-reestr",
    "scores": {
-    "authority": 29,
+    "authority": 30,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -7299,12 +7460,12 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-ispolnitel",
    "scores": {
-    "authority": 3,
+    "authority": 5,
     "coverage": 83,
-    "connectivity": 40,
+    "connectivity": 43,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 80
+    "density": 87
    }
   },
   {
@@ -26451,12 +26612,12 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-service-giis-eb",
    "scores": {
-    "authority": 1,
+    "authority": 3,
     "coverage": 100,
-    "connectivity": 43,
+    "connectivity": 50,
     "citation": 80,
     "aiReadiness": 100,
-    "density": 87
+    "density": 100
    }
   },
   {
@@ -28367,6 +28528,16 @@
   },
   {
    "from": "giis-eb",
+   "to": "ebp",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "giis-eb",
+   "to": "nsi-eb",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "giis-eb",
    "to": "doverennost-mchd",
    "rel": "REQUIRES_DOC"
   },
@@ -28393,6 +28564,51 @@
   {
    "from": "giis-eb",
    "to": "service-conduct",
+   "rel": "MONETIZED_BY"
+  },
+  {
+   "from": "ebp",
+   "to": "giis-eb",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "ebp",
+   "to": "registratsiya-eb",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "ebp",
+   "to": "doverennost-mchd",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "ebp",
+   "to": "doverennost-mchd",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "ebp",
+   "to": "service-giis-eb",
+   "rel": "MONETIZED_BY"
+  },
+  {
+   "from": "nsi-eb",
+   "to": "giis-eb",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "nsi-eb",
+   "to": "svodnyy-reestr",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "nsi-eb",
+   "to": "registratsiya-eb",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "nsi-eb",
+   "to": "service-giis-eb",
    "rel": "MONETIZED_BY"
   },
   {
@@ -29007,6 +29223,51 @@
   },
   {
    "from": "kod-71",
+   "to": "service-open",
+   "rel": "MONETIZED_BY"
+  },
+  {
+   "from": "uchastnik-ks",
+   "to": "kod-71",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "uchastnik-ks",
+   "to": "ls-71",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "uchastnik-ks",
+   "to": "ispolnitel",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "uchastnik-ks",
+   "to": "subpodryadchik",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "uchastnik-ks",
+   "to": "golovnoy-ispolnitel",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "uchastnik-ks",
+   "to": "zayavlenie-ls",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "uchastnik-ks",
+   "to": "err-zatyanulos-otkrytie",
+   "rel": "SEE_ERROR"
+  },
+  {
+   "from": "uchastnik-ks",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "uchastnik-ks",
    "to": "service-open",
    "rel": "MONETIZED_BY"
   },
@@ -31148,6 +31409,16 @@
   {
    "from": "registratsiya-eb",
    "to": "upolnomochennye",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "registratsiya-eb",
+   "to": "ebp",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "registratsiya-eb",
+   "to": "nsi-eb",
    "rel": "RELATED_TERM"
   },
   {

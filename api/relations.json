@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-08-31",
+ "version": "2026-09-01",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "edges": [
@@ -1356,6 +1356,16 @@
   },
   {
    "from": "giis-eb",
+   "to": "ebp",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "giis-eb",
+   "to": "nsi-eb",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "giis-eb",
    "to": "doverennost-mchd",
    "rel": "REQUIRES_DOC"
   },
@@ -1382,6 +1392,51 @@
   {
    "from": "giis-eb",
    "to": "service-conduct",
+   "rel": "MONETIZED_BY"
+  },
+  {
+   "from": "ebp",
+   "to": "giis-eb",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "ebp",
+   "to": "registratsiya-eb",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "ebp",
+   "to": "doverennost-mchd",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "ebp",
+   "to": "doverennost-mchd",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "ebp",
+   "to": "service-giis-eb",
+   "rel": "MONETIZED_BY"
+  },
+  {
+   "from": "nsi-eb",
+   "to": "giis-eb",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "nsi-eb",
+   "to": "svodnyy-reestr",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "nsi-eb",
+   "to": "registratsiya-eb",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "nsi-eb",
+   "to": "service-giis-eb",
    "rel": "MONETIZED_BY"
   },
   {
@@ -1996,6 +2051,51 @@
   },
   {
    "from": "kod-71",
+   "to": "service-open",
+   "rel": "MONETIZED_BY"
+  },
+  {
+   "from": "uchastnik-ks",
+   "to": "kod-71",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "uchastnik-ks",
+   "to": "ls-71",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "uchastnik-ks",
+   "to": "ispolnitel",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "uchastnik-ks",
+   "to": "subpodryadchik",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "uchastnik-ks",
+   "to": "golovnoy-ispolnitel",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "uchastnik-ks",
+   "to": "zayavlenie-ls",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "uchastnik-ks",
+   "to": "err-zatyanulos-otkrytie",
+   "rel": "SEE_ERROR"
+  },
+  {
+   "from": "uchastnik-ks",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "uchastnik-ks",
    "to": "service-open",
    "rel": "MONETIZED_BY"
   },
@@ -4137,6 +4237,16 @@
   {
    "from": "registratsiya-eb",
    "to": "upolnomochennye",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "registratsiya-eb",
+   "to": "ebp",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "registratsiya-eb",
+   "to": "nsi-eb",
    "rel": "RELATED_TERM"
   },
   {

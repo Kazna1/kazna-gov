@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-08-31",
+ "version": "2026-09-01",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "map": {
@@ -314,6 +314,20 @@
    ],
    "url": "/glossary/giis-elektronnyy-byudzhet/"
   },
+  "ebp": {
+   "name": "ЕБП",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/ebp/"
+  },
+  "nsi-eb": {
+   "name": "НСИ",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/nsi-eb/"
+  },
   "eis": {
    "name": "ЕИС",
    "type": [
@@ -460,6 +474,13 @@
     "term"
    ],
    "url": "/glossary/kod-71/"
+  },
+  "uchastnik-ks": {
+   "name": "Участник казначейского сопровождения",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/uchastnik-kaznacheyskogo-soprovozhdeniya/"
   },
   "rezervirovanie-ls": {
    "name": "Резервирование лицевого счёта",

@@ -1,14 +1,14 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-08-31",
+ "version": "2026-09-01",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
- "nodes": 491,
- "edges": 4288,
+ "nodes": 494,
+ "edges": 4310,
  "byType": {
   "error": 13,
   "document": 19,
-  "term": 121,
+  "term": 124,
   "faq": 302,
   "hub": 10,
   "tool": 11,
@@ -16,12 +16,12 @@
   "law": 16
  },
  "relTypes": {
-  "REQUIRES_DOC": 490,
-  "SEE_ERROR": 377,
-  "MONETIZED_BY": 408,
-  "REGULATED_BY": 592,
+  "REQUIRES_DOC": 492,
+  "SEE_ERROR": 378,
+  "MONETIZED_BY": 411,
+  "REGULATED_BY": 593,
   "RELATED_DOC": 55,
-  "RELATED_TERM": 407,
+  "RELATED_TERM": 422,
   "USES_TERM": 1294,
   "DIAGNOSED_BY": 26,
   "RELATED_HUB": 28,
@@ -40,7 +40,7 @@
   },
   {
    "id": "law-bk-rf-st-2422224226",
-   "in": 118
+   "in": 119
   },
   {
    "id": "svedeniya-ssu",
@@ -56,11 +56,11 @@
   },
   {
    "id": "service-open",
-   "in": 94
+   "in": 95
   },
   {
    "id": "doverennost-mchd",
-   "in": 92
+   "in": 94
   },
   {
    "id": "sanktsionirovanie",
@@ -68,11 +68,11 @@
   },
   {
    "id": "ls-71",
-   "in": 79
+   "in": 80
   },
   {
    "id": "zayavlenie-ls",
-   "in": 71
+   "in": 72
   },
   {
    "id": "law-275-fz",
@@ -87,12 +87,12 @@
    "in": 65
   },
   {
-   "id": "err-necelevoe",
-   "in": 57
+   "id": "giis-eb",
+   "in": 59
   },
   {
    "id": "err-zatyanulos-otkrytie",
-   "in": 57
+   "in": 58
   }
  ],
  "multiLayerConcepts": [

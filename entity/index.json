@@ -1,9 +1,9 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-08-31",
+ "version": "2026-09-01",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
- "count": 491,
+ "count": 494,
  "entities": [
   {
    "id": "service-conduct",
@@ -129,14 +129,13 @@
    "url": "/obraztsy/platezhnoe-poruchenie-obrazec/"
   },
   {
-   "id": "err-necelevoe",
-   "name": "Нецелевое расходование",
+   "id": "giis-eb",
+   "name": "ГИИС «Электронный бюджет»",
    "type": [
-    "error",
     "term"
    ],
-   "api": "/entity/err-necelevoe.json",
-   "url": "/oshibki/necelevoe-rashodovanie-sredstv/"
+   "api": "/entity/giis-eb.json",
+   "url": "/glossary/giis-elektronnyy-byudzhet/"
   },
   {
    "id": "err-zatyanulos-otkrytie",
@@ -148,13 +147,14 @@
    "url": "/oshibki/zatyanulos-otkrytie-scheta/"
   },
   {
-   "id": "giis-eb",
-   "name": "ГИИС «Электронный бюджет»",
+   "id": "err-necelevoe",
+   "name": "Нецелевое расходование",
    "type": [
+    "error",
     "term"
    ],
-   "api": "/entity/giis-eb.json",
-   "url": "/glossary/giis-elektronnyy-byudzhet/"
+   "api": "/entity/err-necelevoe.json",
+   "url": "/oshibki/necelevoe-rashodovanie-sredstv/"
   },
   {
    "id": "law-prikaz-fk-44n",
@@ -446,6 +446,15 @@
    "url": "/glossary/tofk/"
   },
   {
+   "id": "svodnyy-reestr",
+   "name": "Сводный реестр",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/svodnyy-reestr.json",
+   "url": "/glossary/svodnyy-reestr/"
+  },
+  {
    "id": "err-kartochka",
    "name": "Вернули карточку подписей",
    "type": [
@@ -462,15 +471,6 @@
    ],
    "api": "/entity/err-ecp.json",
    "url": "/oshibki/ecp-ne-podhodit-dlya-kaznacheystva/"
-  },
-  {
-   "id": "svodnyy-reestr",
-   "name": "Сводный реестр",
-   "type": [
-    "term"
-   ],
-   "api": "/entity/svodnyy-reestr.json",
-   "url": "/glossary/svodnyy-reestr/"
   },
   {
    "id": "avans",
@@ -671,6 +671,15 @@
    "url": "/glossary/raschetnyy-schet/"
   },
   {
+   "id": "registratsiya-eb",
+   "name": "Регистрация в «Электронном бюджете»",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/registratsiya-eb.json",
+   "url": "/glossary/registratsiya-v-eb/"
+  },
+  {
    "id": "law-prikaz-mintsifry-1001",
    "name": "Приказ Минцифры № 1001",
    "type": [
@@ -724,15 +733,6 @@
    ],
    "api": "/entity/otzyv-rasporyazheniya.json",
    "url": "/obraztsy/shablon-otzyva-rasporyazheniya/"
-  },
-  {
-   "id": "registratsiya-eb",
-   "name": "Регистрация в «Электронном бюджете»",
-   "type": [
-    "term"
-   ],
-   "api": "/entity/registratsiya-eb.json",
-   "url": "/glossary/registratsiya-v-eb/"
   },
   {
    "id": "kontinent-tls",
@@ -825,6 +825,15 @@
    "url": "/glossary/neispolzovannyy-ostatok/"
   },
   {
+   "id": "golovnoy-ispolnitel",
+   "name": "Головной исполнитель",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/golovnoy-ispolnitel.json",
+   "url": "/glossary/golovnoy-ispolnitel/"
+  },
+  {
    "id": "norma-pribyli",
    "name": "Норма прибыли ГОЗ (20+1)",
    "type": [
@@ -870,13 +879,13 @@
    "url": "/glossary/zakazchik/"
   },
   {
-   "id": "golovnoy-ispolnitel",
-   "name": "Головной исполнитель",
+   "id": "subpodryadchik",
+   "name": "Субподрядчик (соисполнитель)",
    "type": [
     "term"
    ],
-   "api": "/entity/golovnoy-ispolnitel.json",
-   "url": "/glossary/golovnoy-ispolnitel/"
+   "api": "/entity/subpodryadchik.json",
+   "url": "/glossary/subpodryadchik/"
   },
   {
    "id": "prim-1",
@@ -915,13 +924,13 @@
    "url": "/scheta/"
   },
   {
-   "id": "subpodryadchik",
-   "name": "Субподрядчик (соисполнитель)",
+   "id": "kod-71",
+   "name": "Код 71 (тип лицевого счёта)",
    "type": [
     "term"
    ],
-   "api": "/entity/subpodryadchik.json",
-   "url": "/glossary/subpodryadchik/"
+   "api": "/entity/kod-71.json",
+   "url": "/glossary/kod-71/"
   },
   {
    "id": "etap-kontrakta",
@@ -985,15 +994,6 @@
    ],
    "api": "/entity/eks.json",
    "url": "/glossary/eks/"
-  },
-  {
-   "id": "kod-71",
-   "name": "Код 71 (тип лицевого счёта)",
-   "type": [
-    "term"
-   ],
-   "api": "/entity/kod-71.json",
-   "url": "/glossary/kod-71/"
   },
   {
    "id": "priostanovlenie",
@@ -1302,6 +1302,15 @@
    "url": "/glossary/promezhutochnaya-otchetnost-goz/"
   },
   {
+   "id": "ispolnitel",
+   "name": "Исполнитель по контракту",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/ispolnitel.json",
+   "url": "/glossary/ispolnitel-po-kontraktu/"
+  },
+  {
    "id": "faq-dokumenty-k-platezhu",
    "name": "Какие документы прикладывать к платежу?",
    "type": [
@@ -1480,15 +1489,6 @@
    ],
    "api": "/entity/ip.json",
    "url": "/glossary/ip-pri-ks/"
-  },
-  {
-   "id": "ispolnitel",
-   "name": "Исполнитель по контракту",
-   "type": [
-    "term"
-   ],
-   "api": "/entity/ispolnitel.json",
-   "url": "/glossary/ispolnitel-po-kontraktu/"
   },
   {
    "id": "faq-kak-zarezervirovat-schet",
@@ -1734,6 +1734,15 @@
    "url": "/instrumenty/proverka-sanktsionirovaniya/"
   },
   {
+   "id": "service-giis-eb",
+   "name": "Регистрация и настройка ГИИС «Электронный бюджет» под ключ",
+   "type": [
+    "service"
+   ],
+   "api": "/entity/service-giis-eb.json",
+   "url": "/services/giis-eb"
+  },
+  {
    "id": "grbs",
    "name": "ГРБС",
    "type": [
@@ -1741,6 +1750,24 @@
    ],
    "api": "/entity/grbs.json",
    "url": "/glossary/grbs/"
+  },
+  {
+   "id": "ebp",
+   "name": "ЕБП",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/ebp.json",
+   "url": "/glossary/ebp/"
+  },
+  {
+   "id": "nsi-eb",
+   "name": "НСИ",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/nsi-eb.json",
+   "url": "/glossary/nsi-eb/"
   },
   {
    "id": "ast-goz",
@@ -4416,13 +4443,13 @@
    "url": "/instrumenty/generator-chek-lista/"
   },
   {
-   "id": "service-giis-eb",
-   "name": "Регистрация и настройка ГИИС «Электронный бюджет» под ключ",
+   "id": "uchastnik-ks",
+   "name": "Участник казначейского сопровождения",
    "type": [
-    "service"
+    "term"
    ],
-   "api": "/entity/service-giis-eb.json",
-   "url": "/services/giis-eb"
+   "api": "/entity/uchastnik-ks.json",
+   "url": "/glossary/uchastnik-kaznacheyskogo-soprovozhdeniya/"
   },
   {
    "id": "service-training",
