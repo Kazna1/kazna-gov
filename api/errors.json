@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-08-11",
+ "version": "2026-08-31",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "count": 13,
@@ -128,7 +128,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-err-necelevoe",
    "scores": {
-    "authority": 66,
+    "authority": 65,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -175,7 +175,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-zatyanulos-otkrytie",
    "scores": {
-    "authority": 66,
+    "authority": 65,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -313,7 +313,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-razdelnyy-uchet",
    "scores": {
-    "authority": 35,
+    "authority": 34,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,

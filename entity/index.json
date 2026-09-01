@@ -1,9 +1,9 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-08-11",
+ "version": "2026-08-31",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
- "count": 489,
+ "count": 491,
  "entities": [
   {
    "id": "service-conduct",
@@ -239,15 +239,6 @@
    "url": "/obraztsy/reestr-dokumentov-po-kontraktu/"
   },
   {
-   "id": "err-kod-napravleniya",
-   "name": "Неверный код направления",
-   "type": [
-    "error"
-   ],
-   "api": "/entity/err-kod-napravleniya.json",
-   "url": "/oshibki/nevernyy-kod-napravleniya-rashodov/"
-  },
-  {
    "id": "tselevye-sredstva",
    "name": "Целевые средства",
    "type": [
@@ -255,6 +246,15 @@
    ],
    "api": "/entity/tselevye-sredstva.json",
    "url": "/glossary/tselevye-sredstva/"
+  },
+  {
+   "id": "err-kod-napravleniya",
+   "name": "Неверный код направления",
+   "type": [
+    "error"
+   ],
+   "api": "/entity/err-kod-napravleniya.json",
+   "url": "/oshibki/nevernyy-kod-napravleniya-rashodov/"
   },
   {
    "id": "chek-list-otkrytie",
@@ -744,6 +744,15 @@
    "url": "/glossary/kontinent-tls/"
   },
   {
+   "id": "zakrytie-ls",
+   "name": "Закрытие лицевого счёта",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/zakrytie-ls.json",
+   "url": "/glossary/zakrytie-scheta/"
+  },
+  {
    "id": "rekvizity-ks",
    "name": "Реквизиты КС-счёта",
    "type": [
@@ -805,15 +814,6 @@
    ],
    "api": "/entity/rezervirovanie-ls.json",
    "url": "/glossary/rezervirovanie-scheta/"
-  },
-  {
-   "id": "zakrytie-ls",
-   "name": "Закрытие лицевого счёта",
-   "type": [
-    "term"
-   ],
-   "api": "/entity/zakrytie-ls.json",
-   "url": "/glossary/zakrytie-scheta/"
   },
   {
    "id": "neisp-ostatok",
@@ -1417,6 +1417,15 @@
    ],
    "api": "/entity/ens.json",
    "url": "/glossary/ens/"
+  },
+  {
+   "id": "balans-celevyh-sredstv",
+   "name": "Баланс целевых средств",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/balans-celevyh-sredstv.json",
+   "url": "/glossary/balans-celevyh-sredstv/"
   },
   {
    "id": "pereoformlenie-ls",
@@ -2623,6 +2632,15 @@
    ],
    "api": "/entity/faq-rekvizity-scheta.json",
    "url": "/voprosy/kak-poluchit-rekvizity-scheta/"
+  },
+  {
+   "id": "faq-status-licevogo-scheta",
+   "name": "Как узнать статус лицевого счёта в казначействе?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-status-licevogo-scheta.json",
+   "url": "/voprosy/kak-uznat-status-licevogo-scheta/"
   },
   {
    "id": "faq-kak-zakryt-schet",

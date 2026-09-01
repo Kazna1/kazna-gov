@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-08-11",
+ "version": "2026-08-31",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "count": 8,
@@ -198,7 +198,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-service-vosstanovlenie",
    "scores": {
-    "authority": 57,
+    "authority": 56,
     "coverage": 100,
     "connectivity": 100,
     "citation": 80,
@@ -263,7 +263,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-service-subsidii",
    "scores": {
-    "authority": 28,
+    "authority": 27,
     "coverage": 100,
     "connectivity": 100,
     "citation": 80,

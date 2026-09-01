@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-08-11",
+ "version": "2026-08-31",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "edges": [
@@ -1875,6 +1875,31 @@
    "rel": "MONETIZED_BY"
   },
   {
+   "from": "balans-celevyh-sredstv",
+   "to": "tselevye-sredstva",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "balans-celevyh-sredstv",
+   "to": "svedeniya-ssu",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "balans-celevyh-sredstv",
+   "to": "razdelnyy-uchet",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "balans-celevyh-sredstv",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "balans-celevyh-sredstv",
+   "to": "service-conduct",
+   "rel": "MONETIZED_BY"
+  },
+  {
    "from": "tselevye-sredstva",
    "to": "ls-71",
    "rel": "RELATED_TERM"
@@ -1892,6 +1917,11 @@
   {
    "from": "tselevye-sredstva",
    "to": "svedeniya-ssu",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "tselevye-sredstva",
+   "to": "balans-celevyh-sredstv",
    "rel": "RELATED_TERM"
   },
   {
@@ -2567,6 +2597,11 @@
   {
    "from": "razdelnyy-uchet",
    "to": "koap-15-49",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "razdelnyy-uchet",
+   "to": "balans-celevyh-sredstv",
    "rel": "RELATED_TERM"
   },
   {
@@ -3772,6 +3807,11 @@
   {
    "from": "svedeniya-ssu",
    "to": "tselevye-sredstva",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "svedeniya-ssu",
+   "to": "balans-celevyh-sredstv",
    "rel": "RELATED_TERM"
   },
   {
@@ -6056,6 +6096,21 @@
   },
   {
    "from": "faq-rekvizity-scheta",
+   "to": "service-conduct",
+   "rel": "MONETIZED_BY"
+  },
+  {
+   "from": "faq-status-licevogo-scheta",
+   "to": "zakrytie-ls",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "faq-status-licevogo-scheta",
+   "to": "ls-71",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "faq-status-licevogo-scheta",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -20005,6 +20060,11 @@
    "rel": "SAME_CLUSTER"
   },
   {
+   "from": "faq-status-licevogo-scheta",
+   "to": "faq-kak-zakryt-schet",
+   "rel": "SAME_CLUSTER"
+  },
+  {
    "from": "faq-kak-zakryt-schet",
    "to": "faq-nuzhno-li-zakryvat-schet",
    "rel": "SAME_CLUSTER"
@@ -20026,7 +20086,7 @@
   },
   {
    "from": "faq-smena-direktora",
-   "to": "faq-kak-zakryt-schet",
+   "to": "faq-status-licevogo-scheta",
    "rel": "SAME_CLUSTER"
   },
   {

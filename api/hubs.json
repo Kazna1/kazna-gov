@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-08-11",
+ "version": "2026-08-31",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "count": 10,
@@ -111,7 +111,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-hub-scheta",
    "scores": {
-    "authority": 12,
+    "authority": 11,
     "coverage": 83,
     "connectivity": 60,
     "citation": 80,

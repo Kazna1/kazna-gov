@@ -1,9 +1,9 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-08-11",
+ "version": "2026-08-31",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
- "count": 489,
+ "count": 491,
  "entities": [
   {
    "id": "service-conduct",
@@ -156,7 +156,8 @@
      "sanktsionirovanie",
      "kod-tselevyh",
      "zakazchik",
-     "tselevye-sredstva"
+     "tselevye-sredstva",
+     "balans-celevyh-sredstv"
     ],
     "REGULATED_BY": [
      "law-prikaz-minfina-214n"
@@ -458,7 +459,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-sanktsionirovanie",
    "scores": {
-    "authority": 98,
+    "authority": 97,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -478,9 +479,11 @@
     "лс-71",
     "счет в казначействе",
     "казначейский счет",
+    "казенный счет",
+    "казённый счёт",
     "Лицевой счёт участника казначейского сопровождения"
    ],
-   "summary": "КС-счёт (лицевой счёт с кодом 71) — счёт участника казначейского сопровождения, который УФК открывает исполнителю под конкретный контракт. На него зачисляются целевые средства, и каждое списание проходит санкционирование. Это не банковский счёт: он живёт на едином казначейском счёте, открывается по заявлению (ф. 0531368) через ГИИС «Электронный бюджет».",
+   "summary": "КС-счёт (лицевой счёт с кодом 71) — счёт участника казначейского сопровождения, который УФК открывает исполнителю под конкретный контракт. На него зачисляются целевые средства, и каждое списание проходит санкционирование. Это не банковский счёт: он живёт на едином казначейском счёте, открывается по заявлению (ф. 0531368) через ГИИС «Электронный бюджет». Не путать с казённым счётом — это лицевой счёт казённого учреждения в казначействе для исполнения бюджетной сметы, другой тип счёта и другая ситуация.",
    "citation": "Лицевой счёт исполнителя в казначействе (код типа 71) для целевых средств одного контракта: деньги видны, но тратятся только на цели контракта после проверки УФК.",
    "pages": [
     {
@@ -517,7 +520,7 @@
      "/blog/how_to_open/"
     ]
    },
-   "updated": "2026-07-14",
+   "updated": "2026-08-16",
    "schema_id": "https://kazna-gov.ru/#e-ls-71",
    "scores": {
     "authority": 90,
@@ -590,7 +593,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-zayavlenie-ls",
    "scores": {
-    "authority": 82,
+    "authority": 81,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -702,6 +705,8 @@
    "name": "Платёжка при КС (образец)",
    "aliases": [
     "ркп",
+    "рскп",
+    "распоряжение о совершении казначейского платежа",
     "распоряжение о платеже",
     "заявка на кассовый расход",
     "РКП"
@@ -753,10 +758,10 @@
      "law-prikaz-minfina-214n"
     ]
    },
-   "updated": "2026-07-14",
+   "updated": "2026-08-16",
    "schema_id": "https://kazna-gov.ru/#e-rkp",
    "scores": {
-    "authority": 75,
+    "authority": 74,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -821,7 +826,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-err-necelevoe",
    "scores": {
-    "authority": 66,
+    "authority": 65,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -868,7 +873,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-zatyanulos-otkrytie",
    "scores": {
-    "authority": 66,
+    "authority": 65,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -928,7 +933,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-giis-eb",
    "scores": {
-    "authority": 66,
+    "authority": 65,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -1064,7 +1069,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-dokumenty-osnovaniya",
    "scores": {
-    "authority": 57,
+    "authority": 56,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -1129,7 +1134,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-service-vosstanovlenie",
    "scores": {
-    "authority": 57,
+    "authority": 56,
     "coverage": 100,
     "connectivity": 100,
     "citation": 80,
@@ -1148,7 +1153,7 @@
     "идентификатор контракта",
     "Идентификатор государственного контракта"
    ],
-   "summary": "ИГК — идентификатор государственного контракта: уникальный код (для 44-ФЗ — 25 знаков), который присваивается контракту и сопровождает все связанные с ним операции. ИГК обязателен в назначении каждого казначейского платежа, в счетах и актах, в документах кооперации ГОЗ. Ошибка в одном символе ИГК — возврат платежа УФК.",
+   "summary": "ИГК — идентификатор государственного контракта: уникальный код (для 44-ФЗ — 25 знаков), который присваивается контракту и сопровождает все связанные с ним операции. ИГК обязателен в назначении каждого казначейского платежа, в счетах и актах, в документах кооперации ГОЗ. Ошибка в одном символе ИГК — возврат платежа УФК. Состоит из смысловых блоков: годы контракта, код государственного заказчика, способ определения поставщика и порядковый номер; по 275-ФЗ ГОЗ — 25 разрядов, при казначейском сопровождении по 44-ФЗ — 20.",
    "citation": "Уникальный код контракта, связывающий контракт, лицевой счёт, платежи и документы в одну цепочку контроля. Формируется при включении контракта в реестр (для ГОЗ — по правилам 275-ФЗ).",
    "pages": [
     {
@@ -1178,7 +1183,7 @@
      "service-conduct"
     ],
     "EXPLAINED_BY_ARTICLE": [
-     "/blog/igk-v-platezhah-kaznacheystva"
+     "/blog/identifikator-goskontrakta-igk"
     ]
    },
    "updated": "2026-07-14",
@@ -1229,7 +1234,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-poyasnenie-ufk",
    "scores": {
-    "authority": 51,
+    "authority": 50,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -1263,7 +1268,8 @@
      "goz",
      "prim-1",
      "igk",
-     "koap-15-49"
+     "koap-15-49",
+     "balans-celevyh-sredstv"
     ],
     "REQUIRES_DOC": [
      "prikaz-razdelnyy-uchet"
@@ -1316,7 +1322,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "scores": {
-    "authority": 50,
+    "authority": 49,
     "coverage": 0,
     "connectivity": 100,
     "citation": 100,
@@ -1388,6 +1394,60 @@
    }
   },
   {
+   "id": "tselevye-sredstva",
+   "type": [
+    "term"
+   ],
+   "name": "Целевые средства",
+   "aliases": [
+    "целевые деньги",
+    "средства контракта"
+   ],
+   "summary": "Целевые средства — деньги, предоставленные из бюджета на конкретную цель: исполнение госконтракта, соглашения о субсидии, контракта кооперации. При казначейском сопровождении они зачисляются на лицевой счёт и могут расходоваться только на цели, ради которых выданы, — направление каждого списания подтверждается документами и кодом.",
+   "citation": "Бюджетные деньги с целевым назначением на лицевом счёте участника КС. Их трата на не предусмотренные контрактом цели — нецелевое расходование с ответственностью.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/tselevye-sredstva/",
+     "title": "Целевые средства"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ls-71",
+     "err-necelevoe",
+     "kod-tselevyh",
+     "svedeniya-ssu",
+     "balans-celevyh-sredstv"
+    ],
+    "REQUIRES_DOC": [
+     "svedeniya-ssu"
+    ],
+    "SEE_ERROR": [
+     "err-necelevoe"
+    ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta"
+    ]
+   },
+   "updated": "2026-07-14",
+   "schema_id": "https://kazna-gov.ru/#e-tselevye-sredstva",
+   "scores": {
+    "authority": 48,
+    "coverage": 100,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
    "id": "err-kod-napravleniya",
    "type": [
     "error"
@@ -1429,59 +1489,6 @@
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
-   "id": "tselevye-sredstva",
-   "type": [
-    "term"
-   ],
-   "name": "Целевые средства",
-   "aliases": [
-    "целевые деньги",
-    "средства контракта"
-   ],
-   "summary": "Целевые средства — деньги, предоставленные из бюджета на конкретную цель: исполнение госконтракта, соглашения о субсидии, контракта кооперации. При казначейском сопровождении они зачисляются на лицевой счёт и могут расходоваться только на цели, ради которых выданы, — направление каждого списания подтверждается документами и кодом.",
-   "citation": "Бюджетные деньги с целевым назначением на лицевом счёте участника КС. Их трата на не предусмотренные контрактом цели — нецелевое расходование с ответственностью.",
-   "pages": [
-    {
-     "layer": "term",
-     "url": "/glossary/tselevye-sredstva/",
-     "title": "Целевые средства"
-    }
-   ],
-   "relations": {
-    "RELATED_TERM": [
-     "ls-71",
-     "err-necelevoe",
-     "kod-tselevyh",
-     "svedeniya-ssu"
-    ],
-    "REQUIRES_DOC": [
-     "svedeniya-ssu"
-    ],
-    "SEE_ERROR": [
-     "err-necelevoe"
-    ],
-    "REGULATED_BY": [
-     "law-bk-rf-st-2422224226"
-    ],
-    "MONETIZED_BY": [
-     "service-conduct"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/na-chto-mozhno-tratit-s-kaznacheyskogo-scheta"
-    ]
-   },
-   "updated": "2026-07-14",
-   "schema_id": "https://kazna-gov.ru/#e-tselevye-sredstva",
-   "scores": {
-    "authority": 47,
-    "coverage": 100,
-    "connectivity": 100,
-    "citation": 100,
     "aiReadiness": 100,
     "density": 100
    }
@@ -1704,7 +1711,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-chek-list-dokumenty",
    "scores": {
-    "authority": 42,
+    "authority": 41,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -1821,9 +1828,10 @@
     "уфк это",
     "что такое уфк",
     "уфк расшифровка",
+    "уфк и тофк отличие",
     "Управление Федерального казначейства по субъекту РФ"
    ],
-   "summary": "УФК — управление Федерального казначейства по субъекту РФ. Именно УФК открывает подрядчику лицевой счёт участника казначейского сопровождения, проверяет и санкционирует каждый платёж с этого счёта, принимает карточку подписей и Сведения. Все документы по КС подаются в своё УФК — по месту, определённому порядком казначейства.",
+   "summary": "УФК — управление Федерального казначейства по субъекту РФ. Именно УФК открывает подрядчику лицевой счёт участника казначейского сопровождения, проверяет и санкционирует каждый платёж с этого счёта, принимает карточку подписей и Сведения. Все документы по КС подаются в своё УФК — по месту, определённому порядком казначейства. УФК — это территориальный орган казначейства регионального уровня: ТОФК — общее название всех территориальных органов Федерального казначейства, а УФК — управление по конкретному субъекту РФ.",
    "citation": "Территориальное управление казначейства в регионе: открывает лицевые счета, санкционирует расходы, возвращает документы с замечаниями. Для подрядчика — главный контрагент по всем операциям КС.",
    "pages": [
     {
@@ -1858,7 +1866,7 @@
      "/blog/tofk"
     ]
    },
-   "updated": "2026-07-14",
+   "updated": "2026-08-17",
    "schema_id": "https://kazna-gov.ru/#e-ufk",
    "scores": {
     "authority": 38,
@@ -1950,7 +1958,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-goz",
    "scores": {
-    "authority": 36,
+    "authority": 35,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -2000,7 +2008,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-kody-napravleniy",
    "scores": {
-    "authority": 36,
+    "authority": 35,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -2045,7 +2053,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-razdelnyy-uchet",
    "scores": {
-    "authority": 35,
+    "authority": 34,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -2665,7 +2673,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-avans",
    "scores": {
-    "authority": 28,
+    "authority": 27,
     "coverage": 67,
     "connectivity": 100,
     "citation": 100,
@@ -2730,7 +2738,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-service-subsidii",
    "scores": {
-    "authority": 28,
+    "authority": 27,
     "coverage": 100,
     "connectivity": 100,
     "citation": 80,
@@ -2761,7 +2769,7 @@
    "schema_id": "https://kazna-gov.ru/#e-law-koap-rf-st-1514",
    "sourceUrl": "https://www.consultant.ru/document/cons_doc_LAW_34661/",
    "scores": {
-    "authority": 27,
+    "authority": 26,
     "coverage": 0,
     "connectivity": 77,
     "citation": 100,
@@ -3283,8 +3291,8 @@
    "aliases": [
     "мониторинг казначейства"
    ],
-   "summary": "Казначейский мониторинг — постоянное наблюдение казначейства за участниками сопровождения: проверка сведений об организации, её операциях и цепочке кооперации на признаки рисков. По результатам мониторинга УФК может запрашивать пояснения и приостанавливать операции. Работает автоматически, поверх санкционирования каждого платежа.",
-   "citation": "Риск-ориентированный контроль казначейства над участниками КС: анализ данных и операций, а не только разовых платёжных документов.",
+   "summary": "Казначейский мониторинг — проверка сведений об участнике казначейского сопровождения, которую Федеральное казначейство проводит при открытии лицевого счёта и при осуществлении операций по нему. С 1 сентября 2026 года действуют Правила, утверждённые постановлением Правительства РФ от 27.07.2026 № 941 (заменило постановление № 2483 от 25.12.2021); правовая основа — статья 242.13-1 Бюджетного кодекса РФ. Меры реагирования: отказ в открытии лицевого счёта, приостановление открытия, запрет операций, отказ в осуществлении операции, возврат документов без исполнения.",
+   "citation": "Риск-ориентированный контроль казначейства над участниками КС: проверяется сам участник и признаки финансовых нарушений, а не отдельный платёжный документ. В отличие от санкционирования, которое проверяет конкретную операцию, мониторинг срабатывает при открытии лицевого счёта и при операциях по нему.",
    "pages": [
     {
      "layer": "term",
@@ -3314,7 +3322,7 @@
      "/blog/podvodnye-kamni-kaznacheyskogo-soprovozhdeniya"
     ]
    },
-   "updated": "2026-07-14",
+   "updated": "2026-08-24",
    "schema_id": "https://kazna-gov.ru/#e-kazn-monitoring",
    "scores": {
     "authority": 22,
@@ -3511,7 +3519,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-formulirovka-ks",
    "scores": {
-    "authority": 20,
+    "authority": 19,
     "coverage": 67,
     "connectivity": 70,
     "citation": 80,
@@ -3559,7 +3567,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-porog-ks",
    "scores": {
-    "authority": 20,
+    "authority": 19,
     "coverage": 50,
     "connectivity": 77,
     "citation": 100,
@@ -3604,7 +3612,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-zakon-budget",
    "scores": {
-    "authority": 20,
+    "authority": 19,
     "coverage": 50,
     "connectivity": 70,
     "citation": 100,
@@ -4042,6 +4050,56 @@
    }
   },
   {
+   "id": "zakrytie-ls",
+   "type": [
+    "term"
+   ],
+   "name": "Закрытие лицевого счёта",
+   "aliases": [
+    "закрыть кс счет",
+    "закрытие счета после контракта"
+   ],
+   "summary": "Закрытие лицевого счёта — финальная процедура КС после исполнения контракта: неиспользованные целевые средства возвращаются в бюджет или заказчику, остаток обнуляется, и по заявлению (та же форма 0531368 с отметкой «закрытие») УФК закрывает счёт. Держать пустой счёт открытым можно, но каждый активный счёт — это обязанности и внимание контролёров.",
+   "citation": "Прекращение лицевого счёта участника КС после завершения расчётов: нулевой остаток + заявление по форме 0531368.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/zakrytie-scheta/",
+     "title": "Закрытие лицевого счёта"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "ls-71",
+     "neisp-ostatok",
+     "rezervirovanie-ls"
+    ],
+    "REQUIRES_DOC": [
+     "zayavlenie-zakrytie"
+    ],
+    "REGULATED_BY": [
+     "law-prikaz-fk-44n",
+     "law-prikaz-fk-21n"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/zakrytie-kaznacheyskogo-scheta-posle-kontrakta"
+    ]
+   },
+   "updated": "2026-07-14",
+   "schema_id": "https://kazna-gov.ru/#e-zakrytie-ls",
+   "scores": {
+    "authority": 14,
+    "coverage": 83,
+    "connectivity": 63,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
    "id": "rekvizity-ks",
    "type": [
     "term"
@@ -4381,56 +4439,6 @@
    }
   },
   {
-   "id": "zakrytie-ls",
-   "type": [
-    "term"
-   ],
-   "name": "Закрытие лицевого счёта",
-   "aliases": [
-    "закрыть кс счет",
-    "закрытие счета после контракта"
-   ],
-   "summary": "Закрытие лицевого счёта — финальная процедура КС после исполнения контракта: неиспользованные целевые средства возвращаются в бюджет или заказчику, остаток обнуляется, и по заявлению (та же форма 0531368 с отметкой «закрытие») УФК закрывает счёт. Держать пустой счёт открытым можно, но каждый активный счёт — это обязанности и внимание контролёров.",
-   "citation": "Прекращение лицевого счёта участника КС после завершения расчётов: нулевой остаток + заявление по форме 0531368.",
-   "pages": [
-    {
-     "layer": "term",
-     "url": "/glossary/zakrytie-scheta/",
-     "title": "Закрытие лицевого счёта"
-    }
-   ],
-   "relations": {
-    "RELATED_TERM": [
-     "ls-71",
-     "neisp-ostatok",
-     "rezervirovanie-ls"
-    ],
-    "REQUIRES_DOC": [
-     "zayavlenie-zakrytie"
-    ],
-    "REGULATED_BY": [
-     "law-prikaz-fk-44n",
-     "law-prikaz-fk-21n"
-    ],
-    "MONETIZED_BY": [
-     "service-conduct"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/zakrytie-kaznacheyskogo-scheta-posle-kontrakta"
-    ]
-   },
-   "updated": "2026-07-14",
-   "schema_id": "https://kazna-gov.ru/#e-zakrytie-ls",
-   "scores": {
-    "authority": 13,
-    "coverage": 83,
-    "connectivity": 60,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
    "id": "neisp-ostatok",
    "type": [
     "term"
@@ -4670,7 +4678,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-soprovoditelnoe-pismo",
    "scores": {
-    "authority": 12,
+    "authority": 11,
     "coverage": 67,
     "connectivity": 50,
     "citation": 80,
@@ -4724,7 +4732,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-zakazchik",
    "scores": {
-    "authority": 12,
+    "authority": 11,
     "coverage": 100,
     "connectivity": 60,
     "citation": 100,
@@ -4770,7 +4778,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-golovnoy-ispolnitel",
    "scores": {
-    "authority": 12,
+    "authority": 11,
     "coverage": 67,
     "connectivity": 50,
     "citation": 100,
@@ -4827,7 +4835,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-prim-1",
    "scores": {
-    "authority": 12,
+    "authority": 11,
     "coverage": 100,
     "connectivity": 63,
     "citation": 100,
@@ -4878,7 +4886,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-id-soglasheniya",
    "scores": {
-    "authority": 12,
+    "authority": 11,
     "coverage": 83,
     "connectivity": 57,
     "citation": 100,
@@ -4933,7 +4941,7 @@
    "updated": "2026-08-11",
    "schema_id": "https://kazna-gov.ru/#e-upd",
    "scores": {
-    "authority": 12,
+    "authority": 11,
     "coverage": 100,
     "connectivity": 60,
     "citation": 100,
@@ -4990,7 +4998,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-hub-scheta",
    "scores": {
-    "authority": 12,
+    "authority": 11,
     "coverage": 83,
     "connectivity": 60,
     "citation": 80,
@@ -7853,6 +7861,53 @@
     "citation": 100,
     "aiReadiness": 100,
     "density": 40
+   }
+  },
+  {
+   "id": "balans-celevyh-sredstv",
+   "type": [
+    "term"
+   ],
+   "name": "Баланс целевых средств",
+   "aliases": [
+    "баланс целевых средств",
+    "остаток целевых средств",
+    "движение целевых средств"
+   ],
+   "summary": "Баланс целевых средств — учётное представление движения денег государственного контракта: сколько целевых средств поступило на лицевой счёт, сколько израсходовано по направлениям и какой остаток доступен. Ведётся в рамках раздельного учёта по каждому контракту отдельно и сверяется с выпиской из лицевого счёта и Сведениями об операциях с целевыми средствами.",
+   "citation": "Свод поступлений, расходов и остатка целевых средств по контракту. Расхождение баланса с выпиской или Сведениями — сигнал ошибки учёта до того, как её найдёт проверка.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/balans-celevyh-sredstv/",
+     "title": "Баланс целевых средств"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "tselevye-sredstva",
+     "svedeniya-ssu",
+     "razdelnyy-uchet"
+    ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/razdelnyy-uchet-po-44-fz-vs-275-fz-otlichiya"
+    ]
+   },
+   "updated": "2026-08-31",
+   "schema_id": "https://kazna-gov.ru/#e-balans-celevyh-sredstv",
+   "scores": {
+    "authority": 3,
+    "coverage": 67,
+    "connectivity": 27,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 53
    }
   },
   {
@@ -15527,6 +15582,55 @@
    }
   },
   {
+   "id": "faq-status-licevogo-scheta",
+   "type": [
+    "faq"
+   ],
+   "name": "Как узнать статус лицевого счёта в казначействе?",
+   "aliases": [
+    "статус лицевого счета в казначействе",
+    "код статуса лицевого счета",
+    "лицевой счет заблокирован что делать",
+    "проверить лицевой счет в казначействе",
+    "состояние лицевого счета в электронном бюджете"
+   ],
+   "summary": "Статус лицевого счёта виден в личном кабинете ГИИС «Электронный бюджет»: в разделе лицевых счетов по каждому счёту отображается его состояние — открыт, переоформляется или закрыт. Подтверждающие документы — уведомления территориального органа казначейства об открытии, переоформлении или закрытии счёта и выписка из лицевого счёта.",
+   "citation": "Статус лицевого счёта смотрят в личном кабинете ГИИС «Электронный бюджет»; подтверждение — уведомления казначейства и выписка.",
+   "pages": [
+    {
+     "layer": "faq",
+     "url": "/voprosy/kak-uznat-status-licevogo-scheta/",
+     "title": "Как узнать статус лицевого счёта в казначействе?"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "zakrytie-ls",
+     "ls-71"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/giis-elektronnyy-byudzhet-2026-polnaya-instruktsiya",
+     "/blog/vhod-v-elektronnyy-byudzhet-po-sertifikatu"
+    ],
+    "SAME_CLUSTER": [
+     "faq-kak-zakryt-schet"
+    ]
+   },
+   "updated": "2026-08-31",
+   "schema_id": "https://kazna-gov.ru/#e-faq-status-licevogo-scheta",
+   "scores": {
+    "authority": 1,
+    "coverage": 67,
+    "connectivity": 17,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 33
+   }
+  },
+  {
    "id": "faq-kak-zakryt-schet",
    "type": [
     "faq"
@@ -15807,7 +15911,7 @@
      "/blog/upolnomochennye-litsa-po-ks-schetu-kto-i-otvetstvennost"
     ],
     "SAME_CLUSTER": [
-     "faq-kak-zakryt-schet"
+     "faq-status-licevogo-scheta"
     ]
    },
    "updated": "2026-07-09",

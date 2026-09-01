@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-08-11",
+ "version": "2026-08-31",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "map": {
@@ -432,6 +432,13 @@
     "term"
    ],
    "url": "/glossary/otdelnyy-schet-goz/"
+  },
+  "balans-celevyh-sredstv": {
+   "name": "Баланс целевых средств",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/balans-celevyh-sredstv/"
   },
   "tselevye-sredstva": {
    "name": "Целевые средства",
@@ -1188,6 +1195,13 @@
     "faq"
    ],
    "url": "/voprosy/kak-poluchit-rekvizity-scheta/"
+  },
+  "faq-status-licevogo-scheta": {
+   "name": "Как узнать статус лицевого счёта в казначействе?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/kak-uznat-status-licevogo-scheta/"
   },
   "faq-kak-zakryt-schet": {
    "name": "Как закрыть казначейский счёт после контракта?",

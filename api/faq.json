@@ -1,9 +1,9 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-08-11",
+ "version": "2026-08-31",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
- "count": 301,
+ "count": 302,
  "entities": [
   {
    "id": "faq-kak-otkryt-schet",
@@ -6209,6 +6209,55 @@
    }
   },
   {
+   "id": "faq-status-licevogo-scheta",
+   "type": [
+    "faq"
+   ],
+   "name": "Как узнать статус лицевого счёта в казначействе?",
+   "aliases": [
+    "статус лицевого счета в казначействе",
+    "код статуса лицевого счета",
+    "лицевой счет заблокирован что делать",
+    "проверить лицевой счет в казначействе",
+    "состояние лицевого счета в электронном бюджете"
+   ],
+   "summary": "Статус лицевого счёта виден в личном кабинете ГИИС «Электронный бюджет»: в разделе лицевых счетов по каждому счёту отображается его состояние — открыт, переоформляется или закрыт. Подтверждающие документы — уведомления территориального органа казначейства об открытии, переоформлении или закрытии счёта и выписка из лицевого счёта.",
+   "citation": "Статус лицевого счёта смотрят в личном кабинете ГИИС «Электронный бюджет»; подтверждение — уведомления казначейства и выписка.",
+   "pages": [
+    {
+     "layer": "faq",
+     "url": "/voprosy/kak-uznat-status-licevogo-scheta/",
+     "title": "Как узнать статус лицевого счёта в казначействе?"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "zakrytie-ls",
+     "ls-71"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/giis-elektronnyy-byudzhet-2026-polnaya-instruktsiya",
+     "/blog/vhod-v-elektronnyy-byudzhet-po-sertifikatu"
+    ],
+    "SAME_CLUSTER": [
+     "faq-kak-zakryt-schet"
+    ]
+   },
+   "updated": "2026-08-31",
+   "schema_id": "https://kazna-gov.ru/#e-faq-status-licevogo-scheta",
+   "scores": {
+    "authority": 1,
+    "coverage": 67,
+    "connectivity": 17,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 33
+   }
+  },
+  {
    "id": "faq-kak-zakryt-schet",
    "type": [
     "faq"
@@ -6489,7 +6538,7 @@
      "/blog/upolnomochennye-litsa-po-ks-schetu-kto-i-otvetstvennost"
     ],
     "SAME_CLUSTER": [
-     "faq-kak-zakryt-schet"
+     "faq-status-licevogo-scheta"
     ]
    },
    "updated": "2026-07-09",

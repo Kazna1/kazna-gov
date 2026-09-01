@@ -1,15 +1,15 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-08-11",
+ "version": "2026-08-31",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
- "nodes": 489,
- "edges": 4276,
+ "nodes": 491,
+ "edges": 4288,
  "byType": {
   "error": 13,
   "document": 19,
-  "term": 120,
-  "faq": 301,
+  "term": 121,
+  "faq": 302,
   "hub": 10,
   "tool": 11,
   "service": 8,
@@ -18,11 +18,11 @@
  "relTypes": {
   "REQUIRES_DOC": 490,
   "SEE_ERROR": 377,
-  "MONETIZED_BY": 406,
-  "REGULATED_BY": 591,
+  "MONETIZED_BY": 408,
+  "REGULATED_BY": 592,
   "RELATED_DOC": 55,
-  "RELATED_TERM": 401,
-  "USES_TERM": 1292,
+  "RELATED_TERM": 407,
+  "USES_TERM": 1294,
   "DIAGNOSED_BY": 26,
   "RELATED_HUB": 28,
   "SEE_FAQ": 144,
@@ -31,20 +31,20 @@
   "RESOLVES_TO": 36,
   "SERVICE_REQUIRES": 24,
   "SERVICE_SOLVES": 22,
-  "SAME_CLUSTER": 301
+  "SAME_CLUSTER": 302
  },
  "topAuthority": [
   {
    "id": "service-conduct",
-   "in": 260
+   "in": 262
   },
   {
    "id": "law-bk-rf-st-2422224226",
-   "in": 117
+   "in": 118
   },
   {
    "id": "svedeniya-ssu",
-   "in": 107
+   "in": 108
   },
   {
    "id": "law-prikaz-minfina-214n",
@@ -68,7 +68,7 @@
   },
   {
    "id": "ls-71",
-   "in": 78
+   "in": 79
   },
   {
    "id": "zayavlenie-ls",

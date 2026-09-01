@@ -52,6 +52,10 @@ RewriteRule ^services/start(/.*)?$ /services/conduct [R=301,L]
 # --- /review — легаси-дубль интента «отзывы» → 301 на канонический /otzyvy/ (аудит 2026-07-22) ---
 RewriteRule ^review/?$ /otzyvy/ [R=301,L]
 
+# --- /policy — легаси-дубль политики ПД (canonical у обеих вёл на /personal_data_policy) ---
+# → 301 на канонический URL, страница выведена из шаблонной системы (аудит 2026-09-01)
+RewriteRule ^policy(/.*)?$ /personal_data_policy [R=301,L]
+
 # --- Force HTTPS (кроме ACME-challenge LetsEncrypt) ---
 RewriteCond %{HTTPS} off
 RewriteCond %{REQUEST_URI} !^/\.well-known/
