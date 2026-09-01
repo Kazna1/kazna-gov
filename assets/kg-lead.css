@@ -1,0 +1,293 @@
+/* ==========================================================================
+   kg-lead.css — конверсионный слой статей блога kazna-gov.ru
+   Три задачи:
+     1. Мид-форма после первой трети статьи (вставляется kg-lead.js)
+     2. На мобильном форма в финальном блоке — выше телефона и Telegram
+     3. Cookie-бар компактнее и уходит с экрана, когда виден блок заявки
+   Подключается одной строкой в каждой статье. HTML статей не меняется.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. МИД-ФОРМА
+   -------------------------------------------------------------------------- */
+
+.kgmid {
+  --kgmid-ink: var(--kg-ink, #161718);
+  --kgmid-ink-3: var(--kg-ink-3, #6B6C6D);
+  --kgmid-line: var(--kg-line, #E2DCC8);
+  --kgmid-surface: var(--kg-surface, #FDFAF1);
+  --kgmid-bg: var(--kg-bg, #FAF6EC);
+  --kgmid-mint: var(--kg-mint, #15846B);
+  --kgmid-coral: var(--kg-coral, #D9603A);
+
+  max-width: var(--kg-band-max, 920px);
+  margin: 44px auto;
+  padding: 28px 30px;
+  background: var(--kgmid-surface);
+  border: 1px solid var(--kgmid-line);
+  border-radius: 16px;
+  box-shadow: 0 1px 2px rgba(22, 23, 24, .04);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.kgmid__label {
+  font: 700 11px/1 var(--kg-mono, ui-monospace, 'SF Mono', monospace);
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--kgmid-mint);
+  margin-bottom: 8px;
+}
+
+.kgmid__title {
+  margin: 0 0 6px;
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1.28;
+  letter-spacing: -.01em;
+  color: var(--kgmid-ink);
+}
+
+.kgmid__sub {
+  margin: 0 0 18px;
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--kgmid-ink-3);
+}
+
+.kgmid__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 10px;
+  align-items: start;
+}
+
+.kgmid__input {
+  width: 100%;
+  height: 46px;
+  padding: 0 14px;
+  font-family: inherit;
+  font-size: 16px; /* 16px — иначе iOS зумит страницу при фокусе */
+  line-height: 46px;
+  color: var(--kgmid-ink);
+  background: #fff;
+  border: 1px solid var(--kgmid-line);
+  border-radius: 10px;
+  outline: none;
+  transition: border-color .18s ease, box-shadow .18s ease;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.kgmid__input::placeholder { color: #9A9B9C; }
+
+.kgmid__input:focus {
+  border-color: var(--kgmid-mint);
+  box-shadow: 0 0 0 3px rgba(21, 132, 107, .12);
+}
+
+.kgmid__input.is-invalid {
+  border-color: var(--kgmid-coral);
+  box-shadow: 0 0 0 3px rgba(217, 96, 58, .12);
+}
+
+.kgmid__submit {
+  height: 46px;
+  padding: 0 22px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+  color: #fff;
+  background: var(--kgmid-mint);
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background .18s ease, transform .12s ease;
+}
+
+.kgmid__submit:hover { background: #0F6E58; }
+.kgmid__submit:active { transform: translateY(1px); }
+.kgmid__submit[disabled] { opacity: .6; cursor: default; }
+
+.kgmid__policy {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 14px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--kgmid-ink-3);
+  cursor: pointer;
+}
+
+.kgmid__policy input {
+  flex-shrink: 0;
+  width: 15px;
+  height: 15px;
+  margin: 1px 0 0;
+  accent-color: var(--kgmid-mint);
+  cursor: pointer;
+}
+
+.kgmid__policy a { color: var(--kgmid-mint); text-decoration: underline; }
+
+.kgmid__msg {
+  margin-top: 12px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.kgmid__msg.is-error { color: var(--kgmid-coral); }
+.kgmid__msg.is-success { color: var(--kgmid-mint); }
+
+/* состояние «отправлено» — форма схлопывается в подтверждение */
+.kgmid.is-sent .kgmid__form,
+.kgmid.is-sent .kgmid__sub { display: none; }
+
+.kgmid__done { display: none; }
+
+.kgmid.is-sent .kgmid__done {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--kgmid-ink);
+}
+
+.kgmid__done-icon {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(21, 132, 107, .12);
+  color: var(--kgmid-mint);
+}
+
+@media (max-width: 720px) {
+  .kgmid {
+    margin: 32px auto;
+    padding: 22px 18px;
+    border-radius: 14px;
+  }
+  .kgmid__title { font-size: 19px; }
+  .kgmid__sub { font-size: 14px; margin-bottom: 16px; }
+  .kgmid__row { grid-template-columns: 1fr; gap: 9px; }
+  .kgmid__submit { width: 100%; }
+}
+
+/* --------------------------------------------------------------------------
+   2. ФИНАЛЬНЫЙ БЛОК: на мобильном форма выше телефона и Telegram
+   Причина: 108 кликов по мобильному CTA против 1 отправленной формы —
+   человек приземляется на кнопку звонка и уходит в незамеряемый канал.
+   display:contents поднимает детей .kg-final__copy на уровень флекс-контейнера,
+   после чего порядок задаётся order. HTML не трогаем.
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 960px) {
+  .kg-final__grid {
+    display: flex !important;
+    flex-direction: column;
+    gap: 22px !important;
+  }
+
+  /* !important обязателен: в статьях .kg-final__copy объявлен как flex
+     с той же специфичностью, и без него порядок не применяется */
+  .kg-final__copy { display: contents !important; }
+
+  .kg-final__tag    { order: 1; }
+  .kg-final__title  { order: 2; }
+  .kg-final__text   { order: 3; }
+  .kg-final__form-card,
+  #kgFinalForm      { order: 4; }
+  .kg-final__row    { order: 5; margin-top: 2px; }
+  .kg-final__trust  { order: 6; }
+
+  /* элементы .kg-final__copy, которым порядок не назначен явно,
+     не должны всплывать выше формы */
+  .kg-final__copy > *:not(.kg-final__tag):not(.kg-final__title):not(.kg-final__text):not(.kg-final__row):not(.kg-final__trust) {
+    order: 7;
+  }
+}
+
+/* Safari < 15.4 и старый Firefox не поддерживают display:contents для grid-детей
+   корректно — там оставляем исходный порядок, форма просто ниже. */
+@supports not (display: contents) {
+  @media (max-width: 960px) {
+    .kg-final__grid { display: flex !important; }
+    .kg-final__copy { display: flex !important; flex-direction: column; order: 1; }
+    .kg-final__form-card,
+    #kgFinalForm { order: 2; }
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. COOKIE-БАР
+   На мобильном занимал 158px из 812px — пятую часть экрана ровно там,
+   куда человек приземляется по кнопке «Заявка».
+   -------------------------------------------------------------------------- */
+
+/* компактный вид на телефоне: описание скрыто, кнопки в строку */
+@media (max-width: 720px) {
+  .kg-cookie-bar {
+    grid-template-columns: auto 1fr !important;
+    gap: 10px !important;
+    padding: 10px 12px !important;
+    bottom: 10px !important;
+    left: 10px !important;
+    right: 10px !important;
+    border-radius: 12px !important;
+  }
+
+  .kg-cookie-bar__text span { display: none; }
+
+  .kg-cookie-bar__text b {
+    font-size: 13px;
+    line-height: 1.35;
+    font-weight: 600;
+  }
+
+  .kg-cookie-bar__actions {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 8px;
+  }
+
+  .kg-cookie-bar__actions .kg-cookie-bar__btn {
+    flex: 1;
+    padding: 9px 10px;
+    font-size: 13px;
+  }
+}
+
+/* Уходят с экрана, пока виден блок заявки; классы ставит kg-lead.js.
+   Селекторы по id намеренно: у статей есть свои правила с !important
+   на .kg-cookie-bar (в том числе transform:none в reduced-motion),
+   и при равной специфичности исход зависел бы от порядка подключения. */
+#kgCookieBar.kg-cookie-bar--tucked,
+#kgMobileCta.kg-mobile-cta--tucked,
+#kgDock.kg-dock--tucked {
+  transform: translateY(160%) !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transition: transform .35s cubic-bezier(.2, .8, .3, 1),
+              opacity .25s ease,
+              visibility 0s linear .25s !important;
+}
+
+/* док на узких экранах центрируется через translateX(50%) — сохраняем его */
+@media (max-width: 880px) {
+  #kgDock.kg-dock--tucked {
+    transform: translateX(50%) translateY(160%) !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #kgCookieBar.kg-cookie-bar--tucked,
+  #kgMobileCta.kg-mobile-cta--tucked,
+  #kgDock.kg-dock--tucked { transition: none !important; }
+}
