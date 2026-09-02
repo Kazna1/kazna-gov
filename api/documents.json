@@ -139,7 +139,7 @@
    "updated": "2026-08-11",
    "schema_id": "https://kazna-gov.ru/#e-doverennost-mchd",
    "scores": {
-    "authority": 100,
+    "authority": 90,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -209,7 +209,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-zayavlenie-ls",
    "scores": {
-    "authority": 82,
+    "authority": 69,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -273,7 +273,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-kartochka-podpisey",
    "scores": {
-    "authority": 76,
+    "authority": 63,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -346,7 +346,7 @@
    "updated": "2026-08-16",
    "schema_id": "https://kazna-gov.ru/#e-rkp",
    "scores": {
-    "authority": 74,
+    "authority": 62,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -391,7 +391,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-poyasnenie-ufk",
    "scores": {
-    "authority": 50,
+    "authority": 42,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -454,7 +454,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-reestr-dokumentov",
    "scores": {
-    "authority": 48,
+    "authority": 40,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -499,7 +499,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-chek-list-otkrytie",
    "scores": {
-    "authority": 46,
+    "authority": 38,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -545,7 +545,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-chek-list-dokumenty",
    "scores": {
-    "authority": 41,
+    "authority": 34,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -588,7 +588,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-pismo-zapros",
    "scores": {
-    "authority": 40,
+    "authority": 33,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -631,7 +631,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-prikaz-razdelnyy-uchet",
    "scores": {
-    "authority": 31,
+    "authority": 26,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -676,7 +676,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-komplekt-otkrytie",
    "scores": {
-    "authority": 22,
+    "authority": 18,
     "coverage": 67,
     "connectivity": 83,
     "citation": 80,
@@ -720,7 +720,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-komplekt-subsidii",
    "scores": {
-    "authority": 22,
+    "authority": 18,
     "coverage": 67,
     "connectivity": 83,
     "citation": 80,
@@ -763,7 +763,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-formulirovka-ks",
    "scores": {
-    "authority": 19,
+    "authority": 16,
     "coverage": 67,
     "connectivity": 70,
     "citation": 80,
@@ -808,7 +808,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-poyasnenie-vozvrat",
    "scores": {
-    "authority": 15,
+    "authority": 12,
     "coverage": 67,
     "connectivity": 63,
     "citation": 80,
@@ -854,7 +854,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-komplekt-goz",
    "scores": {
-    "authority": 15,
+    "authority": 12,
     "coverage": 67,
     "connectivity": 63,
     "citation": 80,
@@ -916,7 +916,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-otzyv-rasporyazheniya",
    "scores": {
-    "authority": 15,
+    "authority": 12,
     "coverage": 83,
     "connectivity": 77,
     "citation": 100,
@@ -959,7 +959,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-soprovoditelnoe-pismo",
    "scores": {
-    "authority": 11,
+    "authority": 10,
     "coverage": 67,
     "connectivity": 50,
     "citation": 80,
@@ -974,7 +974,7 @@
    ],
    "name": "Заявление на закрытие ЛС",
    "aliases": [],
-   "summary": "Заявление на закрытие лицевого счёта подаётся в ТОФК после полного исполнения контракта: обязательства закрыты, отчётность сдана, остаток средств возвращён заказчику или перечислен на расчётный счёт в разрешённых случаях. До подачи убедитесь, что по счёту нет неисполненных распоряжений и незакрытых Сведений.",
+   "summary": "Заявление на закрытие лицевого счёта подаётся в территориальный орган казначейства после полного исполнения контракта: обязательства закрыты, отчётность сдана, остаток средств возвращён заказчику или перечислен на расчётный счёт в разрешённых случаях. Оформляется той же формой 0531368 по приказу Казначейства № 44н — в шапке отмечается «закрытие». Ниже — подлинный бланк, заполненный образец и порядок действий с остатком.",
    "citation": "Официально прекращает обслуживание лицевого счёта после завершения контракта, снимая с организации обязанности по счёту.",
    "pages": [
     {
@@ -1000,10 +1000,10 @@
      "/blog/vozvrat-avansa-po-goskontraktu-kaznacheystvo"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-09-02",
    "schema_id": "https://kazna-gov.ru/#e-zayavlenie-zakrytie",
    "scores": {
-    "authority": 7,
+    "authority": 6,
     "coverage": 67,
     "connectivity": 37,
     "citation": 80,

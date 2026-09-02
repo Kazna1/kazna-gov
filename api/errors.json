@@ -63,7 +63,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-err-otkaz-sanktsionirovaniya",
    "scores": {
-    "authority": 100,
+    "authority": 93,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -110,7 +110,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-zatyanulos-otkrytie",
    "scores": {
-    "authority": 66,
+    "authority": 55,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -175,7 +175,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-err-necelevoe",
    "scores": {
-    "authority": 65,
+    "authority": 54,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -221,7 +221,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-kod-napravleniya",
    "scores": {
-    "authority": 47,
+    "authority": 39,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -268,7 +268,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-naznachenie",
    "scores": {
-    "authority": 45,
+    "authority": 37,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -313,7 +313,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-razdelnyy-uchet",
    "scores": {
-    "authority": 34,
+    "authority": 29,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -358,7 +358,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-mchd",
    "scores": {
-    "authority": 32,
+    "authority": 27,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -404,7 +404,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-igk",
    "scores": {
-    "authority": 31,
+    "authority": 26,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -450,7 +450,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-svedeniya-otkaz",
    "scores": {
-    "authority": 30,
+    "authority": 25,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -495,7 +495,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-kartochka",
    "scores": {
-    "authority": 29,
+    "authority": 24,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -539,7 +539,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-ecp",
    "scores": {
-    "authority": 29,
+    "authority": 24,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -584,7 +584,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-svodnyy-reestr",
    "scores": {
-    "authority": 24,
+    "authority": 20,
     "coverage": 67,
     "connectivity": 87,
     "citation": 80,
@@ -631,7 +631,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-subsidiya-rashody",
    "scores": {
-    "authority": 22,
+    "authority": 18,
     "coverage": 67,
     "connectivity": 87,
     "citation": 80,

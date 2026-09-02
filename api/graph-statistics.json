@@ -4,7 +4,7 @@
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "nodes": 494,
- "edges": 4310,
+ "edges": 4363,
  "byType": {
   "error": 13,
   "document": 19,
@@ -18,7 +18,7 @@
  "relTypes": {
   "REQUIRES_DOC": 492,
   "SEE_ERROR": 378,
-  "MONETIZED_BY": 411,
+  "MONETIZED_BY": 461,
   "REGULATED_BY": 593,
   "RELATED_DOC": 55,
   "RELATED_TERM": 422,
@@ -28,7 +28,7 @@
   "SEE_FAQ": 144,
   "PART_OF_TOPIC": 27,
   "PREVENTS": 56,
-  "RESOLVES_TO": 36,
+  "RESOLVES_TO": 39,
   "SERVICE_REQUIRES": 24,
   "SERVICE_SOLVES": 22,
   "SAME_CLUSTER": 302
@@ -36,7 +36,7 @@
  "topAuthority": [
   {
    "id": "service-conduct",
-   "in": 262
+   "in": 315
   },
   {
    "id": "law-bk-rf-st-2422224226",

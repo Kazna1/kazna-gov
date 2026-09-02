@@ -54,7 +54,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-hub-platezhi",
    "scores": {
-    "authority": 14,
+    "authority": 11,
     "coverage": 83,
     "connectivity": 63,
     "citation": 80,
@@ -111,7 +111,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-hub-scheta",
    "scores": {
-    "authority": 11,
+    "authority": 10,
     "coverage": 83,
     "connectivity": 60,
     "citation": 80,
@@ -162,7 +162,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-hub-sankts",
    "scores": {
-    "authority": 9,
+    "authority": 8,
     "coverage": 83,
     "connectivity": 50,
     "citation": 80,
@@ -219,7 +219,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-hub-ks",
    "scores": {
-    "authority": 7,
+    "authority": 6,
     "coverage": 83,
     "connectivity": 57,
     "citation": 80,
@@ -268,7 +268,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-hub-subsidii",
    "scores": {
-    "authority": 6,
+    "authority": 5,
     "coverage": 83,
     "connectivity": 40,
     "citation": 80,
@@ -321,7 +321,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-hub-goz",
    "scores": {
-    "authority": 5,
+    "authority": 4,
     "coverage": 83,
     "connectivity": 40,
     "citation": 80,
@@ -367,7 +367,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-hub-otchetnost",
    "scores": {
-    "authority": 5,
+    "authority": 4,
     "coverage": 67,
     "connectivity": 33,
     "citation": 80,

@@ -7,13 +7,13 @@
 <!-- /Top.Mail.Ru counter -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Инструменты и калькуляторы казначейского сопровождения 2026 — Казна</title>
-<meta name="description" content="Онлайн-инструменты: калькулятор стоимости казначейского сопровождения, калькулятор аванса по госконтракту, калькулятор сроков рассмотрения в УФК и справочник кодов направлений расходования.">
+<title>Калькулятор аванса по госконтракту и ещё 5 инструментов КС</title>
+<meta name="description" content="Калькулятор аванса по госконтракту, стоимости сопровождения, сроков УФК, тест «нужно ли КС», справочник кодов и 11 мастеров-диагностик. Без регистрации.">
 <link rel="canonical" href="https://kazna-gov.ru/instrumenty/">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Инструменты и калькуляторы казначейского сопровождения">
-<meta property="og:description" content="Калькулятор стоимости сопровождения, калькулятор аванса, калькулятор сроков УФК и справочник кодов направлений расходования.">
+<meta property="og:title" content="Калькулятор аванса по госконтракту и ещё 5 инструментов КС">
+<meta property="og:description" content="Калькулятор аванса по госконтракту, стоимости сопровождения, сроков УФК, тест «нужно ли КС», справочник кодов и 11 мастеров-диагностик. Без регистрации.">
 <meta property="og:url" content="https://kazna-gov.ru/instrumenty/">
 <meta property="og:image" content="https://api.kazna-gov.ru/og/instrumenty.jpg">
 <meta name="theme-color" content="#15846B">
@@ -354,7 +354,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 <section class="hero"><div class="wrap">
   <span class="hero__kicker">Онлайн-инструменты · 2026</span>
   <h1>Инструменты и калькуляторы казначейского сопровождения</h1>
-  <p>Быстрые расчёты для подрядчика по госконтракту: стоимость сопровождения, размер аванса, сроки рассмотрения документов в УФК и справочник кодов направлений расходования. Без регистрации.</p>
+  <p>На странице — рабочие онлайн-инструменты для подрядчика по госконтракту: калькулятор аванса, калькулятор стоимости казначейского сопровождения, калькулятор сроков рассмотрения документов в УФК, тест «попадает ли контракт под казначейское сопровождение», справочник кодов направлений расходования и одиннадцать мастеров-диагностик — от проверки комплекта документов до маршрутизатора платежа. Всё считается в браузере, без регистрации.</p>
   <div class="chips">
     <a class="chip" href="#calc-cost">Калькулятор стоимости</a>
     <a class="chip" href="#calc-avans">Калькулятор аванса</a>
@@ -366,6 +366,37 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 
 <div class="wrap">
 <div class="tools">
+
+  <!-- 2. Аванс -->
+  <section class="tool" id="calc-avans">
+    <span class="tool__tag">Калькулятор</span>
+    <h2>Аванс по госконтракту</h2>
+    <p class="tool__sub">Сколько составит аванс и какой остаток придёт по факту исполнения.</p>
+    <div class="grid2">
+      <div class="field">
+        <label for="av-sum">Сумма контракта, ₽</label>
+        <input id="av-sum" type="text" inputmode="numeric" placeholder="например, 10 000 000">
+      </div>
+      <div class="field">
+        <label for="av-pct">Размер аванса</label>
+        <select id="av-pct">
+          <option value="30">30% — типовой по 44-ФЗ</option>
+          <option value="50">50% — максимум для получателей федбюджета</option>
+          <option value="80">80% — ГОЗ по 275-ФЗ (ПП 1471)</option>
+          <option value="custom">Свой процент…</option>
+        </select>
+      </div>
+    </div>
+    <div class="field" id="av-custom-wrap" style="display:none">
+      <label for="av-custom">Свой процент аванса, %</label>
+      <input id="av-custom" type="number" min="0" max="100" placeholder="например, 40">
+    </div>
+    <div class="result">
+      <div class="result__row"><span>Сумма аванса</span><b id="av-a">—</b></div>
+      <div class="result__row"><span>Остаток по факту исполнения</span><b id="av-r">—</b></div>
+      <div class="result__note">Аванс поступает на казначейский счёт и расходуется строго по целевым основаниям.</div>
+    </div>
+  </section>
 
   <!-- 1. Стоимость -->
   <section class="tool" id="calc-cost">
@@ -415,37 +446,6 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
     <script>
     (function(){var law=document.getElementById('kgpLaw'),sum=document.getElementById('kgpSum'),av=document.getElementById('kgpAv'),out=document.getElementById('kgpOut'),btn=document.getElementById('kgpBtn'),avW=document.getElementById('kgpAvWrap'),sumW=document.getElementById('kgpSumWrap');if(!law||!btn)return;function toggle(){var l=law.value;avW.style.display=(l==='44')?'':'none';sumW.style.display=(l==='44'||l==='223')?'':'none';}law.addEventListener('change',function(){toggle();out.innerHTML='';});toggle();function calc(){var l=law.value,s=parseFloat(sum.value)||0,a=parseFloat(av.value)||0,r;if(l==='275')r={ob:1,t:'Казначейское сопровождение обязательно. Контракты по 275-ФЗ (ГОЗ) подпадают под КС по перечню.'};else if(l==='sub')r={ob:1,t:'Казначейское сопровождение обязательно. Целевые субсидии, гранты и взносы в УК проходят через казначейский счёт.'};else if(l==='223')r={ob:2,t:'По 223-ФЗ КС применяется по отдельным основаниям — универсального порога нет. Проверьте положение о закупке и условие контракта.'};else{if(s>=100000000)r={ob:1,t:'Обязательно: контракт от 100 млн ₽ — независимо от аванса (ст. 5 44-ФЗ, закон о бюджете на 2026).'};else if(s>=3000000&&a>50)r={ob:1,t:'Обязательно: контракт от 3 млн ₽ с авансом более 50%.'};else if(s>0)r={ob:0,t:'По общему правилу может не требоваться: не выполнено условие «от 3 млн ₽ при авансе >50%» и сумма меньше 100 млн ₽. Проверьте условие о КС в контракте и основания 426-ФЗ.'};else r={ob:2,t:'Укажите сумму и аванс для проверки по 44-ФЗ.'};}var c=r.ob===1?'#15846B':(r.ob===0?'#b26a00':'#555'),b=r.ob===1?'✓ Обязательно':(r.ob===0?'Скорее всего не требуется':'Зависит от условий');out.innerHTML='<div style="margin-top:16px;padding:14px 16px;border-radius:10px;background:#fff;border-left:4px solid '+c+'"><b style="color:'+c+';font-size:16px">'+b+'</b><p style="margin:6px 0 0;font-size:15px;line-height:1.5">'+r.t+'</p></div>';}btn.addEventListener('click',calc);})();
     </script>
-  </section>
-
-  <!-- 2. Аванс -->
-  <section class="tool" id="calc-avans">
-    <span class="tool__tag">Калькулятор</span>
-    <h2>Аванс по госконтракту</h2>
-    <p class="tool__sub">Сколько составит аванс и какой остаток придёт по факту исполнения.</p>
-    <div class="grid2">
-      <div class="field">
-        <label for="av-sum">Сумма контракта, ₽</label>
-        <input id="av-sum" type="text" inputmode="numeric" placeholder="например, 10 000 000">
-      </div>
-      <div class="field">
-        <label for="av-pct">Размер аванса</label>
-        <select id="av-pct">
-          <option value="30">30% — типовой по 44-ФЗ</option>
-          <option value="50">50% — максимум для получателей федбюджета</option>
-          <option value="80">80% — ГОЗ по 275-ФЗ (ПП 1471)</option>
-          <option value="custom">Свой процент…</option>
-        </select>
-      </div>
-    </div>
-    <div class="field" id="av-custom-wrap" style="display:none">
-      <label for="av-custom">Свой процент аванса, %</label>
-      <input id="av-custom" type="number" min="0" max="100" placeholder="например, 40">
-    </div>
-    <div class="result">
-      <div class="result__row"><span>Сумма аванса</span><b id="av-a">—</b></div>
-      <div class="result__row"><span>Остаток по факту исполнения</span><b id="av-r">—</b></div>
-      <div class="result__note">Аванс поступает на казначейский счёт и расходуется строго по целевым основаниям.</div>
-    </div>
   </section>
 
   <!-- 2b. Попадает ли под КС -->
