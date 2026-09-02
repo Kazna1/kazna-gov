@@ -2787,7 +2787,7 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
           Нажимая «Отправить заявку», я даю согласие на обработку персональных данных в соответствии с <a href="https://kazna-gov.ru/personal_data_policy">политикой в отношении обработки персональных данных</a> </label> </div> <button class="kzop2__form-submit" id="kzop2-final-submit">
         Отправить заявку
       </button> </div> </div> </section>
-<section class="kglm" id="audit" aria-label="Экспресс-аудит контракта">
+<section class="kglm" id="audit" aria-label="Заявка на услугу">
 <style>
 .kglm{max-width:1100px;margin:48px auto;padding:32px 28px;border-radius:22px;background:linear-gradient(135deg,#0f241c,#15846b);color:#fff;font-family:Inter,-apple-system,Segoe UI,Roboto,sans-serif;display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
 @media(max-width:820px){.kglm{grid-template-columns:1fr;padding:24px 18px}}
@@ -2812,29 +2812,29 @@ var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=i
 .kglm__pre{margin:0 0 10px;font-size:14px;font-weight:600;color:#c7f5e8}
 </style>
 <div class="kglm__copy">
-<p class="kglm__pre">Не готовы заказать услугу сразу? Начните с разбора контракта.</p>
-<span class="kglm__tag">9 900 ₽ · зачтём в стоимость сопровождения</span>
-<h2 class="kglm__h">Экспресс-аудит вашего госконтракта</h2>
+<p class="kglm__pre">Нужен лицевой счёт под контракт? Откроем под ключ.</p>
+<span class="kglm__tag">29 000 ₽ · счёт за 1–2 рабочих дня</span>
+<h2 class="kglm__h">Открытие казначейского счёта под ключ</h2>
 <ul class="kglm__list">
-<li>Проверим, попадает ли контракт под казначейское сопровождение и по какому закону</li>
-<li>Найдём риски возвратов и замечаний УФК <b>до</b> первого платежа</li>
-<li>Скажем точные сроки и фиксированную стоимость сопровождения «под ключ»</li>
-<li><b>Письменное заключение за 1 рабочий день.</b> Стоимость 9 900 ₽ зачитывается в цену сопровождения при заключении договора</li>
+<li>Подготовим документы по бланкам УФК и подадим без возвратов</li>
+<li>Настроим ГИИС «Электронный бюджет» и доступы <b>до</b> первого платежа</li>
+<li>Передадим реквизиты вам и заказчику — можно получать аванс</li>
+<li><b>Счёт за 1–2 рабочих дня.</b> Фиксированная цена 29 000 ₽, оплата по договору, без доплат</li>
 <li>15+ лет практики · 800+ открытых счетов · 0% возвратов в 2025</li>
 </ul>
 </div>
 <div class="kglm__card">
 <form class="kglm__form" id="kglmForm" novalidate>
-<h3>Экспресс-аудит контракта · 9 900 ₽</h3>
-<p>Платный экспресс-аудит — заключение за 1 рабочий день. Сумма зачтётся в стоимость сопровождения. Перезвоним в течение часа.</p>
+<h3>Заявка на открытие счёта</h3>
+<p>Перезвоним в течение часа в рабочее время, назовём срок по вашему контракту и запустим открытие в тот же день.</p>
 <input class="kglm__in" name="name" placeholder="Имя" required minlength="2" maxlength="80" autocomplete="name">
 <input class="kglm__in" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required autocomplete="tel" inputmode="tel">
 <input type="text" name="hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
-<button class="kglm__btn" type="submit">Заказать аудит — 9 900 ₽ →</button>
+<button class="kglm__btn" type="submit">Открыть счёт →</button>
 <label class="kglm__pol"><input type="checkbox" name="consent" required style="margin-top:2px;accent-color:#15846b"><span>Согласен с <a href="/personal_data_policy" target="_blank" rel="noopener">политикой обработки персональных данных</a></span></label>
 <div class="kglm__msg" id="kglmMsg"></div>
 </form>
-<div class="kglm__ok"><b>Заявка принята ✓</b>Эксперт перезвонит в течение часа и разберёт ваш контракт.</div>
+<div class="kglm__ok"><b>Заявка принята ✓</b>Эксперт перезвонит в течение часа и запустит открытие счёта.</div>
 </div>
 <script>
 (function(){var f=document.getElementById('kglmForm');if(!f)return;var card=f.closest('.kglm__card'),msg=document.getElementById('kglmMsg'),p=f.phone;
@@ -2843,7 +2843,7 @@ function fmt(d){if(!d)return'';var s='+7';if(d.length>1)s+=' ('+d.slice(1,4);if(
 p.addEventListener('focus',function(){if(!p.value)p.value='+7 '});p.addEventListener('input',function(){p.value=fmt(nm(dg(p.value)))});
 function sh(t){msg.style.display='block';msg.style.background='#fdecec';msg.style.color='#c0392b';msg.textContent=t}
 f.addEventListener('submit',function(e){e.preventDefault();if(!f.consent.checked)return sh('Подтвердите согласие с политикой');var d=dg(p.value);if(f.name.value.trim().length<2)return sh('Введите имя');if(d.length!==11)return sh('Введите полный номер телефона');var b=f.querySelector('button');b.disabled=true;b.textContent='Отправляем…';
-fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:f.name.value.trim(),contact:'+'+d,message:'Источник: экспресс-аудит контракта (9 900 ₽) · страница open',consent_pd:true,consent_at:new Date().toISOString(),hp:f.hp.value})}).then(function(r){return r.json()}).then(function(res){b.disabled=false;b.textContent='Заказать аудит — 9 900 ₽ →';if(res.success){card.classList.add('sent');try{if(window.ym)ym(window.KAZNA_METRIKA_ID||86763493,'reachGoal','lead_submitted_final',{service:'open',source:'kglm-audit'})}catch(e){}if(window.kgTrack)kgTrack('lead_submitted',{source:'lead-magnet-audit'})}else sh('Ошибка: '+(res.error||'не удалось'))}).catch(function(){b.disabled=false;b.textContent='Заказать аудит — 9 900 ₽ →';sh('Сеть недоступна. Позвоните +7 (495) 108-42-32.')})});})();
+fetch('https://api.kazna-gov.ru/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:f.name.value.trim(),contact:'+'+d,message:'Источник: заявка на услугу «Открытие казначейского счёта» (нижняя форма, /services/open)',consent_pd:true,consent_at:new Date().toISOString(),hp:f.hp.value})}).then(function(r){return r.json()}).then(function(res){b.disabled=false;b.textContent='Открыть счёт →';if(res.success){card.classList.add('sent');try{if(window.ym)ym(window.KAZNA_METRIKA_ID||86763493,'reachGoal','lead_submitted_final',{service:'open',source:'kglm-service'})}catch(e){}if(window.kgTrack)kgTrack('lead_submitted',{source:'kglm-service'})}else sh('Ошибка: '+(res.error||'не удалось'))}).catch(function(){b.disabled=false;b.textContent='Открыть счёт →';sh('Сеть недоступна. Позвоните +7 (495) 108-42-32.')})});})();
 </script>
 </section>
  <!-- Секция: Sticky CTA (мобильный) --> <div class="kzop2__sticky" id="kzop2-sticky"> <a href="tel:+74951084232" class="kzop2__btn kzop2__btn--ghost" data-goal="sticky_phone_click" aria-label="Позвонить +7 (495) 108-42-32" title="Позвонить"> <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.25c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 3.5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg> </a> <a href="#form" class="kzop2__btn kzop2__btn--primary" data-goal="sticky_cta_click">
