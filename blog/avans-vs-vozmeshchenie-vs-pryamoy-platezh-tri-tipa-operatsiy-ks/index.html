@@ -8698,5 +8698,20 @@ window.kgRequestPush = function(){
   else{publishConsent('pending');setTimeout(show,800);}
 })();
 </script>
-<link rel="stylesheet" href="/assets/kg-lead.css?v=20260901"><script src="/assets/kg-lead.js?v=20260901" defer></script></body>
+<link rel="stylesheet" href="/assets/kg-lead.css?v=20260901"><script src="/assets/kg-lead.js?v=20260901" defer></script><!-- Reveal-fallback: на медленных устройствах контент не должен ждать
+     IntersectionObserver — через 2.5с принудительно показываем всё скрытое.
+     Плюс no-JS: без скриптов kg-reveal не прячет контент вовсе. -->
+<noscript><style>.kg-reveal,.kg-ornament{opacity:1!important;transform:none!important}</style></noscript>
+<script>
+(function(){
+  'use strict';
+  function showAll(){
+    document.querySelectorAll('.kg-reveal:not(.is-visible), .kg-ornament:not(.is-visible)')
+      .forEach(function(el){ el.classList.add('is-visible'); });
+  }
+  if (document.readyState === 'complete') { setTimeout(showAll, 2500); }
+  else { window.addEventListener('load', function(){ setTimeout(showAll, 2500); }); }
+})();
+</script>
+</body>
 </html>
