@@ -144,6 +144,11 @@
 /* состояние «отправлено» — форма схлопывается в подтверждение */
 .kgmid.is-sent .kgmid__form,
 .kgmid.is-sent .kgmid__sub { display: none; }
+.kgmid.is-sent .kgmid__links { display: none; }
+.kgmid__links { margin: 12px 0 0; font-size: 14px; line-height: 1.5; }
+.kgmid__links a { color: inherit; text-decoration: underline; text-underline-offset: 3px; opacity: .85; }
+.kgmid__links a:hover { opacity: 1; }
+.kgmid__links-sep { opacity: .5; margin: 0 4px; }
 
 .kgmid__done { display: none; }
 

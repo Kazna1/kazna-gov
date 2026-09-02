@@ -1,6 +1,7 @@
 /* ==========================================================================
    kg-lead.js — конверсионный слой статей блога kazna-gov.ru
-     1. Вставляет мид-форму после первой трети статьи
+     1. Вставляет мид-форму после первой трети статьи (текст зависит от слага:
+        сегмент open / operate, см. OPERATE_OFFERS)
      2. Убирает cookie-бар и мобильную панель, пока виден блок заявки
      3. Шлёт события фокуса по полям обеих форм, чтобы видеть реальный отвал
    Подключается одной строкой с defer. HTML статей не меняется.
@@ -103,22 +104,102 @@
     }
   }
 
+
+  /* ------------------------------------------------ оффер по сегменту ---
+     Сегмент open (по умолчанию) — счёт ещё не открыт: прежний текст.
+     Сегмент operate — счёт уже открыт, читатель в операционной рутине:
+     оффер от его боли (сопровождение 89 000 ₽/мес, настройка ГИИС ЭБ 15 000 ₽,
+     обучение), а не открытие счёта. Правится здесь, статьи не трогаем. --- */
+  var DEFAULT_OFFER = {
+    label: 'Разбор вашей ситуации',
+    title: 'Не тратьте время на теорию — покажем на вашем контракте',
+    sub: 'Посмотрим контракт, назовём ваше УФК, сроки и порядок действий. Ответ в течение часа в рабочее время. Без обязательств.',
+    btn: 'Получить разбор',
+    interest: 'open'
+  };
+  var OPERATE_OFFERS = {
+    'vhod-v-elektronnyy-byudzhet-po-sertifikatu': {
+      label: 'Если вход так и не заработал',
+      title: 'Настроим доступ в «Электронный бюджет» за вас',
+      sub: 'Сертификат, Континент TLS, роли и МЧД — настройка ГИИС ЭБ 15 000 ₽. Дальше можем вести счёт и платежи. Оставьте номер — перезвоним.',
+      btn: 'Настроить доступ',
+      href: '/services/giis-eb',
+      link: 'Подробнее о настройке ГИИС ЭБ',
+      interest: 'giis-eb'
+    },
+    'kartochka-kontrakta-v-elektronnom-byudzhete': {
+      label: 'Есть второй путь',
+      title: 'Карточку контракта и Сведения заполним за вас',
+      sub: 'Всю работу в ГИИС «Электронный бюджет» — карточка, Сведения, распоряжения — берём на себя в рамках сопровождения: 89 000 ₽/мес, без лимита по операциям. Вы только присылаете документы.',
+      btn: 'Обсудить сопровождение',
+      href: '/services/conduct',
+      link: 'Что входит в сопровождение',
+      interest: 'conduct'
+    },
+    'kaznacheyskiy-schet-v-1s': {
+      label: 'Есть второй путь',
+      title: 'Учёт по казначейскому счёту сойдётся с выпиской УФК',
+      sub: 'Сопровождение с ведением учёта: проводки по счёту 71, сверка с выпиской, отчётность и платежи через ГИИС ЭБ — 89 000 ₽/мес, число операций не ограничено. Ошибки в учёте становятся нашей зоной, не вашей.',
+      btn: 'Обсудить сопровождение',
+      href: '/services/conduct',
+      link: 'Что входит в сопровождение',
+      interest: 'conduct'
+    },
+    'zarplata-s-kaznacheyskogo-scheta': {
+      label: 'Есть второй путь',
+      title: 'Проведём зарплату и налоги через УФК без возвратов',
+      sub: 'Документы-основания, назначение платежа, коды 0100 и 0812 — собираем так, чтобы платёж прошёл санкционирование с первого раза. Сопровождение — 89 000 ₽/мес, без ограничения по числу платежей.',
+      btn: 'Передать платежи',
+      href: '/services/conduct',
+      link: 'Как устроено сопровождение платежей',
+      interest: 'conduct'
+    },
+    'na-chto-mozhno-tratit-s-kaznacheyskogo-scheta': {
+      label: 'Есть второй путь',
+      title: 'Проверим каждый платёж до отправки в УФК',
+      sub: 'Сомневаетесь, целевой ли расход? В рамках сопровождения сверяем назначение, код направления и документы до отправки — без нецелевого использования и штрафов по ст. 15.14 КоАП. 89 000 ₽/мес, операции без лимита.',
+      btn: 'Обсудить сопровождение',
+      href: '/services/conduct',
+      link: 'Что входит в сопровождение',
+      interest: 'conduct'
+    },
+    'razdelnyj-uchet-goz-polnyy-guide-2026': {
+      label: 'Есть второй путь',
+      title: 'Раздельный учёт по ГОЗ: ведём за вас или научим вести без ошибок',
+      sub: 'Сопровождение ГОЗ — учёт, платежи, отчётность к проверке — 89 000 ₽/мес. Обучение — разбор на ваших контрактах и работа в ГИИС ЭБ, если хотите вести сами.',
+      btn: 'Выбрать формат',
+      href: '/services/conduct',
+      link: 'Сопровождение ГОЗ',
+      href2: '/services/training',
+      link2: 'Обучение',
+      interest: 'conduct|training'
+    }
+  };
+
+  function getOffer(slug) {
+    var o = OPERATE_OFFERS[slug];
+    if (!o) return { segment: 'open', o: DEFAULT_OFFER };
+    return { segment: 'operate', o: o };
+  }
+
   /* ------------------------------------------------------ 1. мид-форма ---- */
   function buildMidForm(slug) {
+    var seg = getOffer(slug), offer = seg.o, segment = seg.segment;
+    var links = offer.href ? '<p class="kgmid__links"><a href="' + offer.href + '">' + offer.link + ' →</a>' +
+      (offer.href2 ? ' <span class="kgmid__links-sep">·</span> <a href="' + offer.href2 + '">' + offer.link2 + ' →</a>' : '') + '</p>' : '';
     var wrap = document.createElement('section');
     wrap.className = 'kgmid';
     wrap.id = 'kgMidLead';
     wrap.setAttribute('data-nosnippet', '');
     wrap.innerHTML =
-      '<div class="kgmid__label">Разбор вашей ситуации</div>' +
-      '<h2 class="kgmid__title">Не тратьте время на теорию — покажем на вашем контракте</h2>' +
-      '<p class="kgmid__sub">Посмотрим контракт, назовём ваше УФК, сроки и порядок действий. ' +
-      'Ответ в течение часа в рабочее время. Без обязательств.</p>' +
+      '<div class="kgmid__label">' + offer.label + '</div>' +
+      '<h2 class="kgmid__title">' + offer.title + '</h2>' +
+      '<p class="kgmid__sub">' + offer.sub + '</p>' +
       '<form class="kgmid__form" novalidate>' +
         '<div class="kgmid__row">' +
           '<input class="kgmid__input" name="name" placeholder="Имя" required minlength="2" maxlength="80" autocomplete="name">' +
           '<input class="kgmid__input" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required autocomplete="tel" inputmode="tel">' +
-          '<button class="kgmid__submit" type="submit">Получить разбор</button>' +
+          '<button class="kgmid__submit" type="submit">' + offer.btn + '</button>' +
         '</div>' +
         '<label class="kgmid__policy">' +
           '<input type="checkbox" name="consent" required>' +
@@ -127,6 +208,7 @@
         '</label>' +
         '<div class="kgmid__msg" hidden></div>' +
       '</form>' +
+      links +
       '<div class="kgmid__done">' +
         '<span class="kgmid__done-icon" aria-hidden="true">' +
           '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>' +
@@ -170,7 +252,7 @@
         body: JSON.stringify({
           name: name,
           contact: '+' + d,
-          message: 'Источник: article-mid/' + slug,
+          message: 'Источник: article-mid/' + slug + ' · сегмент: ' + segment + ' · интерес: ' + offer.interest,
           consent_pd: true,
           consent_at: new Date().toISOString(),
           hp: ''
@@ -179,10 +261,10 @@
         .then(function (r) { return r.json(); })
         .then(function (res) {
           btn.disabled = false;
-          btn.textContent = 'Получить разбор';
+          btn.textContent = offer.btn;
           if (res && res.success) {
             wrap.classList.add('is-sent');
-            goal('lead_submitted_mid', { place: 'mid', slug: slug });
+            goal('lead_submitted_mid', { place: 'mid', slug: slug, segment: segment });
             goal('lead_submitted', { source: 'article-mid' });
           } else {
             show('Ошибка: ' + ((res && res.error) || 'не удалось отправить'), false);
@@ -190,7 +272,7 @@
         })
         .catch(function () {
           btn.disabled = false;
-          btn.textContent = 'Получить разбор';
+          btn.textContent = offer.btn;
           show('Сеть недоступна. Позвоните ' + PHONE_DISPLAY + ' или напишите в Telegram.', false);
         });
     });
@@ -230,7 +312,7 @@
         entries.forEach(function (en) {
           if (!en.isIntersecting || seen) return;
           seen = true;
-          goal('midform_view', { slug: slug });
+          goal('midform_view', { slug: slug, segment: getOffer(slug).segment });
           io.disconnect();
         });
       }, { threshold: 0.4 });
