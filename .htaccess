@@ -38,6 +38,13 @@ RewriteEngine On
 # Правило точечное: разделы, каноничные СО слэшем (/glossary/, /voprosy/, /otzyvy/), не затрагиваются.
 RewriteRule ^services/([a-z0-9-]+)/$ /services/$1 [R=301,L]
 
+# --- Каноничные URL генерируемых разделов — всегда СО слешем (радар #82, 2026-09-03) ---
+# /voprosy/slug, /glossary/slug и т.п. без слеша отдавали 200 при canonical со слешем:
+# Вебмастер 125 раз выкидывал их как NOT_CANONICAL. Только каталоги slug/index.html;
+# /blog/* и /services/* без слеша каноничны — не трогаем; хабы (/voprosy/) и /api/ не подпадают.
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(voprosy|glossary|oshibki|instrumenty|obraztsy|novosti)/([a-z0-9-]+)$ /$1/$2/ [R=301,L]
+
 # --- /policy — дубль политики ПДн → 301 на канонический URL (R1.05) ---
 RewriteRule ^policy/?$ /personal_data_policy [R=301,L]
 
