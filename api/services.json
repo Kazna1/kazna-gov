@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-09-02",
+ "version": "2026-09-03",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "count": 8,
@@ -63,7 +63,7 @@
      "/blog/autsorsing-kaznacheyskogo-soprovozhdeniya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-09-03",
    "schema_id": "https://kazna-gov.ru/#e-service-conduct",
    "scores": {
     "authority": 100,
@@ -130,7 +130,7 @@
      "/blog/zayavlenie-na-otkrytie-kaznacheyskogo-scheta"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-09-03",
    "schema_id": "https://kazna-gov.ru/#e-service-open",
    "scores": {
     "authority": 90,
@@ -195,7 +195,7 @@
      "/blog/ufk-zaderzhivaet-platezh-chto-delat"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-09-03",
    "schema_id": "https://kazna-gov.ru/#e-service-vosstanovlenie",
    "scores": {
     "authority": 47,
@@ -260,7 +260,7 @@
      "/blog/kaznacheyskoe-soprovozhdenie-subsidiy-2026"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-09-03",
    "schema_id": "https://kazna-gov.ru/#e-service-subsidii",
    "scores": {
     "authority": 23,
@@ -319,7 +319,7 @@
      "/blog/how_to_open/"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-09-03",
    "schema_id": "https://kazna-gov.ru/#e-service-reserve",
    "scores": {
     "authority": 9,
@@ -380,7 +380,7 @@
      "/blog/avans-vs-vozmeshchenie-vs-pryamoy-platezh-tri-tipa-operatsiy-ks"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-09-03",
    "schema_id": "https://kazna-gov.ru/#e-service-postpayment",
    "scores": {
     "authority": 5,
@@ -436,7 +436,7 @@
      "/blog/sufd-i-elektronnyy-byudzhet"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-09-03",
    "schema_id": "https://kazna-gov.ru/#e-service-giis-eb",
    "scores": {
     "authority": 3,
@@ -502,7 +502,7 @@
      "/blog/giis-elektronnyy-byudzhet-2026-polnaya-instruktsiya"
     ]
    },
-   "updated": "2026-07-09",
+   "updated": "2026-09-03",
    "schema_id": "https://kazna-gov.ru/#e-service-training",
    "scores": {
     "authority": 0,
