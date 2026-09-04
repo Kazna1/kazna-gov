@@ -51,6 +51,9 @@ RewriteRule ^policy/?$ /personal_data_policy [R=301,L]
 # --- /stuff — дубль trust-интента (команда) → 301 на автор-страницу эксперта (консолидация, Конституция гл.7) ---
 RewriteRule ^stuff/?$ /expert/stella [R=301,L]
 
+# --- Статьи ОБС/РКМ (вып. 086–090) сняты 04.09.2026: интент закреплён за вторым сайтом (арбитраж, правило 1) → 410 Gone ---
+RewriteRule ^blog/(obs-schet-goz|obs-vs-litsevoy-schet-ks|rkm-po-goz|statyi-zatrat-v-tsene-goz|otchetnaya-kalkulyatsiya-goz)/?$ - [G,L]
+
 # --- /services/start — услуга выведена из линейки → 301 на сопровождение платежей ---
 # Ловим и сам URL, и прямой доступ к файлу, и любые подпути: иначе
 # /services/start/index.html открывается в обход редиректа и остаётся дублем.
