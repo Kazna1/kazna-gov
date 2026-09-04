@@ -3348,14 +3348,10 @@
    "aliases": [
     "отдельный банковский счет",
     "обс",
-    "обс счет",
-    "счет обс",
-    "режим обс",
-    "обособленный счет",
     "спецсчет гоз",
     "Отдельный банковский счёт по 275-ФЗ"
    ],
-   "summary": "ОБС (отдельный банковский счёт) — специальный счёт исполнителя гособоронзаказа в уполномоченном банке (с 2025 года — ПСБ как опорный банк), открываемый под конкретный контракт с ИГК при банковском сопровождении по 275-ФЗ. Режим счёта жёстко ограничен: разрешённые и запрещённые операции перечислены в законе, банк контролирует каждое списание.",
+   "summary": "Отдельный счёт — специальный банковский счёт исполнителя гособоронзаказа в уполномоченном банке (ПСБ и другие), открываемый под конкретный контракт с ИГК при банковском сопровождении по 275-ФЗ. Режим счёта жёстко ограничен: разрешённые и запрещённые операции перечислены в законе, банк контролирует каждое списание.",
    "citation": "Спецсчёт ГОЗ в уполномоченном банке с законодательно закреплённым режимом операций — банковский аналог лицевого счёта КС.",
    "pages": [
     {
@@ -3378,12 +3374,10 @@
      "service-conduct"
     ],
     "EXPLAINED_BY_ARTICLE": [
-     "/blog/obs-vs-litsevoy-schet-ks",
-     "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid",
-     "/blog/obs-schet-goz"
+     "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid"
     ]
    },
-   "updated": "2026-09-03",
+   "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-obs",
    "scores": {
     "authority": 18,
@@ -13515,9 +13509,8 @@
      "service-conduct"
     ],
     "EXPLAINED_BY_ARTICLE": [
-     "/blog/obs-schet-goz",
-     "/blog/obs-vs-litsevoy-schet-ks",
-     "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid"
+     "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid",
+     "/blog/kaznacheyskoe-vs-bankovskoe-soprovozhdenie-otlichiya"
     ],
     "SAME_CLUSTER": [
      "faq-bank-dlya-goz"
@@ -13570,7 +13563,6 @@
      "service-open"
     ],
     "EXPLAINED_BY_ARTICLE": [
-     "/blog/obs-schet-goz",
      "/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid",
      "/blog/kaznacheyskoe-soprovozhdenie-predpriyatiy-opk"
     ],
