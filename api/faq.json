@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-09-04",
+ "version": "2026-09-03",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "count": 302,
@@ -14577,15 +14577,13 @@
      "service-conduct"
     ],
     "EXPLAINED_BY_ARTICLE": [
-     "/blog/rkm-po-goz",
-     "/blog/statyi-zatrat-v-tsene-goz",
      "/blog/vidy-cen-goz"
     ],
     "SAME_CLUSTER": [
      "faq-perevod-tseny-v-fiksirovannuyu"
     ]
    },
-   "updated": "2026-09-04",
+   "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-faq-obosnovanie-tseny-goz",
    "scores": {
     "authority": 1,
