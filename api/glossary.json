@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-09-04",
+ "version": "2026-09-07",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "count": 124,
@@ -3943,7 +3943,7 @@
      "/blog/kaznacheyskoe-soprovozhdenie-stroitelstvo"
     ]
    },
-   "updated": "2026-09-02",
+   "updated": "2026-09-07",
    "schema_id": "https://kazna-gov.ru/#e-rasshirennoe-ks",
    "scores": {
     "authority": 6,
