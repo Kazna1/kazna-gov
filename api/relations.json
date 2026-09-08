@@ -2751,6 +2751,11 @@
   },
   {
    "from": "prim-1",
+   "to": "prom-otchetnost-goz",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "prim-1",
    "to": "prikaz-razdelnyy-uchet",
    "rel": "REQUIRES_DOC"
   },
@@ -13627,6 +13632,16 @@
   {
    "from": "faq-chto-takoe-prim-1",
    "to": "law-275-fz",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "faq-chto-takoe-prim-1",
+   "to": "law-pp-47-red-543",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "faq-chto-takoe-prim-1",
+   "to": "law-prikaz-minoborony-554",
    "rel": "REGULATED_BY"
   },
   {

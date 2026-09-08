@@ -3,7 +3,7 @@
  "version": "2026-09-07",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
- "count": 494,
+ "count": 496,
  "entities": [
   {
    "id": "service-conduct",
@@ -889,7 +889,7 @@
   },
   {
    "id": "prim-1",
-   "name": "Форма «Прим-1»",
+   "name": "Отчёт «Прим-1»",
    "type": [
     "term"
    ],
@@ -1185,6 +1185,15 @@
    "url": "/glossary/raskhodnaya-deklaratsiya/"
   },
   {
+   "id": "prom-otchetnost-goz",
+   "name": "Промежуточная отчётность ГОЗ",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/prom-otchetnost-goz.json",
+   "url": "/glossary/promezhutochnaya-otchetnost-goz/"
+  },
+  {
    "id": "faq-dokumenty-dlya-otkrytiya",
    "name": "Какие документы нужны для открытия лицевого счёта?",
    "type": [
@@ -1291,15 +1300,6 @@
    ],
    "api": "/entity/bk-rf.json",
    "url": "/glossary/bk-rf-242/"
-  },
-  {
-   "id": "prom-otchetnost-goz",
-   "name": "Промежуточная отчётность ГОЗ",
-   "type": [
-    "term"
-   ],
-   "api": "/entity/prom-otchetnost-goz.json",
-   "url": "/glossary/promezhutochnaya-otchetnost-goz/"
   },
   {
    "id": "ispolnitel",
@@ -3922,7 +3922,7 @@
   },
   {
    "id": "faq-chto-takoe-prim-1",
-   "name": "Что такое форма «Прим-1» и кто её запрашивает?",
+   "name": "Что такое отчёт «Прим-1» по ГОЗ и кто его сдаёт?",
    "type": [
     "faq"
    ],
@@ -4441,6 +4441,24 @@
    ],
    "api": "/entity/tool-generator-chek-lista.json",
    "url": "/instrumenty/generator-chek-lista/"
+  },
+  {
+   "id": "law-pp-47-red-543",
+   "name": "ПП № 47 (ред. № 543)",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-pp-47-red-543.json",
+   "url": "/zakonodatelstvo/"
+  },
+  {
+   "id": "law-prikaz-minoborony-554",
+   "name": "Приказ Минобороны № 554",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-prikaz-minoborony-554.json",
+   "url": "/zakonodatelstvo/"
   },
   {
    "id": "uchastnik-ks",

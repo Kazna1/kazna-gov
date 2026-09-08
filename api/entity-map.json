@@ -602,7 +602,7 @@
    "url": "/glossary/razdelnyy-uchet/"
   },
   "prim-1": {
-   "name": "Форма «Прим-1»",
+   "name": "Отчёт «Прим-1»",
    "type": [
     "term"
    ],
@@ -2555,7 +2555,7 @@
    "url": "/voprosy/kak-raspredelyat-nakladnye/"
   },
   "faq-chto-takoe-prim-1": {
-   "name": "Что такое форма «Прим-1» и кто её запрашивает?",
+   "name": "Что такое отчёт «Прим-1» по ГОЗ и кто его сдаёт?",
    "type": [
     "faq"
    ],
@@ -3424,6 +3424,20 @@
   },
   "law-pp-1465": {
    "name": "ПП № 1465",
+   "type": [
+    "law"
+   ],
+   "url": "/zakonodatelstvo/"
+  },
+  "law-pp-47-red-543": {
+   "name": "ПП № 47 (ред. № 543)",
+   "type": [
+    "law"
+   ],
+   "url": "/zakonodatelstvo/"
+  },
+  "law-prikaz-minoborony-554": {
+   "name": "Приказ Минобороны № 554",
    "type": [
     "law"
    ],

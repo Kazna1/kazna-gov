@@ -3,8 +3,8 @@
  "version": "2026-09-07",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
- "nodes": 494,
- "edges": 4363,
+ "nodes": 496,
+ "edges": 4366,
  "byType": {
   "error": 13,
   "document": 19,
@@ -13,15 +13,15 @@
   "hub": 10,
   "tool": 11,
   "service": 8,
-  "law": 16
+  "law": 18
  },
  "relTypes": {
   "REQUIRES_DOC": 492,
   "SEE_ERROR": 378,
   "MONETIZED_BY": 461,
-  "REGULATED_BY": 593,
+  "REGULATED_BY": 595,
   "RELATED_DOC": 55,
-  "RELATED_TERM": 422,
+  "RELATED_TERM": 423,
   "USES_TERM": 1294,
   "DIAGNOSED_BY": 26,
   "RELATED_HUB": 28,
