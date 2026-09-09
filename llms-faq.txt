@@ -1,4 +1,4 @@
-# Вопросы и ответы — kazna-gov.ru (machine readable, 302 entities)
+# Вопросы и ответы — kazna-gov.ru (machine readable, 303 entities)
 # Knowledge API: https://kazna-gov.ru/api/ · Graph: https://kazna-gov.ru/api/knowledge-graph.json
 
 - Как открыть казначейский счёт? [faq-kak-otkryt-schet]: Счёт открывает сам подрядчик в своём ТОФК: заявление по форме 0531368 плюс карточка образцов подписей, подача — через ГИИС «Электронный бюджет» или на бумаге. URL: https://kazna-gov.ru/voprosy/kak-otkryt-kaznacheyskiy-schet/ API: https://kazna-gov.ru/entity/faq-kak-otkryt-schet.json
@@ -303,3 +303,4 @@
 - Работаете ли с ИП и малым бизнесом? [faq-ip-i-malyy-biznes]: Да: ИП и малый бизнес проходят КС по общим правилам, а мы подбираем формат под небольшой бюджет — от разового открытия до лёгкого тарифа ведения. URL: https://kazna-gov.ru/voprosy/rabota-s-ip-i-malym-biznesom/ API: https://kazna-gov.ru/entity/faq-ip-i-malyy-biznes.json
 - Что такое казначейское сопровождение простыми словами? [faq-ks-prostymi-slovami]: Государство платит на специальный счёт в казначействе, а не в банк, и проверяет каждый расход: платежи проходят только на цели контракта и с подтверждающими документами. URL: https://kazna-gov.ru/voprosy/ks-prostymi-slovami/ API: https://kazna-gov.ru/entity/faq-ks-prostymi-slovami.json
 - Сколько времени уходит на казначейские процедуры? [faq-vremya-na-protsedury]: Каждая корректная операция — единицы рабочих дней по регламентам УФК. Реальные задержки создают ошибки: возврат документа перезапускает срок заново. URL: https://kazna-gov.ru/voprosy/skolko-vremeni-zanimaet-ks/ API: https://kazna-gov.ru/entity/faq-vremya-na-protsedury.json
+- Когда лицевой счёт открывают в финансовом органе субъекта или муниципалитета, а не в УФК? [faq-schet-v-finansovom-organe-subekta]: Если источник оплаты — бюджет субъекта или муниципалитета и финансовый орган ведёт казначейское сопровождение сам, лицевой счёт открывают у него; при переданных полномочиях — в УФК. URL: https://kazna-gov.ru/voprosy/schet-v-finansovom-organe-subekta/ API: https://kazna-gov.ru/entity/faq-schet-v-finansovom-organe-subekta.json

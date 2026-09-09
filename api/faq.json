@@ -3,7 +3,7 @@
  "version": "2026-09-09",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
- "count": 302,
+ "count": 303,
  "entities": [
   {
    "id": "faq-kak-otkryt-schet",
@@ -6241,7 +6241,7 @@
      "/blog/litsevoy-schet-71"
     ],
     "SAME_CLUSTER": [
-     "faq-kak-otkryt-schet"
+     "faq-schet-v-finansovom-organe-subekta"
     ]
    },
    "updated": "2026-07-09",
@@ -17468,6 +17468,67 @@
     "citation": 100,
     "aiReadiness": 100,
     "density": 47
+   }
+  },
+  {
+   "id": "faq-schet-v-finansovom-organe-subekta",
+   "type": [
+    "faq"
+   ],
+   "name": "Когда лицевой счёт открывают в финансовом органе субъекта или муниципалитета, а не в УФК?",
+   "aliases": [
+    "счет в финансовом органе субъекта",
+    "лицевой счет в департаменте финансов",
+    "казначейское сопровождение в финоргане региона",
+    "открытие лицевого счета в минфине области",
+    "счет в комитете финансов муниципалитета",
+    "региональное казначейское сопровождение не в уфк",
+    "куда открывать счет по контракту из бюджета области"
+   ],
+   "summary": "Лицевой счёт открывают не в УФК, а в финансовом органе субъекта или муниципалитета, когда контракт оплачивается из регионального или местного бюджета и этот финорган ведёт казначейское сопровождение сам (ст. 242.23 и 242.25 Бюджетного кодекса). Так работает, например, Департамент финансов Москвы. Если регион передал полномочия Федеральному казначейству, счёт открывает УФК по региону.",
+   "citation": "Если источник оплаты — бюджет субъекта или муниципалитета и финансовый орган ведёт казначейское сопровождение сам, лицевой счёт открывают у него; при переданных полномочиях — в УФК.",
+   "pages": [
+    {
+     "layer": "faq",
+     "url": "/voprosy/schet-v-finansovom-organe-subekta/",
+     "title": "Когда лицевой счёт открывают в финансовом органе субъекта или муниципалитета, а не в УФК?"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "finorgan",
+     "ufk",
+     "ls-71",
+     "ks"
+    ],
+    "REQUIRES_DOC": [
+     "zayavlenie-ls"
+    ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-v-moskve-polnyy-gid",
+     "/regiony/",
+     "/blog/litsevoy-schet-71"
+    ],
+    "SAME_CLUSTER": [
+     "faq-kak-otkryt-schet"
+    ]
+   },
+   "updated": "2026-09-09",
+   "schema_id": "https://kazna-gov.ru/#e-faq-schet-v-finansovom-organe-subekta",
+   "scores": {
+    "authority": 1,
+    "coverage": 100,
+    "connectivity": 33,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 67
    }
   }
  ]

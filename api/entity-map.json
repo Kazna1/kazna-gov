@@ -3156,6 +3156,13 @@
    ],
    "url": "/voprosy/gde-uchitsya-rabote-s-ks/"
   },
+  "faq-schet-v-finansovom-organe-subekta": {
+   "name": "Когда лицевой счёт открывают в финансовом органе субъекта или муниципалитета, а не в УФК?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/schet-v-finansovom-organe-subekta/"
+  },
   "hub-ks": {
    "name": "Казначейское сопровождение",
    "type": [

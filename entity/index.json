@@ -3,7 +3,7 @@
  "version": "2026-09-09",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
- "count": 496,
+ "count": 497,
  "entities": [
   {
    "id": "service-conduct",
@@ -157,15 +157,6 @@
    "url": "/oshibki/necelevoe-rashodovanie-sredstv/"
   },
   {
-   "id": "law-prikaz-fk-44n",
-   "name": "Приказ ФК № 44н",
-   "type": [
-    "law"
-   ],
-   "api": "/entity/law-prikaz-fk-44n.json",
-   "url": "/zakonodatelstvo/"
-  },
-  {
    "id": "ks",
    "name": "Казначейское сопровождение",
    "type": [
@@ -173,6 +164,15 @@
    ],
    "api": "/entity/ks.json",
    "url": "/glossary/kaznacheyskoe-soprovozhdenie/"
+  },
+  {
+   "id": "law-prikaz-fk-44n",
+   "name": "Приказ ФК № 44н",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-prikaz-fk-44n.json",
+   "url": "/zakonodatelstvo/"
   },
   {
    "id": "dokumenty-osnovaniya",
@@ -311,15 +311,6 @@
    "url": "/obraztsy/pismo-zapros-v-ufk/"
   },
   {
-   "id": "kontrakt-44",
-   "name": "Госконтракт",
-   "type": [
-    "term"
-   ],
-   "api": "/entity/kontrakt-44.json",
-   "url": "/glossary/goskontrakt/"
-  },
-  {
    "id": "ufk",
    "name": "УФК",
    "type": [
@@ -327,6 +318,15 @@
    ],
    "api": "/entity/ufk.json",
    "url": "/glossary/ufk/"
+  },
+  {
+   "id": "kontrakt-44",
+   "name": "Госконтракт",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/kontrakt-44.json",
+   "url": "/glossary/goskontrakt/"
   },
   {
    "id": "law-prikaz-fk-21n",
@@ -1167,6 +1167,15 @@
    "url": "/zakonodatelstvo/"
   },
   {
+   "id": "finorgan",
+   "name": "Финансовый орган",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/finorgan.json",
+   "url": "/glossary/finansovyy-organ/"
+  },
+  {
    "id": "prikaz-214n",
    "name": "Приказ Минфина № 214н",
    "type": [
@@ -1246,15 +1255,6 @@
    ],
    "api": "/entity/minfin.json",
    "url": "/glossary/minfin/"
-  },
-  {
-   "id": "finorgan",
-   "name": "Финансовый орган",
-   "type": [
-    "term"
-   ],
-   "api": "/entity/finorgan.json",
-   "url": "/glossary/finansovyy-organ/"
   },
   {
    "id": "sufd",
@@ -4414,6 +4414,15 @@
    ],
    "api": "/entity/faq-vremya-na-protsedury.json",
    "url": "/voprosy/skolko-vremeni-zanimaet-ks/"
+  },
+  {
+   "id": "faq-schet-v-finansovom-organe-subekta",
+   "name": "Когда лицевой счёт открывают в финансовом органе субъекта или муниципалитета, а не в УФК?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-schet-v-finansovom-organe-subekta.json",
+   "url": "/voprosy/schet-v-finansovom-organe-subekta/"
   },
   {
    "id": "hub-ru",

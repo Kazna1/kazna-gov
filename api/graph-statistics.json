@@ -3,26 +3,26 @@
  "version": "2026-09-09",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
- "nodes": 496,
- "edges": 4366,
+ "nodes": 497,
+ "edges": 4375,
  "byType": {
   "error": 13,
   "document": 19,
   "term": 124,
-  "faq": 302,
+  "faq": 303,
   "hub": 10,
   "tool": 11,
   "service": 8,
   "law": 18
  },
  "relTypes": {
-  "REQUIRES_DOC": 492,
+  "REQUIRES_DOC": 493,
   "SEE_ERROR": 378,
-  "MONETIZED_BY": 461,
-  "REGULATED_BY": 595,
+  "MONETIZED_BY": 462,
+  "REGULATED_BY": 597,
   "RELATED_DOC": 55,
   "RELATED_TERM": 423,
-  "USES_TERM": 1294,
+  "USES_TERM": 1298,
   "DIAGNOSED_BY": 26,
   "RELATED_HUB": 28,
   "SEE_FAQ": 144,
@@ -31,7 +31,7 @@
   "RESOLVES_TO": 39,
   "SERVICE_REQUIRES": 24,
   "SERVICE_SOLVES": 22,
-  "SAME_CLUSTER": 302
+  "SAME_CLUSTER": 303
  },
  "topAuthority": [
   {
@@ -40,7 +40,7 @@
   },
   {
    "id": "law-bk-rf-st-2422224226",
-   "in": 119
+   "in": 120
   },
   {
    "id": "svedeniya-ssu",
@@ -56,7 +56,7 @@
   },
   {
    "id": "service-open",
-   "in": 95
+   "in": 96
   },
   {
    "id": "doverennost-mchd",
@@ -68,11 +68,11 @@
   },
   {
    "id": "ls-71",
-   "in": 80
+   "in": 81
   },
   {
    "id": "zayavlenie-ls",
-   "in": 72
+   "in": 73
   },
   {
    "id": "law-275-fz",

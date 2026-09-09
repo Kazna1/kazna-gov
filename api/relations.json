@@ -16725,6 +16725,46 @@
    "rel": "MONETIZED_BY"
   },
   {
+   "from": "faq-schet-v-finansovom-organe-subekta",
+   "to": "finorgan",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "faq-schet-v-finansovom-organe-subekta",
+   "to": "ufk",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "faq-schet-v-finansovom-organe-subekta",
+   "to": "ls-71",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "faq-schet-v-finansovom-organe-subekta",
+   "to": "ks",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "faq-schet-v-finansovom-organe-subekta",
+   "to": "zayavlenie-ls",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "faq-schet-v-finansovom-organe-subekta",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "faq-schet-v-finansovom-organe-subekta",
+   "to": "law-ezhegodnyy-zakon-o-federalnom-byudzhete",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "faq-schet-v-finansovom-organe-subekta",
+   "to": "service-open",
+   "rel": "MONETIZED_BY"
+  },
+  {
    "from": "hub-ks",
    "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
@@ -20426,6 +20466,11 @@
   },
   {
    "from": "faq-rekvizity-scheta",
+   "to": "faq-schet-v-finansovom-organe-subekta",
+   "rel": "SAME_CLUSTER"
+  },
+  {
+   "from": "faq-schet-v-finansovom-organe-subekta",
    "to": "faq-kak-otkryt-schet",
    "rel": "SAME_CLUSTER"
   },

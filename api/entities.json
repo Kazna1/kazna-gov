@@ -3,7 +3,7 @@
  "version": "2026-09-09",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
- "count": 496,
+ "count": 497,
  "entities": [
   {
    "id": "service-conduct",
@@ -329,7 +329,7 @@
    "updated": "2026-09-03",
    "schema_id": "https://kazna-gov.ru/#e-service-open",
    "scores": {
-    "authority": 90,
+    "authority": 91,
     "coverage": 100,
     "connectivity": 100,
     "citation": 80,
@@ -523,7 +523,7 @@
    "updated": "2026-08-16",
    "schema_id": "https://kazna-gov.ru/#e-ls-71",
    "scores": {
-    "authority": 76,
+    "authority": 77,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -593,7 +593,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-zayavlenie-ls",
    "scores": {
-    "authority": 69,
+    "authority": 70,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -944,36 +944,6 @@
    }
   },
   {
-   "id": "law-prikaz-fk-44n",
-   "type": [
-    "law"
-   ],
-   "name": "Приказ ФК № 44н",
-   "aliases": [
-    "Приказ ФК № 44н — лицевые счета при КС (форма 0531368)"
-   ],
-   "summary": "Приказ ФК № 44н — лицевые счета при КС (форма 0531368)",
-   "citation": "Приказ ФК № 44н — лицевые счета при КС (форма 0531368)",
-   "pages": [
-    {
-     "layer": "law",
-     "url": "/zakonodatelstvo/",
-     "title": "Приказ ФК № 44н — лицевые счета при КС (форма 0531368)"
-    }
-   ],
-   "relations": {},
-   "updated": "2026-07-09",
-   "schema_id": "https://kazna-gov.ru/#e-law-prikaz-fk-44n",
-   "scores": {
-    "authority": 51,
-    "coverage": 0,
-    "connectivity": 100,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
    "id": "ks",
    "type": [
     "term"
@@ -1017,8 +987,38 @@
    "updated": "2026-09-01",
    "schema_id": "https://kazna-gov.ru/#e-ks",
    "scores": {
-    "authority": 50,
+    "authority": 51,
     "coverage": 67,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "law-prikaz-fk-44n",
+   "type": [
+    "law"
+   ],
+   "name": "Приказ ФК № 44н",
+   "aliases": [
+    "Приказ ФК № 44н — лицевые счета при КС (форма 0531368)"
+   ],
+   "summary": "Приказ ФК № 44н — лицевые счета при КС (форма 0531368)",
+   "citation": "Приказ ФК № 44н — лицевые счета при КС (форма 0531368)",
+   "pages": [
+    {
+     "layer": "law",
+     "url": "/zakonodatelstvo/",
+     "title": "Приказ ФК № 44н — лицевые счета при КС (форма 0531368)"
+    }
+   ],
+   "relations": {},
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-law-prikaz-fk-44n",
+   "scores": {
+    "authority": 51,
+    "coverage": 0,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -1325,7 +1325,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-law-ezhegodnyy-zakon-o-federalnom-byudzhete",
    "scores": {
-    "authority": 41,
+    "authority": 42,
     "coverage": 0,
     "connectivity": 100,
     "citation": 100,
@@ -1767,60 +1767,6 @@
    }
   },
   {
-   "id": "kontrakt-44",
-   "type": [
-    "term"
-   ],
-   "name": "Госконтракт",
-   "aliases": [
-    "государственный контракт",
-    "контракт по 44-фз",
-    "Государственный (муниципальный) контракт"
-   ],
-   "summary": "Госконтракт — договор поставки, работ или услуг для государственных (муниципальных) нужд, заключаемый по 44-ФЗ. Контракт попадает под казначейское сопровождение, если соответствует критериям ежегодного закона о бюджете (авансирование, сумма, источник средств). Сведения о контракте включаются в реестр контрактов ЕИС, где ему присваивается ИГК.",
-   "citation": "Договор с госзаказчиком по 44-ФЗ. Для КС важны его атрибуты: источник средств, аванс, сумма, ИГК и условие о сопровождении.",
-   "pages": [
-    {
-     "layer": "term",
-     "url": "/glossary/goskontrakt/",
-     "title": "Госконтракт"
-    }
-   ],
-   "relations": {
-    "RELATED_TERM": [
-     "igk",
-     "ks",
-     "eis",
-     "ed-postavshchik"
-    ],
-    "REQUIRES_DOC": [
-     "formulirovka-ks",
-     "reestr-dokumentov"
-    ],
-    "REGULATED_BY": [
-     "law-44-fz",
-     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
-    ],
-    "MONETIZED_BY": [
-     "service-conduct"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/kakie-kontrakty-popadayut-pod-kaznachejskoe-soprovozhdenie/",
-     "/blog/kaznacheyskoe-soprovozhdenie-44-fz-2026-polnyy-gid"
-    ]
-   },
-   "updated": "2026-07-14",
-   "schema_id": "https://kazna-gov.ru/#e-kontrakt-44",
-   "scores": {
-    "authority": 32,
-    "coverage": 83,
-    "connectivity": 100,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 100
-   }
-  },
-  {
    "id": "ufk",
    "type": [
     "term"
@@ -1873,8 +1819,62 @@
    "updated": "2026-09-02",
    "schema_id": "https://kazna-gov.ru/#e-ufk",
    "scores": {
-    "authority": 31,
+    "authority": 32,
     "coverage": 100,
+    "connectivity": 100,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 100
+   }
+  },
+  {
+   "id": "kontrakt-44",
+   "type": [
+    "term"
+   ],
+   "name": "Госконтракт",
+   "aliases": [
+    "государственный контракт",
+    "контракт по 44-фз",
+    "Государственный (муниципальный) контракт"
+   ],
+   "summary": "Госконтракт — договор поставки, работ или услуг для государственных (муниципальных) нужд, заключаемый по 44-ФЗ. Контракт попадает под казначейское сопровождение, если соответствует критериям ежегодного закона о бюджете (авансирование, сумма, источник средств). Сведения о контракте включаются в реестр контрактов ЕИС, где ему присваивается ИГК.",
+   "citation": "Договор с госзаказчиком по 44-ФЗ. Для КС важны его атрибуты: источник средств, аванс, сумма, ИГК и условие о сопровождении.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/goskontrakt/",
+     "title": "Госконтракт"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "igk",
+     "ks",
+     "eis",
+     "ed-postavshchik"
+    ],
+    "REQUIRES_DOC": [
+     "formulirovka-ks",
+     "reestr-dokumentov"
+    ],
+    "REGULATED_BY": [
+     "law-44-fz",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kakie-kontrakty-popadayut-pod-kaznachejskoe-soprovozhdenie/",
+     "/blog/kaznacheyskoe-soprovozhdenie-44-fz-2026-polnyy-gid"
+    ]
+   },
+   "updated": "2026-07-14",
+   "schema_id": "https://kazna-gov.ru/#e-kontrakt-44",
+   "scores": {
+    "authority": 32,
+    "coverage": 83,
     "connectivity": 100,
     "citation": 100,
     "aiReadiness": 100,
@@ -6433,6 +6433,53 @@
    }
   },
   {
+   "id": "finorgan",
+   "type": [
+    "term"
+   ],
+   "name": "Финансовый орган",
+   "aliases": [
+    "финорган",
+    "минфин региона",
+    "департамент финансов"
+   ],
+   "summary": "Финансовый орган — региональное министерство финансов или муниципальный департамент финансов, организующий исполнение своего бюджета. При казначейском сопровождении средств регионального или местного бюджета правила могут задаваться финорганом, а само сопровождение — вестись УФК по переданным полномочиям либо самим финорганом.",
+   "citation": "Орган, исполняющий бюджет субъекта РФ или муниципалитета. Определяет правила КС для «своих» средств — по аналогии с федеральными.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/finansovyy-organ/",
+     "title": "Финансовый орган"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "municipalnyy",
+     "subsidiya",
+     "zakon-budget"
+    ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-munitsipalnyh-kontraktov"
+    ]
+   },
+   "updated": "2026-07-14",
+   "schema_id": "https://kazna-gov.ru/#e-finorgan",
+   "scores": {
+    "authority": 5,
+    "coverage": 67,
+    "connectivity": 33,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 67
+   }
+  },
+  {
    "id": "prikaz-214n",
    "type": [
     "term"
@@ -6906,53 +6953,6 @@
     "citation": 100,
     "aiReadiness": 100,
     "density": 67
-   }
-  },
-  {
-   "id": "finorgan",
-   "type": [
-    "term"
-   ],
-   "name": "Финансовый орган",
-   "aliases": [
-    "финорган",
-    "минфин региона",
-    "департамент финансов"
-   ],
-   "summary": "Финансовый орган — региональное министерство финансов или муниципальный департамент финансов, организующий исполнение своего бюджета. При казначейском сопровождении средств регионального или местного бюджета правила могут задаваться финорганом, а само сопровождение — вестись УФК по переданным полномочиям либо самим финорганом.",
-   "citation": "Орган, исполняющий бюджет субъекта РФ или муниципалитета. Определяет правила КС для «своих» средств — по аналогии с федеральными.",
-   "pages": [
-    {
-     "layer": "term",
-     "url": "/glossary/finansovyy-organ/",
-     "title": "Финансовый орган"
-    }
-   ],
-   "relations": {
-    "RELATED_TERM": [
-     "municipalnyy",
-     "subsidiya",
-     "zakon-budget"
-    ],
-    "REGULATED_BY": [
-     "law-bk-rf-st-2422224226"
-    ],
-    "MONETIZED_BY": [
-     "service-conduct"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/kaznacheyskoe-soprovozhdenie-munitsipalnyh-kontraktov"
-    ]
-   },
-   "updated": "2026-07-14",
-   "schema_id": "https://kazna-gov.ru/#e-finorgan",
-   "scores": {
-    "authority": 4,
-    "coverage": 67,
-    "connectivity": 30,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 60
    }
   },
   {
@@ -15782,7 +15782,7 @@
      "/blog/litsevoy-schet-71"
     ],
     "SAME_CLUSTER": [
-     "faq-kak-otkryt-schet"
+     "faq-schet-v-finansovom-organe-subekta"
     ]
    },
    "updated": "2026-07-09",
@@ -27009,6 +27009,67 @@
     "citation": 100,
     "aiReadiness": 100,
     "density": 47
+   }
+  },
+  {
+   "id": "faq-schet-v-finansovom-organe-subekta",
+   "type": [
+    "faq"
+   ],
+   "name": "Когда лицевой счёт открывают в финансовом органе субъекта или муниципалитета, а не в УФК?",
+   "aliases": [
+    "счет в финансовом органе субъекта",
+    "лицевой счет в департаменте финансов",
+    "казначейское сопровождение в финоргане региона",
+    "открытие лицевого счета в минфине области",
+    "счет в комитете финансов муниципалитета",
+    "региональное казначейское сопровождение не в уфк",
+    "куда открывать счет по контракту из бюджета области"
+   ],
+   "summary": "Лицевой счёт открывают не в УФК, а в финансовом органе субъекта или муниципалитета, когда контракт оплачивается из регионального или местного бюджета и этот финорган ведёт казначейское сопровождение сам (ст. 242.23 и 242.25 Бюджетного кодекса). Так работает, например, Департамент финансов Москвы. Если регион передал полномочия Федеральному казначейству, счёт открывает УФК по региону.",
+   "citation": "Если источник оплаты — бюджет субъекта или муниципалитета и финансовый орган ведёт казначейское сопровождение сам, лицевой счёт открывают у него; при переданных полномочиях — в УФК.",
+   "pages": [
+    {
+     "layer": "faq",
+     "url": "/voprosy/schet-v-finansovom-organe-subekta/",
+     "title": "Когда лицевой счёт открывают в финансовом органе субъекта или муниципалитета, а не в УФК?"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "finorgan",
+     "ufk",
+     "ls-71",
+     "ks"
+    ],
+    "REQUIRES_DOC": [
+     "zayavlenie-ls"
+    ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226",
+     "law-ezhegodnyy-zakon-o-federalnom-byudzhete"
+    ],
+    "MONETIZED_BY": [
+     "service-open"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-v-moskve-polnyy-gid",
+     "/regiony/",
+     "/blog/litsevoy-schet-71"
+    ],
+    "SAME_CLUSTER": [
+     "faq-kak-otkryt-schet"
+    ]
+   },
+   "updated": "2026-09-09",
+   "schema_id": "https://kazna-gov.ru/#e-faq-schet-v-finansovom-organe-subekta",
+   "scores": {
+    "authority": 1,
+    "coverage": 100,
+    "connectivity": 33,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 67
    }
   },
   {
