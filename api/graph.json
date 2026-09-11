@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-09-09",
+ "version": "2026-09-11",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "nodes": [
@@ -538,7 +538,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-razdelnyy-uchet",
    "scores": {
-    "authority": 29,
+    "authority": 28,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -700,7 +700,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-zayavlenie-ls",
    "scores": {
-    "authority": 70,
+    "authority": 69,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -868,7 +868,8 @@
      "kod-tselevyh",
      "zakazchik",
      "tselevye-sredstva",
-     "balans-celevyh-sredstv"
+     "balans-celevyh-sredstv",
+     "pp-2024"
     ],
     "REGULATED_BY": [
      "law-prikaz-minfina-214n"
@@ -1040,7 +1041,7 @@
    "updated": "2026-08-11",
    "schema_id": "https://kazna-gov.ru/#e-doverennost-mchd",
    "scores": {
-    "authority": 90,
+    "authority": 89,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -1309,7 +1310,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-soprovoditelnoe-pismo",
    "scores": {
-    "authority": 10,
+    "authority": 9,
     "coverage": 67,
     "connectivity": 50,
     "citation": 80,
@@ -2061,7 +2062,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-zakazchik",
    "scores": {
-    "authority": 10,
+    "authority": 9,
     "coverage": 100,
     "connectivity": 60,
     "citation": 100,
@@ -2730,7 +2731,8 @@
     "RELATED_TERM": [
      "raskhodnaya-deklaratsiya",
      "ks",
-     "sanktsionirovanie"
+     "sanktsionirovanie",
+     "pp-2024"
     ],
     "REGULATED_BY": [
      "law-bk-rf-st-2422224226"
@@ -2745,12 +2747,12 @@
    "updated": "2026-09-07",
    "schema_id": "https://kazna-gov.ru/#e-rasshirennoe-ks",
    "scores": {
-    "authority": 6,
+    "authority": 7,
     "coverage": 67,
-    "connectivity": 37,
+    "connectivity": 43,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 73
+    "density": 87
    }
   },
   {
@@ -3946,7 +3948,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-subpodryadchik",
    "scores": {
-    "authority": 10,
+    "authority": 9,
     "coverage": 100,
     "connectivity": 60,
     "citation": 100,
@@ -4195,7 +4197,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-goz",
    "scores": {
-    "authority": 30,
+    "authority": 29,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -4316,7 +4318,7 @@
    "updated": "2026-09-07",
    "schema_id": "https://kazna-gov.ru/#e-prim-1",
    "scores": {
-    "authority": 10,
+    "authority": 9,
     "coverage": 100,
     "connectivity": 67,
     "citation": 100,
@@ -4722,7 +4724,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-id-soglasheniya",
    "scores": {
-    "authority": 10,
+    "authority": 9,
     "coverage": 83,
     "connectivity": 57,
     "citation": 100,
@@ -5717,7 +5719,7 @@
    "updated": "2026-08-11",
    "schema_id": "https://kazna-gov.ru/#e-upd",
    "scores": {
-    "authority": 10,
+    "authority": 9,
     "coverage": 100,
     "connectivity": 60,
     "citation": 100,
@@ -6086,7 +6088,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-kody-napravleniy",
    "scores": {
-    "authority": 30,
+    "authority": 29,
     "coverage": 83,
     "connectivity": 100,
     "citation": 100,
@@ -6846,7 +6848,8 @@
     "RELATED_TERM": [
      "ks",
      "koo-obs",
-     "rasshirennoe-ks"
+     "rasshirennoe-ks",
+     "pp-2024"
     ],
     "REQUIRES_DOC": [
      "pismo-zapros"
@@ -6864,12 +6867,12 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-bk-rf",
    "scores": {
-    "authority": 4,
+    "authority": 5,
     "coverage": 83,
-    "connectivity": 33,
+    "connectivity": 40,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 67
+    "density": 80
    }
   },
   {
@@ -7103,7 +7106,8 @@
      "vidy-tsen-goz",
      "norma-pribyli",
      "goz",
-     "vp-mo"
+     "vp-mo",
+     "pp-2024"
     ],
     "REGULATED_BY": [
      "law-pp-1465"
@@ -7118,12 +7122,63 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-pp-1465",
    "scores": {
-    "authority": 2,
+    "authority": 3,
     "coverage": 67,
-    "connectivity": 27,
+    "connectivity": 33,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 53
+    "density": 67
+   }
+  },
+  {
+   "id": "pp-2024",
+   "type": [
+    "term"
+   ],
+   "name": "ПП № 2024",
+   "aliases": [
+    "постановление 2024",
+    "правила казначейского сопровождения",
+    "пп 2024",
+    "Постановление о правилах казначейского сопровождения"
+   ],
+   "summary": "Постановление Правительства № 2024 от 24.11.2021 — головной подзаконный акт казначейского сопровождения: утверждает Правила КС, осуществляемого Федеральным казначейством, и Правила расширенного КС. Определяет порядок открытия и ведения лицевых счетов участников сопровождения, санкционирование расходов по Сведениям об операциях с целевыми средствами, режим целевых средств и запрещённые операции, а для расширенного режима — проверку фактических затрат и поставок.",
+   "citation": "Операционная «инструкция» КС: как открываются лицевые счета, по каким документам казначейство пропускает платежи и что запрещено делать с целевыми средствами. Рамку задаёт БК РФ (ст. 242.23–242.26), случаи — ежегодный закон о бюджете, а сам порядок — это постановление.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/pp-2024/",
+     "title": "ПП № 2024"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "pp-1465",
+     "pp-2053",
+     "svedeniya-ssu",
+     "bk-rf",
+     "rasshirennoe-ks"
+    ],
+    "REGULATED_BY": [
+     "law-pp-2024",
+     "law-bk-rf-st-2422224226"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-44-fz-2026-polnyy-gid"
+    ]
+   },
+   "updated": "2026-09-11",
+   "schema_id": "https://kazna-gov.ru/#e-pp-2024",
+   "scores": {
+    "authority": 5,
+    "coverage": 67,
+    "connectivity": 43,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 87
    }
   },
   {
@@ -7150,7 +7205,8 @@
     "RELATED_TERM": [
      "pribyl-ks",
      "vozmeshchenie",
-     "platezh"
+     "platezh",
+     "pp-2024"
     ],
     "REGULATED_BY": [
      "law-pp-2053"
@@ -7166,12 +7222,12 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-pp-2053",
    "scores": {
-    "authority": 2,
+    "authority": 3,
     "coverage": 67,
-    "connectivity": 23,
+    "connectivity": 30,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 47
+    "density": 60
    }
   },
   {
@@ -25109,7 +25165,7 @@
    "updated": "2026-07-09",
    "schema_id": "https://kazna-gov.ru/#e-hub-scheta",
    "scores": {
-    "authority": 10,
+    "authority": 9,
     "coverage": 83,
     "connectivity": 60,
     "citation": 80,
@@ -27216,6 +27272,37 @@
    }
   },
   {
+   "id": "law-pp-2024",
+   "type": [
+    "law"
+   ],
+   "name": "ПП № 2024",
+   "aliases": [
+    "ПП № 2024 — правила казначейского сопровождения"
+   ],
+   "summary": "ПП № 2024 — правила казначейского сопровождения",
+   "citation": "ПП № 2024 — правила казначейского сопровождения",
+   "pages": [
+    {
+     "layer": "law",
+     "url": "/zakonodatelstvo/",
+     "title": "ПП № 2024 — правила казначейского сопровождения"
+    }
+   ],
+   "relations": {},
+   "updated": "2026-07-09",
+   "schema_id": "https://kazna-gov.ru/#e-law-pp-2024",
+   "sourceUrl": "http://publication.pravo.gov.ru/Document/View/0001202111260048",
+   "scores": {
+    "authority": 1,
+    "coverage": 0,
+    "connectivity": 3,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 7
+   }
+  },
+  {
    "id": "law-pp-47-red-543",
    "type": [
     "law"
@@ -29144,6 +29231,11 @@
   {
    "from": "rasshirennoe-ks",
    "to": "sanktsionirovanie",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "rasshirennoe-ks",
+   "to": "pp-2024",
    "rel": "RELATED_TERM"
   },
   {
@@ -31378,6 +31470,11 @@
   },
   {
    "from": "svedeniya-ssu",
+   "to": "pp-2024",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "svedeniya-ssu",
    "to": "err-svedeniya-otkaz",
    "rel": "SEE_ERROR"
   },
@@ -32263,6 +32360,11 @@
   },
   {
    "from": "bk-rf",
+   "to": "pp-2024",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "bk-rf",
    "to": "pismo-zapros",
    "rel": "REQUIRES_DOC"
   },
@@ -32428,11 +32530,56 @@
   },
   {
    "from": "pp-1465",
+   "to": "pp-2024",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "pp-1465",
    "to": "law-pp-1465",
    "rel": "REGULATED_BY"
   },
   {
    "from": "pp-1465",
+   "to": "service-conduct",
+   "rel": "MONETIZED_BY"
+  },
+  {
+   "from": "pp-2024",
+   "to": "pp-1465",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "pp-2024",
+   "to": "pp-2053",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "pp-2024",
+   "to": "svedeniya-ssu",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "pp-2024",
+   "to": "bk-rf",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "pp-2024",
+   "to": "rasshirennoe-ks",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "pp-2024",
+   "to": "law-pp-2024",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "pp-2024",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "pp-2024",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -32449,6 +32596,11 @@
   {
    "from": "pp-2053",
    "to": "platezh",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "pp-2053",
+   "to": "pp-2024",
    "rel": "RELATED_TERM"
   },
   {

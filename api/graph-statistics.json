@@ -1,27 +1,27 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-09-09",
+ "version": "2026-09-11",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
- "nodes": 497,
- "edges": 4375,
+ "nodes": 499,
+ "edges": 4388,
  "byType": {
   "error": 13,
   "document": 19,
-  "term": 124,
+  "term": 125,
   "faq": 303,
   "hub": 10,
   "tool": 11,
   "service": 8,
-  "law": 18
+  "law": 19
  },
  "relTypes": {
   "REQUIRES_DOC": 493,
   "SEE_ERROR": 378,
-  "MONETIZED_BY": 462,
-  "REGULATED_BY": 597,
+  "MONETIZED_BY": 463,
+  "REGULATED_BY": 599,
   "RELATED_DOC": 55,
-  "RELATED_TERM": 423,
+  "RELATED_TERM": 433,
   "USES_TERM": 1298,
   "DIAGNOSED_BY": 26,
   "RELATED_HUB": 28,
@@ -36,15 +36,15 @@
  "topAuthority": [
   {
    "id": "service-conduct",
-   "in": 315
+   "in": 316
   },
   {
    "id": "law-bk-rf-st-2422224226",
-   "in": 120
+   "in": 121
   },
   {
    "id": "svedeniya-ssu",
-   "in": 108
+   "in": 109
   },
   {
    "id": "law-prikaz-minfina-214n",

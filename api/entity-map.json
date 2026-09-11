@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-09-09",
+ "version": "2026-09-11",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "map": {
@@ -992,6 +992,13 @@
     "term"
    ],
    "url": "/glossary/pp-1465/"
+  },
+  "pp-2024": {
+   "name": "ПП № 2024",
+   "type": [
+    "term"
+   ],
+   "url": "/glossary/pp-2024/"
   },
   "pp-2053": {
    "name": "ПП № 2053",
@@ -3431,6 +3438,13 @@
   },
   "law-pp-1465": {
    "name": "ПП № 1465",
+   "type": [
+    "law"
+   ],
+   "url": "/zakonodatelstvo/"
+  },
+  "law-pp-2024": {
+   "name": "ПП № 2024",
    "type": [
     "law"
    ],

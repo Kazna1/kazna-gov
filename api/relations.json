@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-09-09",
+ "version": "2026-09-11",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "edges": [
@@ -1687,6 +1687,11 @@
   {
    "from": "rasshirennoe-ks",
    "to": "sanktsionirovanie",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "rasshirennoe-ks",
+   "to": "pp-2024",
    "rel": "RELATED_TERM"
   },
   {
@@ -3921,6 +3926,11 @@
   },
   {
    "from": "svedeniya-ssu",
+   "to": "pp-2024",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "svedeniya-ssu",
    "to": "err-svedeniya-otkaz",
    "rel": "SEE_ERROR"
   },
@@ -4806,6 +4816,11 @@
   },
   {
    "from": "bk-rf",
+   "to": "pp-2024",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "bk-rf",
    "to": "pismo-zapros",
    "rel": "REQUIRES_DOC"
   },
@@ -4971,11 +4986,56 @@
   },
   {
    "from": "pp-1465",
+   "to": "pp-2024",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "pp-1465",
    "to": "law-pp-1465",
    "rel": "REGULATED_BY"
   },
   {
    "from": "pp-1465",
+   "to": "service-conduct",
+   "rel": "MONETIZED_BY"
+  },
+  {
+   "from": "pp-2024",
+   "to": "pp-1465",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "pp-2024",
+   "to": "pp-2053",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "pp-2024",
+   "to": "svedeniya-ssu",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "pp-2024",
+   "to": "bk-rf",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "pp-2024",
+   "to": "rasshirennoe-ks",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "pp-2024",
+   "to": "law-pp-2024",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "pp-2024",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "pp-2024",
    "to": "service-conduct",
    "rel": "MONETIZED_BY"
   },
@@ -4992,6 +5052,11 @@
   {
    "from": "pp-2053",
    "to": "platezh",
+   "rel": "RELATED_TERM"
+  },
+  {
+   "from": "pp-2053",
+   "to": "pp-2024",
    "rel": "RELATED_TERM"
   },
   {

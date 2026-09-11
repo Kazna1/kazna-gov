@@ -1,9 +1,9 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-09-09",
+ "version": "2026-09-11",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
- "count": 497,
+ "count": 499,
  "entities": [
   {
    "id": "service-conduct",
@@ -1023,6 +1023,15 @@
    "url": "/glossary/voennoe-predstavitelstvo/"
   },
   {
+   "id": "rasshirennoe-ks",
+   "name": "Расширенное казначейское сопровождение",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/rasshirennoe-ks.json",
+   "url": "/glossary/rasshirennoe-kaznacheyskoe-soprovozhdenie/"
+  },
+  {
    "id": "nubp",
    "name": "НУБП",
    "type": [
@@ -1066,15 +1075,6 @@
    ],
    "api": "/entity/eis.json",
    "url": "/glossary/eis/"
-  },
-  {
-   "id": "rasshirennoe-ks",
-   "name": "Расширенное казначейское сопровождение",
-   "type": [
-    "term"
-   ],
-   "api": "/entity/rasshirennoe-ks.json",
-   "url": "/glossary/rasshirennoe-kaznacheyskoe-soprovozhdenie/"
   },
   {
    "id": "bank-soprovozhdenie",
@@ -1176,6 +1176,15 @@
    "url": "/glossary/finansovyy-organ/"
   },
   {
+   "id": "bk-rf",
+   "name": "БК РФ, ст. 242.23–242.26",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/bk-rf.json",
+   "url": "/glossary/bk-rf-242/"
+  },
+  {
    "id": "prikaz-214n",
    "name": "Приказ Минфина № 214н",
    "type": [
@@ -1183,6 +1192,15 @@
    ],
    "api": "/entity/prikaz-214n.json",
    "url": "/glossary/prikaz-214n/"
+  },
+  {
+   "id": "pp-2024",
+   "name": "ПП № 2024",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/pp-2024.json",
+   "url": "/glossary/pp-2024/"
   },
   {
    "id": "raskhodnaya-deklaratsiya",
@@ -1291,15 +1309,6 @@
    ],
    "api": "/entity/pryamoy-platezh.json",
    "url": "/glossary/pryamoy-platezh/"
-  },
-  {
-   "id": "bk-rf",
-   "name": "БК РФ, ст. 242.23–242.26",
-   "type": [
-    "term"
-   ],
-   "api": "/entity/bk-rf.json",
-   "url": "/glossary/bk-rf-242/"
   },
   {
    "id": "ispolnitel",
@@ -1480,6 +1489,24 @@
    ],
    "api": "/entity/kbk.json",
    "url": "/glossary/kbk/"
+  },
+  {
+   "id": "pp-1465",
+   "name": "ПП № 1465",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/pp-1465.json",
+   "url": "/glossary/pp-1465/"
+  },
+  {
+   "id": "pp-2053",
+   "name": "ПП № 2053",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/pp-2053.json",
+   "url": "/glossary/pp-2053/"
   },
   {
    "id": "ip",
@@ -1921,24 +1948,6 @@
    ],
    "api": "/entity/prikaz-21n.json",
    "url": "/glossary/prikaz-21n/"
-  },
-  {
-   "id": "pp-1465",
-   "name": "ПП № 1465",
-   "type": [
-    "term"
-   ],
-   "api": "/entity/pp-1465.json",
-   "url": "/glossary/pp-1465/"
-  },
-  {
-   "id": "pp-2053",
-   "name": "ПП № 2053",
-   "type": [
-    "term"
-   ],
-   "api": "/entity/pp-2053.json",
-   "url": "/glossary/pp-2053/"
   },
   {
    "id": "faq-gde-otkryvaetsya-schet",
@@ -4450,6 +4459,15 @@
    ],
    "api": "/entity/tool-generator-chek-lista.json",
    "url": "/instrumenty/generator-chek-lista/"
+  },
+  {
+   "id": "law-pp-2024",
+   "name": "ПП № 2024",
+   "type": [
+    "law"
+   ],
+   "api": "/entity/law-pp-2024.json",
+   "url": "/zakonodatelstvo/"
   },
   {
    "id": "law-pp-47-red-543",

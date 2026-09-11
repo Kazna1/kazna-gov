@@ -1,23 +1,23 @@
 {
- "generated": "2026-09-04T13:09:30.424Z",
- "nodes": 494,
- "edges": 4363,
+ "generated": "2026-09-11T09:22:53.129Z",
+ "nodes": 497,
+ "edges": 4375,
  "byType": {
   "term": 124,
-  "faq": 302,
+  "faq": 303,
   "document": 19,
   "error": 13,
   "tool": 11,
   "hub": 10,
   "service": 8,
-  "law": 16
+  "law": 18
  },
  "scores": {
-  "coverage": 89,
+  "coverage": 90,
   "authority": 7,
   "connectivity": 45,
   "citationDensity": 89,
-  "graphDensity": 8.83,
+  "graphDensity": 8.8,
   "machineReadability": 100,
   "aiReadiness": 100,
   "registryCompleteness": 100,
