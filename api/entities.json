@@ -1,9 +1,9 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-09-11",
+ "version": "2026-09-17",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
- "count": 499,
+ "count": 500,
  "entities": [
   {
    "id": "service-conduct",
@@ -524,7 +524,7 @@
    "updated": "2026-08-16",
    "schema_id": "https://kazna-gov.ru/#e-ls-71",
    "scores": {
-    "authority": 77,
+    "authority": 78,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -625,7 +625,7 @@
    "schema_id": "https://kazna-gov.ru/#e-law-275-fz",
    "sourceUrl": "https://www.consultant.ru/document/cons_doc_LAW_140175/",
    "scores": {
-    "authority": 64,
+    "authority": 63,
     "coverage": 0,
     "connectivity": 100,
     "citation": 100,
@@ -689,7 +689,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-kartochka-podpisey",
    "scores": {
-    "authority": 63,
+    "authority": 62,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -988,7 +988,7 @@
    "updated": "2026-09-01",
    "schema_id": "https://kazna-gov.ru/#e-ks",
    "scores": {
-    "authority": 51,
+    "authority": 52,
     "coverage": 67,
     "connectivity": 100,
     "citation": 100,
@@ -1073,7 +1073,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-dokumenty-osnovaniya",
    "scores": {
-    "authority": 47,
+    "authority": 46,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -1138,7 +1138,7 @@
    "updated": "2026-09-03",
    "schema_id": "https://kazna-gov.ru/#e-service-vosstanovlenie",
    "scores": {
-    "authority": 47,
+    "authority": 46,
     "coverage": 100,
     "connectivity": 100,
     "citation": 80,
@@ -2089,7 +2089,7 @@
    "schema_id": "https://kazna-gov.ru/#e-law-63-fz",
    "sourceUrl": "https://www.consultant.ru/document/cons_doc_LAW_112701/",
    "scores": {
-    "authority": 28,
+    "authority": 27,
     "coverage": 0,
     "connectivity": 97,
     "citation": 100,
@@ -2134,7 +2134,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-mchd",
    "scores": {
-    "authority": 27,
+    "authority": 26,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -2188,7 +2188,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-vozmeshchenie",
    "scores": {
-    "authority": 27,
+    "authority": 26,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -3329,7 +3329,7 @@
      "/blog/podvodnye-kamni-kaznacheyskogo-soprovozhdeniya"
     ]
    },
-   "updated": "2026-08-24",
+   "updated": "2026-09-14",
    "schema_id": "https://kazna-gov.ru/#e-kazn-monitoring",
    "scores": {
     "authority": 18,
@@ -5442,6 +5442,54 @@
    }
   },
   {
+   "id": "rasshirennoe-ks",
+   "type": [
+    "term"
+   ],
+   "name": "Расширенное казначейское сопровождение",
+   "aliases": [
+    "ркс",
+    "расширенное кс",
+    "РКС"
+   ],
+   "summary": "РКС — расширенное казначейское сопровождение: усиленный режим для отдельных контрактов, прежде всего крупной стройки и случаев повышенного риска. Помимо санкционирования платежей казначейство проверяет фактическое исполнение — подтверждение объёмов работ, себестоимость через расходную декларацию, вплоть до выездных осмотров и фотофиксации. Случаи применения устанавливает Правительство; ниже — чем РКС отличается от обычного режима и что готовить подрядчику.",
+   "citation": "Режим КС с дополнительным контролем фактов исполнения (не только документов): проверка объёмов работ, себестоимости через расходную декларацию, осмотры.",
+   "pages": [
+    {
+     "layer": "term",
+     "url": "/glossary/rasshirennoe-kaznacheyskoe-soprovozhdenie/",
+     "title": "Расширенное казначейское сопровождение"
+    }
+   ],
+   "relations": {
+    "RELATED_TERM": [
+     "raskhodnaya-deklaratsiya",
+     "ks",
+     "sanktsionirovanie",
+     "pp-2024"
+    ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-stroitelstvo"
+    ]
+   },
+   "updated": "2026-09-07",
+   "schema_id": "https://kazna-gov.ru/#e-rasshirennoe-ks",
+   "scores": {
+    "authority": 8,
+    "coverage": 67,
+    "connectivity": 47,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 93
+   }
+  },
+  {
    "id": "eks",
    "type": [
     "term"
@@ -5641,54 +5689,6 @@
     "citation": 100,
     "aiReadiness": 100,
     "density": 100
-   }
-  },
-  {
-   "id": "rasshirennoe-ks",
-   "type": [
-    "term"
-   ],
-   "name": "Расширенное казначейское сопровождение",
-   "aliases": [
-    "ркс",
-    "расширенное кс",
-    "РКС"
-   ],
-   "summary": "РКС — расширенное казначейское сопровождение: усиленный режим для отдельных контрактов, прежде всего крупной стройки и случаев повышенного риска. Помимо санкционирования платежей казначейство проверяет фактическое исполнение — подтверждение объёмов работ, себестоимость через расходную декларацию, вплоть до выездных осмотров и фотофиксации. Случаи применения устанавливает Правительство; ниже — чем РКС отличается от обычного режима и что готовить подрядчику.",
-   "citation": "Режим КС с дополнительным контролем фактов исполнения (не только документов): проверка объёмов работ, себестоимости через расходную декларацию, осмотры.",
-   "pages": [
-    {
-     "layer": "term",
-     "url": "/glossary/rasshirennoe-kaznacheyskoe-soprovozhdenie/",
-     "title": "Расширенное казначейское сопровождение"
-    }
-   ],
-   "relations": {
-    "RELATED_TERM": [
-     "raskhodnaya-deklaratsiya",
-     "ks",
-     "sanktsionirovanie",
-     "pp-2024"
-    ],
-    "REGULATED_BY": [
-     "law-bk-rf-st-2422224226"
-    ],
-    "MONETIZED_BY": [
-     "service-conduct"
-    ],
-    "EXPLAINED_BY_ARTICLE": [
-     "/blog/kaznacheyskoe-soprovozhdenie-stroitelstvo"
-    ]
-   },
-   "updated": "2026-09-07",
-   "schema_id": "https://kazna-gov.ru/#e-rasshirennoe-ks",
-   "scores": {
-    "authority": 7,
-    "coverage": 67,
-    "connectivity": 43,
-    "citation": 100,
-    "aiReadiness": 100,
-    "density": 87
    }
   },
   {
@@ -26253,7 +26253,7 @@
      "/blog/podvodnye-kamni-kaznacheyskogo-soprovozhdeniya"
     ],
     "SAME_CLUSTER": [
-     "faq-kakoy-zakon-reguliruet-ks"
+     "faq-chto-takoe-prostoe-ks"
     ]
    },
    "updated": "2026-07-09",
@@ -27126,6 +27126,65 @@
     "citation": 100,
     "aiReadiness": 100,
     "density": 67
+   }
+  },
+  {
+   "id": "faq-chto-takoe-prostoe-ks",
+   "type": [
+    "faq"
+   ],
+   "name": "Что такое простое (базовое) казначейское сопровождение и чем оно отличается от расширенного?",
+   "aliases": [
+    "простое казначейское сопровождение",
+    "базовое казначейское сопровождение",
+    "обычное казначейское сопровождение",
+    "простое кс",
+    "простое и расширенное казначейское сопровождение разница",
+    "чем отличается расширенное казначейское сопровождение от обычного"
+   ],
+   "summary": "Простое (базовое) казначейское сопровождение — общий режим по главе 24.4 Бюджетного кодекса: целевые средства зачисляются на лицевой счёт в территориальном органе Федерального казначейства, а каждый платёж проходит санкционирование по документам — Сведениям об операциях с целевыми средствами, документам-основаниям и кодам направления расходования. В отличие от расширенного сопровождения, факт исполнения контракта казначейство не проверяет.",
+   "citation": "Простое казначейское сопровождение — базовый режим: лицевой счёт в ТОФК и санкционирование каждого платежа по документам, без проверки фактического исполнения контракта. Расширенное добавляет проверку исполнения, расходную декларацию и осмотры.",
+   "pages": [
+    {
+     "layer": "faq",
+     "url": "/voprosy/chto-takoe-prostoe-ks/",
+     "title": "Что такое простое (базовое) казначейское сопровождение и чем оно отличается от расширенного?"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "ks",
+     "rasshirennoe-ks",
+     "ls-71",
+     "sanktsionirovanie"
+    ],
+    "REQUIRES_DOC": [
+     "svedeniya-ssu"
+    ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-2026-opredeleniya#section-rasshirennoe",
+     "/voprosy/ks-prostymi-slovami/",
+     "/blog/kakie-kontrakty-popadayut-pod-kaznachejskoe-soprovozhdenie"
+    ],
+    "SAME_CLUSTER": [
+     "faq-kakoy-zakon-reguliruet-ks"
+    ]
+   },
+   "updated": "2026-09-17",
+   "schema_id": "https://kazna-gov.ru/#e-faq-chto-takoe-prostoe-ks",
+   "scores": {
+    "authority": 1,
+    "coverage": 100,
+    "connectivity": 30,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 60
    }
   },
   {

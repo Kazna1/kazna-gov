@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-09-11",
+ "version": "2026-09-17",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "count": 19,
@@ -274,7 +274,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-kartochka-podpisey",
    "scores": {
-    "authority": 63,
+    "authority": 62,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,

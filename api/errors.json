@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-09-11",
+ "version": "2026-09-17",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "count": 13,
@@ -358,7 +358,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-mchd",
    "scores": {
-    "authority": 27,
+    "authority": 26,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,

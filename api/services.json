@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-09-11",
+ "version": "2026-09-17",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "count": 8,
@@ -198,7 +198,7 @@
    "updated": "2026-09-03",
    "schema_id": "https://kazna-gov.ru/#e-service-vosstanovlenie",
    "scores": {
-    "authority": 47,
+    "authority": 46,
     "coverage": 100,
     "connectivity": 100,
     "citation": 80,

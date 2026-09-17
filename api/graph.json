@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-09-11",
+ "version": "2026-09-17",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "nodes": [
@@ -493,7 +493,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-err-mchd",
    "scores": {
-    "authority": 27,
+    "authority": 26,
     "coverage": 67,
     "connectivity": 100,
     "citation": 80,
@@ -808,7 +808,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-kartochka-podpisey",
    "scores": {
-    "authority": 63,
+    "authority": 62,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -2648,7 +2648,7 @@
    "updated": "2026-09-01",
    "schema_id": "https://kazna-gov.ru/#e-ks",
    "scores": {
-    "authority": 51,
+    "authority": 52,
     "coverage": 67,
     "connectivity": 100,
     "citation": 100,
@@ -2696,7 +2696,7 @@
      "/blog/podvodnye-kamni-kaznacheyskogo-soprovozhdeniya"
     ]
    },
-   "updated": "2026-08-24",
+   "updated": "2026-09-14",
    "schema_id": "https://kazna-gov.ru/#e-kazn-monitoring",
    "scores": {
     "authority": 18,
@@ -2747,12 +2747,12 @@
    "updated": "2026-09-07",
    "schema_id": "https://kazna-gov.ru/#e-rasshirennoe-ks",
    "scores": {
-    "authority": 7,
+    "authority": 8,
     "coverage": 67,
-    "connectivity": 43,
+    "connectivity": 47,
     "citation": 100,
     "aiReadiness": 100,
-    "density": 87
+    "density": 93
    }
   },
   {
@@ -2955,7 +2955,7 @@
    "updated": "2026-08-16",
    "schema_id": "https://kazna-gov.ru/#e-ls-71",
    "scores": {
-    "authority": 77,
+    "authority": 78,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -5037,7 +5037,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-vozmeshchenie",
    "scores": {
-    "authority": 27,
+    "authority": 26,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -5514,7 +5514,7 @@
    "updated": "2026-07-14",
    "schema_id": "https://kazna-gov.ru/#e-dokumenty-osnovaniya",
    "scores": {
-    "authority": 47,
+    "authority": 46,
     "coverage": 100,
     "connectivity": 100,
     "citation": 100,
@@ -23622,7 +23622,7 @@
      "/blog/podvodnye-kamni-kaznacheyskogo-soprovozhdeniya"
     ],
     "SAME_CLUSTER": [
-     "faq-kakoy-zakon-reguliruet-ks"
+     "faq-chto-takoe-prostoe-ks"
     ]
    },
    "updated": "2026-07-09",
@@ -25057,6 +25057,65 @@
     "citation": 100,
     "aiReadiness": 100,
     "density": 67
+   }
+  },
+  {
+   "id": "faq-chto-takoe-prostoe-ks",
+   "type": [
+    "faq"
+   ],
+   "name": "Что такое простое (базовое) казначейское сопровождение и чем оно отличается от расширенного?",
+   "aliases": [
+    "простое казначейское сопровождение",
+    "базовое казначейское сопровождение",
+    "обычное казначейское сопровождение",
+    "простое кс",
+    "простое и расширенное казначейское сопровождение разница",
+    "чем отличается расширенное казначейское сопровождение от обычного"
+   ],
+   "summary": "Простое (базовое) казначейское сопровождение — общий режим по главе 24.4 Бюджетного кодекса: целевые средства зачисляются на лицевой счёт в территориальном органе Федерального казначейства, а каждый платёж проходит санкционирование по документам — Сведениям об операциях с целевыми средствами, документам-основаниям и кодам направления расходования. В отличие от расширенного сопровождения, факт исполнения контракта казначейство не проверяет.",
+   "citation": "Простое казначейское сопровождение — базовый режим: лицевой счёт в ТОФК и санкционирование каждого платежа по документам, без проверки фактического исполнения контракта. Расширенное добавляет проверку исполнения, расходную декларацию и осмотры.",
+   "pages": [
+    {
+     "layer": "faq",
+     "url": "/voprosy/chto-takoe-prostoe-ks/",
+     "title": "Что такое простое (базовое) казначейское сопровождение и чем оно отличается от расширенного?"
+    }
+   ],
+   "relations": {
+    "USES_TERM": [
+     "ks",
+     "rasshirennoe-ks",
+     "ls-71",
+     "sanktsionirovanie"
+    ],
+    "REQUIRES_DOC": [
+     "svedeniya-ssu"
+    ],
+    "REGULATED_BY": [
+     "law-bk-rf-st-2422224226"
+    ],
+    "MONETIZED_BY": [
+     "service-conduct"
+    ],
+    "EXPLAINED_BY_ARTICLE": [
+     "/blog/kaznacheyskoe-soprovozhdenie-2026-opredeleniya#section-rasshirennoe",
+     "/voprosy/ks-prostymi-slovami/",
+     "/blog/kakie-kontrakty-popadayut-pod-kaznachejskoe-soprovozhdenie"
+    ],
+    "SAME_CLUSTER": [
+     "faq-kakoy-zakon-reguliruet-ks"
+    ]
+   },
+   "updated": "2026-09-17",
+   "schema_id": "https://kazna-gov.ru/#e-faq-chto-takoe-prostoe-ks",
+   "scores": {
+    "authority": 1,
+    "coverage": 100,
+    "connectivity": 30,
+    "citation": 100,
+    "aiReadiness": 100,
+    "density": 60
    }
   },
   {
@@ -26771,7 +26830,7 @@
    "updated": "2026-09-03",
    "schema_id": "https://kazna-gov.ru/#e-service-vosstanovlenie",
    "scores": {
-    "authority": 47,
+    "authority": 46,
     "coverage": 100,
     "connectivity": 100,
     "citation": 80,
@@ -27051,7 +27110,7 @@
    "schema_id": "https://kazna-gov.ru/#e-law-275-fz",
    "sourceUrl": "https://www.consultant.ru/document/cons_doc_LAW_140175/",
    "scores": {
-    "authority": 64,
+    "authority": 63,
     "coverage": 0,
     "connectivity": 100,
     "citation": 100,
@@ -27082,7 +27141,7 @@
    "schema_id": "https://kazna-gov.ru/#e-law-63-fz",
    "sourceUrl": "https://www.consultant.ru/document/cons_doc_LAW_112701/",
    "scores": {
-    "authority": 28,
+    "authority": 27,
     "coverage": 0,
     "connectivity": 97,
     "citation": 100,
@@ -44374,6 +44433,41 @@
    "rel": "MONETIZED_BY"
   },
   {
+   "from": "faq-chto-takoe-prostoe-ks",
+   "to": "ks",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "faq-chto-takoe-prostoe-ks",
+   "to": "rasshirennoe-ks",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "faq-chto-takoe-prostoe-ks",
+   "to": "ls-71",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "faq-chto-takoe-prostoe-ks",
+   "to": "sanktsionirovanie",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "faq-chto-takoe-prostoe-ks",
+   "to": "svedeniya-ssu",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "faq-chto-takoe-prostoe-ks",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "faq-chto-takoe-prostoe-ks",
+   "to": "service-conduct",
+   "rel": "MONETIZED_BY"
+  },
+  {
    "from": "hub-ks",
    "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
@@ -49335,6 +49429,11 @@
   },
   {
    "from": "faq-plyusy-ks-dlya-podryadchika",
+   "to": "faq-chto-takoe-prostoe-ks",
+   "rel": "SAME_CLUSTER"
+  },
+  {
+   "from": "faq-chto-takoe-prostoe-ks",
    "to": "faq-kakoy-zakon-reguliruet-ks",
    "rel": "SAME_CLUSTER"
   },

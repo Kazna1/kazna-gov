@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-09-11",
+ "version": "2026-09-17",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "index": {
@@ -2795,6 +2795,14 @@
   "счет в комитете финансов муниципалитета": "faq-schet-v-finansovom-organe-subekta",
   "региональное казначейское сопровождение не в уфк": "faq-schet-v-finansovom-organe-subekta",
   "куда открывать счет по контракту из бюджета области": "faq-schet-v-finansovom-organe-subekta",
+  "faq-chto-takoe-prostoe-ks": "faq-chto-takoe-prostoe-ks",
+  "что такое простое (базовое) казначейское сопровождение и чем оно отличается от расширенного?": "faq-chto-takoe-prostoe-ks",
+  "простое казначейское сопровождение": "faq-chto-takoe-prostoe-ks",
+  "базовое казначейское сопровождение": "faq-chto-takoe-prostoe-ks",
+  "обычное казначейское сопровождение": "faq-chto-takoe-prostoe-ks",
+  "простое кс": "faq-chto-takoe-prostoe-ks",
+  "простое и расширенное казначейское сопровождение разница": "faq-chto-takoe-prostoe-ks",
+  "чем отличается расширенное казначейское сопровождение от обычного": "faq-chto-takoe-prostoe-ks",
   "hub-ks": "hub-ks",
   "hub-scheta": "hub-scheta",
   "лицевые счета": "hub-scheta",

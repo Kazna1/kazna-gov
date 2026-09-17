@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-09-11",
+ "version": "2026-09-17",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "edges": [
@@ -16830,6 +16830,41 @@
    "rel": "MONETIZED_BY"
   },
   {
+   "from": "faq-chto-takoe-prostoe-ks",
+   "to": "ks",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "faq-chto-takoe-prostoe-ks",
+   "to": "rasshirennoe-ks",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "faq-chto-takoe-prostoe-ks",
+   "to": "ls-71",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "faq-chto-takoe-prostoe-ks",
+   "to": "sanktsionirovanie",
+   "rel": "USES_TERM"
+  },
+  {
+   "from": "faq-chto-takoe-prostoe-ks",
+   "to": "svedeniya-ssu",
+   "rel": "REQUIRES_DOC"
+  },
+  {
+   "from": "faq-chto-takoe-prostoe-ks",
+   "to": "law-bk-rf-st-2422224226",
+   "rel": "REGULATED_BY"
+  },
+  {
+   "from": "faq-chto-takoe-prostoe-ks",
+   "to": "service-conduct",
+   "rel": "MONETIZED_BY"
+  },
+  {
    "from": "hub-ks",
    "to": "law-bk-rf-st-2422224226",
    "rel": "REGULATED_BY"
@@ -21791,6 +21826,11 @@
   },
   {
    "from": "faq-plyusy-ks-dlya-podryadchika",
+   "to": "faq-chto-takoe-prostoe-ks",
+   "rel": "SAME_CLUSTER"
+  },
+  {
+   "from": "faq-chto-takoe-prostoe-ks",
    "to": "faq-kakoy-zakon-reguliruet-ks",
    "rel": "SAME_CLUSTER"
   },

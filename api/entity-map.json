@@ -1,6 +1,6 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-09-11",
+ "version": "2026-09-17",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
  "map": {
@@ -3169,6 +3169,13 @@
     "faq"
    ],
    "url": "/voprosy/schet-v-finansovom-organe-subekta/"
+  },
+  "faq-chto-takoe-prostoe-ks": {
+   "name": "Что такое простое (базовое) казначейское сопровождение и чем оно отличается от расширенного?",
+   "type": [
+    "faq"
+   ],
+   "url": "/voprosy/chto-takoe-prostoe-ks/"
   },
   "hub-ks": {
    "name": "Казначейское сопровождение",

@@ -1,9 +1,9 @@
 {
  "project": "kazna-gov.ru Knowledge Graph",
- "version": "2026-09-11",
+ "version": "2026-09-17",
  "license": "Контент © kazna-gov.ru; цитирование со ссылкой на источник",
  "docs": "https://kazna-gov.ru/api/",
- "count": 499,
+ "count": 500,
  "entities": [
   {
    "id": "service-conduct",
@@ -987,6 +987,15 @@
    "url": "/glossary/psb/"
   },
   {
+   "id": "rasshirennoe-ks",
+   "name": "Расширенное казначейское сопровождение",
+   "type": [
+    "term"
+   ],
+   "api": "/entity/rasshirennoe-ks.json",
+   "url": "/glossary/rasshirennoe-kaznacheyskoe-soprovozhdenie/"
+  },
+  {
    "id": "eks",
    "name": "ЕКС",
    "type": [
@@ -1021,15 +1030,6 @@
    ],
    "api": "/entity/vp-mo.json",
    "url": "/glossary/voennoe-predstavitelstvo/"
-  },
-  {
-   "id": "rasshirennoe-ks",
-   "name": "Расширенное казначейское сопровождение",
-   "type": [
-    "term"
-   ],
-   "api": "/entity/rasshirennoe-ks.json",
-   "url": "/glossary/rasshirennoe-kaznacheyskoe-soprovozhdenie/"
   },
   {
    "id": "nubp",
@@ -4432,6 +4432,15 @@
    ],
    "api": "/entity/faq-schet-v-finansovom-organe-subekta.json",
    "url": "/voprosy/schet-v-finansovom-organe-subekta/"
+  },
+  {
+   "id": "faq-chto-takoe-prostoe-ks",
+   "name": "Что такое простое (базовое) казначейское сопровождение и чем оно отличается от расширенного?",
+   "type": [
+    "faq"
+   ],
+   "api": "/entity/faq-chto-takoe-prostoe-ks.json",
+   "url": "/voprosy/chto-takoe-prostoe-ks/"
   },
   {
    "id": "hub-ru",
