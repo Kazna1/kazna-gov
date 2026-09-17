@@ -53,9 +53,6 @@ URL: https://kazna-gov.ru/blog/kartochka-obraztsov-podpisey-ufk
 URL: https://kazna-gov.ru/blog/ne-otkryvaetsya-kaznacheyskiy-schet-prichiny-otkaza-2026
 Почему УФК возвращает документы на открытие казначейского счёта: 8 типовых причин отказа в 2026, как исправить и как открыть счёт за 2 дня вместо 2 недель.
 
-### Регистрация в ГИИС Электронный бюджет 2026 — для подрядчика
-URL: https://kazna-gov.ru/blog/registratsiya-v-giis-elektronnyy-byudzhet-podryadchika
-Как зарегистрироваться в ГИИС Электронный бюджет подрядчику госконтракта: ЭЦП, КриптоПро, доступ к КС-счёту, типовые ошибки. Пошаговая инструкция 2026.
 
 ### Реквизиты казначейского счёта — что это, чей счёт и как получить
 URL: https://kazna-gov.ru/blog/rekvizity-kaznacheyskogo-scheta

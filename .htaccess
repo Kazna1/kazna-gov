@@ -59,6 +59,9 @@ RewriteRule ^blog/(obs-schet-goz|obs-vs-litsevoy-schet-ks|rkm-po-goz|statyi-zatr
 # /services/start/index.html открывается в обход редиректа и остаётся дублем.
 RewriteRule ^services/start(/.*)?$ /services/conduct [R=301,L]
 
+# 17.09.2026: регистрация в ГИИС ЭБ консолидирована в пиллар (интент регистрации пользователя — kaznaexpert)
+RewriteRule ^blog/registratsiya-v-giis-elektronnyy-byudzhet-podryadchika/?$ /blog/giis-elektronnyy-byudzhet-2026-polnaya-instruktsiya [R=301,L]
+
 # --- /review — легаси-дубль интента «отзывы» → 301 на канонический /otzyvy/ (аудит 2026-07-22) ---
 RewriteRule ^review/?$ /otzyvy/ [R=301,L]
 
