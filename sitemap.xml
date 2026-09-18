@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://kazna-gov.ru/</loc><lastmod>2026-09-08</lastmod><priority>1.0</priority></url>
+  <url><loc>https://kazna-gov.ru/</loc><lastmod>2026-09-18</lastmod><priority>1.0</priority></url>
   <url><loc>https://kazna-gov.ru/about/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://kazna-gov.ru/agreement</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/api/</loc><lastmod>2026-07-09</lastmod></url>
@@ -18,7 +18,7 @@
   <url><loc>https://kazna-gov.ru/blog/fines</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/giis-elektronnyy-byudzhet-2026-polnaya-instruktsiya</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/glossariy-terminov-kaznacheyskogo-soprovozhdeniya</loc><lastmod>2026-06-19</lastmod></url>
-  <url><loc>https://kazna-gov.ru/blog/how_to_open</loc><lastmod>2026-08-24</lastmod></url>
+  <url><loc>https://kazna-gov.ru/blog/how_to_open</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/identifikator-goskontrakta-igk</loc><lastmod>2026-08-31</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/igk-v-platezhah-kaznacheystva</loc><lastmod>2026-07-13</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/income_codes</loc><lastmod>2026-06-19</lastmod></url>
@@ -38,7 +38,7 @@
   <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-223-fz</loc><lastmod>2026-09-08</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-275-fz-goz-polnyy-gid</loc><lastmod>2026-09-08</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-44-fz-2026-polnyy-gid</loc><lastmod>2026-09-08</lastmod></url>
-  <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov</loc><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-dlya-chaynikov</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-dlya-ip</loc><lastmod>2026-09-08</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-it-goskontraktov</loc><lastmod>2026-09-08</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/kaznacheyskoe-soprovozhdenie-meditsina</loc><lastmod>2026-09-08</lastmod></url>
@@ -96,7 +96,7 @@
   <url><loc>https://kazna-gov.ru/blog/subpodryad-pri-kaznacheyskom-soprovozhdenii</loc><lastmod>2026-07-16</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/sufd-i-elektronnyy-byudzhet</loc><lastmod>2026-08-16</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/svedeniya-ob-operatsiyah-s-tselevymi-sredstvami</loc><lastmod>2026-06-19</lastmod></url>
-  <url><loc>https://kazna-gov.ru/blog/tofk</loc><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://kazna-gov.ru/blog/tofk</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/tseny-na-kaznacheyskoe-soprovozhdenie-2026</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/tsepochka-kaznacheyskogo-soprovozhdeniya</loc><lastmod>2026-06-22</lastmod></url>
   <url><loc>https://kazna-gov.ru/blog/ufk-zaderzhivaet-platezh-chto-delat</loc><lastmod>2026-08-24</lastmod></url>
@@ -314,9 +314,9 @@
   <url><loc>https://kazna-gov.ru/regiony</loc><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://kazna-gov.ru/sanktsionirovanie/</loc><lastmod>2026-07-09</lastmod></url>
   <url><loc>https://kazna-gov.ru/scheta/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/services/conduct</loc><lastmod>2026-09-03</lastmod></url>
+  <url><loc>https://kazna-gov.ru/services/conduct</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://kazna-gov.ru/services/giis-eb</loc><lastmod>2026-09-03</lastmod></url>
-  <url><loc>https://kazna-gov.ru/services/open</loc><lastmod>2026-09-03</lastmod></url>
+  <url><loc>https://kazna-gov.ru/services/open</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://kazna-gov.ru/services/postpayment</loc><lastmod>2026-09-03</lastmod></url>
   <url><loc>https://kazna-gov.ru/services/reserve</loc><lastmod>2026-09-03</lastmod></url>
   <url><loc>https://kazna-gov.ru/services/subsidii</loc><lastmod>2026-09-03</lastmod></url>
@@ -324,7 +324,7 @@
   <url><loc>https://kazna-gov.ru/services/vosstanovlenie</loc><lastmod>2026-09-03</lastmod></url>
   <url><loc>https://kazna-gov.ru/stoimost</loc><lastmod>2026-09-09</lastmod></url>
   <url><loc>https://kazna-gov.ru/subsidii/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://kazna-gov.ru/uslugi</loc><lastmod>2026-09-09</lastmod></url>
+  <url><loc>https://kazna-gov.ru/uslugi</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://kazna-gov.ru/voprosy/</loc><lastmod>2026-07-09</lastmod></url>
   <url><loc>https://kazna-gov.ru/voprosy/audit-pered-proverkoy/</loc><lastmod>2026-07-09</lastmod></url>
   <url><loc>https://kazna-gov.ru/voprosy/autsorsing-ks-vygodno-li/</loc><lastmod>2026-09-01</lastmod></url>
